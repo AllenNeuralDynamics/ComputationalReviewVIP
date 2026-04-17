@@ -1,7 +1,7 @@
 (sec-computational-models)=
 # Computational Models of VIP Function
 
-## 12.0 Framing
+## Framing
 
 {ref}`sec-species-translation` framed the cross-species caveat: the mouse-derived VIP cartoon is a scaffold, not a blueprint, for human cortex. The question for the present section is whether the formal models of VIP circuit function inherit the same mouse-centric assumptions. Sections {ref}`sec-circuit-motifs` through {ref}`sec-oscillations` assembled the empirical case against a tidy, universal VIP→SST→PYR disinhibitory motif: wiring is heterogeneous across cortical areas and subtypes, behavioral correlates dissociate from disinhibition in several tasks, and gamma/theta coupling results diverge across studies. Computational models are where those empirical dissociations either survive formalization or quietly vanish into parameter-tuning. This section asks a narrower question than the canonical motif debate itself: **when a model is written down with equations, which VIP-circuit phenomena actually require disinhibition, and which only require a four-population architecture with the right gain terms?**
 
@@ -97,7 +97,7 @@ Taxonomy of eight model classes used to study VIP interneuron function, with rep
 ```
 :::
 
-## 12.1 Biophysical single-cell models of VIP firing
+## Biophysical single-cell models of VIP firing
 
 Among interneuron classes, biophysical single-cell models of VIP cells are the sparsest. PV-basket fast-spiking and SST Martinotti cells have had multiple generations of Hodgkin–Huxley models tuned to their canonical intrinsic signatures, whereas VIP-targeted single-cell models remain few, and most are embedded as one of several cell types in hippocampal or cortical circuit simulations rather than as standalone reference cells. The best-developed strand fits biophysical models to Patch-seq or whole-cell recordings from identified VIP/CR+ or VIP/CCK+ neurons.
 
@@ -114,7 +114,7 @@ Two limitations of the current single-cell literature warrant explicit naming. F
 Three field-level reasons recur in the cited literature. (i) Patch-seq–identified VIP populations are internally heterogeneous ({cite:p}`Bernaerts2025,Meng2023`), and electrophysiological and immunohistochemical characterization further suggests substantial within-class diversity ({cite:p}`Moreno2026`), so a single "canonical" parameter set is ambiguous. (ii) The most computationally distinctive VIP property — irregular-spiking — depends on subtly tuned K+ conductances that published datasets under-constrain ({cite:p}`Meng2023,GuetMcCreight2016`). (iii) Circuit modelers have tended to use reduced VIP units (LIF or rate) because the downstream questions — gain, oscillation, prediction error — did not require sub-spike-time biophysics, and there is no documented test showing that detailed VIP biophysics changes macroscopic circuit predictions in a way that overturns canonical conclusions.
 :::
 
-## 12.2 Rate, mean-field, and spiking network models with VIP–SST–PV–PYR architecture
+## Rate, mean-field, and spiking network models with VIP–SST–PV–PYR architecture
 
 Once the VIP cell is abstracted to a rate unit or a leaky integrate-and-fire population, the model space becomes much richer and much more homogeneous. Many cortical VIP-containing network models published since 2018 adopt a similar four-population skeleton — pyramidal, PV, SST, VIP — wiring VIP→SST inhibitorily, SST→dendrite of PYR inhibitorily, and PV→PYR perisomatically inhibitorily, and letting PYR excite all three interneuron classes (reviewed in {cite:p}`Hertag2019,Hahn2022`; see also, e.g., {cite:p}`Wagatsuma2022a,Huang2025,Jiang2024a,Moreni2025a,Wagatsuma2025`). The cell classes named in this recurring skeleton match the three interneuron populations identified in {ref}`sec-synaptic-connectivity` and the canonical motif of {ref}`sec-circuit-motifs`.
 
@@ -133,13 +133,13 @@ The key empirical phenomena that these rate and spiking networks have been used 
 Across the 18 models tabulated in {numref}`fig-sec12-model-architecture-landscape`, "canonical VIP→SST→PYR" means the *sign* of three connections is fixed: VIP→SST inhibitory, SST→PYR (dendrite) inhibitory, PV→PYR (soma) inhibitory. It does *not* uniquely specify: (i) the sign and strength of VIP→PV connections (some models include a weak VIP→PV inhibition, others omit it); (ii) VIP↔VIP recurrent connectivity; (iii) SST→VIP connectivity, which {cite:t}`Hertag2019` make bidirectional but {cite:t}`Wagatsuma2022a` treat as weak; (iv) PYR→VIP driving strength relative to top-down inputs. These parameters are the main knobs by which models fit different datasets, and cross-study comparison should be read with this in mind.
 :::
 
-### 12.2.1 Large-scale biophysical and data-driven models
+### Large-scale biophysical and data-driven models
 
 At the other end of the abstraction scale, data-driven mesocircuit models — Blue Brain–style neocortex simulations and Allen V1/Potjans–Diesmann analogs — include VIP interneurons but treat them as one of several 5HT3a-derived populations rather than as a distinguished functional unit. {cite:t}`Reimann2026` and {cite:t}`Isbister2026` released anatomy- and physiology-constrained mesocircuit simulations in which VIP cells appear at population densities matched to experimental estimates, with connection probabilities drawn from the same datasets used to constrain PV and SST connectivity. These platforms are descriptive — they reproduce spontaneous and evoked statistics — but, with the partial exception of targeted VIP-perturbation simulations, they have not yet been used to derive VIP-specific predictions that differ from those of minimal four-population models. A related neuromorphic implementation ({cite:p}`Iqbal2024,Iqbal2025`) instantiates L2/3 circuit primitives on hardware, often with VIP simplified or abstracted.
 
 This raises the second major conflict. The scaffold explicitly flags c12-minimal-vs-detailed: whether minimal-architecture models outperform or match detailed Allen/mesocircuit-scale models on behavior-linked phenomena. To date, no peer-reviewed study has demonstrated that a detailed Allen V1–scale model captures a gain, oscillation or prediction-error phenomenon that a minimal rate or LIF four-population model fails to reproduce qualitatively. The large-scale models ({cite:p}`Reimann2026,Isbister2026`) buy better anatomical realism and have demonstrated predictive contributions within their validated domains; however, whether they offer broader predictive leverage across a wider range of VIP-related phenomena compared to minimal architectures remains to be established. This is a non-trivial state for the field to occupy — it means that computational-cost arguments and parameter-count arguments may currently favor minimal architectures for some VIP questions, unless and until a mesocircuit simulation produces a falsifiable prediction that a minimal model cannot.
 
-## 12.3 Disinhibition as gain modulation: predictions and tests
+## Disinhibition as gain modulation: predictions and tests
 
 The single most-tested computational claim in the VIP literature is that VIP-driven disinhibition implements a multiplicative gain on pyramidal responses. Gain here has a precise meaning: it is the slope of the input–output curve of the pyramidal population, operationally measured as the change in firing-rate response to a fixed sensory drive when a top-down signal engages VIP. The four-population rate models {cite:p}`Hertag2019` and the spiking microcircuit models {cite:p}`Wagatsuma2022a,Moreni2025a` reproduce gain modulation qualitatively; {cite:t}`Huang2025`, using a firing-rate model, reproduces expectation suppression via inhibitory interneurons rather than gain modulation per se, while {cite:t}`Wagatsuma2025` reports E/I-balance-dependent modulation of oscillatory dynamics and information flow rather than gain modulation in the traditional sense. The open questions are (i) whether the gain change is multiplicative or additive, (ii) whether disinhibition is necessary or merely sufficient, and (iii) whether the empirically observed gain correlates with VIP activity in the way that models predict.
 
@@ -151,7 +151,7 @@ The third question — does the empirically observed gain actually correlate wit
 
 A model-mechanism dissociation worth naming explicitly: in {cite:t}`Rademacher2025`'s rate model of ketamine-induced gamma changes, the PV and SST interneurons together account for the observed MEG gamma-band shifts without requiring VIP-specific gain changes. The model does not deny that VIP matters; it shows that the particular experimental signature — ketamine-induced gamma increase — is explicable with the PV/SST arm of the canonical circuit alone. The methodological lesson is that matching a single empirical signature is a weak test of whether a model's VIP component is doing causal work.
 
-## 12.4 Predictive-coding, top-down, and reinforcement-learning models with VIP
+## Predictive-coding, top-down, and reinforcement-learning models with VIP
 
 The predictive-coding family is where the VIP-circuit modeling literature has made its boldest commitments. The canonical claim is that negative and positive prediction-error neurons in layer 2/3 are implemented by specific interneuron motifs — and the open dispute is *which* motif. {cite:t}`Hertag2020` proposed that a canonical interneuron motif (PYR, PV, SST, VIP) with dendritic compartmentalization and a three-factor plasticity rule produces prediction-error neurons — both negative-error (firing when input is less than predicted) and positive-error (firing when input exceeds prediction) — in layer 2/3. VIP plays a distinctive role: it disinhibits the dendritic compartment of PYR cells in response to top-down prediction signals, so that the mismatch between top-down and bottom-up drive is read out at the PYR soma as a prediction error.
 
@@ -165,13 +165,13 @@ The practical upshot is that four-plus model architectures — {cite:p}`Hertag20
 
 The cross-reference back to {ref}`sec-in-vivo-behavior` is important: models in the RL family are typically validated against a narrow set of in-vivo experiments (mouse V1 attentional tasks, mPFC reward tasks), and those experiments inherit the regional and subtype heterogeneity problems that {ref}`sec-in-vivo-behavior` catalogs.
 
-## 12.5 Plasticity-centered VIP-circuit models
+## Plasticity-centered VIP-circuit models
 
 Plasticity is where model architectures diverge most sharply in their commitments. Static-weight models treat the VIP→SST→PYR arrow as a hardwired routing scheme; plasticity-centered models ask which synapses must be modifiable and under what rule for the observed circuit behavior to emerge. {cite:t}`Schulz2021` introduced an inhibitory-plasticity model in which novelty responses emerge from selective strengthening of inhibitory-to-excitatory synapses via a spike-timing-dependent rule that implements negative feedback, with disinhibition proposed to regulate the amplification of novelty responses. {cite:t}`Jiang2024a` paired a layered architecture with cell-type-specific short-term plasticity; in their model, STP modulates cell-type-specific stimulation responses and can reproduce sensory responses of specific interneuron types. {cite:t}`Moreni2025b` augmented the layered column with STDP and inhibitory plasticity together and found that VIP-containing circuits sustain oscillations across a wider operating regime than non-plastic controls. {cite:t}`Jabonska2025a` addressed interneuron-specific synaptic plasticity rules that modify the canonical motif.
 
 Two substantive conflicts emerge in this subfield. First, {cite:t}`Favila2025` — working in amygdala rather than cortex — reports *heterogeneous* plasticity across interneuron subtypes during associative learning, with VIP showing a distinctive pattern relative to PV and SST. The audit excluded this paper from the cortical taxonomy figure for scope reasons, but its cross-species/cross-region message is relevant: cortical plasticity models that assume homogeneous rules across VIP populations may be under-specifying a heterogeneity that exists in at least one limbic analog. Second, several cortical plasticity schemes — inhibitory plasticity ({cite:p}`Schulz2021`), STP-modulated network dynamics ({cite:p}`Jiang2024a`) and STDP/STP ({cite:p}`Moreni2025b`), and three-factor or prediction-error-modulated Hebbian learning ({cite:p}`Hertag2020,Sharafeldin2025,Lee2025`) — each propose to account for a subset of learning-phenotype data, and no published study has done the pairwise falsification experiment (matched stimulus protocol, matched circuit readout, cell-type-specific perturbation) to adjudicate among them.
 
-## 12.6 Oscillations: VIP in gamma- and beta-band regimes
+## Oscillations: VIP in gamma- and beta-band regimes
 
 Oscillatory phenomenology is a primary target of spiking network models with VIP ({cite:p}`Wagatsuma2022a,Hahn2022,Rademacher2025,Moreni2025b,Veit2023`) and firing-rate network models ({cite:p}`Lee2025`). The bidirectional cross-reference to {ref}`sec-oscillations` makes this a natural place to compare two recent contributions — {cite:t}`Veit2023` and {cite:t}`Lee2025` — whose oscillation-level framings differ in sign and scope, though the disagreement is not supported by the evidence package as a full model–experiment conflict on par with the three enumerated in §12.8.
 
@@ -179,7 +179,7 @@ Oscillatory phenomenology is a primary target of spiking network models with VIP
 
 {cite:t}`ReynerParra2022` proposes a formal result: in a minimal E/I network, communication effectiveness depends on whether the input frequency is higher than the natural gamma cycle, which is shaped by the interplay of excitatory drive and inhibitory synaptic timing. This suggests that an apparently direction-disagreeing result between two labs may reflect operating in different parts of a frequency-matching manifold. Together, {cite:t}`ReynerParra2022` and {cite:t}`Sengupta2025` may be read as suggesting that oscillation direction depends on *circuit regime* rather than being solely a *cell-type property*, though neither paper frames its conclusions in exactly those terms.
 
-## 12.7 Assumptions, limitations, and what models actually explain
+## Assumptions, limitations, and what models actually explain
 
 Five assumptions recur across nearly all of the models tabulated in {numref}`fig-sec12-model-architecture-landscape`, and it is worth naming them because they bound the explanatory reach of the field.
 
@@ -198,7 +198,7 @@ Against this list of limitations, the accounting of what models *do* explain is 
 The following paired perturbation–readout tests would move the field. (i) STP-gated response reversal vs three-factor predictive coding: matched mismatch paradigm with a single-circuit readout that distinguishes a VIP-necessary from a VIP-sufficient prediction-error motif ({cite:p}`Hertag2020` vs {cite:p}`Waitzmann2024`, whose model proposes STP-gated response reversal rather than a predictive-coding architecture per se). (ii) PV-driven vs VIP-driven gain during locomotion: freeze PV gain in silico/in vivo and measure whether VIP-mediated gain persists ({cite:p}`Hahn2022` vs {cite:p}`Dipoppa2018`, whose model attributes locomotor gain to changes in feedforward and recurrent synaptic weights rather than exclusively VIP-driven mechanisms). (iii) Minimal-vs-detailed architecture: a region-matched task-linked prediction for which a feed-forward-dominated minimal V1 model and a layered three-interneuron model with cell-type-specific STP give measurably different effect sizes (e.g., {cite:p}`Moreni2025a`, which implements a layered V1 spiking model with three interneuron types, vs {cite:p}`Jiang2024a`).
 :::
 
-## 12.8 Model–experiment correspondence and falsification
+## Model–experiment correspondence and falsification
 
 What would decisive adjudication look like? For each of the three conflicts surfaced by the evidence package, a falsification test can be specified in terms of measurable quantities, but none of those tests is yet operational in the literature.
 
@@ -216,7 +216,7 @@ A fifth, less obvious conflict bears brief mention: the {cite:t}`Preuss2025` fin
 
 Where a modeling claim in this section rests on a preprint or abstract-only record (notably {cite:p}`Waitzmann2023,Kim2025b,MyersJoseph2022`), we cite those sources as the authors' earliest statement of the claim and note the access status in the architectural landscape figure. Where full text was available ({cite:p}`Hertag2020,Wagatsuma2022a,Wagatsuma2022b,Huang2025,Jiang2024a,Hahn2022,Lee2025,Moreni2025a,Moreni2025b,Rademacher2025,Schulz2021,Waitzmann2024,Sharafeldin2025,Ito2024,Jabonska2025a,Nemati2025,Sengupta2025,ReynerParra2022,Meng2023,Bilash2023,Bernaerts2025,Cattani2024,Veit2023,Keller2020a`), the architectural fields in {numref}`fig-sec12-model-architecture-landscape` were extracted from the published methods and main text of the corresponding paper rather than from abstract-level summaries. {cite:p}`Moreno2026` was consulted for its experimental electrophysiology data rather than for model architecture fields.
 
-## 12.9 Looking ahead
+## Looking ahead
 
 The computational-models class occupies an uncomfortable position in the review's argument arc. It fits Act 3 because model–data correspondence is how the field decides what a heterogeneous cell class actually *does*, but the current state of the literature is that models can be made to fit almost any single experimental phenomenon about VIP, and the classes of model (rate, spiking, laminar, predictive-coding, RL, plasticity) do not partition cleanly by mechanism. Two shifts would break the deadlock. First, models that *commit* to VIP subtype heterogeneity — bipolar vs basket vs cholinergic VIP — as separate dynamical populations, because this is where the empirical data points, and because such commitment would generate testable within-class dissociations. Second, pre-registered cross-lab perturbation experiments aimed at the three conflicts enumerated above, with shared analysis pipelines. Neither shift requires new modeling mathematics; both require changes to how modelers and experimentalists jointly operate.
 

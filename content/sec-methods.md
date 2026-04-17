@@ -17,7 +17,7 @@ tables, conflict registers, figure plans, BibTeX, section drafts, critic
 reports — were persisted as versioned artifacts so that the full provenance
 chain of every claim is inspectable.
 
-## 1. Evidence Gathering (Phase 2)
+## Evidence Gathering (Phase 2)
 
 The evidence base was assembled by the LITREVIEW agent, with domain enrichment
 from BIOKNOWLEDGE. Three primary databases were queried in parallel: PubMed
@@ -49,7 +49,7 @@ with thinner primary-literature coverage (e.g., primate/human VIP circuits)
 were supplemented by BIOKNOWLEDGE with cross-referenced transcriptomic
 atlases and developmental lineage databases.
 
-## 2. Clustering and Conflict Normalization (Phases 3–4)
+## Clustering and Conflict Normalization (Phases 3–4)
 
 The fourteen evidence clusters were constructed by topic-modeling the abstract
 corpus, then curated by hand against the review outline to ensure that each
@@ -72,7 +72,7 @@ Seventy normalized conflicts were ultimately registered. This register drove
 the conflict admonitions embedded in each body section and ensured that
 disagreements were represented rather than silently harmonized.
 
-## 3. Citation Infrastructure (Phase 5)
+## Citation Infrastructure (Phase 5)
 
 Citation metadata was built by the DATAML agent. Every DOI in the surviving
 corpus was resolved against CrossRef; 857 unique DOIs were confirmed, with a
@@ -86,7 +86,7 @@ normalization applied. The citation key map was pinned as the single source of
 truth for all downstream writing agents, preventing citation key drift across
 the twelve parallel writer contexts.
 
-## 4. Scaffold Construction (Phase 6)
+## Scaffold Construction (Phase 6)
 
 A structured scaffold was generated for each of the fourteen body sections.
 Each section scaffold specified: the top-level claims the section would
@@ -100,7 +100,7 @@ panels, comparative morphology, and conceptual syntheses. The seventy
 conflicts from the normalization pass were distributed across the scaffolds
 such that no conflict was orphaned and no section was overloaded.
 
-## 5. Figure Audit and Redesign (Phase 6.5)
+## Figure Audit and Redesign (Phase 6.5)
 
 Before any section prose was written, the figure master plan was subjected to
 a parallel critic audit. Four independent critic batches reviewed the 28
@@ -116,7 +116,7 @@ figures, each paired with a reproducible-code dropdown so that the
 regeneration path from raw inputs to rendered panel is embedded in the
 published artifact.
 
-## 6. Section Writing (Phase 7)
+## Section Writing (Phase 7)
 
 Twelve writer agents were dispatched in parallel, one per body section
 (two shorter sections were merged into adjacent writers' scopes to keep the
@@ -131,7 +131,7 @@ disagreement; and set a target length of 3,000–5,000 words per section.
 Writers were sandboxed from each other to prevent cross-contamination of
 narrative voice and to permit true parallel execution.
 
-## 7. Critic Protocol (Phase 8)
+## Critic Protocol (Phase 8)
 
 Each completed section was handed to a dedicated blinded critic agent —
 twelve critics in total, matched to the twelve writers but not sharing
@@ -154,7 +154,7 @@ mandate, preventing inadvertent rewriting of passages outside the flagged
 spans. SHOULD_FIX items were applied in batch during the integration phase;
 NICE_TO_FIX items were logged and triaged against remaining budget.
 
-## 8. Integration and Verification (Phases 9–19)
+## Integration and Verification (Phases 9–19)
 
 The post-writing phases handled cross-section coherence and final
 verification.

@@ -27,7 +27,7 @@ settled than it looks, and {numref}`fig-sec3-tf-cascade` lays out the TF
 logic that connects CGE progenitors to the mature VIP types of {ref}`sec-molecular-identity`.
 
 (sec-03-cge-origin)=
-## 3.1 CGE origin and the TF cascade
+## CGE origin and the TF cascade
 
 ### Setting the scene: the CGE as the VIP homeland
 
@@ -382,7 +382,7 @@ save_figure(fig, "figures/sec-03/fig_sec3_vip_tf_cascade_qualitative.png", dpi=3
 :::
 
 (sec-03-migration)=
-## 3.2 Tangential and radial migration to cortex and hippocampus
+## Tangential and radial migration to cortex and hippocampus
 
 ### The route out of the subpallium
 
@@ -490,7 +490,7 @@ and flag the LGE contribution as an open question that should be
 reconciled with clonal and scRNA-seq data.
 
 (sec-03-postnatal-maturation)=
-## 3.3 Postnatal maturation of intrinsic and synaptic properties
+## Postnatal maturation of intrinsic and synaptic properties
 
 ### A month-long electrical handshake
 
@@ -572,7 +572,7 @@ onto a specific axis of refinement rather than onto a single molecular
 lesion.
 
 (sec-03-critical-periods)=
-## 3.4 Activity-dependent refinement during critical periods
+## Activity-dependent refinement during critical periods
 
 ### VIP cells as modulators and targets of early activity
 
@@ -672,7 +672,7 @@ lower than the peak-density value observed during the first postnatal
 week.
 
 (sec-03-fate-mapping)=
-## 3.5 Fate mapping and lineage disputes
+## Fate mapping and lineage disputes
 
 ### The orthogonal methods that lineage tracing now requires
 

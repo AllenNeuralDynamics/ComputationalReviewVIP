@@ -8,7 +8,7 @@ numbering:
 (sec-morphological-diversity)=
 # Morphological Diversity
 
-## 4.1 From a single cartoon cell to a morphological population
+## From a single cartoon cell to a morphological population
 
 The developmental program catalogued in {ref}`sec-development` — a CGE-born, superficially-fated population that acquires adult firing and wiring properties only after a month of activity-shaped refinement — sets up the adult morphological question that this section takes up. The canonical cartoon of a VIP interneuron — a slender vertical bipolar cell with a narrow dendritic tuft in layer 1 and a long descending axon that reaches deep layers — has been enormously productive. It provided the shorthand that let circuit-level studies frame VIP cells as a cortical "disinhibitory conduit" and broadly organized a generation of optogenetic dissections {cite:p}`Tremblay2016,Rudy2010,Pfeffer2013`. But that cartoon is a consensus caricature, not a morphological census. Classical single-cell reconstructions, patch-seq surveys, and automated reconstructions now show that the VIP population contains at least three coexisting dendritic plans — bipolar/bitufted, multipolar, and basket-like — each coupled to its own axonal arbor geometry and to distinguishable transcriptomic neighbourhoods {cite:p}`Cauli1997,Cauli2014,Vucurovic2010,Obermayer2019,Gouwens2020a,Scala2020`, though Vucurovic2010 has been interpreted as largely describing two 5-HT3A populations rather than three plans within VIP cells specifically. Whether this heterogeneity represents discrete subtypes, a continuum, or a mixture depending on brain region is the central tension of this section, and it recurs as a dispute between transcriptomic clustering and Patch-seq morpho-electric data {cite:p}`Yao2021a,Scala2020,Mao2024`.
 
@@ -23,15 +23,15 @@ Five claims organize the section and recur as anchors:
 5. Regional morphology differs systematically between cortex, hippocampus, amygdala, and striatum, and that difference is not noise — it reflects local developmental and circuit constraints {cite:p}`Rhomberg2018,Booker2018`, though Booker2018 largely addresses hippocampal interneurons and has been interpreted as supporting this view broadly.
 
 
-## 4.2 Dendritic architectures: bipolar, bitufted, multipolar, basket
+## Dendritic architectures: bipolar, bitufted, multipolar, basket
 
-### 4.2.1 The bipolar/bitufted morphotype
+### The bipolar/bitufted morphotype
 
 The bipolar morphotype — two opposing primary dendrites emerging vertically from a small ovoid soma and branching sparsely within a narrow radial column — is the class the early light-microscope literature used to identify VIP-like cells across multiple species {cite:p}`Cauli1997,Cauli2014,Rudy2010,Tremblay2016`. Classical whole-cell recordings combined with single-cell RT-PCR first molecularly identified VIP-immunoreactive cells in rat sensory-motor cortex {cite:p}`Cauli1997`; subsequent morphological reviews formalized the association between the vertically oriented bipolar-like dendritic tree and the descending, translaminar axonal arborization reaching deep cortical layers {cite:p}`Cauli2014`. Single-cell transcript profiling confirmed that cells with this dendritic plan predominantly expressed the VIP/calretinin combination and projected toward layer 5 SST neurons {cite:p}`Cauli1997`. In mouse medial prefrontal cortex, unbiased molecular clustering using RT-PCR coupled to morphological reconstruction produced a VIP-cluster in which the large majority of cells showed bipolar somatodendritic morphology with descending axonal arborization — morphological traits that matched the canonical rat VIP-expressing interneuron {cite:p}`Vucurovic2010`.
 
 Bitufted cells — with two compact dendritic tufts emerging from the top and bottom of the soma — are morphologically close to bipolar cells and are often grouped together in the literature; some classifications distinguish them only by the symmetry and compactness of the dendritic tufts rather than by a categorical break {cite:p}`Cauli2014,Jiang2015`. In Jiang and colleagues' large-scale multi-patch survey of mouse V1 layer 2/3 interneurons, bipolar cells (BPCs) and bitufted cells (BTCs) were recorded and reconstructed as two of seven morphological classes — a practical distinction that survives quantitative analysis of primary-dendrite number and orientation {cite:p}`Jiang2015`. VIP cells were prominent within the bipolar class, but not exclusive to it; a substantial fraction of bitufted cells were also VIP-positive.
 
-### 4.2.2 Multipolar VIP cells: a non-negligible minority
+### Multipolar VIP cells: a non-negligible minority
 
 A recurring finding across multiple surveys is that a non-negligible fraction of VIP-expressing interneurons have multipolar dendrites — four or more primary dendrites radiating roughly isotropically from the soma — with axonal arbors that are often more local and less translaminar than the bipolar type {cite:p}`Obermayer2019,Gouwens2020a,Rudy2010`. The canonical Rudy/Fishell review itself acknowledges that "several types of VIP interneurons" exist, "including neurons with bipolar, bitufted, and multipolar morphologies expressing different markers and exhibiting different intrinsic electrophysiological properties" {cite:p}`Rudy2010`. The review language is permissive; the figure captions, which most readers cite, are not — and this is where the classic textbook reduction to "VIP = bipolar" enters the literature.
 
@@ -43,41 +43,41 @@ The Tremblay, Lee & Rudy (2016) review frames the VIP population as "large major
 
 :::
 
-### 4.2.3 VIP basket cells: a forgotten category
+### VIP basket cells: a forgotten category
 
 A third dendritic form — locally arborizing basket-like cells whose axon forms perisomatic pericellular baskets on pyramidal cells — constitutes a smaller but functionally important fraction of the VIP population and has historically been mislabelled as CCK cells because of overlapping markers, a characterization that has been interpreted as largely based on other lines of evidence {cite:p}`Tremblay2016,Rhomberg2018,Tyan2014`. These are likely the cells the older literature referred to as "small CCK basket cells", which, in contrast to the typical vertically oriented translaminar axonal arbor of Vip bipolar cells, have rather local axonal arbors {cite:p}`Tremblay2016`. In frontal cortex, Guet-McCreight et al. (2020) classify VIP+ cells based on morphology into bipolar cells, double bouquet cells, small basket cells, and arcade cells — with small basket cells showing rounder somata and smaller somatic diameters than the classical bipolar type {cite:p}`GuetMcCreight2020`.
 
 The existence of a VIP basket-cell subpopulation has the practical consequence that not every VIP-driven inhibitory postsynaptic current reflects the disinhibitory canonical circuit motif — some VIP cells inhibit pyramidal neurons directly at the soma {cite:p}`Tyan2014,Rhomberg2018`. Tyan and colleagues demonstrated that VIP-positive basket cells in hippocampus CA1 provided perisomatic inhibition to CA1 pyramidal neurons with asynchronous GABA release and were not connected with oriens/alveus interneurons — the opposite connectivity profile of canonical disinhibitory VIP cells {cite:p}`Tyan2014`. We return to the circuit consequences of this dendritic–connectivity mapping in {ref}`sec-synaptic-connectivity`.
 
 
-## 4.3 Axonal arborization and laminar targeting
+## Axonal arborization and laminar targeting
 
-### 4.3.1 Type-1, type-2, type-3 axonal arbors
+### Type-1, type-2, type-3 axonal arbors
 
 Dendrites define what a cell can see; axons define what it can do. Karagiannis and colleagues provided the most systematic classification of VIP axonal arbors in rat frontal cortex, distinguishing three patterns: (i) type-1 cells with a dense, columnar axonal arbor staying within approximately two cortical columns around the soma and concentrated in L2/3–5; (ii) type-2 cells with a descending, translaminar axonal arbor reaching layer 6; and (iii) type-3 cells with more diffuse, multidirectional axonal arbors. These axonal patterns mapped imperfectly onto the VIP/calretinin vs VIP/cholecystokinin molecular split: downstream syntheses associate type-1 arbors with VIP/CCK basket-like phenotypes preferentially targeting pyramidal cell somata, and type-2/3 arbors with the VIP/CR translaminar phenotype that preferentially contacts SST interneuron dendrites — a mapping consistent with the Karagiannis typology but anchored most explicitly in downstream reviews that may broadly reflect the bipolar/small-basket/arcade nomenclature in frontal cortex {cite:p}`Karagiannis2009,Cauli2014,GuetMcCreight2020`.
 
 The Karagiannis typology has aged well. Subsequent Patch-seq and automated reconstruction studies recovered the same axonal axis as the first or second principal component of morphometric variation {cite:p}`Gouwens2020a,Scala2020`. Cauli's 2014 review of neocortical GABAergic interneuron classification summarized the consensus view: bipolar or bitufted dendritic trees are mostly accompanied by vertical translaminar axonal arbors, whereas multipolar dendritic trees go along with local axonal arbors that stay within the home layer or extend laterally {cite:p}`Cauli2014`. This dendritic–axonal covariation is why morphology and circuit function can be loosely predicted from dendritic form alone, but only loosely: exceptions (multipolar cells with translaminar axons; bipolar cells with basket-like axons) are recurrent enough to defeat strict classification rules {cite:p}`Gouwens2020a`, and similar morpho-etype mismatches have been observed in modeling studies, suggesting that such exceptions may be more common than strict typologies imply {cite:p}`GuetMcCreight2020`.
 
-### 4.3.2 Layer 2/3 VIP cells and descending columns
+### Layer 2/3 VIP cells and descending columns
 
 Most modern circuit studies focus on layer 2/3 VIP cells, whose descending axons reach deep layers and whose somatostatin-targeting output largely underwrites the disinhibitory circuit motif. In the mouse motor cortex, layer 2/3 VIP cells appear to possess axonal arborizations that extend downward to the layer 6/white matter boundary, with distinct transcriptomic subtypes (e.g., Vip-Rspo1-Itga4 and Vip-Ptprt-Pkp2) displaying regular versus irregular-spiking and slightly different axon trajectories {cite:p}`Mao2024`. The layer 2/3 VIP cell is thus broadly the archetype of the type-2/3 axonal arbor, and this layer has provided the majority of the morphological reconstructions that may have been used to parametrize population-level models of cortical VIP cells {cite:p}`Pfeffer2013,Karnani2016a,Mao2024`.
 
 Preuss and colleagues recently summarized the complementary layer-5 picture in somatosensory cortex: all L5 SST interneurons resemble Martinotti cells, PV interneurons resemble basket cells, and VIP interneurons can be considered as bipolar–bitufted cells with descending axons — preserving the L2/3 morphological template even in deeper layers {cite:p}`Preuss2025`. The within-layer uniformity but across-layer specificity in this study reinforces that layer position imposes a strong geometric constraint on axonal trajectory but does not, by itself, change the dendritic template.
 
-### 4.3.3 Long-range projecting VIP cells (VIP-LRP)
+### Long-range projecting VIP cells (VIP-LRP)
 
 A decisive reframing of the VIP axonal repertoire came from the discovery of long-range projecting VIP interneurons (VIP-LRP) in the hippocampus. Nahar and colleagues reported that molecular classification of interneurons is usually framed through five subgroups — parvalbumin, somatostatin, neuropeptide Y, vasoactive intestinal peptide, and the 5-HT3A receptor — but that functional long-range output was absent from this taxonomy {cite:p}`Rudy2010`. VIP-LRP cells extend axons across hippocampal subregions and, in some cases, to extrahippocampal targets, and they show sparser local axonal collaterals than standard VIP cells while retaining the bipolar or bitufted dendritic morphology characteristic of the broader VIP family {cite:p}`Francavilla2018`.
 
 Mao and colleagues, reviewing recent Patch-seq and retrograde-labelling data, noted that a subset of cortical inhibitory cells may also show long-range axons with targets outside the local circuit — a finding that has been interpreted as blurring the line between "interneuron" and "projection neuron," though VIP cells were not specifically highlighted {cite:p}`Mao2024`. The practical consequence for morphological classification is that axonal reconstructions limited to the local slice may systematically underestimate the range of VIP axonal output, since long-range collaterals are routinely truncated at the slice boundary {cite:p}`Luo2019,Mao2024`. We discuss the circuit-level consequences of VIP-LRP for regional coordination in {ref}`sec-synaptic-connectivity`.
 
 
-## 4.4 Regional comparison: cortex, hippocampus, amygdala, striatum
+## Regional comparison: cortex, hippocampus, amygdala, striatum
 
-### 4.4.1 Neocortex
+### Neocortex
 
 The morphological classes described in §4.2–§4.3 derive overwhelmingly from neocortex, and especially from primary sensory and motor areas. Within neocortex, bipolar/bitufted cells with descending translaminar axons are the plurality across L2/3–5, with multipolar and basket-like VIP cells adding a non-trivial minority (aggregate cross-study estimates on the order of one-third, with substantial area and layer variation) {cite:p}`Cauli2014,Obermayer2019,Gouwens2020a`. Prefrontal cortex, which has been especially well studied for disinhibitory motifs, shows the same morphological spectrum {cite:p}`Obermayer2019,GuetMcCreight2020`. Frontal-cortex VIP cells are enriched for bipolar, double-bouquet, small basket, and arcade cell morphologies {cite:p}`GuetMcCreight2020`. The regional uniformity of this morphological spectrum across cortex — despite substantial differences in absolute VIP cell density and laminar distribution — is itself a notable finding that supports the view of VIP cells as a CGE-derived class with a conserved developmental morphological program {cite:p}`Miyoshi2010,Tricoire2012`.
 
-### 4.4.2 Hippocampus: VIP cells as a CCK-rich, basket-dominated population
+### Hippocampus: VIP cells as a CCK-rich, basket-dominated population
 
 Hippocampal VIP cells inhabit a different morphological landscape. Booker and Vida's review of hippocampal CCK basket cells notes that CCK basket cells can be subdivided based on (i) co-expression of the neuropeptide VIP, with somata localized to distal stratum radiatum, or (ii) expression of VGluT3 at their axon terminals — and these two CCK subtypes have distinct electrophysiology and developmental origins {cite:p}`Booker2018`. VIP-positive basket cells thus constitute a larger fraction of the hippocampal VIP population than their cortical counterparts, and their axonal arbors are concentrated in the pyramidal cell layer rather than descending across laminae {cite:p}`Booker2018,Tyan2014`.
 
@@ -85,7 +85,7 @@ Dudok and colleagues, performing in vivo imaging with simultaneous electrophysio
 
 Within hippocampal VIP cells, a further morphological split separates VIP/M2R interneuron-selective cells with type-3-like morphology from VIP-LRP cells with sparser local and denser long-range axonal output {cite:p}`Tyan2014`.
 
-### 4.4.3 Amygdala: structural heterogeneity and disinhibition
+### Amygdala: structural heterogeneity and disinhibition
 
 The amygdala provides a particularly clear example of within-region VIP morphological heterogeneity. Rhomberg and colleagues demonstrated that VIP+ interneurons in the mouse basolateral amygdala are structurally and functionally heterogeneous, comprising both interneuron-selective cells and basket cells with distinct connectivity patterns; VIP+ basket cell optogenetic activation evoked direct, CB1-sensitive IPSPs in ~20% of principal neurons tested, establishing that a subset of VIP cells provides perisomatic inhibition (not disinhibition) in the basolateral amygdala {cite:p}`Rhomberg2018`. By contrast, Krabbe and colleagues showed that a subset of amygdala VIP cells is strongly activated by aversive cues and provides a disinhibitory signal necessary for associative fear learning — framing the amygdala VIP population as a functional whole, not a morphological collection {cite:p}`Krabbe2019`.
 
@@ -95,18 +95,18 @@ Krabbe et al. (2019) treat amygdala VIP cells as a unified disinhibitory gate fo
 
 :::
 
-### 4.4.4 Striatum and other structures
+### Striatum and other structures
 
 Striatal VIP-expressing interneurons are a small and relatively understudied population with aspiny dendritic morphology and axons that remain local within the striatum. These cells are developmentally related to cortical CGE-derived VIP cells but show morphological adaptations to the dense striatal neuropil, including shorter primary dendrites and more restricted axonal arbors. The scarcity of morphological reconstructions in striatum relative to cortex and hippocampus is a recognized gap that recent patch-seq efforts have begun to address.
 
 
-## 4.5 Quantitative morphometrics, firing-pattern correspondence, and automated classification
+## Quantitative morphometrics, firing-pattern correspondence, and automated classification
 
-### 4.5.1 Morphometric features
+### Morphometric features
 
 Morphological classification has moved from qualitative assignment based on camera-lucida sketches to high-throughput quantitative morphometrics based on automated 3D reconstruction. Standard feature sets include total dendritic length (~0.5–3 mm for VIP cells), axonal total length (often exceeding 10 mm for type-2/3 translaminar cells), number of primary dendrites (2 for bipolar, 4+ for multipolar), Sholl-intersection profiles, axonal laminar density, and axonal column width {cite:p}`Scala2020,Gouwens2020a`. Ljungquist and colleagues noted that since the earliest drawings of Cajal, the branching morphology of neural arbors has been recognized to underlie functional role — and modern work operationalizes this intuition through quantitative feature extraction {cite:p}`Ljungquist2022`. These features feed directly into clustering and classifier pipelines that are now the standard backbone of morphological taxonomy {cite:p}`Gouwens2020a,Scala2020`.
 
-### 4.5.2 Firing patterns and their relationship to morphology
+### Firing patterns and their relationship to morphology
 
 Firing pattern is a second quantitative phenotype that has been used to infer morphology indirectly, often with unreliable results. Two commonly-cited studies illustrate the problem with averaging firing-pattern statistics across studies. Vucurovic and colleagues, sampling cells that clustered molecularly as VIP, reported that 68% were adapting and 32% were bursting — a P(firing | VIP) statistic based on n=22 VIP-cluster cells from 12 animals {cite:p}`Vucurovic2010`. Cadwell and colleagues, working in the complementary direction from firing pattern to VIP marker status in layer 1, reported that roughly 20% of burst-spiking cells were VIP+ — a P(VIP | burst) statistic {cite:p}`Cadwell2015`. These two numbers are reported side-by-side in derivative summaries as if they described the same underlying quantity. They do not.
 
@@ -126,7 +126,7 @@ Bayes' rule connects the two conditional probabilities: P(burst | VIP) = P(VIP |
 
 :::
 
-### 4.5.3 Automated classifiers
+### Automated classifiers
 
 Machine-learning classifiers now routinely integrate morphological features with electrophysiological and transcriptomic features to produce multi-modal cell-type assignments. Gouwens and colleagues trained a hierarchical classifier on their 955-cell Patch-seq dataset from mouse MOp and recovered the Vip subclass as a tight cluster in the joint morpho-electric-transcriptomic space, subdivided into bipolar, bitufted, and multipolar cells as robust second-order categories. Scala and colleagues extended this approach to mouse motor cortex with n≈1,300 Patch-seq cells and found that morpho-electric properties vary continuously along the transcriptomic landscape, with neighboring t-types lacking clear boundaries {cite:p}`Scala2020`. This observation may directly contradicts the discrete-type framing of large transcriptomic-only surveys such as the Allen isocortex+HPF taxonomy, which largely discusses both discrete clusters and continuous variation, and generates the second major conflict of the section {cite:p}`Yao2021a,Scala2020`.
 
@@ -136,7 +136,7 @@ Transcriptomic-only clustering studies using scRNA-seq (e.g., Tasic 2018 and its
 
 :::
 
-### 4.5.4 How many groups? The three-group vs four-group controversy
+### How many groups? The three-group vs four-group controversy
 
 The textbook partition of cortical GABAergic interneurons into three non-overlapping groups — PV, SST, and 5HT3aR-expressing (including VIP) — accounts for "nearly 100%" of neocortical GABAergic neurons in the Rudy et al. 2011 formulation {cite:p}`Rudy2010`. Machold and colleagues identified an Id2-expressing GABAergic population as a fourth major cortical inhibitory group, distinct from PV, SST, and VIP, and argued that the original three-group partition is incomplete {cite:p}`Machold2023`. The Id2 cells include interneuron-selective and basket-like cells with morphologies partly overlapping with CGE-derived VIP cells but with distinct axonal arborization and molecular markers; Id2+ cells showed significantly longer dendrites and a less symmetrical and much less dense axonal arborization than neurogliaform cells, consistent with the published morphologies of CCK basket cells {cite:p}`Machold2023`.
 
@@ -146,13 +146,13 @@ Rudy et al. (2011) claim that three groups — PV, SST, and 5HT3aR-expressing in
 
 :::
 
-## 4.6 Morphology–transcriptomics correspondence from Patch-seq
+## Morphology–transcriptomics correspondence from Patch-seq
 
-### 4.6.1 Patch-seq: the integrative method
+### Patch-seq: the integrative method
 
 Patch-seq — the combination of whole-cell patch-clamp recording, biocytin morphological reconstruction, and single-cell RNA sequencing on the same cell — has transformed morphological classification from a stand-alone activity into one arm of a three-modality integration {cite:p}`Cadwell2015,Fuzik2015,Gouwens2020a,Scala2020`. The first Patch-seq studies on cortical interneurons established the approach's feasibility; Cadwell and colleagues demonstrated that layer 1 contains two main morphological classes — elongated neurogliaform cells (eNGCs) and single bouquet cells (SBCs) — each with distinct firing patterns and connectivity profiles {cite:p}`Cadwell2015`. Fuzik and colleagues extended the approach to VIP cells specifically, identifying four I-type cell subgroups with broadly increasing Htr3a mRNA content from I-type 1 (no Htr3a expression) through I-type 4 (Vip+/Npy+, high Htr3a) {cite:p}`Fuzik2015`. These early studies provided proof-of-principle that morphology, electrophysiology, and transcriptomics could be mapped onto the same cells, enabling the integrative taxonomies that now largely dominate the field.
 
-### 4.6.2 Convergence and soft boundaries
+### Convergence and soft boundaries
 
 The large Patch-seq studies — Gouwens et al. (2020), Scala et al. (2020), BICCN (2021), and their derivatives — report three findings about morphology–transcriptomics correspondence {cite:p}`Gouwens2020a,Scala2020,BRAINInitiativeCellCensusNetworkBICCN2021`. First, morphological features track transcriptomic subclasses: VIP, SST, and PV subclasses each contain recognizable morphological phenotypes that are distinguishable from one another. Second, within each subclass, morphological features map onto transcriptomic t-types with detectable but imperfect correspondence — neighboring t-types often look morphologically similar, while distant t-types look morphologically different {cite:p}`Gouwens2020a`. Third, the boundaries between morphological classes within a subclass are softer than the boundaries between subclasses — for example, multipolar VIP cells may grade into bipolar VIP cells along a continuous axonal-arbor axis rather than separating into clean categories, consistent with observations of continuous morphological variation within interneuron subclasses {cite:p}`Scala2020,Mao2024`.
 
@@ -164,13 +164,13 @@ Chartrand et al. (2023) report that human L1 interneurons show greater transcrip
 
 :::
 
-### 4.6.3 Morphology predicts firing and molecular markers — with exceptions
+### Morphology predicts firing and molecular markers — with exceptions
 
 Consistent with the Karagiannis axonal typology (§4.3), Patch-seq studies report that VIP/CR cells and VIP/CCK cells have partially dissociable morphological signatures — VIP/CR cells enriched in type-2/3 axonal arbors targeting SST dendrites; VIP/CCK cells enriched in type-1 axonal arbors with basket-like contacts on pyramidal somata {cite:p}`GuetMcCreight2020,Gouwens2020a`. Taniguchi and colleagues had earlier noted that a significant number of VIP neurons coexpress CR and display bitufted/bipolar morphology {cite:p}`Taniguchi2014`. But the morphology–marker mapping is partial, not absolute: some VIP/CR cells have basket-like axons, some VIP/CCK cells have descending translaminar axons, and single-cell RNA sequencing now reveals co-expression of CR and CCK in subsets of cells that would previously have been assigned to one class or the other {cite:p}`Chartrand2023,Gouwens2020a`.
 
 Obermayer and colleagues noted that VIP interneurons in mouse medial prefrontal cortex have "either a bipolar or multipolar morphology" and express vasoactive intestinal peptide — framing the two morphologies as coexisting alternatives with roughly comparable frequency (~15% of a larger sample), not as a dominant-vs-minor asymmetry {cite:p}`Obermayer2019`. DeMarco Garcia and colleagues further documented that the total length of axonal arbors was significantly reduced in multipolar and bipolar calretinin+ interneurons, as well as in neurogliaform and dense-plexus reelin+ subtypes, while multipolar VIP+ interneuron axonal length was preserved — a developmentally acquired morphological stability that distinguishes VIP multipolar cells from other CGE-derived classes {cite:p}`DeMarcoGarcia2011`. These observations bear directly on §4.5's claim that the multipolar VIP cell is a quantitatively robust subclass, not a reconstruction artefact.
 
-## 4.7 Development and morphological ontogeny
+## Development and morphological ontogeny
 
 Developmental origin partly explains morphological heterogeneity. VIP cells derive from the caudal ganglionic eminence (CGE), together with 5HT3aR+ and reelin+ interneurons; their initiation (E12.5) and peak production (E16.5) occur approximately three days later than MGE-derived PV and SST cells {cite:p}`Miyoshi2010,Tricoire2012`. Dbx1-derived progenitors from the ventral preoptic area contribute to various interneuron classes including multipolar late-spiking NOS+ cells, neurogliaform cells, and bitufted/bipolar cells — demonstrating that interneuron morphology is partly specified by progenitor domain but with overlap between origins {cite:p}`Tricoire2012`. Chittajallu and colleagues characterized 5HT3A-GFP reporter mice and found that 5-HT3AR expression is highly restricted to CGE-derived calretinin (CR), vasoactive intestinal peptide (VIP), cholecystokinin (CCK), neuropeptide Y (NPY), and reelin (Re) cells in neocortex, providing a molecular marker for the CGE-derived lineage that includes the multipolar and basket-like VIP subtypes {cite:p}`Lee2010`.
 
@@ -182,21 +182,21 @@ Wong et al. (2018) argue that pyramidal-cell-derived glutamatergic activity regu
 
 :::
 
-## 4.8 Synthesis, caveats, and open questions
+## Synthesis, caveats, and open questions
 
-### 4.8.1 What the morphological data say
+### What the morphological data say
 
 The morphological picture that emerges from this review is the following. VIP interneurons are a CGE-derived class with at least three coexisting dendritic plans (bipolar/bitufted, multipolar, basket-like) and three coexisting axonal arbor patterns (type-1 columnar, type-2 descending translaminar, type-3 diffuse). The canonical "VIP = bipolar" description captures the plurality but not the totality; across systematic surveys a non-trivial fraction — on the order of one-third in aggregate, though no single study reports this quantity directly — of VIP cells have non-bipolar (multipolar, bitufted, or basket-like) morphology {cite:p}`Obermayer2019,Gouwens2020a,Rudy2010`. Axonal arbor pattern partially predicts molecular identity (VIP/CR vs VIP/CCK) and connectivity (SST-targeting vs pyramidal-targeting), but this mapping is loose enough that classification by morphology alone is not reliable at the level of individual cells {cite:p}`Cauli2014,Gouwens2020a`. Long-range projecting VIP cells constitute a small but distinct class with axons reaching targets outside the local circuit, and they are under-counted in slice-based reconstructions {cite:p}`Francavilla2018`. Regional differences in morphology are systematic: hippocampal VIP cells are enriched for basket-like and interneuron-selective morphologies; amygdala VIP cells are structurally heterogeneous and functionally specialized; striatal and other extracortical populations remain under-characterized {cite:p}`Booker2018,Rhomberg2018,Krabbe2019`.
 
-### 4.8.2 Caveats and methodological limits
+### Caveats and methodological limits
 
 Four methodological caveats temper this synthesis. First, slice-based reconstructions systematically truncate long axons, under-sampling the VIP-LRP population and biasing local morphology counts toward non-projecting cells {cite:p}`Jinno2007`. Second, Patch-seq is limited to cells that survive recording, biocytin filling, and dissociation — a pipeline that may select against cells with fragile membranes or large dendritic trees, producing its own morphological sampling bias {cite:p}`Gouwens2020a,Scala2020`. Third, automated feature extraction depends on reconstruction quality, and different laboratories use different reconstruction pipelines, which introduces between-study variance that can be mistaken for between-class variance {cite:p}`Ljungquist2022,Gouwens2020a`. Fourth, as the conditional-direction analysis in §4.5.2 and {numref}`fig-sec4-firing-pattern-conditional-table` illustrates, summary statistics from different studies frequently condition on different variables and cannot be combined without explicit priors — a particular hazard in morphology–electrophysiology correspondence reviews {cite:p}`Vucurovic2010,Cadwell2015`.
 
-### 4.8.3 Open questions
+### Open questions
 
 Several open questions are unlikely to be resolved without new data. Which morphological features scale across species, and which are species-specific? Chartrand and colleagues' L1 data suggest greater transcriptomic distinctness in human than mouse, but similar Patch-seq data for deeper VIP layers are limited, though broader cross-species transcriptomic comparisons may provide relevant context {cite:p}`Chartrand2023,Chartrand2022,Hodge2019`. How do long-range projecting VIP cells contribute to morphological population counts, and what fraction of cortical VIP cells have axonal outputs outside the local column? Standard slice-based reconstruction biases us against answering this question {cite:p}`Francavilla2018`. Does the Id2 fourth-group partition require a reassignment of specific VIP morphological subtypes, and if so which ones? Machold and colleagues' evidence is consistent with — but does not prove — reclassification of specific VIP/CCK basket cells as Id2 group members {cite:p}`Machold2023`. What morphological features distinguish cells in the interneuron-selective subclass from standard VIP cells in hippocampus and cortex, and can they be predicted from molecular or electrophysiological signatures alone? Current evidence suggests partial predictability but no sharp boundary {cite:p}`Booker2018,Pfeffer2013`.
 
-### 4.8.4 Bridges to the rest of the review
+### Bridges to the rest of the review
 
 Morphology is not itself a classification — it is a phenotype, and like all phenotypes it must be interpreted together with molecular, electrophysiological, and circuit data. The Patch-seq convergence in §4.6 previews the integrative picture that {ref}`sec-molecular-identity` develops at the transcriptomic level, while the axonal typology in §4.3 anticipates the connectivity logic developed in {ref}`sec-synaptic-connectivity`. The regional comparison in §4.4 is extended in {ref}`sec-regions`, where circuit-level functional differences between cortex, hippocampus, amygdala, and striatum are developed in detail. The development section (§4.7) connects to {ref}`sec-development`, where the critical-window biology that sculpts the mature morphological population is discussed further.
 
