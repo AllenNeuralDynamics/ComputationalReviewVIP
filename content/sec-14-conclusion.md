@@ -9,7 +9,7 @@ The twelve body sections of this review and the cross-cluster synthesis that pre
 
 The synthesis in {ref}`sec-synthesis` argued — and this review's evidence accumulation supports — that the canonical framing is **approximately right in the preparation in which it was developed and approximately wrong outside it**. In mouse primary sensory cortex layer 2/3, in awake head-fixed preparations, during active behavioural states, the VIP → SST ⊣ PYR motif is well-replicated {cite:p}`Pi2013,Lee2013,Fu2014,Wang2018,CantoBustos2022,Dipoppa2018,Pakan2016,Millman2020,Keller2020a`. In that preparation the motif is connected to locomotion, to arousal, and to top-down modulatory inputs in a way that licenses the label "disinhibition-for-gain." Outside that preparation the picture fragments. Deep-layer, associative, motor, medial prefrontal, hippocampal, entorhinal, and piriform VIP populations differ in morphology {cite:p}`Gouwens2020a,Luo2020`, in intrinsic firing {cite:p}`Pronneke2015,Rhomberg2018,Scala2020`, in connectivity {cite:p}`Anastasiades2021b,Apicella2022`, in behavioural recruitment {cite:p}`Piet2024,Bae2025,Lenkey2025,Ramamurthy2023,MyersJoseph2024`, and in disease vulnerability {cite:p}`BatistaBrito2017,Goff2019,Goff2023,Miralles2023,Thompson2023a,Ghimire2023b,Motaharinia2021`. The three conflicts surfaced in the introduction — whether VIP encodes reinforcement, whether VIP→SST is the mechanism of attentional modulation, and whether the PV/SST/VIP three-class parcellation underlying most circuit models is adequate — all land on the side of qualified answers rather than unqualified ones {ref}`sec-synthesis`.
 
-The verdict is therefore not that the canonical motif should be abandoned; it is that it should be **localised**. The revised framework advanced in {ref}`sec-synthesis` and schematised in {numref}`fig-sec13-revised-framework` factors VIP circuit function along five axes — molecular subtype (VIP/CR⁺ bipolar vs VIP/CCK⁺ basket vs VIP/ChAT⁺ vs VIP-LRP), brain region, cortical layer, behavioural state, and molecular / genetic context — and asserts that the predictive unit of VIP function is the joint specification of these axes rather than the class label alone. The canonical motif is one well-documented cell of that five-axis grid, not the grid.
+The verdict is therefore not that the canonical motif should be abandoned; it is that it should be **localised**. The revised framework advanced in {ref}`sec-synthesis` and schematised in {numref}`fig-sec13-framework` factors VIP circuit function along five axes — molecular subtype (VIP/CR⁺ bipolar vs VIP/CCK⁺ basket vs VIP/ChAT⁺ vs VIP-LRP), brain region, cortical layer, behavioural state, and molecular / genetic context — and asserts that the predictive unit of VIP function is the joint specification of these axes rather than the class label alone. The canonical motif is one well-documented cell of that five-axis grid, not the grid.
 
 :::{figure} ../figures/sec-14/fig_sec14_outstanding_agenda.png
 :label: fig-sec14-outstanding-agenda
@@ -20,14 +20,14 @@ The verdict is therefore not that the canonical motif should be abandoned; it is
 adjudicated by the current literature (distilled from {ref}`sec-synthesis`,
 'Untested predictions and experimental gaps'). Each row pairs one gap
 with (*middle column*) the thematic axis of the sec-13 conflict map
-({numref}`fig-sec13-conflict-map`) it would adjudicate, and (*right column*)
+({numref}`fig-sec13-conflicts`) it would adjudicate, and (*right column*)
 the specific class of tool or measurement required. Green markers mark gaps
 whose tools already exist in mouse — the measurement, not the technology,
 is what remains outstanding; the amber marker (Gap 4, primate direct
 tests) flags the single gap in which tool development, not just application,
 is the rate-limiting step. Taken together with the backward-looking
-{numref}`fig-sec13-conflict-map` and the revised framework of
-{numref}`fig-sec13-revised-framework`, this figure defines the minimum
+{numref}`fig-sec13-conflicts` and the revised framework of
+{numref}`fig-sec13-framework`, this figure defines the minimum
 experimental programme that would convert the current mixed-evidence
 landscape into an adjudicated one.
 :::
