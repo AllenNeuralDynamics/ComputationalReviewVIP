@@ -27,7 +27,7 @@ The pivotal empirical result in this cluster is the Veit et al. 2023 Neuron pape
 That reading directly contradicts the framing inherited from {cite:t}`Fu2014`, in which locomotion *activates* VIP cells and VIP activation *increases* pyramidal firing via SST disinhibition — a circuit story that, extrapolated naïvely to LFP, predicts VIP-dependent *strengthening* of arousal-associated gamma. The two results are not directly incompatible at the rate level — VIP can lift gain while damping synchrony — but the oscillatory literature has frequently conflated the two. We call this **Conflict C1** and return to it in §10.7.
 
 ```{figure} ../figures/sec-10/fig10_2_vip_gamma_effects_tiered.png
-:name: fig-sec10-vip-gamma-effects-tiered
+:label: fig-sec10-vip-gamma-effects-tiered
 :alt: Two-tier comparison of VIP manipulation effects on cortical gamma
 :width: 100%
 
@@ -132,7 +132,7 @@ The common thread: VIP-relevant gamma abnormalities are reported across developm
 The clearest demonstration that "VIP" names a family rather than a functional unit comes from hippocampal work on VIP subtypes during theta. {cite:t}`Francavilla2018a` imaged CA1 stratum oriens/alveus VIP cells with two-photon calcium imaging in awake head-fixed mice and showed that M2R$^-$/CR$^-$ type-II VIP$^+$ interneurons *increase* their activity ~3-fold during theta-run episodes relative to quiet wakefulness (31.8 ± 3.3% → 96.8 ± 6.1% ΔF/F, $p<0.001$, Mann–Whitney, $n=14$ cells over 162 stationary and 190 theta-run periods). These are recruited by running — consistent with a "theta-ON" label at the subtype level. [](#fig-sec10-vip-theta-modulation-ca1) displays this single-study effect.
 
 ```{figure} ../figures/sec-10/fig10_1_vip_theta_modulation_ca1.png
-:name: fig-sec10-vip-theta-modulation-ca1
+:label: fig-sec10-vip-theta-modulation-ca1
 :alt: Type-II VIP+ CA1 interneurons increase activity during theta-run episodes
 :width: 70%
 
@@ -239,7 +239,7 @@ The gap is significant. Until a phase-locked VIP manipulation is performed, the 
 The following table summarises the conflicts surfaced in this section. Four are *directional* data disagreements; two are framing/design issues that propagate into interpretation.
 
 :::{table} Oscillatory conflicts surfaced in this section (cluster 10).
-:name: tbl-sec10-conflicts
+:label: tbl-sec10-conflicts
 
 | ID  | Type | Papers | Nature of disagreement | Plausible resolution |
 |-----|------|--------|------------------------|----------------------|

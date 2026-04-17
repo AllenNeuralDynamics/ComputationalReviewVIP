@@ -47,7 +47,5 @@ site:
   template: book-theme
   title: "VIP Interneurons — Computational Review"
   nav:
-    - title: Abstract
-      file: content/abstract.md
     - title: GitHub
       url: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP

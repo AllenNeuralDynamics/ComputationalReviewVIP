@@ -17,19 +17,11 @@ The studies that do NOT meet the direct-test bar are equally instructive. {cite:
 The asymmetry matters for the VIP→PV edge specifically. Of the six output-test studies, three (Pi, Melzer, and Pfeffer as the landmark) report paired-recording or IPSC evidence that VIP inhibits PV cells; two (Zhang, Kastli) do not test it directly; and the Kuchibhotla and Pfeffer findings diverge on the relative magnitude of the PV component. {cite:t}`Pfeffer2013` reports that SST cells are the "principal target" of VIP output, with smaller IPSCs in PV cells {cite:p}`Pfeffer2013`. {cite:t}`Pi2013` finds equivalent VIP→SST and VIP→PV IPSCs in ACx and mPFC, with the VIP→PV component explicitly contributing to downstream disinhibition {cite:p}`Pi2013`. {cite:t}`Cauli2014` review the morphological literature and note that "VIP+ interneurons innervated PV+ interneurons, although it is debated whether there exists a preferential targeting in terms of putative PV+ subgroups" — a reminder that the SST-preference summary obscures subtype-specific PV connectivity that has not been resolved {cite:p}`Cauli2014`. Prönneke and colleagues, reconstructing VIP morphology in barrel cortex, emphasize that VIP cells form GAD-positive boutons but do not themselves express PV or SST, and conclude that VIP cells are "differentially integrated in as yet unidentified cortical circuits" — i.e., that the targeting pattern is heterogeneous within the VIP class {cite:p}`Pronneke2015`. The conflict here is not factual (all studies agree VIP→PV exists) but quantitative: how large, how consistent, and how subtype-selective the VIP→PV edge is remains unsettled across labs {cite:p}`Pfeffer2013,Pi2013,Cauli2014,Pronneke2015`.
 
 :::{figure} ../figures/sec-06/fig_sec6_target_coverage_matrix.png
+:label: fig-sec6-target-coverage-matrix
 :name: fig-sec6-target-coverage-matrix
 :width: 100%
 
 Test-coverage matrix for the canonical VIP→SST/PV disinhibitory motif, assembled from the raw Section-6 figure-caption extractions. Rows are the six studies whose captions describe a direct test of VIP output connectivity (paired-recording IPSCs, optogenetic VIP activation with postsynaptic recording in identified cell types, or modeled connections in a spiking network). Columns indicate whether the study tested VIP→SST, VIP→PV, VIP→Pyr direct inhibition, and whether a disinhibitory chain (VIP→SST/PV→Pyr) is demonstrated. Cell codes: D = direct test, I = inferred/indirect, S = schematic only, M = modeled, N = not tested. Direct experimental evidence for the canonical motif is provided by {cite:t}`Pi2013` (ACx, mPFC) and {cite:t}`Melzer2021` (ACx, GRP perturbation); {cite:t}`Zhang2014` infers the chain from disynaptic IPSC measurements under VIP inactivation; {cite:t}`Kastli2020` maps drive ONTO VIP rather than from VIP; {cite:t}`Shapiro2025` schematizes wiring without a focal output-connectivity test; {cite:t}`Wagatsuma2025` is a computational model in which the connections are implemented parameters. **Caveats:** this figure is a presence/absence test-coverage matrix, not a quantitative connection-probability comparison — the 100 raw Section-6 entries are figure captions with extracted unit/scale-bar values that do not contain extractable connection-probability numbers, so quantitative cross-study comparison is not defensible from this evidence package. Row inclusion depends on the caption explicitly describing an output-connectivity test; a caption that merely names VIP and a target cell type in a schematic context (e.g., Shapiro 2025) is flagged as schematic only. Computational models implement connections as parameters and are marked as such. 94 of the 100 raw Section-6 entries are dropped because their captions report morphology, input drive, in-vivo imaging, or behavior rather than VIP output connectivity.
-:::
-
-:::{dropdown} 📓 Figure code
-:icon: code
-:color: light
-
-```{literalinclude} ../figures/sec-06/fig_sec6_target_coverage_matrix.py
-:language: python
-```
 :::
 
 ## Direct VIP→pyramidal inhibition: a persistent and unresolved minority report
@@ -53,19 +45,11 @@ Long-range cortico-cortical and thalamocortical drive onto VIP is the third broa
 Finally, hippocampal and entorhinal-cortex data extend the drive taxonomy to a circuit setting where the VIP class is anatomically distinct. {cite:t}`Francavilla2018a` described a CA1 VIP long-range-projecting (VIP-LRP) subpopulation whose outputs are distinct from the classical cortical VIP bipolar / basket dichotomy: VIP-LRPs are theta-OFF in vivo and send long-range axons to the subiculum {cite:p}`Francavilla2018a`. {cite:t}`Bilash2023` describes a local entorhinal-driven disinhibitory VIP microcircuit in CA1 {cite:p}`Bilash2023`, and {cite:t}`Leroy2021` reports that hippocampal VIP interneurons in CA2 inhibit other interneurons and release enkephalin {cite:p}`Leroy2021` — both extending the VIP class into entorhinal–hippocampal circuitry without providing evidence for direct VIP inhibition of CA3 pyramidal cells. The hippocampal literature therefore extends the cortical disinhibitory role of VIP into an independent anatomical context; whether a minority direct VIP→pyramidal component is also present in hippocampus is not established by the studies in this evidence package.
 
 :::{figure} ../figures/sec-06/fig_sec6_drive_source_taxonomy.png
+:label: fig-sec6-drive-source-taxonomy
 :name: fig-sec6-drive-source-taxonomy
 :width: 100%
 
 Source taxonomy of identified drive onto VIP interneurons. Rows are the seven studies in this section's evidence package whose figure captions name a specific drive source (local pyramidal, cholinergic, intra-class ChAT-VIP release, long-range CC/TC, laminar photostim map) or provide morphological context. Cell codes: E = excitatory drive ONTO VIP, I = inhibitory drive ONTO VIP, M = mixed excitatory + inhibitory tested in the same study, R = VIP as cholinergic source (ChAT-VIP release, not drive onto VIP), C = morphological context only. {cite:t}`Karnani2016a` provides paired-recording evidence for depressing PC→VIP unitary EPSPs. {cite:t}`Chen2015` shows both cholinergic excitation of VIP and SOM→VIP inhibition. {cite:t}`Askew2019` tests nicotinic depolarization of VIP and Pyr. {cite:t}`Obermayer2019` demonstrates that ChAT-VIP cells release acetylcholine onto pyramidal neighbors — VIP is the SOURCE, not the target, in this case. {cite:t}`Ma2021` surveys hierarchical cortico-cortical input onto VIP. {cite:t}`Kastli2020` maps laminar photostim input geometry onto VIP. {cite:t}`Pronneke2015` supplies morphological context only — not a functional drive test. **Caveats:** this figure is a source taxonomy, not a quantitative cross-study comparison. Captions do not contain extractable EPSP-amplitude or connection-probability numbers; quantitative synthesis of drive strength across studies would require paper-level text extraction beyond the scope of the current evidence package. Inclusion depends on caption content — studies that tested drive but did not mention the specific drive source in the figure caption extracted are not represented. Obermayer is annotated as "R" (release) rather than drive ONTO VIP.
-:::
-
-:::{dropdown} 📓 Figure code
-:icon: code
-:color: light
-
-```{literalinclude} ../figures/sec-06/fig_sec6_drive_source_taxonomy.py
-:language: python
-```
 :::
 
 ## Context-dependence: when the motif breaks down in vivo

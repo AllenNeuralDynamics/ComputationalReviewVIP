@@ -111,7 +111,8 @@ Morphological classification has moved from qualitative assignment based on came
 
 Firing pattern is a second quantitative phenotype that has been used to infer morphology indirectly, often with unreliable results. Two commonly-cited studies illustrate the problem with averaging firing-pattern statistics across studies. Vucurovic and colleagues, sampling cells that clustered molecularly as VIP, reported that 68% were adapting and 32% were bursting — a P(firing | VIP) statistic based on n=22 VIP-cluster cells from 12 animals {cite:p}`Vucurovic2010`. Cadwell and colleagues, working in the complementary direction from firing pattern to VIP marker status in layer 1, reported that roughly 20% of burst-spiking cells were VIP+ — a P(VIP | burst) statistic {cite:p}`Cadwell2015`. These two numbers are reported side-by-side in derivative summaries as if they described the same underlying quantity. They do not.
 
-```{figure} figures/sec-04/fig_sec4_firing_pattern_conditional_table.png
+```{figure} ../figures/sec-04/fig_sec4_firing_pattern_conditional_table.png
+:label: fig-sec4-firing-pattern-conditional-table
 :name: fig-sec4-firing-pattern-conditional-table
 :width: 85%
 :align: center

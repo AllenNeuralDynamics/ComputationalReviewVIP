@@ -12,6 +12,7 @@ The synthesis in {ref}`sec-synthesis` argued — and this review's evidence accu
 The verdict is therefore not that the canonical motif should be abandoned; it is that it should be **localised**. The revised framework advanced in {ref}`sec-synthesis` and schematised in {numref}`fig-sec14-revised-framework` factors VIP circuit function along five axes — molecular subtype (VIP/CR⁺ bipolar vs VIP/CCK⁺ basket vs VIP/ChAT⁺ vs VIP-LRP), brain region, cortical layer, behavioural state, and molecular / genetic context — and asserts that the predictive unit of VIP function is the joint specification of these axes rather than the class label alone. The canonical motif is one well-documented cell of that five-axis grid, not the grid.
 
 :::{figure} ../figures/sec-14/fig_sec14_revised_framework.png
+:label: fig-sec14-revised-framework
 :name: fig-sec14-revised-framework
 :align: center
 :width: 95%
@@ -25,14 +26,6 @@ replicated in the green cell (mouse primary sensory cortex, L2/3,
 high-arousal / active states); other cells of the grid are variously mixed
 (amber) or contested / not supported (red), and several remain empty.
 Schematic only; no quantitative axes are implied.
-:::
-
-:::{dropdown} Code to regenerate {numref}`fig-sec14-revised-framework`
-:icon: code
-
-```{literalinclude} figures/sec-14/fig_sec14_revised_framework.py
-:language: python
-```
 :::
 
 ## Four open questions
@@ -75,7 +68,7 @@ First, **Cre-line specificity audits** should accompany every major causal claim
 
 ## Translational outlook
 
-VIP interneuron dysfunction has been implicated — with varying strengths of evidence — in a long list of neurological and psychiatric conditions whose specifics are treated in {ref}`sec-species-translation`: autism-spectrum disorders and fragile-X (Fmr1) {cite:p}`Goff2023,BatistaBrito2017`, Rett syndrome {cite:p}`Mossner2020`, Dravet syndrome {cite:p}`Miralles2023`, Alzheimer's disease, chronic-stress and depression-associated circuits, tinnitus {cite:p}`Ghimire2023b`, and addiction-related cortical states {cite:p}`Thompson2023a,Thompson2023b`. The review's high-level translational point, rather than a condition-by-condition one, is this: **VIP-directed therapeutic thinking should be subtype- and region-resolved, not class-level**. Class-level VIP manipulation — the kind that non-selective peptide analogues or broad VIP-Cre-driven interventions would deliver — is unlikely to produce the selectivity that specific circuit phenotypes require, because the circuit phenotypes themselves are subtype- and region-specific {ref}`sec-species-translation,sec-synthesis`. Intersectional pharmacological and gene-therapy strategies, region-restricted delivery, and within-subject longitudinal read-outs are the translational analogues of the experimental recommendations above.
+VIP interneuron dysfunction has been implicated — with varying strengths of evidence — in a long list of neurological and psychiatric conditions whose specifics are treated in {ref}`sec-species-translation`: autism-spectrum disorders and fragile-X (Fmr1) {cite:p}`Goff2023,BatistaBrito2017`, Rett syndrome {cite:p}`Mossner2020`, Dravet syndrome {cite:p}`Miralles2023`, Alzheimer's disease, chronic-stress and depression-associated circuits, tinnitus {cite:p}`Ghimire2023b`, and addiction-related cortical states {cite:p}`Thompson2023a,Thompson2023b`. The review's high-level translational point, rather than a condition-by-condition one, is this: **VIP-directed therapeutic thinking should be subtype- and region-resolved, not class-level**. Class-level VIP manipulation — the kind that non-selective peptide analogues or broad VIP-Cre-driven interventions would deliver — is unlikely to produce the selectivity that specific circuit phenotypes require, because the circuit phenotypes themselves are subtype- and region-specific {ref}`sec-species-translation` and {ref}`sec-synthesis`. Intersectional pharmacological and gene-therapy strategies, region-restricted delivery, and within-subject longitudinal read-outs are the translational analogues of the experimental recommendations above.
 
 The same logic applies in reverse to biomarker development. VIP-related signatures in human tissue or imaging — whether transcriptomic, electrophysiological, or circuit-level — should be interpreted with the same subtype × region × layer × state grid in mind that the review applied to the animal literature. A VIP-level signature that averages across subtypes is likely to be noisier than a subtype-specific one, and the cost of finer resolution is probably worth paying.
 

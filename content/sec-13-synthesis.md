@@ -17,6 +17,7 @@ The central finding of this review is not that the canonical VIP→SST→pyramid
 The rest of this section defends that claim. We organise around the subsections of the scaffold: triangulation of what replicates ({ref}`sec-13-triangulation`), contested findings ({ref}`sec-13-contested`), untested predictions ({ref}`sec-13-untested`), the revised framework ({ref}`sec-13-framework`), and evidence grades ({ref}`sec-13-grades`). Figure {numref}`fig-sec13-framework` gives the revised framework schematically; Figure {numref}`fig-sec13-conflicts` summarises how the eight curated disagreements distribute across five thematic axes and which remain unresolved.
 
 :::{figure} ../figures/sec-13/fig_sec13_revised_framework.png
+:label: fig-sec13-framework
 :name: fig-sec13-framework
 :align: center
 :width: 95%
@@ -159,6 +160,7 @@ A small cluster of replicated results describes behaviours of VIP subtypes that 
 Eight curated disagreements survive cross-study comparison in this section, and they sort into five thematic axes (Figure {numref}`fig-sec13-conflicts`). Two concern the **universality of the canonical motif itself** (one partially adjudicated, one unresolved); two concern state-dependence and the relative contribution of thalamic drive; one concerns the sign of reward and behavioural-relevance coding; one concerns cross-species translation; and two concern disease causality and optogenetic methodology. Seven of the eight remain genuinely unresolved — the single partial resolution (motif universality in mouse V1) is discussed in Conflict 1 below. We walk through the most consequential ones.
 
 :::{figure} ../figures/sec-13/fig_sec13_conflict_map.png
+:label: fig-sec13-conflicts
 :name: fig-sec13-conflicts
 :align: center
 :width: 95%

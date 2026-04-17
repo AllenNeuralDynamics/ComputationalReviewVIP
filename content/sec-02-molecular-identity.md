@@ -23,7 +23,7 @@ Two operational consequences follow. First, every claim of the form "VIP interne
 
 The most conspicuous disagreement in the VIP taxonomy literature is the number of "VIP subtypes" a given paper reports. {cite:t}`Tasic2016` identified 18 transcriptomic cell types across three subclasses (Vip, Pvalb, Sst) in mouse visual cortex. {cite:t}`Tasic2018` later refined GABAergic taxonomy to six subclasses plus two distinct types, with the Vip subclass expanding to roughly 17 fine clusters in their consolidated cortex data. {cite:t}`Yao2021a` integrated single-cell transcriptomic data across isocortex and hippocampal formation and split Vip into 6 supertypes nested within the Vip subclass. In the human domain, {cite:t}`Hodge2019` found that "VIP was the most diverse subclass (21 types)" in middle temporal gyrus, many concentrated in upper layers, while {cite:t}`Hodge2020` identified only 5 inhibitory types (two LAMP5, VIP, SST, PVALB) in layer 5 of frontoinsular cortex — reflecting limited layer and region sampling, not contradictory biology. Secondary citations of the Tasic 2016/2018 datasets yield further dispersion: {cite:t}`Obermayer2019` (citing Tasic 2016) reports "12 different molecular VIP-positive subtypes"; {cite:t}`Millman2020` states "16 VIP neuron subtypes"; {cite:t}`GuetMcCreight2020` states "VIP+ cells were grouped into 21 different clusters."
 
-```{figure} {{artifact:886e69a9-6e22-42c1-a6ae-fddb7bc0ac71}}
+```{figure} ../figures/sec-02/fig_sec02_subtype_count_coarse.png
 :label: fig-sec02-subtype-count-coarse
 :align: center
 :width: 75%
@@ -32,16 +32,7 @@ The most conspicuous disagreement in the VIP taxonomy literature is the number o
 **Coarse VIP subtype counts across taxonomies.** {cite:t}`Machold2024` groups VIP cells into three broad review-level subtypes; {cite:t}`Yao2021a` partitions the Vip subclass into 6 supertypes in the integrated Allen isocortex-plus-HPF taxonomy. *These two values are at different hierarchy levels (review consensus vs. data-driven supertype) and are not directly comparable as replications — they report where each study cut the dendrogram.*
 ```
 
-:::{dropdown} Reproducible code for {numref}`fig-sec02-subtype-count-coarse`
-:color: light
-:icon: code
-
-```{literalinclude} {{artifact:0c114ff0-e7dd-403d-87fb-98b89508838e}}
-:language: python
-```
-:::
-
-```{figure} {{artifact:3a321d03-014e-4cdb-9c0f-9ea2269a3888}}
+```{figure} ../figures/sec-02/fig_sec02_subtype_count_fine.png
 :label: fig-sec02-subtype-count-fine
 :align: center
 :width: 75%
@@ -49,15 +40,6 @@ The most conspicuous disagreement in the VIP taxonomy literature is the number o
 
 **Fine-grained VIP cluster counts cited from primary datasets.** Two secondary sources cite the Tasic datasets {cite:p}`Tasic2016,Tasic2018` and report different numbers of VIP clusters: 12 {cite:p}`Obermayer2019` (citing Tasic 2016) and 16 {cite:p}`Millman2020`; a third secondary source, {cite:t}`GuetMcCreight2020`, reports 21 clusters derived from the {cite:t}`Hodge2019` human MTG dataset rather than from Tasic. *The Tasic-derived counts are not independent replications; they are the same dataset read at different clustering resolutions or with different inclusion criteria, so that spread is a clustering-hyperparameter artefact, not a biological signal.*
 ```
-
-:::{dropdown} Reproducible code for {numref}`fig-sec02-subtype-count-fine`
-:color: light
-:icon: code
-
-```{literalinclude} {{artifact:ab9222eb-b0a3-4c40-9635-c1f6020c25fb}}
-:language: python
-```
-:::
 
 
 ```{admonition} Conflict: VIP subtype count is severalfold and method-dependent
@@ -122,7 +104,7 @@ Areal variation adds another axis. {cite:t}`Krienen2020` profiled 188,776 intern
 
 A separate quantitative disagreement concerns what fraction of cortical inhibitory neurons VIP cells constitute. {numref}`fig-sec02-vip-fraction-cortical` summarizes reports across seven sources. Five recent reports converge on 10–15% of cortical GABAergic interneurons: {cite:t}`Preuss2025` cites ≈12%, {cite:t}`Tremblay2016` and {cite:t}`Ramamurthy2023` both cite 10–15%, {cite:t}`Obermayer2019` cites 15%, and {cite:t}`Hanno2026` reports 10%. Two outliers require separate treatment. {cite:t}`Stachniak2021` states that VIP interneurons make up "<5% of all neurons" — a value that uses *all neurons* as the denominator rather than interneurons, and that becomes consistent with the 10–15% estimates once the ≈20% interneuron-of-all-neurons fraction is accounted for. {cite:t}`Du2025` cites ≈5% of total cortical GABAergic neurons for CR+ cells that co-express either VIP or reelin, rather than the VIP+ population as a whole.
 
-```{figure} {{artifact:74844e21-ccdb-4161-baf5-81c8dc9545d9}}
+```{figure} ../figures/sec-02/fig_sec02_vip_fraction_cortical.png
 :label: fig-sec02-vip-fraction-cortical
 :align: center
 :width: 85%
@@ -130,15 +112,6 @@ A separate quantitative disagreement concerns what fraction of cortical inhibito
 
 **Reported VIP fraction of cortical interneurons across studies.** Blue circles: entries reporting VIP as a percentage of cortical GABAergic interneurons {cite:p}`Preuss2025,Tremblay2016,Ramamurthy2023,Obermayer2019,Hanno2026`. Red squares (flagged): {cite:t}`Stachniak2021` reports <5% of *all neurons* (a different denominator), and {cite:t}`Du2025` reports ≈5% for CR+ cells co-expressing either VIP or reelin (a different numerator). *None of these values are primary counts from the cited papers; they are secondary citations of older immunohistochemistry and scRNA-seq work propagated through reviews. The five blue-circle estimates span 10–15% (range 10–15, median ≈12%), and this convergence partly reflects citation transitivity as much as independent replication.*
 ```
-
-:::{dropdown} Reproducible code for {numref}`fig-sec02-vip-fraction-cortical`
-:color: light
-:icon: code
-
-```{literalinclude} {{artifact:48054f90-cdb4-459a-a9bc-0cf0d51fe5c3}}
-:language: python
-```
-:::
 
 ```{admonition} Conflict: VIP fraction of cortical cells with incompatible denominators
 :class: warning

@@ -169,7 +169,7 @@ bibliography entry). Both closed at zero.
 **Phase 10 — Six-pass integration.** The assembled manuscript underwent six
 sequential integration passes: (1) inter-section transitions, harmonizing the
 opening and closing paragraphs of adjacent sections; (2) cross-reference
-resolution, with 68 `{ref}`/`{numref}` targets corrected or newly created;
+resolution, with 68 ``{ref}`` / ``{numref}`` targets corrected or newly created;
 (3) terminology harmonization, standardizing 7 term variants
 (e.g., "VIP-INs" vs. "VIP interneurons", "ISI" vs. "interneuron-selective
 interneuron") across all sections; (4) narrative continuity, removing

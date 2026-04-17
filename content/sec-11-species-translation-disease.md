@@ -22,6 +22,7 @@ Single-cell transcriptomic surveys are now the backbone of cross-species transla
 Among primate-specific cell populations, the rosehip interneuron is the most often cited {cite:p}`Boldog2018`. {cite:t}`Boldog2018` used unbiased single-nucleus RNA sequencing to identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and showed that one of these — the rosehip cell — expresses a marker combination and carries a dense axonal arbor with "rosehip"-like boutons that was not observed in mouse cortex {cite:p}`Boldog2018`. The defining feature is the *combinatorial* signature, not any single marker {cite:p}`Boldog2018`; individual markers are shared with other GABAergic types but the ensemble is human-selective (see {numref}`fig-sec11-rosehip-marker-matrix`), and analogous L1 divergence is reported by human-Patch-seq {cite:p}`Chartrand2023`.
 
 :::{figure} ../figures/sec-11/fig_sec11_rosehip_marker_matrix.png
+:label: fig-sec11-rosehip-marker-matrix
 :name: fig-sec11-rosehip-marker-matrix
 :width: 100%
 
@@ -139,6 +140,7 @@ The schizophrenia evidence divides into three threads: (*i*) transcript-level po
 The DLPFC-focused postmortem literature is the older anchor. {cite:t}`Hashimoto2007` examined the GABA-related transcriptome in DLPFC of schizophrenia subjects and reported alterations in multiple GABAergic markers, with SST- and NPY-expressing neuropeptide subtypes — alongside GAD67/GAT1 — most prominently affected. {cite:t}`Fung2010` quantified interneuron marker expression in developing and schizophrenic human DLPFC ($n\!=\!68$) and showed that interneuron-marker deficits in schizophrenia have a developmental signature consistent with protracted GABA maturation. {cite:t}`Tsubomoto2018` extended this across the visuospatial working-memory network — visual, posterior parietal, and DLPFC cortical regions — and documented transcript-selective alterations for PV, SST, and other GABA subpopulations in the same subjects. {cite:t}`Okuda2024` then added contrasts across schizophrenia, bipolar disorder, and major depressive disorder in DLPFC (see {numref}`fig-sec11-dlpfc-disease-transcripts`), reporting that PV and SST mRNA carry the most prominent reductions, with VIP reductions smaller in magnitude and CR reported qualitatively as unaltered — a pattern consistent with the Conflict 4 admonition below that VIP is relatively spared in DLPFC compared with PV and SST.
 
 :::{figure} ../figures/sec-11/fig_sec11_dlpfc_disease_transcripts.png
+:label: fig-sec11-dlpfc-disease-transcripts
 :name: fig-sec11-dlpfc-disease-transcripts
 :width: 100%
 

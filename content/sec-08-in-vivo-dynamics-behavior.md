@@ -22,6 +22,7 @@ Cross-references into other sections: the cholinergic and neuromodulatory drive 
 The proposition that VIP interneurons are activated by locomotion is, at first pass, one of the most replicated claims in cortical interneuron physiology. Four awake-mouse V1 datasets report positive VIP recruitment during running or arousal {cite:p}`Fu2014,Pakan2016,Reimer2014,Jackson2016`, and the ensemble is the foundation of the "locomotion-gated disinhibition" story. A closer look shows that the four reports answer four different questions and cannot be lined up as four estimates of the same quantity ({numref}`fig-sec8-locomotion-table`).
 
 :::{figure} ../figures/sec-08/fig8_1_vip_locomotion_response_table.png
+:label: fig-sec8-locomotion-table
 :name: fig-sec8-locomotion-table
 :width: 100%
 :alt: Four-row evidence table comparing VIP locomotion/arousal reports. Columns show ΔF/F amplitude (Fu 2014), fraction responsive (Pakan 2016), arousal correlation r (Reimer 2014), and a state-invariance claim (Jackson 2016). The Jackson row is highlighted in red as a conflicting position.
@@ -124,6 +125,7 @@ The working conclusion from §8.2 is that the sentence "VIP interneurons are act
 The second pillar of the canonical story is that VIP interneurons broadcast reinforcement. The originating result is {cite:t}`Pi2013`: in A1, VIP neurons were uniformly and strongly activated by both reward and punishment during an auditory two-tone discrimination task, with firing rate transients seen in the majority of recorded cells to both reinforcer types, and the VIP-mediated disinhibition was proposed to modulate the gain of tone-responsive neurons in a reinforcement-gated way {cite:p}`Pi2013`. Two subsequent developments have both strengthened and complicated that reading ({numref}`fig-sec8-reward-table`).
 
 :::{figure} ../figures/sec-08/fig8_2_vip_reward_punishment_directional_table.png
+:label: fig-sec8-reward-table
 :name: fig-sec8-reward-table
 :width: 100%
 :alt: Four-row directional table of VIP reinforcement responses. Pi 2013 in A1 shows activation to reward and punishment; Szadai 2022 cortex-wide shows activation to reward (85% of cells) and punishment (90% of cells) with n=811; Ramamurthy 2023 in S1 is highlighted red with suppression by reward; Ramamurthy 2025 in S1 shows broad arousal/motion activation that is not reward-specific.
@@ -211,6 +213,7 @@ A smaller but informative line of evidence concerns VIP recruitment during criti
 Correlational imaging does not adjudicate between disinhibitory and non-disinhibitory readings of the VIP signal — only causal silencing can. The in-vivo causal record is sparse, heterogeneous in intervention, and routinely summarised at a level of abstraction that obscures what each experiment can and cannot claim ({numref}`fig-sec8-learning-strata`).
 
 :::{figure} ../figures/sec-08/fig8_3_vip_disinhibition_learning_methods_stratified.png
+:label: fig-sec8-learning-strata
 :name: fig-sec8-learning-strata
 :width: 100%
 :alt: Methods-stratified three-stratum display of causal VIP-and-learning evidence. Stratum A (Krabbe 2019) is acute VIP-specific silencing in BLA and reports impaired fear learning. Stratum B (Letzkus 2011) is broader L1-interneuron block in A1 and reports abolished learning with a caveat that L1 INs are heterogeneous. Stratum C (Batista-Brito 2017) is developmental VIP-ErbB4 deletion across neocortex with impaired sensory learning and a caveat that chronic/developmental interventions cannot isolate acute function.
