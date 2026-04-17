@@ -317,6 +317,58 @@ Define: central question/thesis, audience, length target, section count, sub-top
 
 
 
+
+## Phase Index
+
+The coordinator uses this table to delegate each phase. The full delegation template for each phase lives in a role-specific sub-skill loaded by the sub-agent — NOT in this file.
+
+| Phase | Agent | Batching | Skills to load | Gate artifact | Key checks |
+|-------|-------|----------|----------------|---------------|------------|
+| 1 | Coordinator | — | — | `gate_scope.json` | clusters defined, all TOC topics covered |
+| 2 | EXPERT | ×4 batches | `comprev-evidence-gathering` + `comprev-reviewer-agent` | `gate_evidence_compliance.json` | papers≥target, fulltext≥50%, conflicts>0, figure_data≥2/cluster |
+| 3 | DATAML | single | `comprev-dataml-phases` | `gate_citation_infrastructure.json` | citation_key_map VID not null, ≥95% DOIs mapped |
+| 4 | EXPERT | single | `comprev-scaffold` + `comprev-reviewer-agent` | `gate_scaffold_approved.json` | ≥2 figs/section, cross-refs between non-adjacent sections |
+| 5 | DATAML | single | `comprev-dataml-phases` | `gate_evidence_curated.json` | coverage≥75%, cite_keys assigned, conflicts normalized |
+| 6 | EXPERT | ×4 batches | `comprev-figure-audit` + `comprev-reviewer-agent` | `gate_figure_audit.json` | 0 REDESIGN remaining |
+| 7 | EXPERT | ×4 batches | `comprev-section-writing` + `comprev-reviewer-agent` + `comprev-figure-construction` | `gate_sections_drafted.json` | cites/para≥4.0, `:::{dropdown}` count = `:::{figure}` count |
+| 8 | EXPERT | ×4 batches | `comprev-critic` + `comprev-reviewer-agent` | `gate_critic_complete.json` | MUST_FIX=0 after send-back |
+| 9 | DATAML | single | `comprev-dataml-phases` | `gate_bibliography.json` | entries=unique cite_keys, 0 Bhatt hits |
+| 10 | EXPERT | single | `comprev-integration` + `comprev-reviewer-agent` | `gate_integration.json` | 6 passes documented, diffs in transitions |
+| 11 | EXPERT | single | `comprev-integration` + `comprev-reviewer-agent` | `gate_intro_conclusion.json` | no new citations, abstract written |
+| 12 | DATAML | single | `comprev-dataml-phases` | `gate_methods.json` | 8 subsections present |
+| 13 | DATAML | single | `comprev-dataml-phases` | `gate_assembly.json` | 0 broken refs, toc=file count, plugins deployed |
+| 14 | DATAML | single | `comprev-dataml-phases` | — | triples extracted into batches of 18 |
+| 15 | EXPERT | ×4 batches | `comprev-verification` + `comprev-reviewer-agent` | — | ALL triples verified, no sampling |
+| 16 | DATAML | single | `comprev-dataml-phases` | — | fix requests prepared |
+| 17 | EXPERT | ×4 batches | `comprev-fix-execution` + `comprev-reviewer-agent` | — | fixes executed with DB-verified replacements |
+| 18 | DATAML | single | `comprev-dataml-phases` | — | fixes applied, integrity verified |
+| 19 | DATAML | single | `comprev-dataml-phases` | `gate_repository_push.json` | myst build passes, toc complete |
+
+### Delegation Pattern
+
+**For EXPERT phases**, the coordinator's delegation task says:
+
+> "Load skills `comprev-[role-skill]` and `comprev-reviewer-agent`. [For Phase 7 also: `comprev-figure-construction`.] Execute Phase N. Your inputs: [artifact references]."
+
+The role-specific skill contains the phase template (what to do). The reviewer-agent contains universal principles (epistemic skepticism, DOI provenance, fulltext protocol). The agent needs both.
+
+**For DATAML phases**, the coordinator says:
+
+> "Load skill `comprev-dataml-phases` and execute Phase N. Your inputs: [artifact references]."
+
+Or uses `send_message` to resume an existing DATAML child.
+
+**The coordinator does NOT copy phase templates into the task description.** The sub-agent reads its own template from its loaded skills.
+
+
+## Phase 1: Scope and Thesis
+
+**Agent:** Coordinator
+
+Define: central question/thesis, audience, length target, section count, sub-topics. The user's initial task description (including the table of contents) serves as Phase 1 approval — do NOT use `ask_user` here.
+
+
+
 ## Phase Index
 
 The coordinator uses this table to delegate each phase. The full delegation template for each phase lives in a role-specific sub-skill loaded by the sub-agent — NOT in this file.
