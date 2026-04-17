@@ -112,7 +112,6 @@ Firing pattern is a second quantitative phenotype that has been used to infer mo
 
 ```{figure} ../figures/sec-04/fig_sec4_firing_pattern_conditional_table.png
 :label: fig-sec4-firing-pattern-conditional-table
-:name: fig-sec4-firing-pattern-conditional-table
 :width: 85%
 :align: center
 

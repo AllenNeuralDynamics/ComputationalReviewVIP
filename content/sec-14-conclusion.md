@@ -13,7 +13,6 @@ The verdict is therefore not that the canonical motif should be abandoned; it is
 
 :::{figure} ../figures/sec-14/fig_sec14_revised_framework.png
 :label: fig-sec14-revised-framework
-:name: fig-sec14-revised-framework
 :align: center
 :width: 95%
 

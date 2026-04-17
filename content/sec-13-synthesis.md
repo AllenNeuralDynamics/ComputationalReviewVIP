@@ -18,7 +18,6 @@ The rest of this section defends that claim. We organise around the subsections 
 
 :::{figure} ../figures/sec-13/fig_sec13_revised_framework.png
 :label: fig-sec13-framework
-:name: fig-sec13-framework
 :align: center
 :width: 95%
 
@@ -161,12 +160,10 @@ Eight curated disagreements survive cross-study comparison in this section, and 
 
 :::{figure} ../figures/sec-13/fig_sec13_conflict_map.png
 :label: fig-sec13-conflicts
-:name: fig-sec13-conflicts
 :align: center
 :width: 95%
 
-**Conflict-resolution map for the eight curated disagreements in this section
-(n = 8).** *Top:* overall distribution — one disagreement is partially
+**Conflict-resolution map for the eight curated Section-13 disagreements.** *Top:* overall distribution — one disagreement is partially
 adjudicated (motif universality in mouse V1, by a state-dependence argument);
 the remaining seven are genuinely unresolved. *Rows:* the five thematic axes
 into which the eight conflicts sort. Motif universality (n = 2) is the only

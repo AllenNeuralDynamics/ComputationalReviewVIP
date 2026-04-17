@@ -84,7 +84,6 @@ package anchors a Mef2c claim at the required level of specificity.
 
 ```{figure} ../figures/sec-03/fig_sec3_cge_proportion_table.png
 :label: fig-sec3-cge-proportion
-:name: fig-sec3-cge-proportion
 :alt: Four reported "CGE proportion" values from four studies, each with a different numerator and denominator.
 
 **Four literature estimates of the "CGE proportion" are not directly
@@ -232,7 +231,6 @@ but retain VIP expression in a residual population).
 
 ```{figure} ../figures/sec-03/fig_sec3_vip_tf_cascade_qualitative.png
 :label: fig-sec3-tf-cascade
-:name: fig-sec3-tf-cascade
 :alt: Qualitative schematic of the transcription factor cascade specifying VIP+ CGE fate, with perturbation evidence and an unresolved-trajectory callout.
 
 **Qualitative TF cascade specifying VIP^+^ CGE fate.** Left panel: embryonic

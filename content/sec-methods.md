@@ -4,7 +4,7 @@
 :name: fig-methods-pipeline
 :width: 100%
 
-Overview of the 19-phase Expert Review Pipeline v24 used to assemble this review. Green boxes indicate EXPERT agents (scientific judgment), blue boxes indicate DATAML agents (mechanical work), and the gray box is the COORDINATOR. Red dashed lines mark information barriers where actor–critic separation is enforced. Orange diamonds indicate gate checkpoints where the coordinator verifies compliance before advancing.
+**The 19-phase Expert Review Pipeline v24 used to assemble this review.** Green boxes indicate EXPERT agents (scientific judgment), blue boxes indicate DATAML agents (mechanical work), and the gray box is the COORDINATOR. Red dashed lines mark information barriers where actor–critic separation is enforced. Orange diamonds indicate gate checkpoints where the coordinator verifies compliance before advancing.
 :::
 
 This review was produced by a structured, agent-orchestrated evidence synthesis

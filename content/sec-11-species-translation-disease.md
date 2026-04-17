@@ -23,10 +23,9 @@ Among primate-specific cell populations, the rosehip interneuron is the most oft
 
 :::{figure} ../figures/sec-11/fig_sec11_rosehip_marker_matrix.png
 :label: fig-sec11-rosehip-marker-matrix
-:name: fig-sec11-rosehip-marker-matrix
 :width: 100%
 
-Human-specialized L1 "rosehip" interneuron — molecular profile and species distribution, from the originating single-source characterization {cite:p}`Boldog2018`. **CAVEATS.** *(i)* All molecular-state assignments here derive from a single landmark study; donor/subject $n$ for the snRNA-seq is not documented in the evidence fields and is not reproduced on the figure. *(ii)* Rosehip cells are CALB2-negative, placing them *outside* the VIP/CR⁺ bipolar lineage — they are shown here as a primate-divergence exemplar, not as a VIP subtype. *(iii)* The matrix treats markers as present/absent; it does not display expression level or morphological/physiological phenotype. *(iv)* Species distribution is binary ("human only — not seen in mouse cortex"); the evidence does not adjudicate whether a rosehip-like combinatorial signature exists in non-human primates, where the most relevant comparisons would be.
+**Human-specialized L1 "rosehip" interneuron — molecular profile and species distribution.** From the originating single-source characterization {cite:p}`Boldog2018`. **CAVEATS.** *(i)* All molecular-state assignments here derive from a single landmark study; donor/subject $n$ for the snRNA-seq is not documented in the evidence fields and is not reproduced on the figure. *(ii)* Rosehip cells are CALB2-negative, placing them *outside* the VIP/CR⁺ bipolar lineage — they are shown here as a primate-divergence exemplar, not as a VIP subtype. *(iii)* The matrix treats markers as present/absent; it does not display expression level or morphological/physiological phenotype. *(iv)* Species distribution is binary ("human only — not seen in mouse cortex"); the evidence does not adjudicate whether a rosehip-like combinatorial signature exists in non-human primates, where the most relevant comparisons would be.
 :::
 
 :::{dropdown} 📓 Figure code
@@ -141,10 +140,9 @@ The DLPFC-focused postmortem literature is the older anchor. {cite:t}`Hashimoto2
 
 :::{figure} ../figures/sec-11/fig_sec11_dlpfc_disease_transcripts.png
 :label: fig-sec11-dlpfc-disease-transcripts
-:name: fig-sec11-dlpfc-disease-transcripts
 :width: 100%
 
-DLPFC GABAergic-subtype transcript alterations in psychiatric disorders, plotted as Cohen's $d$ (disease vs unaffected comparison; negative = reduction). PV mRNA is reduced in schizophrenia (SZ), bipolar disorder (BD), and major depression (MD); VIP and SST mRNA are reduced in SZ; CR mRNA is reported qualitatively unaltered. Data from a single postmortem study {cite:p}`Okuda2024`. **CAVEATS.** *(i)* All entries are from one postmortem study ($n\!=\!160$); this is not an independent cross-study meta-analysis. *(ii)* The CR mRNA point is a qualitative "unaltered" claim from a narrative sentence, not a Cohen's $d$ estimated in the cited study — it is shown at $d\!=\!0$ with an open symbol for placement only. *(iii)* SST mRNA Cohen's $d$ is reported without a 95% CI; PV and VIP values include CIs — precision is asymmetric across subtypes. *(iv)* Only PV is contrasted across SZ/BD/MD; SZ-only data for SST/VIP/CR do not support disease-specificity claims.
+**DLPFC GABAergic-subtype transcript alterations in psychiatric disorders.** Plotted as Cohen's $d$ (disease vs unaffected comparison; negative = reduction). PV mRNA is reduced in schizophrenia (SZ), bipolar disorder (BD), and major depression (MD); VIP and SST mRNA are reduced in SZ; CR mRNA is reported qualitatively unaltered. Data from a single postmortem study {cite:p}`Okuda2024`. **CAVEATS.** *(i)* All entries are from one postmortem study ($n\!=\!160$); this is not an independent cross-study meta-analysis. *(ii)* The CR mRNA point is a qualitative "unaltered" claim from a narrative sentence, not a Cohen's $d$ estimated in the cited study — it is shown at $d\!=\!0$ with an open symbol for placement only. *(iii)* SST mRNA Cohen's $d$ is reported without a 95% CI; PV and VIP values include CIs — precision is asymmetric across subtypes. *(iv)* Only PV is contrasted across SZ/BD/MD; SZ-only data for SST/VIP/CR do not support disease-specificity claims.
 :::
 
 :::{dropdown} 📓 Figure code
