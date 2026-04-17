@@ -1,0 +1,2182 @@
+{
+  "findings": [
+    {
+      "doi": "10.1101/2020.06.12.149260",
+      "claim": "Furthermore, we found that mutual inhibition among SOM interneurons was strong and more prevalent than previously thought, while mutual inhibition among PV interneurons was minimal.",
+      "claim_source_sentence": "Furthermore, we found that mutual inhibition among SOM interneurons was strong and more prevalent than previously thought, while mutual inhibition among PV interneurons was minimal.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021",
+        "10.1523/jneurosci.0957-23.2024"
+      ],
+      "cite_key": "Dorsett2020"
+    },
+    {
+      "doi": "10.1016/j.pneurobio.2023.102542",
+      "claim": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "claim_source_sentence": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1523/eneuro.0235-21.2021",
+        "10.1523/jneurosci.0957-23.2024"
+      ],
+      "cite_key": "Proddutur2023a"
+    },
+    {
+      "doi": "10.1523/eneuro.0452-25.2026",
+      "claim": "We found that fast-spiking interneurons exhibited robust gamma-frequency firing, while excitatory neurons engaged in gamma cycle skipping.",
+      "claim_source_sentence": "We found that fast-spiking interneurons exhibited robust gamma-frequency firing, while excitatory neurons engaged in gamma cycle skipping.",
+      "effect_size": "140\u2005Hz) play a fundamental role in neural coordination and cognitive functions in the medial entorhinal cortex (mEC)",
+      "effect_size_source_sentence": "Gamma oscillations (40-140\u2005Hz) play a fundamental role in neural coordination and cognitive functions in the medial entorhinal cortex (mEC).",
+      "n": 100,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018",
+        "10.1016/j.neuron.2025.10.017"
+      ],
+      "cite_key": "Williams2026"
+    },
+    {
+      "doi": "10.1523/eneuro.0235-21.2021",
+      "claim": "Together, these results delineate the roles for SST and PV neurons in active synaptic integration.",
+      "claim_source_sentence": "Together, these results delineate the roles for SST and PV neurons in active synaptic integration.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 135,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/jneurosci.0957-23.2024"
+      ],
+      "cite_key": "Dorsett2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.0957-23.2024",
+      "claim": "Our findings indicate that CCK+ interneurons contribute to MD-evoked inhibition in PL, revealing a mechanism by which cannabinoids can modulate MD-PFC communication.",
+      "claim_source_sentence": "Our findings indicate that CCK+ interneurons contribute to MD-evoked inhibition in PL, revealing a mechanism by which cannabinoids can modulate MD-PFC communication.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Kamalova2024"
+    },
+    {
+      "doi": "10.1523/jneurosci.0432-23.2023",
+      "claim": "Our results show that most GABAergic axonal varicosities contacting the perisomatic region of superficial (layer 2/3) and deep (layer 5) pyramidal cells express parvalbumin (PV) or cannabinoid receptor type 1 (CB1).",
+      "claim_source_sentence": "Our results show that most GABAergic axonal varicosities contacting the perisomatic region of superficial (layer 2/3) and deep (layer 5) pyramidal cells express parvalbumin (PV) or cannabinoid receptor type 1 (CB1).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "NagyPl2023"
+    },
+    {
+      "doi": "10.1093/cercor/bhu122",
+      "claim": "We found that the decay of GABAAR-IPSCs, possibly including those from parvalbumin-positive GABA neurons, shortened by prepubertal age, while their amplitude increased until the peripubertal period.",
+      "claim_source_sentence": "We found that the decay of GABAAR-IPSCs, possibly including those from parvalbumin-positive GABA neurons, shortened by prepubertal age, while their amplitude increased until the peripubertal period.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1152/jn.00778.2018",
+        "10.1016/j.neuron.2025.10.017"
+      ],
+      "cite_key": "GonzalezBurgos2015"
+    },
+    {
+      "doi": "10.7554/elife.51691",
+      "claim": "Light- and electron microscopy analyses revealed pvBC axons innervating their own soma and proximal dendrites.",
+      "claim_source_sentence": "Light- and electron microscopy analyses revealed pvBC axons innervating their own soma and proximal dendrites.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Szegedi2020"
+    },
+    {
+      "doi": "10.1016/j.neuron.2010.08.006",
+      "claim": "These results suggest that subsets of parvalbumin interneurons are components of specific cortical networks and that perisomatic inhibition contributes to the generation of precise response properties.",
+      "claim_source_sentence": "These results suggest that subsets of parvalbumin interneurons are components of specific cortical networks and that perisomatic inhibition contributes to the generation of precise response properties.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Runyan2010"
+    },
+    {
+      "doi": "10.3389/neuro.04.015.2009",
+      "claim": "Our results support the idea that chandelier cells depolarize pyramidal neurons and could potentially have an excitatory effect on the network at rest.",
+      "claim_source_sentence": "Our results support the idea that chandelier cells depolarize pyramidal neurons and could potentially have an excitatory effect on the network at rest.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 5,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1126/science.1121325"
+      ],
+      "cite_key": "Woodruff2009"
+    },
+    {
+      "doi": "10.1038/s41467-025-59635-z",
+      "claim": "We demonstrate that layer 5 intra- (L5 IT) and extra-telencephalic (L5 ET) neurons express unique transcriptional programs, allowing them to shape parvalbumin- (PV+) and cholecystokinin-positive (CCK+) interneuron wiring.",
+      "claim_source_sentence": "We demonstrate that layer 5 intra- (L5 IT) and extra-telencephalic (L5 ET) neurons express unique transcriptional programs, allowing them to shape parvalbumin- (PV+) and cholecystokinin-positive (CCK+) interneuron wiring.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 5,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Jzquel2025"
+    },
+    {
+      "doi": "10.1371/journal.pone.0066509",
+      "claim": "Combining intracellular and extracellular recordings from pyramidal cells and interneurons, we confirm that inhibitory signals generated by basket cells can be recorded extracellularly, but our results suggest that, during spontaneous activity, eIPSPs are mostly confined to the CA3 rather than CA1 r",
+      "claim_source_sentence": "Combining intracellular and extracellular recordings from pyramidal cells and interneurons, we confirm that inhibitory signals generated by basket cells can be recorded extracellularly, but our results suggest that, during spontaneous activity, eIPSPs are mostly confined to the CA3 rather than CA1 region.",
+      "effect_size": "10 ms time scale, within which neurons recruit each other through recurrent collaterals and trigger powerful feedback inhibition",
+      "effect_size_source_sentence": "Analysis of the temporal dynamics of spike discharges relative to eIPSPs suggests significant but moderate recruitment of excitatory and inhibitory neurons within the CA3 network on a 10 ms time scale, within which neurons recruit each other through recurrent collaterals and trigger powerful feedback inhibition.",
+      "n": 3,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Beyeler2013"
+    },
+    {
+      "doi": "10.1371/journal.pbio.1001903",
+      "claim": "Here we show that this equilibrium can be unlocked by increased activity of layer 5 pyramidal neurons of the mouse neocortex.",
+      "claim_source_sentence": "Here we show that this equilibrium can be unlocked by increased activity of layer 5 pyramidal neurons of the mouse neocortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 5,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Loureno2014"
+    },
+    {
+      "doi": "10.1097/j.pain.0000000000003518",
+      "claim": "Exposure to nociceptive heat stimulation significantly increased the amount of pain-related escape behavior, and PVN activation by optogenetics did not significantly decrease pain-related behavior.",
+      "claim_source_sentence": "Exposure to nociceptive heat stimulation significantly increased the amount of pain-related escape behavior, and PVN activation by optogenetics did not significantly decrease pain-related behavior.",
+      "effect_size": "60 mV membrane potential of PNs",
+      "effect_size_source_sentence": "Long-term potentiation was induced by either the -45 or -60 mV membrane potential of PNs.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kobayashi2025"
+    },
+    {
+      "doi": "10.1152/jn.00495.2024",
+      "claim": "Picrotoxin increased firing and GABA decreased firing in WT PV interneurons but not in cKO PV interneurons.",
+      "claim_source_sentence": "Picrotoxin increased firing and GABA decreased firing in WT PV interneurons but not in cKO PV interneurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Lu2025"
+    },
+    {
+      "doi": "10.1523/jneurosci.0663-13.2013",
+      "claim": "In contrast to PV+ neurons in mouse visual cortex, which are broadly tuned for orientation, we found that auditory cortical PV+ neurons were well tuned for frequency, although very tightly tuned PV+ cells were uncommon.",
+      "claim_source_sentence": "In contrast to PV+ neurons in mouse visual cortex, which are broadly tuned for orientation, we found that auditory cortical PV+ neurons were well tuned for frequency, although very tightly tuned PV+ cells were uncommon.",
+      "effect_size": "20% of the cortical population and can be separated into numerous subclasses",
+      "effect_size_source_sentence": "Cortical inhibition is provided by local GABAergic interneurons, which comprise 10-20% of the cortical population and can be separated into numerous subclasses.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Moore2013"
+    },
+    {
+      "doi": "10.1523/eneuro.0256-20.2020",
+      "claim": "Acute <i>in vivo</i> silencing of the contralateral cortex generally increased spontaneous firing across cortical layers and linearly transformed responses to pure tones via both divisive and additive operations.",
+      "claim_source_sentence": "Acute <i>in vivo</i> silencing of the contralateral cortex generally increased spontaneous firing across cortical layers and linearly transformed responses to pure tones via both divisive and additive operations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.3389/fncel.2021.688905"
+      ],
+      "cite_key": "Slater2020"
+    },
+    {
+      "doi": "10.3389/fncel.2021.688905",
+      "claim": "In the stargazer mouse model of absence epilepsy, reduced FFI is believed to contribute to absence seizure genesis as there is a specific loss of excitatory \u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors (AMPARs) at synaptic inputs to PV+ interneurons within the CTC network.",
+      "claim_source_sentence": "In the stargazer mouse model of absence epilepsy, reduced FFI is believed to contribute to absence seizure genesis as there is a specific loss of excitatory \u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors (AMPARs) at synaptic inputs to PV+ interneurons within the CTC network.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 5,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Panthi2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.4565-14.2015",
+      "claim": "Here we show in mice that inputs from the MD drive disynaptic feedforward inhibition in the dorsal anterior cingulate cortex (dACC) subregion of the mPFC.",
+      "claim_source_sentence": "Here we show in mice that inputs from the MD drive disynaptic feedforward inhibition in the dorsal anterior cingulate cortex (dACC) subregion of the mPFC.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Delevich2015"
+    },
+    {
+      "doi": "10.14814/phy2.12664",
+      "claim": "Single PV interneurons could trigger very large (~ 1\u00a0nA) feedback excitatory postsynaptic currents (fbEPSCs) suggesting that these neurons are heavily reciprocally connected to local glutamatergic principal cells.",
+      "claim_source_sentence": "Single PV interneurons could trigger very large (~ 1\u00a0nA) feedback excitatory postsynaptic currents (fbEPSCs) suggesting that these neurons are heavily reciprocally connected to local glutamatergic principal cells.",
+      "effect_size": "1\u00a0nA) feedback excitatory postsynaptic currents (fbEPSCs) suggesting that these neurons are heavily reciprocally connected to local glutamatergic principal cells",
+      "effect_size_source_sentence": "Single PV interneurons could trigger very large (~ 1\u00a0nA) feedback excitatory postsynaptic currents (fbEPSCs) suggesting that these neurons are heavily reciprocally connected to local glutamatergic principal cells.",
+      "n": 12,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Spampanato2016"
+    },
+    {
+      "doi": "10.1152/jn.00778.2018",
+      "claim": "These connectivity characteristics can promote synchronous firing in the local networks of CPn cells and firing of some CCS cells by anode-break excitation.",
+      "claim_source_sentence": "These connectivity characteristics can promote synchronous firing in the local networks of CPn cells and firing of some CCS cells by anode-break excitation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 5,
+      "study_system": "computational model",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1016/j.neuron.2025.10.017"
+      ],
+      "cite_key": "Kawaguchi2019"
+    },
+    {
+      "doi": "10.1016/j.neuron.2025.10.017",
+      "claim": "We found that PVNs act like a volume knob in the mouse auditory cortex (ACtx), bi-directionally adjusting neural and perceptual sensitivity to sound level over a 20 dB range.",
+      "claim_source_sentence": "We found that PVNs act like a volume knob in the mouse auditory cortex (ACtx), bi-directionally adjusting neural and perceptual sensitivity to sound level over a 20 dB range.",
+      "effect_size": "40 Hz-but not at 1 or 70 Hz-sustainably dampened ACtx sound responsiveness, enhanced feedforward inhibition, and behaviorally desensitized mice to loudness",
+      "effect_size_source_sentence": "PVN-based gain adjustments were \"sticky,\" such that a single bout of PVN activation at 40 Hz-but not at 1 or 70 Hz-sustainably dampened ACtx sound responsiveness, enhanced feedforward inhibition, and behaviorally desensitized mice to loudness.",
+      "n": 100,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Clayton2026"
+    },
+    {
+      "doi": "10.1016/j.neuron.2020.01.037",
+      "claim": "We found that increases in the activity of either pyramidal cells or individual ChCs during this temporal window result in a reversible decrease in axo-axonic connections.",
+      "claim_source_sentence": "We found that increases in the activity of either pyramidal cells or individual ChCs during this temporal window result in a reversible decrease in axo-axonic connections.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 32,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "PanVazquez2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.5433-13.2014",
+      "claim": "By using paired recordings of synaptically connected interneurons in slice preparations of the rat and mouse dentate gyrus (DG), we show that morphologically identified interneurons form complex neuronal networks.",
+      "claim_source_sentence": "By using paired recordings of synaptically connected interneurons in slice preparations of the rat and mouse dentate gyrus (DG), we show that morphologically identified interneurons form complex neuronal networks.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Savanthrapadian2014"
+    },
+    {
+      "doi": "10.1038/s41380-022-01747-9",
+      "claim": "We found that nearly 100% of PV+ interneurons in adult medial PFC (mPFC) express transcripts encoding GluN1 and GluN2B, and they have functional NMDARs.",
+      "claim_source_sentence": "We found that nearly 100% of PV+ interneurons in adult medial PFC (mPFC) express transcripts encoding GluN1 and GluN2B, and they have functional NMDARs.",
+      "effect_size": "100% of PV+ interneurons in adult medial PFC (mPFC) express transcripts encoding GluN1 and GluN2B, and they have functional NMDARs",
+      "effect_size_source_sentence": "We found that nearly 100% of PV+ interneurons in adult medial PFC (mPFC) express transcripts encoding GluN1 and GluN2B, and they have functional NMDARs.",
+      "n": null,
+      "study_system": "not specified",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Lewis2022"
+    },
+    {
+      "doi": "10.1093/cercor/bhaa359",
+      "claim": "Using this approach, we show that the medial entorhinal cortical alvear inputs onto CA1 pyramidal cells (PCs) and interneurons with cell bodies located in stratum oriens were monosynaptic, had low release probability, and were mediated by glutamate receptors.",
+      "claim_source_sentence": "Using this approach, we show that the medial entorhinal cortical alvear inputs onto CA1 pyramidal cells (PCs) and interneurons with cell bodies located in stratum oriens were monosynaptic, had low release probability, and were mediated by glutamate receptors.",
+      "effect_size": "70% of PV and VIP interneurons and less than 20% of O-LM cells",
+      "effect_size_source_sentence": "Furthermore, alvear excitatory synaptic responses were observed in greater than 70% of PV and VIP interneurons and less than 20% of O-LM cells.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Bell2021"
+    },
+    {
+      "doi": "10.3389/fncel.2015.00439",
+      "claim": "These results suggest testable hypotheses on the precise effects of GABAergic diversity on cortical computation.",
+      "claim_source_sentence": "These results suggest testable hypotheses on the precise effects of GABAergic diversity on cortical computation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Ferrante2015"
+    },
+    {
+      "doi": "10.1073/pnas.1413625112",
+      "claim": "Here we tested the role of one cell type in the wakefulness-promoting basal forebrain (BF) region, cortically projecting GABAergic neurons containing PV, whose virally transduced fibers we found apposed cortical PV interneurons involved in generating GBO.",
+      "claim_source_sentence": "Here we tested the role of one cell type in the wakefulness-promoting basal forebrain (BF) region, cortically projecting GABAergic neurons containing PV, whose virally transduced fibers we found apposed cortical PV interneurons involved in generating GBO.",
+      "effect_size": "80 Hz, typically \u223c40 Hz) are involved in higher cognitive functions such as feature binding, attention, and working memory",
+      "effect_size_source_sentence": "Cortical gamma band oscillations (GBO, 30-80 Hz, typically \u223c40 Hz) are involved in higher cognitive functions such as feature binding, attention, and working memory.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Kim2015"
+    },
+    {
+      "doi": "10.3389/fpsyt.2022.913550",
+      "claim": "In ASD, the number of PV+ Ch cells is decreased across several cortical areas.",
+      "claim_source_sentence": "In ASD, the number of PV+ Ch cells is decreased across several cortical areas.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Juarez2022"
+    },
+    {
+      "doi": "10.1101/2025.05.12.653375",
+      "claim": "We show that crosshemispheric gamma synchrony strengthens with age, in line with the previously reported increase in local gamma power.",
+      "claim_source_sentence": "We show that crosshemispheric gamma synchrony strengthens with age, in line with the previously reported increase in local gamma power.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Offermanns2025"
+    },
+    {
+      "doi": "10.7554/elife.56795",
+      "claim": "We show that fast rhythmic activity in the prefrontal cortex becomes prominent during the second postnatal week.",
+      "claim_source_sentence": "We show that fast rhythmic activity in the prefrontal cortex becomes prominent during the second postnatal week.",
+      "effect_size": "15 Hz, fast oscillatory activity progressively accelerates with age and stabilizes within gamma frequency range (30-80 Hz) during the fourth postnatal week",
+      "effect_size_source_sentence": "While initially at about 15 Hz, fast oscillatory activity progressively accelerates with age and stabilizes within gamma frequency range (30-80 Hz) during the fourth postnatal week.",
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Bitzenhofer2020"
+    },
+    {
+      "doi": "10.1038/s41467-025-66309-3",
+      "claim": "We demonstrate in mice that early postnatal GABAergic signaling between interneurons and oligodendrocyte precursor cells (OPCs) is crucial for myelination of parvalbumin (PV) interneurons, which facilitates in vivo low-gamma oscillations in the medial prefrontal cortex (mPFC) and supports fear extin",
+      "claim_source_sentence": "We demonstrate in mice that early postnatal GABAergic signaling between interneurons and oligodendrocyte precursor cells (OPCs) is crucial for myelination of parvalbumin (PV) interneurons, which facilitates in vivo low-gamma oscillations in the medial prefrontal cortex (mPFC) and supports fear extinction learning.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Plaisier2025"
+    },
+    {
+      "doi": "10.1016/j.brs.2026.103034",
+      "claim": "These findings demonstrate that phase-dependent amplification of cortical theta power can be induced through targeted stimulation of local excitatory or inhibitory neurons, with the observed phase offset likely reflecting underlying circuit dynamics.",
+      "claim_source_sentence": "These findings demonstrate that phase-dependent amplification of cortical theta power can be induced through targeted stimulation of local excitatory or inhibitory neurons, with the observed phase offset likely reflecting underlying circuit dynamics.",
+      "effect_size": "75Hz) frequency (\"gamma\" protocol)",
+      "effect_size_source_sentence": "Stimulation was delivered over a quarter of the target theta cycle, either as a single continuous pulse (\"continuous\" protocol) or three short pulses at gamma (75Hz) frequency (\"gamma\" protocol).",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Myatt2026"
+    },
+    {
+      "doi": "10.1101/2025.08.21.670039",
+      "claim": "These findings reveal phase-dependent amplification of cortical theta power can be induced by stimulation of local excitatory or inhibitory neurons, with a phase-offset likely resulting from circuit interactions.",
+      "claim_source_sentence": "These findings reveal phase-dependent amplification of cortical theta power can be induced by stimulation of local excitatory or inhibitory neurons, with a phase-offset likely resulting from circuit interactions.",
+      "effect_size": "75Hz) frequency (\u201cgamma\u201d protocol)",
+      "effect_size_source_sentence": "Stimulation was delivered over a quarter of the target theta cycle, either as a single continuous pulse (\u201ccontinuous\u201d protocol) or three short pulses at gamma (75Hz) frequency (\u201cgamma\u201d protocol).",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Myatt2025"
+    },
+    {
+      "doi": "10.3390/ijms25105549",
+      "claim": "Hence, their dysfunction can lead to hyperexcitability and increased susceptibility to seizures.",
+      "claim_source_sentence": "Hence, their dysfunction can lead to hyperexcitability and increased susceptibility to seizures.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Leitch2024"
+    },
+    {
+      "doi": "10.1016/j.neuron.2018.02.001",
+      "claim": "Here, we found decreased excitability of fast-spiking interneurons and dysfunction of gamma oscillation in the medial prefrontal cortex (mPFC), which contributed to the social novelty deficit in the KI mice.",
+      "claim_source_sentence": "Here, we found decreased excitability of fast-spiking interneurons and dysfunction of gamma oscillation in the medial prefrontal cortex (mPFC), which contributed to the social novelty deficit in the KI mice.",
+      "effect_size": "40\u00a0Hz nested at 8\u00a0Hz positively modulated the social behaviors of mice and rescued the social novelty deficit in the KI mice",
+      "effect_size_source_sentence": "Interestingly, optogenetic stimulation of parvalbumin interneurons in the mPFC at 40\u00a0Hz nested at 8\u00a0Hz positively modulated the social behaviors of mice and rescued the social novelty deficit in the KI mice.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Cao2018"
+    },
+    {
+      "doi": "10.1016/j.crneur.2023.100121",
+      "claim": "Given the link between PV+\u00a0interneurons and cognition, in the future, it would be useful to carry out physiological recordings in the PV+\u00a0cell type selectively and characterize if and how psychiatric and neurological diseases affect initiation and propagation of electrical signals in this cortical s",
+      "claim_source_sentence": "Given the link between PV+\u00a0interneurons and cognition, in the future, it would be useful to carry out physiological recordings in the PV+\u00a0cell type selectively and characterize if and how psychiatric and neurological diseases affect initiation and propagation of electrical signals in this cortical sub-circuit.",
+      "effect_size": "80\u00a0Hz), which underlie higher cognitive functions",
+      "effect_size_source_sentence": "Parvalbumin-expressing (PV+) inhibitory interneurons drive gamma oscillations (30-80\u00a0Hz), which underlie higher cognitive functions.",
+      "n": 4,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Milicevic2024"
+    },
+    {
+      "doi": "10.1016/j.celrep.2021.109970",
+      "claim": "Cntnap2<sup>-/-</sup> mice show a reduction in hippocampal PV interneuron density, reduced inhibitory input to CA1 pyramidal cells, deficits in spatial discrimination ability, and frequency-dependent circuit changes within the hippocampus, including alterations in gamma oscillations, sharp-wave ripp",
+      "claim_source_sentence": "Cntnap2<sup>-/-</sup> mice show a reduction in hippocampal PV interneuron density, reduced inhibitory input to CA1 pyramidal cells, deficits in spatial discrimination ability, and frequency-dependent circuit changes within the hippocampus, including alterations in gamma oscillations, sharp-wave ripples, and theta-gamma modulation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 2,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Paterno2021"
+    },
+    {
+      "doi": "10.1038/jcbfm.2014.104",
+      "claim": "This supports the hypothesis that highly energized fast-spiking interneurons are a central element for cortical information processing and may be critical for cognitive decline when energy supply becomes limited ('interneuron energy hypothesis').",
+      "claim_source_sentence": "This supports the hypothesis that highly energized fast-spiking interneurons are a central element for cortical information processing and may be critical for cognitive decline when energy supply becomes limited ('interneuron energy hypothesis').",
+      "effect_size": "100\u2009Hz) provide a fundamental mechanism of information processing during sensory perception, motor behavior, and memory formation by coordination of neuronal activity in networks of the hippocampus and neocortex",
+      "effect_size_source_sentence": "Gamma oscillations (\u223c30 to 100\u2009Hz) provide a fundamental mechanism of information processing during sensory perception, motor behavior, and memory formation by coordination of neuronal activity in networks of the hippocampus and neocortex.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Kann2014"
+    },
+    {
+      "doi": "10.3389/fnsyn.2022.857608",
+      "claim": "We found no difference in PV firing or phase preference during kainate-induced oscillations in younger or older <i>5xFAD</i> mice compared to control, and a reduction of PV and PNNs only in the oldest <i>5xFAD</i> mice.",
+      "claim_source_sentence": "We found no difference in PV firing or phase preference during kainate-induced oscillations in younger or older <i>5xFAD</i> mice compared to control, and a reduction of PV and PNNs only in the oldest <i>5xFAD</i> mice.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "MackenzieGrayScott2022"
+    },
+    {
+      "doi": "10.3109/10673221003747609",
+      "claim": "Evidence suggests that reduced glutamatergic neurotransmission via the N-methyl-D-aspartate (NMDA) receptors that are localized to inhibitory interneurons, perhaps especially the fast-spiking cells that contain the calcium-binding protein parvalbumin (PV), may contribute to gamma band synchrony defi",
+      "claim_source_sentence": "Evidence suggests that reduced glutamatergic neurotransmission via the N-methyl-D-aspartate (NMDA) receptors that are localized to inhibitory interneurons, perhaps especially the fast-spiking cells that contain the calcium-binding protein parvalbumin (PV), may contribute to gamma band synchrony deficits.",
+      "effect_size": "100 Hz) as a major pathophysiologic feature of schizophrenia",
+      "effect_size_source_sentence": "A fascinating convergence of evidence in recent years has implicated the disturbances of neural synchrony in the gamma frequency band (30-100 Hz) as a major pathophysiologic feature of schizophrenia.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Woo2010"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1012259",
+      "claim": "Our findings reveal a dynamic interplay between pyramidal and fast-spiking interneurons leading to the emergence of gamma activity (\u223c40 Hz).",
+      "claim_source_sentence": "Our findings reveal a dynamic interplay between pyramidal and fast-spiking interneurons leading to the emergence of gamma activity (\u223c40 Hz).",
+      "effect_size": "40 Hz)",
+      "effect_size_source_sentence": "Our findings reveal a dynamic interplay between pyramidal and fast-spiking interneurons leading to the emergence of gamma activity (\u223c40 Hz).",
+      "n": 3000,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Clusella2024"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-9117440/v1",
+      "claim": "Our findings reconcile discrepancies in previous rodent studies, reveal important species differences, and establish a framework for understanding layer-dependent inhibitory computations in the primate cortex.</p>",
+      "claim_source_sentence": "Our findings reconcile discrepancies in previous rodent studies, reveal important species differences, and establish a framework for understanding layer-dependent inhibitory computations in the primate cortex.</p>",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "primate",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Angelucci2026"
+    },
+    {
+      "doi": "10.7554/elife.53552",
+      "claim": "Here, we show that serotonergic input has separable suppressive effects on the gain of ongoing and evoked visual activity.",
+      "claim_source_sentence": "Here, we show that serotonergic input has separable suppressive effects on the gain of ongoing and evoked visual activity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Azimi2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.0040-13.2013",
+      "claim": "Furthermore, SAP97-expressing PV interneurons showed increased glutamatergic input and more extensive dendritic branching when compared with non-expressing PV interneurons.",
+      "claim_source_sentence": "Furthermore, SAP97-expressing PV interneurons showed increased glutamatergic input and more extensive dendritic branching when compared with non-expressing PV interneurons.",
+      "effect_size": "40%, of adult PV interneurons",
+      "effect_size_source_sentence": "For PV interneurons in mouse visual cortex, the expression of SAP97 is developmentally regulated, being expressed in almost all juvenile but only a fraction, ~40%, of adult PV interneurons.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Akgul2013"
+    },
+    {
+      "doi": "10.1152/jn.00732.2015",
+      "claim": "They also lead to novel predictions concerning connectivity and network dynamics that can be tested via optogenetic manipulations.",
+      "claim_source_sentence": "They also lead to novel predictions concerning connectivity and network dynamics that can be tested via optogenetic manipulations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "LitwinKumar2016"
+    },
+    {
+      "doi": "10.1038/s41467-024-51861-1",
+      "claim": "We show that photoactivation of the 5-HT<sub>2A</sub> receptor pathway in pyramidal neurons enhances firing of both excitatory neurons and interneurons, whereas 5-HT<sub>2A</sub> photoactivation in parvalbumin interneurons produces bidirectional effects.",
+      "claim_source_sentence": "We show that photoactivation of the 5-HT<sub>2A</sub> receptor pathway in pyramidal neurons enhances firing of both excitatory neurons and interneurons, whereas 5-HT<sub>2A</sub> photoactivation in parvalbumin interneurons produces bidirectional effects.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Barzan2024"
+    },
+    {
+      "doi": "10.1101/2024.07.22.604711",
+      "claim": "Here we demonstrate that cortex-projecting basal forebrain parvalbumin-expressing inhibitory neurons (BF-PV) mediate sustained attention in mice performing an attention task.",
+      "claim_source_sentence": "Here we demonstrate that cortex-projecting basal forebrain parvalbumin-expressing inhibitory neurons (BF-PV) mediate sustained attention in mice performing an attention task.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Li2024a"
+    },
+    {
+      "doi": "10.1523/jneurosci.1482-23.2024",
+      "claim": "Probing the local field potential activity of the forelimb primary sensory cortex (S1FL) located in the PIC of male adult mice, we found a constant, deep reduction of low-gamma oscillation power (L-gamma; 30-50\u2005Hz) precisely during the critical time window for recovery (1-3\u2005weeks after stroke).",
+      "claim_source_sentence": "Probing the local field potential activity of the forelimb primary sensory cortex (S1FL) located in the PIC of male adult mice, we found a constant, deep reduction of low-gamma oscillation power (L-gamma; 30-50\u2005Hz) precisely during the critical time window for recovery (1-3\u2005weeks after stroke).",
+      "effect_size": "50\u2005Hz) precisely during the critical time window for recovery (1-3\u2005weeks after stroke)",
+      "effect_size_source_sentence": "Probing the local field potential activity of the forelimb primary sensory cortex (S1FL) located in the PIC of male adult mice, we found a constant, deep reduction of low-gamma oscillation power (L-gamma; 30-50\u2005Hz) precisely during the critical time window for recovery (1-3\u2005weeks after stroke).",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Alasoadura2024"
+    },
+    {
+      "doi": "10.1016/j.neuron.2015.09.013",
+      "claim": "Activating either PV or SOM interneurons produced mixtures of divisive and subtractive effects; threshold nonlinearities interact with network activity to transform the apparent nature of inhibition",
+      "claim_source_sentence": "activating either family of interneurons produced mixtures of divisive and subtractive effects and that simultaneously recorded neurons were often suppressed in qualitatively different ways",
+      "effect_size": "qualitative mixture of divisive and subtractive in both awake and anesthetized",
+      "effect_size_source_sentence": "In both awake and anesthetized animals, we found that activating either family of interneurons produced mixtures of divisive and subtractive effects and that simultaneously recorded neurons were often suppressed in qualitatively different ways.",
+      "n": 145,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Seybold2015"
+    },
+    {
+      "doi": "10.1152/jn.00911.2017",
+      "claim": "We found that PV+ cells had stronger and more prevalent on-responses, off-responses, and postresponse suppression compared with presumed pyramidal cells.",
+      "claim_source_sentence": "We found that PV+ cells had stronger and more prevalent on-responses, off-responses, and postresponse suppression compared with presumed pyramidal cells.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Keller2018"
+    },
+    {
+      "doi": "10.7554/elife.99808",
+      "claim": "We show how, in E - PV - SOM recurrently connected networks, SOM-mediated modulation can lead to simultaneous increases in neuronal gain and network stability.",
+      "claim_source_sentence": "We show how, in E - PV - SOM recurrently connected networks, SOM-mediated modulation can lead to simultaneous increases in neuronal gain and network stability.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Bos2025"
+    },
+    {
+      "doi": "10.1126/sciadv.adk4331",
+      "claim": "Here, we show that changes of GABAergic synaptic input from chandelier cells (ChCs) drive homeostatic tuning of the AIS of principal neurons (PNs) in the prelimbic (PL) region, while those from parvalbumin-positive basket cells do not.",
+      "claim_source_sentence": "Here, we show that changes of GABAergic synaptic input from chandelier cells (ChCs) drive homeostatic tuning of the AIS of principal neurons (PNs) in the prelimbic (PL) region, while those from parvalbumin-positive basket cells do not.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Zhao2024b"
+    },
+    {
+      "doi": "10.1002/cne.903200307",
+      "claim": "Electron microscopic analysis revealed that PV-IR somata and dendrites are densely innervated by nonimmunoreactive terminals forming asymmetric (Gray type I) synapses as well as by fewer terminals forming symmetric (Gray type II) synapses.",
+      "claim_source_sentence": "Electron microscopic analysis revealed that PV-IR somata and dendrites are densely innervated by nonimmunoreactive terminals forming asymmetric (Gray type I) synapses as well as by fewer terminals forming symmetric (Gray type II) synapses.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Williams1992"
+    },
+    {
+      "doi": "10.3389/fnmol.2019.00154",
+      "claim": "Both <i>LGI2</i> and <i>FGF13</i> mutations are implicated in syndromes with epilepsy as a component.",
+      "claim_source_sentence": "Both <i>LGI2</i> and <i>FGF13</i> mutations are implicated in syndromes with epilepsy as a component.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Contreras2019"
+    },
+    {
+      "doi": "10.1152/jn.00523.2018",
+      "claim": "Using en bloc specimens from MTLE subjects with and without hippocampal sclerosis, paired with nonepileptic controls, we demonstrate the utility of this approach for detecting cell-type specific synaptic alterations.",
+      "claim_source_sentence": "Using en bloc specimens from MTLE subjects with and without hippocampal sclerosis, paired with nonepileptic controls, we demonstrate the utility of this approach for detecting cell-type specific synaptic alterations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Alhourani2020"
+    },
+    {
+      "doi": "10.1002/dneu.20853",
+      "claim": "The 5HT3aR group, which also accounts for \u223c30% of the total interneuronal population, is heterogeneous and includes all of the neurons that express the neuropeptide VIP, as well as an equally numerous subgroup of neurons that do not express VIP and includes neurogliaform cells.",
+      "claim_source_sentence": "The 5HT3aR group, which also accounts for \u223c30% of the total interneuronal population, is heterogeneous and includes all of the neurons that express the neuropeptide VIP, as well as an equally numerous subgroup of neurons that do not express VIP and includes neurogliaform cells.",
+      "effect_size": "100% of neocortical interneurons",
+      "effect_size_source_sentence": "Recent data suggest that neurons expressing three markers, the Ca2+-binding protein parvalbumin (PV), the neuropeptide somatostatin (SST), and the ionotropic serotonin receptor 5HT3a (5HT3aR) account for nearly 100% of neocortical interneurons.",
+      "n": null,
+      "study_system": "not specified",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Rudy2011"
+    },
+    {
+      "doi": "10.1002/syn.20121",
+      "claim": "Other measures of both parvalbumin- and calretinin-immunoreactive cells were unchanged, including total number of cells, distribution by depth, and sizes of cells.",
+      "claim_source_sentence": "Other measures of both parvalbumin- and calretinin-immunoreactive cells were unchanged, including total number of cells, distribution by depth, and sizes of cells.",
+      "effect_size": "50% reduction in spindle-shaped parvalbumin-immunoreactive cells potentially indicating a select loss of chandelier cells or a shift to a rounder shape",
+      "effect_size_source_sentence": "Specifically, prenatal cocaine exposure is associated with a 50% reduction in spindle-shaped parvalbumin-immunoreactive cells potentially indicating a select loss of chandelier cells or a shift to a rounder shape.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Morrow2005"
+    },
+    {
+      "doi": "10.7554/elife.04006",
+      "claim": "In this study, we show that each of the three major PV cell classes further splits into functionally distinct sub-classes during fast network events in vivo.",
+      "claim_source_sentence": "In this study, we show that each of the three major PV cell classes further splits into functionally distinct sub-classes during fast network events in vivo.",
+      "effect_size": "10 Hz) theta oscillations, each cell class exhibited its own characteristic, relatively uniform firing behavior",
+      "effect_size_source_sentence": "During the slower (<10 Hz) theta oscillations, each cell class exhibited its own characteristic, relatively uniform firing behavior.",
+      "n": 12,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Varga2014"
+    },
+    {
+      "doi": "10.7554/elife.93481",
+      "claim": "Retrograde monosynaptic tracing from AACs across neocortical, hippocampal, and BLA regions reveal shared as well as distinct patterns of synaptic input.",
+      "claim_source_sentence": "Retrograde monosynaptic tracing from AACs across neocortical, hippocampal, and BLA regions reveal shared as well as distinct patterns of synaptic input.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Raudales2024"
+    },
+    {
+      "doi": "10.1523/eneuro.0314-23.2024",
+      "claim": "Here we report that a large majority of parvalbumin-expressing (PV+) interneurons in the upper layers of mouse neocortex, from both orbitofrontal and primary somatosensory areas, fire EAPs after sufficient activation of their somata.",
+      "claim_source_sentence": "Here we report that a large majority of parvalbumin-expressing (PV+) interneurons in the upper layers of mouse neocortex, from both orbitofrontal and primary somatosensory areas, fire EAPs after sufficient activation of their somata.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Theyel2024"
+    },
+    {
+      "doi": "10.1523/jneurosci.4166-14.2015",
+      "claim": "We found that this CA1 KA-evoked gamma oscillation was faster than that in CA3 and, crucially, did not appear to require the involvement of fast-spiking basket cells.",
+      "claim_source_sentence": "We found that this CA1 KA-evoked gamma oscillation was faster than that in CA3 and, crucially, did not appear to require the involvement of fast-spiking basket cells.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Craig2015"
+    },
+    {
+      "doi": "10.7554/elife.62373",
+      "claim": "Finally, single-cell nuclear RNAsequencing of PV+INTs revealed several misregulated genes related to morphogenesis, cellular excitability, and synapse formation.",
+      "claim_source_sentence": "Finally, single-cell nuclear RNAsequencing of PV+INTs revealed several misregulated genes related to morphogenesis, cellular excitability, and synapse formation.",
+      "effect_size": "80% fast-spiking (FS), 20% non-fast-spiking (NFS)) and four morphological subtypes",
+      "effect_size_source_sentence": "We find that WT PV+INTs consist of two physiological subtypes (80% fast-spiking (FS), 20% non-fast-spiking (NFS)) and four morphological subtypes.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ekins2020"
+    },
+    {
+      "doi": "10.1038/s41467-025-68059-8",
+      "claim": "We also identified members of the cadherin superfamily as candidate regulators of perisomatic inhibition from parvalbumin-expressing basket cells onto deep and superficial excitatory neurons, exerting opposing effects on synapse formation.",
+      "claim_source_sentence": "We also identified members of the cadherin superfamily as candidate regulators of perisomatic inhibition from parvalbumin-expressing basket cells onto deep and superficial excitatory neurons, exerting opposing effects on synapse formation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Mathieu2026"
+    },
+    {
+      "doi": "10.1177/15357597211053687",
+      "claim": "With a revolution in transcriptomics-based cell taxonomy driving the development of novel transgenic mouse lines, selectively monitoring and modulating previously elusive interneuron types is becoming increasingly feasible.",
+      "claim_source_sentence": "With a revolution in transcriptomics-based cell taxonomy driving the development of novel transgenic mouse lines, selectively monitoring and modulating previously elusive interneuron types is becoming increasingly feasible.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Dudok2022"
+    },
+    {
+      "doi": "10.1038/s41598-024-52200-6",
+      "claim": "We previously reported that male pups raised by physically active (wheel-running, as opposed to sedentary) dams exhibit tube test dominance and increased reproductive fitness, and here we show that social isolation from weaning also increases dominance.",
+      "claim_source_sentence": "We previously reported that male pups raised by physically active (wheel-running, as opposed to sedentary) dams exhibit tube test dominance and increased reproductive fitness, and here we show that social isolation from weaning also increases dominance.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Lopez2024"
+    },
+    {
+      "doi": "10.1523/jneurosci.0097-22.2022",
+      "claim": "These subtypes exhibited reduced intrinsic excitability and a decrease in their synaptic output onto pyramidal neurons, respectively.",
+      "claim_source_sentence": "These subtypes exhibited reduced intrinsic excitability and a decrease in their synaptic output onto pyramidal neurons, respectively.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Nolan2022"
+    },
+    {
+      "doi": "10.3389/fncir.2016.00052",
+      "claim": "We found that while pyramidal cell excitability during Up states significantly increased when SOM cells were optogenetically silenced, VIP cells did not influence pyramidal cell excitability either upon optogenetic silencing or activation.",
+      "claim_source_sentence": "We found that while pyramidal cell excitability during Up states significantly increased when SOM cells were optogenetically silenced, VIP cells did not influence pyramidal cell excitability either upon optogenetic silencing or activation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Neske2016"
+    },
+    {
+      "doi": "10.1523/jneurosci.3039-18.2019",
+      "claim": "Here we show that excitatory inputs to major archetypal classes of neocortical inhibitory neurons, fast-spiking (FS) and non-fast-spiking (non-FS), express a novel type of plasticity, weight-dependent heterosynaptic plasticity, which accompanies the induction of Hebbian-type changes.",
+      "claim_source_sentence": "Here we show that excitatory inputs to major archetypal classes of neocortical inhibitory neurons, fast-spiking (FS) and non-fast-spiking (non-FS), express a novel type of plasticity, weight-dependent heterosynaptic plasticity, which accompanies the induction of Hebbian-type changes.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Chistiakova2019"
+    },
+    {
+      "doi": "10.1111/apha.70043",
+      "claim": "Immunohistochemical analysis revealed that Cav3.1 was predominantly localized in PV-positive GABAergic neurons in the mPFC.",
+      "claim_source_sentence": "Immunohistochemical analysis revealed that Cav3.1 was predominantly localized in PV-positive GABAergic neurons in the mPFC.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Yabuki2025"
+    },
+    {
+      "doi": "10.1038/s41467-019-12058-z",
+      "claim": "These morphologically distinct SOM<sup>+</sup> interneurons corresponded to different transcriptomic cell types and were differentially integrated into the local circuit with only S1 neurons receiving local excitatory input.",
+      "claim_source_sentence": "These morphologically distinct SOM<sup>+</sup> interneurons corresponded to different transcriptomic cell types and were differentially integrated into the local circuit with only S1 neurons receiving local excitatory input.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 1,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Scala2019"
+    },
+    {
+      "doi": "10.1523/jneurosci.2570-19.2020",
+      "claim": "We demonstrate a novel viral gene expression strategy to target cells with specific miRNA expression using miRNA-guided neuron tags (mAGNET).",
+      "claim_source_sentence": "We demonstrate a novel viral gene expression strategy to target cells with specific miRNA expression using miRNA-guided neuron tags (mAGNET).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Keaveney2020"
+    },
+    {
+      "doi": "10.1101/2024.06.15.599179",
+      "claim": "2P vessel diameter measurements revealed that PV+ cell stimulation induced rapid arterial vasodilation in superficial layers and delayed vasodilation in deeper layers.",
+      "claim_source_sentence": "2P vessel diameter measurements revealed that PV+ cell stimulation induced rapid arterial vasodilation in superficial layers and delayed vasodilation in deeper layers.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Rakymzhan2024"
+    },
+    {
+      "doi": "10.1016/j.isci.2025.114132",
+      "claim": "Visual familiarity evokes persistent theta oscillations (4-8 Hz) in the primary visual cortex (V1) of mice, which are weaker and slower in <i>Fmr1</i> KO mice correlating with the decreased excitatory synaptic drive onto fast-spiking interneurons.",
+      "claim_source_sentence": "Visual familiarity evokes persistent theta oscillations (4-8 Hz) in the primary visual cortex (V1) of mice, which are weaker and slower in <i>Fmr1</i> KO mice correlating with the decreased excitatory synaptic drive onto fast-spiking interneurons.",
+      "effect_size": "8 Hz) in the primary visual cortex (V1) of mice, which are weaker and slower in <i>Fmr1</i> KO mice correlating with the decreased excitatory synaptic drive onto fast-spiking interneurons",
+      "effect_size_source_sentence": "Visual familiarity evokes persistent theta oscillations (4-8 Hz) in the primary visual cortex (V1) of mice, which are weaker and slower in <i>Fmr1</i> KO mice correlating with the decreased excitatory synaptic drive onto fast-spiking interneurons.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Nareddula2025"
+    },
+    {
+      "doi": "10.3389/fncir.2018.00037",
+      "claim": "Second, diminishing the function of PV interneurons is sufficient to generate an elaborate symptom sequelae corresponding to those observed in a range of psychiatric diseases.",
+      "claim_source_sentence": "Second, diminishing the function of PV interneurons is sufficient to generate an elaborate symptom sequelae corresponding to those observed in a range of psychiatric diseases.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ferguson2018"
+    },
+    {
+      "doi": "10.1016/j.pneurobio.2025.102866",
+      "claim": "We show that crosshemispheric gamma synchrony strengthens with age, in line with the previously reported increase in local gamma power.",
+      "claim_source_sentence": "We show that crosshemispheric gamma synchrony strengthens with age, in line with the previously reported increase in local gamma power.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Offermanns2026"
+    },
+    {
+      "doi": "10.1016/j.neuron.2021.01.003",
+      "claim": "We show in the CA1 of the mouse hippocampus that the activity of CCK BCs inversely scales with both PV and pyramidal cell activity at the behaviorally relevant timescales of seconds.",
+      "claim_source_sentence": "We show in the CA1 of the mouse hippocampus that the activity of CCK BCs inversely scales with both PV and pyramidal cell activity at the behaviorally relevant timescales of seconds.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Dudok2021"
+    },
+    {
+      "doi": "10.1016/j.neuropharm.2019.107787",
+      "claim": "We found that I<sub>NaP</sub> blockers, phenytoin (40\u202f\u03bcM and 100\u202f\u03bcM) and riluzole (10\u202f\u03bcM), reduced gamma oscillations induced by optogenetic stimulation of CaMKII-expressing cells in CA1 networks.",
+      "claim_source_sentence": "We found that I<sub>NaP</sub> blockers, phenytoin (40\u202f\u03bcM and 100\u202f\u03bcM) and riluzole (10\u202f\u03bcM), reduced gamma oscillations induced by optogenetic stimulation of CaMKII-expressing cells in CA1 networks.",
+      "effect_size": "100\u202fHz), playing key roles in the hippocampus for learning, memory, and spatial processing",
+      "effect_size_source_sentence": "Gamma network oscillations in the brain are fast rhythmic network oscillations in the gamma frequency range (~30-100\u202fHz), playing key roles in the hippocampus for learning, memory, and spatial processing.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Kang2020a"
+    },
+    {
+      "doi": "10.1038/nn.4562",
+      "claim": "Using cell-type-specific optogenetic manipulations in behaving animals, we show that dendrite-targeting somatostatin (SOM) interneurons are critical for a visually induced, context-dependent gamma rhythm in visual cortex.",
+      "claim_source_sentence": "Using cell-type-specific optogenetic manipulations in behaving animals, we show that dendrite-targeting somatostatin (SOM) interneurons are critical for a visually induced, context-dependent gamma rhythm in visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 32,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Veit2017"
+    },
+    {
+      "doi": "10.1007/s12264-024-01266-3",
+      "claim": "Here we briefly introduce the history of ChCs and review recent research advances employing modern genetic and molecular tools.",
+      "claim_source_sentence": "Here we briefly introduce the history of ChCs and review recent research advances employing modern genetic and molecular tools.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Qi2024"
+    },
+    {
+      "doi": "10.3389/fncir.2016.00033",
+      "claim": "In addition, new findings have identified preferential cell-type connectivities established by cortical ChCs, greatly expanding our understanding of the role of ChCs in the cortical microcircuit.",
+      "claim_source_sentence": "In addition, new findings have identified preferential cell-type connectivities established by cortical ChCs, greatly expanding our understanding of the role of ChCs in the cortical microcircuit.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Wang2016b"
+    },
+    {
+      "doi": "10.1016/j.celrep.2017.06.030",
+      "claim": "Here, we show that GABAergic signaling at the AIS of prefrontal pyramidal cells, indeed, switches polarity from depolarizing to hyperpolarizing but does so over a protracted periadolescent period.",
+      "claim_source_sentence": "Here, we show that GABAergic signaling at the AIS of prefrontal pyramidal cells, indeed, switches polarity from depolarizing to hyperpolarizing but does so over a protracted periadolescent period.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "RinettiVargas2017"
+    },
+    {
+      "doi": "10.1038/nature08928",
+      "claim": "Here we show that Nrg1 and ErbB4 signalling controls the development of inhibitory circuitries in the mammalian cerebral cortex by cell-autonomously regulating the connectivity of specific GABA (gamma-aminobutyric acid)-containing interneurons.",
+      "claim_source_sentence": "Here we show that Nrg1 and ErbB4 signalling controls the development of inhibitory circuitries in the mammalian cerebral cortex by cell-autonomously regulating the connectivity of specific GABA (gamma-aminobutyric acid)-containing interneurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 4,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Fazzari2010"
+    },
+    {
+      "doi": "10.1371/journal.pbio.3003549",
+      "claim": "Computational simulations of fast-spiking interneurons revealed that the human-type AIS lowers the AP threshold and shortens the time lag for AP initiation.",
+      "claim_source_sentence": "Computational simulations of fast-spiking interneurons revealed that the human-type AIS lowers the AP threshold and shortens the time lag for AP initiation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Bakos2025"
+    },
+    {
+      "doi": "10.1101/2024.12.23.629830",
+      "claim": "Our findings reveal significant alterations in synaptic currents and inhibitory modulation arise from GluN2A deficiency.",
+      "claim_source_sentence": "Our findings reveal significant alterations in synaptic currents and inhibitory modulation arise from GluN2A deficiency.",
+      "effect_size": "20-fold",
+      "effect_size_source_sentence": "Rare coding mutations in GRIN2A , such as protein-truncating variants, increase susceptibility to SCZ by \u223c20-fold.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Hosseini2024"
+    },
+    {
+      "doi": "10.1101/2024.09.11.612262",
+      "claim": "Our findings thereby uncover a previously unrecognized role for PV+ FSBC dendritic computations in regulating memory-related oscillations, offering new, experimentally testable hypotheses into the subcellular mechanisms that govern hippocampal rhythm generation.",
+      "claim_source_sentence": "Our findings thereby uncover a previously unrecognized role for PV+ FSBC dendritic computations in regulating memory-related oscillations, offering new, experimentally testable hypotheses into the subcellular mechanisms that govern hippocampal rhythm generation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Tzilivaki2024"
+    },
+    {
+      "doi": "10.3390/ijms232214087",
+      "claim": "Whereas the synaptic output of the STUT INs was only weakly reduced by a \u03bc-opioid agonist, their inhibitory inputs were strongly suppressed.",
+      "claim_source_sentence": "Whereas the synaptic output of the STUT INs was only weakly reduced by a \u03bc-opioid agonist, their inhibitory inputs were strongly suppressed.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "not specified",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Gurgenidze2022"
+    },
+    {
+      "doi": "10.1093/cercor/bhaa074",
+      "claim": "Here, analysis of a novel parvalbumin (PV)-Cre: NCAM F/F mouse mutant revealed that NCAM functions presynaptically in PV+ basket interneurons to regulate postnatal elimination of perisomatic synapses.",
+      "claim_source_sentence": "Here, analysis of a novel parvalbumin (PV)-Cre: NCAM F/F mouse mutant revealed that NCAM functions presynaptically in PV+ basket interneurons to regulate postnatal elimination of perisomatic synapses.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Sullivan2020"
+    },
+    {
+      "doi": "10.1093/cercor/bhw021",
+      "claim": "We show that the number of parvalbumin+ interneurons in these 3 cortical areas-BA46, BA47, and BA9-is significantly reduced in autism compared with controls.",
+      "claim_source_sentence": "We show that the number of parvalbumin+ interneurons in these 3 cortical areas-BA46, BA47, and BA9-is significantly reduced in autism compared with controls.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "not specified",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Hashemi2016"
+    },
+    {
+      "doi": "10.1523/jneurosci.2250-20.2021",
+      "claim": "Paradoxically, deficient PV inhibition is associated with increased broadband \u03b3 power in the local field potential.",
+      "claim_source_sentence": "Paradoxically, deficient PV inhibition is associated with increased broadband \u03b3 power in the local field potential.",
+      "effect_size": "80 Hz) have received particular attention through their association with perceptual and cognitive processes",
+      "effect_size_source_sentence": "\u03b3 oscillations (30-80 Hz) have received particular attention through their association with perceptual and cognitive processes.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Guyon2021"
+    },
+    {
+      "doi": "10.1016/j.biopsych.2015.07.005",
+      "claim": "In this review, we discuss some of the key computational models of GBO and their predictions in the context of NMDAR hypofunction in INs.",
+      "claim_source_sentence": "In this review, we discuss some of the key computational models of GBO and their predictions in the context of NMDAR hypofunction in INs.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Jadi2016"
+    },
+    {
+      "doi": "10.1371/journal.pone.0281477",
+      "claim": "Previous studies indicate that the number of Ch cells is decreased in autism, and that GABA receptors are decreased in the Ch cell synaptic target in the prefrontal cortex.",
+      "claim_source_sentence": "Previous studies indicate that the number of Ch cells is decreased in autism, and that GABA receptors are decreased in the Ch cell synaptic target in the prefrontal cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Hong2023"
+    },
+    {
+      "doi": "10.7554/elife.73783",
+      "claim": "We found that synapse number is highly variable across the population and is correlated with several structural features of the target neuron.",
+      "claim_source_sentence": "We found that synapse number is highly variable across the population and is correlated with several structural features of the target neuron.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 153,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "SchneiderMizell2021"
+    },
+    {
+      "doi": "10.1002/cne.22792",
+      "claim": "Our results show the following.",
+      "claim_source_sentence": "Our results show the following.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Wang2012"
+    },
+    {
+      "doi": "10.1523/jneurosci.4049-12.2013",
+      "claim": "Finally, ChCs have similar innervation patterns at different postnatal ages (P18-P90), with only relatively small lateral expansions of their arbor and increases in the total number of their cartridges during the developmental period analyzed.",
+      "claim_source_sentence": "Finally, ChCs have similar innervation patterns at different postnatal ages (P18-P90), with only relatively small lateral expansions of their arbor and increases in the total number of their cartridges during the developmental period analyzed.",
+      "effect_size": "50% of pyramidal neurons within the areas traversed by its axonal arbor, with pockets of very high innervation density",
+      "effect_size_source_sentence": "Additionally, each individual ChC contacts 35-50% of pyramidal neurons within the areas traversed by its axonal arbor, with pockets of very high innervation density.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Inan2013"
+    },
+    {
+      "doi": "10.1093/cercor/bhv199",
+      "claim": "In the first recordings from dentate interneuronal pairs in a model of temporal lobe epilepsy, we demonstrate that status epilepticus (SE) selectively compromises GABA release at synapses from dentate accommodating interneurons (AC-INs) to FS-BCs, while efficacy of homotypic FS-BC synapses is unalte",
+      "claim_source_sentence": "In the first recordings from dentate interneuronal pairs in a model of temporal lobe epilepsy, we demonstrate that status epilepticus (SE) selectively compromises GABA release at synapses from dentate accommodating interneurons (AC-INs) to FS-BCs, while efficacy of homotypic FS-BC synapses is unaltered.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Yu2016"
+    },
+    {
+      "doi": "10.3389/fnana.2016.00124",
+      "claim": "After immunohistochemical labeling of presynaptic boutons and postsynaptic structures, confocal laser scanning microscopy revealed that the synaptic contacts were unevenly distributed throughout the perisomatic (<100 \u03bcm from the somata) and distal-dendritic compartments (\u2265100 \u03bcm) of VIP+ neurons.",
+      "claim_source_sentence": "After immunohistochemical labeling of presynaptic boutons and postsynaptic structures, confocal laser scanning microscopy revealed that the synaptic contacts were unevenly distributed throughout the perisomatic (<100 \u03bcm from the somata) and distal-dendritic compartments (\u2265100 \u03bcm) of VIP+ neurons.",
+      "effect_size": "100 \u03bcm from the somata) and distal-dendritic compartments (\u2265100 \u03bcm) of VIP+ neurons",
+      "effect_size_source_sentence": "After immunohistochemical labeling of presynaptic boutons and postsynaptic structures, confocal laser scanning microscopy revealed that the synaptic contacts were unevenly distributed throughout the perisomatic (<100 \u03bcm from the somata) and distal-dendritic compartments (\u2265100 \u03bcm) of VIP+ neurons.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Sohn2016"
+    },
+    {
+      "doi": "10.1101/2024.05.31.596906",
+      "claim": "Whole-cell patch-clamp recordings in acute mouse brain slices revealed both monosynaptic excitatory responses and disynaptic feedforward inhibition at Re-mPFC synapses.",
+      "claim_source_sentence": "Whole-cell patch-clamp recordings in acute mouse brain slices revealed both monosynaptic excitatory responses and disynaptic feedforward inhibition at Re-mPFC synapses.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Vantomme2024"
+    },
+    {
+      "doi": "10.1177/0271678x19882787",
+      "claim": "Gamma activity arising from the interplay between pyramidal neurons and fast-spiking parvalbumin (PV) interneurons is an integral part of higher cognitive functions and is assumed to contribute significantly to brain metabolic responses.",
+      "claim_source_sentence": "Gamma activity arising from the interplay between pyramidal neurons and fast-spiking parvalbumin (PV) interneurons is an integral part of higher cognitive functions and is assumed to contribute significantly to brain metabolic responses.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Dahlqvist2020"
+    },
+    {
+      "doi": "10.1093/cercor/bhx345",
+      "claim": "Simulations showed that suppressing PV+ cells reduces the capacity of pyramidal cell networks to produce discriminable spike patterns.",
+      "claim_source_sentence": "Simulations showed that suppressing PV+ cells reduces the capacity of pyramidal cell networks to produce discriminable spike patterns.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "in vitro",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Krause2019"
+    },
+    {
+      "doi": "10.1088/1741-2552/ad731c",
+      "claim": "Finally, US transiently increased network synchrony without producing prolonged over-synchronization that could be detrimental to neural circuit functions.<i>Significance</i>.",
+      "claim_source_sentence": "Finally, US transiently increased network synchrony without producing prolonged over-synchronization that could be detrimental to neural circuit functions.<i>Significance</i>.",
+      "effect_size": "140 Hz in awake mice",
+      "effect_size_source_sentence": "We recorded cellular calcium responses of individual motor cortex neurons to US pulsed at PRFs of 10, 40, and 140 Hz in awake mice.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Sherman2024"
+    },
+    {
+      "doi": "10.1371/journal.pone.0289901",
+      "claim": "These differences in latency between layers could influence their windows for temporal integration.",
+      "claim_source_sentence": "These differences in latency between layers could influence their windows for temporal integration.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 4,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Scheuer2024"
+    },
+    {
+      "doi": "10.1016/j.euroneuro.2024.02.010",
+      "claim": "Deficits in PV+ interneurons have been frequently reported in postmortem studies of schizophrenia patients, and alterations in gamma oscillations are a prominent electrophysiological feature of the disease.",
+      "claim_source_sentence": "Deficits in PV+ interneurons have been frequently reported in postmortem studies of schizophrenia patients, and alterations in gamma oscillations are a prominent electrophysiological feature of the disease.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Marn2024"
+    },
+    {
+      "doi": "10.1016/j.celrep.2022.111202",
+      "claim": "Our results indicate a differential CB1-mediated mechanism controlling PN activity, suggesting an alternative connectivity scheme of a specific GABAergic circuit in different cortical areas.",
+      "claim_source_sentence": "Our results indicate a differential CB1-mediated mechanism controlling PN activity, suggesting an alternative connectivity scheme of a specific GABAergic circuit in different cortical areas.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Koukouli2022"
+    },
+    {
+      "doi": "10.1186/s13229-020-0314-0",
+      "claim": "In this concept paper, the strategies hopefully leading to a better understanding of PVALB neuron function(s) are briefly discussed.",
+      "claim_source_sentence": "In this concept paper, the strategies hopefully leading to a better understanding of PVALB neuron function(s) are briefly discussed.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Filice2020a"
+    },
+    {
+      "doi": "10.1186/s12915-019-0732-7",
+      "claim": "Through optogenetic manipulation of PV and SST interneurons and computational modeling of the hippocampal neural circuits, we dissected the contributions of PV and SST interneuron circuit dysfunctions on A\u03b2O<sub>1-42</sub>-induced impairments of hippocampal theta-nested gamma oscillations and oscill",
+      "claim_source_sentence": "Through optogenetic manipulation of PV and SST interneurons and computational modeling of the hippocampal neural circuits, we dissected the contributions of PV and SST interneuron circuit dysfunctions on A\u03b2O<sub>1-42</sub>-induced impairments of hippocampal theta-nested gamma oscillations and oscillation-induced LTP.<h4>Results</h4>Targeted whole-cell patch-clamp recordings and optogenetic manipulations of PV and SST interneurons during in vivo-like, optogenetically induced theta-nested gamma oscillations in vitro revealed that A\u03b2O<sub>1-42</sub> causes synapse-specific dysfunction in PV and SST interneurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "in vitro",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Park2020"
+    },
+    {
+      "doi": "10.3389/fnsyn.2021.673210",
+      "claim": "The results are discussed in the context of the role of PV interneurons in circuit function and how PNN removal alters this function.",
+      "claim_source_sentence": "The results are discussed in the context of the role of PV interneurons in circuit function and how PNN removal alters this function.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Wingert2021"
+    },
+    {
+      "doi": "10.1038/s41467-018-06004-8",
+      "claim": "Using subtype-selective blockers for GABA<sub>A</sub> receptors, we show that dendrite-targeting somatostatin interneurons and NO-synthase-positive neurogliaform cells preferentially activate \u03b15-subunit- containing GABA<sub>A</sub> receptors (\u03b15-GABA<sub>A</sub>Rs), generating slow inhibitory postsy",
+      "claim_source_sentence": "Using subtype-selective blockers for GABA<sub>A</sub> receptors, we show that dendrite-targeting somatostatin interneurons and NO-synthase-positive neurogliaform cells preferentially activate \u03b15-subunit- containing GABA<sub>A</sub> receptors (\u03b15-GABA<sub>A</sub>Rs), generating slow inhibitory postsynaptic currents (IPSCs) in hippocampal CA1 pyramidal cells.",
+      "effect_size": "50\u2009mV than at rest",
+      "effect_size_source_sentence": "Remarkably, \u03b15-GABA<sub>A</sub>R-mediated IPSCs were strongly outward-rectifying generating 4-fold larger conductances above -50\u2009mV than at rest.",
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Schulz2018"
+    },
+    {
+      "doi": "10.1038/s41467-019-13533-3",
+      "claim": "By applying whole-cell recordings, GABA uncaging and single-cell-modeling, we show that proximal dendritic inhibition in PVIs is less efficient in lowering perforant path-mediated subthreshold depolarization than distal inhibition but both are highly efficient in silencing PVIs.",
+      "claim_source_sentence": "By applying whole-cell recordings, GABA uncaging and single-cell-modeling, we show that proximal dendritic inhibition in PVIs is less efficient in lowering perforant path-mediated subthreshold depolarization than distal inhibition but both are highly efficient in silencing PVIs.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Elgueta2019"
+    },
+    {
+      "doi": "10.1038/s41467-019-08933-4",
+      "claim": "We show that photo-depolarization of PV+ interneurons rapidly switches from an anti-ictal to a pro-ictal effect within a few seconds of seizure initiation.",
+      "claim_source_sentence": "We show that photo-depolarization of PV+ interneurons rapidly switches from an anti-ictal to a pro-ictal effect within a few seconds of seizure initiation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Magloire2019"
+    },
+    {
+      "doi": "10.3389/fncel.2018.00148",
+      "claim": "Stress exposure reduced the number of CCK-, CR- and PV-positive GABAergic neurons in the mPFC, most prominently in the IL cortex.",
+      "claim_source_sentence": "Stress exposure reduced the number of CCK-, CR- and PV-positive GABAergic neurons in the mPFC, most prominently in the IL cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Czh2018"
+    },
+    {
+      "doi": "10.1523/jneurosci.0014-18.2018",
+      "claim": "Here, we show how the presubiculum may process thalamic head directional information before transmitting it to the medial entorhinal cortex.",
+      "claim_source_sentence": "Here, we show how the presubiculum may process thalamic head directional information before transmitting it to the medial entorhinal cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0957-23.2024",
+        "10.1523/eneuro.0256-20.2020"
+      ],
+      "cite_key": "Nassar2018"
+    },
+    {
+      "doi": "10.1073/pnas.1210929109",
+      "claim": "Recordings of the spiking activity of post hoc-identified CA1 interneurons during theta (5-10 Hz), gamma (25-90Hz), epsilon (\"high-gamma\"; 90-130 Hz), and ripple (130-200 Hz) oscillations revealed both cell type- and behavioral state-dependent entrainments of PVBC and OLM cell discharges in awake mi",
+      "claim_source_sentence": "Recordings of the spiking activity of post hoc-identified CA1 interneurons during theta (5-10 Hz), gamma (25-90Hz), epsilon (\"high-gamma\"; 90-130 Hz), and ripple (130-200 Hz) oscillations revealed both cell type- and behavioral state-dependent entrainments of PVBC and OLM cell discharges in awake mice.",
+      "effect_size": "10 Hz), gamma (25-90Hz), epsilon (\"high-gamma\"; 90-130 Hz), and ripple (130-200 Hz) oscillations revealed both cell type- and behavioral state-dependent entrainments of PVBC and OLM cell discharges in awake mice",
+      "effect_size_source_sentence": "Recordings of the spiking activity of post hoc-identified CA1 interneurons during theta (5-10 Hz), gamma (25-90Hz), epsilon (\"high-gamma\"; 90-130 Hz), and ripple (130-200 Hz) oscillations revealed both cell type- and behavioral state-dependent entrainments of PVBC and OLM cell discharges in awake mice.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Varga2012"
+    },
+    {
+      "doi": "10.1523/jneurosci.0834-22.2022",
+      "claim": "Although recent studies have revealed an involvement of hippocampal interneurons in learning the association among time-separated events, its underlying cellular mechanisms remained not fully clarified.",
+      "claim_source_sentence": "Although recent studies have revealed an involvement of hippocampal interneurons in learning the association among time-separated events, its underlying cellular mechanisms remained not fully clarified.",
+      "effect_size": "250 ms time interval",
+      "effect_size_source_sentence": "To address this issue, we trained the mice (both sexes) to learn hippocampus-dependent trace eyeblink conditioning (tEBC) in which they associated a light flash conditioned stimulus (CS) with a corneal air puff unconditioned stimuli (US) separated by a 250 ms time interval.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Li2022b"
+    },
+    {
+      "doi": "10.3389/fncel.2020.610741",
+      "claim": "Moreover, we showed that sustained optogenetic stimulation (over a period of 10 s) of PV interneurons can consequently modulate the activities of local pyramidal neurons.",
+      "claim_source_sentence": "Moreover, we showed that sustained optogenetic stimulation (over a period of 10 s) of PV interneurons can consequently modulate the activities of local pyramidal neurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/eneuro.0452-25.2026",
+        "10.1093/cercor/bhu122",
+        "10.1152/jn.00778.2018"
+      ],
+      "cite_key": "Yao2020b"
+    },
+    {
+      "doi": "10.7554/elife.65215",
+      "claim": "By employing live and fixed imaging, we found that the impairments in Miro1-directed trafficking in PV+ interneurons altered their mitochondrial distribution and axonal arborization, while PV+ interneuron-mediated inhibition remained intact.",
+      "claim_source_sentence": "By employing live and fixed imaging, we found that the impairments in Miro1-directed trafficking in PV+ interneurons altered their mitochondrial distribution and axonal arborization, while PV+ interneuron-mediated inhibition remained intact.",
+      "effect_size": "80 Hz) frequency and promoted anxiolysis",
+      "effect_size_source_sentence": "These changes were accompanied by an increase in the ex vivo hippocampal \u03b3-oscillation (30-80 Hz) frequency and promoted anxiolysis.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kontou2021"
+    },
+    {
+      "doi": "10.1093/cercor/bhx261",
+      "claim": "Whisker-evoked responses were significantly increased within 20 ms after stimulus onset during inhibition of PV interneurons, demonstrating high temporal precision of PV-shaped inhibition.",
+      "claim_source_sentence": "Whisker-evoked responses were significantly increased within 20 ms after stimulus onset during inhibition of PV interneurons, demonstrating high temporal precision of PV-shaped inhibition.",
+      "effect_size": "20 ms after stimulus onset during inhibition of PV interneurons, demonstrating high temporal precision of PV-shaped inhibition",
+      "effect_size_source_sentence": "Whisker-evoked responses were significantly increased within 20 ms after stimulus onset during inhibition of PV interneurons, demonstrating high temporal precision of PV-shaped inhibition.",
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Yang2017"
+    },
+    {
+      "doi": "10.3390/ijms23010202",
+      "claim": "On the contrary, the size of PV-stained synapses increased, and their number decreased in epileptic samples, in synchrony generating regions.",
+      "claim_source_sentence": "On the contrary, the size of PV-stained synapses increased, and their number decreased in epileptic samples, in synchrony generating regions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.12.149260",
+        "10.1016/j.pneurobio.2023.102542",
+        "10.1523/eneuro.0235-21.2021"
+      ],
+      "cite_key": "Tth2021"
+    },
+    {
+      "doi": "10.1186/s13041-021-00746-1",
+      "claim": "Intravenous infusion of blood-brain barrier-penetrating AAV-PHP.B expressing an enhanced green fluorescent protein under the control of the mGAD65 promoter transduced the whole brain in an inhibitory neuron-specific manner.",
+      "claim_source_sentence": "Intravenous infusion of blood-brain barrier-penetrating AAV-PHP.B expressing an enhanced green fluorescent protein under the control of the mGAD65 promoter transduced the whole brain in an inhibitory neuron-specific manner.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Hoshino2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.0669-17.2018",
+      "claim": "We show that inhibitory axo-somatic synapses onto pyramidal neurons vary from one cortical layer to another; however, inhibitory synapses on axon initial segments (AISs) were similar across layers.",
+      "claim_source_sentence": "We show that inhibitory axo-somatic synapses onto pyramidal neurons vary from one cortical layer to another; however, inhibitory synapses on axon initial segments (AISs) were similar across layers.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.pneurobio.2023.102542",
+        "10.3389/neuro.04.015.2009"
+      ],
+      "cite_key": "Lin2018"
+    },
+    {
+      "doi": "10.1038/nature11347",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1016/j.neuron.2011.12.013",
+        "10.1016/j.neuron.2015.09.013"
+      ],
+      "claim": "PV neurons principally divide responses and preserve stimulus selectivity, whereas SOM neurons principally subtract from excitatory responses and sharpen selectivity in visual cortex in vivo",
+      "claim_source_sentence": "We find that soma-targeting, parvalbumin-expressing (PV) neurons principally divide responses but preserve stimulus selectivity, whereas dendrite-targeting, somatostatin-expressing (SOM) neurons principally subtract from excitatory responses and sharpen selectivity.",
+      "effect_size": "PV activation: 28.5 \u00b1 4.5% reduction at peak, 11 \u00b1 4% decrease in baseline; SOM activation: 19.8 \u00b1 11.2% and 19 \u00b1 6% respectively",
+      "effect_size_source_sentence": "+PV (PV neurons activated optically), 11 \u00b1 4% decrease in baseline, P < 0.05, n = 52 cells; versus +SOM, 19 \u00b1 6%, P < 0.001, n = 25 cells",
+      "n": 52,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "cite_key": "Wilson2012"
+    },
+    {
+      "doi": "10.1016/j.neuron.2011.12.013",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1038/nature11347",
+        "10.1016/j.neuron.2015.09.013"
+      ],
+      "claim": "PV cell impact on pyramidal cells is captured by a linear transformation, both additive and multiplicative with a threshold, indicating PV cells modulate cortical gain",
+      "claim_source_sentence": "PV cells' impact on pyramidal cells is captured by a linear transformation, both additive and multiplicative, with a threshold. These results indicate that PV cells are ideally suited to modulate cortical gain and establish a causal relationship between a select neuron type and specific computations performed by the cortex during sensory processing.",
+      "effect_size": "linear transformation with additive and multiplicative components",
+      "effect_size_source_sentence": "PV cells' impact on pyramidal cells is captured by a linear transformation, both additive and multiplicative, with a threshold.",
+      "n": 3,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "cite_key": "Atallah2012"
+    },
+    {
+      "doi": "10.1038/nature11312",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1038/nature11347",
+        "10.1016/j.neuron.2011.12.013"
+      ],
+      "claim": "Optogenetic activation of PV+ interneurons in V1 sharpens orientation tuning and enhances direction selectivity, improving perceptual discrimination in awake mice",
+      "claim_source_sentence": "we found that elevated spiking of PV+ interneurons markedly sharpened orientation tuning and enhanced direction selectivity of nearby neurons",
+      "effect_size": "significant sharpening of orientation tuning and enhanced direction selectivity",
+      "effect_size_source_sentence": "we found that elevated spiking of PV+ interneurons markedly sharpened orientation tuning and enhanced direction selectivity of nearby neurons",
+      "n": 2,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "cite_key": "Lee2012"
+    },
+    {
+      "doi": "10.1038/nature08002",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nature07991"
+      ],
+      "claim": "Light-driven activation of fast-spiking interneurons at varied frequencies selectively amplifies gamma oscillations (20-80 Hz range), while pyramidal neuron activation amplifies only lower frequency oscillations",
+      "claim_source_sentence": "Here we show that light-driven activation of fast-spiking interneurons at varied frequencies (8\u2013200 Hz) selectively amplifies gamma oscillations. In contrast, pyramidal neuron activation amplifies only lower frequency oscillations, a cell-type-specific double dissociation.",
+      "effect_size": "significant amplification of LFP power at 20-80 Hz (P<0.001 at 40 Hz); n=14 sites in 6 animals",
+      "effect_size_source_sentence": "We found that activation of FS cells in the 20\u201380 Hz range resulted in significant amplification of LFP power at those frequencies ( n =14 sites in 6 animals",
+      "n": 14,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "cite_key": "Cardin2009"
+    },
+    {
+      "doi": "10.1038/nature07991",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nature08002"
+      ],
+      "claim": "Inhibiting PV interneurons suppresses gamma oscillations in vivo, while driving PV interneurons generates emergent gamma-frequency rhythmicity; gamma modulation enhances information transmission",
+      "claim_source_sentence": "inhibiting parvalbumin interneurons suppresses gamma oscillations in vivo, whereas driving these interneurons (even by means of non-rhythmic principal cell activity) is sufficient to generate emergent gamma-frequency rhythmicity",
+      "effect_size": "gamma power reduced 20 \u00b1 4% by PV inhibition (P<0.001); information increased from 0.43 \u00b1 0.05 to 0.62 \u00b1 0.04 bits (P<0.001)",
+      "effect_size_source_sentence": "gamma modulation increased the amount of information that spike rates transmitted about the number of sEPSCs over gamma-cycle time windows (non-rhythmic, 0.43 \u00b1 0.05 bits; gamma, 0.62 \u00b1 0.04 bits; P < 0.001)",
+      "n": 7,
+      "study_system": "mouse",
+      "text_access": "fulltext",
+      "cite_key": "Sohal2009"
+    }
+  ],
+  "conflicts": [
+    {
+      "description": "The 2012 gain control controversy: Whether PV interneuron activation produces divisive (gain-scaling) or subtractive (additive shift) effects on cortical responses",
+      "paper_a_doi": "10.1038/nature11347",
+      "paper_a_claim": "PV neurons principally divide responses and preserve stimulus selectivity; divisive gain control by PV cells",
+      "paper_a_source_sentence": "We find that soma-targeting, parvalbumin-expressing (PV) neurons principally divide responses but preserve stimulus selectivity",
+      "paper_b_doi": "10.1016/j.neuron.2011.12.013",
+      "paper_b_claim": "PV cell impact on pyramidal cells is a linear transformation with both additive and multiplicative components with a threshold - not purely divisive",
+      "paper_b_source_sentence": "PV cells' impact on pyramidal cells is captured by a linear transformation, both additive and multiplicative, with a threshold.",
+      "resolution_status": "partially_resolved",
+      "resolution_notes": "The apparent discrepancy was largely explained by differences in analysis approach and by threshold nonlinearities. A key resolution came from studies showing that the same inhibition can appear divisive or subtractive depending on cellular properties and network state.",
+      "resolution_doi": "10.1016/j.neuron.2015.09.013"
+    },
+    {
+      "description": "Whether PV activation sharpens orientation tuning (Lee 2012) or has little effect on tuning (Atallah 2012; Wilson 2012)",
+      "paper_a_doi": "10.1038/nature11312",
+      "paper_a_claim": "PV+ interneuron activation markedly sharpened orientation tuning and enhanced direction selectivity",
+      "paper_a_source_sentence": "we found that elevated spiking of PV+ interneurons markedly sharpened orientation tuning and enhanced direction selectivity of nearby neurons",
+      "paper_b_doi": "10.1038/nature11347",
+      "paper_b_claim": "PV activation preserves stimulus selectivity while dividing responses; tuning width was not significantly altered",
+      "paper_b_source_sentence": "control, half-width at half-height, 38.7 \u00b1 3.0 degrees; versus +PV, 35.2 \u00b13.0 deg; P = 0.31",
+      "resolution_status": "partially_resolved",
+      "resolution_notes": "Differences attributed to stimulus paradigm differences, analysis methods (tuning width vs selectivity index), and potentially different levels of PV activation. Studies with intermediate activation levels suggest PV effects on selectivity are stimulus-dependent."
+    },
+    {
+      "description": "Whether PV and SOM interneuron types have cleanly separable computational functions (divisive vs subtractive) or whether these effects depend on network context",
+      "paper_a_doi": "10.1038/nature11347",
+      "paper_a_claim": "PV cells divide, SOM cells subtract - clean functional dissociation between inhibitory subtypes",
+      "paper_a_source_sentence": "soma-targeting, parvalbumin-expressing (PV) neurons principally divide responses but preserve stimulus selectivity, whereas dendrite-targeting, somatostatin-expressing (SOM) neurons principally subtract from excitatory responses",
+      "paper_b_doi": "10.1016/j.neuron.2015.09.013",
+      "paper_b_claim": "Both PV and SOM activation produce mixtures of divisive and subtractive effects that depend on network configuration and cellular properties",
+      "paper_b_source_sentence": "activating either family of interneurons produced mixtures of divisive and subtractive effects and that simultaneously recorded neurons were often suppressed in qualitatively different ways",
+      "resolution_status": "unresolved",
+      "resolution_notes": "The clean PV-divisive/SOM-subtractive dichotomy is likely an oversimplification. Network state, threshold effects, and cellular heterogeneity all contribute to the observed computation."
+    },
+    {
+      "description": "Whether PV interneurons are necessary and sufficient for cortical gamma oscillations, or whether other mechanisms (including SOM interneurons) can also generate gamma",
+      "paper_a_doi": "10.1038/nature08002",
+      "paper_a_claim": "Driving fast-spiking PV cells selectively amplifies gamma oscillations; gamma is a resonant circuit property of FS-mediated inhibition",
+      "paper_a_source_sentence": "Here we show that light-driven activation of fast-spiking interneurons at varied frequencies (8\u2013200 Hz) selectively amplifies gamma oscillations.",
+      "paper_b_doi": "10.1038/nn.4562",
+      "paper_b_claim": "Somatostatin interneurons are critical for context-dependent gamma rhythm in visual cortex; PV interneurons are not the only mechanism",
+      "paper_b_source_sentence": "dendrite-targeting somatostatin (SOM) interneurons are critical for a visually induced, context-dependent gamma rhythm in the visual cortex (V1)",
+      "resolution_status": "partially_resolved",
+      "resolution_notes": "Multiple gamma-generating mechanisms likely coexist. PV-mediated perisomatic inhibition drives one class of gamma oscillations (ING/PING models), while SOM-mediated dendritic inhibition can generate context-dependent gamma. These may serve different computational functions."
+    },
+    {
+      "description": "Whether chandelier cell axo-axonic synapses are inhibitory (conventional view) or can be excitatory/depolarizing under some conditions",
+      "paper_a_doi": "10.1126/science.1121325",
+      "paper_a_claim": "GABAergic axo-axonic cells can have excitatory effects in cortical microcircuits",
+      "paper_a_source_sentence": "Excitatory effect of GABAergic axo-axonic cells in cortical microcircuits.",
+      "paper_b_doi": "10.3389/neuro.04.015.2009",
+      "paper_b_claim": "Depolarizing effect of neocortical chandelier neurons is confirmed but functional impact depends on conditions",
+      "paper_b_source_sentence": "Depolarizing effect of neocortical chandelier neurons.",
+      "resolution_status": "partially_resolved",
+      "resolution_notes": "Chandelier cell effects depend on the chloride reversal potential at the axon initial segment, which differs from the soma. The depolarizing GABA effect at the AIS may serve as shunting inhibition functionally even if it shifts membrane potential positively."
+    },
+    {
+      "description": "Whether PV-Cre genetic tools adequately separate basket and chandelier cell functions, given that both express PV",
+      "paper_a_doi": "10.1016/j.neuron.2011.07.026",
+      "paper_a_claim": "PV-Cre driver lines label both basket cells and chandelier cells, providing tools for manipulating PV interneurons",
+      "paper_a_source_sentence": "A resource of Cre driver lines for genetic targeting of GABAergic neurons in cerebral cortex.",
+      "paper_b_doi": "10.3389/fncel.2022.992409",
+      "paper_b_claim": "Cortical control of chandelier cells may be functionally distinct from basket cells, creating a confound in PV-Cre experiments",
+      "paper_b_source_sentence": "Cortical control of chandelier cells in neural codes.",
+      "resolution_status": "unresolved",
+      "resolution_notes": "The basket-chandelier confound remains unresolved in most PV-Cre manipulation studies. Chandelier cells represent ~10-15% of PV+ neurons and target axon initial segments, making their effects qualitatively different from basket cell perisomatic inhibition."
+    }
+  ],
+  "figure_data": [
+    {
+      "comparison_title": "PV interneuron gain control effects across the 2012 controversy studies",
+      "comparison_type": "cross_study",
+      "metric": "Type of gain modulation observed with PV activation",
+      "papers": [
+        {
+          "doi": "10.1038/nature11347",
+          "value": "Divisive (response-proportional suppression)",
+          "value_source_sentence": "PV activation caused a larger suppression when control responses were higher; +PV, 28.5 \u00b1 4.5% reduction at peak, P < 0.001",
+          "study_system": "mouse V1, awake, two-photon + optogenetic",
+          "n": 52
+        },
+        {
+          "doi": "10.1016/j.neuron.2011.12.013",
+          "value": "Linear (additive + multiplicative with threshold)",
+          "value_source_sentence": "PV cells' impact on pyramidal cells is captured by a linear transformation, both additive and multiplicative, with a threshold.",
+          "study_system": "mouse V1, awake + anesthetized, extracellular recording + optogenetic",
+          "n": null
+        },
+        {
+          "doi": "10.1038/nature11312",
+          "value": "Subtractive (tuning sharpening by uniform inhibition)",
+          "value_source_sentence": "elevated spiking of PV+ interneurons markedly sharpened orientation tuning and enhanced direction selectivity of nearby neurons",
+          "study_system": "mouse V1, awake, multichannel recording + optogenetic",
+          "n": null
+        },
+        {
+          "doi": "10.1016/j.neuron.2015.09.013",
+          "value": "Mixed (both divisive and subtractive depending on cell)",
+          "value_source_sentence": "activating either family of interneurons produced mixtures of divisive and subtractive effects and that simultaneously recorded neurons were often sup...",
+          "study_system": "mouse auditory cortex, awake + anesthetized, multiunit recording",
+          "n": 145
+        }
+      ],
+      "scope_region": "mouse visual cortex (V1) and auditory cortex",
+      "scope_population": "layer 2/3 pyramidal neurons",
+      "taxonomic_level": "not applicable",
+      "n_definition": "number of recorded cells or sites",
+      "n_analyzed": "varies by study",
+      "homogeneity_check": "Mixed comparability: All studies use optogenetic PV activation in mouse cortex, but differ in cortical area (V1 vs auditory), recording method (two-photon vs extracellular vs multiunit), behavioral state (awake vs anesthetized), and stimulus paradigm. These methodological differences likely explain the apparent discrepancy in results."
+    },
+    {
+      "comparison_title": "PV interneuron-driven gamma oscillation parameters across landmark studies",
+      "comparison_type": "cross_study",
+      "metric": "Effect of PV/FS cell manipulation on gamma power",
+      "papers": [
+        {
+          "doi": "10.1038/nature08002",
+          "value": "Significant amplification of LFP power at 20-80 Hz (P<0.001 at 40 Hz); n=14 sites in 6 animals",
+          "value_source_sentence": "We found that activation of FS cells in the 20\u201380 Hz range resulted in significant amplification of LFP power at those frequencies ( n =14 sites in 6 ...",
+          "study_system": "mouse barrel cortex, anesthetized, extracellular + optogenetic (ChR2)",
+          "n": 14
+        },
+        {
+          "doi": "10.1038/nature07991",
+          "value": "PV inhibition reduced gamma 20 \u00b1 4% (P<0.001); PV drive generated emergent gamma",
+          "value_source_sentence": "inhibiting parvalbumin interneurons suppresses gamma oscillations in vivo, whereas driving these interneurons (even by means of non-rhythmic principal...",
+          "study_system": "mouse prefrontal cortex, in vitro slice + in vivo, optogenetic (ChR2/eNpHR)",
+          "n": 7
+        },
+        {
+          "doi": "10.1038/nn.4562",
+          "value": "SOM (not PV) interneurons are critical for context-dependent gamma in V1",
+          "value_source_sentence": "dendrite-targeting somatostatin (SOM) interneurons are critical for a visually induced, context-dependent gamma rhythm in the visual cortex (V1)",
+          "study_system": "mouse visual cortex, awake behaving, optogenetic",
+          "n": 32
+        }
+      ],
+      "scope_region": "mouse cortex (barrel, prefrontal, visual)",
+      "scope_population": "local field potential / neural populations",
+      "taxonomic_level": "not applicable",
+      "n_definition": "recording sites or cells, varies by study",
+      "n_analyzed": "varies",
+      "homogeneity_check": "Mixed comparability: Different cortical areas (barrel vs PFC vs V1), different behavioral states (anesthetized vs in vitro vs awake), and different gamma-generating conditions. The SOM-gamma finding specifically challenges the universality of the PV-gamma link by showing context-dependent gamma can rely on different mechanisms."
+    },
+    {
+      "comparison_title": "Differential effects of PV vs SOM activation on contrast response functions (Wilson 2012)",
+      "comparison_type": "within_study",
+      "metric": "Effect on Rmax and C50 of contrast response function",
+      "papers": [
+        {
+          "doi": "10.1038/nature11347",
+          "value": "PV: Rmax 64.1 \u00b1 3.5% of control (P<0.001), C50 95.0 \u00b1 10% of control (P=0.65); SOM: Rmax 73.6 \u00b1 5.3% of control (P<0.001), C50 141 \u00b1 17.7% of control (P<0.05)",
+          "value_source_sentence": "+PV: R max 64.1 \u00b1 3.5% of control; n = 17 cells; P < 0.001 without affecting half-saturation contrast C 50 95.0 \u00b1 10% of control; P = 0.65. +SOM: 73.6...",
+          "study_system": "mouse V1, awake, two-photon + optogenetic",
+          "n": 17
+        }
+      ],
+      "scope_region": "mouse V1, layer 2/3",
+      "scope_population": "pyramidal neurons",
+      "taxonomic_level": "not applicable",
+      "n_definition": "number of recorded cells",
+      "n_analyzed": "17 (PV), 16 (SOM)",
+      "homogeneity_check": "Within-study comparison: PV and SOM conditions are directly comparable as they use the same recording paradigm in the same cortical area."
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "topic": "Non-fast-spiking PV cells",
+      "description": "Limited literature on PV-expressing cells that are not electrophysiologically fast-spiking; most studies assume all PV cells are fast-spiking",
+      "queries_tried": [
+        "PV interneuron diversity subtypes fast-spiking transcriptomic cortex",
+        "fast-spiking interneuron heterogeneity cortical layer diversity non-fast-spiking"
+      ],
+      "papers_found": 7
+    },
+    {
+      "topic": "Chandelier cell-specific manipulation",
+      "description": "Very few studies have specifically manipulated chandelier cells independently of basket cells due to lack of genetic tools",
+      "queries_tried": [
+        "chandelier cell axo-axonic parvalbumin basket cortex",
+        "PV-Cre mouse line specificity interneuron labeling basket chandelier"
+      ],
+      "papers_found": 10
+    },
+    {
+      "topic": "Cross-species PV function comparison",
+      "description": "Most studies are in mouse; comparisons of PV interneuron function across mammalian species remain sparse",
+      "queries_tried": [
+        "parvalbumin interneuron primate cortex comparison mouse",
+        "fast-spiking interneuron cross-species"
+      ],
+      "papers_found": 3
+    }
+  ],
+  "unreplicated_claims": []
+}

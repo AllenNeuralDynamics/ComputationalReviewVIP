@@ -15,6 +15,18 @@ integrity (author, title, year, DOI against CrossRef) and semantic support
 Raw per-phase gate artifacts are committed alongside this review under
 [`phases/`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/tree/main/phases).
 
+
+## Interactive evidence explorer
+
+Browse the per-section evidence packages and surfaced conflicts using the widget below.
+Each entry corresponds to a claim–citation–evidence triple that was adjudicated in the
+verification pipeline described below.
+
+```{evidence-explorer}
+:evidence-dir: ./evidence
+:height: 700px
+```
+
 ## Headline numbers
 
 :::{list-table}

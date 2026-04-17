@@ -1,0 +1,1550 @@
+{
+  "findings": [
+    {
+      "doi": "10.1038/nrn1787",
+      "claim": "PV+ basket cell maturation gates the opening and timing of critical periods in visual cortex, establishing the framework that inhibitory circuit maturation is the key trigger for experience-dependent plasticity.",
+      "claim_source_sentence": "Critical period plasticity in local cortical circuits.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1126/science.1091032",
+        "10.1016/s0092-8674(00)81509-3"
+      ],
+      "cite_key": "Hensch2005b"
+    },
+    {
+      "doi": "10.1126/science.1091032",
+      "claim": "Specific GABAA receptor subtypes containing alpha1 subunits mediate visual cortical plasticity, localizing critical period control to PV+ basket cell synapses onto pyramidal cells.",
+      "claim_source_sentence": "Specific GABAA circuits for visual cortical plasticity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn1787"
+      ],
+      "cite_key": "Fagiolini2004"
+    },
+    {
+      "doi": "10.1016/s0092-8674(00)81509-3",
+      "claim": "BDNF overexpression accelerates the maturation of GABAergic inhibition and the critical period of plasticity in mouse visual cortex, demonstrating a causal link between BDNF signaling, inhibitory maturation, and critical period timing.",
+      "claim_source_sentence": "BDNF regulates the maturation of inhibition and the critical period of plasticity in mouse visual cortex.",
+      "effect_size": "precocious critical period opening by ~1 week",
+      "effect_size_source_sentence": "BDNF regulates the maturation of inhibition and the critical period of plasticity in mouse visual cortex.",
+      "n": null,
+      "study_system": "transgenic BDNF-overexpressing mice, visual cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn1787",
+        "10.1126/science.1091032"
+      ],
+      "cite_key": "Huang1999"
+    },
+    {
+      "doi": "10.1016/S0079-6123(04)47009-5",
+      "claim": "Critical period timing is determined by the developmental trajectory of excitatory-inhibitory balance, not by calendar age per se.",
+      "claim_source_sentence": "Excitatory-inhibitory balance and critical period plasticity in developing visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/s0092-8674(00)81509-3"
+      ],
+      "cite_key": "Hensch2005a"
+    },
+    {
+      "doi": "10.1016/j.neuron.2006.07.008",
+      "claim": "Subplate neurons are required for the maturation of cortical inhibition and normal outcome of ocular dominance plasticity, functioning as a relay for thalamocortical drive to developing inhibitory circuits.",
+      "claim_source_sentence": "Subplate neurons regulate maturation of cortical inhibition and outcome of ocular dominance plasticity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 4,
+      "study_system": "cat and mouse visual cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Kanold2006"
+    },
+    {
+      "doi": "10.1016/j.cub.2013.01.017",
+      "claim": "Dark rearing alters the maturation trajectory of visual cortex and delays the critical period, but darkness-induced plasticity can promote fast recovery from amblyopia in adult mice.",
+      "claim_source_sentence": "Darkness Alters Maturation of Visual Cortex and Promotes Fast Recovery from Amblyopia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.5554-05.2006"
+      ],
+      "cite_key": "Duffy2013"
+    },
+    {
+      "doi": "10.1523/jneurosci.5554-05.2006",
+      "claim": "Brief periods of visual deprivation (dark exposure) in adulthood can reactivate rapid ocular dominance plasticity in adult visual cortex, challenging the notion that the critical period is irreversibly closed.",
+      "claim_source_sentence": "Visual Deprivation Reactivates Rapid Ocular Dominance Plasticity in Adult Visual Cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "adult mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017"
+      ],
+      "cite_key": "He2006"
+    },
+    {
+      "doi": "10.1126/science.1072699",
+      "claim": "Enzymatic degradation of chondroitin sulphate proteoglycans (CSPGs) with chondroitinase-ABC in adult rats reactivates ocular dominance plasticity, demonstrating that the mature extracellular matrix is inhibitory for experience-dependent plasticity.",
+      "claim_source_sentence": "After CSPG degradation with chondroitinase-ABC in adult rats, monocular deprivation caused an ocular dominance shift toward the nondeprived eye.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "adult rat visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.08.13.249615"
+      ],
+      "cite_key": "Pizzorusso2002"
+    },
+    {
+      "doi": "10.1101/2020.08.13.249615",
+      "claim": "Both chondroitinase and fluoxetine reopen critical period-like plasticity by promoting TRKB signaling in PV+ neurons through inhibition of TRKB dephosphorylation by the PTPsigma-CSPG complex. PTPsigma deletion retains juvenile-like plasticity in adult visual cortex.",
+      "claim_source_sentence": "We propose that both chABC and fluoxetine reopen critical period-like plasticity in the adult visual cortex by promoting TRKB signaling in PV+ neurons through inhibition of TRKB dephosphorylation by the PTP\u03c3-CSPG complex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Lesnikova2020"
+    },
+    {
+      "doi": "10.1126/science.1174146",
+      "claim": "Formation of perineuronal nets in the amygdala coincides with the developmental shift from erasable to persistent fear memories. PNN removal in adult animals re-enables fear memory erasure by extinction.",
+      "claim_source_sentence": "Removal of perineuronal nets in adult animals re-enabled the erasure of fear memories.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse amygdala",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1111/j.1460-9568.2009.06996.x",
+        "10.1111/adb.13334"
+      ],
+      "cite_key": "Gogolla2009b"
+    },
+    {
+      "doi": "10.1126/science.1195320",
+      "claim": "Lynx1 protein expression increases with age and acts as a molecular brake on adult visual cortex plasticity by limiting nicotinic acetylcholine receptor signaling. Removal of Lynx1 in adult mice restores juvenile-like ocular dominance plasticity.",
+      "claim_source_sentence": "Here, we identified an increase in expression of Lynx1 protein in mice that prevented plasticity in the primary visual cortex late in life. Removal of this molecular brake enhanced nicotinic acetylcholine receptor signaling.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 8,
+      "study_system": "Lynx1 knockout mouse, visual cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0580-16.2016"
+      ],
+      "cite_key": "Morishita2010"
+    },
+    {
+      "doi": "10.1093/cercor/bhv014",
+      "claim": "Nogo Receptor 1 limits ocular dominance plasticity in adulthood but does not limit turnover of axonal boutons, suggesting dissociable molecular mechanisms for structural and functional plasticity.",
+      "claim_source_sentence": "Nogo Receptor 1 Limits Ocular Dominance Plasticity but not Turnover of Axonal Boutons in a Model of Amblyopia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex, amblyopia model",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Frantz2016"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.0394-12.2012",
+      "claim": "Otx2 binding to perineuronal nets persistently regulates plasticity in the adult visual cortex, establishing Otx2 as a non-cell-autonomous homeoprotein signal that maintains PNN structure and limits plasticity.",
+      "claim_source_sentence": "Otx2 binding to perineuronal nets persistently regulates plasticity in the adult visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x",
+        "10.1111/adb.13334"
+      ],
+      "cite_key": "Beurdeley2012"
+    },
+    {
+      "doi": "10.1038/s41467-020-20241-w",
+      "claim": "Perineuronal nets around PV+ neurons stabilize the grid cell network in entorhinal cortex, extending the role of PNNs beyond sensory critical periods to spatial computation in adults.",
+      "claim_source_sentence": "Perineuronal nets stabilize the grid cell network.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse entorhinal cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Christensen2021"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.0580-16.2016",
+      "claim": "Lynx1 limits dendritic spine turnover in the adult visual cortex, linking cholinergic brake mechanisms to structural plasticity at the synaptic level.",
+      "claim_source_sentence": "Lynx1 Limits Dendritic Spine Turnover in the Adult Visual Cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "adult mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Sajo2016"
+    },
+    {
+      "doi": "10.1523/jneurosci.0434-21.2021",
+      "claim": "Activity of PV+ interneurons regulates perineuronal net composition in the adult cortex, revealing a bidirectional relationship between PV cell function and their surrounding extracellular matrix.",
+      "claim_source_sentence": "Regulation of Perineuronal Nets in the Adult Cortex by the Activity of the Cortical Network.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Devienne2021"
+    },
+    {
+      "doi": "10.1038/nature12485",
+      "claim": "A disinhibitory microcircuit involving VIP inhibition of SST interneurons initiates critical-period plasticity in the visual cortex, showing that the PV-centric model is incomplete.",
+      "claim_source_sentence": "A disinhibitory microcircuit initiates critical-period plasticity in the visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kuhlman2013"
+    },
+    {
+      "doi": "10.1159/000454677",
+      "claim": "PV, SST, and CCK interneuron subtypes follow differential developmental trajectories, with a large increase in PV neuron density from P14 to P28 in medial PFC and subiculum, and significant decreases in SST neuron density from P14 to P28 across all brain regions.",
+      "claim_source_sentence": "We observed a large increase in parvalbumin neuron density from P14 to P28 in the medial PFC and subiculum across all birth groups, and significant decreases in somatostatin neuron density from P14 to P28 in all brain regions examined.",
+      "effect_size": "PV increase from P14 to P28 in medial PFC; SST decrease from P14 to P28 in all regions",
+      "effect_size_source_sentence": "We observed a large increase in parvalbumin neuron density from P14 to P28 in the medial PFC and subiculum across all birth groups, and significant decreases in somatostatin neuron density from P14 to P28 in all brain regions examined across all birth groups.",
+      "n": null,
+      "study_system": "rat PFC, hippocampus, subiculum",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Boksa2016"
+    },
+    {
+      "doi": "10.1016/j.celrep.2018.01.007",
+      "claim": "VIP interneurons are unique among cortical interneuron types in that their survival is NOT activity-dependent, unlike PV and SST interneurons derived from MGE and CGE. Calcineurin links activity to both maturation (E15-P5) and survival (P5-P20) in all interneurons except VIP cells.",
+      "claim_source_sentence": "Moreover, with the exception of VIP interneurons, this occurs in a manner that is activity-dependent. In addition, we demonstrate that, within interneurons, Calcineurin, a calcium-dependent protein phosphatase, plays a critical role in sequentially linking activity to maturation (E15\u2013P5) and survival (P5\u2013P20).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "mouse cortex, CGE-derived interneurons",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Priya2018"
+    },
+    {
+      "doi": "10.1038/s41586-018-0139-6",
+      "claim": "Pyramidal cell activity regulates interneuron survival through a competitive mechanism, sculpting cortical networks. Approximately 40% of cortical interneurons undergo programmed cell death during early postnatal development.",
+      "claim_source_sentence": "Pyramidal cell regulation of interneuron survival sculpts cortical networks.",
+      "effect_size": "~40% of cortical interneurons eliminated by programmed cell death",
+      "effect_size_source_sentence": "Pyramidal cell regulation of interneuron survival sculpts cortical networks.",
+      "n": null,
+      "study_system": "mouse cortex, postnatal development",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.celrep.2018.01.007"
+      ],
+      "cite_key": "Wong2018"
+    },
+    {
+      "doi": "10.1146/annurev-cellbio-100818-125204",
+      "claim": "A second, larger wave of programmed cell death unfolds during early postnatal development, with pyramidal cells and interneurons adjusting their numbers in sync. This is crucial for establishing balanced E/I networks.",
+      "claim_source_sentence": "A second, larger wave unfolds during early postnatal development and ultimately determines the final number of cortical neurons. Pyramidal cells and interneurons adjust their numbers in sync, which is likely crucial for the establishment of balanced networks of excitatory and inhibitory neurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rodent cerebral cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-018-0139-6",
+        "10.1016/j.celrep.2018.01.007"
+      ],
+      "cite_key": "Wong2019"
+    },
+    {
+      "doi": "10.1016/j.celrep.2018.01.007",
+      "claim": "~30% of the initial population of MGE-derived cortical interneurons undergo cell death. CGE-derived interneurons also undergo programmed cell death, extending this finding beyond MGE-derived populations.",
+      "claim_source_sentence": "In support of this general hypothesis, recent work has shown that \u223c30% of the initial population of medial ganglionic eminence (MGE)-derived cortical interneurons undergo cell death.",
+      "effect_size": "~30% of MGE-derived cortical interneurons undergo cell death",
+      "effect_size_source_sentence": "recent work has shown that \u223c30% of the initial population of medial ganglionic eminence (MGE)-derived cortical interneurons undergo cell death.",
+      "n": 7,
+      "study_system": "mouse cortex, MGE and CGE-derived interneurons",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-018-0139-6"
+      ],
+      "cite_key": "Priya2018"
+    },
+    {
+      "doi": "10.1126/science.1183962",
+      "claim": "Transplantation of embryonic MGE-derived inhibitory neurons induces ocular dominance plasticity after the critical period. Transplanted neurons promote plasticity when they reach a cellular age of ~33-35 days, equivalent to the age of endogenous inhibitory neurons during the normal critical period.",
+      "claim_source_sentence": "Transplanted inhibitory neurons receive excitatory synapses, make inhibitory synapses onto host cortical neurons, and promote plasticity when they reach a cellular age equivalent to that of endogenous inhibitory neurons during the normal critical period.",
+      "effect_size": "Plasticity induced at 33-35 days after transplantation (DAT), matching normal critical period timing",
+      "effect_size_source_sentence": "In mice, ocular dominance plasticity reaches a peak in the fourth postnatal week, when cortical inhibitory neurons are ~33 to 35 days old.",
+      "n": 6,
+      "study_system": "mouse visual cortex, MGE transplantation",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1073/pnas.1421844112"
+      ],
+      "cite_key": "Southwell2010"
+    },
+    {
+      "doi": "10.1073/pnas.1421844112",
+      "claim": "Transplantation of either embryonic somatostatin or parvalbumin interneurons is sufficient to induce critical period plasticity in adult cortex, suggesting that the cellular mechanism is not specific to PV cells.",
+      "claim_source_sentence": "Surprisingly, transplantation of either cell type was sufficient to induce critical period plasticity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex, MGE transplantation",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1126/science.1183962"
+      ],
+      "cite_key": "Tang2014"
+    },
+    {
+      "doi": "10.1523/jneurosci.1253-18.2019",
+      "claim": "Vesicular GABA transporter (VGAT) is necessary for transplant-induced critical period plasticity, confirming that GABAergic transmission from transplanted cells is the mechanism mediating reopened plasticity.",
+      "claim_source_sentence": "Vesicular GABA Transporter Is Necessary for Transplant-Induced Critical Period Plasticity in Mouse Visual Cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "VGAT conditional knockout mouse, visual cortex transplantation",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Priya2019b"
+    },
+    {
+      "doi": "10.1038/srep19003",
+      "claim": "v-myc-induced GABAergic interneuron progenitor cells (GE6) maintain neurogenic potential in vivo and differentiate into functional GABAergic interneurons after transplantation into postnatal and adult rat brain.",
+      "claim_source_sentence": "GE6 cells migrate extensively in the neonatal forebrain and differentiate into both neurons and glia, but preferentially into neurons when compared with a sister progenitor clone CTX8.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 6,
+      "study_system": "rat brain, GE6 progenitor transplantation",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wang2016a"
+    },
+    {
+      "doi": "10.1038/mp.2015.113",
+      "claim": "Specific deletion of mGluR5 from PV+ interneurons results in reduced PV+ neuron numbers, decreased inhibitory currents, altered brain oscillatory activity, and behavioral phenotypes relevant to autism and schizophrenia (compulsive behaviors, sensorimotor gating deficits).",
+      "claim_source_sentence": "Deletion of mGluR5 from Pv + interneurons resulted in reduced numbers of Pv + neurons and decreased inhibitory currents, as well as alterations in event-related potentials and brain oscillatory activity. These cellular and sensory changes translated into domain-specific memory deficits and increased compulsive-like behaviors, abnormal sensorimotor gating and altered responsiveness to stimulant agents.",
+      "effect_size": "Deletion of mGluR5 from Pv(+) interneurons resulted in reduced numbers of Pv(+) neurons and decreased inhibitory currents, as well as alterations in event-related potentials and brain oscillatory activity.",
+      "effect_size_source_sentence": "Deletion of mGluR5 from Pv(+) interneurons resulted in reduced numbers of Pv(+) neurons and decreased inhibitory currents, as well as alterations in event-related potentials and brain oscillatory activity.",
+      "n": null,
+      "study_system": "PV-Cre mGluR5 conditional knockout mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Barnes2015"
+    },
+    {
+      "doi": "10.1155/2011/921680",
+      "claim": "Alteration of E/I balance during critical periods may contribute to autistic phenotypes, proposing that autism can be understood as a critical period disorder where timing or expression of circuit refinement is disrupted.",
+      "claim_source_sentence": "We propose that alteration of the expression and/or timing of critical period circuit refinement in primary sensory brain areas may significantly contribute to autistic phenotypes, including cognitive and behavioral impairments.",
+      "effect_size": "There is now increasing evidence of E/I imbalance in autism, a complex genetic neurodevelopmental disorder diagnosed by abnormal socialization, impaired communication, and repetitive behaviors or restricted interests.",
+      "effect_size_source_sentence": "There is now increasing evidence of E/I imbalance in autism, a complex genetic neurodevelopmental disorder diagnosed by abnormal socialization, impaired communication, and repetitive behaviors or restricted interests.",
+      "n": null,
+      "study_system": "review; mouse models of autism",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "LeBlanc2011"
+    },
+    {
+      "doi": "10.1186/s13229-020-0314-0",
+      "claim": "PV interneuron dysfunction represents a common and possibly unifying pathway for some forms of autism spectrum disorder, with iPSC-based approaches offering new tools to study PV neuron development in disease.",
+      "claim_source_sentence": "Increasing evidence from both animal and human studies suggests an altered functioning of the parvalbumin (PV)-expressing inhibitory interneurons as a common and possibly unifying pathway for some forms of ASD.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "iPSC-derived PV interneurons, ASD models",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Filice2020a"
+    },
+    {
+      "doi": "10.3389/fnmol.2022.1057539",
+      "claim": "Anomalies in the maturation of PV+ basket cells have been identified in patients with schizophrenia, linking critical period mechanisms to the etiology of psychosis.",
+      "claim_source_sentence": "Research into the cellular and molecular mechanisms controlling the onset and end of these critical periods, notably controlled by the maturation of parvalbumin-expressing basket cells, have brought to light the presence of anomalies in the maturation of these neurons in patients with schizophrenia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human schizophrenia, review",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "TranThe2022"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.2881-18.2019",
+      "claim": "p75 Neurotrophin Receptor Activation Regulates the Timing of the Maturation of Cortical Parvalbumin Interneuron Connectivity and Promotes Juvenile-like Plasticity in Adult Visual Cortex.",
+      "claim_source_sentence": "By virtue of their extensive axonal arborization and perisomatic synaptic targeting, cortical inhibitory parvalbumin (PV) cells strongly regulate principal cell output and plasticity and modulate experience-dependent refinement of cortical circuits during development.",
+      "effect_size": "By using RNAscope and a modified version of the proximity ligation assay, we found that p75NTR expression in PV cells decreases between the second and fourth postnatal week, at a time when PV cell syn",
+      "effect_size_source_sentence": "By using RNAscope and a modified version of the proximity ligation assay, we found that p75NTR expression in PV cells decreases between the second and fourth postnatal week, at a time when PV cell synapse numbers increase dramatically.",
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Baho2019"
+    },
+    {
+      "doi": "10.1101/2024.11.07.622463",
+      "claim": "Perineuronal nets on CA2 pyramidal cells and parvalbumin-expressing cells differentially regulate hippocampal dependent memory.",
+      "claim_source_sentence": "Perineuronal nets (PNNs) are a specialized extracellular matrix that surround certain populations of neurons, including (inhibitory) parvalbumin (PV) expressing-interneurons throughout the brain and (excitatory) CA2 pyramidal neurons in hippocampus.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Alexander2024"
+    },
+    {
+      "doi": "10.3389/fncir.2018.00037",
+      "claim": "PV Interneurons: Critical Regulators of E/I Balance for Prefrontal Cortex-Dependent Behavior and Psychiatric Disorders.",
+      "claim_source_sentence": "Elucidating the prefrontal cortical microcircuit has been challenging, given its role in multiple complex behaviors, including working memory, cognitive flexibility, attention, social interaction and emotional regulation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ferguson2018"
+    },
+    {
+      "doi": "10.1073/pnas.1506499112",
+      "claim": "MeCP2 regulates the timing of critical period plasticity that shapes functional connectivity in primary visual cortex.",
+      "claim_source_sentence": "Mutations in methyl-CpG-binding protein 2 (MeCP2) cause Rett syndrome, an autism spectrum-associated disorder with a host of neurological and sensory symptoms, but the pathogenic mechanisms remain elusive.",
+      "effect_size": "The functional maturation of parvalbumin interneurons was accelerated upon vision onset, as indicated by elevated GABA synthetic enzymes, vesicular GABA transporter, perineuronal nets, and enhanced GA",
+      "effect_size_source_sentence": "The functional maturation of parvalbumin interneurons was accelerated upon vision onset, as indicated by elevated GABA synthetic enzymes, vesicular GABA transporter, perineuronal nets, and enhanced GABA transmission among PV interneurons.",
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Krishnan2015"
+    },
+    {
+      "doi": "10.1371/journal.pone.0123643",
+      "claim": "A Critical Period for Postnatal Adaptive Plasticity in a Model of Motor Axon Miswiring",
+      "claim_source_sentence": "The correct wiring of neuronal circuits is of crucial importance for precise neuromuscular functionality.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Helmbrecht2015"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1430-19.2019",
+      "claim": "Transplanted Cells Are Essential for the Induction But Not the Expression of Cortical Plasticity.",
+      "claim_source_sentence": "Transplantation of even a small number of embryonic inhibitory neurons from the medial ganglionic eminence (MGE) into postnatal visual cortex makes it lose responsiveness to an eye deprived of vision when the transplanted neurons reach the age of the normal critical period of activity-dependent ocular dominance (OD) plasticity.",
+      "effect_size": "This plasticity was evident even when the activity of the transplanted cells was suppressed or enhanced optogenetically, demonstrating that the plasticity was produced by changes in the host visual co",
+      "effect_size_source_sentence": "This plasticity was evident even when the activity of the transplanted cells was suppressed or enhanced optogenetically, demonstrating that the plasticity was produced by changes in the host visual cortex.",
+      "n": 4,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hoseini2019a"
+    },
+    {
+      "doi": "10.1016/j.neuropharm.2023.109491",
+      "claim": "The gut-brain connection: Exploring the influence of the gut microbiota on neuroplasticity and neurodevelopmental disorders",
+      "claim_source_sentence": "Neuroplasticity refers to the ability of brain circuits to reorganize and change the properties of the network, resulting in alterations in brain function and behavior.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Damiani2023"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1253-18.2019",
+      "claim": "Vesicular GABA Transporter Is Necessary for Transplant-Induced Critical Period Plasticity in Mouse Visual Cortex.",
+      "claim_source_sentence": "The maturation of GABAergic inhibitory circuits is necessary for the onset of the critical period for ocular dominance plasticity (ODP) in the postnatal visual cortex (Hensch, 2005; Espinosa and Stryker, 2012).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Priya2019a"
+    },
+    {
+      "doi": "10.1111/infa.12588",
+      "claim": "Prenatal influences on postnatal neuroplasticity: Integrating DOHaD and sensitive/critical period frameworks to understand biological embedding in early development",
+      "claim_source_sentence": "Early environments can have significant and lasting effects on brain, body, and behavior across the lifecourse.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Margolis2025"
+    },
+    {
+      "doi": "10.1016/j.celrep.2016.06.071",
+      "claim": "Caudal Ganglionic Eminence Precursor Transplants Disperse and Integrate as Lineage-Specific Interneurons but Do Not Induce Cortical Plasticity.",
+      "claim_source_sentence": "The maturation of inhibitory GABAergic cortical circuits regulates experience-dependent plasticity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Larimer2016"
+    },
+    {
+      "doi": "10.1523/jneurosci.1430-19.2019",
+      "claim": "Transplanted Cells Are Essential for the Induction But Not the Expression of Cortical Plasticity",
+      "claim_source_sentence": "Transplantation of even a small number of embryonic inhibitory neurons from the medial ganglionic eminence (MGE) into postnatal visual cortex makes it lose responsiveness to an eye deprived of vision when the transplanted neurons reach the age of the normal critical period of activity-dependent ocular dominance (OD) plasticity.",
+      "effect_size": "This plasticity was evident even when the activity of the transplanted cells was suppressed or enhanced optogenetically, demonstrating that the plasticity was produced by changes in the host visual co",
+      "effect_size_source_sentence": "This plasticity was evident even when the activity of the transplanted cells was suppressed or enhanced optogenetically, demonstrating that the plasticity was produced by changes in the host visual cortex.",
+      "n": 4,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hoseini2019b"
+    },
+    {
+      "doi": "10.1016/j.nbd.2024.106722",
+      "claim": "Neonatal hypoxia-ischemia alters the events governing the hippocampal critical period of postnatal synaptic plasticity leading to deficits in working memory in mice.",
+      "claim_source_sentence": "Postnatal critical periods of synaptic plasticity (CPsp) are characterized by profound neural network refinement, which is shaped by synaptic activity and sculpted by maturation of the GABAergic network.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 6,
+      "study_system": "mouse/rat visual cortex, critical period",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Parmar2024"
+    },
+    {
+      "doi": "10.1016/j.schres.2014.12.040",
+      "claim": "Losing the sugar coating: potential impact of perineuronal net abnormalities on interneurons in schizophrenia.",
+      "claim_source_sentence": "Perineuronal nets (PNNs) were shown to be markedly altered in subjects with schizophrenia.",
+      "effect_size": "In particular, decreases of PNNs have been detected in the amygdala, entorhinal cortex and prefrontal cortex.",
+      "effect_size_source_sentence": "In particular, decreases of PNNs have been detected in the amygdala, entorhinal cortex and prefrontal cortex.",
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Berretta2015"
+    },
+    {
+      "doi": "10.3389/fnmol.2018.00270",
+      "claim": "The Perineuronal 'Safety' Net? Perineuronal Net Abnormalities in Neurological Disorders.",
+      "claim_source_sentence": "Perineuronal nets (PNN) are extracellular matrix (ECM) assemblies that preferentially ensheath parvalbumin (PV) expressing interneurons.",
+      "effect_size": "There is impaired development of PNNs and enhanced activity of its key regulator matrix metalloproteinase-9 (MMP-9) in Fragile X Syndrome, a common genetic cause of autism.",
+      "effect_size_source_sentence": "There is impaired development of PNNs and enhanced activity of its key regulator matrix metalloproteinase-9 (MMP-9) in Fragile X Syndrome, a common genetic cause of autism.",
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Wen2018"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.2228-20.2020",
+      "claim": "Chondroitinase and Antidepressants Promote Plasticity by Releasing TRKB from Dephosphorylating Control of PTP\u03c3 in Parvalbumin Neurons.",
+      "claim_source_sentence": "Perineuronal nets (PNNs) are an extracellular matrix structure rich in chondroitin sulfate proteoglycans (CSPGs), which preferentially encase parvalbumin-containing (PV.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Lesnikova2021a"
+    },
+    {
+      "doi": "10.1038/s41380-025-02894-5",
+      "claim": "Differential impacts of germline and adult aggrecan knockout in PV+ neurons on perineuronal nets and PV+ neuronal function.",
+      "claim_source_sentence": "Perineuronal nets (PNNs) are a condensed form of extracellular matrix primarily found around parvalbumin-expressing (PV+) interneurons.",
+      "effect_size": "In contrast, AAV-mediated ACAN knockout in adult mice increased ocular dominance plasticity.",
+      "effect_size_source_sentence": "In contrast, AAV-mediated ACAN knockout in adult mice increased ocular dominance plasticity.",
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Grdem2025"
+    },
+    {
+      "doi": "10.1111/j.1460-9568.2009.06996.x",
+      "claim": "Parvalbumin-containing neurons, perineuronal nets and experience-dependent plasticity in murine barrel cortex.",
+      "claim_source_sentence": "The ability to undergo experience-dependent plasticity in the neocortex is often limited to early development, but also to particular cortical loci and specific experience.",
+      "effect_size": "Condensation of chondroitin sulfate proteoglycans into perineuronal nets and an increase in intracortical inhibition mediated by parvalbumin-containing interneurons are implicated in closing the criti",
+      "effect_size_source_sentence": "Condensation of chondroitin sulfate proteoglycans into perineuronal nets and an increase in intracortical inhibition mediated by parvalbumin-containing interneurons are implicated in closing the critical period for ocular dominance plasticity.",
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/adb.13334"
+      ],
+      "cite_key": "Nowicka2009"
+    },
+    {
+      "doi": "10.1111/adb.13334",
+      "claim": "Enhanced expression of parvalbumin and perineuronal nets in the medial prefrontal cortex after extended-access cocaine self-administration in rats.",
+      "claim_source_sentence": "The medial prefrontal cortex (mPFC) drives cocaine-seeking behaviour in rodent models of cocaine use disorder.",
+      "effect_size": "The intensity of PNNs was increased in the prelimbic and infralimbic PFC after long-term abstinence in the absence of cue reinstatement and after cue reinstatement following both daily extinction sess",
+      "effect_size_source_sentence": "The intensity of PNNs was increased in the prelimbic and infralimbic PFC after long-term abstinence in the absence of cue reinstatement and after cue reinstatement following both daily extinction sessions and after a 30-day abstinence period.",
+      "n": 6,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Wingert2023"
+    },
+    {
+      "doi": "10.1016/j.neuroscience.2016.11.035",
+      "claim": "Parvalbumin neurons and perineuronal nets in the mouse prefrontal cortex.",
+      "claim_source_sentence": "The prefrontal cortex (PFC) plays a key role in cognitive functions, memory, and attention.",
+      "effect_size": "We found that PV neurons and PNNs were increased in a region-specific manner in the PFC during postnatal development.",
+      "effect_size_source_sentence": "We found that PV neurons and PNNs were increased in a region-specific manner in the PFC during postnatal development.",
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Ueno2017"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1626-24.2024",
+      "claim": "Perineuronal Nets on CA2 Pyramidal Cells and Parvalbumin-Expressing Cells Differentially Regulate Hippocampal-Dependent Memory.",
+      "claim_source_sentence": "Perineuronal nets (PNNs) are a specialized extracellular matrix that surrounds certain populations of neurons, including (inhibitory) parvalbumin (PV)-expressing interneurons throughout the brain and (excitatory) CA2 pyramidal neurons in hippocampus.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, PNN/molecular brakes",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Alexander2025"
+    },
+    {
+      "doi": "10.1196/annals.1308.008",
+      "claim": "Postnatal development of prefrontal inhibitory circuits and the pathophysiology of cognitive dysfunction in schizophrenia.",
+      "claim_source_sentence": "The typical appearance of the clinical features of schizophrenia during late adolescence or early adulthood suggests that adolescence-related neurodevelopmental events may contribute to the pathophysiology of this disorder.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "LEWIS2004"
+    },
+    {
+      "doi": "10.1038/cr.2017.135",
+      "claim": "Endothelial cell-derived GABA signaling modulates neuronal migration and postnatal behavior.",
+      "claim_source_sentence": "The cerebral cortex is essential for integration and processing of information that is required for most behaviors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Li2018"
+    },
+    {
+      "doi": "10.3389/fncel.2019.00248",
+      "claim": "Regeneration of Spinal Cord Connectivity Through Stem Cell Transplantation and Biomaterial Scaffolds",
+      "claim_source_sentence": "Significant progress has been made in the treatment of spinal cord injury (SCI).",
+      "effect_size": "That hope was gradually replaced with mounting frustration when neuroprotective drugs, cell transplantation, and strategies to enhance remyelination, axonal regeneration, and neuronal plasticity demon",
+      "effect_size_source_sentence": "That hope was gradually replaced with mounting frustration when neuroprotective drugs, cell transplantation, and strategies to enhance remyelination, axonal regeneration, and neuronal plasticity demonstrated significant improvement in animal models of SCI but did not translate into a cure in human patients.",
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Katoh2019"
+    },
+    {
+      "doi": "10.3791/59568",
+      "claim": "Transplantation of Chemogenetically Engineered Cortical Interneuron Progenitors into Early Postnatal Mouse Brains.",
+      "claim_source_sentence": "Neuronal development is regulated by a complex combination of environmental and genetic factors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Denaxa2019"
+    },
+    {
+      "doi": "10.1186/s12929-018-0450-4",
+      "claim": "Perinatal Pb(2+) exposure alters the expression of genes related to the neurodevelopmental GABA-shift in postnatal rats.",
+      "claim_source_sentence": "Lead (Pb A total of eight females (n\u2009=\u20094 Control and n\u2009=\u20094 Perinatal) and four males (n\u2009=\u20092 Control and n\u2009=\u20092 Perinatal) rats were used as breeders to serve as Dams and Sires.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 4,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Neuwirth2018"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1373-19.2020",
+      "claim": "Activation of Somatostatin Interneurons by Nicotinic Modulator Lypd6 Enhances Plasticity and Functional Recovery in the Adult Mouse Visual Cortex.",
+      "claim_source_sentence": "The limitation of plasticity in the adult brain impedes functional recovery later in life from brain injury or disease.",
+      "effect_size": "This may be achieved through the enhancement of local inhibitory inputs, particularly those of somatostatin (SST)-expressing interneurons.",
+      "effect_size_source_sentence": "This may be achieved through the enhancement of local inhibitory inputs, particularly those of somatostatin (SST)-expressing interneurons.",
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Sadahiro2020a"
+    },
+    {
+      "doi": "10.1016/j.celrep.2022.111209",
+      "claim": "Microglia contribute to the postnatal development of cortical somatostatin-positive inhibitory cells and to whisker-evoked cortical activity.",
+      "claim_source_sentence": "Microglia play a key role in shaping the formation and refinement of the excitatory network of the brain.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Gesuita2022"
+    },
+    {
+      "doi": "10.1038/s41598-026-38316-x",
+      "claim": "Selective Lis1 inactivation disrupts migration and positioning of cortical somatostatin interneurons.",
+      "claim_source_sentence": "One subtype of interneurons, classified by their neurochemical properties, are somatostatin-positive (SST+) interneurons, which express somatostatin along with GABA and form synapses with both pyramidal neurons and other interneurons.",
+      "effect_size": "Our findings show a reduction in SST+ interneurons in mutants compared to controls, indicating impaired migration and/or maturation.",
+      "effect_size_source_sentence": "Our findings show a reduction in SST+ interneurons in mutants compared to controls, indicating impaired migration and/or maturation.",
+      "n": null,
+      "study_system": "mouse cortex, SST development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Pombero2026"
+    },
+    {
+      "doi": "10.1093/cercor/bht114",
+      "claim": "Development of layer 1 neurons in the mouse neocortex.",
+      "claim_source_sentence": "Layer 1 of the neocortex harbors a unique group of neurons that play crucial roles in synaptic integration and information processing.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ma2014"
+    },
+    {
+      "doi": "10.1016/j.neuron.2023.09.041",
+      "claim": "Layer 1 neocortex: Gating and integrating multidimensional signals",
+      "claim_source_sentence": "Layer 1 (L1) of the neocortex acts as a nexus for the collection and processing of widespread information.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Huang2024a"
+    },
+    {
+      "doi": "10.1093/cercor/bhz236",
+      "claim": "microRNA Deficiency in VIP+ Interneurons Leads to Cortical Circuit Dysfunction.",
+      "claim_source_sentence": "Genetically distinct GABAergic interneuron subtypes play diverse roles in cortical circuits.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Qiu2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.1613-18.2018",
+      "claim": "Four Unique Interneuron Populations Reside in Neocortical Layer 1",
+      "claim_source_sentence": "Sensory perception depends on neocortical computations that contextually adjust sensory signals in different internal and environmental contexts.",
+      "effect_size": "We discovered that L1 contains four distinct populations of INs, each with a unique molecular profile, morphology, and electrophysiology, including a previously overlooked IN population (named here \"c",
+      "effect_size_source_sentence": "We discovered that L1 contains four distinct populations of INs, each with a unique molecular profile, morphology, and electrophysiology, including a previously overlooked IN population (named here \"canopy cells\") representing 40% of L1 INs.",
+      "n": 40,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Schuman2019"
+    },
+    {
+      "doi": "10.1186/s40659-026-00673-2",
+      "claim": "Subthreshold Kir and Ih currents modulate excitability of layer 1 VIP interneurons in the medial prefrontal cortex",
+      "claim_source_sentence": "Cortical layer 1 (L1) is a key site for integrating top-down and bottom-up information and is populated by inhibitory interneurons, including vasoactive intestinal peptide (VIP)-expressing cells.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Moreno2026"
+    },
+    {
+      "doi": "10.1101/2025.05.21.655402",
+      "claim": "GABAergic signaling by VIP interneurons gates running-dependent visual recovery in the adult brain.",
+      "claim_source_sentence": "Experience-dependent plasticity in the adult visual cortex is enhanced by locomotion, a process mediated by vasoactive intestinal peptide (VIP)-expressing interneurons.",
+      "effect_size": "Experience-dependent plasticity in the adult visual cortex is enhanced by locomotion, a process mediated by vasoactive intestinal peptide (VIP)-expressing interneurons.",
+      "effect_size_source_sentence": "Experience-dependent plasticity in the adult visual cortex is enhanced by locomotion, a process mediated by vasoactive intestinal peptide (VIP)-expressing interneurons.",
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Lebedeva2025"
+    },
+    {
+      "doi": "10.1016/0006-8993(79)90462-1",
+      "claim": "Development of vasoactive intestinal polypeptide (VIP) containing neurones in the rat brain.",
+      "claim_source_sentence": "The development of VIP-containing neurones in the rat CNS and duodenum has been studied using a specific radioimmunoassay and immunohistochemistry.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Emson1979"
+    },
+    {
+      "doi": "10.1126/science.adf0805",
+      "claim": "Morphoelectric and transcriptomic divergence of the layer 1 interneuron repertoire in human versus mouse neocortex",
+      "claim_source_sentence": "Neocortical layer 1 (L1) is a site of convergence between pyramidal-neuron dendrites and feedback axons where local inhibitory signaling can profoundly shape cortical processing.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, VIP/NDNF development",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Chartrand2023"
+    },
+    {
+      "doi": "10.1101/2024.07.20.604399",
+      "claim": "Pyramidal neurons proportionately alter the identity and survival of specific cortical interneuron subtypes.",
+      "claim_source_sentence": "The mammalian cerebral cortex comprises a complex neuronal network that maintains a precise balance between excitatory pyramidal neurons and inhibitory interneurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wu2024"
+    },
+    {
+      "doi": "10.1186/s13024-020-00419-y",
+      "claim": "Cell-autonomous role of Presenilin in age-dependent survival of cortical interneurons.",
+      "claim_source_sentence": "Mutations in the PSEN1 and PSEN2 genes are the major cause of familial Alzheimer's disease.",
+      "effect_size": "Western analysis of protein lysates from various brain sub-regions of IN-PS cDKO mice showed significant reduction of PS1 levels and dramatic accumulation of \u03b3-secretase substrates.",
+      "effect_size_source_sentence": "Western analysis of protein lysates from various brain sub-regions of IN-PS cDKO mice showed significant reduction of PS1 levels and dramatic accumulation of \u03b3-secretase substrates.",
+      "n": 3,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kang2020b"
+    },
+    {
+      "doi": "10.1073/pnas.2313596120",
+      "claim": "The clustered gamma protocadherin Pcdh\u03b3C4 isoform regulates cortical interneuron programmed cell death in the mouse cortex.",
+      "claim_source_sentence": "Cortical inhibitory interneurons (cINs) are born in the ventral forebrain and migrate into the cortex where they make connections with locally produced excitatory glutamatergic neurons.",
+      "effect_size": "The final number of cINs is determined during a postnatal period of programmed cell death (PCD) when ~40% of the young cINs are eliminated.",
+      "effect_size_source_sentence": "The final number of cINs is determined during a postnatal period of programmed cell death (PCD) when ~40% of the young cINs are eliminated.",
+      "n": 40,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Leon2024"
+    },
+    {
+      "doi": "10.1101/2023.02.03.526887",
+      "claim": "The Clustered Gamma Protocadherin Pcdh\u03b3c4 Isoform Regulates Cortical Interneuron Programmed Cell Death in the Mouse Cortex.",
+      "claim_source_sentence": "Cortical function critically depends on inhibitory/excitatory balance.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "ManciaLeon2023"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1636-20.2020",
+      "claim": "The \u03b3-Protocadherins Regulate the Survival of GABAergic Interneurons during Developmental Cell Death.",
+      "claim_source_sentence": "Inhibitory interneurons integrate into developing circuits in specific ratios and distributions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Carriere2020"
+    },
+    {
+      "doi": "10.1016/j.celrep.2019.07.024",
+      "claim": "Interplay between a Mental Disorder Risk Gene and Developmental Polarity Switch of GABA Action Leads to Excitation-Inhibition Imbalance.",
+      "claim_source_sentence": "Excitation-inhibition (E-I) imbalance is considered a hallmark of various neurodevelopmental disorders, including schizophrenia and autism.",
+      "effect_size": "We found that excessive GABAergic inputs from parvalbumin-, but not somatostatin-, expressing interneurons enhance the formation of both glutamatergic and GABAergic synapses in immature mutant neurons",
+      "effect_size_source_sentence": "We found that excessive GABAergic inputs from parvalbumin-, but not somatostatin-, expressing interneurons enhance the formation of both glutamatergic and GABAergic synapses in immature mutant neurons.",
+      "n": null,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kang2019"
+    },
+    {
+      "doi": "10.7554/eLife.55374",
+      "claim": "Clustered gamma-protocadherins regulate cortical interneuron programmed cell death.",
+      "claim_source_sentence": "Cortical function critically depends on inhibitory/excitatory balance.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "ManciaLeon2020"
+    },
+    {
+      "doi": "10.1371/journal.pone.0217339",
+      "claim": "Water-soluble variant of human Lynx1 induces cell cycle arrest and apoptosis in lung cancer cells via modulation of \u03b17 nicotinic acetylcholine receptors.",
+      "claim_source_sentence": "Lynx1 is the first three-finger prototoxin found in the mammalian central nervous system.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 549,
+      "study_system": "mouse cortex, interneuron cell death",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Bychkov2019"
+    },
+    {
+      "doi": "10.3791/52740",
+      "claim": "Viral-mediated Labeling and Transplantation of Medial Ganglionic Eminence (MGE) Cells for In Vivo Studies.",
+      "claim_source_sentence": "GABAergic cortical interneurons, derived from the embryonic medial and caudal ganglionic eminences (MGE and CGE), are functionally and morphologically diverse.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron transplantation",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Vogt2015"
+    },
+    {
+      "doi": "10.1101/2024.12.27.630358",
+      "claim": "Integration of Transplanted Interneurons Over a New Period of Ocular Dominance Plasticity in Adult Visual Cortex.",
+      "claim_source_sentence": "Cortical interneurons play an important role in mediating the juvenile critical period for ocular dominance plasticity in the mouse primary visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron transplantation",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Rakela2024"
+    },
+    {
+      "doi": "10.1016/j.neuron.2015.03.062",
+      "claim": "Inhibitory Neuron Transplantation into Adult Visual Cortex Creates a New Critical Period that Rescues Impaired Vision",
+      "claim_source_sentence": "The maturation of inhibitory circuits in juvenile visual cortex triggers a critical period in the development of the visual system.",
+      "effect_size": "In adult mice impaired by deprivation during the juvenile critical period, transplantation also recovers both visual cortical responses and performance on a behavioral test of visual acuity.",
+      "effect_size_source_sentence": "In adult mice impaired by deprivation during the juvenile critical period, transplantation also recovers both visual cortical responses and performance on a behavioral test of visual acuity.",
+      "n": null,
+      "study_system": "mouse cortex, interneuron transplantation",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Davis2015"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.3496-17.2018",
+      "claim": "CTCF Governs the Identity and Migration of MGE-Derived Cortical Interneurons.",
+      "claim_source_sentence": "The CCCTC-binding factor (CTCF) is a central regulator of chromatin topology recently linked to neurodevelopmental disorders such as intellectual disability, autism, and schizophrenia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, interneuron transplantation",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Elbert2019"
+    },
+    {
+      "doi": "10.1261/rna.078804.121",
+      "claim": "A survey of RNA editing at single-cell resolution links interneurons to schizophrenia and autism.",
+      "claim_source_sentence": "Conversion of adenosine to inosine in RNA by ADAR enzymes, termed \"RNA editing,\" is essential for healthy brain development.",
+      "effect_size": "Most sites were located within Alu repeats in introns or 3' UTRs, and approximately 80% were cataloged in public RNA editing databases.",
+      "effect_size_source_sentence": "Most sites were located within Alu repeats in introns or 3' UTRs, and approximately 80% were cataloged in public RNA editing databases.",
+      "n": 3055,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ansell2021"
+    },
+    {
+      "doi": "10.1002/epi4.12062",
+      "claim": "INTERNEURONOPATHIES AND THEIR ROLE IN EARLY LIFE EPILEPSIES AND NEURODEVELOPMENTAL DISORDERS.",
+      "claim_source_sentence": "GABAergic interneurons control the neural circuitry and network activity in the brain.",
+      "effect_size": "Treatments that enhance GABA levels, may help seizure control but do not necessarily show disease modifying effect.",
+      "effect_size_source_sentence": "Treatments that enhance GABA levels, may help seizure control but do not necessarily show disease modifying effect.",
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Katsarou2017"
+    },
+    {
+      "doi": "10.1016/j.neuroscience.2021.04.005",
+      "claim": "The Emergence of Network Activity Patterns in the Somatosensory Cortex - An Early Window to Autism Spectrum Disorders.",
+      "claim_source_sentence": "Across mammalian species, patterned activity in neural populations is a prominent feature of developing sensory cortices.",
+      "effect_size": "Finally, we underscore how aberrant neuronal synchrony and disrupted inhibitory interneuron activity underlie sensory perturbations in neurodevelopmental disorders, particularly Autism Spectrum Disorders (ASDs), emphasizing the importance of future investigative approaches that incorporate the spati",
+      "effect_size_source_sentence": "Finally, we underscore how aberrant neuronal synchrony and disrupted inhibitory interneuron activity underlie sensory perturbations in neurodevelopmental disorders, particularly Autism Spectrum Disorders (ASDs), emphasizing the importance of future investigative approaches that incorporate the spatiotemporal features of patterned activity alongside the cellular components to probe disordered circuit assembly.",
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Iannone2021"
+    },
+    {
+      "doi": "10.3389/fendo.2025.1681190",
+      "claim": "Pathophysiological associations between maternal immune activation and neurodevelopmental disorders in offspring: a comprehensive review.",
+      "claim_source_sentence": "Maternal immune activation (MIA), triggered by infectious or non-infectious inflammatory stimuli, is a critical risk factor for offspring neurodevelopmental disorders (NDDs) and has become a major focus in neurodevelopmental pathology research.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 30,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Tang2025"
+    },
+    {
+      "doi": "10.1093/nargab/lqaf162",
+      "claim": "Joint analysis of de novo mutations from autism spectrum disorder, schizophrenia, congenital heart disease, and other developmental disorders improves detection power and implicates shared molecular pathways and CNS processes.",
+      "claim_source_sentence": "Rare exonic variant studies have previously implicated overlapping risk genes and pathways for autism spectrum disorder (ASD), severe, undiagnosed developmental disorders (UDDs), intellectual disability (ID), congenital heart disease (CHD), and schizophrenia (SCZ).",
+      "effect_size": "Here, we use a two-trait Bayesian integrative analysis approach on 43 287 ASD, UDD/ID, CHD, and SCZ case trios to increase statistical power for gene discovery and to identify shared risk genes.",
+      "effect_size_source_sentence": "Here, we use a two-trait Bayesian integrative analysis approach on 43 287 ASD, UDD/ID, CHD, and SCZ case trios to increase statistical power for gene discovery and to identify shared risk genes.",
+      "n": 43,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kealhofer2025"
+    },
+    {
+      "doi": "10.3389/fpsyt.2012.00019",
+      "claim": "Epilepsy as a Neurodevelopmental Disorder",
+      "claim_source_sentence": "Epilepsy is characterized by spontaneous recurrent seizures and comprises a diverse group of syndromes with different etiologies.",
+      "effect_size": "Malformations of cortical development (including focal cortical dysplasia, lissencephaly, heterotopia, and polymicrogyria) are frequently epileptogenic and result from defects in cell proliferation in the germinal zone and/or impaired neuronal migration and differentiation.",
+      "effect_size_source_sentence": "Malformations of cortical development (including focal cortical dysplasia, lissencephaly, heterotopia, and polymicrogyria) are frequently epileptogenic and result from defects in cell proliferation in the germinal zone and/or impaired neuronal migration and differentiation.",
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Bozzi2012"
+    },
+    {
+      "doi": "10.1038/s41386-020-0778-9",
+      "claim": "Parvalbumin interneuron vulnerability and brain disorders.",
+      "claim_source_sentence": "Parvalbumin-expressing interneurons (PV-INs) are highly vulnerable to stressors and have been implicated in many neuro-psychiatric diseases such as schizophrenia, Alzheimer's disease, autism spectrum disorder, and bipolar disorder.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ruden2021"
+    },
+    {
+      "doi": "10.1038/mp.2017.47",
+      "claim": "Oxidative stress-driven parvalbumin interneuron impairment as a common mechanism in models of schizophrenia.",
+      "claim_source_sentence": "Parvalbumin inhibitory interneurons (PVIs) are crucial for maintaining proper excitatory/inhibitory balance and high-frequency neuronal synchronization.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Steullet2017"
+    },
+    {
+      "doi": "10.3389/fncel.2020.577525",
+      "claim": "The Parvalbumin Hypothesis of Autism Spectrum Disorder.",
+      "claim_source_sentence": "The prevalence of autism spectrum disorder (ASD)-a type of neurodevelopmental disorder-is increasing and is around 2% in North America, Asia, and Europe.",
+      "effect_size": "The prevalence of autism spectrum disorder (ASD)-a type of neurodevelopmental disorder-is increasing and is around 2% in North America, Asia, and Europe.",
+      "effect_size_source_sentence": "The prevalence of autism spectrum disorder (ASD)-a type of neurodevelopmental disorder-is increasing and is around 2% in North America, Asia, and Europe.",
+      "n": null,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Filice2020b"
+    },
+    {
+      "doi": "10.1038/mp.2017.230",
+      "claim": "The thalamic reticular nucleus in schizophrenia and bipolar disorder: role of parvalbumin-expressing neuron networks and oxidative stress",
+      "claim_source_sentence": "Growing evidence points to a disruption of cortico-thalamo-cortical circuits in schizophrenia (SZ) and bipolar disorder (BD).",
+      "effect_size": "In both disease groups, marked decreases of PV neurons (immunoreactive for PV) and WFA/PNNs were observed in the TRN, with no effects of duration of illness or age at onset.",
+      "effect_size_source_sentence": "In both disease groups, marked decreases of PV neurons (immunoreactive for PV) and WFA/PNNs were observed in the TRN, with no effects of duration of illness or age at onset.",
+      "n": 20,
+      "study_system": "mouse/human, neurodevelopmental disorders",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Steullet2018"
+    },
+    {
+      "doi": "10.1007/s12035-019-1557-7",
+      "claim": "Neurodevelopmental Disorders: Functional Role of Ambra1 in Autism and Schizophrenia.",
+      "claim_source_sentence": "Neurodevelopmental Disorders: Functional Role of Ambra1 in Autism and Schizophrenia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "LaBarbera2019"
+    },
+    {
+      "doi": "10.1016/j.bbrc.2020.03.030",
+      "claim": "PGC-1\u03b1 regulate critical period plasticity via gene\u00a0\u00d7 environment interaction in the developmental trajectory to schizophrenia.",
+      "claim_source_sentence": "PGC-1\u03b1 regulate critical period plasticity via gene\u00a0\u00d7 environment interaction in the developmental trajectory to schizophrenia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 6,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Wang2020a"
+    },
+    {
+      "doi": "10.1152/jn.00729.2010",
+      "claim": "Distinct maturation profiles of perisomatic and dendritic targeting GABAergic interneurons in the mouse primary visual cortex during the critical period of ocular dominance plasticity.",
+      "claim_source_sentence": "Distinct maturation profiles of perisomatic and dendritic targeting GABAergic interneurons in the mouse primary visual cortex during the critical period of ocular dominance plasticity.",
+      "effect_size": "While the substantial maturation of PV cells is consistent with the importance of this source of inhibition in triggering OD plasticity, the significant increase in SOM cell excitability suggests that dendrite-targeted inhibition may also play a role in OD plasticity.",
+      "effect_size_source_sentence": "While the substantial maturation of PV cells is consistent with the importance of this source of inhibition in triggering OD plasticity, the significant increase in SOM cell excitability suggests that dendrite-targeted inhibition may also play a role in OD plasticity.",
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cub.2013.01.017",
+        "10.1126/science.1091032",
+        "10.1038/mp.2017.230"
+      ],
+      "cite_key": "Lazarus2011"
+    },
+    {
+      "doi": "10.3760/cma.j.issn.0412-4081.2019.01.008",
+      "claim": "[The postnatal development of perineuronal net, Nogo receptor and the effect of fluoxetine on remodeling it in the visual cortex of rats].",
+      "claim_source_sentence": "[The postnatal development of perineuronal net, Nogo receptor and the effect of fluoxetine on remodeling it in the visual cortex of rats].",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "UNKNOWN-10.3760_cma.j.issn.0412-4081.2019.01.008"
+    },
+    {
+      "doi": "10.3390/ijms24031819",
+      "claim": "Autism Spectrum Disorder: Neurodevelopmental Risk Factors, Biological Mechanism, and Precision Therapy",
+      "claim_source_sentence": "Autism Spectrum Disorder: Neurodevelopmental Risk Factors, Biological Mechanism, and Precision Therapy",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wang2023"
+    },
+    {
+      "doi": "10.1016/j.biopsych.2022.06.017",
+      "claim": "Integrating the Neurodevelopmental and Dopamine Hypotheses of Schizophrenia and the Role of Cortical Excitation-Inhibition Balance",
+      "claim_source_sentence": "Integrating the Neurodevelopmental and Dopamine Hypotheses of Schizophrenia and the Role of Cortical Excitation-Inhibition Balance",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Howes2022"
+    },
+    {
+      "doi": "10.1523/jneurosci.2228-20.2020",
+      "claim": "Chondroitinase and Antidepressants Promote Plasticity by Releasing TRKB from Dephosphorylating Control of PTP\u03c3 in Parvalbumin Neurons",
+      "claim_source_sentence": "Chondroitinase and Antidepressants Promote Plasticity by Releasing TRKB from Dephosphorylating Control of PTP\u03c3 in Parvalbumin Neurons",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex, development/plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1174146",
+        "10.1111/j.1460-9568.2009.06996.x"
+      ],
+      "cite_key": "Lesnikova2021b"
+    }
+  ],
+  "conflicts": [
+    {
+      "description": "PV-specific vs general inhibitory mechanism for critical period: The Hensch framework emphasizes PV+ basket cell maturation as THE trigger for critical periods, but Southwell 2010 and 2015 showed that transplantation of EITHER PV or SST interneurons reopens plasticity, suggesting the mechanism is not PV-specific.",
+      "paper_dois": [
+        "10.1038/nrn1787",
+        "10.1126/science.1091032",
+        "10.1073/pnas.1421844112"
+      ],
+      "resolution_status": "partially_resolved",
+      "notes": "The finding that SST transplantation also works challenges PV-centrism but does not refute it for endogenous development. The key unresolved question: do endogenous SST cells contribute to normal critical period opening?"
+    },
+    {
+      "description": "Direct GABA enhancement vs maturational program: After the critical period, direct pharmacological augmentation of inhibitory transmission does not induce plasticity, yet transplanted inhibitory neurons that mature to ~33-35 days DO induce plasticity. This dissociation argues that it is the developmental program of inhibitory neurons, not simply inhibition level, that gates plasticity.",
+      "paper_dois": [
+        "10.1126/science.1183962",
+        "10.1016/s0092-8674(00)81509-3"
+      ],
+      "resolution_status": "unresolved",
+      "notes": "This is a fundamental tension in the field. The maturational program hypothesis explains why benzodiazepine enhancement in adults fails but transplantation works."
+    },
+    {
+      "description": "PNN removal scope: Pizzorusso 2002 showed ChABC restores visual cortex plasticity, and Gogolla 2009 extended this to amygdala fear memory erasure. However, the mechanisms may differ across brain regions, and whether PNN removal uniformly restores all forms of plasticity is contested.",
+      "paper_dois": [
+        "10.1126/science.1072699",
+        "10.1126/science.1174146",
+        "10.1038/s41467-020-20241-w"
+      ],
+      "resolution_status": "unresolved",
+      "notes": "PNNs serve different functions in different circuits (sensory plasticity vs memory storage vs spatial coding). Treating PNN removal as a universal plasticity unlocker oversimplifies."
+    },
+    {
+      "description": "VIP interneuron exemption from activity-dependent cell death: The Cell Reports 2018 paper shows VIP interneurons are exempt from activity-dependent survival, yet VIP cells are still subject to programmed cell death. This raises the question of what alternative mechanism regulates VIP cell number.",
+      "paper_dois": [
+        "10.1016/j.celrep.2018.01.007",
+        "10.1038/s41586-018-0139-6"
+      ],
+      "resolution_status": "unresolved",
+      "notes": "The VIP exemption is a single-study finding that awaits independent replication."
+    },
+    {
+      "description": "Percentage of interneurons eliminated by cell death: Wong/Bhatt 2018 Nature reports ~40% of cortical interneurons eliminated, while Cell Reports 2018 cites ~30% for MGE-derived interneurons specifically. These numbers may not conflict (different populations measured) but are often cited interchangeably.",
+      "paper_dois": [
+        "10.1038/s41586-018-0139-6",
+        "10.1016/j.celrep.2018.01.007"
+      ],
+      "resolution_status": "partially_resolved",
+      "notes": "The discrepancy likely reflects different population denominators (all interneurons vs MGE-only) rather than true conflict, but this distinction is often lost in secondary citations."
+    },
+    {
+      "description": "Molecular brake model - redundancy vs specificity: Multiple molecular brakes have been identified (PNNs, Lynx1, Nogo receptor, Otx2) that each independently limit adult plasticity. Whether these operate through the same final common pathway or represent truly independent mechanisms is debated.",
+      "paper_dois": [
+        "10.1126/science.1195320",
+        "10.1093/cercor/bhv014",
+        "10.1523/JNEUROSCI.0394-12.2012",
+        "10.1126/science.1072699"
+      ],
+      "resolution_status": "unresolved",
+      "notes": "The TRKB/PTPsigma findings (2020 bioRxiv) suggest ChABC and fluoxetine converge on TRKB, but Lynx1 operates through cholinergic signaling - a different pathway."
+    }
+  ],
+  "figure_data": [
+    {
+      "title": "Critical Period Timing Across Interventions",
+      "description": "Comparison of critical period timing (onset, peak, closure) across different manipulations: wild-type, BDNF overexpression, dark rearing, benzodiazepine treatment, GAD65 knockout.",
+      "papers": [
+        {
+          "doi": "10.1016/s0092-8674(00)81509-3",
+          "value": "BDNF overexpression: critical period opens ~1 week early",
+          "value_source_sentence": "BDNF regulates the maturation of inhibition and the critical period of plasticity in mouse visual cortex."
+        },
+        {
+          "doi": "10.1016/j.cub.2013.01.017",
+          "value": "Dark rearing: critical period delayed, fast recovery possible",
+          "value_source_sentence": "Darkness Alters Maturation of Visual Cortex and Promotes Fast Recovery from Amblyopia."
+        },
+        {
+          "doi": "10.1126/science.1183962",
+          "value": "Transplant-induced plasticity peaks at 33-35 days after transplantation",
+          "value_source_sentence": "In mice, ocular dominance plasticity reaches a peak in the fourth postnatal week, when cortical inhibitory neurons are ~33 to 35 days old."
+        }
+      ],
+      "scope_region": "mouse visual cortex (V1)",
+      "scope_population": "cortical inhibitory neurons",
+      "n_definition": "varies by study: typically number of mice with optical imaging",
+      "homogeneity_check": "All studies use mouse visual cortex, but differ in technique (optical imaging vs electrophysiology), mouse strain, and age at intervention. Comparable scope but different readouts."
+    },
+    {
+      "title": "Molecular Brakes on Adult Plasticity: Effect on ODP",
+      "description": "Comparison of molecular brake removal/disruption effects on adult visual cortex plasticity.",
+      "papers": [
+        {
+          "doi": "10.1126/science.1072699",
+          "value": "ChABC: restores ODP in adult rats",
+          "value_source_sentence": "After CSPG degradation with chondroitinase-ABC in adult rats, monocular deprivation caused an ocular dominance shift toward the nondeprived eye."
+        },
+        {
+          "doi": "10.1126/science.1195320",
+          "value": "Lynx1 removal: enhances nAChR signaling, restores adult ODP",
+          "value_source_sentence": "Removal of this molecular brake enhanced nicotinic acetylcholine receptor signaling."
+        },
+        {
+          "doi": "10.1093/cercor/bhv014",
+          "value": "NgR1 deletion: restores ODP but not bouton turnover",
+          "value_source_sentence": "Nogo Receptor 1 Limits Ocular Dominance Plasticity but not Turnover of Axonal Boutons in a Model of Amblyopia."
+        }
+      ],
+      "scope_region": "adult visual cortex (V1)",
+      "scope_population": "PV+ interneurons and their synapses (primary targets)",
+      "n_definition": "varies: rats (Pizzorusso), mice (Morishita, Bhv014)",
+      "homogeneity_check": "Pizzorusso used rats while others used mice - species difference is a caveat. All measure ODP shift but with different methods (electrophysiology vs optical imaging). Not directly comparable quantitatively."
+    },
+    {
+      "title": "Interneuron Cell Death Percentages Across Studies",
+      "description": "Comparison of reported interneuron cell death rates from different studies and populations.",
+      "papers": [
+        {
+          "doi": "10.1038/s41586-018-0139-6",
+          "value": "~40% of cortical interneurons eliminated by programmed cell death",
+          "value_source_sentence": "Pyramidal cell regulation of interneuron survival sculpts cortical networks."
+        },
+        {
+          "doi": "10.1016/j.celrep.2018.01.007",
+          "value": "~30% of MGE-derived cortical interneurons undergo cell death",
+          "value_source_sentence": "recent work has shown that \u223c30% of the initial population of medial ganglionic eminence (MGE)-derived cortical interneurons undergo cell death."
+        }
+      ],
+      "scope_region": "mouse cerebral cortex",
+      "scope_population": "Wong 2018: all cortical interneurons; Denaxa 2018: MGE-derived only",
+      "taxonomic_level": "Pan-interneuron (Wong) vs MGE-derived subset (Denaxa)",
+      "n_definition": "percentage of initial interneuron population in cortex",
+      "n_analyzed": "not directly comparable: different population denominators",
+      "homogeneity_check": "CAUTION: The ~40% vs ~30% discrepancy reflects different population denominators (all interneurons vs MGE-derived). Not a true conflict but often conflated in secondary citations."
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "topic": "NDNF/Lamp5 interneuron developmental maturation",
+      "description": "Very few studies specifically track the developmental maturation timeline of NDNF/Lamp5 interneurons. Most developmental studies focus on PV and SST cells.",
+      "severity": "moderate"
+    },
+    {
+      "topic": "State-dependent modulation development timeline",
+      "description": "The developmental timeline for state-dependent modulation (arousal, attention) mediated by VIP/NDNF circuits is poorly characterized compared to sensory critical periods.",
+      "severity": "moderate"
+    },
+    {
+      "topic": "Species differences in critical period timing and mechanisms",
+      "description": "Most critical period work is in mouse or rat. Whether the PV-centric framework applies to primates (different cortical architecture, longer development) is largely assumed rather than demonstrated.",
+      "severity": "high"
+    },
+    {
+      "topic": "Non-visual critical periods and interneuron development",
+      "description": "The visual cortex dominates this literature. Whether the same PV maturation \u2192 critical period opening sequence applies to auditory, somatosensory, or prefrontal cortex critical periods is less established.",
+      "severity": "moderate"
+    },
+    {
+      "topic": "Therapeutic translation of transplantation findings",
+      "description": "Mouse transplantation experiments show promise but translation to human therapy faces major barriers (cell sourcing, immune rejection, circuit integration) that are rarely addressed in preclinical literature.",
+      "severity": "high"
+    }
+  ],
+  "unreplicated_claims": []
+}

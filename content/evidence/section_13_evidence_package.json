@@ -1,0 +1,464 @@
+{
+  "section_number": 13,
+  "section_title": "Synthesis and Evidence Assessment",
+  "cluster": "F",
+  "unique_papers": 49,
+  "total_findings": 49,
+  "argument_groups": {
+    "supporting_evidence_count": 49,
+    "counter_evidence_count": 0,
+    "supporting_evidence": [
+      {
+        "doi": "10.1146/annurev-psych-020821-114157",
+        "cite_key": "Nosek2022",
+        "claim": "Replication efforts highlighted sociocultural challenges such as disincentives to conduct replications and a tendency to frame replication as a personal attack rather than a healthy scientific prac...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1007/s10827-018-0702-z",
+        "cite_key": "Mikowski2018",
+        "claim": "Replicability and reproducibility of computational models has been somewhat understudied by \"the replication movement.\" In this paper, we draw on methodological studies into the replicability of ps...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1007/s13748-016-0094-0",
+        "cite_key": "Krawczyk2016",
+        "claim": "Learning from imbalanced data: open challenges and future directions",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.3389/fpsyg.2024.1390233",
+        "cite_key": "Mayrhofer2024",
+        "claim": "On the basis of the philosophers of science Karl Popper, Thomas Kuhn, and Imre Lakatos we suggest that the replication crisis is therefore a symptom of a fundamental problem in psychology, but at t...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1371/journal.pone.0306911",
+        "cite_key": "Li2024",
+        "claim": "In addition, analyses defining replication success as whether the original study\u2019s effect fell within the 95% CI (Confidence Interval) of the replication study\u2019s effect and using the Small Telescop...",
+        "tier": "independently_replicated",
+        "effect_size": "95%",
+        "n": 58,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1016/j.neuron.2023.05.032",
+        "cite_key": "Wu2023",
+        "claim": "To address this knowledge gap, we designed a series of genetic strategies to target the breadth of somatostatin interneuron subtypes and found that each subtype possesses a unique laminar organizat...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/nrn3475",
+        "cite_key": "Button2013",
+        "claim": "A study with low statistical power has a reduced chance of detecting a true effect, but it is less well appreciated that low power also reduces the likelihood that a statistically significant resul...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "meta-research"
+      },
+      {
+        "doi": "10.1371/journal.pcbi.1012000",
+        "cite_key": "Tlaie2024",
+        "claim": "The test probes two assumptions implicitly made whenever average metrics are treated as meaningful representations of neuronal activity: Reliability: Neuronal responses repeat consistently enough a...",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": 71,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/nrn3136",
+        "cite_key": "Carandini2012",
+        "claim": "There is increasing evidence that the brain relies on a set of canonical neural computations, repeating them across brain regions and modalities to apply similar operations to different problems.",
+        "tier": "independently_replicated",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1016/j.rser.2019.109254",
+        "cite_key": "Li2019a",
+        "claim": "Data-driven health estimation and lifetime prediction of lithium-ion batteries: A review",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1371/journal.pbio.2000797",
+        "cite_key": "Szucs2017",
+        "claim": "We also established that with degrees of freedom of ten or less, about 94% of tests were one sample or matched t-tests, whereas about 72% of records with higher degrees of freedom were one-sample o...",
+        "tier": "unknown",
+        "effect_size": "95%",
+        "n": 20,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1177/1745691616652873",
+        "cite_key": "Hagger2016",
+        "claim": "The model has typically been tested using a sequential-task experimental paradigm, in which people completing an initial self-control task have reduced self-control capacity and poorer performance ...",
+        "tier": "unknown",
+        "effect_size": "95%",
+        "n": 2,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/s41593-020-00783-4",
+        "cite_key": "Escartin2021",
+        "claim": "These guidelines may spur the discovery of astrocyte-based biomarkers as well as astrocyte-targeting therapies that abrogate detrimental actions of reactive astrocytes, potentiate their neuro- and ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "in vivo"
+      },
+      {
+        "doi": "10.1523/eneuro.0459-24.2025",
+        "cite_key": "Obeid2025",
+        "claim": "Cortical areas have activity decay times (as measured by autocorrelation times) much longer than 10\u2009ms under normal conditions, ranging in primate from roughly 65\u2009ms in primary sensory areas to 200...",
+        "tier": "unknown",
+        "effect_size": "80%",
+        "n": 350,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/s41587-023-01767-y",
+        "cite_key": "Hao2024",
+        "claim": "Moreover, we demonstrate how dictionary learning can be combined with sketching techniques to improve computational scalability and harmonize 8.6 million human immune cell profiles from sequencing ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/s41592-020-01033-y",
+        "cite_key": "Marx2021",
+        "claim": "Method of the Year: spatially resolved transcriptomics",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1186/s40537-021-00444-8",
+        "cite_key": "Alzubaidi2021",
+        "claim": "It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting w...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.1038/nrn3444",
+        "cite_key": "DeFelipe2013",
+        "claim": "These results demonstrate a practical and objective approach to the naming, characterization and classification of neurons based on community consensus.",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41467-019-13056-x",
+        "cite_key": "Kobak2019",
+        "claim": "Across 100 repetitions, the average distance between the original cell location and the test positioning was \\documentclass[12pt]{minimal}\n\t\t\t\t\\usepackage{amsmath}\n\t\t\t\t\\usepackage{wasysym} \n\t\t\t\t\\us...",
+        "tier": "unknown",
+        "effect_size": "1%",
+        "n": 100,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41586-021-03950-0",
+        "cite_key": "BICCN2021",
+        "claim": "About 76% of putative enhancers showed cluster-specific chromatin accessibility and were enriched for lineage-specific TFs, while 24% were widely accessible and linked to genes expressed across neu...",
+        "tier": "unknown",
+        "effect_size": "50%",
+        "n": 40,
+        "study_system": "mouse cortex"
+      },
+      {
+        "doi": "10.1038/s41380-025-03133-7",
+        "cite_key": "Wu2025a",
+        "claim": "Environmental stressors further distinguished the groups, with AMDD participants reporting greater academic pressure (ASLEC, p\u2009<\u20090.001) and paternal rejection (EMBU, p\u2009=\u20090.011).Notably, 55.87% of A...",
+        "tier": "unknown",
+        "effect_size": "50%",
+        "n": 163,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.3389/fnins.2021.787753",
+        "cite_key": "Rapti2022",
+        "claim": "Among the amalgam of models contributing to neuroscience research, <i>Caenorhabditis elegans</i> combines nervous system anatomy, lineage, connectivity and molecular content, all mapped at single-c...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1162/imag.a.1113",
+        "cite_key": "Scheijbeler2026",
+        "claim": "We investigated whether the Phase Lag Time (PLT) and Joint Permutation Entropy (JPE) could identify consistent patterns of between- and within-group functional connectivity in the theta (4-8 Hz), a...",
+        "tier": "unknown",
+        "effect_size": "8 Hz",
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.3389/fncel.2024.1440834",
+        "cite_key": "Hughes2024",
+        "claim": "Abnormalities of GABAergic neurotransmission, such as deficiencies in the 67 kDA isoform of GABA synthesis enzyme (GAD67), vesicular GABA transporter (vGAT), and GABA reuptake transporter 1 (GAT1) ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.3390/cells15020178",
+        "cite_key": "Zimkowska2026",
+        "claim": "Neuromechanobiology has emerged as a multidisciplinary field at the interface of neuroscience and mechanobiology, aiming to elucidate how mechanical forces influence the development, organization, ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1093/psyrad/kkag010",
+        "cite_key": "Liu2026a",
+        "claim": "Future research should further promote the integration of longitudinal imaging omics and spatial transcriptomic data to construct translatable multimodal models, thereby accelerating the translatio...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1101/2025.03.13.643168",
+        "cite_key": "Nave2025",
+        "claim": "However, one study used frequency tagging, which measures electrical brain activity at frequencies present in a stimulus, to show increased brain activity at imagery-related frequencies when listen...",
+        "tier": "unknown",
+        "effect_size": "0.03 \u00b5V",
+        "n": 152,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1016/j.cub.2007.08.005",
+        "cite_key": "LeDoux2007",
+        "claim": "The amygdala",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1523/jneurosci.5587-06.2007",
+        "cite_key": "Seeley2007",
+        "claim": "Our findings suggest that task-free analysis of intrinsic connectivity networks may help elucidate the neural architectures that support fundamental aspects of human behavior.",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1007/s00401-009-0619-8",
+        "cite_key": "Sofroniew2010",
+        "claim": "This article reviews (1) astrocyte functions in healthy CNS, (2) mechanisms and functions of reactive astrogliosis and glial scar formation, and (3) ways in which reactive astrocytes may cause or c...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "in vivo"
+      },
+      {
+        "doi": "10.1152/physrev.00032.2012",
+        "cite_key": "Rasch2013",
+        "claim": "While elaborated with respect to hippocampus-dependent memories, the concept of an active redistribution of memory representations from networks serving as temporary store into long-term stores mig...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41418-017-0012-4",
+        "cite_key": "Galluzzi2018",
+        "claim": "As we provide molecularly oriented definitions of terms including intrinsic apoptosis, extrinsic apoptosis, mitochondrial permeability transition (MPT)-driven necrosis, necroptosis, ferroptosis, py...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41467-020-20241-w",
+        "cite_key": "Christensen2021",
+        "claim": "We show that removal of PNNs leads to lower inhibitory spiking activity, and reduces grid cells' ability to create stable representations of a novel environment.",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1124/pr.109.002451",
+        "cite_key": "Traynelis2010",
+        "claim": "In this review we discuss International Union of Basic and Clinical Pharmacology glutamate receptor nomenclature, structure, assembly, accessory subunits, interacting proteins, gene expression and ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.3402/jev.v4.27066",
+        "cite_key": "YanezMo2015",
+        "claim": "Here, we provide a comprehensive overview of the current understanding of the physiological roles of EVs, which has been written by crowd-sourcing, drawing on the unique EV expertise of academia-ba...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41419-020-2298-2",
+        "cite_key": "Li2020",
+        "claim": "Ferroptosis-inducing factors can directly or indirectly affect glutathione peroxidase through different pathways, resulting in a decrease in antioxidant capacity and accumulation of lipid reactive ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/sj.npp.1301555",
+        "cite_key": "Quirk2008",
+        "claim": "Like other forms of learning, extinction occurs in three phases: acquisition, consolidation, and retrieval, each of which depends on specific structures (amygdala, prefrontal cortex, hippocampus) a...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1002/hipo.22488",
+        "cite_key": "Buzsaki2015",
+        "claim": "Alteration of the physiological mechanisms supporting SPW-Rs leads to their pathological conversion, \"p-ripples,\" which are a marker of epileptogenic tissue and can be observed in rodent models of ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1152/physrev.00029.2006",
+        "cite_key": "Pacher2007",
+        "claim": "Since its early description as an endothelial-derived relaxing factor, NO has emerged as a fundamental signaling device regulating virtually every critical cellular function, as well as a potent me...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "in vivo"
+      },
+      {
+        "doi": "10.1038/sj.npp.1301559",
+        "cite_key": "Citri2008",
+        "claim": "Experiences, whether they be learning in a classroom, a stressful event, or ingestion of a psychoactive substance, impact the brain by modifying the activity and organization of specific neural cir...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1523/jneurosci.2601-12.2012",
+        "cite_key": "Akerboom2012",
+        "claim": "By combining in vivo imaging with electrophysiology we show that GCaMP5 fluorescence provides a more reliable measure of neuronal activity than its predecessor GCaMP3.",
+        "tier": "unknown",
+        "effect_size": "qualitative",
+        "n": null,
+        "study_system": "mouse cortex"
+      },
+      {
+        "doi": "10.1002/cne.22295",
+        "cite_key": "Suzuki2010",
+        "claim": "We found that six main categories of interneurons could be clearly distinguished in the anterior PC, based on the size and laminar location of their somata, intensity of GFP fluorescence, patterns ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "computational model"
+      },
+      {
+        "doi": "10.3389/fnhum.2010.00186",
+        "cite_key": "Jensen2010",
+        "claim": "Active processing in the engaged areas is reflected by neuronal synchronization in the gamma band (30-100\u2009Hz) accompanied by an alpha band decrease.",
+        "tier": "unknown",
+        "effect_size": "13\u2009Hz",
+        "n": 100,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/nrn2402",
+        "cite_key": "PING2008",
+        "claim": "To tackle this, we convened a representative group of researchers to agree on a set of terms to describe the anatomical, physiological and molecular features of GABAergic interneurons of the cerebr...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1073/pnas.1507125112",
+        "cite_key": "Darmanis2015",
+        "claim": "We were able to divide neurons into individual communities and show that these communities preserve the categorization of interneuron subtypes that is typically observed with the use of classic int...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": 466,
+        "study_system": "human cortex"
+      },
+      {
+        "doi": "10.1016/j.neuron.2015.09.012",
+        "cite_key": "McGinley2015",
+        "claim": "Recent investigations of rapid state changes in awake, behaving animals have provided insight into the mechanisms by which optimal sensory encoding and behavioral performance are achieved.",
+        "tier": "unknown",
+        "effect_size": "qualitative",
+        "n": null,
+        "study_system": "in vivo"
+      },
+      {
+        "doi": "10.1016/j.neuron.2018.10.009",
+        "cite_key": "Lim2018",
+        "claim": "Current estimates suggest that up to 50 different types of GABAergic neurons may populate the cerebral cortex, all derived from progenitor cells in the subpallium, the ventral aspect of the embryon...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": 50,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.3389/fncir.2014.00076",
+        "cite_key": "Harris2014",
+        "claim": "Currently, anatomical data from over 100 Cre driver lines are publicly available via the Allen Institute's Transgenic Characterization database, which can be used to assist researchers in choosing ...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": 100,
+        "study_system": "unspecified"
+      },
+      {
+        "doi": "10.1038/s41593-018-0205-2",
+        "cite_key": "Boldog2018",
+        "claim": "These rosehip cells show an immunohistochemical profile (GAD1<sup>+</sup>CCK<sup>+</sup>, CNR1<sup>-</sup>SST<sup>-</sup>CALB2<sup>-</sup>PVALB<sup>-</sup>) matching a single transcriptomically def...",
+        "tier": "unknown",
+        "effect_size": null,
+        "n": null,
+        "study_system": "mouse cortex"
+      }
+    ],
+    "counter_evidence": [],
+    "tier_breakdown": {
+      "independently_replicated": 9,
+      "replicated_or_single": 0,
+      "contested": 0,
+      "unknown": 40
+    }
+  },
+  "cross_references": [],
+  "figure_data": [],
+  "conflicts": []
+}

@@ -1,0 +1,2729 @@
+{
+  "findings": [
+    {
+      "doi": "10.1016/j.neuron.2018.09.001",
+      "claim": "These cells receive input from a range of top-down projections, including the cholinergic system, higher-order thalamus, and cortico-cortical feedback in rodents ( Bennett et al., 2012 , Cruikshank et al., 2012 , Letzkus et al., 2011 , Palmer et al., 2012 , Zhu and Zhu, 2004 ), and recent data have revealed strong cholinergic responses in L1 INs also in the human neocortex ( Poorthuis et al., 2018",
+      "claim_source_sentence": "These cells receive input from a range of top-down projections, including the cholinergic system, higher-order thalamus, and cortico-cortical feedback in rodents ( Bennett et al., 2012 , Cruikshank et al., 2012 , Letzkus et al., 2011 , Palmer et al., 2012 , Zhu and Zhu, 2004 ), and recent data have revealed strong cholinergic responses in L1 INs also in the human neocortex ( Poorthuis et al., 2018 )",
+      "effect_size": "85%",
+      "effect_size_source_sentence": "We reasoned that a marker of L1 GABAergic INs must be highly enriched in the RNAs isolated from Gad2-Cre mice ( Taniguchi et al., 2011 ) as compared to RNAs purified from cortical excitatory neurons (Emx1-Cre mice; Gorski et al., 2002 ) and from three nonoverlapping subtypes of INs that together acc",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Abs2018"
+    },
+    {
+      "doi": "10.7554/elife.65634",
+      "claim": "We characterized the combined ionotropic and metabotropic output of neocortical neurogliaform cells (NGFCs) using electrophysiological and anatomical methods in the rat cerebral cortex.",
+      "claim_source_sentence": "We characterized the combined ionotropic and metabotropic output of neocortical neurogliaform cells (NGFCs) using electrophysiological and anatomical methods in the rat cerebral cortex.",
+      "effect_size": "83%",
+      "effect_size_source_sentence": "Based on a model combining properties of volume transmission and distributions of all NGFC axon terminals, we predict that in 83% of cases one or two NGFCs can provide input to a point in the neuropil.",
+      "n": 83,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830",
+        "10.3389/neuro.04.004.2007"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Ozsvr2021b"
+    },
+    {
+      "doi": "10.1523/jneurosci.0175-21.2021",
+      "claim": "We compare these tonic currents among five groups of interneurons divided by firing properties and four types of interneuron defined by axonal distributions; rosehip, neurogliaform, stalked-bouton, layer 2-3 innervating and a pool of other cells.",
+      "claim_source_sentence": "We compare these tonic currents among five groups of interneurons divided by firing properties and four types of interneuron defined by axonal distributions; rosehip, neurogliaform, stalked-bouton, layer 2-3 innervating and a pool of other cells.",
+      "effect_size": "5 \u03bcm",
+      "effect_size_source_sentence": "We have recorded 101 interneurons in and near layer 1 from cortical tissue surgically resected from both male and female patients, visualized 84 of them and measured tonic GABA<sub>A</sub>R currents in 48 cells with an intracellular [Cl<sup>-</sup>] of 65 mm and in the presence of 5 \u03bcm GABA.",
+      "n": 48,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1242/dev.201830",
+        "10.3389/neuro.04.004.2007"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Field2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.2700-20.2021",
+      "claim": "Despite growing evidence showing that inhibitory cells play a critical role in the lateral (LA) and basal (BA) amygdala functions, neither the number of GABAergic neurons nor the ratio of their distinct types has been determined in these amygdalar nuclei.",
+      "claim_source_sentence": "Despite growing evidence showing that inhibitory cells play a critical role in the lateral (LA) and basal (BA) amygdala functions, neither the number of GABAergic neurons nor the ratio of their distinct types has been determined in these amygdalar nuclei.",
+      "effect_size": "22%",
+      "effect_size_source_sentence": "Using unbiased stereology, we found that the ratio of GABAergic neurons in the BA (22%) is significantly higher than in the LA (16%) in both male and female mice.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Vereczki2021"
+    },
+    {
+      "doi": "10.1126/science.adf0805",
+      "claim": "Neocortical layer 1 (L1) is a site of convergence between pyramidal-neuron dendrites and feedback axons where local inhibitory signaling can profoundly shape cortical processing.",
+      "claim_source_sentence": "Neocortical layer 1 (L1) is a site of convergence between pyramidal-neuron dendrites and feedback axons where local inhibitory signaling can profoundly shape cortical processing.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Chartrand2023"
+    },
+    {
+      "doi": "10.1101/2022.10.24.511199",
+      "claim": "Neocortical layer 1 (L1) is a site of convergence between pyramidal neuron dendrites and feedback axons where local inhibitory signaling can profoundly shape cortical processing.",
+      "claim_source_sentence": "Neocortical layer 1 (L1) is a site of convergence between pyramidal neuron dendrites and feedback axons where local inhibitory signaling can profoundly shape cortical processing.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Accompanied by higher neuron density and more variable cell sizes compared with mouse, these findings suggest L1 is an evolutionary hotspot, reflecting the increasing demands of regulating the expanding human neocortical circuit.",
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Chartrand2022"
+    },
+    {
+      "doi": "10.1111/ejn.15237",
+      "claim": "Interestingly, inhibition of the LHb has been shown to have an antidepressant effect, hence making the LHb a fascinating subject of study for developing novel antidepressant therapies.",
+      "claim_source_sentence": "Interestingly, inhibition of the LHb has been shown to have an antidepressant effect, hence making the LHb a fascinating subject of study for developing novel antidepressant therapies.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Webster2021"
+    },
+    {
+      "doi": "10.1101/2024.04.29.591728",
+      "claim": "Whole-cell patch clamp recordings from genetically identified NDNF INs in layer 1 of the auditory cortex show that SOM-to-NDNF synapses are indeed modulated by ambient GABA.",
+      "claim_source_sentence": "Whole-cell patch clamp recordings from genetically identified NDNF INs in layer 1 of the auditory cortex show that SOM-to-NDNF synapses are indeed modulated by ambient GABA.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Naumann2024"
+    },
+    {
+      "doi": "10.1113/jp282753",
+      "claim": "Is the recruitment of such inhibition itself subject to use-dependent plasticity, and if so, what induction rules apply? Here we show that interneurons in mouse SLM exhibit Hebbian NMDA receptor-dependent long-term potentiation (LTP).",
+      "claim_source_sentence": "Is the recruitment of such inhibition itself subject to use-dependent plasticity, and if so, what induction rules apply? Here we show that interneurons in mouse SLM exhibit Hebbian NMDA receptor-dependent long-term potentiation (LTP).",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Apical dendrites of pyramidal neurons integrate information from higher-order cortex and thalamus, and gate signalling and plasticity at proximal synapses.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Mercier2022"
+    },
+    {
+      "doi": "10.1242/dev.201830",
+      "claim": "Among the dozens of reported transcriptionally distinct subtypes of cortical interneurons, neurogliaform cells (NGCs) are unique: they are recruited by long-range excitatory inputs, are a source of slow cortical inhibition and are able to modulate the activity of large neuronal populations.",
+      "claim_source_sentence": "Among the dozens of reported transcriptionally distinct subtypes of cortical interneurons, neurogliaform cells (NGCs) are unique: they are recruited by long-range excitatory inputs, are a source of slow cortical inhibition and are able to modulate the activity of large neuronal populations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.3389/neuro.04.004.2007"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Gomez2023"
+    },
+    {
+      "doi": "10.1073/pnas.2503139122",
+      "claim": "Our findings reveal that L1 NDNF neurons form three distinct populations, assembling into cell networks tuned to specific sleep stages.",
+      "claim_source_sentence": "Our findings reveal that L1 NDNF neurons form three distinct populations, assembling into cell networks tuned to specific sleep stages.",
+      "effect_size": "decreased",
+      "effect_size_source_sentence": "Systemic application of a GABA<sub>B</sub> receptor antagonist resulted in decreased neuronal coupling of pyramidal cells but did not change the responses during SWRs.",
+      "n": 3,
+      "study_system": "mouse hippocampus",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Brcier2025"
+    },
+    {
+      "doi": "10.1016/j.neuroscience.2018.02.014",
+      "claim": "Recent evidence suggests that hippocampal subregions (e.g., CA1) can generate these oscillations at the network level, at least in part, through GABAergic interneurons.",
+      "claim_source_sentence": "Recent evidence suggests that hippocampal subregions (e.g., CA1) can generate these oscillations at the network level, at least in part, through GABAergic interneurons.",
+      "effect_size": "83%",
+      "effect_size_source_sentence": "The majority of PVBCs (83%), but not the other interneuron subtypes, produced intrinsic perithreshold gamma oscillations if the membrane potential remained above -45\u202fmV.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Kang2018"
+    },
+    {
+      "doi": "10.1523/jneurosci.1135-05.2005",
+      "claim": "Single-cell reverse transcription-PCR showed that these neurons were GABAergic and that the majority expressed mRNA for neuropeptide Y.",
+      "claim_source_sentence": "Single-cell reverse transcription-PCR showed that these neurons were GABAergic and that the majority expressed mRNA for neuropeptide Y.",
+      "effect_size": "85%",
+      "effect_size_source_sentence": "Paired recordings performed between neurogliaform neurons showed that 85% of pairs were electrically connected and 70% were also connected via GABAergic synapses.",
+      "n": 34,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Price2005"
+    },
+    {
+      "doi": "10.1523/jneurosci.5123-09.2010",
+      "claim": "Moreover, lineage analyses, including loss-of-function experiments and inducible fate-mapping, indicated that nNOS(+) IvCs and NGCs are both derived from medial ganglionic eminence (MGE) progenitors under control of the transcription factor Nkx2-1.",
+      "claim_source_sentence": "Moreover, lineage analyses, including loss-of-function experiments and inducible fate-mapping, indicated that nNOS(+) IvCs and NGCs are both derived from medial ganglionic eminence (MGE) progenitors under control of the transcription factor Nkx2-1.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse hippocampus",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Tricoire2010"
+    },
+    {
+      "doi": "10.1152/jn.2002.88.3.1318",
+      "claim": "The kinetics of the currents and their sensitivity to nicotinic receptor antagonists, methyllycaconitine (1-10 nM) or dihydro-beta-erythroidine (500 nM), suggested that early and late components of the responses were mediated by alpha7 and non-alpha7 types of receptors.",
+      "claim_source_sentence": "The kinetics of the currents and their sensitivity to nicotinic receptor antagonists, methyllycaconitine (1-10 nM) or dihydro-beta-erythroidine (500 nM), suggested that early and late components of the responses were mediated by alpha7 and non-alpha7 types of receptors.",
+      "effect_size": "7 types",
+      "effect_size_source_sentence": "The kinetics of the currents and their sensitivity to nicotinic receptor antagonists, methyllycaconitine (1-10 nM) or dihydro-beta-erythroidine (500 nM), suggested that early and late components of the responses were mediated by alpha7 and non-alpha7 types of receptors.",
+      "n": 101,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Christophe2002"
+    },
+    {
+      "doi": "10.3389/neuro.04.004.2007",
+      "claim": "Neurogliaform cells in the rat elicit combined GABAA and GABAB receptor-mediated postsynaptic responses on cortical pyramidal cells and establish electrical synapses with various interneuron types.",
+      "claim_source_sentence": "Neurogliaform cells in the rat elicit combined GABAA and GABAB receptor-mediated postsynaptic responses on cortical pyramidal cells and establish electrical synapses with various interneuron types.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Olh2007"
+    },
+    {
+      "doi": "10.3389/fphys.2012.00319",
+      "claim": "The finding of secretory vesicles in extrasynaptic sites of neurons, the presence of signaling molecules (namely transmitters or peptides) in the extracellular space outside synaptic clefts, and the mismatch between exocytosis sites and the location of receptors for these molecules in neurons and gl",
+      "claim_source_sentence": "The finding of secretory vesicles in extrasynaptic sites of neurons, the presence of signaling molecules (namely transmitters or peptides) in the extracellular space outside synaptic clefts, and the mismatch between exocytosis sites and the location of receptors for these molecules in neurons and glial cells, have long suggested that in addition to synaptic communication, transmitters are released, and act extrasynaptically.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Trueta2012"
+    },
+    {
+      "doi": "10.1523/jneurosci.5883-09.2010",
+      "claim": "Here, we provide experimental and modeling data showing that hippocampal NGFCs generate an unusually prolonged (tens of milliseconds) but low-concentration (micromolar range) GABA transient, which is responsible for the slow response kinetics and which leads to a robust desensitization of postsynapt",
+      "claim_source_sentence": "Here, we provide experimental and modeling data showing that hippocampal NGFCs generate an unusually prolonged (tens of milliseconds) but low-concentration (micromolar range) GABA transient, which is responsible for the slow response kinetics and which leads to a robust desensitization of postsynaptic GABA(A) receptors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Karayannis2010b"
+    },
+    {
+      "doi": "10.1523/jneurosci.2269-11.2011",
+      "claim": "Fast-spiking, parvalbumin-expressing, basket cells express \u03bcORs, but circumstantial evidence suggests that another major, unidentified, GABAergic cell class must also be modulated by \u03bcORs.",
+      "claim_source_sentence": "Fast-spiking, parvalbumin-expressing, basket cells express \u03bcORs, but circumstantial evidence suggests that another major, unidentified, GABAergic cell class must also be modulated by \u03bcORs.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "KrookMagnuson2011"
+    },
+    {
+      "doi": "10.1007/s00401-022-02457-w",
+      "claim": "Here, we used the Collaborative Cross (CC) forward genetics mouse platform to identify modifier genes of neuronal hyperexcitation.",
+      "claim_source_sentence": "Here, we used the Collaborative Cross (CC) forward genetics mouse platform to identify modifier genes of neuronal hyperexcitation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Deng2022"
+    },
+    {
+      "doi": "10.1523/jneurosci.1977-23.2024",
+      "claim": "Dravet syndrome (DS) is a neurodevelopmental disorder characterized by epilepsy, developmental delay/intellectual disability, and features of autism spectrum disorder, caused by heterozygous loss-of-function variants in <i>SCN1A</i> encoding the voltage-gated sodium channel \u03b1 subunit Nav1.1.",
+      "claim_source_sentence": "Dravet syndrome (DS) is a neurodevelopmental disorder characterized by epilepsy, developmental delay/intellectual disability, and features of autism spectrum disorder, caused by heterozygous loss-of-function variants in <i>SCN1A</i> encoding the voltage-gated sodium channel \u03b1 subunit Nav1.1.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Liebergall2024"
+    },
+    {
+      "doi": "10.1101/2021.01.08.425944",
+      "claim": "Here, we investigated the contribution of early thalamic inputs onto L1 interneurons for the establishment of top-down inputs in the primary visual cortex.",
+      "claim_source_sentence": "Here, we investigated the contribution of early thalamic inputs onto L1 interneurons for the establishment of top-down inputs in the primary visual cortex.",
+      "effect_size": "Higher",
+      "effect_size_source_sentence": "Higher order feedback projections to sensory cortical areas converge on layer 1 (L1), the primary site for integration of top-down information via the apical dendrites of pyramidal neurons and L1 GABAergic interneurons.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Ibrahim2021b"
+    },
+    {
+      "doi": "10.1101/531822",
+      "claim": "Is the recruitment of such inhibition itself subject to use-dependent plasticity, and if so, what induction rules apply? Here we show that interneurons in mouse stratum lacunosum-moleculare exhibit Hebbian NMDA receptor-dependent long-term potentiation (LTP).",
+      "claim_source_sentence": "Is the recruitment of such inhibition itself subject to use-dependent plasticity, and if so, what induction rules apply? Here we show that interneurons in mouse stratum lacunosum-moleculare exhibit Hebbian NMDA receptor-dependent long-term potentiation (LTP).",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Apical dendrites of pyramidal neurons integrate information from higher-order cortex and thalamus, and gate signaling and plasticity at proximal synapses.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Mercier2019"
+    },
+    {
+      "doi": "10.1101/2025.01.10.632405",
+      "claim": "Recent evidence suggests that this transfer occurs primarily when hippocampal sharp-wave ripples (SWRs) and thalamocortical spindles are synchronized.",
+      "claim_source_sentence": "Recent evidence suggests that this transfer occurs primarily when hippocampal sharp-wave ripples (SWRs) and thalamocortical spindles are synchronized.",
+      "effect_size": "increased",
+      "effect_size_source_sentence": "Systemic application of a GABA B receptor antagonist increased pyramidal neuron excitability during NREM sleep, enhanced inhibitory responses during SWRs, and disrupted SWR-spindle coupling.",
+      "n": null,
+      "study_system": "mouse hippocampus",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Aurlie2025"
+    },
+    {
+      "doi": "10.1002/cne.70030",
+      "claim": "Whole-cell recordings revealed distinct firing patterns across these subtypes: NGCs and eNGCs predominantly exhibited late-spiking (LS) patterns, and SBC-like cells displayed a higher prevalence of non-LS (NLS) patterns.",
+      "claim_source_sentence": "Whole-cell recordings revealed distinct firing patterns across these subtypes: NGCs and eNGCs predominantly exhibited late-spiking (LS) patterns, and SBC-like cells displayed a higher prevalence of non-LS (NLS) patterns.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Whole-cell recordings revealed distinct firing patterns across these subtypes: NGCs and eNGCs predominantly exhibited late-spiking (LS) patterns, and SBC-like cells displayed a higher prevalence of non-LS (NLS) patterns.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Shen2025"
+    },
+    {
+      "doi": "10.1073/pnas.2408966122",
+      "claim": "Shifting to a computational model, we then show that this mechanism introduces a distinct mutual inhibition motif between NDNF interneurons and the synaptic outputs of SOM interneurons.",
+      "claim_source_sentence": "Shifting to a computational model, we then show that this mechanism introduces a distinct mutual inhibition motif between NDNF interneurons and the synaptic outputs of SOM interneurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Naumann2025"
+    },
+    {
+      "doi": "10.1101/2024.07.16.603741",
+      "claim": "Here we used monosynaptic retrograde tracing and whole-cell electrophysiology to characterize the thalamic inputs onto two major subpopulations of L1-INs in the mouse auditory cortex.",
+      "claim_source_sentence": "Here we used monosynaptic retrograde tracing and whole-cell electrophysiology to characterize the thalamic inputs onto two major subpopulations of L1-INs in the mouse auditory cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Vattino2024"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-4530873/v1",
+      "claim": "We found that the spontaneous activity of neurogliaform cells positively correlated with locomotion.",
+      "claim_source_sentence": "We found that the spontaneous activity of neurogliaform cells positively correlated with locomotion.",
+      "effect_size": "increased",
+      "effect_size_source_sentence": "Silencing these neurons increased spontaneous activity during locomotion and impaired visual responses in L2/3 pyramidal neurons.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Fishell2024"
+    },
+    {
+      "doi": "10.1101/2024.06.05.597539",
+      "claim": "We found that the spontaneous activity of neurogliaform cells positively correlated with locomotion.",
+      "claim_source_sentence": "We found that the spontaneous activity of neurogliaform cells positively correlated with locomotion.",
+      "effect_size": "increased",
+      "effect_size_source_sentence": "Silencing these neurons increased spontaneous activity during locomotion and impaired visual responses in L2/3 pyramidal neurons.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Huang2024b"
+    },
+    {
+      "doi": "10.1016/j.celrep.2023.112782",
+      "claim": "We identify three morphologically distinct types of L1INs with characteristic electrophysiological properties.",
+      "claim_source_sentence": "We identify three morphologically distinct types of L1INs with characteristic electrophysiological properties.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Shi2023"
+    },
+    {
+      "doi": "10.3389/fncir.2023.1138358",
+      "claim": "We observed that tones elicited responses in a substantial fraction of the imaged neurons, which were significantly modulated in a bidirectional manner after the tone was associated to an aversive stimulus.",
+      "claim_source_sentence": "We observed that tones elicited responses in a substantial fraction of the imaged neurons, which were significantly modulated in a bidirectional manner after the tone was associated to an aversive stimulus.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Fossati2023"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.1876-22.2023",
+      "claim": "In this work, we systematically examined the distinct dominant electrophysiological features for four unique IN subtypes in L1 that were previously identified from mice of either gender: Canopy cells show an irregular firing pattern near rheobase; neurogliaform cells are late-spiking, and their firi",
+      "claim_source_sentence": "In this work, we systematically examined the distinct dominant electrophysiological features for four unique IN subtypes in L1 that were previously identified from mice of either gender: Canopy cells show an irregular firing pattern near rheobase; neurogliaform cells are late-spiking, and their firing rate accelerates during current injections; cells with strong expression of the \u03b17 nicotinic receptor (\u03b17 cells), display onset (rebound) bursting; vasoactive intestinal peptide (VIP) expressing ce",
+      "effect_size": "25%",
+      "effect_size_source_sentence": "At last, we reveal that the VIP and \u03b17 cell models resonant with alpha/theta band input through a dynamic gain analysis.<b>SIGNIFICANCE STATEMENT</b> In the neocortex, \u223c25% of neurons are interneurons.",
+      "n": 7,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Meng2023"
+    },
+    {
+      "doi": "10.1016/j.neuron.2021.08.004",
+      "claim": "Here we investigated the contribution of early thalamic inputs onto L1 interneurons for establishment of top-down connectivity in the primary visual cortex.",
+      "claim_source_sentence": "Here we investigated the contribution of early thalamic inputs onto L1 interneurons for establishment of top-down connectivity in the primary visual cortex.",
+      "effect_size": "Higher",
+      "effect_size_source_sentence": "Higher-order projections to sensory cortical areas converge on layer 1 (L1), the primary site for integration of top-down information via the apical dendrites of pyramidal neurons and L1 GABAergic interneurons.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Ibrahim2021a"
+    },
+    {
+      "doi": "10.7554/eLife.65634",
+      "claim": "We characterized the combined ionotropic and metabotropic output of neocortical neurogliaform cells (NGFCs) using electrophysiological and anatomical methods in the rat cerebral cortex.",
+      "claim_source_sentence": "We characterized the combined ionotropic and metabotropic output of neocortical neurogliaform cells (NGFCs) using electrophysiological and anatomical methods in the rat cerebral cortex.",
+      "effect_size": "83%",
+      "effect_size_source_sentence": "Based on a model combining properties of volume transmission and distributions of all NGFC axon terminals, we predict that in 83% of cases one or two NGFCs can provide input to a point in the neuropil.",
+      "n": 83,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.65634",
+        "10.1523/jneurosci.0175-21.2021",
+        "10.1242/dev.201830"
+      ],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Ozsvr2021a"
+    },
+    {
+      "doi": "10.1016/j.neuron.2021.05.001",
+      "claim": "Because active NDNF INs are evenly spread in L1 and can affect excitatory neurons across all cortical layers, this indicates that the state-dependent activation of L1 NDNF INs and the subsequent shift of inhibition in excitatory neurons toward their apical dendrites gain-modulate sensory processing ",
+      "claim_source_sentence": "Because active NDNF INs are evenly spread in L1 and can affect excitatory neurons across all cortical layers, this indicates that the state-dependent activation of L1 NDNF INs and the subsequent shift of inhibition in excitatory neurons toward their apical dendrites gain-modulate sensory processing in whole cortical columns.",
+      "effect_size": "enhanced",
+      "effect_size_source_sentence": "We find that the ongoing and sensory-evoked activity of L1 NDNF INs is strongly enhanced when an animal is aroused and that L1 NDNF INs gain-modulate local excitatory neurons selectively during high-arousal states by inhibiting their apical dendrites while disinhibiting their somata via Parvalbumin-",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "CohenKashiMalina2021"
+    },
+    {
+      "doi": "10.1007/s00429-015-1166-9",
+      "claim": "Testing several cortical interneuron types in slices of the rat cerebral cortex, we show selective unitary transmission from NGFCs to astrocytes with an early, GABA<sub>A</sub> receptor and GABA transporter-mediated component and a late component that results from the activation of GABA transporters",
+      "claim_source_sentence": "Testing several cortical interneuron types in slices of the rat cerebral cortex, we show selective unitary transmission from NGFCs to astrocytes with an early, GABA<sub>A</sub> receptor and GABA transporter-mediated component and a late component that results from the activation of GABA transporters and neuronal GABA<sub>B</sub> receptors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Rzsa2017"
+    },
+    {
+      "doi": "10.1113/jphysiol.2012.236745",
+      "claim": "To improve the understanding of interneurons in amygdala networks it is necessary to characterize the GABAergic cell types, their connectivity and physiological roles.",
+      "claim_source_sentence": "To improve the understanding of interneurons in amygdala networks it is necessary to characterize the GABAergic cell types, their connectivity and physiological roles.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Mako2012"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.5883-09.2010",
+      "claim": "Here, we provide experimental and modeling data showing that hippocampal NGFCs generate an unusually prolonged (tens of milliseconds) but low-concentration (micromolar range) GABA transient, which is responsible for the slow response kinetics and which leads to a robust desensitization of postsynapt",
+      "claim_source_sentence": "Here, we provide experimental and modeling data showing that hippocampal NGFCs generate an unusually prolonged (tens of milliseconds) but low-concentration (micromolar range) GABA transient, which is responsible for the slow response kinetics and which leads to a robust desensitization of postsynaptic GABA(A) receptors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Karayannis2010a"
+    },
+    {
+      "doi": "10.1038/nature08503",
+      "claim": "This suggests that compartmentalized, synapse-specific action of GABA is required in cortical networks for phasic inhibition.",
+      "claim_source_sentence": "This suggests that compartmentalized, synapse-specific action of GABA is required in cortical networks for phasic inhibition.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Olh2009"
+    },
+    {
+      "doi": "10.3389/fncel.2024.1254460",
+      "claim": "Here, we validated the NGFC-specific labeling with a molecular marker, neuron-derived neurotrophic factor (NDNF), in the mouse BLA, as such specificity has been demonstrated in the neocortex and hippocampus.",
+      "claim_source_sentence": "Here, we validated the NGFC-specific labeling with a molecular marker, neuron-derived neurotrophic factor (NDNF), in the mouse BLA, as such specificity has been demonstrated in the neocortex and hippocampus.",
+      "effect_size": "15%",
+      "effect_size_source_sentence": "In mice, roughly 15% of the BLA GABAergic interneurons express neuropeptide Y (NPY), a reasonably characteristic marker for neurogliaform cells (NGFCs) in cortical-like brain structures.",
+      "n": 81,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.1_NDNF_Lamp5",
+      "cite_key": "Ozsvr2024"
+    },
+    {
+      "doi": "10.5607/en.2019.28.3.320",
+      "claim": "We demonstrated that cholinergic-induced di-synaptic inhibition of BLA pyramidal neurons exhibits a retrograde form of short-term synaptic inhibition, depolarization-induced suppression of inhibition (DSI)",
+      "claim_source_sentence": "We demonstrated that cholinergic-induced di-synaptic inhibition of BLA pyramidal neurons exhibits a retrograde form of short-term synaptic inhibition, depolarization-induced suppression of inhibition (DSI)",
+      "effect_size": "20 Hz",
+      "effect_size_source_sentence": "At the cellular level, acetylcholine can primarily suppress BLA pyramidal neurons by direct activation of postsynaptic mAChR [ 5 8 ], although intense activation (e.g., 20 Hz stimulation for a few seconds) induces excitation following suppression [ 8 9 ]",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503",
+        "10.1038/s41598-022-13724-x"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Lee2019b"
+    },
+    {
+      "doi": "10.1007/s00018-023-05029-7",
+      "claim": "We observed an increase in endocannabinoid-mediated depolarization-induced suppression of excitation in young SynII KO mice, compared to age-matched wild-type controls.",
+      "claim_source_sentence": "We observed an increase in endocannabinoid-mediated depolarization-induced suppression of excitation in young SynII KO mice, compared to age-matched wild-type controls.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1016/j.neulet.2020.135503",
+        "10.1038/s41598-022-13724-x"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Forte2024"
+    },
+    {
+      "doi": "10.1016/j.neulet.2020.135503",
+      "claim": "It was found that the monkey BNC, as in rodents, has a very high density of CB1R+ axons, including CB1R+ axon terminals that form basket-like plexuses contacting somata of PNs",
+      "claim_source_sentence": "It was found that the monkey BNC, as in rodents, has a very high density of CB1R+ axons, including CB1R+ axon terminals that form basket-like plexuses contacting somata of PNs",
+      "effect_size": "4%",
+      "effect_size_source_sentence": "Animals were deeply anesthetized with an overdose of sodium pentobarbital (100 mg/kg), and then perfused with one of two fixatives: (1) a mixture of 4% paraformaldehyde/0.2% glutaraldehyde/0.2% picric acid (Zamboni\u2019s fixative) in phosphate buffer (0.1 M, pH 7.4; PB), or (2) 4% paraformaldehyde in PB",
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1038/s41598-022-13724-x"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "McDonald2021"
+    },
+    {
+      "doi": "10.1038/s41598-022-13724-x",
+      "claim": "CB1R participates in both depolarization induced suppression of inhibition (DSI) and depolarization induced suppression of excitation (DSE), suggesting its involvement in regulating excitatory and inhibitory (E/I) balance.",
+      "claim_source_sentence": "CB1R participates in both depolarization induced suppression of inhibition (DSI) and depolarization induced suppression of excitation (DSE), suggesting its involvement in regulating excitatory and inhibitory (E/I) balance.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Significantly higher CB1R levels were found within inhibitory than within excitatory boutons across all regions in both species, although the cell type by brain region interactions differed between the two species.",
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Chou2022"
+    },
+    {
+      "doi": "10.1523/jneurosci.1207-20.2021",
+      "claim": "We found that cholecystokinin (CCK)-expressing basket cells strongly increased somatic inhibition on the excitatory granular cells (GCs) following EE, whereas another pivotal inhibitory cell type, parvalbumin (PV)-expressing cells, did not show changes.",
+      "claim_source_sentence": "We found that cholecystokinin (CCK)-expressing basket cells strongly increased somatic inhibition on the excitatory granular cells (GCs) following EE, whereas another pivotal inhibitory cell type, parvalbumin (PV)-expressing cells, did not show changes.",
+      "effect_size": "increased",
+      "effect_size_source_sentence": "We found that cholecystokinin (CCK)-expressing basket cells strongly increased somatic inhibition on the excitatory granular cells (GCs) following EE, whereas another pivotal inhibitory cell type, parvalbumin (PV)-expressing cells, did not show changes.",
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Feng2021"
+    },
+    {
+      "doi": "10.1016/j.celrep.2022.111202",
+      "claim": "We found that CB1 expression is generally stronger in associative than in primary sensory cortical areas",
+      "claim_source_sentence": "We found that CB1 expression is generally stronger in associative than in primary sensory cortical areas",
+      "effect_size": "70.5%",
+      "effect_size_source_sentence": "In the V1, the average intensity of peak-normalized fluorescence gradually decreased from L1 to L4 (L1 = 70.5% \u00b1 2.2%, L4 = 38.7% \u00b1 2.3%, n = 11 animals) to then increase and reach another peak in L6 (66.3% \u00b1 3.2%; Figures 1 B, black line, and 1C, black bars)",
+      "n": 11,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Koukouli2022"
+    },
+    {
+      "doi": "10.3390/ijms23010202",
+      "claim": "Quantitative electron microscopy showed that the overall, PV+ and CB1R+ somatic inhibitory inputs remained unchanged in focal cortical epilepsy",
+      "claim_source_sentence": "Quantitative electron microscopy showed that the overall, PV+ and CB1R+ somatic inhibitory inputs remained unchanged in focal cortical epilepsy",
+      "effect_size": "20-fold",
+      "effect_size_source_sentence": "CB1R was also found in asymmetric, excitatory terminals in the rodent hippocampus [ 47 ], but the mRNA level of the CB1R was 20-fold higher in GABAergic than in excitatory cells [ 48 ]",
+      "n": 12,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Tth2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.0432-23.2023",
+      "claim": "Perisomatic inhibition profoundly controls neural function.",
+      "claim_source_sentence": "Perisomatic inhibition profoundly controls neural function.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "However, the structural organization of inhibitory circuits giving rise to the perisomatic inhibition in the higher-order cortices is not completely known.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "NagyPl2023"
+    },
+    {
+      "doi": "10.1523/jneurosci.1279-21.2021",
+      "claim": "KCNQ-Kv7 channels are found at the axon initial segment of pyramidal neurons, where they control cell firing and membrane potential.",
+      "claim_source_sentence": "KCNQ-Kv7 channels are found at the axon initial segment of pyramidal neurons, where they control cell firing and membrane potential.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Incontro2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.0054-06.2006",
+      "claim": "These results indicate that DAGLalpha is essentially targeted to postsynaptic spines in cerebellar and hippocampal neurons, but its fine distribution within and around spines is differently regulated between the two neurons.",
+      "claim_source_sentence": "These results indicate that DAGLalpha is essentially targeted to postsynaptic spines in cerebellar and hippocampal neurons, but its fine distribution within and around spines is differently regulated between the two neurons.",
+      "effect_size": "lower",
+      "effect_size_source_sentence": "DAGLalpha was highly concentrated at the base of spine neck and also accumulated with much lower density on somatodendritic membrane around the spine neck.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Yoshida2006"
+    },
+    {
+      "doi": "10.1523/jneurosci.6238-09.2010",
+      "claim": "Although several key elements of the currently known molecular machinery for endocannabinoid synthesis are thought be primarily localized in dendrites, our results revealed that the depolarization-induced suppression of inhibition, the endocannabinoid-mediated tonic inhibition of GABA release, and t",
+      "claim_source_sentence": "Although several key elements of the currently known molecular machinery for endocannabinoid synthesis are thought be primarily localized in dendrites, our results revealed that the depolarization-induced suppression of inhibition, the endocannabinoid-mediated tonic inhibition of GABA release, and the metabotropic glutamate receptor activation-induced, CB(1)R-mediated depression of GABA release were all significantly less effective at dendritic compared with perisomatic synapses.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Lee2010b"
+    },
+    {
+      "doi": "10.1523/jneurosci.3481-09.2010",
+      "claim": "We show that long-term potentiation (LTP) and depression (LTD), two common forms of synaptic plasticity, are expressed in a highly cell type-specific manner at glutamatergic synapses onto hippocampal GABAergic neurons.",
+      "claim_source_sentence": "We show that long-term potentiation (LTP) and depression (LTD), two common forms of synaptic plasticity, are expressed in a highly cell type-specific manner at glutamatergic synapses onto hippocampal GABAergic neurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Nissen2010"
+    },
+    {
+      "doi": "10.1016/j.neuron.2025.03.016",
+      "claim": "In addition, we highlight implications of these approaches and insights for the unraveling of cannabinoid regulation of synapses in vivo in other brain circuits in both health and disease.",
+      "claim_source_sentence": "In addition, we highlight implications of these approaches and insights for the unraveling of cannabinoid regulation of synapses in vivo in other brain circuits in both health and disease.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Malhotra2025"
+    },
+    {
+      "doi": "10.7554/eLife.55267",
+      "claim": "We first show that cholecystokinin (CCK+), parvalbumin (PV+), and somatostatin (SOM+) expressing interneurons are prominent in layer 5 (L5) of infralimbic PFC.",
+      "claim_source_sentence": "We first show that cholecystokinin (CCK+), parvalbumin (PV+), and somatostatin (SOM+) expressing interneurons are prominent in layer 5 (L5) of infralimbic PFC.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Liu2020"
+    },
+    {
+      "doi": "10.1016/S0166-2236(03)00227-3",
+      "claim": "Impairment of this inhibitory mechanism is likely to result in mood disorders such as anxiety.",
+      "claim_source_sentence": "Impairment of this inhibitory mechanism is likely to result in mood disorders such as anxiety.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Freund2003"
+    },
+    {
+      "doi": "10.1111/j.1460-9568.2010.07292.x",
+      "claim": "We determined the basic properties of unitary inhibitory postsynaptic currents (uIPSCs) and found that they differed among cell types, e.g.",
+      "claim_source_sentence": "We determined the basic properties of unitary inhibitory postsynaptic currents (uIPSCs) and found that they differed among cell types, e.g.",
+      "effect_size": "3 region",
+      "effect_size_source_sentence": "Therefore, we performed paired recordings from anatomically identified perisomatic interneurons and pyramidal cells in the CA3 region of the mouse hippocampus.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Szab2010"
+    },
+    {
+      "doi": "10.1523/JNEUROSCI.22-05-01690.2002",
+      "claim": "Recent studies on hippocampal neurons have revealed that endogenous cannabinoids (endocannabinoids) play a key role as a retrograde messenger.",
+      "claim_source_sentence": "Recent studies on hippocampal neurons have revealed that endogenous cannabinoids (endocannabinoids) play a key role as a retrograde messenger.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 55212,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Yoshida2002"
+    },
+    {
+      "doi": "10.1113/jphysiol.2011.216028",
+      "claim": "We report a marked, layer-specific loss of postsynaptic gephyrin and neuroligin-2 clusters, without changes in GABAergic presynaptic terminals.",
+      "claim_source_sentence": "We report a marked, layer-specific loss of postsynaptic gephyrin and neuroligin-2 clusters, without changes in GABAergic presynaptic terminals.",
+      "effect_size": "2 clusters",
+      "effect_size_source_sentence": "We report a marked, layer-specific loss of postsynaptic gephyrin and neuroligin-2 clusters, without changes in GABAergic presynaptic terminals.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Panzanelli2011"
+    },
+    {
+      "doi": "10.1152/jn.00216.2025",
+      "claim": "Here, we show that this reduction in dendritic inhibition is specific to synapses made by CCK+ inhibitory neurons and that these NPAS4-dependent changes result in facilitation of theta-burst synaptic plasticity.",
+      "claim_source_sentence": "Here, we show that this reduction in dendritic inhibition is specific to synapses made by CCK+ inhibitory neurons and that these NPAS4-dependent changes result in facilitation of theta-burst synaptic plasticity.",
+      "effect_size": "enhanced",
+      "effect_size_source_sentence": "This facilitates excitatory synaptic plasticity, indicating a potential mechanistic link between environmental enrichment and enhanced cognitive flexibility.",
+      "n": null,
+      "study_system": "mouse hippocampus",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Heinz2025"
+    },
+    {
+      "doi": "10.3390/ijms26157613",
+      "claim": "Evidence suggests that the endocannabinoid system may be a promising target for modulating these processes.",
+      "claim_source_sentence": "Evidence suggests that the endocannabinoid system may be a promising target for modulating these processes.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Bombardi2025"
+    },
+    {
+      "doi": "10.1523/jneurosci.0957-23.2024",
+      "claim": "In contrast, in the adjacent prelimbic (PL) cortex, we find that PV+ interneurons are scarce in the principal thalamorecipient layer 3 (L3), suggesting distinct mechanisms of inhibition.",
+      "claim_source_sentence": "In contrast, in the adjacent prelimbic (PL) cortex, we find that PV+ interneurons are scarce in the principal thalamorecipient layer 3 (L3), suggesting distinct mechanisms of inhibition.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortical slice",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Kamalova2024"
+    },
+    {
+      "doi": "10.3390/membranes12080812",
+      "claim": "Compartmentalization, together with transbilayer and lateral asymmetries, provide the structural foundation for functional specializations at the cell surface, including the active role of the lipid microenvironment in the modulation of membrane-bound proteins.",
+      "claim_source_sentence": "Compartmentalization, together with transbilayer and lateral asymmetries, provide the structural foundation for functional specializations at the cell surface, including the active role of the lipid microenvironment in the modulation of membrane-bound proteins.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Valls2022"
+    },
+    {
+      "doi": "10.3390/ijms23105734",
+      "claim": "Arachidonoyl ethanolamide or Anandamide and 2-arachidonoyl glycerol or 2-AG were the endocannabinoid molecules that were first characterized and discovered.",
+      "claim_source_sentence": "Arachidonoyl ethanolamide or Anandamide and 2-arachidonoyl glycerol or 2-AG were the endocannabinoid molecules that were first characterized and discovered.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Behl2022"
+    },
+    {
+      "doi": "10.1002/cne.24704",
+      "claim": "In the prPFC, serial section analysis revealed that GABAergic CB1-containing axon terminals targeted dendrites adjacent to glutamatergic axon terminals, often near dendritic bifurcations.",
+      "claim_source_sentence": "In the prPFC, serial section analysis revealed that GABAergic CB1-containing axon terminals targeted dendrites adjacent to glutamatergic axon terminals, often near dendritic bifurcations.",
+      "effect_size": "95%",
+      "effect_size_source_sentence": "Of terminals forming discernible synaptic specializations, 95% were symmetric inhibitory-type in the prPFC and 90% were inhibitory in the BLA.",
+      "n": 95,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Fitzgerald2019"
+    },
+    {
+      "doi": "10.1016/j.biopsych.2015.07.028",
+      "claim": "This review provides an introduction to the ECS with an emphasis on its role in synaptic plasticity and how the ECS is perturbed in schizophrenia.",
+      "claim_source_sentence": "This review provides an introduction to the ECS with an emphasis on its role in synaptic plasticity and how the ECS is perturbed in schizophrenia.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Lu2016"
+    },
+    {
+      "doi": "10.1016/j.crneur.2025.100150",
+      "claim": "This domain receives GABAergic inputs from cholecystokinin (CCK)- and Parvalbumin (PV)-expressing basket cells (BCs) but how synaptic contacts are established is unclear.",
+      "claim_source_sentence": "This domain receives GABAergic inputs from cholecystokinin (CCK)- and Parvalbumin (PV)-expressing basket cells (BCs) but how synaptic contacts are established is unclear.",
+      "effect_size": "decreased",
+      "effect_size_source_sentence": "VGLUT3+ CCK-BC puncta were also decreased by Ankyrin B deletion from PNs in Nex1Cre-ERT2:Ank2<sup>flox/flox</sup>:EGFP mice.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Oldre2025"
+    },
+    {
+      "doi": "10.1038/s41467-025-68059-8",
+      "claim": "To identify ligand-receptor (LR) interactions involved in cortical circuit assembly, we tracked gene expression dynamics in mice across major neuronal populations at 17 developmental stages using single-cell transcriptomics.",
+      "claim_source_sentence": "To identify ligand-receptor (LR) interactions involved in cortical circuit assembly, we tracked gene expression dynamics in mice across major neuronal populations at 17 developmental stages using single-cell transcriptomics.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Mathieu2026"
+    },
+    {
+      "doi": "10.1038/s41380-023-02153-5",
+      "claim": "Emerging evidence indicates that cholecystokinin (CCK)-expressing interneurons (CCK+) are highly heterogenous.",
+      "claim_source_sentence": "Emerging evidence indicates that cholecystokinin (CCK)-expressing interneurons (CCK+) are highly heterogenous.",
+      "effect_size": "56%",
+      "effect_size_source_sentence": "We find that a large subset of parvalbumin-expressing (PV+) interneurons express CCK strongly;\u00a0between 40 and 56% of PV+ interneurons in mouse hippocampal CA1\u00a0express CCK.",
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Grieco2023"
+    },
+    {
+      "doi": "10.1126/sciadv.ado0077",
+      "claim": "We show that a particular form of tonic cannabinoid signaling is essential for setting target cell-dependent synaptic variability.",
+      "claim_source_sentence": "We show that a particular form of tonic cannabinoid signaling is essential for setting target cell-dependent synaptic variability.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Barti2024"
+    },
+    {
+      "doi": "10.1523/jneurosci.1931-19.2020",
+      "claim": "Our data demonstrate that transiently expressed afferent CB1Rs regulate afferent synaptic strength during synaptogenesis, which enables coordinated dampening of transcortical developmental signals.<b>SIGNIFICANCE STATEMENT</b> The endogenous cannabinoid system plays diverse roles in brain developmen",
+      "claim_source_sentence": "Our data demonstrate that transiently expressed afferent CB1Rs regulate afferent synaptic strength during synaptogenesis, which enables coordinated dampening of transcortical developmental signals.<b>SIGNIFICANCE STATEMENT</b> The endogenous cannabinoid system plays diverse roles in brain development, which, combined with the rapidly changing legal and medical status of cannabis-related compounds, makes understanding how exogenous cannabinoids affect brain development an important biomedical obj",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Barnes2020"
+    },
+    {
+      "doi": "10.3390/biom10121609",
+      "claim": "This review provides evidence upon which to base future investigations on the function of CRIP1a in health and disease.",
+      "claim_source_sentence": "This review provides evidence upon which to base future investigations on the function of CRIP1a in health and disease.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Oliver2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.19-11-04544.1999",
+      "claim": "To understand the functional significance and mechanisms of action in the CNS of endogenous and exogenous cannabinoids, it is crucial to identify the neural elements that serve as the structural substrate of these actions.",
+      "claim_source_sentence": "To understand the functional significance and mechanisms of action in the CNS of endogenous and exogenous cannabinoids, it is crucial to identify the neural elements that serve as the structural substrate of these actions.",
+      "effect_size": "85.6%",
+      "effect_size_source_sentence": "Most of them (85.6%) contained cholecystokinin (CCK), which corresponded to 96.9% of all CCK-positive interneurons, whereas only 4.6% of the parvalbumin (PV)-containing basket cells expressed CB1.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Katona1999"
+    },
+    {
+      "doi": "10.1046/j.1460-9568.1999.00847.x",
+      "claim": "Our results revealed that CB1-expressing cells can be divided into distinct neuronal subpopulations.",
+      "claim_source_sentence": "Our results revealed that CB1-expressing cells can be divided into distinct neuronal subpopulations.",
+      "effect_size": "lower",
+      "effect_size_source_sentence": "The majority of high CB1-expressing cells are GABAergic (gamma-aminobutyric acid) neurons belonging mainly to the cholecystokinin-positive and parvalbumin-negative type of interneurons (basket cells) and, to a lower extent, to the calbindin D28k-positive mid-proximal dendritic inhibitory interneuron",
+      "n": null,
+      "study_system": "mouse hippocampus",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Marsicano1999"
+    },
+    {
+      "doi": "10.1523/jneurosci.21-23-09506.2001",
+      "claim": "Here we report that CB1 cannabinoid receptors are expressed at high levels in certain amygdala nuclei, especially in the lateral and basal nuclei, but are absent in other nuclei (e.g., in the central nucleus and in the medial nucleus).",
+      "claim_source_sentence": "Here we report that CB1 cannabinoid receptors are expressed at high levels in certain amygdala nuclei, especially in the lateral and basal nuclei, but are absent in other nuclei (e.g., in the central nucleus and in the medial nucleus).",
+      "effect_size": "reduced",
+      "effect_size_source_sentence": "CB1 receptor agonists WIN 55,212-2 and CP 55,940 reduced the amplitude of GABA(A) receptor-mediated evoked and spontaneous IPSCs, whereas the action potential-independent miniature IPSCs were not significantly affected.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Katona2001"
+    },
+    {
+      "doi": "10.1111/j.1365-2826.2008.01671.x",
+      "claim": "CB(2) receptors have a more restricted distribution, being found in a number of immune cells and in a few neurones.",
+      "claim_source_sentence": "CB(2) receptors have a more restricted distribution, being found in a number of immune cells and in a few neurones.",
+      "effect_size": "lower",
+      "effect_size_source_sentence": "CB(1) receptors are present in very high levels in several brain regions and in lower amounts in a more widespread fashion.",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Mackie2008"
+    },
+    {
+      "doi": "10.1523/jneurosci.0442-05.2005",
+      "claim": "Immunostaining for CB1 revealed axonal and somatic labeling with striking layer specificity: a high density of CB1-positive fibers was seen in layers II-III, in layer VI, and in upper layer V, whereas other layers had sparse (layer IV) or hardly any (layer I) staining.",
+      "claim_source_sentence": "Immunostaining for CB1 revealed axonal and somatic labeling with striking layer specificity: a high density of CB1-positive fibers was seen in layers II-III, in layer VI, and in upper layer V, whereas other layers had sparse (layer IV) or hardly any (layer I) staining.",
+      "effect_size": "lower",
+      "effect_size_source_sentence": "This suggests that inhibitory control of pyramidal cells involved in intracortical or corticostriatal processing is fine-tuned by activity-dependent endocannabinoid signaling, whereas inhibition of pyramidal cells relaying cortical information to lower subcortical effector centers often lacks this p",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Bodor2005"
+    },
+    {
+      "doi": "10.1038/npp.2017.206",
+      "claim": "Although we now have a loose set of mechanistic rules based on experimental findings, new studies continue to reveal that our understanding of the eCB system (ECS) is continuously evolving and challenging long-held conventions.",
+      "claim_source_sentence": "Although we now have a loose set of mechanistic rules based on experimental findings, new studies continue to reveal that our understanding of the eCB system (ECS) is continuously evolving and challenging long-held conventions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "BusquetsGarcia2018"
+    },
+    {
+      "doi": "10.1677/jme-08-0190",
+      "claim": "CB(1)R is a member of the superfamily of G-protein-coupled receptors (GPCRs), which are characterized by seven transmembrane helices.",
+      "claim_source_sentence": "CB(1)R is a member of the superfamily of G-protein-coupled receptors (GPCRs), which are characterized by seven transmembrane helices.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 42,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Turu2010"
+    },
+    {
+      "doi": "10.1523/jneurosci.5404-03.2004",
+      "claim": "We now report that vagal afferent neurons expressing the CCK-1 receptor also express cannabinoid CB1 receptors.",
+      "claim_source_sentence": "We now report that vagal afferent neurons expressing the CCK-1 receptor also express cannabinoid CB1 receptors.",
+      "effect_size": "increased",
+      "effect_size_source_sentence": "The expression of CB1 receptors determined by RT-PCR, immunohistochemistry and in situ hybridization in rat nodose ganglia was increased by withdrawal of food for > or =12 hr.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.5607/en.2019.28.3.320",
+        "10.1007/s00018-023-05029-7",
+        "10.1016/j.neulet.2020.135503"
+      ],
+      "primary_section": "7.2_CCK_basket",
+      "cite_key": "Burdyga2004"
+    },
+    {
+      "doi": "10.1007/s12264-024-01266-3",
+      "claim": "Special attention will be attributed to the plasticity of the AIS and the ChC-PN connections, which play a pivotal role in shaping the dynamic network under both physiological and pathological conditions.",
+      "claim_source_sentence": "Special attention will be attributed to the plasticity of the AIS and the ChC-PN connections, which play a pivotal role in shaping the dynamic network under both physiological and pathological conditions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Qi2024"
+    },
+    {
+      "doi": "10.7554/elife.93481",
+      "claim": "Here, we have established an intersectional genetic strategy that achieves specific and comprehensive targeting of AACs throughout the mouse brain based on their lineage (<i>Nkx2.1</i>) and molecular (<i>Unc5b</i>, <i>Pthlh</i>) markers.",
+      "claim_source_sentence": "Here, we have established an intersectional genetic strategy that achieves specific and comprehensive targeting of AACs throughout the mouse brain based on their lineage (<i>Nkx2.1</i>) and molecular (<i>Unc5b</i>, <i>Pthlh</i>) markers.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Raudales2024"
+    },
+    {
+      "doi": "10.1073/pnas.2114476119",
+      "claim": "Developmental profiling revealed that ChC axons undergo dramatic arborization/branching and AIS synapse formation starting at approximately postnatal day 11/12 (P11/12) before reaching final maturity by the end of the fourth postnatal week in mice ( 40 \u2013 42 )",
+      "claim_source_sentence": "Developmental profiling revealed that ChC axons undergo dramatic arborization/branching and AIS synapse formation starting at approximately postnatal day 11/12 (P11/12) before reaching final maturity by the end of the fourth postnatal week in mice ( 40 \u2013 42 )",
+      "effect_size": "14%",
+      "effect_size_source_sentence": "Analysis of microglia\u2013AIS interactions in L2/3 of the SSC at P14 revealed a notable fraction (\u223c14%) of Iba1 + microglia, hereafter referred to as AXIS (axon initial segment-associated) microglia, that intimately associate with the AIS of PyNs ( Fig",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Gallo2022"
+    },
+    {
+      "doi": "10.1073/pnas.2400709121",
+      "claim": "In a mouse model carrying a patient-derived <i>ARHGEF9</i> variant associated with severe disease, we observed aggregation of postsynaptic proteins and loss of functional inhibitory synapses at the axon initial segment (AIS), altered axo-axonic synaptic inhibition, disrupted action potential generat",
+      "claim_source_sentence": "In a mouse model carrying a patient-derived <i>ARHGEF9</i> variant associated with severe disease, we observed aggregation of postsynaptic proteins and loss of functional inhibitory synapses at the axon initial segment (AIS), altered axo-axonic synaptic inhibition, disrupted action potential generation, and complex seizure phenotypes consistent with clinical observations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477",
+        "10.1016/j.biopsych.2016.09.018"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Wang2024a"
+    },
+    {
+      "doi": "10.1126/sciadv.adk4331",
+      "claim": "Here, we show that changes of GABAergic synaptic input from chandelier cells (ChCs) drive homeostatic tuning of the AIS of principal neurons (PNs) in the prelimbic (PL) region, while those from parvalbumin-positive basket cells do not.",
+      "claim_source_sentence": "Here, we show that changes of GABAergic synaptic input from chandelier cells (ChCs) drive homeostatic tuning of the AIS of principal neurons (PNs) in the prelimbic (PL) region, while those from parvalbumin-positive basket cells do not.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1371/journal.pone.0281477",
+        "10.1016/j.biopsych.2016.09.018"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Zhao2024b"
+    },
+    {
+      "doi": "10.1101/2024.04.11.589005",
+      "claim": "Although AIS plasticity has been reported to be coupled with the changes of network activity, it is poorly understood whether it involves direct synaptic input to the AIS.",
+      "claim_source_sentence": "Although AIS plasticity has been reported to be coupled with the changes of network activity, it is poorly understood whether it involves direct synaptic input to the AIS.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Zhao2024a"
+    },
+    {
+      "doi": "10.1038/s41467-023-42273-8",
+      "claim": "Here, we use antibody-directed proximity biotinylation to define the cell surface proteins in close proximity to the AIS cell adhesion molecule Neurofascin.",
+      "claim_source_sentence": "Here, we use antibody-directed proximity biotinylation to define the cell surface proteins in close proximity to the AIS cell adhesion molecule Neurofascin.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Ogawa2023a"
+    },
+    {
+      "doi": "10.1371/journal.pone.0281477",
+      "claim": "Previous studies indicate that the number of Ch cells is decreased in autism, and that GABA receptors are decreased in the Ch cell synaptic target in the prefrontal cortex.",
+      "claim_source_sentence": "Previous studies indicate that the number of Ch cells is decreased in autism, and that GABA receptors are decreased in the Ch cell synaptic target in the prefrontal cortex.",
+      "effect_size": "decreased",
+      "effect_size_source_sentence": "Previous studies indicate that the number of Ch cells is decreased in autism, and that GABA receptors are decreased in the Ch cell synaptic target in the prefrontal cortex.",
+      "n": 9,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1016/j.biopsych.2016.09.018"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Hong2023"
+    },
+    {
+      "doi": "10.1101/2023.03.06.531378",
+      "claim": "Here, we used antibody-directed proximity biotinylation to define the cell surface proteins in close proximity to the AIS cell adhesion molecule Neurofascin.",
+      "claim_source_sentence": "Here, we used antibody-directed proximity biotinylation to define the cell surface proteins in close proximity to the AIS cell adhesion molecule Neurofascin.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Ogawa2023b"
+    },
+    {
+      "doi": "10.1093/cercor/bhaa402",
+      "claim": "We previously found a decreased number of the parvalbumin (PV)+ interneuron known as Chandelier (Ch) cell in the prefrontal cortex in autism.",
+      "claim_source_sentence": "We previously found a decreased number of the parvalbumin (PV)+ interneuron known as Chandelier (Ch) cell in the prefrontal cortex in autism.",
+      "effect_size": "decreased",
+      "effect_size_source_sentence": "We previously found a decreased number of the parvalbumin (PV)+ interneuron known as Chandelier (Ch) cell in the prefrontal cortex in autism.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Amina2021"
+    },
+    {
+      "doi": "10.1016/j.biopsych.2016.09.018",
+      "claim": "However, we recently found that in schizophrenia, ChC cartridge boutons contain normal levels of the 67 kDa isoform of glutamic acid decarboxylase (GAD67) protein, the enzyme responsible for GABA synthesis in these boutons.",
+      "claim_source_sentence": "However, we recently found that in schizophrenia, ChC cartridge boutons contain normal levels of the 67 kDa isoform of glutamic acid decarboxylase (GAD67) protein, the enzyme responsible for GABA synthesis in these boutons.",
+      "effect_size": "2.7-fold",
+      "effect_size_source_sentence": "To understand these findings we quantified the densities of ChC cartridges immunoreactive for vesicular GABA transporter (vGAT+), which is present in all cartridge boutons, and the subset of cartridges that contain calbindin (CB+).<h4>Methods</h4>Prefrontal cortex tissue sections from 20 matched pairs of schizophrenia and unaffected comparison subjects were immunolabeled for vGAT, GAD67, and CB.<h4>Results</h4>The mean density of vGAT+/CB+ cartridges was 2.7-fold higher, exclusively in layer 2 of schizophrenia subjects, whereas the density of vGAT+/CB- cartridges did not differ between subject groups.",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Rocco2017"
+    },
+    {
+      "doi": "10.1016/0306-4522(86)90131-4",
+      "claim": "The human temporal cortex contains a type of interneuron, identified by Golgi impregnation which, like the axo-axonic or chandelier cells found in animals, establishes Gray's type II synaptic contacts exclusively with the axon initial segments of pyramidal cells.",
+      "claim_source_sentence": "The human temporal cortex contains a type of interneuron, identified by Golgi impregnation which, like the axo-axonic or chandelier cells found in animals, establishes Gray's type II synaptic contacts exclusively with the axon initial segments of pyramidal cells.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Kisvrday1986"
+    },
+    {
+      "doi": "10.1016/j.pneurobio.2023.102542",
+      "claim": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "claim_source_sentence": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Dentate AACs show high-frequency, non-adapting firing but lack persistent firing in the absence of input and have higher rheobase than basket cells suggesting that AACs can respond reliably to network activity.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Proddutur2023a"
+    },
+    {
+      "doi": "10.1101/2023.10.01.560378",
+      "claim": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "claim_source_sentence": "We demonstrate that parvalbumin neurons in the dentate molecular layer express PTHLH, an AAC marker, and exhibit morphology characteristic of AACs.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Dentate AACs show high-frequency, non-adapting firing but lack persistent firing in the absence of input and have higher rheobase than basket cells suggesting that AACs can respond reliably to network activity.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Proddutur2023b"
+    },
+    {
+      "doi": "10.1016/j.neuron.2020.01.037",
+      "claim": "In\u00a0vivo imaging of ChCs during development uncovered a narrow window (P12-P18) over which axons arborized and formed connections.",
+      "claim_source_sentence": "In\u00a0vivo imaging of ChCs during development uncovered a narrow window (P12-P18) over which axons arborized and formed connections.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "PanVazquez2020"
+    },
+    {
+      "doi": "10.1074/jbc.M110.212191",
+      "claim": "Lentiviral shRNA-mediated knockdown of neurofascin in adult rat brain indicates that neurofascin regulates the number and size of postsynaptic gephyrin scaffolds, the number of GABA(A) receptor clusters as well as presynaptic glutamate decarboxylase-positive terminals at the axon initial segment.",
+      "claim_source_sentence": "Lentiviral shRNA-mediated knockdown of neurofascin in adult rat brain indicates that neurofascin regulates the number and size of postsynaptic gephyrin scaffolds, the number of GABA(A) receptor clusters as well as presynaptic glutamate decarboxylase-positive terminals at the axon initial segment.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Kriebel2011"
+    },
+    {
+      "doi": "10.1002/syn.20521",
+      "claim": "We show that the numbers of arrays of chandelier axons are reduced by 36% in the ventral prelimbic cortex of isolation-reared rats, compared with their socially-housed litter mates.",
+      "claim_source_sentence": "We show that the numbers of arrays of chandelier axons are reduced by 36% in the ventral prelimbic cortex of isolation-reared rats, compared with their socially-housed litter mates.",
+      "effect_size": "36%",
+      "effect_size_source_sentence": "We show that the numbers of arrays of chandelier axons are reduced by 36% in the ventral prelimbic cortex of isolation-reared rats, compared with their socially-housed litter mates.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Bloomfield2008"
+    },
+    {
+      "doi": "10.3389/fncel.2025.1749755",
+      "claim": "In addition to the influence of neuronal input on their function and plasticity, recent evidence suggests that glial cells play a significant role in regulating these domains under both physiological and pathological conditions.",
+      "claim_source_sentence": "In addition to the influence of neuronal input on their function and plasticity, recent evidence suggests that glial cells play a significant role in regulating these domains under both physiological and pathological conditions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Garrido2026"
+    },
+    {
+      "doi": "10.3390/biom15060901",
+      "claim": "Recent proteomic analyses have revealed a complex network of proteins in the AIS, emphasizing Ankyrin-G's central role in its molecular architecture.",
+      "claim_source_sentence": "Recent proteomic analyses have revealed a complex network of proteins in the AIS, emphasizing Ankyrin-G's central role in its molecular architecture.",
+      "effect_size": "enhanced",
+      "effect_size_source_sentence": "By further unraveling the complexity of Ankyrin-G's interactome, our understanding of AIS formation, maintenance, and plasticity will be considerably enhanced, contributing to the elucidation of the pathogenesis of neurological and neuropsychiatric disorders.",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Zhu2025"
+    },
+    {
+      "doi": "10.1152/physrev.00030.2024",
+      "claim": "Here, we review recent advances in our understanding of the AIS and its role in neuronal integration and polarity in health and disease.",
+      "claim_source_sentence": "Here, we review recent advances in our understanding of the AIS and its role in neuronal integration and polarity in health and disease.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Jenkins2025"
+    },
+    {
+      "doi": "10.1101/2024.11.29.625981",
+      "claim": "We used direct Stochastic Optical Resolution Microscopy (dSTORM) to show that Gephyrin, the main inhibitory receptor scaffold protein, is organised into SSDs in vivo , with distinct arrangements depending on their sub-cellular location and presynaptic partner.",
+      "claim_source_sentence": "We used direct Stochastic Optical Resolution Microscopy (dSTORM) to show that Gephyrin, the main inhibitory receptor scaffold protein, is organised into SSDs in vivo , with distinct arrangements depending on their sub-cellular location and presynaptic partner.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Compans2024"
+    },
+    {
+      "doi": "10.1002/mco2.70689",
+      "claim": "Overall, elucidating the molecular mechanism of the AIS in both health and disease provides a deeper understanding for advancing the diagnosis and treatment of neurological diseases.",
+      "claim_source_sentence": "Overall, elucidating the molecular mechanism of the AIS in both health and disease provides a deeper understanding for advancing the diagnosis and treatment of neurological diseases.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Song2026"
+    },
+    {
+      "doi": "10.7554/elife.91153",
+      "claim": "Detailed characterization of interneuron types in primary visual cortex (V1) has greatly contributed to understanding visual perception, yet the role of chandelier cells (ChCs) in visual processing remains poorly characterized.",
+      "claim_source_sentence": "Detailed characterization of interneuron types in primary visual cortex (V1) has greatly contributed to understanding visual perception, yet the role of chandelier cells (ChCs) in visual processing remains poorly characterized.",
+      "effect_size": "higher",
+      "effect_size_source_sentence": "Using viral tracing we found that V1 ChCs predominantly receive monosynaptic input from local layer 5 pyramidal cells and higher-order cortical regions.",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Seignette2024"
+    },
+    {
+      "doi": "10.3390/cells12081210",
+      "claim": "This region is characterized by a high density of voltage-gated sodium channels (VGSCs), which are responsible for the rapid depolarization that occurs when the neuron is stimulated.",
+      "claim_source_sentence": "This region is characterized by a high density of voltage-gated sodium channels (VGSCs), which are responsible for the rapid depolarization that occurs when the neuron is stimulated.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Garrido2023"
+    },
+    {
+      "doi": "10.1371/journal.pbio.2001421",
+      "claim": "By applying a combination of optogenetics, electrophysiological recordings, and high resolution microscopic techniques, we uncovered the organizing principles of synaptic communication between principal neurons and basket cells in the basal nucleus of the amygdala.",
+      "claim_source_sentence": "By applying a combination of optogenetics, electrophysiological recordings, and high resolution microscopic techniques, we uncovered the organizing principles of synaptic communication between principal neurons and basket cells in the basal nucleus of the amygdala.",
+      "effect_size": "2 pa",
+      "effect_size_source_sentence": "In this cortical structure, known to be critical for emotional memory formation, we revealed the presence of 2 parallel basket cell networks expressing either parvalbumin or cholecystokinin.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Andrsi2017"
+    },
+    {
+      "doi": "10.7554/elife.53432",
+      "claim": "What is the impact of AIS geometry on excitability? Direct empirical assessment has proven difficult because of the many potential confounding factors.",
+      "claim_source_sentence": "What is the impact of AIS geometry on excitability? Direct empirical assessment has proven difficult because of the many potential confounding factors.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Goethals2020"
+    },
+    {
+      "doi": "10.14814/phy2.12664",
+      "claim": "We have previously shown that in the basolateral amygdala (BLA), action potentials in one type of parvalbumin (PV)-expressing GABAergic interneuron can evoke a disynaptic feedback excitatory postsynaptic potential (fbEPSP) onto the same presynaptic interneuron.",
+      "claim_source_sentence": "We have previously shown that in the basolateral amygdala (BLA), action potentials in one type of parvalbumin (PV)-expressing GABAergic interneuron can evoke a disynaptic feedback excitatory postsynaptic potential (fbEPSP) onto the same presynaptic interneuron.",
+      "effect_size": "1\u00a0nA",
+      "effect_size_source_sentence": "Single PV interneurons could trigger very large (~ 1\u00a0nA) feedback excitatory postsynaptic currents (fbEPSCs) suggesting that these neurons are heavily reciprocally connected to local glutamatergic principal cells.",
+      "n": null,
+      "study_system": "mouse amygdala",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Spampanato2016"
+    },
+    {
+      "doi": "10.1177/1073858409341973",
+      "claim": "Converging lines of evidence indicate that APs are initiated in a discrete and highly specialized portion of the axon-the axon initial segment (AIS).",
+      "claim_source_sentence": "Converging lines of evidence indicate that APs are initiated in a discrete and highly specialized portion of the axon-the axon initial segment (AIS).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Clark2009"
+    },
+    {
+      "doi": "10.1523/jneurosci.4833-08.2008",
+      "claim": "A proximo-distal gradient in the density of these subunits was observed within the AIS of certain nerve cells but not in others.",
+      "claim_source_sentence": "A proximo-distal gradient in the density of these subunits was observed within the AIS of certain nerve cells but not in others.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Lorincz2008"
+    },
+    {
+      "doi": "10.1523/jneurosci.1922-17.2018",
+      "claim": "This Viewpoints article summarizes current knowledge about the AIS and highlights future challenges in understanding this key actor of neuronal physiology.",
+      "claim_source_sentence": "This Viewpoints article summarizes current knowledge about the AIS and highlights future challenges in understanding this key actor of neuronal physiology.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Leterrier2018"
+    },
+    {
+      "doi": "10.1523/jneurosci.0908-08.2008",
+      "claim": "However, recent work (Szabadics et al., 2006) indicates that this input from AACs can be depolarizing and even excitatory.",
+      "claim_source_sentence": "However, recent work (Szabadics et al., 2006) indicates that this input from AACs can be depolarizing and even excitatory.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Khirug2008"
+    },
+    {
+      "doi": "10.1093/cercor/bhr148",
+      "claim": "Recent studies using interneuron transplants have shown tremendous promise as cell-based therapies for seizure disorders, Parkinson's disease, and in the study of neocortical plasticity.",
+      "claim_source_sentence": "Recent studies using interneuron transplants have shown tremendous promise as cell-based therapies for seizure disorders, Parkinson's disease, and in the study of neocortical plasticity.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 15,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Inan2012"
+    },
+    {
+      "doi": "10.1016/j.celrep.2015.09.066",
+      "claim": "However, all plastic structural AIS changes reported thus far have been slow, involving days of neuronal activity perturbation.",
+      "claim_source_sentence": "However, all plastic structural AIS changes reported thus far have been slow, involving days of neuronal activity perturbation.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Evans2015"
+    },
+    {
+      "doi": "10.3389/fncel.2016.00250",
+      "claim": "Recently, studies in auditory neurons showed that alterations in the composition of voltage-gated K<sup>+</sup> (Kv) channels at the AIS coincide with elongation of the AIS, thereby enhancing the neuronal excitability, suggesting that the interaction between structural and functional plasticities of",
+      "claim_source_sentence": "Recently, studies in auditory neurons showed that alterations in the composition of voltage-gated K<sup>+</sup> (Kv) channels at the AIS coincide with elongation of the AIS, thereby enhancing the neuronal excitability, suggesting that the interaction between structural and functional plasticities of the AIS is important in the control of neuronal excitability.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Yamada2016"
+    },
+    {
+      "doi": "10.1523/jneurosci.0544-04.2004",
+      "claim": "The functional role of chandelier cells is still unclear, although the preferential loss of this cell type at epileptic loci suggests a role in epilepsy.",
+      "claim_source_sentence": "The functional role of chandelier cells is still unclear, although the preferential loss of this cell type at epileptic loci suggests a role in epilepsy.",
+      "effect_size": "larger",
+      "effect_size_source_sentence": "In addition, chandelier cells display a larger receptive field with lower acuity than other fast-spiking nonpyramidal neurons and pyramidal neurons.",
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Zhu2004"
+    },
+    {
+      "doi": "10.1523/jneurosci.3894-11.2011",
+      "claim": "However, their circuit role and the function of their clearly defined anatomical specificity remain unclear.",
+      "claim_source_sentence": "However, their circuit role and the function of their clearly defined anatomical specificity remain unclear.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Woodruff2011"
+    },
+    {
+      "doi": "10.1038/s41467-020-20232-x",
+      "claim": "While structural AIS plasticity has been suggested to fine-tune neuronal activity when network states change, whether it acts in vivo as a homeostatic regulatory mechanism in behaviorally relevant contexts remains poorly understood.",
+      "claim_source_sentence": "While structural AIS plasticity has been suggested to fine-tune neuronal activity when network states change, whether it acts in vivo as a homeostatic regulatory mechanism in behaviorally relevant contexts remains poorly understood.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Jamann2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.2232-14.2014",
+      "claim": "Moreover, the relationship between the spatial distribution of GABAergic synapses and the action potential initiation site along the AISs is not well defined.",
+      "claim_source_sentence": "Moreover, the relationship between the spatial distribution of GABAergic synapses and the action potential initiation site along the AISs is not well defined.",
+      "effect_size": "30 ms",
+      "effect_size_source_sentence": "Using paired recordings obtained in the mouse basolateral amygdala, we found that AACs powerfully inhibited or delayed the timing of PC spiking by 30 ms, if AAC output preceded PC spiking with no more than 80 ms.",
+      "n": 80,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "Veres2014"
+    },
+    {
+      "doi": "10.1101/2020.03.31.018952",
+      "claim": "The activity and connectivity of inhibitory cells has a profound impact on the operation of neuronal networks.",
+      "claim_source_sentence": "The activity and connectivity of inhibitory cells has a profound impact on the operation of neuronal networks.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1073/pnas.2400709121",
+        "10.1126/sciadv.adk4331",
+        "10.1371/journal.pone.0281477"
+      ],
+      "primary_section": "7.3_chandelier",
+      "cite_key": "SchneiderMizell2020"
+    },
+    {
+      "doi": "10.1016/j.patter.2025.101323",
+      "claim": "These studies have found that distinct families of neurons (such as Pvalb or Sst interneurons or intratelencephalic pyramidal neurons) show distinct physiological and anatomical properties",
+      "claim_source_sentence": "These studies have found that distinct families of neurons (such as Pvalb or Sst interneurons or intratelencephalic pyramidal neurons) show distinct physiological and anatomical properties",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 4,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Bernaerts2025"
+    },
+    {
+      "doi": "10.7554/elife.81863",
+      "claim": "Rodent studies have demonstrated that synaptic dynamics from excitatory to inhibitory neuron types are often dependent on the target cell type.",
+      "claim_source_sentence": "Rodent studies have demonstrated that synaptic dynamics from excitatory to inhibitory neuron types are often dependent on the target cell type.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915",
+        "10.1101/2020.02.03.932244"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Kim2023b"
+    },
+    {
+      "doi": "10.1038/s41467-024-50414-w",
+      "claim": "We have also delineated the correspondence of our taxonomy with previous standardized classifications and shown the main transcriptomic and class abundance differences between caudate nucleus and putamen.",
+      "claim_source_sentence": "We have also delineated the correspondence of our taxonomy with previous standardized classifications and shown the main transcriptomic and class abundance differences between caudate nucleus and putamen.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.3389/fncir.2024.1436915",
+        "10.1101/2020.02.03.932244"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Garma2024"
+    },
+    {
+      "doi": "10.3389/fncir.2024.1436915",
+      "claim": "We suggest that for experimental analysis, the most useful taxonomic level is the subdivision of somatostatin interneurons into ten or so \"supertypes,\" which closely agrees with their more traditional classification by morphological, electrophysiological and neurochemical features.",
+      "claim_source_sentence": "We suggest that for experimental analysis, the most useful taxonomic level is the subdivision of somatostatin interneurons into ten or so \"supertypes,\" which closely agrees with their more traditional classification by morphological, electrophysiological and neurochemical features.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.1101/2020.02.03.932244"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Agmon2024"
+    },
+    {
+      "doi": "10.1101/2020.03.30.015214",
+      "claim": "The completeness of coverage enabled us to define gene expression variations across the entire spatial landscape without significant gaps.",
+      "claim_source_sentence": "The completeness of coverage enabled us to define gene expression variations across the entire spatial landscape without significant gaps.",
+      "effect_size": "379 transcriptomic types",
+      "effect_size_source_sentence": "In this study, we used two complementary single-cell RNA-sequencing approaches, SMART-Seq and 10x, to profile \u223c1.2 million cells covering all regions in the adult mouse isocortex and hippocampal formation, and derived a cell type taxonomy comprising 379 transcriptomic types.",
+      "n": 1,
+      "study_system": "mouse hippocampus",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Yao2020a"
+    },
+    {
+      "doi": "10.1101/2020.02.03.932244",
+      "claim": "To better constrain the definition of neuronal cell types, we characterized the transcriptomes and intrinsic physiological properties of over 3,700 GABAergic mouse visual cortical neurons and reconstructed the local morphologies of 350 of those neurons.",
+      "claim_source_sentence": "To better constrain the definition of neuronal cell types, we characterized the transcriptomes and intrinsic physiological properties of over 3,700 GABAergic mouse visual cortical neurons and reconstructed the local morphologies of 350 of those neurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3700,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Gouwens2020b"
+    },
+    {
+      "doi": "10.1038/s41593-020-0685-8",
+      "claim": "Statistical analyses of these data reveal clusters that often correspond to cell types previously defined by morphological or physiological criteria and that appear conserved across cortical areas and species.",
+      "claim_source_sentence": "Statistical analyses of these data reveal clusters that often correspond to cell types previously defined by morphological or physiological criteria and that appear conserved across cortical areas and species.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Yuste2020"
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "claim": "Our recent single-cell transcriptomic study of two mouse cortical areas ( Tasic et al., 2018 ), VISp and anterolateral motor cortex (ALM), confirmed these four major subclasses and revealed an additional subclass (Sncg) that is related to the Vip and Htr3a+/Vip-(renamed to Lamp5) subclasses",
+      "claim_source_sentence": "Our recent single-cell transcriptomic study of two mouse cortical areas ( Tasic et al., 2018 ), VISp and anterolateral motor cortex (ALM), confirmed these four major subclasses and revealed an additional subclass (Sncg) that is related to the Vip and Htr3a+/Vip-(renamed to Lamp5) subclasses",
+      "effect_size": "28 met-types",
+      "effect_size_source_sentence": "Through multimodal integrated analysis, we define 28 met-types that have congruent morphological, electrophysiological, and transcriptomic properties and robust mutual predictability.",
+      "n": 4200,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Gouwens2020a"
+    },
+    {
+      "doi": "10.1038/s41586-018-0654-5",
+      "claim": "5 ), we identified 56 glutamatergic, 61 GABAergic and 16 non-neuronal types ( Fig",
+      "claim_source_sentence": "5 ), we identified 56 glutamatergic, 61 GABAergic and 16 non-neuronal types ( Fig",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 822,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Tasic2018"
+    },
+    {
+      "doi": "10.1016/j.neuron.2021.10.036",
+      "claim": "Integrated cross-species analysis revealed robust transcriptomic and histologic signatures of neurogenesis in the adult mouse, pig, and macaque but not humans.",
+      "claim_source_sentence": "Integrated cross-species analysis revealed robust transcriptomic and histologic signatures of neurogenesis in the adult mouse, pig, and macaque but not humans.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Franjic2022"
+    },
+    {
+      "doi": "10.1038/s41586-025-09296-1",
+      "claim": "Gini and Shannon indices revealed strong spatial localization, with the exception of more widely distributed types in the isocortex (Extended Data Fig",
+      "claim_source_sentence": "Gini and Shannon indices revealed strong spatial localization, with the exception of more widely distributed types in the isocortex (Extended Data Fig",
+      "effect_size": "7 classes",
+      "effect_size_source_sentence": "We present a hierarchically organized adult telencephalic GABAergic neuronal cell-type taxonomy of 7 classes, 52 subclasses, 284 supertypes and 1,051 clusters, as well as a corresponding developmental taxonomy of 1,688 clusters across ages from embryonic day 7 to postnatal day 14.",
+      "n": 269,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "vanVelthoven2025"
+    },
+    {
+      "doi": "10.1038/s41467-024-50728-9",
+      "claim": "Here, we report large-scale automation of neuronal morphology reconstruction and analysis on a dataset of 813 inhibitory neurons characterized using the Patch-seq method, which enables measurement of multiple properties from individual neurons, including local morphology and transcriptional signatur",
+      "claim_source_sentence": "Here, we report large-scale automation of neuronal morphology reconstruction and analysis on a dataset of 813 inhibitory neurons characterized using the Patch-seq method, which enables measurement of multiple properties from individual neurons, including local morphology and transcriptional signature.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Gliko2024"
+    },
+    {
+      "doi": "10.1523/eneuro.0046-25.2025",
+      "claim": "However, the cell types that form this important interface are not yet fully defined.",
+      "claim_source_sentence": "However, the cell types that form this important interface are not yet fully defined.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 1,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Ebert2025"
+    },
+    {
+      "doi": "10.1016/j.neuron.2023.05.032",
+      "claim": "To address this knowledge gap, we designed a series of genetic strategies to target the breadth of somatostatin interneuron subtypes and found that each subtype possesses a unique laminar organization and stereotyped axonal projection pattern",
+      "claim_source_sentence": "To address this knowledge gap, we designed a series of genetic strategies to target the breadth of somatostatin interneuron subtypes and found that each subtype possesses a unique laminar organization and stereotyped axonal projection pattern",
+      "effect_size": "10%",
+      "effect_size_source_sentence": "For instance, SST-Calb2 and SST-Crh subtypes were estimated to comprise ~10% of the total SST interneuron population in S1 by both Slide-SeqV2 ( Figure 1E ) and smFISH ( Figure S2 )",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Wu2023"
+    },
+    {
+      "doi": "10.1038/s41593-024-01834-w",
+      "claim": "We found both cortical and subcortical neuronal associations for schizophrenia, bipolar disorder and depression.",
+      "claim_source_sentence": "We found both cortical and subcortical neuronal associations for schizophrenia, bipolar disorder and depression.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Duncan2025"
+    },
+    {
+      "doi": "10.12703/r-01-000009",
+      "claim": "Their comprehensive and high-quality data provide a new framework to shed light on what may be considered a \"neuronal cell type.\"",
+      "claim_source_sentence": "Their comprehensive and high-quality data provide a new framework to shed light on what may be considered a \"neuronal cell type.\"",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Unknown2022"
+    },
+    {
+      "doi": "10.1038/s41593-023-01469-3",
+      "claim": "We perform single-cell RNA sequencing on na\u00efve and fear-conditioned mice, identify 130 neuronal cell types and validate their spatial distributions.",
+      "claim_source_sentence": "We perform single-cell RNA sequencing on na\u00efve and fear-conditioned mice, identify 130 neuronal cell types and validate their spatial distributions.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Hochgerner2023"
+    },
+    {
+      "doi": "10.1073/pnas.2203677119",
+      "claim": "Cortical circuit tracing using modified rabies virus can identify input neurons making direct monosynaptic connections onto neurons of interest.",
+      "claim_source_sentence": "Cortical circuit tracing using modified rabies virus can identify input neurons making direct monosynaptic connections onto neurons of interest.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Patio2022"
+    },
+    {
+      "doi": "10.1101/2022.10.25.513733",
+      "claim": "The atlas may help pinpoint the amygdala\u2019s circuits in performing emotional sensing and integration, and provide new insights to the global cellular processes involved.",
+      "claim_source_sentence": "The atlas may help pinpoint the amygdala\u2019s circuits in performing emotional sensing and integration, and provide new insights to the global cellular processes involved.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Hochgerner2022"
+    },
+    {
+      "doi": "10.1101/2023.10.04.560846",
+      "claim": "The combinatorial expression of GPCRs and cell type markers indicates that all neuronal cell types are subject to modulation by multiple monoaminergic systems and distinct combinations of neuropeptides.",
+      "claim_source_sentence": "The combinatorial expression of GPCRs and cell type markers indicates that all neuronal cell types are subject to modulation by multiple monoaminergic systems and distinct combinations of neuropeptides.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Anneser2023"
+    },
+    {
+      "doi": "10.1016/j.conb.2018.12.005",
+      "claim": "An increasingly integrated taxonomy of cell types, especially with the advent of single cell transcriptomic data, has revealed an unprecedented variety of human cortical cell subtypes",
+      "claim_source_sentence": "An increasingly integrated taxonomy of cell types, especially with the advent of single cell transcriptomic data, has revealed an unprecedented variety of human cortical cell subtypes",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Miller2019"
+    },
+    {
+      "doi": "10.1016/j.cell.2021.04.021",
+      "claim": "Many molecular, anatomical, and physiological studies have revealed a broad spectrum of neuronal cell types in different cortical and hippocampal regions, whose variety of cellular properties are likely related to specific functions in the circuits they are embedded in ( Zeng and Sanes, 2017 )",
+      "claim_source_sentence": "Many molecular, anatomical, and physiological studies have revealed a broad spectrum of neuronal cell types in different cortical and hippocampal regions, whose variety of cellular properties are likely related to specific functions in the circuits they are embedded in ( Zeng and Sanes, 2017 )",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 1,
+      "study_system": "mouse hippocampus",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Yao2021a"
+    },
+    {
+      "doi": "10.1016/j.neuron.2021.09.001",
+      "claim": "We first identified novel subpopulations of interneurons and medium spiny neurons (MSNs) in the nucleus accumbens and further characterized robust GABAergic inhibitory cell populations in the amygdala.",
+      "claim_source_sentence": "We first identified novel subpopulations of interneurons and medium spiny neurons (MSNs) in the nucleus accumbens and further characterized robust GABAergic inhibitory cell populations in the amygdala.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 107,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Tran2021"
+    },
+    {
+      "doi": "10.3389/fnins.2021.787753",
+      "claim": "Yet, transcriptomics entails technical challenges and more importantly uncovers unforeseen spatiotemporal heterogeneity, in complex and simpler nervous systems.",
+      "claim_source_sentence": "Yet, transcriptomics entails technical challenges and more importantly uncovers unforeseen spatiotemporal heterogeneity, in complex and simpler nervous systems.",
+      "effect_size": "reduced",
+      "effect_size_source_sentence": "Due to their sheer numbers, complexity and diversity, their systematic study requires concrete classifications that can serve reduced dimensionality, reproducibility, and information integration.",
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Rapti2022"
+    },
+    {
+      "doi": "10.1038/s41586-020-2907-3",
+      "claim": "Here we used Patch-seq<sup>8</sup> to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of more than 1,300 neurons in adult mouse primary motor cortex, providing a morpho-electric annotation of almost all transcriptomically defined neural cell types.",
+      "claim_source_sentence": "Here we used Patch-seq<sup>8</sup> to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of more than 1,300 neurons in adult mouse primary motor cortex, providing a morpho-electric annotation of almost all transcriptomically defined neural cell types.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 300,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Scala2021"
+    },
+    {
+      "doi": "10.1101/229542",
+      "claim": "To investigate the diversity of cell types across the mouse neocortex, we analyzed 12,714 cells from the primary visual cortex (VISp), and 9,035 cells from the anterior lateral motor cortex (ALM) by deep single-cell RNA-sequencing (scRNA-seq), identifying 116 transcriptomic cell types.",
+      "claim_source_sentence": "To investigate the diversity of cell types across the mouse neocortex, we analyzed 12,714 cells from the primary visual cortex (VISp), and 9,035 cells from the anterior lateral motor cortex (ALM) by deep single-cell RNA-sequencing (scRNA-seq), identifying 116 transcriptomic cell types.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 714,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Tasic2017"
+    },
+    {
+      "doi": "10.1038/s41467-023-38530-5",
+      "claim": "Significant sexual differences exist in MDD clinical presentation and outcome, and recent evidence suggests different molecular bases for male and female MDD.",
+      "claim_source_sentence": "Significant sexual differences exist in MDD clinical presentation and outcome, and recent evidence suggests different molecular bases for male and female MDD.",
+      "effect_size": "41 clusters",
+      "effect_size_source_sentence": "Among 7 broad cell types and 41 clusters evaluated, microglia and parvalbumin interneurons contributed the most DEGs in females, while deep layer excitatory neurons, astrocytes, and oligodendrocyte precursors were the major contributors in males.",
+      "n": 160000,
+      "study_system": "mouse cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Maitra2023"
+    },
+    {
+      "doi": "10.1101/2020.02.03.929158",
+      "claim": "Here we used Patch-seq to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of over 1300 neurons in adult mouse motor cortex, providing a comprehensive morpho-electric annotation of almost all transcriptomically defined neural cell types.",
+      "claim_source_sentence": "Here we used Patch-seq to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of over 1300 neurons in adult mouse motor cortex, providing a comprehensive morpho-electric annotation of almost all transcriptomically defined neural cell types.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 1300,
+      "study_system": "rat cortex",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Scala2020"
+    },
+    {
+      "doi": "10.1038/s42003-021-02517-z",
+      "claim": "We mapped and classified a total of 59,816 cells into all 75 previously defined subtypes to create a first spatial atlas of human cortical cells in their native position, their abundances and genetic signatures.",
+      "claim_source_sentence": "We mapped and classified a total of 59,816 cells into all 75 previously defined subtypes to create a first spatial atlas of human cortical cells in their native position, their abundances and genetic signatures.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 816,
+      "study_system": "human cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Langseth2021"
+    },
+    {
+      "doi": "10.1038/s41467-025-56280-4",
+      "claim": "An essential task in spatial transcriptomics is identifying spatially variable genes (SVGs).",
+      "claim_source_sentence": "An essential task in spatial transcriptomics is identifying spatially variable genes (SVGs).",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Shang2025"
+    },
+    {
+      "doi": "10.1101/216085",
+      "claim": "Using unbiased single nucleus RNA sequencing, we identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and characterize a novel group of human interneurons with anatomical features never described in rodents having large, \u201crosehip\u201d-like axonal bouto",
+      "claim_source_sentence": "Using unbiased single nucleus RNA sequencing, we identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and characterize a novel group of human interneurons with anatomical features never described in rodents having large, \u201crosehip\u201d-like axonal boutons and compact arborization.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Boldog2017"
+    },
+    {
+      "doi": "10.1101/2020.07.29.226050",
+      "claim": "Using single-cell transcriptomics, we systematically classified RGCs in adult and larval zebrafish, thereby identifying marker genes for at least 33 stable and transient cell types.",
+      "claim_source_sentence": "Using single-cell transcriptomics, we systematically classified RGCs in adult and larval zebrafish, thereby identifying marker genes for at least 33 stable and transient cell types.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.81863",
+        "10.1038/s41467-024-50414-w",
+        "10.3389/fncir.2024.1436915"
+      ],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Klsch2020"
+    },
+    {
+      "doi": "10.1038/s41593-018-0205-2",
+      "claim": "Using unbiased single-nucleus RNA sequencing, we identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and characterize a group of human interneurons with anatomical features never described in rodents, having large 'rosehip'-like axonal boutons and",
+      "claim_source_sentence": "Using unbiased single-nucleus RNA sequencing, we identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and characterize a group of human interneurons with anatomical features never described in rodents, having large 'rosehip'-like axonal boutons and compact arborization.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Boldog2018"
+    },
+    {
+      "doi": "10.1007/s00424-024-02923-2",
+      "claim": "Since more than a century, neuroscientists have distinguished excitatory (glutamatergic) neurons with long-distance projections from inhibitory (GABAergic) neurons with local projections and established layer-dependent schemes for the ~ 80% excitatory (principal) cells as well as the ~ 20% inhibitor",
+      "claim_source_sentence": "Since more than a century, neuroscientists have distinguished excitatory (glutamatergic) neurons with long-distance projections from inhibitory (GABAergic) neurons with local projections and established layer-dependent schemes for the ~ 80% excitatory (principal) cells as well as the ~ 20% inhibitory neurons.",
+      "effect_size": "80%",
+      "effect_size_source_sentence": "Since more than a century, neuroscientists have distinguished excitatory (glutamatergic) neurons with long-distance projections from inhibitory (GABAergic) neurons with local projections and established layer-dependent schemes for the ~ 80% excitatory (principal) cells as well as the ~ 20% inhibitory neurons.",
+      "n": 80,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Mao2024"
+    },
+    {
+      "doi": "10.1016/j.neuron.2016.06.033",
+      "claim": "We illustrate how recent advances in the field have shed light onto the mechanisms by which GABAergic inhibition contributes to network operations.",
+      "claim_source_sentence": "We illustrate how recent advances in the field have shed light onto the mechanisms by which GABAergic inhibition contributes to network operations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Tremblay2016"
+    },
+    {
+      "doi": "10.1038/s41586-025-09644-1",
+      "claim": "The trajectory map shows that neurogenesis, gliogenesis and early postmitotic maturation in the embryonic stage give rise to all cell classes and nearly all subclasses in a staggered parallel manner.",
+      "claim_source_sentence": "The trajectory map shows that neurogenesis, gliogenesis and early postmitotic maturation in the embryonic stage give rise to all cell classes and nearly all subclasses in a staggered parallel manner.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 11,
+      "study_system": "rat cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Gao2025"
+    },
+    {
+      "doi": "10.1101/cshperspect.a041513",
+      "claim": "A persistent question in neuroscience is how early neuronal subtype identity is established during the development of neuronal circuits.",
+      "claim_source_sentence": "A persistent question in neuroscience is how early neuronal subtype identity is established during the development of neuronal circuits.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "DeMarcoGarca2025"
+    },
+    {
+      "doi": "10.1016/j.celrep.2025.116037",
+      "claim": "Methods for targeting human neural populations are scarce and currently center on identifying transcriptional enhancers and engineering viral capsids.",
+      "claim_source_sentence": "Methods for targeting human neural populations are scarce and currently center on identifying transcriptional enhancers and engineering viral capsids.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "primary_section": "7.4_completeness",
+      "cite_key": "Matthews2025"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conflict_1",
+      "title": "Chandelier cell effect on pyramidal neurons: excitatory vs inhibitory",
+      "description": "Chandelier cells target the axon initial segment of pyramidal neurons, where GABA reversal potential may be depolarized relative to rest. Whether this depolarization is excitatory (facilitates firing) or inhibitory (shunting inhibition prevents firing) has been debated for over 20 years.",
+      "side_a": {
+        "position": "Chandelier cells are excitatory at the AIS due to depolarized GABA reversal potential",
+        "supporting_dois": [
+          "10.3390/cells12081210",
+          "10.14814/phy2.12664",
+          "10.1523/jneurosci.0908-08.2008"
+        ]
+      },
+      "side_b": {
+        "position": "Chandelier cells are inhibitory via shunting inhibition despite depolarized GABA reversal potential",
+        "supporting_dois": [
+          "10.1073/pnas.2400709121",
+          "10.1101/2024.11.29.625981",
+          "10.1101/2020.03.31.018952"
+        ]
+      },
+      "resolution_status": "partially_resolved",
+      "notes": "Emerging consensus is that the effect is context-dependent: chandelier cells can be depolarizing but still inhibitory via shunting, or excitatory depending on membrane potential state."
+    },
+    {
+      "id": "conflict_2",
+      "title": "Cardinal classes sufficient vs insufficient for cortical interneuron taxonomy",
+      "description": "Whether the four cardinal classes (PV, SST, VIP, Lamp5/Id2) capture all cortical interneuron diversity, or whether significant populations fall outside these categories.",
+      "side_a": {
+        "position": "Cardinal classes are largely sufficient; most interneurons can be assigned to one of these classes",
+        "supporting_dois": [
+          "10.1038/s41467-024-50414-w",
+          "10.12703/r-01-000009",
+          "10.1101/2023.10.04.560846",
+          "10.1016/j.conb.2018.12.005"
+        ]
+      },
+      "side_b": {
+        "position": "Significant interneuron populations (5-10%) cannot be cleanly assigned to cardinal classes; additional categories needed",
+        "supporting_dois": []
+      },
+      "resolution_status": "active_debate",
+      "notes": "Transcriptomic data increasingly support cardinal classes as hierarchically organized with extensive subtype diversity within each class, but some cells (e.g., CCK basket cells) are problematic to assign."
+    },
+    {
+      "id": "conflict_3",
+      "title": "CCK vs PV basket cells: functionally distinct vs redundant perisomatic inhibitors",
+      "description": "Both CCK+ and PV+ basket cells provide perisomatic inhibition to pyramidal neurons. Whether they serve fundamentally different functions or provide redundant inhibitory control.",
+      "side_a": {
+        "position": "CCK and PV basket cells serve distinct, complementary functions - PV for clockwork precision, CCK for mood/state modulation",
+        "supporting_dois": [
+          "10.1523/jneurosci.0054-06.2006",
+          "10.1523/jneurosci.3481-09.2010",
+          "10.1113/jphysiol.2011.216028",
+          "10.1152/jn.00216.2025"
+        ]
+      },
+      "side_b": {
+        "position": "Functional overlap between CCK and PV basket cells is more substantial than typically assumed",
+        "supporting_dois": [
+          "10.1038/s41598-022-13724-x",
+          "10.1016/j.neuron.2025.03.016"
+        ]
+      },
+      "resolution_status": "active_debate",
+      "notes": "Most evidence supports functional distinction: PV cells have fast, reliable, synchrony-promoting inhibition while CCK cells have slower, mood-modulated inhibition. But in vivo data remain scarce for CCK cells due to lack of clean genetic access."
+    },
+    {
+      "id": "conflict_4",
+      "title": "NDNF/neurogliaform cell volume transmission: predominant vs minor mode of signaling",
+      "description": "Whether neurogliaform cells primarily operate through non-synaptic (volume) GABA transmission affecting GABA-B receptors, or whether this is a supplementary mode alongside conventional synaptic transmission.",
+      "side_a": {
+        "position": "Volume transmission is the defining feature and primary signaling mode of neurogliaform cells",
+        "supporting_dois": [
+          "10.3389/neuro.04.004.2007"
+        ]
+      },
+      "side_b": {
+        "position": "Neurogliaform cells also make conventional synapses; volume transmission supplements rather than replaces synaptic signaling",
+        "supporting_dois": [
+          "10.3389/neuro.04.004.2007",
+          "10.3389/fphys.2012.00319",
+          "10.1073/pnas.2408966122"
+        ]
+      },
+      "resolution_status": "partially_resolved",
+      "notes": "Evidence indicates neurogliaform cells engage both synaptic (GABA-A) and volume (GABA-B) transmission, with the ratio possibly depending on the activity level. Volume transmission appears to be particularly prominent compared to other interneuron types."
+    },
+    {
+      "id": "conflict_5",
+      "title": "Lamp5 as a coherent transcriptomic class vs lumping of diverse cell types",
+      "description": "Whether Lamp5 marks a functionally coherent interneuron class or groups together diverse cell types (neurogliaform, single bouquet, etc.) that share gene expression but differ functionally.",
+      "side_a": {
+        "position": "Lamp5 defines a coherent class with shared developmental origin and gene expression programs",
+        "supporting_dois": [
+          "10.1016/j.cell.2020.09.057"
+        ]
+      },
+      "side_b": {
+        "position": "Lamp5 class contains functionally heterogeneous subtypes that differ more than members of other cardinal classes",
+        "supporting_dois": [
+          "10.1242/dev.201830",
+          "10.1002/cne.70030",
+          "10.1523/JNEUROSCI.1876-22.2023"
+        ]
+      },
+      "resolution_status": "active_debate",
+      "notes": "Transcriptomic data place neurogliaform cells, single bouquet cells, and other subtypes within the Lamp5 class, but functional differences among these subtypes may be substantial."
+    }
+  ],
+  "figure_data": [
+    {
+      "id": "fig_1",
+      "title": "Number of interneuron transcriptomic types identified across landmark taxonomy studies",
+      "comparison_type": "cross_study_quantitative",
+      "section": "7.4",
+      "papers": [
+        {
+          "doi": "10.1038/s41586-018-0654-5",
+          "value": "133 transcriptomic cell types",
+          "value_source_sentence": "We define 133 transcriptomic cell types by deep, single-cell RNA sequencing.",
+          "scope_region": "mouse primary visual cortex and anterior lateral motor cortex",
+          "n_definition": "transcriptomic cell types defined by scRNA-seq",
+          "n_analyzed": 23822
+        },
+        {
+          "doi": "10.1016/j.cell.2020.09.057",
+          "value": "28 met-types",
+          "value_source_sentence": "Through multimodal integrated analysis we define 28 met-types that have congruent morphological, electrophysiological, and transcriptomic properties a...",
+          "scope_region": "mouse visual cortex",
+          "n_definition": "multimodal met-types with congruent MET properties",
+          "n_analyzed": 4200
+        },
+        {
+          "doi": "10.1016/j.cell.2021.04.021",
+          "value": "379 transcriptomic types",
+          "value_source_sentence": "We profiled ~1.3 million cells covering the entire adult mouse isocortex and HPF and derived a cell type taxonomy comprising 379 transcriptomic types.",
+          "scope_region": "entire mouse isocortex and hippocampal formation",
+          "n_definition": "transcriptomic types from isocortex and HPF",
+          "n_analyzed": 1300000
+        },
+        {
+          "doi": "10.1038/s41586-025-09296-1",
+          "value": "1,051 clusters in 284 supertypes",
+          "value_source_sentence": "We present a hierarchically organized adult telencephalic GABAergic neuronal cell-type taxonomy of 7 classes, 52 subclasses, 284 supertypes and 1,051 ...",
+          "scope_region": "entire mouse telencephalon",
+          "n_definition": "GABAergic neuronal clusters/supertypes",
+          "n_analyzed": 611423
+        }
+      ],
+      "homogeneity_check": "Studies differ substantially in scope (single area vs whole telencephalon) and resolution level (met-types vs clusters). Type counts are not directly comparable without accounting for hierarchical level and anatomical scope.",
+      "scope_population": "GABAergic interneurons",
+      "taxonomic_level": "varies from broad met-types to fine clusters"
+    },
+    {
+      "id": "fig_2",
+      "title": "Relative contributions of PV+ and CCK/CB1+ basket cells to perisomatic inhibition",
+      "comparison_type": "cross_study_quantitative",
+      "section": "7.2",
+      "papers": [
+        {
+          "doi": "10.1523/jneurosci.2700-20.2021",
+          "value": "PV+ basket cells 17-20%, CCK+ basket cells 7-9% of GABAergic neurons",
+          "value_source_sentence": "basket cells expressing parvalbumin (17%-20%) or cholecystokinin (7%-9%)",
+          "scope_region": "mouse lateral and basal amygdala",
+          "n_definition": "proportion of total GABAergic neurons",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.3390/ijms23010202",
+          "value": "PV+ and CB1R+ perisomatic inputs on pyramidal somata",
+          "value_source_sentence": "Quantitative electron microscopy showed that the overall, PV+ and CB1R+ somatic inhibitory inputs remained unchanged in focal cortical epilepsy.",
+          "scope_region": "human neocortex",
+          "n_definition": "somatic inhibitory boutons quantified by electron microscopy",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.1523/jneurosci.0432-23.2023",
+          "value": "PV/CB1 ratio differs by pyramidal cell projection target",
+          "value_source_sentence": "we found that the ratio of PV/CB1 GABAergic inputs is larger on the somatic membrane surface of pyramidal tract neurons in comparison with those proje...",
+          "scope_region": "mouse medial prefrontal cortex",
+          "n_definition": "GABAergic axon varicosities on perisomatic region",
+          "n_analyzed": null
+        }
+      ],
+      "homogeneity_check": "Studies span different brain regions (amygdala, human neocortex, mouse mPFC) and use different quantification methods. Direct numerical comparison requires caution.",
+      "scope_population": "perisomatic-targeting GABAergic interneurons",
+      "taxonomic_level": "PV+ vs CCK/CB1+ basket cell subtypes"
+    },
+    {
+      "id": "fig_3",
+      "title": "Chandelier cell axo-axonic synapse properties across development and conditions",
+      "comparison_type": "cross_study_qualitative",
+      "section": "7.3",
+      "papers": [
+        {
+          "doi": "10.1073/pnas.2114476119",
+          "value": "Microglia regulate chandelier cell axo-axonic synaptogenesis",
+          "value_source_sentence": "Here, we identify microglia as key regulators of ChC axonal morphogenesis and AIS synaptogenesis, and show that disease-induced aberrant microglial ac...",
+          "scope_region": "mouse neocortex",
+          "n_definition": "developmental study of ChC synapse formation",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.1007/s12264-024-01266-3",
+          "value": "AIS and axo-axonic synapses undergo dynamic structural and functional changes",
+          "value_source_sentence": "During postnatal development or in response to changes in network activity, the AISs and axo-axonic synapses undergo dynamic structural and functional...",
+          "scope_region": "mouse and human cortex (review)",
+          "n_definition": "review of ChC plasticity literature",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.7554/elife.93481",
+          "value": "AACs deployed across all pallium-derived brain structures",
+          "value_source_sentence": "We discovered that AACs are deployed across essentially all the pallium-derived brain structures, including not only the dorsal pallium-derived neocor...",
+          "scope_region": "mouse whole brain",
+          "n_definition": "brain regions with AAC presence mapped",
+          "n_analyzed": null
+        }
+      ],
+      "homogeneity_check": "Different aspects of chandelier cell biology studied; not a direct numerical comparison.",
+      "scope_population": "chandelier/axo-axonic cells",
+      "taxonomic_level": "single cell type across regions"
+    },
+    {
+      "id": "fig_4",
+      "title": "Neurogliaform cell GABA signaling: synaptic vs volume transmission evidence",
+      "comparison_type": "cross_study_qualitative",
+      "section": "7.1",
+      "papers": [
+        {
+          "doi": "10.7554/elife.65634",
+          "value": "Linear GABA-B, sublinear GABA-A summation",
+          "value_source_sentence": "Triple recordings from presynaptic NGFCs converging to a postsynaptic neuron revealed sublinear summation of ionotropic GABA A responses and linear su...",
+          "scope_region": "rat cerebral cortex",
+          "n_definition": "triple patch clamp recordings from NGFCs",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.1016/j.neuron.2018.09.001",
+          "value": "NDNF-INs mediate prolonged dendritic inhibition correlated with memory trace strength",
+          "value_source_sentence": "we find that L1 NDNF-INs mediate a prolonged form of inhibition in distal pyramidal neuron dendrites that correlates with the strength of the memory t...",
+          "scope_region": "mouse auditory cortex layer 1",
+          "n_definition": "in vivo 2-photon imaging and electrophysiology",
+          "n_analyzed": null
+        },
+        {
+          "doi": "10.1523/jneurosci.0175-21.2021",
+          "value": "Cell-type-specific tonic GABA-A currents in human L1 interneurons",
+          "value_source_sentence": "We have recorded 101 interneurons in and near layer 1 from cortical tissue surgically resected from both male and female patients, visualized 84 of th...",
+          "scope_region": "human cortex layer 1",
+          "n_definition": "patch clamp recordings from human interneurons",
+          "n_analyzed": 101
+        }
+      ],
+      "homogeneity_check": "Studies use different species (rat, mouse, human) and measure different aspects of GABA signaling. Numerical comparison would be inappropriate; qualitative comparison of signaling modes is valid.",
+      "scope_population": "layer 1 / neurogliaform interneurons",
+      "taxonomic_level": "NDNF/neurogliaform cell class"
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "id": "gap_1",
+      "description": "Limited in vivo functional data on CCK basket cells due to lack of clean Cre driver lines",
+      "section": "7.2",
+      "severity": "high",
+      "papers_that_note_gap": []
+    },
+    {
+      "id": "gap_2",
+      "description": "Chandelier cell excitatory vs inhibitory debate lacks definitive in vivo measurements of GABA reversal potential at the AIS in behaving animals",
+      "section": "7.3",
+      "severity": "high",
+      "papers_that_note_gap": []
+    },
+    {
+      "id": "gap_3",
+      "description": "Fraction of interneurons that cannot be cleanly assigned to cardinal classes is poorly quantified across brain regions",
+      "section": "7.4",
+      "severity": "medium",
+      "papers_that_note_gap": []
+    },
+    {
+      "id": "gap_4",
+      "description": "Cross-species comparison of NDNF/Lamp5 subtypes is limited; most data from mouse with some human Patch-seq",
+      "section": "7.1",
+      "severity": "medium",
+      "papers_that_note_gap": []
+    },
+    {
+      "id": "gap_5",
+      "description": "Volume transmission from neurogliaform cells is primarily demonstrated in slice preparations; in vivo confirmation limited",
+      "section": "7.1",
+      "severity": "medium",
+      "papers_that_note_gap": []
+    }
+  ],
+  "unreplicated_claims": [
+    {
+      "claim": "Neurogliaform cells operate primarily through volume transmission rather than synaptic contacts",
+      "source_doi": [],
+      "years_since_publication": "5+",
+      "note": "While GABA-B receptor activation through volume transmission is well-established in vitro, the relative contribution of volume vs synaptic transmission in vivo remains unclear"
+    },
+    {
+      "claim": "Chandelier cells can be excitatory under certain conditions",
+      "source_doi": [
+        "10.3390/cells12081210"
+      ],
+      "years_since_publication": "15+",
+      "note": "Original finding of depolarized GABA at AIS has been replicated but whether this translates to excitation is still debated"
+    }
+  ]
+}

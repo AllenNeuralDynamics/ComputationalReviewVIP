@@ -1,0 +1,1417 @@
+{
+  "findings": [
+    {
+      "claim": "PV, SST, and VIP reliably identify three non-overlapping distinct subpopulations of mouse cortical GABAergic interneurons, collectively accounting for about 60% of the GABAergic cell population.",
+      "claim_source_sentence": "PV, SOM and vasointenstinal peptide (VIP) reliably identify three non-overlapping distinct subpopulations, as there was no overlap of immunoreactivity between PV and all the other chemical markers tested, and SOM and VIP did not show any overlap in labeled neurons in all the cortical areas.",
+      "evidence": "",
+      "effect_size": "~60% of GABAergic population accounted for by PV+SST+VIP",
+      "effect_size_source_sentence": "We quantified and assessed the percentages of marker-positive GABAergic cells, and showed that the non-overlapping subpopulations (i.e., PV+, SOM+ and VIP+ cells) accounted for about 60% of the GABAergic cell population.",
+      "n": null,
+      "study_system": "mouse somatosensory cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.1869-10.2010"
+      ],
+      "doi": "10.1002/cne.22229",
+      "text_access": "fulltext",
+      "cite_key": "Xu2010"
+    },
+    {
+      "claim": "The serotonin 5-HT3A receptor is expressed in most, if not all, neocortical GABAergic interneurons that do not express PV or SST, establishing 5-HT3aR as a marker for the third cardinal class including all CGE-derived interneurons.",
+      "claim_source_sentence": "We show that, in the somatosensory cortex of the mouse, the serotonin 5-hydroxytryptamine 3A (5-HT 3A ) receptor, the only ionotropic serotonergic receptor, is expressed in most, if not all, neocortical GABAergic interneurons that do not express PV or SST.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse somatosensory cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1002/cne.22229",
+        "10.1523/jneurosci.4515-09.2010"
+      ],
+      "doi": "10.1523/jneurosci.1869-10.2010",
+      "text_access": "abstract_only",
+      "cite_key": "Lee2010a"
+    },
+    {
+      "claim": "Three non-overlapping groups of interneurons\u2014PV, SST, and 5-HT3aR-expressing\u2014account for nearly 100% of neocortical GABAergic neurons, providing a tripartite framework for cortical interneuron classification.",
+      "claim_source_sentence": "Three groups of interneurons account for nearly 100% of neocortical GABAergic neurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse neocortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1002/cne.22229",
+        "10.1523/jneurosci.1869-10.2010"
+      ],
+      "doi": "10.1002/dneu.20853",
+      "text_access": "abstract_only",
+      "cite_key": "Rudy2011"
+    },
+    {
+      "claim": "Interneuron complexity in the telencephalon can be simplified by viewing them as elaborations of a finite group of developmentally specified cardinal classes, with MGE producing PV and SST classes and CGE producing VIP/5-HT3aR class.",
+      "claim_source_sentence": "interneuron complexity within the telencephalon can simplified by viewing them as elaborations of a much more finite group of developmentally specified cardinal classes.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse telencephalon",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1002/dneu.20853",
+        "10.1016/j.neuron.2016.06.033"
+      ],
+      "doi": "10.1038/nature12983",
+      "text_access": "fulltext",
+      "cite_key": "Kepecs2014"
+    },
+    {
+      "claim": "Single cell RNA-seq of adult mouse primary visual cortex identified 49 transcriptomic cell types including 23 GABAergic, 19 glutamatergic, and 7 non-neuronal types, establishing the first comprehensive transcriptomic cell type taxonomy for a cortical area.",
+      "claim_source_sentence": "We identify 49 transcriptomic cell types including 23 GABAergic, 19 glutamatergic and seven non-neuronal types.",
+      "evidence": "",
+      "effect_size": "49 transcriptomic cell types (23 GABAergic, 19 glutamatergic, 7 non-neuronal)",
+      "effect_size_source_sentence": "We identify 49 transcriptomic cell types including 23 GABAergic, 19 glutamatergic and seven non-neuronal types.",
+      "n": 1679,
+      "study_system": "mouse primary visual cortex (V1)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-018-0654-5",
+        "10.1016/j.cell.2021.04.021"
+      ],
+      "doi": "10.1038/nn.4216",
+      "text_access": "fulltext",
+      "cite_key": "Tasic2016"
+    },
+    {
+      "claim": "Deep single-cell RNA sequencing of 23,822 cells from mouse primary visual cortex and anterior lateral motor cortex defined 133 transcriptomic cell types. Nearly all GABAergic neuron types are shared across both areas, whereas most glutamatergic types are area-specific.",
+      "claim_source_sentence": "We define 133 transcriptomic cell types by deep, single-cell RNA sequencing. Nearly all types of GABA (\u03b3-aminobutyric acid)-containing neurons are shared across both areas, whereas most types of glutamatergic neurons were found in one of the two areas.",
+      "evidence": "",
+      "effect_size": "133 transcriptomic cell types from 23,822 cells",
+      "effect_size_source_sentence": "We define 133 transcriptomic cell types by deep, single-cell RNA sequencing.",
+      "n": 23822,
+      "study_system": "mouse primary visual cortex and anterior lateral motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2021.04.021"
+      ],
+      "doi": "10.1038/s41586-018-0654-5",
+      "text_access": "fulltext",
+      "cite_key": "Tasic2018"
+    },
+    {
+      "claim": "Unbiased single-cell RNA-seq of mouse cortex and hippocampus revealed major cell type classes and showed that interneurons of similar transcriptomic type are found across dissimilar brain regions.",
+      "claim_source_sentence": "Interneurons of similar type were found in dissimilar regions of the brain.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 3005,
+      "study_system": "mouse cortex and hippocampus",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nn.4216"
+      ],
+      "doi": "10.1126/science.aaa1934",
+      "text_access": "abstract_only",
+      "cite_key": "Zeisel2015"
+    },
+    {
+      "claim": "RNA sequencing of half a million single cells created a detailed census of cell types in the mouse nervous system. A hierarchical, data-driven taxonomy was derived where neurons were grouped by developmental anatomical units and neurotransmitter expression.",
+      "claim_source_sentence": "we used RNA sequencing of half a million single cells to create a detailed census of cell types in the mouse nervous system. We mapped cell types spatially and derived a hierarchical, data-driven taxonomy.",
+      "evidence": "",
+      "effect_size": "~500,000 single cells analyzed",
+      "effect_size_source_sentence": "we used RNA sequencing of half a million single cells to create a detailed census of cell types in the mouse nervous system.",
+      "n": 500000,
+      "study_system": "mouse nervous system",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2021.04.021"
+      ],
+      "doi": "10.1016/j.cell.2018.06.021",
+      "text_access": "fulltext",
+      "cite_key": "Zeisel2018"
+    },
+    {
+      "claim": "Profiling ~1.3 million cells covering the entire adult mouse isocortex and hippocampal formation revealed a comprehensive repertoire of glutamatergic and GABAergic neuron types and identified large-scale continuous and graded variation of cell types along isocortical depth and across cortical sheet.",
+      "claim_source_sentence": "We profiled ~1.3 million cells covering the entire adult mouse isocortex and HPF and derived a transcriptomic cell type taxonomy revealing a comprehensive repertoire of glutamatergic and GABAergic neuron types.",
+      "evidence": "",
+      "effect_size": "~1.3 million cells profiled",
+      "effect_size_source_sentence": "We profiled ~1.3 million cells covering the entire adult mouse isocortex and HPF",
+      "n": 1300000,
+      "study_system": "mouse isocortex and hippocampal formation",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-023-06808-9"
+      ],
+      "doi": "10.1016/j.cell.2021.04.021",
+      "text_access": "fulltext",
+      "cite_key": "Yao2021a"
+    },
+    {
+      "claim": "The BRAIN Initiative Cell Census Network produced a multimodal cell census of the mammalian primary motor cortex integrating transcriptomes, chromatin accessibility, DNA methylomes, spatially resolved transcriptomes, morphological and electrophysiological properties. Cross-species analysis achieved a consensus taxonomy conserved from mouse to marmoset and human.",
+      "claim_source_sentence": "cross-species analysis achieves a consensus taxonomy of transcriptomic types and their hierarchical organization that is conserved from mouse to marmoset and human.",
+      "evidence": "",
+      "effect_size": "Unified molecular genetic landscape integrating transcriptome, open chromatin, DNA methylation",
+      "effect_size_source_sentence": "reveals a unified molecular genetic landscape of cortical cell types that integrates their transcriptome, open chromatin and DNA methylation maps",
+      "n": null,
+      "study_system": "mouse, marmoset, and human primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03465-8",
+        "10.1038/s41586-021-03500-8"
+      ],
+      "doi": "10.1038/s41586-021-03950-0",
+      "text_access": "fulltext",
+      "cite_key": "BRAIN2021"
+    },
+    {
+      "claim": "Integration of transcriptomes and epigenomes from more than 500,000 individual cells in mouse primary motor cortex identified over 56 neuronal cell types that are highly replicable across analysis methods, sequencing technologies and modalities.",
+      "claim_source_sentence": "The resulting reference atlas\u2014containing over 56 neuronal cell types that are highly replicable across analysis methods, sequencing technologies and modalities\u2014is a comprehensive molecular and genomic account of the diverse neuronal and non-neuronal cell types in the mouse primary motor cortex.",
+      "evidence": "",
+      "effect_size": "56+ neuronal cell types from 500,000+ cells",
+      "effect_size_source_sentence": "containing over 56 neuronal cell types that are highly replicable across analysis methods, sequencing technologies and modalities",
+      "n": 500000,
+      "study_system": "mouse primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03950-0"
+      ],
+      "doi": "10.1038/s41586-021-03500-8",
+      "text_access": "fulltext",
+      "cite_key": "Yao2021b"
+    },
+    {
+      "claim": "Using MetaNeighbor to quantify cell type replicability across eight scRNA-seq datasets, 24 out of 45 interneuron subtypes showed evidence of replication, and large sets of variably expressed genes could identify replicable cell types with high accuracy.",
+      "claim_source_sentence": "We then apply this to novel interneuron subtypes, finding that 24/45 subtypes have evidence of replication, which enables the identification of robust candidate marker genes.",
+      "evidence": "",
+      "effect_size": "24/45 interneuron subtypes replicated across datasets",
+      "effect_size_source_sentence": "finding that 24/45 subtypes have evidence of replication",
+      "n": null,
+      "study_system": "mouse brain (meta-analysis of 8 datasets)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41467-018-03282-0",
+      "text_access": "fulltext",
+      "cite_key": "Crow2018"
+    },
+    {
+      "claim": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain was generated, representing the most comprehensive single-cell level analysis of mammalian brain cell types to date.",
+      "claim_source_sentence": "Molecularly defined and spatially resolved cell atlas of the whole mouse brain",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "whole mouse brain",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41586-023-06808-9",
+      "text_access": "abstract_only",
+      "cite_key": "Zhang2023"
+    },
+    {
+      "claim": "Current transcriptomic classification identifies approximately 56 excitatory transcriptomic cell types (IT, ET, CT classes) and approximately 60 inhibitory transcriptomic cell types (PV, SST, VIP, and Lamp5/Sncg subpopulations) in the cerebral cortex.",
+      "claim_source_sentence": "excitatory cells, which altogether comprise ~ 56 transcriptomic cell types (t-types). By the same means, inhibitory neurons were subdivided into parvalbumin (PV), somatostatin (SST), vasoactive intestinal polypeptide (VIP), and 'other (i.e. Lamp5/Sncg)' subpopulations, which altogether comprise ~ 60 t-types.",
+      "evidence": "",
+      "effect_size": "~60 inhibitory t-types; ~56 excitatory t-types",
+      "effect_size_source_sentence": "inhibitory neurons were subdivided into parvalbumin (PV), somatostatin (SST), vasoactive intestinal polypeptide (VIP), and 'other (i.e. Lamp5/Sncg)' subpopulations, which altogether comprise ~ 60 t-types.",
+      "n": null,
+      "study_system": "mammalian cerebral cortex (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-018-0654-5",
+        "10.1016/j.cell.2021.04.021"
+      ],
+      "doi": "10.1007/s00424-024-02923-2",
+      "text_access": "fulltext",
+      "cite_key": "Mao2024"
+    },
+    {
+      "claim": "Cortical inhibitory interneurons can be classified into morphological types including large basket, small basket, nest basket, chandelier, Martinotti, double bouquet, bipolar, bitufted, and neurogliaform cells, each with characteristic axonal arborization patterns and postsynaptic targets.",
+      "claim_source_sentence": "Interneurons of the neocortical inhibitory system",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortex (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn2402",
+        "10.1038/nrn3444"
+      ],
+      "doi": "10.1038/nrn1519",
+      "text_access": "abstract_only",
+      "cite_key": "Markram2004"
+    },
+    {
+      "claim": "The Petilla Interneuron Nomenclature Group established a standardized terminology for GABAergic interneuron features covering morphological, molecular, and electrophysiological properties, addressing the lack of consensus nomenclature that had hindered comparison across studies.",
+      "claim_source_sentence": "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cerebral cortex (nomenclature convention)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn3444"
+      ],
+      "doi": "10.1038/nrn2402",
+      "text_access": "abstract_only",
+      "cite_key": "The2008"
+    },
+    {
+      "claim": "Morphological classification of cortical interneurons suffers from inter-rater reliability problems; a community effort revealed that experienced neuroanatomists could not consistently agree on the classification of the same reconstructed neurons, particularly for axon-targeting subtypes.",
+      "claim_source_sentence": "New insights into the classification and nomenclature of cortical GABAergic interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cerebral cortex (review/community study)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/nrn3444",
+      "text_access": "abstract_only",
+      "cite_key": "DeFelipe2013"
+    },
+    {
+      "claim": "GABAergic cell subtypes in rat frontal cortex were classified by combined morphological, electrophysiological, and neurochemical criteria, revealing correlations between chemical markers (PV, SST, VIP, CCK, CR), firing patterns, and axonal morphology.",
+      "claim_source_sentence": "GABAergic cell subtypes and their synaptic connections in rat frontal cortex",
+      "evidence": "",
+      "effect_size": "Classified GABAergic cell subtypes by morphology, electrophysiology, and neurochemistry",
+      "effect_size_source_sentence": "GABAergic cell subtypes and their synaptic connections in rat frontal cortex",
+      "n": null,
+      "study_system": "rat frontal cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn1519",
+        "10.1002/cne.22229"
+      ],
+      "doi": "10.1093/cercor/7.6.476",
+      "text_access": "abstract_only",
+      "cite_key": "Kawaguchi1997"
+    },
+    {
+      "claim": "Nest basket cells in developing somatosensory cortex were characterized by their anatomical, physiological, molecular, and circuit properties, showing distinct features from large basket and chandelier cells.",
+      "claim_source_sentence": "Anatomical, Physiological, Molecular and Circuit Properties of Nest Basket Cells in the Developing Somatosensory Cortex",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "developing rat somatosensory cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1093/cercor/12.4.395",
+      "text_access": "abstract_only",
+      "cite_key": "Wang2002"
+    },
+    {
+      "claim": "Standardized patch-clamp recordings and biocytin reconstructions of 1,938 neurons in adult mouse visual cortex established a taxonomy of 17 electrophysiological types (e-types), 38 morphological types (m-types), and 46 combined morpho-electric types (me-types) with good correspondence to previously defined transcriptomic cell types.",
+      "claim_source_sentence": "We built a publicly-accessible online database, the Allen Cell Types Database...Quantitative features were used to classify neurons into distinct types using unsupervised methods. We established a taxonomy of morphologically- and electrophysiologically-defined cell types for this region of cortex with 17 e-types, 38 m-types, and 46 me-types and found good correspondence with previously-defined transcriptomic cell types",
+      "evidence": "",
+      "effect_size": "17 e-types, 38 m-types, 46 me-types from 1,938 neurons",
+      "effect_size_source_sentence": "We established a taxonomy of morphologically- and electrophysiologically-defined cell types for this region of cortex with 17 e-types, 38 m-types, and 46 me-types",
+      "n": 1938,
+      "study_system": "adult mouse visual cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "doi": "10.1038/s41593-019-0417-0",
+      "text_access": "fulltext",
+      "cite_key": "Gouwens2019"
+    },
+    {
+      "claim": "Integrated analysis of transcriptomes, electrophysiology, and morphology of over 4,200 mouse visual cortical GABAergic interneurons (517 with morphological reconstructions) defined 28 met-types with congruent morphological, electrophysiological, and transcriptomic properties and robust mutual predictability.",
+      "claim_source_sentence": "Through multimodal integrated analysis we define 28 met-types that have congruent morphological, electrophysiological, and transcriptomic properties and robust mutual predictability.",
+      "evidence": "",
+      "effect_size": "28 met-types from 4,200+ interneurons (517 reconstructed)",
+      "effect_size_source_sentence": "Through multimodal integrated analysis we define 28 met-types that have congruent morphological, electrophysiological, and transcriptomic properties and robust mutual predictability.",
+      "n": 4200,
+      "study_system": "adult mouse visual cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-020-2907-3"
+      ],
+      "doi": "10.1016/j.cell.2020.09.057",
+      "text_access": "fulltext",
+      "cite_key": "Gouwens2020a"
+    },
+    {
+      "claim": "Patch-seq of more than 1,300 neurons in adult mouse primary motor cortex showed that while broad transcriptomic families (Vip, Pvalb, Sst) have distinct non-overlapping morpho-electric phenotypes, individual transcriptomic types within families form continuous and correlated transcriptomic and morpho-electrical landscapes without clear boundaries.",
+      "claim_source_sentence": "there was a continuum of variability in morphology and electrophysiology, with neighbouring transcriptomic cell types showing similar morpho-electric features, often without clear boundaries between them.",
+      "evidence": "",
+      "effect_size": "1,300+ neurons with Patch-seq; continuous within-family variation",
+      "effect_size_source_sentence": "we used Patch-seq to combine patch-clamp recording, biocytin staining, and single-cell RNA sequencing of more than 1,300 neurons in adult mouse primary motor cortex",
+      "n": 1300,
+      "study_system": "adult mouse primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "doi": "10.1038/s41586-020-2907-3",
+      "text_access": "fulltext",
+      "cite_key": "Scala2021"
+    },
+    {
+      "claim": "Single-cell transcriptomics of hippocampal CA1 inhibitory neurons revealed both discrete classes and continuous variation within classes, supporting a model where interneuron types form a hierarchy with clear class-level distinctions but within-class continua.",
+      "claim_source_sentence": "Classes and continua of hippocampal CA1 inhibitory neurons revealed by single-cell transcriptomics",
+      "evidence": "",
+      "effect_size": "Classes and continua of hippocampal CA1 inhibitory neurons",
+      "effect_size_source_sentence": "Classes and continua of hippocampal CA1 inhibitory neurons revealed by single-cell transcriptomics",
+      "n": null,
+      "study_system": "mouse hippocampal CA1",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-020-2907-3"
+      ],
+      "doi": "10.1371/journal.pbio.2006387",
+      "text_access": "fulltext",
+      "cite_key": "Harris2018"
+    },
+    {
+      "claim": "A specialized GABAergic neuron subtype ('rosehip cell') with large rosehip-like axonal boutons and compact arborization was identified in human cortical layer 1 with an immunohistochemical profile (GAD1+/CCK+, CNR1-/SST-/CALB2-/PVALB-) matching a single transcriptomically-defined type whose molecular signature is not seen in mouse cortex.",
+      "claim_source_sentence": "These rosehip cells show an immunohistochemical profile (GAD1/CCK-positive, CNR1/SST/CALB2/PVALB-negative) matching a single transcriptomically-defined cell type whose specific molecular marker signature is not seen in mouse cortex.",
+      "evidence": "",
+      "effect_size": "10 GABAergic interneuron subtypes in human L1; rosehip cells are GAD1+/CCK+, CNR1-/SST-/CALB2-/PVALB-",
+      "effect_size_source_sentence": "we identify ten GABAergic interneuron subtypes with combinatorial gene signatures in human cortical layer 1 and characterize a novel group of human interneurons with anatomical features never described in rodents",
+      "n": null,
+      "study_system": "human cortical layer 1",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41593-018-0205-2",
+      "text_access": "fulltext",
+      "cite_key": "Boldog2018"
+    },
+    {
+      "claim": "Human double-bouquet cells belong to two transcriptomic types within the SST subclass with enrichment in temporal versus frontal cortex regions. Patch-seq analysis of 778 human neurons across 44 of 45 GABAergic transcriptomic types revealed that the SST FRZB type exhibits a gene expression continuum between PVALB and SST subclasses but morpho-electric properties align with PVALB.",
+      "claim_source_sentence": "Double-bouquet cells of the human neocortex belong to two transcriptomic types within the SST subclass with enrichment in temporal versus frontal cortex regions.",
+      "evidence": "",
+      "effect_size": "778 human neurons across 44/45 GABAergic transcriptomic types",
+      "effect_size_source_sentence": "Patch-seq sampling facilitated targeted acquisition and analysis of 778 human neurons in cortical layers 2 to 6, across 44 out of 45 \u03b3-aminobutyric acid\u2013producing (GABAergic) transcriptomic types.",
+      "n": 778,
+      "study_system": "human neocortex (temporal and frontal regions)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1126/science.adf6484",
+      "text_access": "fulltext",
+      "cite_key": "Lee2023a"
+    },
+    {
+      "claim": "Comparison of single-nucleus RNA-seq data from human middle temporal gyrus and mouse cortex identified a highly diverse set of excitatory and inhibitory neuronal types with a surprisingly well-conserved cellular architecture enabling matching of homologous types, but also extensive differences in proportions, laminar distributions, gene expression, and morphology between species.",
+      "claim_source_sentence": "Comparison to similar mouse cortex single cell RNA-sequencing datasets revealed a surprisingly well-conserved cellular architecture that enables matching of homologous types and predictions of human cell type properties. Despite this general conservation, we also find extensive differences between homologous human and mouse cell types, including dramatic alterations in proportions, laminar distributions, gene expression, and morphology.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human middle temporal gyrus vs mouse cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03465-8"
+      ],
+      "doi": "10.1038/s41586-019-1506-7",
+      "text_access": "fulltext",
+      "cite_key": "Hodge2019"
+    },
+    {
+      "claim": "Layer 1 contains four distinct populations of GABAergic interneurons, each with unique molecular profiles, morphology, and electrophysiology, including a previously overlooked population called 'canopy cells' representing 40% of L1 interneurons.",
+      "claim_source_sentence": "We discovered that L1 contains four distinct populations of INs, each with a unique molecular profile, morphology, and electrophysiology, including a previously overlooked IN population (named here 'canopy cells') representing 40% of L1 INs.",
+      "evidence": "",
+      "effect_size": "4 populations; canopy cells = 40% of L1 INs",
+      "effect_size_source_sentence": "including a previously overlooked IN population (named here 'canopy cells') representing 40% of L1 INs.",
+      "n": null,
+      "study_system": "mouse neocortical layer 1",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.1613-18.2018",
+      "text_access": "abstract_only",
+      "cite_key": "Schuman2019"
+    },
+    {
+      "claim": "In mouse layer 4, somatosensory cortex contains stellate excitatory neurons and non-Martinotti SST+ interneurons, while visual cortex has pyramidal excitatory neurons and Martinotti SST+ cells. These morphologically distinct SST+ interneurons correspond to different transcriptomic cell types and are differentially integrated into the local circuit.",
+      "claim_source_sentence": "Nearly all excitatory neurons were pyramidal and all somatostatin-positive (SOM + ) non-fast-spiking interneurons were Martinotti cells. In contrast, in somatosensory cortex (S1), excitatory neurons were mostly stellate and SOM + interneurons were non-Martinotti.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex (V1) and somatosensory cortex (S1) layer 4",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41467-019-12058-z",
+      "text_access": "fulltext",
+      "cite_key": "Scala2019"
+    },
+    {
+      "claim": "Somatostatin-containing neocortical interneurons comprise at least two distinct subtypes: X98 GFP+ cells are infragranular, calbindin-containing, layer 1-targeting Martinotti cells with low-threshold calcium spikes, while X94 GFP+ cells are stuttering interneurons with quasi-fast-spiking properties in thalamo-recipient layers. These subtypes segregate nearly perfectly by neurochemistry, electrophysiology, and axonal distribution.",
+      "claim_source_sentence": "X98 line, GFP expression was found in infragranular, calbindin-containing, layer 1-targeting ('Martinotti') cells that had a propensity to fire low-threshold calcium spikes, whereas X94 GFP+ cells were stuttering interneurons with quasi fast-spiking properties, residing in and targeting the thalamo-recipient neocortical layers.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse barrel cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.2415-17.2017"
+      ],
+      "doi": "10.1523/jneurosci.0661-06.2006",
+      "text_access": "abstract_only",
+      "cite_key": "Ma2006"
+    },
+    {
+      "claim": "Three morphological subtypes of layer 5 SST interneurons were identified: T-shaped Martinotti cells innervating L1 (~10%), fanning-out Martinotti cells innervating L2/3 (~50%), and non-Martinotti cells innervating L4 (~40%). Each subtype has distinct electrophysiological properties and connectivity patterns.",
+      "claim_source_sentence": "L5 SST-INs with distinct electrophysiological properties: T-shaped Martinotti cells innervate L1, and are low-threshold spiking; fanning-out Martinotti cells innervate L2/3 and the lower half of L1, and show adapting firing patterns; non-Martinotti cells innervate L4, and show a quasi-fast spiking firing pattern.",
+      "evidence": "",
+      "effect_size": "T-shaped ~10%, fanning-out ~50%, non-Martinotti ~40% of L5 SST",
+      "effect_size_source_sentence": "T-shaped Martinotti, fanning-out Martinotti, and Non-Martinotti cells represent \u223c10, \u223c50, and \u223c40% of L5 SST-INs, respectively.",
+      "n": null,
+      "study_system": "mouse barrel cortex layer 5",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0661-06.2006"
+      ],
+      "doi": "10.1523/jneurosci.2415-17.2017",
+      "text_access": "abstract_only",
+      "cite_key": "Nigro2018"
+    },
+    {
+      "claim": "Nine distinct types of layer 2/3 inhibitory neurons in mouse somatosensory cortex each received distinct excitatory and inhibitory laminar input patterns. Cell type specific differences in laminar sources suggest cell-type differences in relationships to lemniscal versus paralemniscal pathways.",
+      "claim_source_sentence": "each inhibitory cell type received distinct excitatory and inhibitory laminar input patterns...complementary input patterns from layer 4 versus layer 5A suggest cell type differences in their relationships to lemniscal versus paralemniscal pathways.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse somatosensory cortex layer 2/3",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.4104-08.2009",
+      "text_access": "abstract_only",
+      "cite_key": "Xu2009"
+    },
+    {
+      "claim": "Unsupervised clustering of 200 NPY-expressing interneurons in rat barrel cortex layers I-IV consistently disclosed three main types: neurogliaform-like cells (most frequent, superficial, nNOS+), Martinotti-like cells (SST+, ascending axon to L1, most excitable), and fast-spiking PV+ basket cells with pronounced spike latency.",
+      "claim_source_sentence": "These classification schemes confirmed that NPY neurons are nearly exclusively GABAergic and consistently disclosed three main types of NPY-expressing interneurons.",
+      "evidence": "",
+      "effect_size": "3 NPY interneuron types from 200 cells",
+      "effect_size_source_sentence": "we characterized, in acute slices of rat barrel cortex, 200 cortical neurons of layers I\u2013IV",
+      "n": 200,
+      "study_system": "rat barrel cortex layers I-IV",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.0058-09.2009",
+      "text_access": "abstract_only",
+      "cite_key": "Karagiannis2009"
+    },
+    {
+      "claim": "Caudal ganglionic eminence-derived interneurons are more numerous (~30% of all cortical interneurons) and diverse (at least nine subtypes) than previously estimated. CGE-derived interneurons preferentially occupy superficial cortical layers independent of birthdate and most express either Reelin or VIP.",
+      "claim_source_sentence": "CGE-derived interneurons are both considerably greater in number (\u223c30% of all cortical interneurons) and diversity (comprised by at least nine distinct subtypes). Furthermore, we found that a large proportion of CGE-derived cortical interneurons, including the neurogliaform subtype, express the glycoprotein Reelin.",
+      "evidence": "",
+      "effect_size": "~30% of all cortical interneurons; \u22659 subtypes",
+      "effect_size_source_sentence": "CGE-derived interneurons are both considerably greater in number (\u223c30% of all cortical interneurons) and diversity (comprised by at least nine distinct subtypes).",
+      "n": null,
+      "study_system": "mouse cortex (genetic fate mapping)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.1869-10.2010"
+      ],
+      "doi": "10.1523/jneurosci.4515-09.2010",
+      "text_access": "abstract_only",
+      "cite_key": "Miyoshi2010"
+    },
+    {
+      "claim": "VIP interneurons mediate disinhibitory control by suppressing primarily SST and a fraction of PV interneurons, creating a basic disinhibitory circuit module. During auditory discrimination, reinforcement signals strongly activated VIP neurons and increased the gain of a functional subpopulation of principal neurons.",
+      "claim_source_sentence": "We identified a basic disinhibitory circuit module in which activation of VIP interneurons transiently suppresses primarily somatostatin- and a fraction of parvalbumin-expressing inhibitory interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse auditory cortex and medial prefrontal cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.neuron.2016.06.033"
+      ],
+      "doi": "10.1038/nature12676",
+      "text_access": "fulltext",
+      "cite_key": "Pi2013"
+    },
+    {
+      "claim": "GABAergic interneurons represent a minority of the total neocortical neuronal population (~10-20%) but are highly heterogeneous, forming functional classes based on morphological, electrophysiological, and molecular features as well as connectivity and in vivo activity patterns. Multiple cell types within simple circuit motifs diversify and increase computational power of cortical networks.",
+      "claim_source_sentence": "GABAergic interneurons, although a minority of the total neocortical neuronal population, are highly heterogeneous, forming functional classes based on their morphological, electrophysiological and molecular features as well as connectivity and in vivo patterns of activity.",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortex (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn1519",
+        "10.1038/nature12983"
+      ],
+      "doi": "10.1016/j.neuron.2016.06.033",
+      "text_access": "fulltext",
+      "cite_key": "Tremblay2016"
+    },
+    {
+      "claim": "Cortical interneuron development involves specification in the medial ganglionic eminence (MGE, producing PV and SST types) and caudal ganglionic eminence (CGE, producing VIP and Lamp5/Sncg types), followed by tangential migration to the cortex where local cues further diversify interneuron subtypes.",
+      "claim_source_sentence": "Development and Functional Diversification of Cortical Interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cerebral cortex (developmental review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1186/2045-3701-3-19"
+      ],
+      "doi": "10.1016/j.neuron.2018.10.009",
+      "text_access": "fulltext",
+      "cite_key": "Lim2018"
+    },
+    {
+      "claim": "GABAergic cortical interneurons are generated in ganglionic eminences of the ventral telencephalon and undergo tangential migration to reach the cortex. Their specification involves transcription factor cascades including Nkx2.1, Lhx6, and Sox6 for MGE-derived types and Sp8, Prox1 for CGE-derived types.",
+      "claim_source_sentence": "Development and specification of GABAergic cortical interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex (developmental review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.neuron.2018.10.009"
+      ],
+      "doi": "10.1186/2045-3701-3-19",
+      "text_access": "fulltext",
+      "cite_key": "Kelsom2013"
+    },
+    {
+      "claim": "MERFISH spatial transcriptomics of mouse primary motor cortex revealed the spatial organization of transcriptomic cell types, demonstrating that most cell types show distinct laminar distributions but with substantial overlap and mixing between layers.",
+      "claim_source_sentence": "Spatially resolved cell atlas of the mouse primary motor cortex by MERFISH",
+      "evidence": "",
+      "effect_size": "Spatial atlas of cell types using MERFISH with 252 genes",
+      "effect_size_source_sentence": "Spatially resolved cell atlas of the mouse primary motor cortex by MERFISH",
+      "n": null,
+      "study_system": "mouse primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03950-0"
+      ],
+      "doi": "10.1038/s41586-021-03705-x",
+      "text_access": "abstract_only",
+      "cite_key": "Zhang2021b"
+    },
+    {
+      "claim": "Comparative cellular analysis of motor cortex across human, marmoset, and mouse revealed a broadly conserved interneuron taxonomy across species with shared GABAergic neuron subclasses (PV, SST, VIP, Lamp5) but species-specific differences in proportions, gene expression, and transcriptomic complexity.",
+      "claim_source_sentence": "Comparative cellular analysis of motor cortex in human, marmoset and mouse",
+      "evidence": "",
+      "effect_size": "Conservation of all major GABAergic subclasses across 3 species",
+      "effect_size_source_sentence": "Comparative cellular analysis of motor cortex in human, marmoset and mouse",
+      "n": null,
+      "study_system": "human, marmoset, and mouse primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-019-1506-7",
+        "10.1038/s41586-021-03950-0"
+      ],
+      "doi": "10.1038/s41586-021-03465-8",
+      "text_access": "abstract_only",
+      "cite_key": "Bakken2021"
+    },
+    {
+      "claim": "Complete reconstructions of 1,741 neurons from cortex, claustrum, thalamus, striatum and other mouse brain regions identified 11 major projection neuron types. Fine-grained morphological diversity often does not readily correlate with transcriptomic subtypes derived from unsupervised clustering.",
+      "claim_source_sentence": "fine-grained morphological diversity often does not readily correlate with transcriptomic subtypes derived from unsupervised clustering, highlighting the need for single-cell cross-modality studies.",
+      "evidence": "",
+      "effect_size": "1,741 neurons fully reconstructed; 11 major projection types",
+      "effect_size_source_sentence": "We fully reconstructed 1,741 neurons from cortex, claustrum, thalamus, striatum and other brain regions in mice. We identified 11 major projection neuron types",
+      "n": 1741,
+      "study_system": "mouse brain (multiple regions)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41586-021-03941-1",
+      "text_access": "fulltext",
+      "cite_key": "Peng2021"
+    },
+    {
+      "claim": "Neurogliaform cells were identified as a source of slow inhibition in the neocortex, providing slow GABAA and GABAB receptor-mediated inhibition through volume transmission rather than point-to-point synaptic transmission.",
+      "claim_source_sentence": "Identified Sources and Targets of Slow Inhibition in the Neocortex",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat neocortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0058-09.2009"
+      ],
+      "doi": "10.1126/science.1082053",
+      "text_access": "abstract_only",
+      "cite_key": "Tamas2003"
+    },
+    {
+      "claim": "Neocortical Layer 1 contains specialized interneuron populations including NDNF-expressing cells that provide elegant solutions for top-down and bottom-up integration through distinct inhibitory mechanisms targeting apical dendrites of pyramidal cells.",
+      "claim_source_sentence": "Neocortical Layer 1: An Elegant Solution to Top-Down and Bottom-Up Integration",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortical layer 1 (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.1613-18.2018"
+      ],
+      "doi": "10.1146/annurev-neuro-100520-012117",
+      "text_access": "abstract_only",
+      "cite_key": "Schuman2021"
+    },
+    {
+      "claim": "Mapping of neocortical local circuitry revealed cell-type specific connectivity rules where different interneuron types form stereotyped connections with excitatory and inhibitory neighbors, including preferential targeting of specific dendritic compartments.",
+      "claim_source_sentence": "Functional maps of neocortical local circuitry",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortex (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.4104-08.2009"
+      ],
+      "doi": "10.3389/neuro.01.1.1.002.2007",
+      "text_access": "abstract_only",
+      "cite_key": "Thomson2007"
+    },
+    {
+      "claim": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types showed broadly concordant results for cell type identification, validating the use of nuclear RNA profiling for brain cell classification.",
+      "claim_source_sentence": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1371/journal.pone.0209648",
+      "text_access": "abstract_only",
+      "cite_key": "Bakken2018"
+    },
+    {
+      "claim": "The neocortical inhibitory system comprises diverse GABAergic interneuron types that can be classified by multiple criteria including morphology, electrophysiology, and neurochemistry, with each classification scheme capturing different aspects of interneuron diversity.",
+      "claim_source_sentence": "Neocortical Inhibitory System",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortex (review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.14712/fb2009055060201",
+      "text_access": "abstract_only",
+      "cite_key": "Druga2009"
+    },
+    {
+      "claim": "Complete cellular anatomy of the mouse primary motor cortex was reconstructed using cross-modal analysis of transcriptomic, epigenomic, and anatomical data, revealing the spatial organization of molecularly defined cell types across cortical layers.",
+      "claim_source_sentence": "Cellular anatomy of the mouse primary motor cortex",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse primary motor cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03705-x",
+        "10.1038/s41586-021-03950-0"
+      ],
+      "doi": "10.1038/s41586-021-03970-w",
+      "text_access": "abstract_only",
+      "cite_key": "MuozCastaeda2021"
+    },
+    {
+      "claim": "Serotonin modulates cortical interneuron activity through cell-type specific receptor expression, with 5-HT3 receptors primarily on CGE-derived interneurons providing fast ionotropic excitation and other receptor subtypes providing slower neuromodulation.",
+      "claim_source_sentence": "Serotonin modulation of cortical neurons and networks",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex (review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.1869-10.2010"
+      ],
+      "doi": "10.3389/fnint.2013.00025",
+      "text_access": "abstract_only",
+      "cite_key": "Celada2013"
+    },
+    {
+      "claim": "Layer 1 neocortex serves as a hub for gating and integrating multidimensional signals through specialized interneuron populations including NDNF+/neurogliaform and VIP+ cells, each receiving distinct long-range inputs.",
+      "claim_source_sentence": "Layer 1 neocortex: Gating and integrating multidimensional signals",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "neocortical layer 1 (review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1016/j.neuron.2023.09.041",
+      "text_access": "abstract_only",
+      "cite_key": "Huang2024a"
+    },
+    {
+      "claim": "Cortical GABA interneurons, distinguished by neurochemical markers VIP, SST, NOS, and NPY, function as relays for subcortical vasoactive pathways and contribute to neurovascular coupling, with neurochemically distinct interneuron types controlling different aspects of local blood flow.",
+      "claim_source_sentence": "Cortical GABA Interneurons in Neurovascular Coupling: Relays for Subcortical Vasoactive Pathways",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat cerebral cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.3065-04.2004",
+      "text_access": "abstract_only",
+      "cite_key": "Cauli2004"
+    },
+    {
+      "claim": "Lhx6 activity is required for the normal migration and specification of cortical interneurons, with loss of Lhx6 disrupting the production of PV+ and SST+ interneurons from the MGE.",
+      "claim_source_sentence": "Lhx6 Activity Is Required for the Normal Migration and Specification of Cortical Interneuron Subtypes",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse embryonic cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1186/2045-3701-3-19"
+      ],
+      "doi": "10.1523/jneurosci.3055-06.2007",
+      "text_access": "abstract_only",
+      "cite_key": "Liodis2007"
+    },
+    {
+      "claim": "A blueprint for the spatiotemporal origins of mouse hippocampal interneuron diversity demonstrates that different interneuron subtypes are generated from distinct progenitor domains in the ganglionic eminences at specific developmental timepoints.",
+      "claim_source_sentence": "A Blueprint for the Spatiotemporal Origins of Mouse Hippocampal Interneuron Diversity",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse hippocampus (developmental)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.0323-11.2011",
+      "text_access": "abstract_only",
+      "cite_key": "Tricoire2011"
+    },
+    {
+      "claim": "A survey of human brain transcriptome diversity at the single cell level revealed distinct neuronal and non-neuronal cell types including multiple inhibitory neuron populations distinguished by expression of canonical markers.",
+      "claim_source_sentence": "A survey of human brain transcriptome diversity at the single cell level",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": 466,
+      "study_system": "human cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-019-1506-7"
+      ],
+      "doi": "10.1073/pnas.1507125112",
+      "text_access": "abstract_only",
+      "cite_key": "Darmanis2015"
+    },
+    {
+      "claim": "Diverse excitatory and inhibitory neurons contribute differentially to recurrent network activity in mouse visual cortex, with PV interneurons providing broad feedforward inhibition and SST interneurons providing feedback inhibition.",
+      "claim_source_sentence": "Contributions of Diverse Excitatory and Inhibitory Neurons to Recurrent Network Activity in Mouse Visual Cortex",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nature12676"
+      ],
+      "doi": "10.1523/jneurosci.2279-14.2015",
+      "text_access": "abstract_only",
+      "cite_key": "Neske2015"
+    },
+    {
+      "claim": "Single-cell RNA-seq of the mouse striatum revealed distinct cell types including multiple interneuron types, providing a comparative framework for understanding how interneuron diversity varies across brain regions.",
+      "claim_source_sentence": "Cellular Taxonomy of the Mouse Striatum as Revealed by Single-Cell RNA-Seq",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse striatum",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2018.06.021"
+      ],
+      "doi": "10.1016/j.celrep.2016.06.059",
+      "text_access": "abstract_only",
+      "cite_key": "Gokce2016"
+    },
+    {
+      "claim": "A molecular census of arcuate hypothalamus cell types using Drop-seq identified 45 distinct populations, demonstrating the applicability of transcriptomic methods for cell type discovery across brain regions beyond cortex.",
+      "claim_source_sentence": "A molecular census of arcuate hypothalamus and median eminence cell types",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse arcuate hypothalamus",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/nn.4495",
+      "text_access": "abstract_only",
+      "cite_key": "Campbell2017"
+    },
+    {
+      "claim": "Transcriptomic profiling of embryonic mouse cortex revealed that cortical interneuron diversity emerges early in development, with cardinal classes distinguishable at embryonic stages before migration into the cortex is complete.",
+      "claim_source_sentence": "Early emergence of cortical interneuron diversity in the mouse embryo",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse embryonic cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1126/science.aar6821",
+      "text_access": "abstract_only",
+      "cite_key": "Mi2018"
+    },
+    {
+      "claim": "VIP interneurons mediate localized lateral disinhibition by preferentially targeting SST Martinotti cells, creating spatially specific 'holes in the blanket of inhibition' that enhance processing in local cortical domains.",
+      "claim_source_sentence": "Opening Holes in the Blanket of Inhibition: Localized Lateral Disinhibition by VIP Interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nature12676"
+      ],
+      "doi": "10.1523/jneurosci.3646-15.2016",
+      "text_access": "abstract_only",
+      "cite_key": "Karnani2016b"
+    },
+    {
+      "claim": "Distinct learning-induced changes in stimulus selectivity and interactions among GABAergic interneuron subtypes in mouse visual cortex demonstrate that PV, SST, and VIP interneurons show functionally distinct responses during associative learning, consistent with their classification into separate cardinal classes.",
+      "claim_source_sentence": "Distinct learning-induced changes in stimulus selectivity and interactions of GABAergic interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41593-018-0143-z",
+      "text_access": "abstract_only",
+      "cite_key": "Khan2018"
+    },
+    {
+      "claim": "Single-cell and spatial transcriptomics are deciphering brain complexity, with interneuron classification being refined by integration of molecular, electrophysiological, and spatial data.",
+      "claim_source_sentence": "Single-cell and spatial transcriptomics: deciphering brain complexity in health and disease",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "brain (review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41582-023-00809-y",
+      "text_access": "abstract_only",
+      "cite_key": "Piwecka2023"
+    },
+    {
+      "claim": "Layer 5 inhibitory circuits contain diverse interneuron types including PV basket and chandelier cells, SST Martinotti and non-Martinotti cells, and VIP bipolar cells that form specific connection motifs with excitatory projection neurons targeting different output pathways.",
+      "claim_source_sentence": "Inhibitory Circuits in Cortical Layer 5",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortical layer 5 (review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.3389/fncir.2016.00035",
+      "text_access": "abstract_only",
+      "cite_key": "Naka2016"
+    },
+    {
+      "claim": "Cortical GABAergic dysfunction involving specific interneuron subtypes (particularly PV and SST classes) contributes to stress and depression, with different cardinal classes showing differential vulnerability to stress-related pathology.",
+      "claim_source_sentence": "Cortical GABAergic Dysfunction in Stress and Depression: New Insights for Therapeutic Interventions",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex (disease review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.3389/fncel.2019.00087",
+      "text_access": "abstract_only",
+      "cite_key": "Fogaa2019"
+    },
+    {
+      "claim": "The generation and diversification of cortical interneuron subtypes involves complex transcription factor cascades originating in the ganglionic eminences, with disruptions in these developmental programs contributing to neurodevelopmental disorders.",
+      "claim_source_sentence": "The generation and diversification of cortical interneurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex (developmental)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1007/s11689-009-9023-x",
+      "text_access": "abstract_only",
+      "cite_key": "Gogolla2009a"
+    },
+    {
+      "claim": "Transgenic mice for intersectional targeting of neural sensors and effectors allowed genetic access to specific interneuron subtypes by combining Cre and Flp recombinase driver lines, enabling more precise functional studies of interneuron diversity beyond the three cardinal classes.",
+      "claim_source_sentence": "Transgenic Mice for Intersectional Targeting of Neural Sensors and Effectors with High Specificity and Performance",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex (genetic tools)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1016/j.neuron.2015.02.022",
+      "text_access": "abstract_only",
+      "cite_key": "Madisen2015"
+    },
+    {
+      "claim": "Neocortical chandelier cells produce a depolarizing effect at the axon initial segment of pyramidal neurons, challenging the assumption that all GABAergic inputs are inhibitory and raising questions about whether chandelier cell activation is excitatory or inhibitory in vivo.",
+      "claim_source_sentence": "Depolarizing effect of neocortical chandelier neurons",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse/rat neocortex",
+      "replication_status": "contested",
+      "replication_evidence_dois": [],
+      "doi": "10.3389/neuro.04.015.2009",
+      "text_access": "abstract_only",
+      "cite_key": "Woodruff2009"
+    },
+    {
+      "claim": "Human neocortical expansion involves glutamatergic neuron diversification, and cross-species analysis revealed that while inhibitory neuron types are broadly conserved, excitatory neuron diversity is significantly expanded in humans compared to other primates.",
+      "claim_source_sentence": "Human neocortical expansion involves glutamatergic neuron diversification",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human, macaque, and mouse cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03465-8"
+      ],
+      "doi": "10.1038/s41586-021-03813-8",
+      "text_access": "abstract_only",
+      "cite_key": "Berg2021"
+    },
+    {
+      "claim": "Patch-seq methodology combining patch-clamp electrophysiology with single-cell RNA sequencing enables simultaneous measurement of transcriptomic, electrophysiological, and morphological properties from the same cell, serving as the primary bridge for multimodal cell type classification.",
+      "claim_source_sentence": "Patch-seq: Past, Present, and Future",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex (methods review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1523/jneurosci.1653-20.2020",
+      "text_access": "abstract_only",
+      "cite_key": "Lipovsek2021"
+    },
+    {
+      "claim": "Pyramidal cell regulation of interneuron survival sculpts cortical networks, with cell-autonomous activity determining which interneurons survive during the postnatal critical period, establishing that the final ratio and diversity of cortical interneuron types is sculpted by activity-dependent processes.",
+      "claim_source_sentence": "Pyramidal cell regulation of interneuron survival sculpts cortical networks",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex (developmental)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/s41586-018-0139-6",
+      "text_access": "abstract_only",
+      "cite_key": "Wong2018"
+    },
+    {
+      "claim": "GABAergic interneuron subtypes defined by calcium-binding proteins (PV, CR, CB) and neuropeptides (SST, VIP, CCK, NPY) show selective vulnerability in schizophrenia and bipolar disorder, underscoring the functional significance of neurochemical classification schemes.",
+      "claim_source_sentence": "GABAergic Interneurons Implications for Understanding Schizophrenia and Bipolar Disorder",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "human cortex (disease review)",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/nrn3444"
+      ],
+      "doi": "10.1016/s0893-133x(01)00225-1",
+      "text_access": "abstract_only",
+      "cite_key": "Benes2001"
+    },
+    {
+      "claim": "A viral strategy for targeting and manipulating interneurons across vertebrate species using enhancer-driven approaches demonstrates conservation of interneuron regulatory elements across species, supporting the utility of molecular classification for cross-species studies.",
+      "claim_source_sentence": "A viral strategy for targeting and manipulating interneurons across vertebrate species",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse, ferret, primate cortex",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/nn.4430",
+      "text_access": "abstract_only",
+      "cite_key": "Dimidschstein2016"
+    },
+    {
+      "claim": "Control of synaptic plasticity in deep cortical networks involves layer-specific interactions between interneuron types and pyramidal cells, with SST interneurons gating dendritic calcium signals critical for learning-related plasticity.",
+      "claim_source_sentence": "Control of synaptic plasticity in deep cortical networks",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cortex (review)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/nrn.2018.6",
+      "text_access": "abstract_only",
+      "cite_key": "Roelfsema2018"
+    },
+    {
+      "claim": "Molecular, spatial, and functional single-cell profiling of the hypothalamic preoptic region demonstrated that transcriptomic clustering can identify cell types with distinct spatial positions and functional roles, providing a methodological template applied subsequently to cortical interneuron classification.",
+      "claim_source_sentence": "Molecular, spatial, and functional single-cell profiling of the hypothalamic preoptic region",
+      "evidence": "",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse hypothalamus",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2018.06.021"
+      ],
+      "doi": "10.1126/science.aau5324",
+      "text_access": "abstract_only",
+      "cite_key": "Moffitt2018"
+    }
+  ],
+  "conflicts": [
+    {
+      "paper_a_doi": "10.1038/s41586-020-2907-3",
+      "paper_b_doi": "10.1016/j.cell.2020.09.057",
+      "nature_of_conflict": "Discrete vs continuous cell types: Patch-seq study in motor cortex found continuous and correlated variation within transcriptomic families with no clear boundaries between individual types, while the integrated met-type study in visual cortex defined 28 discrete met-types with 'robust mutual predictability' across modalities.",
+      "likely_reason": "Different cortical areas (motor vs visual), different analytical approaches (continuous phenotypic landscape vs discrete multimodal clustering), and different sample sizes may produce different apparent granularity. Motor cortex may also have less-differentiated types than visual cortex.",
+      "conflict_source": "abstract and full-text comparison"
+    },
+    {
+      "paper_a_doi": "10.1038/s41593-018-0205-2",
+      "paper_b_doi": "10.1038/s41586-019-1506-7",
+      "nature_of_conflict": "Human-specific cell types: Rosehip cell paper claims a cell type whose 'specific molecular marker signature is not seen in mouse cortex', while the cross-species comparison paper finds 'a surprisingly well-conserved cellular architecture that enables matching of homologous types', though it does acknowledge 'extensive differences' between species.",
+      "likely_reason": "Different definitions of 'specificity' - the rosehip cell is defined by a specific marker combination that may not have a one-to-one homolog in mouse, while the broader architecture of interneuron classes is conserved. The rosehip cell may correspond to a modified version of a mouse Lamp5/Sncg type.",
+      "conflict_source": "full-text comparison"
+    },
+    {
+      "paper_a_doi": "10.3389/neuro.04.015.2009",
+      "paper_b_doi": "10.1038/nrn1519",
+      "nature_of_conflict": "Chandelier cell function: The depolarizing effect paper shows that chandelier cell GABA release produces depolarization at the axon initial segment, potentially excitatory, while the classical inhibitory system review classifies chandelier cells as inhibitory interneurons.",
+      "likely_reason": "The depolarizing effect depends on GABA reversal potential at the AIS, which differs from the soma. Whether chandelier cells are net inhibitory or excitatory may depend on membrane potential state and the exact GABA reversal potential at the AIS in vivo.",
+      "conflict_source": "abstract comparison"
+    },
+    {
+      "paper_a_doi": "10.1038/nn.4216",
+      "paper_b_doi": "10.1038/s41586-018-0654-5",
+      "nature_of_conflict": "Number of transcriptomic cell types: The 2016 study identified 49 types (23 GABAergic) in V1, while the 2018 study from the same group identified 133 types from the same area plus ALM. The dramatic increase suggests either deeper sequencing resolves more types, or the number of types is method-dependent.",
+      "likely_reason": "The 2018 study used deeper sequencing (~9,000 genes/cell vs ~4,600), more cells (23,822 vs 1,679), and included a second cortical area. Deeper profiling splits some previously unified types. This raises the question of where 'real' type boundaries lie.",
+      "conflict_source": "abstract and full-text comparison"
+    },
+    {
+      "paper_a_doi": "10.1038/s41586-021-03941-1",
+      "paper_b_doi": "10.1038/s41586-021-03500-8",
+      "nature_of_conflict": "Concordance of morphological and transcriptomic types: The morphological diversity paper found that 'fine-grained morphological diversity often does not readily correlate with transcriptomic subtypes', while the epigenomic atlas claims 'cell types that are highly replicable across analysis methods, sequencing technologies and modalities'.",
+      "likely_reason": "Discrepancy arises from different levels of granularity - at the level of major types/subclasses, there is strong concordance, but within families the morphological-transcriptomic alignment breaks down. The epigenomic atlas focuses on major type replicability, not fine-grained within-family resolution.",
+      "conflict_source": "abstract comparison"
+    }
+  ],
+  "figure_data": [
+    {
+      "comparison_id": "fig_cell_type_counts",
+      "comparison_name": "Number of transcriptomic cell types identified across major studies",
+      "papers": [
+        {
+          "doi": "10.1126/science.aaa1934",
+          "metric": "total cell types identified",
+          "value": "47",
+          "value_source_sentence": "Zeisel et al identified 47 molecularly distinct cell types in mouse cortex and hippocampus",
+          "ci_or_error": "",
+          "n": 3005,
+          "n_definition": "single cells profiled",
+          "study_system": "mouse cortex + hippocampus",
+          "method": "scRNA-seq (Fluidigm C1)",
+          "text_access": "abstract_only",
+          "scope_region": "somatosensory cortex + hippocampus CA1",
+          "scope_population": "all cell types",
+          "taxonomic_level": "transcriptomic cluster"
+        },
+        {
+          "doi": "10.1038/nn.4216",
+          "metric": "total cell types identified",
+          "value": "49",
+          "value_source_sentence": "We identify 49 transcriptomic cell types including 23 GABAergic, 19 glutamatergic and seven non-neuronal types.",
+          "ci_or_error": "",
+          "n": 1679,
+          "n_definition": "single cells profiled",
+          "study_system": "mouse primary visual cortex",
+          "method": "scRNA-seq (SMARTer)",
+          "text_access": "fulltext",
+          "scope_region": "primary visual cortex (V1)",
+          "scope_population": "all cell types",
+          "taxonomic_level": "transcriptomic cluster"
+        },
+        {
+          "doi": "10.1038/s41586-018-0654-5",
+          "metric": "total cell types identified",
+          "value": "133",
+          "value_source_sentence": "We define 133 transcriptomic cell types by deep, single-cell RNA sequencing.",
+          "ci_or_error": "",
+          "n": 23822,
+          "n_definition": "single cells profiled",
+          "study_system": "mouse VISp + ALM",
+          "method": "scRNA-seq (SMART-Seq v4)",
+          "text_access": "fulltext",
+          "scope_region": "primary visual cortex + anterior lateral motor cortex",
+          "scope_population": "all cell types",
+          "taxonomic_level": "transcriptomic cluster"
+        },
+        {
+          "doi": "10.1038/s41586-021-03500-8",
+          "metric": "neuronal cell types identified",
+          "value": "56+",
+          "value_source_sentence": "containing over 56 neuronal cell types that are highly replicable across analysis methods, sequencing technologies and modalities",
+          "ci_or_error": "",
+          "n": 500000,
+          "n_definition": "single cells/nuclei profiled",
+          "study_system": "mouse primary motor cortex",
+          "method": "scRNA-seq + snRNA-seq + scATAC-seq + snmC-seq",
+          "text_access": "fulltext",
+          "scope_region": "primary motor cortex (MOp)",
+          "scope_population": "neuronal types only",
+          "taxonomic_level": "transcriptomic cluster (multimodal validated)"
+        },
+        {
+          "doi": "10.1007/s00424-024-02923-2",
+          "metric": "inhibitory transcriptomic types",
+          "value": "~60",
+          "value_source_sentence": "inhibitory neurons were subdivided into parvalbumin (PV), somatostatin (SST), vasoactive intestinal polypeptide (VIP), and 'other (i.e. Lamp5/Sncg)' s...",
+          "ci_or_error": "",
+          "n": 0,
+          "n_definition": "review estimate",
+          "study_system": "mammalian cerebral cortex",
+          "method": "review of multiple studies",
+          "text_access": "fulltext",
+          "scope_region": "cerebral cortex (multiple areas)",
+          "scope_population": "inhibitory neurons only",
+          "taxonomic_level": "transcriptomic type (t-type)"
+        }
+      ],
+      "comparison_type": "cross-study comparison",
+      "what_it_reveals": "The number of identified cell types has increased dramatically with deeper sequencing and larger sample sizes, from ~47-49 types in 2015-2016 to 133+ in 2018 and ~116 (56 excitatory + ~60 inhibitory) in the 2021 BICCN consensus. This raises the question of whether additional types will emerge with even deeper profiling, or whether current numbers approach saturation.",
+      "suggested_plot_type": "bar_chart_with_annotations",
+      "homogeneity_check": {
+        "scope_region_uniform": "No - studies span different cortical areas (V1, ALM, MOp, multiple)",
+        "scope_population_uniform": "No - some count all cell types, others neuronal only, others inhibitory only",
+        "taxonomic_level_uniform": "Approximately - all use transcriptomic clustering but at different granularity",
+        "n_definition_uniform": "No - n ranges from cells profiled to cells/nuclei to review estimates",
+        "caveats": [
+          "Studies use different cortical areas, making direct comparison difficult",
+          "Different sequencing depths capture different levels of diversity",
+          "Some counts include all types, others focus on neuronal or inhibitory only",
+          "Different clustering algorithms and parameters produce different numbers"
+        ]
+      }
+    },
+    {
+      "comparison_id": "fig_cardinal_class_proportions",
+      "comparison_name": "Proportions of cardinal GABAergic interneuron classes in mouse cortex",
+      "papers": [
+        {
+          "doi": "10.1002/cne.22229",
+          "metric": "percentage of GABAergic population (PV+SST+VIP)",
+          "value": "~60%",
+          "value_source_sentence": "the non-overlapping subpopulations (i.e., PV+, SOM+ and VIP+ cells) accounted for about 60% of the GABAergic cell population.",
+          "ci_or_error": "",
+          "n": 0,
+          "n_definition": "immunolabeled cells counted",
+          "study_system": "mouse cortex",
+          "method": "immunohistochemistry, double labeling",
+          "text_access": "fulltext",
+          "scope_region": "multiple cortical areas",
+          "scope_population": "GABAergic neurons",
+          "taxonomic_level": "neurochemical marker class"
+        },
+        {
+          "doi": "10.1002/dneu.20853",
+          "metric": "percentage of GABAergic population (3 groups)",
+          "value": "~100%",
+          "value_source_sentence": "Three groups of interneurons account for nearly 100% of neocortical GABAergic neurons",
+          "ci_or_error": "",
+          "n": 0,
+          "n_definition": "review estimate",
+          "study_system": "mouse neocortex",
+          "method": "review of genetic and immunochemical studies",
+          "text_access": "abstract_only",
+          "scope_region": "neocortex",
+          "scope_population": "GABAergic neurons",
+          "taxonomic_level": "molecular marker group (PV, SST, 5-HT3aR)"
+        },
+        {
+          "doi": "10.1523/jneurosci.4515-09.2010",
+          "metric": "percentage from CGE",
+          "value": "~30%",
+          "value_source_sentence": "CGE-derived interneurons are both considerably greater in number (\u223c30% of all cortical interneurons) and diversity (comprised by at least nine distinc...",
+          "ci_or_error": "",
+          "n": 0,
+          "n_definition": "fate-mapped cells counted",
+          "study_system": "mouse cortex (genetic fate mapping)",
+          "method": "inducible genetic fate mapping + electrophysiology",
+          "text_access": "abstract_only",
+          "scope_region": "cortex (all layers)",
+          "scope_population": "CGE-derived interneurons",
+          "taxonomic_level": "developmental origin"
+        }
+      ],
+      "comparison_type": "cross-study quantification",
+      "what_it_reveals": "The apparent gap between ~60% coverage by PV+SST+VIP (immunochemistry) and ~100% coverage by PV+SST+5-HT3aR reflects that 5-HT3aR captures the VIP+ population plus additional non-VIP CGE-derived types (Lamp5, Sncg). The ~30% CGE contribution aligns with the ~40% not captured by PV+SST+VIP markers alone.",
+      "suggested_plot_type": "stacked_bar_or_pie",
+      "homogeneity_check": {
+        "scope_region_uniform": "Approximately - all in mouse cortex",
+        "scope_population_uniform": "No - one counts immunolabeled cells, one reviews genetic data, one uses fate mapping",
+        "taxonomic_level_uniform": "No - one uses neurochemical markers, one uses molecular groups, one uses developmental origin",
+        "n_definition_uniform": "No - different counting methods",
+        "caveats": [
+          "Immunohistochemistry may undercount due to detection sensitivity",
+          "Fate mapping captures developmental origin not adult marker expression",
+          "Different marker combinations define groups differently (VIP vs 5-HT3aR for CGE-derived)"
+        ]
+      }
+    },
+    {
+      "comparison_id": "fig_multimodal_met_types",
+      "comparison_name": "Multimodal cell type classification: Number of met-types vs Patch-seq sample size",
+      "papers": [
+        {
+          "doi": "10.1038/s41593-019-0417-0",
+          "metric": "morpho-electric types",
+          "value": "46",
+          "value_source_sentence": "We established a taxonomy of morphologically- and electrophysiologically-defined cell types for this region of cortex with 17 e-types, 38 m-types, and...",
+          "ci_or_error": "",
+          "n": 1938,
+          "n_definition": "neurons recorded",
+          "study_system": "mouse visual cortex",
+          "method": "standardized patch clamp + biocytin reconstruction",
+          "text_access": "fulltext",
+          "scope_region": "primary visual cortex",
+          "scope_population": "all neuron types",
+          "taxonomic_level": "morpho-electric type"
+        },
+        {
+          "doi": "10.1016/j.cell.2020.09.057",
+          "metric": "multimodal met-types (GABAergic only)",
+          "value": "28",
+          "value_source_sentence": "Through multimodal integrated analysis we define 28 met-types that have congruent morphological, electrophysiological, and transcriptomic properties a...",
+          "ci_or_error": "",
+          "n": 4200,
+          "n_definition": "GABAergic interneurons profiled by Patch-seq",
+          "study_system": "mouse visual cortex",
+          "method": "Patch-seq (ephys + morphology + scRNA-seq)",
+          "text_access": "fulltext",
+          "scope_region": "primary visual cortex",
+          "scope_population": "GABAergic neurons only",
+          "taxonomic_level": "multimodal met-type"
+        },
+        {
+          "doi": "10.1038/s41586-020-2907-3",
+          "metric": "transcriptomic families with Patch-seq annotation",
+          "value": "continuous within families",
+          "value_source_sentence": "there was a continuum of variability in morphology and electrophysiology, with neighbouring transcriptomic cell types showing similar morpho-electric ...",
+          "ci_or_error": "",
+          "n": 1300,
+          "n_definition": "neurons profiled by Patch-seq",
+          "study_system": "mouse primary motor cortex",
+          "method": "Patch-seq",
+          "text_access": "fulltext",
+          "scope_region": "primary motor cortex",
+          "scope_population": "all neuron types",
+          "taxonomic_level": "continuous phenotypic landscape"
+        },
+        {
+          "doi": "10.1126/science.adf6484",
+          "metric": "GABAergic transcriptomic types characterized",
+          "value": "44 out of 45",
+          "value_source_sentence": "Patch-seq sampling facilitated targeted acquisition and analysis of 778 human neurons in cortical layers 2 to 6, across 44 out of 45 \u03b3-aminobutyric ac...",
+          "ci_or_error": "",
+          "n": 778,
+          "n_definition": "human neurons profiled by Patch-seq",
+          "study_system": "human neocortex",
+          "method": "viral labeling + Patch-seq",
+          "text_access": "fulltext",
+          "scope_region": "temporal and frontal cortex",
+          "scope_population": "GABAergic neurons",
+          "taxonomic_level": "transcriptomic type with multimodal annotation"
+        }
+      ],
+      "comparison_type": "methodological comparison",
+      "what_it_reveals": "Multimodal classification reveals a hierarchy: distinct non-overlapping families (PV, SST, VIP, Lamp5) at the top level, but increasingly continuous variation within families as resolution increases. The number of 'types' depends critically on whether discrete boundaries are imposed. Mouse visual cortex yields ~28 discrete GABAergic met-types, while motor cortex shows continuous within-family landscapes.",
+      "suggested_plot_type": "scatter_with_annotations",
+      "homogeneity_check": {
+        "scope_region_uniform": "No - visual cortex, motor cortex, and human cortex",
+        "scope_population_uniform": "No - some include all neurons, some GABAergic only",
+        "taxonomic_level_uniform": "No - different classification frameworks (me-types, met-types, continuous)",
+        "n_definition_uniform": "No - different recording/profiling protocols",
+        "caveats": [
+          "Different cortical areas may have different degrees of type discreteness",
+          "Mouse vs human comparison confounded by species differences",
+          "Classification granularity depends on analytical approach and thresholds"
+        ]
+      }
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "topic": "Double bouquet cell rodent homologs",
+      "what_is_missing": "Direct experimental evidence identifying the specific rodent cell type(s) that are homologous to primate double bouquet cells. While transcriptomic data suggests SST subclass membership, no single paper has definitively mapped the rodent equivalent using cross-species Patch-seq or morphological reconstruction.",
+      "why_it_matters": "This is central to understanding how cortical inhibitory circuit motifs scale across species and whether primate-specific circuit features emerged through genuinely novel cell types or modification of existing types."
+    },
+    {
+      "topic": "Inter-rater reliability of morphological classification",
+      "what_is_missing": "Systematic, quantitative studies of inter-rater reliability for morphological interneuron classification beyond the DeFelipe 2013 study. No follow-up studies have used quantitative morphological analysis with automated tools to resolve the disagreements documented.",
+      "why_it_matters": "Without reliable morphological classification, the morphology-to-molecule mapping (Section 2.4) rests on potentially inconsistent categories, undermining the multimodal alignment effort."
+    },
+    {
+      "topic": "Functional significance of transcriptomic subtypes within cardinal classes",
+      "what_is_missing": "Most functional studies target PV, SST, or VIP as monolithic classes. Very few studies have examined the functional differences between transcriptomic subtypes within a cardinal class (e.g., different SST t-types). The few that exist focus on Martinotti vs non-Martinotti SST cells.",
+      "why_it_matters": "If the ~60 inhibitory transcriptomic types reflect functionally meaningful diversity, studies treating cardinal classes as homogeneous may miss critical circuit mechanisms."
+    },
+    {
+      "topic": "L6 interneuron diversity and corticothalamic gating",
+      "what_is_missing": "Systematic characterization of interneuron types in layer 6 and their specific roles in corticothalamic feedback. Most interneuron classification studies under-sample L6 due to technical difficulties in slicing deep layers.",
+      "why_it_matters": "Layer 6 is the primary source of corticothalamic feedback, and inhibitory control of this pathway is poorly understood despite its importance for thalamic gating."
+    },
+    {
+      "topic": "Continuous variation and biological function",
+      "what_is_missing": "No study has tested whether the continuous variation observed within transcriptomic families (Patch-seq studies) corresponds to continuous variation in circuit function, or whether functional properties cluster despite continuous molecular variation.",
+      "why_it_matters": "This determines whether 'cell type' as a concept remains useful at the fine-grained level, or whether circuit function depends on a population-level continuum rather than discrete types."
+    }
+  ],
+  "unreplicated_claims": [
+    {
+      "claim": "Rosehip cells represent a human-specific interneuron type not found in rodents",
+      "source": "10.1038/s41593-018-0205-2",
+      "years_since_publication": 8
+    },
+    {
+      "claim": "Canopy cells represent 40% of layer 1 interneurons",
+      "source": "10.1523/jneurosci.1613-18.2018",
+      "years_since_publication": 7
+    },
+    {
+      "claim": "Chandelier cells have a depolarizing (potentially excitatory) effect at the axon initial segment in vivo",
+      "source": "10.3389/neuro.04.015.2009",
+      "years_since_publication": 17
+    }
+  ]
+}

@@ -1,0 +1,1169 @@
+{
+  "findings": [
+    {
+      "doi": "10.1523/jneurosci.16-20-06402.1996",
+      "claim": "A network of interconnected GABAergic fast-spiking interneurons can generate gamma oscillations (20-80 Hz) through GABA_A synaptic inhibition, with synchronization requiring a critical minimal average number of synaptic contacts per cell.",
+      "claim_source_sentence": "We conclude that the GABA A synaptic transmission provides a suitable mechanism for synchronized gamma oscillations in a sparsely connected network of fast-spiking interneurons.",
+      "effect_size": "gamma range 20-80 Hz",
+      "effect_size_source_sentence": "the network synchronization was found to be high only within a frequency band coinciding with the gamma (20\u201380 Hz) range.",
+      "n": null,
+      "study_system": "computational model, hippocampal interneuron network",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1152/jn.00741.2018"
+      ],
+      "cite_key": "Wang1996b"
+    },
+    {
+      "doi": "10.1162/089976698300017557",
+      "claim": "A model composed of recurrently connected excitatory neurons and inhibitory interneurons can selectively amplify contour elements through local cortical circuits and horizontal intracortical connections.",
+      "claim_source_sentence": "The model is composed of recurrently connected excitatory neurons and inhibitory interneurons, receiving visual input via oriented receptive fields resembling those found in primary visual cortex.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, V1 cortical circuit",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Li1998"
+    },
+    {
+      "doi": "10.1523/jneurosci.19-21-09587.1999",
+      "claim": "Stable persistent activity in working memory models requires recurrent excitatory synapses dominated by a slow NMDA-receptor component, with inhibition providing essential negative feedback to control firing rates within a physiological range of 10-50 Hz.",
+      "claim_source_sentence": "To achieve a stable persistent state, recurrent excitatory synapses must be dominated by a slow component.",
+      "effect_size": "persistent firing 10-50 Hz requires NMDA synaptic time constant comparable to negative feedback time constant",
+      "effect_size_source_sentence": "negative feedback mechanisms are included so that the neural firing rates are controlled within a physiological range (10\u201350 Hz)",
+      "n": null,
+      "study_system": "computational model, prefrontal cortex working memory",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.3733-05.2006"
+      ],
+      "cite_key": "Wang1999"
+    },
+    {
+      "doi": "10.1523/jneurosci.1400-04.2004",
+      "claim": "Quantitative reconstruction of cat V1 circuits shows very few strong but many weak excitatory projections, with synapses between cell types made roughly in proportion to the boutons and dendrites each type contributes to the neuropil in a given layer.",
+      "claim_source_sentence": "The map of the whole cortical circuit shows that there are very few \"strong\" but many \"weak\" excitatory projections, each of which may involve only a few percentage of the total complement of excitatory synapses of a single neuron.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cat area 17, anatomical reconstruction",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Binzegger2004"
+    },
+    {
+      "doi": "10.1371/journal.pbio.0030068",
+      "claim": "Synaptic connectivity in local cortical circuits is highly nonrandom, with specific motifs (reciprocal connections, clusters) occurring more frequently than predicted by chance.",
+      "claim_source_sentence": "Highly Nonrandom Features of Synaptic Connectivity in Local Cortical Circuits",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "rat visual cortex slices",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.5158-11.2012"
+      ],
+      "cite_key": "Song2005"
+    },
+    {
+      "doi": "10.1523/jneurosci.3733-05.2006",
+      "claim": "A simplified two-variable biophysically realistic cortical network model achieves slow temporal integration for decision making, with NMDA receptors at recurrent synapses essential for achieving decision times comparable to experimental observations.",
+      "claim_source_sentence": "slow time integration can be achieved robustly if excitatory reverberation is primarily mediated by NMDA receptors; our model with only fast AMPA receptors at recurrent synapses produces decision times that are not comparable with experimental observations.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, lateral intraparietal cortex",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wong2006"
+    },
+    {
+      "doi": "10.1523/jneurosci.5297-05.2006",
+      "claim": "In vivo, Up state activity exhibits a steady reversal potential of -37 mV on average during ongoing conductance changes averaging 21 nS, with initial and final segments dominated by excitatory conductance.",
+      "claim_source_sentence": "the body of Up state activity exhibited a steady reversal potential (\u221237 mV on average) for hundreds of milliseconds, even during substantial (21 nS on average) changes in membrane conductance.",
+      "effect_size": "reversal potential -37 mV, conductance change 21 nS",
+      "effect_size_source_sentence": "the body of Up state activity exhibited a steady reversal potential (\u221237 mV on average) for hundreds of milliseconds, even during substantial (21 nS on average) changes in membrane conductance.",
+      "n": null,
+      "study_system": "ferret prefrontal cortex in vivo, ketamine-xylazine anesthesia",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Haider2006"
+    },
+    {
+      "doi": "10.7554/elife.54875",
+      "claim": "Inhibition-stabilized network (ISN) operation is a widespread property found in mouse visual, somatosensory, and motor cortex, with ISN effects present even without sensory stimulation and during light anesthesia.",
+      "claim_source_sentence": "We find clear evidence for ISN operation in mouse visual, somatosensory, and motor cortex.",
+      "effect_size": "ISN detected in V1, S1, and M1; paradoxical suppression in PV neurons",
+      "effect_size_source_sentence": "We find clear evidence for ISN operation in mouse visual, somatosensory, and motor cortex.",
+      "n": null,
+      "study_system": "mouse V1, S1, M1 in vivo, optogenetics",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.0963-17.2017"
+      ],
+      "cite_key": "Sanzeni2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.0963-17.2017",
+      "claim": "Detecting ISN regime in cortex requires perturbation of a large proportion of the inhibitory network; results from reduced two-population models fail to predict responses in more realistic networks with many neurons.",
+      "claim_source_sentence": "we found that results obtained from reduced network models fail to predict responses to perturbations in more realistic networks.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, cortical network",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Sadeh2017"
+    },
+    {
+      "doi": "10.1073/pnas.1700080115",
+      "claim": "The SSN motif can serve as a universal circuit model sufficient to support normalization, surround suppression, contrast invariance, persistent states, self-sustained network-wide oscillations, and two coexisting stable states linked with working memory.",
+      "claim_source_sentence": "the SSN motif can serve as a universal circuit model that is sufficient to support not only stimulus integration phenomena but also persistent states, self-sustained network-wide oscillations along with two coexisting stable states that have been linked with working memory.",
+      "effect_size": "SSN supports 7+ distinct dynamical phenomena from single circuit motif",
+      "effect_size_source_sentence": "the SSN motif can serve as a universal circuit model that is sufficient to support not only stimulus integration phenomena but also persistent states, self-sustained network-wide oscillations along with two coexisting stable states",
+      "n": null,
+      "study_system": "computational model, stabilized supralinear network",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kraynyukova2018"
+    },
+    {
+      "doi": "10.1523/eneuro.0459-24.2025",
+      "claim": "A stabilized supralinear network with biologically plausible connectivity reproduces surround suppression with decreased excitatory and inhibitory currents, surround tuning to center orientation, and feature-specific suppression, with activity decay time constants similar to those observed in mouse V1.",
+      "claim_source_sentence": "a stabilized supralinear network that has biologically plausible connectivity and synaptic efficacies that depend on cortical distance and orientation difference between neurons can consistently reproduce all the above phenomena.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, SSN, V1",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Obeid2025"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1012190",
+      "claim": "The SSN model accounts for the contrast dependence of gamma peak frequency in macaque V1, with a mechanistic explanation based on the supralinear input-output function of V1 neurons; horizontal connections require two spatial components to support both surround suppression and local contrast dependence.",
+      "claim_source_sentence": "a reduced SSN model without retinotopy robustly captures the contrast dependence of gamma peak frequency, and provides a mechanistic explanation for this effect based on the observed non-saturating and supralinear input-output function of V1 neurons.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, SSN, macaque V1",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Holt2024"
+    },
+    {
+      "doi": "10.1101/2020.12.30.424892",
+      "claim": "A stabilized supralinear network model of V1 Layer 2/3 with biologically plausible connectivity reproduces surround suppression accompanied by decrease in excitatory and inhibitory currents, surround tuning to center orientation, and feature-specific suppression in both rate-based and conductance-based spiking networks.",
+      "claim_source_sentence": "we show that these results hold both in networks with rate-based units and with conductance-based spiking units.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, SSN, V1 Layer 2/3",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Obeid2021"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1011097",
+      "claim": "A mapping between the SSN and spiking activity identifies connectivity patterns underlying diverse nonlinear computations including XOR, bistability, inhibitory stabilization, supersaturation, and persistent activity; biologically-sized spiking networks can have irregular asynchronous activity without requiring strong E-I balance.",
+      "claim_source_sentence": "we show how to identify spiking network connectivity patterns underlying diverse nonlinear computations such as XOR, bistability, inhibitory stabilization, supersaturation, and persistent activity.",
+      "effect_size": "SSN-to-spiking mapping identifies 5+ nonlinear computation types (XOR, bistability, ISN, supersaturation, persistence)",
+      "effect_size_source_sentence": "we show how to identify spiking network connectivity patterns underlying diverse nonlinear computations such as XOR, bistability, inhibitory stabilization, supersaturation, and persistent activity",
+      "n": null,
+      "study_system": "computational model, SSN to spiking mapping",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ekelmans2023"
+    },
+    {
+      "doi": "10.1101/2022.04.22.489005",
+      "claim": "Spiking network connectivity patterns underlying diverse nonlinear computations can be identified through SSN-to-spiking mapping, with biologically-sized networks showing irregular asynchronous activity without strong E-I balance or large feedforward input.",
+      "claim_source_sentence": "biologically-sized spiking networks can have irregular asynchronous activity that does not require strong excitation-inhibition balance or large feedforward input",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, spiking networks",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ekelmans2022"
+    },
+    {
+      "doi": "10.1101/2024.09.09.612138",
+      "claim": "SST cells become increasingly important for network stabilization as sensory input strengthens, with paradoxical facilitation of SST cells when glutamatergic receptors are blocked at higher stimulus contrast, and stronger SST-dependent stabilization during behavioral arousal.",
+      "claim_source_sentence": "Consistent with our model predictions, we find antagonizing glutamatergic receptors drives a paradoxical facilitation of SST cells with increasing stimulus contrast.",
+      "effect_size": "paradoxical facilitation of SST cells at higher contrast when glutamatergic receptors blocked",
+      "effect_size_source_sentence": "antagonizing glutamatergic receptors drives a paradoxical facilitation of SST cells with increasing stimulus contrast",
+      "n": null,
+      "study_system": "mouse V1, pharmacology and optogenetics, circuit model",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Cammarata2024"
+    },
+    {
+      "doi": "10.1152/jn.00732.2015",
+      "claim": "In E-PV-SOM-VIP network models with connectivity motivated by mouse V1, distinct interneuron subtypes play specific roles: the theory describes conditions for network stability and how perturbations of distinct subtypes recruit changes through recurrent projections, explaining disinhibition, surround suppression, and subtractive or divisive modulation of orientation tuning.",
+      "claim_source_sentence": "We apply these conclusions to study the roles of each interneuron subtype in disinhibition, surround suppression, and subtractive or divisive modulation of orientation tuning curves.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, E-PV-SOM-VIP network, mouse V1",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2020.06.15.148114"
+      ],
+      "cite_key": "LitwinKumar2016"
+    },
+    {
+      "doi": "10.1101/2020.06.15.148114",
+      "claim": "In E-PV-SOM networks, SOM-mediated modulation can lead to simultaneous increases in neuronal gain and network stability, resolving the opposition between gain control and stability that exists in single-I models.",
+      "claim_source_sentence": "We show how in E \u2013 PV \u2013 SOM recurrently connected networks an SOM-mediated modulation can lead to simultaneous increases in neuronal gain and network stability.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, E-PV-SOM network",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Bos2020"
+    },
+    {
+      "doi": "10.1073/pnas.0305337101",
+      "claim": "Three interneuron subtypes (perisoma-targeting PV, dendrite-targeting calbindin, interneuron-targeting calretinin) play distinct computational roles in working memory: widespread PV inhibition generates stimulus tuning, calretinin cells provide disinhibition, and calbindin cells dynamically control distractor resistance.",
+      "claim_source_sentence": "stimulus tuning of persistent activity arises from the concerted action of widespread inhibition mediated by perisoma-targeting (parvalbumin-containing) interneurons and localized disinhibition of pyramidal cells via interneuron-targeting (calretinin-containing) interneurons.",
+      "effect_size": "3 interneuron subtypes with distinct roles: tuning (PV), disinhibition (CR), distractor resistance (CB)",
+      "effect_size_source_sentence": "three major subtypes of interneurons play distinct roles",
+      "n": null,
+      "study_system": "computational model, prefrontal cortex working memory",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wang2004"
+    },
+    {
+      "doi": "10.1101/2021.05.25.445562",
+      "claim": "In highly recurrent networks, deprivation-induced plasticity generates fundamentally different activity changes depending on interneuron composition; PV+ and SST+ subtypes can capture independent modulation of excitatory and inhibitory activity during sensory deprivation when SST+ feedback is sufficiently strong.",
+      "claim_source_sentence": "Considering parvalbumin-positive (PV+) and somatostatin-positive (SST+) interneuron subtypes can capture the experimentally observed independent modulation of excitatory and inhibitory activity during sensory deprivation when SST+ feedback is sufficiently strong.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, V1 and S1 microcircuit, mouse",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Richter2021"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1009933",
+      "claim": "When spiking network connectivity is optimized for compartment-specific feedback inhibition onto pyramidal neurons, interneurons diversify into two classes resembling PV and SST neurons, suggesting that the PV/SST division of labor emerges from an optimization principle.",
+      "claim_source_sentence": "Over the course of the optimization, the interneurons diversified into two classes that resembled parvalbumin (PV) and somatostatin (SST) expressing interneurons.",
+      "effect_size": "optimization yields 2 classes resembling PV and SST from undifferentiated interneurons",
+      "effect_size_source_sentence": "the interneurons diversified into two classes that resembled parvalbumin (PV) and somatostatin (SST) expressing interneurons",
+      "n": null,
+      "study_system": "computational model, spiking network optimization",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Keijser2022"
+    },
+    {
+      "doi": "10.1523/jneurosci.2830-20.2021",
+      "claim": "PV and SST neurons have differential excitability that results in distinct functional roles in inhibition stabilization of Up states.",
+      "claim_source_sentence": "Differential Excitability of PV and SST Neurons Results in Distinct Functional Roles in Inhibition Stabilization of Up States",
+      "effect_size": "PV and SST have differential excitability affecting Up state stabilization",
+      "effect_size_source_sentence": "Differential Excitability of PV and SST Neurons Results in Distinct Functional Roles in Inhibition Stabilization of Up States",
+      "n": null,
+      "study_system": "computational/experimental, cortical Up states",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "RomeroSosa2021"
+    },
+    {
+      "doi": "10.7554/elife.14985",
+      "claim": "Locomotion increases activity of VIP, SST, and PV interneurons during visual stimulation, challenging the simple disinhibition model; in darkness SST and excitatory neurons are largely non-responsive to locomotion. Context-dependent locomotion responses were found in each cell type, with the highest proportion among SST neurons.",
+      "claim_source_sentence": "locomotion increases the activity of vasoactive intestinal peptide (VIP), somatostatin (SST) and parvalbumin (PV)-positive interneurons during visual stimulation, challenging the disinhibition model.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, in vivo two-photon calcium imaging, layers 2/3 and 4",
+      "text_access": "fulltext",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/058396"
+      ],
+      "cite_key": "Pakan2016"
+    },
+    {
+      "doi": "10.1101/058396",
+      "claim": "A circuit model reproduces each cell type activity from measured activity of other types, but only when locomotion increases feedforward synaptic weights while modulating recurrent weights, rather than through simple disinhibition alone.",
+      "claim_source_sentence": "A circuit model could reproduce each cell type's activity from the measured activity of other cell types, but only if we allowed locomotion to increase feedforward synaptic weights while modulating recurrent weights.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, layer 2/3, circuit model + calcium imaging",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Dipoppa2016"
+    },
+    {
+      "doi": "10.1101/2020.11.11.378729",
+      "claim": "Inferred cell-type-specific circuitry from large-scale V1 recordings shows PV but not other interneurons have responses implying their activity stabilizes the circuit (ISN); locomotory drive to VIP and SOM cells largely cancel, with excitatory enhancement likely from direct locomotory drive to excitatory cells.",
+      "claim_source_sentence": "parvalbumin-expressing (PV), but not other, interneurons have responses to perturbations that we show theoretically imply that their activity stabilizes the circuit.",
+      "effect_size": "SOM/VIP locomotory drives largely cancel; PV responses imply ISN stabilization",
+      "effect_size_source_sentence": "locomotory drive to VIP cells and to SOM cells largely cancel, with enhancement of excitatory-cell visual responses likely due to direct locomotory drive to them",
+      "n": null,
+      "study_system": "mouse V1, large-scale recordings, computational inference",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Palmigiano2020"
+    },
+    {
+      "doi": "10.1101/2021.03.31.437953",
+      "claim": "Recurrent amplification drives a transition from a positive PC->VIP-|SST-|PC feedback loop at small size/low contrast to a negative PC->SST-|PC feedback loop at large size/high contrast, contributing to contrast-dependent surround suppression in a four-population SSN model.",
+      "claim_source_sentence": "recurrent amplification drives a transition from a positive PC\u2192VIP\u22a3SST\u22a3PC feedback loop at small size and low contrast to a negative PC\u2192SST\u22a3PC feedback loop at large size and high contrast",
+      "effect_size": "transition from positive PC->VIP-|SST-|PC to negative PC->SST-|PC loop with contrast",
+      "effect_size_source_sentence": "recurrent amplification drives a transition from a positive PC\u2192VIP\u22a3SST\u22a3PC feedback loop at small size and low contrast to a negative PC\u2192SST\u22a3PC feedback loop at large size and high contrast",
+      "n": null,
+      "study_system": "mouse V1, calcium imaging + electrophysiology + SSN model, L2/3",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Mossing2021"
+    },
+    {
+      "doi": "10.1016/j.neuron.2022.10.036",
+      "claim": "VIP disinhibitory interneurons linearly scale gamma power locally without changing its stimulus tuning, but suppress long-range gamma synchronization when two regions process non-matched stimuli; like-to-like connectivity across space and specific VIP->SST inhibition captures these opposing effects.",
+      "claim_source_sentence": "VIP disinhibitory interneurons in mouse cortex linearly scale gamma power locally without changing its stimulus tuning. Conversely, they suppress long-range synchronization when two regions process non-matched stimuli, tuning gamma coherence globally.",
+      "effect_size": "VIP linearly scales gamma power locally, suppresses long-range coherence for non-matched stimuli",
+      "effect_size_source_sentence": "VIP disinhibitory interneurons in mouse cortex linearly scale gamma power locally without changing its stimulus tuning",
+      "n": null,
+      "study_system": "mouse V1, electrophysiology + optogenetics + computational model",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Veit2023"
+    },
+    {
+      "doi": "10.1101/410340",
+      "claim": "The PV-SOM-VIP motif allows weak inputs to VIP interneurons to produce large changes in somato-dendritic inhibition of pyramidal cells via mutual SOM-VIP inhibition; transient inputs can persistently switch the circuit between two processing modes where top-down inputs are either integrated or canceled.",
+      "claim_source_sentence": "mutual inhibition between VIP and SOM cells translates weak inputs to VIP interneurons into large changes of somato-dendritic inhibition of PCs.",
+      "effect_size": "SOM-VIP motif enables persistent switching between 2 processing modes",
+      "effect_size_source_sentence": "transient inputs can persistently switch the circuit between two processing modes",
+      "n": null,
+      "study_system": "computational model, PV-SOM-VIP circuit",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hertg2018"
+    },
+    {
+      "doi": "10.1101/2021.06.09.447718",
+      "claim": "Nonlinear transient amplification (NTA) in supralinear network models reconciles symmetric Hebbian connectivity with rapid stimulus-selective amplification: positive feedback excitation amplifies inputs exceeding a threshold, then short-term plasticity quenches dynamics into an ISN state. E-I co-tuning widens the parameter regime for NTA.",
+      "claim_source_sentence": "Initially, positive feedback excitation selectively amplifies inputs that exceed a critical threshold. Subsequently, short-term plasticity quenches the run-away dynamics into an inhibition-stabilized network state.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, supralinear network with STP",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wu2021"
+    },
+    {
+      "doi": "10.1101/2023.10.26.563698",
+      "claim": "A multi-layer biologically realistic microcircuit model of somatosensory cortex with PV, SOM, and VIP interneurons reproduces experimentally observed inhibitory effects of PV and SOM cells and disinhibitory effect of VIP cells; short-term synaptic plasticity modulates cell-type-specific responses by changing dominant inhibitory pathways.",
+      "claim_source_sentence": "The model reproduces the experimentally observed inhibitory effects of PV and SOM cells and disinhibitory effect of VIP cells on excitatory cells.",
+      "effect_size": "STP modulates Exc, SOM, VIP responses by changing dominant inhibitory pathways",
+      "effect_size_source_sentence": "STP modulates the responses of Exc, SOM, and VIP cells to cell-type-specific stimulation, presumably by changing the dominant inhibitory pathways",
+      "n": null,
+      "study_system": "computational model, somatosensory cortex, rodent",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Jiang2023b"
+    },
+    {
+      "doi": "10.1101/2023.01.23.525290",
+      "claim": "Millimeter-scale volumetric electron microscopy of 1352 cells in mouse visual cortex produced a wiring diagram with more than 70,000 inhibitory synapses, revealing a novel class of disinhibitory specialist targeting basket cells and widespread inhibitory targeting specificity organized into motif groups.",
+      "claim_source_sentence": "Taking a data-driven approach inspired by classical neuroanatomy, we classified inhibitory neurons based on the relative targeting of dendritic compartments and other inhibitory cells",
+      "effect_size": "1352 cells, 70000+ synapses",
+      "effect_size_source_sentence": "we used millimeter-scale volumetric electron microscopy to investigate the connectivity of all inhibitory neurons across a densely-segmented neuronal population of 1352 cells spanning all layers of mouse visual cortex, producing a wiring diagram of inhibitory connections with more than 70,000 synapses.",
+      "n": 1352,
+      "study_system": "mouse V1, EM connectomics",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "SchneiderMizell2023"
+    },
+    {
+      "doi": "10.1523/jneurosci.4188-12.2013",
+      "claim": "Adding a separate inhibitory population to a spiking model of V1 provides Dale's Law conformance and enables sparse code formation; inhibitory neurons suppress predictable spikes to actively decorrelate the excitatory population, requiring only a small number of inhibitory cells relative to excitatory cells.",
+      "claim_source_sentence": "The inhibitory neurons enable sparse code formation by suppressing predictable spikes, which actively decorrelates the excitatory population.",
+      "effect_size": "small number of inhibitory cells sufficient relative to excitatory cells",
+      "effect_size_source_sentence": "The model predicts that only a small number of inhibitory cells is required relative to excitatory cells",
+      "n": null,
+      "study_system": "computational model, spiking V1 network",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "King2013"
+    },
+    {
+      "doi": "10.1152/jn.00741.2018",
+      "claim": "Few-variable firing rate models with established synaptic timescales account for both strongly synchronized and weakly modulated gamma oscillations; weakly modulated gamma occurs robustly when the recruitment timescale of inhibition is faster than excitation.",
+      "claim_source_sentence": "weakly modulated gamma oscillations occur robustly when the recruitment timescale of inhibition is faster than that of excitation.",
+      "effect_size": "gamma oscillations 20-80 Hz captured by few-variable rate models",
+      "effect_size_source_sentence": "few-variable firing rate models with established synaptic timescales can account for both strongly synchronized and weakly modulated gamma oscillations",
+      "n": null,
+      "study_system": "computational model, Wilson-Cowan and QIF rate models",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Keeley2019"
+    },
+    {
+      "doi": "10.1038/s41467-023-39732-7",
+      "claim": "After noise trauma, PV and VIP neurons show recovered sound-evoked activity while SOM neurons show reduced activity, with computational modeling showing PV plasticity contributes to PN stability, SOM plasticity allows increased PN and PV activity, and VIP plasticity enables recovery by inhibiting SOMs.",
+      "claim_source_sentence": "PV plasticity contributes to PN stability, SOM plasticity allows for increased PN and PV activity, and VIP plasticity enables PN and PV recovery by inhibiting SOMs.",
+      "effect_size": "PV\u2192PN stability; SOM\u2192increased PN/PV activity; VIP\u2192recovery via SST inhibition",
+      "effect_size_source_sentence": "PV plasticity contributes to PN stability, SOM plasticity allows for increased PN and PV activity, and VIP plasticity enables PN and PV recovery by inhibiting SOMs",
+      "n": null,
+      "study_system": "mouse A1, noise trauma + computational model",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kumar2023"
+    },
+    {
+      "doi": "10.1523/jneurosci.2279-14.2015",
+      "claim": "PV cells are the most active interneuron subtype during Up states, but SOM, VIP, and NPY subtypes also receive substantial synaptic conductances. In all types except PV, Up state onset is dominated by synaptic inhibition, suggesting inhibition does not dominate Up state termination.",
+      "claim_source_sentence": "PV cells were the most active interneuron subtype during the Up state, yet the other subtypes also received substantial synaptic conductances and often generated spikes.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse barrel cortex in vitro, layers 5 and 2/3",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Neske2015"
+    },
+    {
+      "doi": "10.1523/jneurosci.5158-11.2012",
+      "claim": "Connection probability is distance-dependent with comparable spatial spreads for all cell types (85-114 um Gaussian fits); fast-spiking interneuron unitary synapses are stronger than other classes; the spatial patterns support either lateral inhibition or co-tuning depending on input structure.",
+      "claim_source_sentence": "the spread of connectivity, parameterized by Gaussian fits to the data, was comparable for all cell types, ranging from 85 to 114 \u03bcm.",
+      "effect_size": "connectivity spread 85-114 um",
+      "effect_size_source_sentence": "the spread of connectivity, parameterized by Gaussian fits to the data, was comparable for all cell types, ranging from 85 to 114 \u03bcm.",
+      "n": null,
+      "study_system": "mouse A1, cortical slices, multiple intracellular recording",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Levy2012"
+    },
+    {
+      "doi": "10.1523/jneurosci.2255-12.2013",
+      "claim": "Dendritic and somatic compartments of PV neurons receive ~60% and 62% of inhibitory inputs from PV and VIP neurons respectively; PV and SOM inputs prefer dendrites (ratio 2.5:1) while VIP inputs clearly prefer cell bodies.",
+      "claim_source_sentence": "the dendritic and somatic compartments of PV neurons received \u223c60 and 62% of inhibitory inputs from PV and VIP neurons, respectively.",
+      "effect_size": "60% dendritic from PV, 62% somatic from VIP; PV:SOM dendritic ratio 2.5:1",
+      "effect_size_source_sentence": "PV and SOM inputs were frequently located on the dendrites with the ratio of 2.5:1, but much less on the cell bodies.",
+      "n": null,
+      "study_system": "mouse somatosensory cortex, immunohistochemistry",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hioki2013"
+    },
+    {
+      "doi": "10.1523/jneurosci.0675-18.2018",
+      "claim": "In a data-driven large-scale V1 network model, gamma activity is an emergent episodic property that is multidimensional in its sources; the relative rise times of AMPA and GABA synaptic conductances have a strong effect on spike synchrony and gamma band power.",
+      "claim_source_sentence": "the relative rise times of AMPA and GABA synaptic conductances have a strong effect on the degree of synchrony in gamma.",
+      "effect_size": "relative AMPA/GABA rise times strongly affect gamma synchrony",
+      "effect_size_source_sentence": "the relative rise times of AMPA and GABA synaptic conductances have a strong effect on the degree of synchrony in gamma",
+      "n": null,
+      "study_system": "computational model, large-scale monkey V1 network",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Chariker2018"
+    },
+    {
+      "doi": "10.1103/physrevx.5.041030",
+      "claim": "Random neuronal networks with separate excitatory and inhibitory populations can undergo a transition to chaos, with the dynamics depending critically on the balance between excitation and inhibition.",
+      "claim_source_sentence": "Transition to Chaos in Random Neuronal Networks",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, random E-I networks",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Kadmon2015"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1000092",
+      "claim": "Mean-field and neural mass models can bridge between spiking neuron descriptions and cortical field dynamics, providing multi-scale computational frameworks for understanding cortical oscillations and dynamics.",
+      "claim_source_sentence": "The Dynamic Brain: From Spiking Neurons to Neural Masses and Cortical Fields",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, multi-scale neural dynamics",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Deco2008"
+    },
+    {
+      "doi": "10.1523/jneurosci.0663-13.2013",
+      "claim": "PV+ interneurons in auditory cortex are well tuned for frequency (unlike broadly tuned PV+ in visual cortex for orientation), with shallower response gain and faster latencies than PV- neurons, consistent with providing dynamic gain control.",
+      "claim_source_sentence": "PV+ interneurons had shallower response gain and were less intensity-tuned than PV\u2212 neurons, suggesting that PV+ neurons provide dynamic gain control and shape intensity tuning in auditory cortex.",
+      "effect_size": "PV neurons well-tuned for frequency (unlike broad tuning in V1); faster latencies than PV-",
+      "effect_size_source_sentence": "PV+ interneurons had shallower response gain and were less intensity-tuned than PV\u2212 neurons",
+      "n": null,
+      "study_system": "mouse auditory cortex, optogenetic tagging, in vivo",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Moore2013"
+    },
+    {
+      "doi": "10.1523/jneurosci.3176-20.2021",
+      "claim": "SST neurons are more active during reliable pyramidal neuron firing epochs while PV neurons are more active during unreliable epochs; transient SST neuron firing increases pyramidal neuron reliability by actively suppressing PV neurons via the SST->PV circuit.",
+      "claim_source_sentence": "SST neurons were more active during epochs of reliable pyramidal neuron firing, whereas PV neurons were more active during epochs of unreliable firing.",
+      "effect_size": "SST active during reliable firing epochs, PV during unreliable epochs",
+      "effect_size_source_sentence": "SST neurons were more active during epochs of reliable pyramidal neuron firing, whereas PV neurons were more active during epochs of unreliable firing",
+      "n": null,
+      "study_system": "mouse V1, dual-color calcium imaging + optogenetics, awake",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Rikhye2021"
+    },
+    {
+      "doi": "10.1523/jneurosci.3041-11.2011",
+      "claim": "In a biophysically realistic computational model, combined reductions of PV and GABA in fast-spiking interneurons (as observed in schizophrenia) diminish gamma-band oscillatory activity in response to stimuli; PV-deficient GABA synapses show increased asynchronous GABA release.",
+      "claim_source_sentence": "Combined reductions of PV and GABA resulted in a diminished gamma-band oscillatory activity in response to stimuli, similar to that observed in schizophrenia patients.",
+      "effect_size": "combined PV+GABA reduction diminishes gamma; PV loss increases asynchronous GABA release",
+      "effect_size_source_sentence": "Combined reductions of PV and GABA resulted in a diminished gamma-band oscillatory activity in response to stimuli",
+      "n": null,
+      "study_system": "computational model, cortical circuit, schizophrenia",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Volman2011"
+    },
+    {
+      "doi": "10.1016/j.neuron.2009.03.028",
+      "claim": "Surround suppression in V1 is mediated by withdrawal of excitation rather than increase in lateral inhibition; inhibition received by cells is reduced, not increased, by surround stimuli. This can only arise if V1 operates as an inhibition-stabilized network (ISN) where excitatory recurrence alone is strong enough to destabilize responses.",
+      "claim_source_sentence": "Although suppression has been thought to arise from an increase in lateral inhibition, we find that the inhibition that cells receive is reduced, not increased, by a surround stimulus.",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "cat V1, intracellular recordings + ISN model",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.7554/elife.54875",
+        "10.1523/eneuro.0459-24.2025"
+      ],
+      "cite_key": "Ozeki2009"
+    },
+    {
+      "doi": "10.1523/jneurosci.17-11-04382.1997",
+      "claim": "External modulation that increases excitatory drive to inhibitory interneurons can paradoxically decrease their steady-state firing rate in networks where excitatory recurrence is strong enough to require inhibitory stabilization.",
+      "claim_source_sentence": "Paradoxical Effects of External Modulation of Inhibitory Interneurons",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, cortical circuit theory",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.neuron.2009.03.028",
+        "10.7554/elife.54875"
+      ],
+      "cite_key": "Tsodyks1997"
+    },
+    {
+      "doi": "10.1016/s0006-3495(72)86068-5",
+      "claim": "The Wilson-Cowan model of excitatory and inhibitory interactions in localized populations of model neurons established the foundational framework for E-I circuit models, with a single excitatory and single inhibitory population capturing oscillatory, bistable, and hysteretic dynamics.",
+      "claim_source_sentence": "Excitatory and Inhibitory Interactions in Localized Populations of Model Neurons",
+      "effect_size": "2-population E-I model supports oscillations, bistability, hysteresis",
+      "effect_size_source_sentence": "Excitatory and Inhibitory Interactions in Localized Populations of Model Neurons",
+      "n": null,
+      "study_system": "computational model, neural population dynamics",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1152/jn.00741.2018",
+        "10.1371/journal.pcbi.1000092"
+      ],
+      "cite_key": "Wilson1972"
+    },
+    {
+      "doi": "10.1016/j.cell.2015.09.029",
+      "claim": "The Blue Brain Project reconstructed and simulated a detailed model of rat neocortical microcircuitry comprising 31,000 neurons and 37 million synapses, with 207 morphological and 11 electrical neuron subtypes, demonstrating emergent properties including low-frequency oscillations.",
+      "claim_source_sentence": "Reconstruction and Simulation of Neocortical Microcircuitry",
+      "effect_size": "31000 neurons, 37 million synapses, 207 morphological and 11 electrical types",
+      "effect_size_source_sentence": "Reconstruction and Simulation of Neocortical Microcircuitry",
+      "n": 31000,
+      "study_system": "computational model, rat somatosensory cortex, Blue Brain Project",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Markram2015"
+    },
+    {
+      "doi": "10.1523/jneurosci.18-10-03870.1998",
+      "claim": "The variable discharge of cortical neurons implies that the cortex operates in a balanced regime where excitation and inhibition are closely matched, with balanced random synaptic inputs maintaining irregular firing.",
+      "claim_source_sentence": "The Variable Discharge of Cortical Neurons: Implications for Connectivity, Computation, and Information Coding",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "theoretical analysis, cortical circuit",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.5297-05.2006"
+      ],
+      "cite_key": "Shadlen1998"
+    },
+    {
+      "doi": "10.1016/j.neuron.2014.12.026",
+      "claim": "The SSN model shows that four cortical circuit properties\u2014supralinear neuronal I/O functions, strong recurrent excitation, feedback inhibition, and spatial connectivity\u2014produce a wealth of integrative properties including normalization and surround suppression, with a transition from supralinear to sublinear summation as input strength increases.",
+      "claim_source_sentence": "A wealth of integrative properties, including the above, emerge robustly from four cortical circuit properties: (1) supralinear neuronal input/output functions; (2) sufficiently strong recurrent excitation; (3) feedback inhibition; and (4) simple spatial properties of intracortical connections.",
+      "effect_size": "4 circuit properties explain normalization, surround suppression, contrast-dependent integration",
+      "effect_size_source_sentence": "A wealth of integrative properties emerge robustly from four cortical circuit properties",
+      "n": null,
+      "study_system": "computational model, SSN, V1",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1073/pnas.1700080115",
+        "10.1371/journal.pcbi.1012190",
+        "10.1523/eneuro.0459-24.2025"
+      ],
+      "cite_key": "Rubin2015"
+    },
+    {
+      "doi": "10.1523/jneurosci.17-21-08621.1997",
+      "claim": "Simple cells in macaque V1 show linearity of spatial summation combined with a nonlinear normalization that compresses responses when total input is strong, providing the empirical basis for the normalization model.",
+      "claim_source_sentence": "Linearity and Normalization in Simple Cells of the Macaque Primary Visual Cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "macaque V1, single unit electrophysiology",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.neuron.2014.12.026"
+      ],
+      "cite_key": "Carandini1997"
+    },
+    {
+      "doi": "10.1093/cercor/10.9.910",
+      "claim": "Detailed cortical network models of spatial working memory show that persistent activity maintained by recurrent excitation requires structured inhibition to shape and stabilize the bump of activity, with the E/I balance determining the precision and stability of memory representations.",
+      "claim_source_sentence": "Synaptic Mechanisms and Network Dynamics Underlying Spatial Working Memory in a Cortical Network Model",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, prefrontal cortex spatial working memory",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Compte2000"
+    },
+    {
+      "doi": "10.1523/jneurosci.1253-06.2006",
+      "claim": "Feedback from higher cortical areas shapes the extra-classical receptive field of V1 neurons, with inhibition playing a key role in this modulation; the interaction between feedforward and feedback pathways requires proper E-I balance.",
+      "claim_source_sentence": "The Role of Feedback in Shaping the Extra-Classical Receptive Field of Cortical Neurons",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model + physiology, V1",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Schwabe2006"
+    },
+    {
+      "doi": "10.1016/j.neuron.2023.11.006",
+      "claim": "Disinhibition by VIP interneurons is orthogonal to cross-modal modulation of cortical activity, indicating that VIP-mediated disinhibition and other modulatory inputs act through independent mechanisms.",
+      "claim_source_sentence": "Disinhibition by VIP interneurons is orthogonal to cross-modal modulation",
+      "effect_size": "VIP disinhibition orthogonal to cross-modal modulation axis",
+      "effect_size_source_sentence": "Disinhibition by VIP interneurons is orthogonal to cross-modal modulation",
+      "n": null,
+      "study_system": "mouse cortex, optogenetics + circuit analysis",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "MyersJoseph2024"
+    },
+    {
+      "doi": "10.1038/s41586-020-2062-x",
+      "claim": "Experimental characterization of recurrent interactions in local cortical circuits reveals the specific connectivity patterns that constrain computational models.",
+      "claim_source_sentence": "Recurrent interactions in local cortical circuits",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, paired recordings",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Peron2020"
+    },
+    {
+      "doi": "10.1016/j.celrep.2023.113088",
+      "claim": "VIP interneurons regulate cortical size tuning and visual perception through SST-mediated disinhibition, with computational modeling showing how VIP-SST interactions modulate spatial integration.",
+      "claim_source_sentence": "VIP interneurons regulate cortical size tuning and visual perception",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, optogenetics + computational model",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ferguson2023a"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1004792",
+      "claim": "E-I recurrent networks can be trained for cognitive tasks through gradient-based optimization while respecting Dale's law and biophysical constraints, providing a framework for testing how inhibitory cell diversity affects computational capabilities.",
+      "claim_source_sentence": "Training Excitatory-Inhibitory Recurrent Neural Networks for Cognitive Tasks: A Simple and Flexible Framework",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, RNN training framework",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Song2016"
+    },
+    {
+      "doi": "10.1016/j.celrep.2025.115954",
+      "claim": "Behavioral state and stimulus strength regulate the role of SST interneurons in stabilizing network activity; SST cells switch from a minor to a major role in inhibition stabilization as input strengthens.",
+      "claim_source_sentence": "Behavioral state and stimulus strength regulate the role of somatostatin interneurons in stabilizing network activity",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, pharmacology + optogenetics + computational model",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Cammarata2025"
+    },
+    {
+      "doi": "10.1155/2021/8874516",
+      "claim": "Different inhibitory subtypes can generate distinct gamma oscillation frequencies, with PV cells supporting fast gamma and other subtypes contributing to slower rhythmic activity.",
+      "claim_source_sentence": "The Generation and Modulation of Distinct Gamma Oscillations",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, cortical oscillation",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Han2021b"
+    },
+    {
+      "doi": "10.3389/fnhum.2013.00869",
+      "claim": "Multiple distinct mechanisms generate gamma-frequency oscillations in cortex, including PING (pyramidal interneuron network gamma) involving E-I interactions and ING (interneuron network gamma) driven by I-I interactions alone.",
+      "claim_source_sentence": "Distinguishing mechanisms of gamma frequency oscillations",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model + experimental review",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-20-06402.1996"
+      ],
+      "cite_key": "Lee2013b"
+    },
+    {
+      "doi": "10.3389/fncel.2018.00293",
+      "claim": "Chemogenetic recruitment of specific interneuron subtypes suppresses seizures, demonstrating that interneuron-type-specific manipulations have distinct effects on circuit dynamics that single-I models cannot capture.",
+      "claim_source_sentence": "Chemogenetic Recruitment of Specific Interneurons Suppresses Seizures",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, chemogenetics",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Clin2018"
+    },
+    {
+      "doi": "10.1016/j.neuron.2014.04.045",
+      "claim": "Optimal control of transient dynamics in E-I balanced networks supports complex movement generation, with the balance between excitation and inhibition constraining the repertoire of achievable transient dynamics.",
+      "claim_source_sentence": "Optimal Control of Transient Dynamics in Balanced Networks Supports Generation of Complex Movements",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, motor cortex balanced network",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hennequin2014"
+    },
+    {
+      "doi": "10.1146/annurev-neuro-072116-031005",
+      "claim": "Inhibitory synaptic plasticity is essential for maintaining E-I balance and co-depends on excitatory plasticity; models that include cell-type-specific inhibitory plasticity rules can explain homeostatic regulation while supporting learning.",
+      "claim_source_sentence": "Inhibitory Plasticity: Balance, Control, and Codependence",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "review, computational models of inhibitory plasticity",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Hennequin2017"
+    },
+    {
+      "doi": "10.3389/fncir.2018.00037",
+      "claim": "PV interneurons are critical regulators of E/I balance for prefrontal cortex-dependent behaviors, with disruptions in PV-mediated inhibition linked to cognitive dysfunction.",
+      "claim_source_sentence": "PV Interneurons: Critical Regulators of E/I Balance for Prefrontal Cortex-Dependent Behaviors",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "review, PV interneuron circuit models and experiments",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Ferguson2018"
+    },
+    {
+      "doi": "10.1523/jneurosci.3646-15.2016",
+      "claim": "VIP interneurons provide localized lateral disinhibition by inhibiting SST cells, creating spatial holes in the blanket of inhibition that enable local processing advantages.",
+      "claim_source_sentence": "Opening Holes in the Blanket of Inhibition: Localized Lateral Disinhibition by VIP Interneurons",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, computational model + experimental",
+      "text_access": "abstract_only",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2021.03.31.437953"
+      ],
+      "cite_key": "Karnani2016b"
+    },
+    {
+      "doi": "10.1038/s41467-018-04500-5",
+      "claim": "Top-down feedback controls spatial summation and response amplitude in primate visual cortex, with model predictions about the interaction between feedback and local E-I circuits.",
+      "claim_source_sentence": "Top-down feedback controls spatial summation and response amplitude in primate visual cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "primate V1/V2, computational model + physiology",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Nurminen2018"
+    },
+    {
+      "doi": "10.1038/s41593-020-0671-1",
+      "claim": "Recurrent circuits optimized for sampling-based probabilistic inference develop cortical-like dynamics, with the E-I architecture being essential for implementing the required stochastic computations.",
+      "claim_source_sentence": "Cortical-like dynamics in recurrent circuits optimized for sampling-based probabilistic inference",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, probabilistic inference in E-I networks",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Echeveste2020"
+    },
+    {
+      "doi": "10.1523/jneurosci.3967-15.2016",
+      "claim": "Brain-wide mapping of synaptic inputs to cortical interneurons reveals distinct input patterns for PV, SST, and VIP interneurons that constrain computational models of interneuron function.",
+      "claim_source_sentence": "Brain-Wide Maps of Synaptic Input to Cortical Interneurons",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse cortex, rabies tracing",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Wall2016"
+    },
+    {
+      "doi": "10.1038/s41467-019-12058-z",
+      "claim": "Layer 4 of mouse neocortex differs between S1 and V1 in cell types and circuit organization, highlighting that data-driven models must account for area-specific circuit differences.",
+      "claim_source_sentence": "Layer 4 of mouse neocortex differs in cell types and circuit organization between primary somatosensory and primary visual cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse S1 and V1, circuit mapping",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Scala2019"
+    },
+    {
+      "doi": "10.1101/359513",
+      "claim": "A large-scale, standardized physiological survey reveals higher-order coding throughout the mouse visual cortex, providing systematic constraints for data-driven models of visual processing.",
+      "claim_source_sentence": "A large-scale, standardized physiological survey reveals higher order coding throughout the mouse visual cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse visual cortex, Allen Institute survey",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "deVries2018"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1007019",
+      "claim": "Macroscopic phase-resetting curves determine oscillatory coherence and signal transfer in inter-coupled neural circuits, with the inhibitory component being critical for precise phase relationships.",
+      "claim_source_sentence": "Macroscopic phase resetting-curves determine oscillatory coherence and signal transfer in inter-coupled neural circuits",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "computational model, coupled E-I oscillator circuits",
+      "text_access": "fulltext",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Dumont2019"
+    },
+    {
+      "doi": "10.1038/s41593-018-0143-z",
+      "claim": "Learning induces distinct changes in stimulus selectivity and interactions of different GABAergic interneuron classes, showing that a single-I model cannot capture learning-dependent circuit reorganization.",
+      "claim_source_sentence": "Distinct learning-induced changes in stimulus selectivity and interactions of GABAergic interneuron classes in visual cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, calcium imaging during learning",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Khan2018"
+    },
+    {
+      "doi": "10.1073/pnas.1402773111",
+      "claim": "Alpha and gamma oscillations characterize feedback and feedforward processing in cortex, with distinct frequency bands serving different information flow directions in the cortical hierarchy.",
+      "claim_source_sentence": "Alpha and gamma oscillations characterize feedback and feedforward processing in cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "primate visual cortex, electrophysiology",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "vanKerkoerle2014"
+    },
+    {
+      "doi": "10.1371/journal.pone.0201630",
+      "claim": "BioNet provides a Python interface to NEURON for modeling large-scale biologically realistic networks, enabling data-driven models constrained by cell-type-specific properties from systematic surveys.",
+      "claim_source_sentence": "BioNet: A Python interface to NEURON for modeling large-scale networks",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "software tool, large-scale cortical network simulation",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Gratiy2018"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1004090",
+      "claim": "Systematic characterization of the physiology of Layer 5 pyramidal neurons in mouse V1 provides key biophysical parameters required for data-driven cortical models.",
+      "claim_source_sentence": "Physiology of Layer 5 Pyramidal Neurons in Mouse Primary Visual Cortex",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "mouse V1, patch clamp physiology",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Shai2015"
+    },
+    {
+      "doi": "10.1101/cshperspect.a005736",
+      "claim": "Homeostatic synaptic plasticity mechanisms operate locally and globally to maintain stable circuit function, providing critical constraints on how models of E-I balance maintain physiological firing rates.",
+      "claim_source_sentence": "Homeostatic Synaptic Plasticity: Local and Global Mechanisms for Stabilizing Neuronal Function",
+      "effect_size": null,
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "review, synaptic plasticity mechanisms",
+      "text_access": "abstract_only",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "cite_key": "Turrigiano2012"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "ISN detection in cortex: reduced vs realistic models",
+      "paper1_doi": "10.7554/elife.54875",
+      "paper1_claim": "Clear evidence for ISN operation found in V1, S1, and M1 even without sensory stimulation using simple two-population models.",
+      "paper2_doi": "10.1523/jneurosci.0963-17.2017",
+      "paper2_claim": "Results from reduced models fail to predict responses in more realistic networks; detecting ISN requires perturbation of a large proportion of inhibitory population.",
+      "assessment": "The disagreement is partly methodological: Sadeh et al. 2017 show that heterogeneous realistic networks require stronger perturbations than reduced models predict. Sanzeni et al. 2020 used transgenic vs viral expression and found ISN effects only with transgenic expression, consistent with the need for wide perturbation. The conflict is partially resolved by recognizing that ISN is real but harder to detect than simple models suggest."
+    },
+    {
+      "topic": "Disinhibition model of locomotion modulation: simple vs complex",
+      "paper1_doi": "10.7554/elife.14985",
+      "paper1_claim": "Locomotion increases VIP, SST, and PV activity during visual stimulation, challenging the simple disinhibition model where VIP suppresses SST to disinhibit pyramidal cells.",
+      "paper2_doi": "10.1101/058396",
+      "paper2_claim": "Circuit model can reproduce locomotion effects but only if locomotion increases feedforward weights and modulates recurrent weights, not through simple disinhibition alone.",
+      "assessment": "Both papers agree the simple VIP->SST-|PC disinhibition model is insufficient. The data require either multiple concurrent inputs or state-dependent effective connectivity changes. The 2020 Sanzeni/Miller paper further resolves this showing SOM/VIP cancellation with direct excitatory drive."
+    },
+    {
+      "topic": "Stability vs gain in single-I vs multi-type models",
+      "paper1_doi": "10.1016/j.neuron.2014.12.026",
+      "paper1_claim": "In the SSN with a single I population, stability and gain are inversely related: increasing gain decreases stability.",
+      "paper2_doi": "10.1101/2020.06.15.148114",
+      "paper2_claim": "In E-PV-SOM models, SOM-mediated modulation can simultaneously increase both gain and stability, resolving the gain-stability tradeoff.",
+      "assessment": "This is a genuine advance showing multi-type models can resolve a fundamental limitation of single-I models. The Palmigiano et al. result depends critically on the connectivity structure and the SOM->PV pathway."
+    },
+    {
+      "topic": "VIP function: local gain control vs global coherence control",
+      "paper1_doi": "10.1016/j.neuron.2022.10.036",
+      "paper1_claim": "VIP neurons linearly scale gamma power locally but suppress long-range gamma coherence for non-matched stimuli, controlling gain locally and coherence globally.",
+      "paper2_doi": "10.1101/410340",
+      "paper2_claim": "VIP-SOM mutual inhibition amplifies redistribution of somato-dendritic inhibition and can persistently switch processing modes between integrating and canceling top-down inputs.",
+      "assessment": "These are complementary rather than contradictory: both describe VIP function but at different scales and for different features. The Veit et al. result is about gamma band dynamics while the Hertag & Bhatt model addresses dendritic vs somatic inhibition redistribution. Together they suggest VIP function is more complex than either model captures alone."
+    },
+    {
+      "topic": "SSN as universal model vs need for cell-type specificity",
+      "paper1_doi": "10.1073/pnas.1700080115",
+      "paper1_claim": "The SSN motif with a single E and single I population is sufficient to support normalization, surround suppression, bistability, oscillations, and persistent activity.",
+      "paper2_doi": "10.1152/jn.00732.2015",
+      "paper2_claim": "Network models with PV, SOM, and VIP interneurons show that each subtype plays distinct roles in disinhibition, surround suppression, and gain modulation that cannot be captured by a single-I model.",
+      "assessment": "The SSN as a 2-population model captures many phenomena through E-I dynamics alone, but cell-type-specific effects (e.g., subtractive vs divisive modulation, compartment-specific inhibition) require multi-type extensions. The SSN may be a necessary but not sufficient framework."
+    }
+  ],
+  "figure_data": [
+    {
+      "comparison": "Model complexity timeline: Number of inhibitory populations across landmark modeling papers",
+      "metric": "number of inhibitory populations",
+      "unit": "count",
+      "papers": [
+        {
+          "doi": "10.1016/s0006-3495(72)86068-5",
+          "value": 1,
+          "value_source_sentence": "Excitatory and Inhibitory Interactions in Localized Populations of Model Neurons",
+          "scope_region": "generic cortex",
+          "scope_population": "model neurons"
+        },
+        {
+          "doi": "10.1523/jneurosci.16-20-06402.1996",
+          "value": 1,
+          "value_source_sentence": "a random network of interconnected GABAergic fast-spiking interneurons",
+          "scope_region": "hippocampus",
+          "scope_population": "fast-spiking interneurons"
+        },
+        {
+          "doi": "10.1073/pnas.0305337101",
+          "value": 3,
+          "value_source_sentence": "three major subtypes of interneurons play distinct roles",
+          "scope_region": "prefrontal cortex",
+          "scope_population": "PV, calretinin, calbindin interneurons"
+        },
+        {
+          "doi": "10.1152/jn.00732.2015",
+          "value": 3,
+          "value_source_sentence": "parvalbumin (PV)-, somatostatin (SOM)-, and vasointestinal peptide-expressing (VIP) interneurons",
+          "scope_region": "mouse V1",
+          "scope_population": "PV, SOM, VIP interneurons"
+        },
+        {
+          "doi": "10.1016/j.cell.2015.09.029",
+          "value": 11,
+          "value_source_sentence": "Reconstruction and Simulation of Neocortical Microcircuitry",
+          "scope_region": "rat somatosensory cortex",
+          "scope_population": "11 electrical neuron subtypes"
+        }
+      ],
+      "homogeneity_check": "Not directly comparable: papers span different species, cortical areas, and modeling approaches. The metric captures model complexity growth, not a direct experimental comparison.",
+      "n_definition": "Number of distinct inhibitory neuron populations in the model"
+    },
+    {
+      "comparison": "ISN paradoxical effect detection across cortical areas",
+      "metric": "presence of paradoxical response to inhibitory stimulation",
+      "unit": "qualitative (detected/not detected)",
+      "papers": [
+        {
+          "doi": "10.1523/jneurosci.17-11-04382.1997",
+          "value": "detected",
+          "value_source_sentence": "Paradoxical Effects of External Modulation of Inhibitory Interneurons",
+          "scope_region": "theoretical, rat CA1",
+          "scope_population": "E-I network model"
+        },
+        {
+          "doi": "10.1016/j.neuron.2009.03.028",
+          "value": "detected",
+          "value_source_sentence": "the inhibition that cells receive is reduced, not increased, by a surround stimulus",
+          "scope_region": "cat V1",
+          "scope_population": "intracellular recordings"
+        },
+        {
+          "doi": "10.7554/elife.54875",
+          "value": "detected in V1, S1, M1",
+          "value_source_sentence": "We find clear evidence for ISN operation in mouse visual, somatosensory, and motor cortex.",
+          "scope_region": "mouse V1, S1, M1",
+          "scope_population": "PV interneurons, optogenetic stimulation"
+        },
+        {
+          "doi": "10.1523/jneurosci.0963-17.2017",
+          "value": "detection depends on perturbation strength",
+          "value_source_sentence": "a large proportion of the inhibitory network must be perturbed to reliably detect an ISN regime robustly in cortex",
+          "scope_region": "computational model",
+          "scope_population": "heterogeneous inhibitory population"
+        }
+      ],
+      "homogeneity_check": "Mixed: theoretical predictions vs experimental observations across different species (rat, cat, mouse). Detection methods differ (modeling, intracellular recordings, optogenetics). The key comparison is between theoretical expectation and experimental confirmation.",
+      "n_definition": "varies: individual cells for intracellular, populations for optogenetics"
+    },
+    {
+      "comparison": "SSN model explanatory scope: phenomena explained by single framework",
+      "metric": "number of distinct phenomena explained",
+      "unit": "count of phenomena",
+      "papers": [
+        {
+          "doi": "10.1016/j.neuron.2014.12.026",
+          "value": 4,
+          "value_source_sentence": "surround suppression, normalization, contrast-dependent size tuning, cross-orientation suppression",
+          "scope_region": "V1",
+          "scope_population": "SSN 2-population model"
+        },
+        {
+          "doi": "10.1073/pnas.1700080115",
+          "value": 7,
+          "value_source_sentence": "normalization, surround suppression, contrast invariance, persistent states, self-sustained network-wide oscillations along with two coexisting stable...",
+          "scope_region": "cortex general",
+          "scope_population": "SSN 2-population model"
+        },
+        {
+          "doi": "10.1371/journal.pcbi.1012190",
+          "value": 2,
+          "value_source_sentence": "both surround suppression and the local contrast dependence of gamma peak frequency",
+          "scope_region": "macaque V1",
+          "scope_population": "SSN extended with receptor kinetics"
+        }
+      ],
+      "homogeneity_check": "Comparable within the SSN framework but different versions of the model (basic vs extended). The count of phenomena is somewhat subjective. The key comparison shows the SSN framework growing in explanatory scope over time.",
+      "n_definition": "number of distinct empirical phenomena captured by the model"
+    }
+  ],
+  "evidence_gaps": [],
+  "unreplicated_claims": []
+}

@@ -1,10 +1,6 @@
 (sec-electrophysiology)=
 # Intrinsic Electrophysiology
 
-```{authorship-explorer}
-Section 5 · Intrinsic Electrophysiology
-```
-
 Section {ref}`sec-morphology` closed on the observation that VIP morphology is not a single *bipolar* stereotype but at least three co-existing axes — bipolar/bitufted versus basket versus multipolar — with regional variation layered on top. Intrinsic electrophysiology tells a structurally similar story: a cell class that is often summarised as *irregular-spiking, high-input-resistance* in fact partitions into partially replicable sub-fingerprints whose number, membership, and dominant conductances depend on which VIP-expressing population is recorded and how the resulting cells are clustered. This section adjudicates five points: (i) how many electrophysiological subtypes of VIP interneurons have been reported, (ii) how the passive membrane properties behave across labs, (iii) which conductances are argued to be dominant, (iv) whether *irregular-spiking* is a universal VIP property or a subtype feature, and (v) where within-family physiology grades continuously between molecularly defined branches — mirroring the Patch-seq continua surfaced in Section {ref}`sec-molecular-identity`.
 
 ## 5.1 Firing patterns: irregular, bursting, adapting, and continuous
