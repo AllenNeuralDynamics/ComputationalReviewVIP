@@ -22,6 +22,7 @@ project:
     - plugins/citation-annotation-plugin.mjs
     - plugins/authorship-plugin.mjs
     - plugins/evidence-explorer-plugin.mjs
+    - plugins/figure-lightbox-plugin.mjs
   github: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP
   bibliography:
     - content/references.bib
