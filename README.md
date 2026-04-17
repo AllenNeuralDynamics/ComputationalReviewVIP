@@ -10,7 +10,7 @@ Template repository for producing comprehensive AI-assisted critical literature 
 > Start a comprehensive critical literature review titled: "[YOUR TITLE]"
 > 
 > The attached repository (ComputationalReviewTemplate) contains all pipeline skills and scaffold.
-> Read skills/expert-review-orchestrator-v24.md FIRST. It defines all 19 phases.
+> Read skills/comprev-orchestrator-v24.md FIRST. It defines all 19 phases.
 > Follow it phase by phase.
 >
 > Table of Contents:
