@@ -82,7 +82,7 @@ The coordinator writes the Phase 2 delegation task descriptions. These contain t
 
 Agents MUST use `retrieve_fulltext()` for ALL papers — not just the "top 50." The function tries publisher APIs first (which have higher success rates for paywalled content), then falls back to open-access sources.
 
-The retrieval protocol (API tiers, size validation) is defined in the comprev-comprev-reviewer-agent skill.
+The retrieval protocol (API tiers, size validation) is defined in the comprev-reviewer-agent skill.
 
 **Size-based validation (MANDATORY after any retrieval):**
 - Response > 15KB AND contains `<body>` tag → genuine fulltext → `text_access = "fulltext"`

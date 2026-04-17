@@ -21,7 +21,7 @@ DATAML
 EXPERT_CRITICAL_LITERATURE_REVIE
     Scientific work: evidence gathering, section writing, blinded criticism,
     citation verification.
-    Loads: comprev-comprev-reviewer-agent (evidence + writing), comprev-figure-construction (figures).
+    Loads: comprev-reviewer-agent (evidence + writing), comprev-figure-construction (figures).
 ```
 
 The coordinator defines WHAT and WHEN. DATAML does mechanical HOW. The review agent does scientific HOW.
@@ -345,7 +345,7 @@ The coordinator uses this table to delegate each phase. The full delegation temp
 
 ### Delegation Pattern
 
-For EXPERT phases: `"Load skill [sub-skill-name] and execute Phase N. Also load comprev-comprev-reviewer-agent. Your inputs: [artifact references]."`
+For EXPERT phases: `"Load skill [sub-skill-name] and execute Phase N. Also load comprev-reviewer-agent. Your inputs: [artifact references]."`
 
 For DATAML phases: `"Load skill comprev-dataml-phases and execute Phase N. Your inputs: [artifact references]."` Or use `send_message` to resume an existing DATAML child.
 
