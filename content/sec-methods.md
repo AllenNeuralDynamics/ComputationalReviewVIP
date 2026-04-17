@@ -1,5 +1,12 @@
 # Methods
 
+:::{figure} ../figures/fig_methods_pipeline.png
+:name: fig-methods-pipeline
+:width: 100%
+
+Overview of the 19-phase Expert Review Pipeline v24 used to assemble this review. Green boxes indicate EXPERT agents (scientific judgment), blue boxes indicate DATAML agents (mechanical work), and the gray box is the COORDINATOR. Red dashed lines mark information barriers where actor–critic separation is enforced. Orange diamonds indicate gate checkpoints where the coordinator verifies compliance before advancing.
+:::
+
 This review was produced by a structured, agent-orchestrated evidence synthesis
 pipeline comprising nineteen phases, spanning literature retrieval, conflict
 normalization, citation infrastructure construction, figure planning, parallel
@@ -231,6 +238,38 @@ persisted as versioned artifacts, providing a full provenance chain from
 any claim in the prose back to its source record. The full pipeline is
 re-runnable given the `comprev-orchestrator` skill, which encodes the
 phase DAG, per-phase agent assignments, and per-phase output schemas.
+
+
+## Pipeline Skills
+
+The full pipeline is encoded as twelve version-controlled skill files committed
+to this repository under [`skills/`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/tree/main/skills).
+Each skill is a markdown specification that was loaded by the relevant agent at
+the relevant phase — re-running a phase from scratch requires only the skill
+plus the upstream artifacts. Information barriers are enforced by *omission*:
+writer agents cannot see critic rubrics, figure auditors cannot see the
+argument arc, and citation verifiers cannot see the fix protocol.
+
+| Skill | Role | Phase(s) |
+|---|---|---|
+| [`comprev-orchestrator-v24.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-orchestrator-v24.md) | Coordinator protocol governing phase DAG, delegation, and gate artifacts | 0–19 (all) |
+| [`comprev-evidence-gathering.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-evidence-gathering.md) | Worker protocol for EXPERT evidence-gathering frames (one per topic cluster) | 2 |
+| [`comprev-reviewer-agent.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-reviewer-agent.md) | Universal EXPERT core — how to evaluate literature and write review prose | 2, 7, 10, 11 |
+| [`comprev-scaffold.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-scaffold.md) | Scaffold construction: argument arc, section plans, figure specs, style guide | 4 |
+| [`comprev-figure-construction.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-figure-construction.md) | Worker skill for producing publication-quality figures from `figure_data` JSON | 6–7 |
+| [`comprev-figure-audit.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-figure-audit.md) | Blinded figure-auditor protocol — cross-study comparison validity | 6 |
+| [`comprev-section-writing.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-section-writing.md) | Writer protocol: MyST formatting, citation discipline, synthesis rules | 7 |
+| [`comprev-critic.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-critic.md) | Blinded section-critic protocol — unsupported claims, misrepresented evidence | 8 |
+| [`comprev-integration.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-integration.md) | Cross-section integration passes; Introduction, Conclusion, and Abstract drafting | 10, 11 |
+| [`comprev-verification.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-verification.md) | Citation-triple verification against CrossRef and full-text sources | 14–16 |
+| [`comprev-fix-execution.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-fix-execution.md) | Fix-application protocol: replace bib entries, correct claim sentences | 17–18 |
+| [`comprev-dataml-phases.md`](https://github.com/AllenNeuralDynamics/ComputationalReviewVIP/blob/main/skills/comprev-dataml-phases.md) | Worker protocol for DATAML agents — citation infrastructure, BibTeX, CrossRef | 3, 5, 13, 15, 19 |
+
+To re-run this pipeline against a different topic, a user clones the
+[ComputationalReviewTemplate](https://github.com/AllenNeuralDynamics/ComputationalReviewTemplate)
+repository (which packages the same twelve skills), updates `myst.yml` with a
+new title and table of contents, and issues a single coordinator prompt — the
+orchestrator skill then drives all nineteen phases to completion.
 
 ## Limitations
 
