@@ -1,0 +1,25 @@
+{
+  "_comment": "Forward-looking experimental agenda distilled from sec-13 'Untested predictions and experimental gaps' (content/sec-13-synthesis.md lines 326-350). Each gap is paired with the thematic axis from fig_sec13_conflict_map.png that it would adjudicate, and with the specific tool/measurement class required. This figure is the agenda-facing counterpart to sec-13's backward-looking conflict map.",
+  "gaps": [
+    {"id": 1, "title": "Subtype-specific causal tests of the motif",
+     "axis": "Canonical motif universality",
+     "tool": "Intersectional genetics + actuator (VIP/CR, VIP/CCK, VIP/ChAT selective ChR2/GtACR in V1 L2/3)",
+     "tools_exist": true, "anchor_cites": ["Pronneke2015", "Foss2024"]},
+    {"id": 2, "title": "Within-subject disease reversibility",
+     "axis": "Methodology — causal inversion",
+     "tool": "VIP-specific gene rescue in disease models (Scn1a, MeCP2) + physiological readout",
+     "tools_exist": true, "anchor_cites": ["Miralles2023", "Goff2019", "Mossner2020"]},
+    {"id": 3, "title": "Subtype-resolved recording during reward",
+     "axis": "Reward & gamma sign (direction of effect)",
+     "tool": "2-photon Ca²⁺ under intersectional drivers (not pan-VIP-Cre) during Go/NoGo reward tasks",
+     "tools_exist": true, "anchor_cites": ["Veit2023", "Ramamurthy2023"]},
+    {"id": 4, "title": "Primate direct tests",
+     "axis": "Species translation (mouse → primate → human)",
+     "tool": "AAV-delivered opsins/DREADDs in primate V1 + in-vivo VIP manipulation during behaviour",
+     "tools_exist": false, "anchor_cites": []},
+    {"id": 5, "title": "Long-range projecting VIP cells as independent actors",
+     "axis": "Molecular heterogeneity & subtype structure",
+     "tool": "Output-tagged in-vivo recording of VIP-LRP (retro-AAV or intersectional projection labelling)",
+     "tools_exist": true, "anchor_cites": ["Francavilla2020", "Luo2020"]}
+  ]
+}

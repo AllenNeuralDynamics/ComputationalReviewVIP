@@ -55,24 +55,7 @@ We **do not cover** in depth: (a) peripheral VIP biology (vasoactive, endocrine,
 The review proceeds in twelve thematic body sections, a cross-cluster synthesis, and this introduction and its companion conclusion. Section {ref}`sec-molecular-identity` surveys the molecular and transcriptomic taxonomy of VIP interneurons and argues that the class is internally structured at multiple resolutions. Section {ref}`sec-development` follows the developmental trajectory from CGE progenitors to the adult class, with particular attention to the programs that specify bipolar/CR⁺ versus basket/CCK⁺ fate. Section {ref}`sec-morphology` catalogues morphological diversity and the Patch-seq-enabled mapping of morphology onto transcriptomic axes. Section {ref}`sec-electrophysiology` reviews intrinsic firing properties and their correspondence — partial, not bijective — to molecular types. Section {ref}`sec-synaptic-connectivity` surveys synaptic input and output, including the preferential VIP→SST motif and its qualifiers (short-term plasticity, quantal properties, convergence). Section {ref}`sec-circuit-motifs` examines local-circuit disinhibitory and inhibitory motifs across sensory, frontal, and motor areas, and asks whether the canonical motif is a cortex-wide template or a sensory-cortex regularity. Section {ref}`sec-in-vivo-behavior` synthesises in-vivo recording and perturbation studies across sensory processing, locomotion, arousal, reward, attention, and learning. Section {ref}`sec-regions` compares hippocampal, entorhinal, prefrontal, motor, and associative VIP populations to the primary-sensory template. Section {ref}`sec-oscillations` reviews VIP contributions to theta, gamma, ripple, and slow-oscillation dynamics. Section {ref}`sec-species-translation` addresses cross-species conservation, primate and human evidence, and disease models. Section {ref}`sec-computational-models` surveys network models of VIP function and asks how well their assumptions survive contact with the evidence of the preceding sections. Section {ref}`sec-synthesis` performs the cross-cluster adjudication — what replicates, what is contested, what is untested — and articulates the revised framework. Section {ref}`sec-conclusion` closes with open questions, priority experiments, and methodological recommendations.
 
 
-:::{figure} ../figures/sec-01/fig_sec01_reading_guide.png
-:name: fig-sec01-reading-guide
-:align: center
-:width: 90%
-
-**Review structure and the canonical-motif adjudication grid.** *Top:* the review's
-twelve body sections (2–13) organised along four axes that recur throughout —
-molecular subtype (VIP/CR⁺ bipolar, VIP/CCK⁺ basket, VIP/ChAT, VIP-LRP), brain
-region (primary sensory, association, motor, medial prefrontal, hippocampus,
-entorhinal), cortical layer (L1–L6), and behavioural state
-(quiet wake, locomotion, task engagement, reinforcement). *Bottom:* the
-canonical "universal disinhibitor" framing is best supported in a small,
-well-populated subregion of this grid (mouse primary sensory cortex, L2/3,
-high-arousal / active states, VIP/CR⁺ and VIP/CCK⁺ pooled); most other cells of
-the grid are sparsely populated, and several are empty. The review makes this
-structure explicit; {ref}`sec-conclusion` converts it into an experimental
-agenda. Schematic; no quantitative axes are implied.
-:::
+The adjudication landscape itself — which claims replicate, which conflict, which remain untested — is materialised quantitatively in {numref}`fig-sec13-conflict-map` of {ref}`sec-synthesis`, and the revised functional framework that results is schematised in {numref}`fig-sec13-revised-framework`; the complementary forward-looking experimental agenda appears as {numref}`fig-sec14-outstanding-agenda` in {ref}`sec-conclusion`.
 
 ## Adjudication strategy: replicated, contested, untested
 
