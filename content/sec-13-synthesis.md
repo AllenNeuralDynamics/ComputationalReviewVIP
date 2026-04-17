@@ -1,7 +1,7 @@
 (sec-synthesis)=
 (sec-13-synthesis)=
 
-# Synthesis — reassessing the canonical VIP disinhibitor
+# Synthesis: Reassessing the Canonical VIP Disinhibitor
 
 > "VIP cells inhibit SST cells, which inhibit pyramidal dendrites." A single sentence — repeated so often in the last decade that it has begun to function as the definition of VIP interneurons rather than as one empirical finding about them.
 

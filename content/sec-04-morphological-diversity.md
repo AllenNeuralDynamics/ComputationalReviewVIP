@@ -1,5 +1,4 @@
 ---
-title: "Section 4 — Morphological Diversity of VIP Interneurons"
 short_title: "Morphology"
 numbering:
   headings: true

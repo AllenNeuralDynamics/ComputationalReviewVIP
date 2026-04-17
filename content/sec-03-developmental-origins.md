@@ -1,5 +1,4 @@
 ---
-title: "Section 3 — Developmental Origins and Postnatal Maturation"
 authors:
   - name: VIP Interneurons Review Consortium
 section_number: 3

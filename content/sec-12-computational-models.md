@@ -1,5 +1,5 @@
 (sec-computational-models)=
-# 12. Computational Models of VIP Function
+# Computational Models of VIP Function
 
 ## 12.0 Framing
 
