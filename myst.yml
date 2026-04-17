@@ -41,6 +41,8 @@ project:
     - file: content/sec-12-computational-models.md
     - file: content/sec-13-synthesis.md
     - file: content/sec-14-conclusion.md
+    - file: content/sec-methods.md
+    - file: content/sec-evidence.md
 site:
   template: book-theme
   title: "VIP Interneurons — Computational Review"
