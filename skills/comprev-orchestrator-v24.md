@@ -18,7 +18,7 @@ DATAML
     document assembly, citation triple extraction, diff application, 
     repository push. Receives task + input artifacts, returns output artifacts.
 
-EXPERT_CRITICAL_LITERATURE_REVIE
+LITREVIEW
     Scientific work: evidence gathering, section writing, blinded criticism,
     citation verification.
     Loads: comprev-reviewer-agent (evidence + writing), comprev-figure-construction (figures).
@@ -37,7 +37,7 @@ Before any execution, the coordinator MUST build a complete execution plan using
 
 2. **Call `generate_plan` with ALL 19 phases as separate plan phases.** Each phase maps to one `generate_plan` phase with `depends_on` chains enforcing sequential execution. Include the agent, the key steps, and the compliance checks for each phase.
 
-3. **The plan phases use ONLY `DATAML` and `EXPERT_CRITICAL_LITERATURE_REVIE` as agents.** The coordinator NEVER appears as an agent. Coordinator work (gate checks, compliance inspection, send-backs) happens BETWEEN plan phases and is described in the step descriptions as "coordinator verifies X before advancing."
+3. **The plan phases use ONLY `DATAML` and `LITREVIEW` as agents.** The coordinator NEVER appears as an agent. Coordinator work (gate checks, compliance inspection, send-backs) happens BETWEEN plan phases and is described in the step descriptions as "coordinator verifies X before advancing."
 
 4. **Step descriptions must embed the enforcement rules.** Each step should include what to check and what to send back — not just "draft sections" but "draft sections, verify ≥35 citations per core section, check brace balance, send back if citations_per_paragraph < 3.0."
 
@@ -49,7 +49,7 @@ Use this structure for each of the 19 phases:
 Phase name: "Phase N: [Title]"
 depends_on: ["phase for N-1"]  (except Phase 1)
 delegations:
-  - agent: DATAML or EXPERT_CRITICAL_LITERATURE_REVIE
+  - agent: DATAML or LITREVIEW
     steps:
       - title: [what the agent does]
         description: [1-3 sentences: task + inputs + key compliance checks.
