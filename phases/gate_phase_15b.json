@@ -1,0 +1,36 @@
+{
+  "phase": "15b",
+  "status": "pass",
+  "summary": "All 20 parallel LITREVIEW batches completed. 2,422 triples verified across 401 papers.",
+  "counts": {
+    "VERIFIED": 1000,
+    "LIKELY_SUPPORTED": 687,
+    "OVERCLAIMED": 397,
+    "MISATTRIBUTED": 158,
+    "UNVERIFIABLE_NO_FULLTEXT": 180,
+    "SKIP_METADATA_FAIL": 0
+  },
+  "fix_candidate_count": 555,
+  "batch_verdict_vids": {
+    "0": "fb2d9c52-0695-4658-8833-fe95661b4e24",
+    "1": "6ddff594-b603-4c23-a572-347d4f4ea764",
+    "2": "b7497a04-b5c4-4223-b3cf-aad1907c0380",
+    "3": "e804c29a-c2c5-4524-b6a9-170aa5352026",
+    "4": "6e845b2e-797e-444a-943a-cb5166fa218e",
+    "5": "3084560f-e7fe-48f1-848c-3a4b94ff01ba",
+    "6": "9d9a4656-08c6-4774-a6fe-1f3ca5b69833",
+    "7": "9c5c9c46-b307-4f4b-a8c1-397d275937b6",
+    "8": "f5f8f544-6060-4e39-ab6d-8a3da2de9407",
+    "9": "5cb2cdcb-691d-4eb4-9a8e-067ff1601656",
+    "10": "cd97089c-52b4-4d7e-94f2-89ad5e2aab2c",
+    "11": "6b8dde91-b0a0-4e45-ad00-f2525c87f22a",
+    "12": "142880b7-5590-4de4-891b-aac313b21d2e",
+    "13": "b67e7d21-7d0d-4cc4-a70f-a30ab42400d9",
+    "14": "edbcc2d7-5a55-4ad1-925d-21bf673973e6",
+    "15": "a1966521-8b37-44aa-992b-6b436b961359",
+    "16": "acb759b4-c384-45df-a19f-e2b4f2ef1a3e",
+    "17": "dfabe07b-8da3-4f95-b408-e7f900ad0d61",
+    "18": "d7484caf-2a10-455d-ad90-b23c31e8b1d0",
+    "19": "4acea1da-7fdd-4078-b48b-16445c48a4e8"
+  }
+}

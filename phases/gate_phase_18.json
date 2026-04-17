@@ -1,0 +1,27 @@
+{
+  "phase": 18,
+  "status": "pass_with_notes",
+  "summary": "326/346 edits applied. 0 orphan cite_keys. 19 failures all in sec10 (same-line multi-edit conflicts); bibliography integrity preserved.",
+  "updated_section_vids": {
+    "sec01": "1fb09d98-3a7c-4d86-8d48-98400ca0aa0b",
+    "sec02": "6363170a-cc1e-423b-b0d7-3dd6f1b3d3de",
+    "sec03": "f2853dd9-bbcc-49e8-907b-e2f3d383e522",
+    "sec04": "52c20493-49cf-4a90-917e-6e4d4cd98220",
+    "sec05": "9f808c69-87c7-4ad4-ac6b-2f3edcfd794b",
+    "sec06": "05e92946-6bd5-4418-ba3e-aa9ce31c0ef5",
+    "sec07": "8160fa7e-1fdb-423c-b72e-9d3a54670b66",
+    "sec08": "1b674c60-f6ea-4284-81ad-e24406d630f0",
+    "sec09": "9798a0ad-653d-428b-bd77-cf894209c4b1",
+    "sec10": "4b535dd8-944e-4d70-a9d5-4bc54c0a7c2e",
+    "sec11": "e93df58b-111d-410c-bafc-0c9224fb7c49",
+    "sec12": "5640a3f6-0c18-43fb-b8fa-245d9850f9bd",
+    "sec13": "3c839a1f-97b8-441e-a348-eebce085a87c",
+    "sec14": "30835a95-e309-4404-bbf7-9ab3b9490b98"
+  },
+  "updated_bib_vid": "6dabdd06-3d81-4aa4-9183-e475140aa80e",
+  "application_log_vid": "8023b92b-8f8a-4b7d-8cc7-7178faef938d",
+  "total_edits_applied": 326,
+  "total_failures": 19,
+  "total_orphans": 0,
+  "bib_entries": 405
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "15a",
+  "description": "Metadata verification (steps 1-4) for citation triples",
+  "n_papers_total": 401,
+  "n_papers_all_pass": 399,
+  "n_papers_any_fail": 2,
+  "n_triples_total": 2424,
+  "n_triples_all_pass": 2395,
+  "n_triples_need_step5": 2395,
+  "n_triples_auto_fail": 29,
+  "summary_of_failures_by_step": {
+    "1": 0,
+    "2": 0,
+    "3": 2,
+    "4": 0
+  },
+  "failing_papers": [
+    {
+      "cite_key": "BRAINInitiativeCellCensusNetworkBICCN2021",
+      "doi": "10.1038/s41586-021-03950-0",
+      "failed_steps": [
+        3
+      ],
+      "bib_author": "(BICCN)",
+      "crossref_author": "BRAIN Initiative Cell Census Network (BICCN)",
+      "bib_title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+      "crossref_title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+      "bib_year": 2021,
+      "crossref_year": 2021
+    },
+    {
+      "cite_key": "Apicella2022",
+      "doi": "10.3389/fncel.2022.811484",
+      "failed_steps": [
+        3
+      ],
+      "bib_author": "Aj",
+      "crossref_author": "Apicella",
+      "bib_title": "VIP-Expressing GABAergic Neurons: Disinhibitory vs. Inhibitory Motif and Its Role in Communication Across Neocortical Areas",
+      "crossref_title": "VIP-Expressing GABAergic Neurons: Disinhibitory vs. Inhibitory Motif and Its Role in Communication Across Neocortical Areas",
+      "bib_year": 2022,
+      "crossref_year": 2022
+    }
+  ],
+  "title_match_threshold": 0.85,
+  "title_match_metric": "rapidfuzz.fuzz.ratio (0-1 scale, after HTML/LaTeX strip and lowercase)",
+  "author_match_metric": "case-insensitive exact match on first-author surname",
+  "year_match_metric": "exact integer match",
+  "crossref_api": "https://api.crossref.org/works/{doi}"
+}

@@ -1,0 +1,22 @@
+{
+  "sections_modified": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "total_transitions_added": 4,
+  "total_xrefs_fixed": 68,
+  "total_terminology_changes": 7,
+  "total_contradictions_flagged_resolved": 0,
+  "total_fig_label_changes": 51,
+  "total_trivial_should_fix_applied": 0,
+  "all_cite_keys_in_bib": true
+}

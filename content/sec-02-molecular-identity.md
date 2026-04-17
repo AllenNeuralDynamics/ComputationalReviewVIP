@@ -1,0 +1,183 @@
+(sec-molecular-identity)=
+# Molecular Identity and Transcriptomic Taxonomy
+
+## Why molecular identity must be adjudicated first
+
+Any functional claim about a vasoactive intestinal peptide (VIP) interneuron presupposes that "VIP" names a well-defined cell class. The single-cell transcriptomic era has complicated, not simplified, this presupposition. On the one hand, high-throughput scRNA-seq confirms that VIP marks a coherent caudal-ganglionic-eminence (CGE)-derived branch of cortical GABAergic neurons, separable from the medial-ganglionic-eminence (MGE)-derived parvalbumin (PV) and somatostatin (SST) branches {cite:p}`Tasic2016,Tasic2018,Yao2021a`. On the other hand, different atlases partition the VIP branch into radically different numbers of "types," ranging from a handful of broad groups to more than twenty fine-grained clusters, and Patch-seq re-integrations increasingly suggest that within-branch boundaries are continuous rather than categorical {cite:p}`Scala2020,Gouwens2020a`. These two observations — coherence at the subclass level, uncertainty at finer levels — frame everything that follows in this review. Section {ref}`sec-introduction` argued that the canonical "VIP disinhibitor" narrative rests on studies that implicitly equate VIP with a single functional unit; the remainder of this section shows why that equation is unsafe, and what the transcriptomic literature does and does not resolve.
+
+Six questions organize the discussion: how VIP interacts with co-expressed markers (CCK, calretinin [CR], choline acetyltransferase [ChAT]); how subtype counts behave across landmark atlases (Tasic, Yao, BICCN, human studies); whether the VIP+/CR+ bipolar versus VIP+/CCK+ basket split is the most robust within-branch axis; how Patch-seq repositions molecular types along morpho-electric continua (with forward links to Sections {ref}`sec-morphology` and {ref}`sec-electrophysiology`); what spatial transcriptomics adds about laminar and areal gradients; and whether cross-dataset harmonization defines a stable backbone or merely a new consensus artefact. The review's cross-cluster synthesis in Section {ref}`sec-synthesis` uses the conclusions here as its foundation.
+
+## VIP as a marker and its co-expression axes
+
+VIP is a neuropeptide marker with two properties that make it useful and problematic simultaneously. It is useful because its expression coincides with a transcriptomically coherent subclass in every major cortical atlas: {cite:t}`Tasic2018` defined six GABAergic subclasses (Sst, Pvalb, Vip, Lamp5, Sncg, Serpinf1) in adult mouse visual and anterior lateral motor cortex, with Vip appearing as a single, well-separated branch rather than a diffuse collection. {cite:t}`Yao2021a` extended this scheme to an integrated isocortex-plus-hippocampal-formation taxonomy comprising 388 transcriptomic types total, of which the Vip subclass occupied 6 "supertypes." {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021` further replicated the Vip subclass in mouse primary motor cortex and established cross-species GABAergic taxonomy conservation at the subclass and t-type level across mouse, human, and marmoset.
+
+VIP is problematic because, at every level below the subclass, it overlaps with at least three other canonical markers, each of which was historically used to define a distinct interneuron population:
+
+- **Calretinin (CR).** {cite:t}`Cauli2014` framed cortical CR+ interneurons as two main populations — VIP+ bipolar interneurons of CGE origin and SST-Martinotti-like interneurons of dorsal MGE origin — with CR+ cells making up "about 10–30%" of GABAergic interneurons depending on region. The VIP+/CR+ intersection thus carves out a recognizable bipolar class that is neither purely VIP nor purely CR.
+- **Cholecystokinin (CCK).** VIP also overlaps with CCK in the basket-cell lineage, where VIP+/CCK+ cells contact pyramidal (PYR) somata and other basket cells, exerting mixed inhibitory and disinhibitory influences {cite:p}`Francavilla2018a`. Upper-layer VIP+ interneurons enriched for the marker combination Tac2/CxCl14 were identified as a candidate anchor for this subtype axis across cortical regions in {cite:t}`Wu2022a`.
+- **Choline acetyltransferase (ChAT).** A subset of VIP interneurons co-expresses ChAT and the vesicular acetylcholine transporter, releasing acetylcholine onto pyramidal targets {cite:p}`Tasic2016,Obermayer2019`. This VIP/ChAT subtype is concentrated in upper layers and forms one of the three VIP subgroups visible at coarse clustering resolution {cite:p}`Machold2024`.
+
+Two operational consequences follow. First, every claim of the form "VIP interneurons do X" is ambiguous unless the statement commits to a molecular grain — subclass, supertype, or fine cluster. {cite:t}`Agmon2024` makes the blunt version of this point: catalogues with 23 GABAergic types in visual cortex, or 38-to-73 types in larger atlases, test the patience of experimentalists whose goal is explanatory parsimony, not completeness. Second, marker overlap is not a nuisance but an axis: the VIP+/CR+ versus VIP+/CCK+ axis emerges as the most reproducible within-branch split across datasets, with the VIP/ChAT group as a smaller third group (see the next subsection).
+
+## Subtype counts disagree across atlases — and the disagreement has structure
+
+The most conspicuous disagreement in the VIP taxonomy literature is the number of "VIP subtypes" a given paper reports. {cite:t}`Tasic2016` identified 18 transcriptomic cell types across three subclasses (Vip, Pvalb, Sst) in mouse visual cortex. {cite:t}`Tasic2018` later refined GABAergic taxonomy to six subclasses plus two distinct types, with the Vip subclass expanding to roughly 17 fine clusters in their consolidated cortex data. {cite:t}`Yao2021a` integrated single-cell transcriptomic data across isocortex and hippocampal formation and split Vip into 6 supertypes nested within the Vip subclass. In the human domain, {cite:t}`Hodge2019` found that "VIP was the most diverse subclass (21 types)" in middle temporal gyrus, many concentrated in upper layers, while {cite:t}`Hodge2020` identified only 5 inhibitory types (two LAMP5, VIP, SST, PVALB) in layer 5 of frontoinsular cortex — reflecting limited layer and region sampling, not contradictory biology. Secondary citations of the Tasic 2016/2018 datasets yield further dispersion: {cite:t}`Obermayer2019` (citing Tasic 2016) reports "12 different molecular VIP-positive subtypes"; {cite:t}`Millman2020` states "16 VIP neuron subtypes"; {cite:t}`GuetMcCreight2020` states "VIP+ cells were grouped into 21 different clusters."
+
+```{figure} {{artifact:886e69a9-6e22-42c1-a6ae-fddb7bc0ac71}}
+:label: fig-sec02-subtype-count-coarse
+:align: center
+:width: 75%
+:alt: Bar chart of coarse VIP subtype counts across two studies, Machold 2024 reporting three subtypes and Yao 2021 reporting six supertypes.
+
+**Coarse VIP subtype counts across taxonomies.** {cite:t}`Machold2024` groups VIP cells into three broad review-level subtypes; {cite:t}`Yao2021a` partitions the Vip subclass into 6 supertypes in the integrated Allen isocortex-plus-HPF taxonomy. *These two values are at different hierarchy levels (review consensus vs. data-driven supertype) and are not directly comparable as replications — they report where each study cut the dendrogram.*
+```
+
+:::{dropdown} Reproducible code for {numref}`fig-sec02-subtype-count-coarse`
+:color: light
+:icon: code
+
+```{literalinclude} {{artifact:0c114ff0-e7dd-403d-87fb-98b89508838e}}
+:language: python
+```
+:::
+
+```{figure} {{artifact:3a321d03-014e-4cdb-9c0f-9ea2269a3888}}
+:label: fig-sec02-subtype-count-fine
+:align: center
+:width: 75%
+:alt: Bar chart of fine VIP cluster counts across three secondary citations of the Tasic 2018 dataset, reporting 12, 16, and 21 clusters respectively.
+
+**Fine-grained VIP cluster counts cited from primary datasets.** Two secondary sources cite the Tasic datasets {cite:p}`Tasic2016,Tasic2018` and report different numbers of VIP clusters: 12 {cite:p}`Obermayer2019` (citing Tasic 2016) and 16 {cite:p}`Millman2020`; a third secondary source, {cite:t}`GuetMcCreight2020`, reports 21 clusters derived from the {cite:t}`Hodge2019` human MTG dataset rather than from Tasic. *The Tasic-derived counts are not independent replications; they are the same dataset read at different clustering resolutions or with different inclusion criteria, so that spread is a clustering-hyperparameter artefact, not a biological signal.*
+```
+
+:::{dropdown} Reproducible code for {numref}`fig-sec02-subtype-count-fine`
+:color: light
+:icon: code
+
+```{literalinclude} {{artifact:ab9222eb-b0a3-4c40-9635-c1f6020c25fb}}
+:language: python
+```
+:::
+
+
+```{admonition} Conflict: VIP subtype count is severalfold and method-dependent
+:class: warning
+
+{cite:t}`Yao2021a` reports 6 Vip supertypes in the Allen isocortex-plus-hippocampal formation atlas, while {cite:t}`Obermayer2019` reports 12 molecular VIP subtypes from scRNA-seq profiling in the same mouse cortex. {cite:t}`Millman2020` cites the {cite:t}`Tasic2018` dataset and reports 16 VIP clusters, while {cite:t}`GuetMcCreight2020` reports 21 clusters drawn from the {cite:t}`Hodge2019` human MTG dataset. The two Tasic-derived secondary values are not independent: they sample different levels of the Tasic hierarchy or apply different cluster-pruning thresholds, and the GuetMcCreight figure is a separate human count rather than a re-analysis of the same mouse data. This is not a failure of replication but a structural property of hierarchical clustering — and yet downstream reviews and circuit-mechanism papers cite these counts as if they were interchangeable. Treating "VIP subtype number" as a primary biological quantity is therefore unsafe; the correct question is always "at which taxonomic level?"
+```
+
+The disagreement resolves when counts are conditioned on taxonomic level. At the subclass level (Vip vs. Sst vs. Pvalb vs. Lamp5 vs. Sncg vs. Serpinf1), every modern mouse atlas agrees {cite:p}`Tasic2018,Yao2021a,BRAINInitiativeCellCensusNetworkBICCN2021`. At the supertype/broad-subtype level, 3-to-6 groups emerge reliably {cite:p}`Yao2021a,Machold2024` ({numref}`fig-sec02-subtype-count-coarse`). At the fine-cluster level, clustering hyperparameters and dataset coverage dominate ({numref}`fig-sec02-subtype-count-fine`). {cite:t}`Krienen2023` and {cite:t}`Langlieb2023` illustrate the same pattern at whole-brain scale: 288 regional clusters and 102 cholinergic clusters respectively, numbers that reflect resolution choices as much as biology.
+
+A further wrinkle comes from whether the three-class (PV/SST/VIP) framework itself is sufficient. {cite:t}`Jiang2024a` models cortical microcircuits assuming that PV, SST, and VIP plus pyramidal cells adequately capture inhibitory diversity. {cite:t}`Machold2023` argues this taxonomy is structurally incomplete: Id2-expressing interneurons — largely neurogliaform cells (NGCs) and diverse CCK cells — form a neglected fourth major class with distinct intrinsic and synaptic properties. The coherence of VIP as a subclass is compatible with both views; the disagreement is about what is outside VIP, not what is inside it. Section {ref}`sec-synthesis` returns to this question in the context of circuit motif generalisation.
+
+```{admonition} Conflict: three-class adequacy of cortical inhibition
+:class: warning
+
+{cite:t}`Jiang2024a` frames cortical inhibition as PV + SST + VIP; {cite:t}`Machold2023` argues for an additional Id2/NGFC class. For the VIP taxonomy itself the disagreement is indirect but consequential: if VIP is one of three classes, secondary-analysis defaults (marker panels, Cre-driver logic, circuit cartoons) will treat "non-VIP, non-PV, non-SST" as a residual. If instead Id2 cells constitute a fourth primary class, that residual becomes a first-class citizen and the VIP branch must be interpreted relative to four peers, not two.
+```
+
+## VIP+/CR+ bipolar versus VIP+/CCK+ basket is the most replicable within-branch axis
+
+Across species, layers, and clustering methods, the within-VIP split that recurs most reliably is between VIP+/CR+ bipolar cells and VIP+/CCK+ basket cells, with a smaller VIP/ChAT group often discussed separately. {cite:t}`Machold2024` identifies VIP/CCK and VIP/CR as the principal axes of VIP transcriptomic diversity, alongside additional subgroups (including Crh, Chat, and Nos1 subsets), rather than a clean three-way collapse. {cite:t}`Bogaj2025a` confirms three L2/3 VIP-IN clusters by dendrogram analysis. Historical immunohistochemistry-plus-patch data made the same split visible before scRNA-seq: {cite:t}`Cauli2014` describes the CR+/VIP+ bipolar-versus-Martinotti distinction, and reviews by {cite:t}`Pronneke2015` and {cite:t}`Tremblay2016` synthesise pre-scRNA-seq cortical interneuron diversity using the bipolar/basket/ChAT groupings for the CGE-derived branch.
+
+Several recent studies probe the axis more finely. {cite:t}`Anastasiades2018` shows that D1 receptors are expressed in superficial VIP+ interneurons that co-express calretinin but not in PV+ or SST+ interneurons, providing a molecular handle on the VIP+/CR+ half. {cite:t}`Wyeth2021` tracked inhibitory inputs onto VIP bipolar cells and implicated CR+ and VIP+ cells (and septal interneurons in the hippocampal case) as their sources, consistent with interneuron-selective connectivity hierarchies. On the VIP+/CCK+ side, {cite:t}`Francavilla2018a` documents that VIP-BCs co-express CCK and contact both PYR somata and PV+ basket cells, establishing a non-canonical inhibitory motif complementary to the disinhibitory VIP→SST→PYR narrative. {cite:t}`Somogyi2025` independently reports that VGLUT3-positive or CB1-positive GABAergic interneurons in vitro expressed combinations of CCK, VIP, and CR and mapped onto rosehip, neurogliaform, and basket morphologies — reinforcing that the marker triad parametrizes morphological diversity rather than labelling three disjoint clusters.
+
+VIP/ChAT is the third group, not a third "subtype" at the same level. {cite:t}`Tasic2016` noted that the Vip-Chat transcriptomic type is located in upper cortical layers and uniquely expresses choline acetyltransferase within the Vip-positive branch. {cite:t}`Dudai2020` characterized two morphological types (bipolar and multipolar) within cortical ChAT+ VIP interneurons in ChAT-tdTomato mice, with a specificity of 98 ± 2% and efficiency of 37 ± 3% for the reporter. {cite:t}`Obermayer2019` demonstrated functionally that mPFC ChAT-VIP interneurons directly excite pyramidal neurons via cholinergic transmission rather than implementing the canonical VIP→SST/PV→PYR disinhibition motif. This functional divergence — further discussed in Section {ref}`sec-circuit-motifs` — means that even if VIP/ChAT is "inside" the VIP branch transcriptomically, it cannot be assumed to implement the VIP disinhibitory function behaviourally.
+
+```{admonition} Conflict: are VIP+/CR+ bipolar cells GABAergic at all?
+:class: warning
+
+{cite:t}`vonEngelhardt2007` reported that VIP+/CR+/ChAT+ bipolar interneurons in cortical layers 2–3 are non-GABAergic, producing no measurable GABAergic synaptic output. {cite:t}`Du2025` classifies calretinin interneurons, including VIP co-expressing bipolar cells, as accommodating or irregular-spiking GABAergic cells using GABA as their primary transmitter. The resolution is likely subtype-level: ChAT+ versus ChAT− subsets of the VIP+/CR+ intersection differ in their release repertoires, consistent with {cite:t}`Obermayer2019`'s finding of direct cholinergic excitation from ChAT-VIP cells and {cite:t}`Somogyi2025`'s documentation of GABAergic/glutamatergic co-transmission at VGLUT3+/CB1+ terminals. Blanket statements about VIP+/CR+ transmitter identity are therefore unsafe without specifying ChAT co-expression and laminar position.
+```
+
+## Patch-seq collapses categorical counts into morpho-electric continua
+
+If scRNA-seq clustering implies categorical boundaries, Patch-seq tests whether those boundaries survive the addition of morphology and electrophysiology. Two data points push in the same direction. {cite:t}`Gouwens2020a` collected Patch-seq from over 4,200 (4,270 after QC) mouse visual cortex GABAergic interneurons and reported that the Vip subclass can be split into bipolar, bitufted, and multipolar cells, the Sst subclass into Martinotti and non-Martinotti cells, and so on — a morphological mapping onto transcriptomic subclasses that recovers the canonical taxonomy. {cite:t}`Gouwens2020b` reports 28 interneuron "met-types" across the GABAergic branch with congruent morphological, electrophysiological, and transcriptomic properties.
+
+{cite:t}`Scala2020` presents the complementary finding: although broad families (Vip, Pvalb, Sst, Lamp5) have distinct, essentially non-overlapping morpho-electric phenotypes, individual transcriptomic types *within* a family are not well separated in morpho-electric space. In their formulation, "electrophysiological properties of the t-types within the Vip subclass varied continuously across the transcriptomic landscape; the membrane time constant, for instance, had its largest values close to the Sncg subclass and gradually decreased towards Vip Gpc3." Examples like Vip Mybpc1 (with Sst-like firing) and Lamp5 Egln3_1 (with Vip/Sst-like firing) show that individual cells cross t-type boundaries in feature space. A reduced-dimensionality model with 25 genes and a five-dimensional latent space achieved a cross-validated R² of 0.38 — respectable coupling, but far from the near-perfect correspondence that a "discrete types" view would predict.
+
+```{admonition} Conflict: discrete cell types versus continuous morpho-electric variation
+:class: warning
+
+{cite:t}`Scala2020` argues that morpho-electric properties vary continuously along the transcriptomic landscape, with neighbouring t-types lacking clear boundaries — implying that categorical cluster counts are partly method artefacts. {cite:t}`Yao2021a` partitions GABAergic neurons into discrete subclasses, supertypes, and cluster-level types by construction. {cite:t}`Gouwens2020a` occupies an intermediate position: the Vip subclass admits a clean bipolar/bitufted/multipolar partition at the morphological level, but Patch-seq cells within the subclass occupy a continuous cloud in electrophysiological feature space. The implication for downstream circuit reasoning is that any result reported at the "Vip t-type X" level inherits the uncertainty in whether X is a discrete unit or a point in a continuum.
+```
+
+Cross-species Patch-seq magnifies this uncertainty. {cite:t}`Chartrand2023` profiled human L1 interneurons and found subclass-defined groupings that map onto morpho-electric phenotypes more robustly than the corresponding mouse data; {cite:t}`Lee2023b` reports that the VIP morphological dataset in human is dominated by L2–L3 bipolar cells with either wide or narrow profiles; primate-specialized double bouquet cells — which belong to the SST rather than the VIP subclass — are described separately in the same work. {cite:t}`Boldog2018` documented a specialized rosehip interneuron population in human L1 whose transcriptomic signature has no mouse counterpart. Section {ref}`sec-species-translation` unpacks these cross-species differences; here the relevant point is that the VIP branch in human is at least as morpho-electrically heterogeneous as in mouse, and possibly more so, without an unambiguous one-to-one type mapping.
+
+```{admonition} Conflict: species-specific vs species-general VIP morphology
+:class: warning
+
+{cite:t}`Chartrand2023` reports that human L1 interneurons show greater transcriptomic distinctness than mouse, with subclass-defined groupings mapping onto morpho-electric phenotypes more robustly than in rodent; {cite:t}`Tremblay2016` applies the mouse-derived three-group scheme (PV, SST, 5HT3aR/VIP) across species without species-specific caveats for VIP morphology. {cite:t}`Boldog2018` and {cite:t}`Lee2023b` further document primate-specialized populations (rosehip cells, double bouquet cells) without unambiguous mouse counterparts. The conflict is not about whether a VIP subclass exists across species — it does {cite:p}`BRAINInitiativeCellCensusNetworkBICCN2021` — but whether leaf-level morpho-electric mappings transfer. They do not transfer reliably, so cross-species claims about VIP subtype function should be scoped explicitly.
+```
+
+Earlier Patch-seq methodology papers {cite:p}`Cadwell2015,Fuzik2015` established the feasibility of joint molecular-physiological profiling and are routinely cited as validation for the method's ability to bridge taxonomies; {cite:p}`Berg2021,Chartrand2023,Lee2023b` apply the approach in primate cortex. Forward links to Sections {ref}`sec-morphology` and {ref}`sec-electrophysiology` develop the morphological and intrinsic-electrical consequences of the continuum view.
+
+## Spatial transcriptomics reveals laminar and areal gradients within VIP
+
+VIP interneurons are not distributed uniformly across cortical layers or areas. {cite:t}`Tasic2016` documented that the Vip-Chat transcriptomic type localizes to upper cortical layers, agreeing with earlier anatomical reports. {cite:t}`Gouwens2020a` showed that some VIP t-types are anchored at laminar boundaries (e.g., Vip Col15a1 Pde1a and Pvalb Vipr2 at the L1-L2/3 border) while others span L2/3 more broadly (e.g., Vip Chat Htr1f, Pvalb Tpbg). {cite:t}`Hodge2019` reports that in human middle temporal gyrus, VIP was the most diverse subclass with 21 types, many enriched in upper layers. {cite:t}`Bhattacherjee2023` finds that L2/3 IT and L4/5 IT excitatory subtypes partition along the anterior-posterior axis, with some GABAergic cluster markers (e.g., Nos1 labelling a subset of Sst3 cluster neurons) showing regional selectivity. {cite:t}`Wu2022a` identifies Tac2 and CxCl14 as candidate marker genes of upper-layer VIP+ interneurons across most cortical regions.
+
+Areal variation adds another axis. {cite:t}`Krienen2020` profiled 188,776 interneurons across homologous brain regions from three primates (human, macaque, marmoset), mouse, and ferret, finding that certain interneuron subpopulations change dramatically in relative abundance across species (e.g., a particular striatal interneuron type constituting around 30% of striatal interneurons in marmoset and human). {cite:t}`Krienen2023` clustered 288 region-specific clusters in their cross-amygdala atlas, reinforcing that regional clustering yields more types than global clustering — the regional-versus-integrated distinction parallels the resolution-dependence of global counts discussed above. Section {ref}`sec-species-translation` details the primate-specific features.
+
+## Abundance estimates converge around 10–15% — once denominators are matched
+
+A separate quantitative disagreement concerns what fraction of cortical inhibitory neurons VIP cells constitute. {numref}`fig-sec02-vip-fraction-cortical` summarizes reports across seven sources. Five recent reports converge on 10–15% of cortical GABAergic interneurons: {cite:t}`Preuss2025` cites ≈12%, {cite:t}`Tremblay2016` and {cite:t}`Ramamurthy2023` both cite 10–15%, {cite:t}`Obermayer2019` cites 15%, and {cite:t}`Hanno2026` reports 10%. Two outliers require separate treatment. {cite:t}`Stachniak2021` states that VIP interneurons make up "<5% of all neurons" — a value that uses *all neurons* as the denominator rather than interneurons, and that becomes consistent with the 10–15% estimates once the ≈20% interneuron-of-all-neurons fraction is accounted for. {cite:t}`Du2025` cites ≈5% of total cortical GABAergic neurons for CR+ cells that co-express either VIP or reelin, rather than the VIP+ population as a whole.
+
+```{figure} {{artifact:74844e21-ccdb-4161-baf5-81c8dc9545d9}}
+:label: fig-sec02-vip-fraction-cortical
+:align: center
+:width: 85%
+:alt: Dot-and-error plot of reported VIP fraction of cortical interneurons across seven studies, showing convergence around 10-15% for studies reporting fraction of GABAergic interneurons, with two flagged outliers using different denominators.
+
+**Reported VIP fraction of cortical interneurons across studies.** Blue circles: entries reporting VIP as a percentage of cortical GABAergic interneurons {cite:p}`Preuss2025,Tremblay2016,Ramamurthy2023,Obermayer2019,Hanno2026`. Red squares (flagged): {cite:t}`Stachniak2021` reports <5% of *all neurons* (a different denominator), and {cite:t}`Du2025` reports ≈5% for CR+ cells co-expressing either VIP or reelin (a different numerator). *None of these values are primary counts from the cited papers; they are secondary citations of older immunohistochemistry and scRNA-seq work propagated through reviews. The five blue-circle estimates span 10–15% (range 10–15, median ≈12%), and this convergence partly reflects citation transitivity as much as independent replication.*
+```
+
+:::{dropdown} Reproducible code for {numref}`fig-sec02-vip-fraction-cortical`
+:color: light
+:icon: code
+
+```{literalinclude} {{artifact:48054f90-cdb4-459a-a9bc-0cf0d51fe5c3}}
+:language: python
+```
+:::
+
+```{admonition} Conflict: VIP fraction of cortical cells with incompatible denominators
+:class: warning
+
+{cite:t}`Stachniak2021` states that VIP interneurons make up "<5% of all neurons"; {cite:t}`Ramamurthy2023` states they constitute 10–15% of cortical inhibitory neurons. These values are not contradictory — they apply to different denominators (total neurons vs. GABAergic interneurons). With cortical interneurons at roughly 20% of all cortical neurons, "<5% of all neurons" and "10–15% of interneurons" are compatible. The problem is reporting practice: when reviews omit the denominator, the numbers appear discordant and are frequently cited against one another. {cite:t}`Du2025` reports ≈5% for CR+ cells co-expressing either VIP or reelin, a distinct CR+-subset denominator that has sometimes been cited as if it were the VIP+ abundance. Operationally, any statement of "VIP fraction" should specify denominator (total cortical neurons / GABAergic interneurons / CR+ subset) and numerator (VIP+ cells / VIP+/CR+ bipolar subset / VIP/ChAT subset).
+```
+
+## Cross-dataset harmonization: stable backbone, unstable leaves
+
+The most recent attempts to reconcile taxonomies — {cite:t}`Yao2021a`, {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021`, and derivative work — establish a stable backbone at the subclass and supertype level. {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021` integrated snRNA-seq across mouse, human, and marmoset primary motor cortex and established a conserved cell-type taxonomy, with the human taxonomy yielding 127 t-types and the marmoset taxonomy 94 t-types matched against the mouse reference. Patch-seq data mapped onto these references showed property preservation (e.g., Vip Mybpc1_2 rebound firing variability). The upshot: the Vip subclass and its major supertype structure replicate across species, even as fine clusters do not.
+
+Residual instability is concentrated in three places. First, small t-types at the boundaries of the Vip branch — Sncg-adjacent, Serpinf1-adjacent, and Lamp5-adjacent — are defined differently across datasets, with {cite:t}`Machold2024` noting that "VIP cells here are represented as one main group, with some of the VIP cells clustering in the Serpinf1 and Sncg groups." Second, human-specialized populations like rosehip cells {cite:p}`Boldog2018` and primate double bouquet cells {cite:p}`Lee2023b` probe the limits of mouse-based taxonomies. Third, developmental transcriptomic data — covered in Section {ref}`sec-development` — show that the adult backbone emerges from CGE progenitors whose fate specification is itself contested between lineage-dependent {cite:p}`Bandler2021` and lineage-independent {cite:p}`Mayer2016` models — a developmental dispute relegated to Section {ref}`sec-development` but consequential here because the adult molecular grain either reflects progenitor lineage or post-mitotic refinement.
+
+```{admonition} Conflict: harmonized backbone versus dataset-specific residuals
+:class: warning
+
+{cite:t}`Yao2021a` establishes that Vip is a stable subclass in mouse, with 6 supertypes forming a reproducible backbone, and {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021` extends comparable taxonomic stability to cross-species comparative analyses. {cite:t}`Hodge2019`'s report of 21 VIP types in human MTG and {cite:t}`Chartrand2023`'s finding of species-specific morpho-electric groupings suggest that leaf-level clusters are dataset-dependent. {cite:t}`Boldog2018` identifies primate-specific populations altogether missing from mouse. The harmonization programme thus succeeds at the subclass/supertype level and explicitly warns against canonizing any single cluster count; treating Vip supertypes as provisional anchors — rather than ground-truth categories — is the safer operational stance.
+```
+
+Two further considerations frame the harmonization programme. {cite:t}`Krienen2020` emphasises that relative abundances of interneuron populations shift substantially across species, while {cite:t}`Krienen2023` demonstrates substantial regional variation in cell-type proportions within a primate; together these imply that integration matching t-types by expression profile need not match by functional role. {cite:t}`Yuste2020` argues in favour of consensus nomenclature on the grounds that convergent evidence — scRNA-seq, optical imaging, electrophysiology — supports 15 bipolar cell types in mouse retina with near-perfect correspondence, and cortical taxonomy should aspire to the same standard. The retinal example, however, is favoured by developmental modularity; cortical VIP interneurons are not retinal bipolar cells, and the taxonomic consensus target may be looser.
+
+## Synthesis and forward links
+
+Five claims follow from the evidence surveyed here, and they propagate through the remainder of this review.
+
+1. **VIP is a coherent transcriptomic subclass but a heterogeneous subtype family.** The subclass-level coherence justifies the operational label "VIP interneurons" when discussing molecular class membership {cite:p}`Tasic2018,Yao2021a`. Subtype-level heterogeneity means that functional claims cast at the subclass level implicitly average over 3–6 reliably distinguishable groups {cite:p}`Machold2024`, with reported cluster counts ranging from 12 to 21 across secondary citations of the {cite:t}`Tasic2018` and {cite:t}`Hodge2019` datasets {cite:p}`Yao2021a,Obermayer2019,Millman2020,GuetMcCreight2020` ({numref}`fig-sec02-subtype-count-coarse`, {numref}`fig-sec02-subtype-count-fine`).
+
+2. **The VIP+/CR+ bipolar versus VIP+/CCK+ basket axis, plus a smaller VIP/ChAT group, is the most reproducible within-branch split.** This is the grain at which claims about morphology and connectivity can be compared meaningfully across studies {cite:p}`Cauli2014,Pronneke2015,Machold2024`, and the grain at which the "universal disinhibitor" narrative begins to fracture — VIP/ChAT cells do not implement VIP→SST disinhibition {cite:p}`Obermayer2019`.
+
+3. **Patch-seq shows that within-subclass boundaries are continuous.** Morpho-electric features vary gradually across the Vip branch {cite:p}`Scala2020,Gouwens2020a,Gouwens2020b`, so fine-cluster counts inherit clustering-hyperparameter artefacts. Section {ref}`sec-morphology` and Section {ref}`sec-electrophysiology` carry this claim into morphology and intrinsic physiology.
+
+4. **Spatial gradients and cross-species differences are real but do not overturn the subclass backbone.** VIP cells are enriched in upper cortical layers {cite:p}`Tasic2016,Hodge2019,Gouwens2020a`, with species- and region-specific residuals {cite:p}`Boldog2018,Chartrand2023,Lee2023b,Krienen2020`. Section {ref}`sec-species-translation` synthesizes the cross-species comparison.
+
+5. **Abundance estimates converge at ≈10–15% of cortical GABAergic interneurons once denominators are matched.** Apparent outliers derive from different denominators (all neurons vs. interneurons) or different numerators (CR+/VIP+/reelin+ overlap vs. VIP+) {cite:p}`Stachniak2021,Du2025`, not from quantitative disagreement ({numref}`fig-sec02-vip-fraction-cortical`).
+
+Two caveats carry forward. First, the bulk of the numerical claims in this section rest on secondary citations of a small number of primary atlases ({cite:t}`Tasic2016`, {cite:t}`Tasic2018`, {cite:t}`Yao2021a`, {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021`), so convergence visible in the figures partly reflects citation transitivity. Second, the three-class PV/SST/VIP parcellation is contested from outside: {cite:t}`Machold2023` argues a fourth Id2/NGFC class is necessary, a claim revisited in Section {ref}`sec-synthesis`. The working definition of "VIP interneurons" used throughout this review is therefore: the VIP subclass as defined by {cite:t}`Tasic2018` and {cite:t}`Yao2021a`, with explicit disaggregation into VIP+/CR+ bipolar, VIP+/CCK+ basket, and VIP/ChAT subgroups whenever the evidence permits, and with the understanding that fine-cluster counts below the supertype level are provisional.
+
+## Operational recommendations for readers
+
+Three practical rules inform the use of VIP taxonomic data in the chapters that follow. First, when a downstream study reports that "VIP interneurons do X," the reader should ask whether X was measured at the subclass, supertype, or fine-cluster level, and whether the experimental method — a pan-VIP Cre driver, an intersectional Cre/Flp driver, or post-hoc transcriptomic mapping — distinguishes among VIP+/CR+ bipolar, VIP+/CCK+ basket, and VIP/ChAT subgroups. Pan-VIP Cre drivers do not, so results obtained with such drivers represent a weighted average over the three subgroups. Second, when comparing quantitative estimates (cell counts, fractions, input resistances, firing rates) across studies, reporting practices should be checked for denominator matching, as illustrated above for the VIP-fraction data ({numref}`fig-sec02-vip-fraction-cortical`). Third, when interpreting cross-species claims, the VIP subclass-level correspondence established by {cite:t}`BRAINInitiativeCellCensusNetworkBICCN2021` and {cite:t}`Krienen2020` should be preferred over leaf-level matching, which is dataset-specific and not reliably conserved. Section {ref}`sec-species-translation` returns to this point in detail.
+
+With these operational rules and the five claims summarized above, the review is now positioned to examine VIP developmental origins (Section {ref}`sec-development`), morpho-electric properties (Sections {ref}`sec-morphology` and {ref}`sec-electrophysiology`), and circuit function (Section {ref}`sec-circuit-motifs` onwards) on a footing where the question "which VIP?" is always in scope.

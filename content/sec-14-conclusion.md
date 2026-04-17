@@ -1,0 +1,88 @@
+(sec-conclusion)=
+(sec-14-conclusion)=
+
+# Conclusion
+
+The twelve body sections of this review and the cross-cluster synthesis that preceded them {ref}`sec-synthesis` supply the raw material; this final section converts that material into a verdict, a set of open questions, a short list of near-term predictions and experiments that would resolve them, and a high-level translational outlook. The logic throughout is the logic stated in the introduction: the canonical "VIP = universal cortical disinhibitor" framing is an empirical claim, not a definition, and its status depends on what replicates, what is contested, and what remains untested at the resolutions the claim demands.
+
+## Verdict: what the reassessment implies
+
+The synthesis in {ref}`sec-synthesis` argued — and this review's evidence accumulation supports — that the canonical framing is **approximately right in the preparation in which it was developed and approximately wrong outside it**. In mouse primary sensory cortex layer 2/3, in awake head-fixed preparations, during active behavioural states, the VIP → SST ⊣ PYR motif is well-replicated {cite:p}`Pi2013,Lee2013,Fu2014,Wang2018,CantoBustos2022,Dipoppa2018,Pakan2016,Millman2020,Keller2020a`. In that preparation the motif is connected to locomotion, to arousal, and to top-down modulatory inputs in a way that licenses the label "disinhibition-for-gain." Outside that preparation the picture fragments. Deep-layer, associative, motor, medial prefrontal, hippocampal, entorhinal, and piriform VIP populations differ in morphology {cite:p}`Gouwens2020a,Luo2020`, in intrinsic firing {cite:p}`Pronneke2015,Rhomberg2018,Scala2020`, in connectivity {cite:p}`Anastasiades2021b,Apicella2022`, in behavioural recruitment {cite:p}`Piet2024,Bae2025,Lenkey2025,Ramamurthy2023,MyersJoseph2024`, and in disease vulnerability {cite:p}`BatistaBrito2017,Goff2019,Goff2023,Miralles2023,Thompson2023a,Ghimire2023b,Motaharinia2021`. The three conflicts surfaced in the introduction — whether VIP encodes reinforcement, whether VIP→SST is the mechanism of attentional modulation, and whether the PV/SST/VIP three-class parcellation underlying most circuit models is adequate — all land on the side of qualified answers rather than unqualified ones {ref}`sec-synthesis`.
+
+The verdict is therefore not that the canonical motif should be abandoned; it is that it should be **localised**. The revised framework advanced in {ref}`sec-synthesis` and schematised in {numref}`fig-sec14-revised-framework` factors VIP circuit function along five axes — molecular subtype (VIP/CR⁺ bipolar vs VIP/CCK⁺ basket vs VIP/ChAT⁺ vs VIP-LRP), brain region, cortical layer, behavioural state, and molecular / genetic context — and asserts that the predictive unit of VIP function is the joint specification of these axes rather than the class label alone. The canonical motif is one well-documented cell of that five-axis grid, not the grid.
+
+:::{figure} ../figures/sec-14/fig_sec14_revised_framework.png
+:name: fig-sec14-revised-framework
+:align: center
+:width: 95%
+
+**Revised framework for VIP interneuron function.** *Left:* the canonical
+"universal disinhibitor" framing treats VIP as a single functional unit,
+class-wide, cortex-wide, state-invariant. *Right:* the revised framework
+factors VIP circuit function along molecular subtype × region × layer ×
+behavioural state × molecular context. The canonical motif is robustly
+replicated in the green cell (mouse primary sensory cortex, L2/3,
+high-arousal / active states); other cells of the grid are variously mixed
+(amber) or contested / not supported (red), and several remain empty.
+Schematic only; no quantitative axes are implied.
+:::
+
+:::{dropdown} Code to regenerate {numref}`fig-sec14-revised-framework`
+:icon: code
+
+```{literalinclude} figures/sec-14/fig_sec14_revised_framework.py
+:language: python
+```
+:::
+
+## Four open questions
+
+Four questions inherited from the synthesis remain **actively open** in the sense that the current evidence does not determine the answer, and in each case a specific class of experiment would resolve it.
+
+### Q1. Which VIP subtype drives the canonical disinhibitory motif?
+
+Virtually all causal tests of the VIP → SST ⊣ PYR circuit to date have used pan-VIP actuators (VIP-ires-Cre or VIP-Flp without further intersectional restriction) {cite:p}`Taniguchi2014,Pronneke2015,Lee2013,Pi2013,Fu2014`. The transcriptomic and morphological evidence {cite:p}`Tasic2018,Yao2021a,Gouwens2020a,Gouwens2020b,Scala2020,Pronneke2015,Francavilla2020,Melzer2021` is equally clear that the VIP-Cre-captured population is heterogeneous. Which subtype — VIP/CR⁺ bipolar, VIP/CCK⁺ basket, VIP/ChAT⁺, or VIP-LRP — is *sufficient* for the circuit effect, which is *necessary*, and whether the causal subtype differs across regions and states, is not currently known. This is a technical rather than conceptual gap: the intersectional tools exist {cite:p}`Taniguchi2014,Foss2024`, and Patch-seq plus recent met-type classifications {cite:p}`Gouwens2020a,Gouwens2020b,Scala2020` supply the subtype definitions.
+
+### Q2. Is VIP → SST the mechanism of attentional / contextual modulation, or is it orthogonal to it?
+
+The canonical story has VIP disinhibition as *the* circuit substrate of state- and attention-dependent gain in cortex {cite:p}`Pi2013,Fu2014,Zhang2014,Wang2018,Keller2020a`. Direct perturbation tests in mouse V1 {cite:p}`MyersJoseph2022,MyersJoseph2024` have reported attentional modulation that is orthogonal to VIP-driven disinhibition — i.e., the two signals add but one is not required for the other. Whether this orthogonality is a property of V1, of the specific tasks used, or of the class in general, and whether it extends to parietal, frontal, or hippocampal regions where attention-like signals also exist {cite:p}`Piet2024,Bae2025,Lenkey2025`, is open. A coordinated set of closed-loop, subtype-resolved perturbation experiments in multiple cortical areas would resolve it.
+
+### Q3. Is the PV/SST/VIP three-class parcellation adequate for circuit modelling?
+
+Nearly all recent computational models of inhibitory function in cortex {cite:p}`Hertag2019,Hertag2020,Veit2023,Wagatsuma2022a,Wagatsuma2022b,Beerendonk2023` and most in-vivo interpretations {cite:p}`Fu2014,Dipoppa2018,Pakan2016,Pi2013,Pfeffer2013,Lee2013` use a three-class PV/SST/VIP parcellation. Molecular atlases {cite:p}`Tasic2018,Yao2021a,Bakken2021,BRAINInitiativeCellCensusNetworkBICCN2021,Hodge2019` and morphological/Patch-seq analyses {cite:p}`Gouwens2020a,Gouwens2020b,Scala2020` show that each of these "classes" is internally structured and that at least one additional major CGE-derived group — Lamp5/Id2 interneurons — is consistently neglected in models. Whether the three-class parcellation is a useful simplification (predictions sufficiently accurate for its assumed grain) or a systematic error (predictions fail in directions that a finer parcellation would catch) is an empirical question that has not been posed directly. Model-data falsification tests with pre-registered predictions across subtype resolutions would answer it.
+
+### Q4. Do mouse-derived mechanistic claims about VIP interneurons translate to primate and human cortex?
+
+Cross-species transcriptomics {cite:p}`Hodge2019,Bakken2021,Krienen2020,Krienen2023` documents substantial conservation of the CGE-derived GABAergic backbone but also documents primate- and human-specific populations that have no obvious mouse homolog. The question of whether mouse-derived VIP circuit claims — the canonical motif and its behavioural correlates — translate to primate and human cortex is almost entirely untested at the causal level, and the disease literature {cite:p}`BatistaBrito2017,Goff2019,Goff2023,Miralles2023,Thompson2023a,Mossner2020,Ghimire2023b,Motaharinia2021,Teymornejad2024` combines mouse models of human genes, human post-mortem tissue, and indirect measures in ways that cannot distinguish a conserved mechanism from a region-specific one. Progress here requires the slower path — human ex-vivo electrophysiology, primate optogenetics, and non-invasive perturbation in humans — but the molecular and taxonomic groundwork exists.
+
+## Near-term predictions and the experiments they call for
+
+The open questions above translate into a small number of near-term predictions that existing technology can test.
+
+**Prediction 1 — Subtype-resolved causal tests in mouse V1 L2/3 will partially re-distribute "VIP" effects across subtypes.** We predict that intersectional optogenetic or chemogenetic activation of VIP/CR⁺ bipolar cells alone will reproduce the canonical locomotion-triggered SST silencing {cite:p}`Fu2014,Dipoppa2018` more fully than activation of VIP/CCK⁺ basket cells alone, while VIP/ChAT⁺ activation will produce a qualitatively different (nicotinic-modulated, slower-timescale) effect {cite:p}`Bell2014,Bell2015`. The specific experiment is a Vip-Cre × Cck-Flp (or CR-Flp, ChAT-Cre) intersectional actuator with matched behavioural and optogenetic stimulation protocols. The prediction is falsifiable: a negative result (no subtype-dependent differences) would argue that pooling VIP subtypes is acceptable at least for the canonical motif.
+
+**Prediction 2 — Closed-loop oscillatory perturbations will dissociate VIP's role in local versus long-range gamma.** Work on gamma gain and long-range coherence has shown that VIP cells are necessary for multiplicative gamma amplification locally but act separately on inter-area coherence {cite:p}`Veit2023,Wagatsuma2022a,Wagatsuma2022b`. We predict that closed-loop perturbations that clamp local gamma while leaving long-range coherence untouched (or vice versa) will produce dissociable behavioural consequences — local gamma control should selectively affect stimulus-specific gain, long-range control should selectively affect attentional or inter-area binding. This is a straightforward closed-loop experiment in mouse V1 and parietal cortex and would directly test the bipartite role {ref}`sec-oscillations` assigned to VIP in oscillatory dynamics.
+
+**Prediction 3 — Region-matched rescue experiments in disease models will reveal VIP-subtype specificity of circuit deficits.** In Dravet (Scn1a), Rett (MeCP2), and fragile-X (Fmr1) models, VIP-specific molecular perturbation produces phenotypes not recapitulated by PV- or SST-specific perturbation {cite:p}`BatistaBrito2017,Mossner2020,Miralles2023`. We predict that the direction of causality — VIP-primary versus VIP-compensatory — will differ across regions, and that region-matched within-subject rescue (restoring expression in VIP interneurons of a specific area at a specific developmental window) will correct some phenotypes but not others. The experiment calls for region-restricted conditional rescue alleles combined with longitudinal behavioural assays, a design that is technically within reach.
+
+**Prediction 4 — Human ex-vivo electrophysiology of identified VIP interneurons will show intrinsic properties closer to mouse than to the primate-specific transcriptomic divergences suggest.** The cross-species taxonomy work {cite:p}`Hodge2019,Bakken2021,Boldog2018` has emphasised primate-specific cell types, but the VIP subclass is conserved at the t-type level. We predict that patch-clamp recordings from VIP-identified cells in human cortical slices will reveal intrinsic firing signatures (irregular-spiking, moderate input resistance, weak adaptation) that align with mouse VIP/CR⁺ bipolar cells more than the transcriptomic divergences predict, and that the major species difference will appear in synaptic properties (input specificity, short-term plasticity) rather than in intrinsic excitability. Human ex-vivo VIP electrophysiology — currently performed on small samples — is the direct test; scaling the sample size and pairing with post-hoc molecular identification is the critical methodological step.
+
+## Methodological recommendations
+
+Four methodological priorities emerge from the review and should be standard rather than exceptional in the next decade of VIP research.
+
+First, **Cre-line specificity audits** should accompany every major causal claim. The VIP-ires-Cre line captures a heterogeneous population {cite:p}`Taniguchi2014,Pronneke2015`, and quantitative audits of subtype composition, area, and layer-specific Cre activity — combined with intersectional restriction where the biology demands — would prevent misattribution of subtype-specific effects to the class. Second, **independent replication of landmark in-vivo findings** — particularly the reinforcement-coding, attention-gating, and state-coding claims that anchor the canonical framing {cite:p}`Pi2013,Fu2014,Letzkus2011,Zhang2014,Wang2018` — should be prioritised; several of these have been tested and in some cases partially overturned {cite:p}`MyersJoseph2022,MyersJoseph2024,Piet2024,Bae2025,Ramamurthy2023` but comparable systematic replications across labs and preparations remain rare. Third, **model-data falsification tests with pre-registered predictions** should replace the looser pattern in which network models are fit post-hoc to existing data. The computational literature {cite:p}`Hertag2019,Hertag2020,Veit2023,Wagatsuma2022a,Wagatsuma2022b,Beerendonk2023` generates testable predictions; those predictions should be registered and tested as such. Fourth, **large-scale structural and molecular mapping** — MICrONS-style connectomics {cite:p}`MICrONSConsortium2025`, met-type Patch-seq {cite:p}`Fuzik2015,Scala2020,Gouwens2020a,Gouwens2020b`, and whole-cortex transcriptomic mapping {cite:p}`Yao2021a,BRAINInitiativeCellCensusNetworkBICCN2021` — is converging on a structured description of VIP interneurons that will progressively supplant the "VIP = universal disinhibitor" shorthand. Integrating these data streams with causal physiology is the single highest-leverage methodological opportunity available to the field.
+
+## Translational outlook
+
+VIP interneuron dysfunction has been implicated — with varying strengths of evidence — in a long list of neurological and psychiatric conditions whose specifics are treated in {ref}`sec-species-translation`: autism-spectrum disorders and fragile-X (Fmr1) {cite:p}`Goff2023,BatistaBrito2017`, Rett syndrome {cite:p}`Mossner2020`, Dravet syndrome {cite:p}`Miralles2023`, Alzheimer's disease, chronic-stress and depression-associated circuits, tinnitus {cite:p}`Ghimire2023b`, and addiction-related cortical states {cite:p}`Thompson2023a,Thompson2023b`. The review's high-level translational point, rather than a condition-by-condition one, is this: **VIP-directed therapeutic thinking should be subtype- and region-resolved, not class-level**. Class-level VIP manipulation — the kind that non-selective peptide analogues or broad VIP-Cre-driven interventions would deliver — is unlikely to produce the selectivity that specific circuit phenotypes require, because the circuit phenotypes themselves are subtype- and region-specific {ref}`sec-species-translation,sec-synthesis`. Intersectional pharmacological and gene-therapy strategies, region-restricted delivery, and within-subject longitudinal read-outs are the translational analogues of the experimental recommendations above.
+
+The same logic applies in reverse to biomarker development. VIP-related signatures in human tissue or imaging — whether transcriptomic, electrophysiological, or circuit-level — should be interpreted with the same subtype × region × layer × state grid in mind that the review applied to the animal literature. A VIP-level signature that averages across subtypes is likely to be noisier than a subtype-specific one, and the cost of finer resolution is probably worth paying.
+
+## Closing
+
+The canonical "VIP = universal cortical disinhibitor" framing was a productive piece of theoretical consolidation in the decade after the landmark studies of 2013–2014 {cite:p}`Lee2013,Pfeffer2013,Pi2013,Fu2014`. It organised a large body of empirical work, seeded a family of computational models, and licensed a therapeutic narrative. The price of that productivity was compression: a specific set of findings, bounded by specific preparations and states, was promoted to a cortex-wide, subtype-indifferent, species-general principle that the underlying data never supported.
+
+This review, through twelve evidence classes and a cross-cluster synthesis, has documented the boundary conditions the framing accumulated but never absorbed. The revised framework that replaces it is modest in spirit: VIP interneurons are a molecularly structured, CGE-derived inhibitory class; their circuit function is the joint outcome of molecular subtype, region, layer, behavioural state, and molecular context; the canonical disinhibitory motif is one well-replicated cell of that five-axis grid, robustly supported in mouse primary sensory cortex layer 2/3 during active behaviour and extrapolated beyond that preparation only at the user's risk. The experimental agenda that this framework implies — subtype-resolved intersectional genetics, closed-loop oscillatory perturbations, region-matched disease rescue, human ex-vivo electrophysiology, and integrative connectomic / transcriptomic / physiological mapping — is clear, and the tools are available.
+
+We therefore reject the "universal disinhibitor" framing as a class-wide definition of VIP interneurons, and we adopt in its place a **subtype / region / layer / state-conditioned view**. That view is less compact than its predecessor. It is also more accurate, more falsifiable, and — we would argue — more useful: it tells the next generation of experiments precisely where to look.

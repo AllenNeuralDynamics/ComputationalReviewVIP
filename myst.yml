@@ -5,9 +5,15 @@ project:
   title: "VIP Interneurons: From Molecular Identity to Circuit Function"
   subtitle: A Reproducible Computational Review
   description: >
-    Update this description for your review topic.
+    A computational critical review of VIP-expressing cortical interneurons —
+    molecular identity, development, morphology, intrinsic physiology, synaptic
+    connectivity, circuit motifs, in vivo dynamics, regional diversity,
+    oscillations, translation to primate/human/disease, and computational models.
   keywords:
     - neuroscience
+    - VIP interneurons
+    - disinhibition
+    - cortical microcircuits
     - critical review
     - reproducible research
   license: MIT
@@ -20,26 +26,26 @@ project:
   bibliography:
     - content/references.bib
   toc:
-    - file: content/00_frontmatter.md
-    - file: content/01_introduction.md
-    - file: content/M_methods.md
-      title: Methods
-    - file: content/evidence_database.md
-      title: Evidence Database
-    - file: content/provenance.md
-      title: Pipeline Provenance
+    - file: content/abstract.md
+    - file: content/sec-01-introduction.md
+    - file: content/sec-02-molecular-identity.md
+    - file: content/sec-03-developmental-origins.md
+    - file: content/sec-04-morphological-diversity.md
+    - file: content/sec-05-intrinsic-electrophysiology.md
+    - file: content/sec-06-synaptic-physiology.md
+    - file: content/sec-07-local-circuit-motifs.md
+    - file: content/sec-08-in-vivo-dynamics-behavior.md
+    - file: content/sec-09-brain-region-context.md
+    - file: content/sec-10-oscillations-network-dynamics.md
+    - file: content/sec-11-species-translation-disease.md
+    - file: content/sec-12-computational-models.md
+    - file: content/sec-13-synthesis.md
+    - file: content/sec-14-conclusion.md
 site:
   template: book-theme
-  title: "Computational Review"
+  title: "VIP Interneurons — Computational Review"
   nav:
-    - title: Review
-      children:
-        - file: content/00_frontmatter.md
-    - title: Methods
-      file: content/M_methods.md
-    - title: Evidence Database
-      file: content/evidence_database.md
-    - title: Pipeline Provenance
-      file: content/provenance.md
+    - title: Abstract
+      file: content/abstract.md
     - title: GitHub
       url: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP

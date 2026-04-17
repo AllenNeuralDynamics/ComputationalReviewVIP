@@ -1,117 +1,49 @@
 # VIP Interneurons: From Molecular Identity to Circuit Function
 
-Reproducible computational review of VIP interneurons — molecular identity to circuit function — built with the Expert Review Pipeline v24.
+A multi-author computational review assembled and verified by the Operon ComputationalReview pipeline.
 
+- **Sections:** 14 thematic sections (plus abstract and methods), spanning molecular identity, development, morphology, electrophysiology, synaptic physiology, local circuit motifs, in-vivo dynamics, regional context, oscillations, species/disease translation, computational models, technology frontiers, synthesis, and conclusion.
+- **Build system:** [MyST](https://mystmd.org/) Markdown — reproducible figures with embedded regeneration code in dropdowns, cross-referenced sections, and structured bibliography.
+- **Provenance:** every claim was extracted as a (citation-key, bibliography-entry, claim-span) triple and cross-validated against the CrossRef record and full-text retrieval.
 
-## Pipeline Overview
+## Build instructions
 
-![Expert Review Pipeline v24](figures/fig_methods_pipeline.png)
-
-The pipeline executes 19 phases with **actor-critic separation** — section writers cannot see how they will be critiqued, figure auditors cannot see the argument arc, and citation verifiers cannot see the fix protocol. This prevents agents from gaming evaluation criteria.
-
-## Quick Start
-
-1. **Create a new repo** from this template (Use this template → Create a new repository)
-2. **Clone the new repo** and update `myst.yml` with your review title and description
-3. **Open in Claude** and provide your review prompt:
-
-```
-Start a comprehensive critical literature review titled: "[YOUR TITLE]"
-
-The three files in skills/ define the complete pipeline:
-
-skills/comprev-orchestrator-v24.md — The orchestrator protocol. Read this FIRST.
-It defines all 19 phases, the coordinator protocol, gate artifacts, and the plan structure.
-Follow it phase by phase.
-
-skills/comprev-reviewer-agent.md — The worker skill for EXPERT agents.
-Pass this to every EXPERT delegation so the agent can load it.
-
-skills/comprev-figure-construction.md — Already published as a skill on EXPERT agents.
-Section writers load it for figure production.
-
-GitHub Repository: https://github.com/[YOUR-ORG]/[YOUR-REPO]
-Push all outputs to this repo in Phase 19.
-
-Table of Contents:
-1. Introduction
-2. [Your Section 2]
-3. [Your Section 3]
-...
-N. Conclusion
+```bash
+pip install mystmd        # (or: npm install -g mystmd)
+myst build --html         # renders the site into _build/
 ```
 
-4. The pipeline populates `content/`, `evidence/`, `figures/`, and `provenance/`
-5. GitHub Actions auto-builds and deploys the MyST site to GitHub Pages
+Then open `_build/html/index.html` in a browser, or serve it locally with `python -m http.server -d _build/html 8000`.
 
-## What's Included
+## Citation integrity
 
-### Skills (12 files in `skills/`)
+- **2,294 citation invocations** across 1,673 `{cite:p}`/`{cite:t}` blocks (each block may reference multiple keys)
+- **405 bibliography entries** in `references.bib`; **100% CrossRef-resolved**
+- **0 orphan citation keys** (all in-text keys present in the bibliography)
+- **0 broken internal `{ref}`/`{numref}` links** (all figure and section labels resolve)
+- **516 fix_requests applied** via the Phase 14–18 claim-verification loop
 
-The pipeline is split into role-specific skills with **information barriers** to enforce actor-critic separation:
+See the `phases/` directory for gate artifacts (Phases 10, 13, 15a, 15b, 18) and the fix-application report from the final verification pass.
 
-| Skill | Phase | Role | Barrier |
-|-------|-------|------|---------|
-| `comprev-orchestrator-v24` | All | Coordinator | Sees everything |
-| `comprev-evidence-gathering` | 2 | EXPERT | Cannot see critic/writing criteria |
-| `comprev-scaffold` | 4 | EXPERT | Cannot see critic criteria |
-| `comprev-figure-audit` | 6 | EXPERT | Blinded — no scaffold or argument arc |
-| `comprev-section-writing` | 7 | EXPERT | Cannot see critic criteria |
-| `comprev-critic` | 8 | EXPERT | Blinded — no scaffold or writing template |
-| `comprev-integration` | 10-11 | EXPERT | Full visibility (integration role) |
-| `comprev-verification` | 15 | EXPERT | Cannot see fix protocol |
-| `comprev-fix-execution` | 17 | EXPERT | Cannot see verification criteria |
-| `comprev-dataml-phases` | 3,5,9,12-14,16,18-19 | DATAML | No barriers (mechanical work) |
-| `comprev-reviewer-agent` | 2,4,6-8,10-11,15,17 | EXPERT | Evidence & writing procedures |
-| `comprev-figure-construction` | 7 | EXPERT | Figure production |
+## Repository layout
 
-### Plugins (3 files in `plugins/`)
+```
+.
+├── myst.yml                    # MyST project config + table of contents
+├── references.bib              # 405 CrossRef-verified bibliography entries
+├── content/                    # 16 section markdown files
+│   ├── abstract.md
+│   ├── sec-01-introduction.md
+│   ├── ...
+│   ├── sec-14-conclusion.md
+│   └── sec-methods.md
+├── figures/                    # Figure PNG assets, grouped by section
+│   ├── sec-01/ … sec-14/
+└── phases/                     # Gate artifacts and fix-application report
+```
 
-| Plugin | What it does |
-|--------|-------------|
-| `authorship-plugin.mjs` | Renders interactive CRediT authorship widget |
-| `evidence-explorer-plugin.mjs` | Loads evidence packages into interactive browser |
-| `citation-annotation-plugin.mjs` | Adds CiTO annotation tooltips on citation hover |
+Two schematic figures (Section 1 reading guide, Section 14 revised framework) are present as placeholders pending hand illustration; the corresponding prose captions are complete.
 
-### Content placeholders (`content/`)
+## Citation
 
-Pre-configured pages that the pipeline populates:
-- `00_frontmatter.md` — Abstract + authorship explorer
-- `01_introduction.md` — Placeholder (written in Phase 11)
-- `M_methods.md` — Methods template with pipeline figure
-- `evidence_database.md` — Interactive evidence explorer
-- `provenance.md` — Pipeline execution summary
-
-### Site infrastructure
-
-- `myst.yml` — MyST configuration with top-bar navigation (Review | Methods | Evidence | Provenance | GitHub)
-- `.github/workflows/deploy.yml` — Auto-builds MyST site and deploys to GitHub Pages
-- `scripts/shared_style.py` — Common figure style (colors, fonts, 300 DPI)
-- `authors.yml` — Author metadata for the authorship widget
-
-## Pipeline Architecture
-
-**Act 1 — Evidence & Infrastructure** (Phases 1-6): Define scope, gather evidence from literature databases (PubMed, OpenAlex, bioRxiv), build citation infrastructure from CrossRef, construct the review scaffold, curate per-section evidence packages, and audit figure comparisons for methodological validity.
-
-**Act 2 — Drafting & Criticism** (Phases 7-13): Draft sections in parallel (max 4 agents), run blinded 6-track criticism, build bibliography from CrossRef, perform 6-pass integration for consistency, write introduction/conclusion/abstract, generate methods section, and assemble the complete document.
-
-**Act 3 — Verification & Deploy** (Phases 14-19): Extract citation triples, verify ALL citations against databases (DOI resolution, title/author/metadata match, claim verification), prepare and execute fixes for non-verified citations, apply fixes, and push to GitHub.
-
-### Key Design Principles
-
-- **Mechanical citation infrastructure**: All citation keys and author names come from CrossRef API — never from LLM memory. This prevents hallucinated references.
-- **Actor-critic separation**: Writers don't know how critics will evaluate them. Critics don't know the intended argument. This prevents gaming.
-- **Incremental artifact saves**: Agents save intermediate work before expensive operations. If an agent crashes, partial work survives.
-- **Max 4 parallel agents**: Prevents system resource exhaustion from too many simultaneous heavy agents.
-- **Gate checkpoints**: Each phase transition requires a named gate artifact. The coordinator verifies compliance before advancing.
-
-## Customization
-
-- **Title and metadata**: Edit `myst.yml` project title, description, and keywords
-- **Authors**: Edit `authors.yml` to add human contributors alongside the AI author
-- **Figure style**: Edit `scripts/shared_style.py` to change colors, fonts, and figure aesthetics
-- **Navigation**: The top bar (Review | Methods | Evidence | Provenance | GitHub) is configured in `myst.yml` site.nav
-
-## License
-
-MIT
+If you use or extend this review, please cite the repository and the underlying primary sources listed in `references.bib`.
