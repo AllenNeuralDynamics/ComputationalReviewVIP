@@ -2,7 +2,7 @@ version: 1
 extends:
   - authors.yml
 project:
-  title: "REVIEW TITLE — Update in myst.yml"
+  title: "VIP Interneurons: From Molecular Identity to Circuit Function"
   subtitle: A Reproducible Computational Review
   description: >
     Update this description for your review topic.
@@ -16,7 +16,7 @@ project:
     - plugins/citation-annotation-plugin.mjs
     - plugins/authorship-plugin.mjs
     - plugins/evidence-explorer-plugin.mjs
-  github: https://github.com/AllenNeuralDynamics/ComputationalReviewTemplate
+  github: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP
   bibliography:
     - content/references.bib
   toc:
@@ -42,4 +42,4 @@ site:
     - title: Pipeline Provenance
       file: content/provenance.md
     - title: GitHub
-      url: https://github.com/AllenNeuralDynamics/ComputationalReviewTemplate
+      url: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP

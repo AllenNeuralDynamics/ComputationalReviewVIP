@@ -1,6 +1,7 @@
-# Computational Review Template
+# VIP Interneurons: From Molecular Identity to Circuit Function
 
-Template repository for producing comprehensive AI-assisted critical literature reviews using the Expert Review Pipeline v24.
+Reproducible computational review of VIP interneurons — molecular identity to circuit function — built with the Expert Review Pipeline v24.
+
 
 ## Pipeline Overview
 
