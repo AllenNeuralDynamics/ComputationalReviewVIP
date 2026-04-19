@@ -674,7 +674,7 @@ week.
 
 ### The orthogonal methods that lineage tracing now requires
 
-Section 3.1 already surfaced the Cre-specificity problem {cite:p}`Machold2023`,
+{ref}`sec-03-cge-origin` already surfaced the Cre-specificity problem {cite:p}`Machold2023`,
 and sections 3.2 and 3.4 have surfaced three further conflicts where
 lineage-tracing claims collided with orthogonal evidence. The combined
 upshot is that modern VIP-interneuron lineage work uses at least three
