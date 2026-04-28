@@ -1,0 +1,2102 @@
+{
+  "section_id": "section_12",
+  "section_title": "Computational Models of VIP Circuit Function",
+  "section_clusters": [
+    "cluster_11_computational_models",
+    "cluster_06_disinhibition_circuit"
+  ],
+  "figures": [
+    {
+      "figure_id": "fig-computational-models",
+      "figure_title": "fig-computational-models",
+      "n_panels": 9,
+      "audited_panels": [
+        {
+          "comparison_id": "cluster_11_computational_models__0",
+          "original_comparison_id": "cluster_11_computational_models__0",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "iter1.5_restructure",
+          "required_caveat_text": "Restructure drops the 15 unclassifiable rows and claims to retain 25 rows split into 21 VIP-included and 4 VIP-excluded \u2014 the entry count (25) matches that arithmetic. But the entries themselves carry only cite_key/doi/study_label; metric_label, value, n_definition, scope, and value_source_sentence are all None/empty. The per-row VIP-inclusion classification that is the entire substantive content of the panel is not encoded in the entries, so it is not auditable from the packet \u2014 only the restructure_notes claim is available. As a bare list of papers it's homogeneous (computational microcircuit models) and study_labels are first-author surnames matching the listed cite_keys, but the categorical inventory cannot be verified row-by-row. Conservative CAVEAT: needs an explicit per-row VIP_included/VIP_excluded field to be auditable.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__0",
+            "original_comparison_id": "cluster_11_computational_models__0",
+            "cluster_id": "cluster_11_computational_models",
+            "metric_label": "Architectural taxonomy of cortical microcircuit models, stratified by whether VIP interneurons are explicitly included (categorical inventory; not a quantitative axis)",
+            "scope_summary": {
+              "region": "cortical microcircuit (mostly L2/3 / V1)",
+              "population": "modeled E + interneuron classes",
+              "species": "model"
+            },
+            "entries": [
+              {
+                "cite_key": "Iqbal2025",
+                "doi": "10.1073/pnas.2504164122",
+                "study_label": "Iqbal 2025",
+                "model_type": "spiking_network",
+                "interneuron_classes": "PV+SST+VIP+LAMP5",
+                "VIP_role_in_model": "transient_disinhibition_of_SST",
+                "study_system": "spiking neural network model of L2/3 cortex, neuromorphic hardware (TrueNorth)",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Lee2025",
+                "doi": "10.1371/journal.pcbi.1013469",
+                "study_label": "Lee 2025",
+                "model_type": "rate_predictive_coding",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "disinhibition_for_prediction_error",
+                "study_system": "rate-based predictive coding microcircuit model with E, PV, SST, VIP populations",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Moreni2025b",
+                "doi": "10.3389/fncom.2025.1568143",
+                "study_label": "Moreni 2025",
+                "model_type": "biophysical_spiking",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "context_modulation",
+                "study_system": "biologically detailed spiking V1 cortical column model (5 layers, 4 cell types)",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Moreni2025a",
+                "doi": "10.1371/journal.pcbi.1012036",
+                "study_label": "Moreni 2025",
+                "model_type": "biophysical_spiking",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "complex_disinhibition",
+                "study_system": "biologically detailed spiking V1 cortical column model (Allen Institute parameters)",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Jiang2024b",
+                "doi": "10.1093/cercor/bhae378",
+                "study_label": "Jiang 2024",
+                "model_type": "layered_spiking",
+                "interneuron_classes": "PV+SOM+VIP",
+                "VIP_role_in_model": "PV-SOM-VIP_disinhibition",
+                "study_system": "layered spiking microcircuit model of somatosensory cortex (6 layers, 4 cell types)",
+                "year": "2024",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Terwal2021",
+                "doi": "10.1007/s00422-021-00894-6",
+                "study_label": "terWal 2021",
+                "model_type": "spiking_E-I",
+                "interneuron_classes": "PV+SOM+VIP",
+                "VIP_role_in_model": "switch_high_low_SOM_drive",
+                "study_system": "spiking E/I network with PV, SOM, and VIP interneurons (Wang\u2013Buzs\u00e1ki single cells)",
+                "year": "2021",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Hahn2022",
+                "doi": "10.7554/elife.77594",
+                "study_label": "Hahn 2022",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "multilayer cortical microcircuit rate model (incl. VIP, SST, PV)",
+                "year": "2022",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Sancheztodo2026",
+                "doi": "10.1002/hbm.70428",
+                "study_label": "SanchezTodo 2026",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "neural-mass laminar cortical model with PV, SST, VIP populations",
+                "year": "2026",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Waitzmann2024",
+                "doi": "10.1073/pnas.2311040121",
+                "study_label": "Waitzmann 2024",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "rate-based canonical microcircuit model with E, PV, SST, VIP and STP",
+                "year": "2024",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Chou2021",
+                "doi": "10.1371/journal.pcbi.1009356",
+                "study_label": "Chou 2021",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "spiking attention model of auditory cortex with VIP-SST-PV motif",
+                "year": "2021",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Parker2025",
+                "doi": "10.1126/sciadv.ads9134",
+                "study_label": "Parker 2025",
+                "model_type": "spatial_spiking",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "state_dependent_synchrony",
+                "study_system": "spatially structured spiking network with three interneuron subtypes",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Nemati2025a",
+                "doi": "10.1101/2025.10.20.683584",
+                "study_label": "Nemati 2025",
+                "model_type": "balanced_recurrent",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "L4_predictive_coding",
+                "study_system": "balanced recurrent V1 layer 4 cortical model with three interneuron types",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Ito2024",
+                "doi": "10.1016/j.celrep.2024.114763",
+                "study_label": "Ito 2024",
+                "model_type": "SSN_inverse",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "novelty_drives_SST_to_VIP_pivot",
+                "study_system": "stabilized supralinear network (SSN) fit to mouse V1 calcium imaging",
+                "year": "2024",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Kim2025b",
+                "doi": "10.1101/2025.03.13.643046",
+                "study_label": "Kim 2025",
+                "model_type": "mean_field_spatial",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "cell_type_specific_gain",
+                "study_system": "spatially structured mean-field model of V1 with three interneuron types",
+                "year": "2025",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Sanzeni2020",
+                "doi": "10.7554/elife.54875",
+                "study_label": "Sanzeni 2020",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "computational model + in vivo VIP-Cre mouse hippocampus",
+                "year": "2020",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Wagatsuma2022",
+                "doi": "10.3389/fncom.2022.988715",
+                "study_label": "Wagatsuma 2022",
+                "model_type": "V1V2_hierarchical",
+                "interneuron_classes": "PV+SOM+VIP",
+                "VIP_role_in_model": "VIP_SOM_disinhibition_top_down",
+                "study_system": "V1-V2 hierarchical microcircuit model with PV, SOM, VIP",
+                "year": "2022",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Litwinkumar2016",
+                "doi": "10.1152/jn.00732.2015",
+                "study_label": "LitwinKumar 2016",
+                "model_type": "rate_model",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "ISN_with_three_interneurons",
+                "study_system": "rate model of mouse V1 with PV, SST, VIP",
+                "year": "2016",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Bensaid2019",
+                "doi": "10.3389/fnsys.2019.00059",
+                "study_label": "Bensaid 2019",
+                "model_type": "unknown",
+                "interneuron_classes": "unknown",
+                "VIP_role_in_model": "unknown",
+                "study_system": "spiking model of CA1 hippocampus with PV, SST, VIP",
+                "year": "2019",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Voina2022",
+                "doi": "10.1162/neco_a_01472",
+                "study_label": "Voina 2022",
+                "model_type": "V1_column_switch",
+                "interneuron_classes": "PV+SST+VIP",
+                "VIP_role_in_model": "context_switching_via_VIP",
+                "study_system": "V1 column rate/spiking model",
+                "year": "2022",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Lee2017b",
+                "doi": "10.3389/fncom.2017.00028",
+                "study_label": "Lee 2017",
+                "model_type": "rate_three_interneuron",
+                "interneuron_classes": "PV+SOM+VIP",
+                "VIP_role_in_model": "VIP_disinhibits_via_SOM_silencing",
+                "study_system": "rate-based three-interneuron cortical model",
+                "year": "2017",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Neske2016",
+                "doi": "10.3389/fncir.2016.00052",
+                "study_label": "Neske 2016",
+                "model_type": "invivo_model_up_state",
+                "interneuron_classes": "SOM+VIP",
+                "VIP_role_in_model": "VIP_offset_active_indirect_role",
+                "study_system": "in vivo + computational model of mouse cortical Up states",
+                "year": "2016",
+                "vip_inclusion": "VIP_included"
+              },
+              {
+                "cite_key": "Bos2025",
+                "doi": "10.7554/elife.99808",
+                "study_label": "Bos 2025",
+                "model_type": "rate_model_analytical",
+                "interneuron_classes": "PV+SOM",
+                "VIP_role_in_model": "(VIP_excluded)_stability_analysis",
+                "study_system": "three-population (E-PV-SOM) rate model with analytical stability analysis",
+                "year": "2025",
+                "vip_inclusion": "VIP_excluded"
+              },
+              {
+                "cite_key": "Tahvili2025b",
+                "doi": "10.1101/2025.10.23.684108",
+                "study_label": "Tahvili 2025",
+                "model_type": "mean_field",
+                "interneuron_classes": "PV+SOM",
+                "VIP_role_in_model": "(VIP_excluded)",
+                "study_system": "in vivo two-photon imaging + slice recordings + circuit model in mouse hippocampus",
+                "year": "2025",
+                "vip_inclusion": "VIP_excluded"
+              },
+              {
+                "cite_key": "Tahvili2025a",
+                "doi": "10.1016/j.celrep.2025.116131",
+                "study_label": "Tahvili 2025",
+                "model_type": "spiking_perturbation",
+                "interneuron_classes": "PV+SOM",
+                "VIP_role_in_model": "(VIP_excluded)_distinct_causal_roles",
+                "study_system": "rate/spiking model fit to electrophysiology of PV vs SST",
+                "year": "2025",
+                "vip_inclusion": "VIP_excluded"
+              },
+              {
+                "cite_key": "Rikhye2021",
+                "doi": "10.1523/jneurosci.3176-20.2021",
+                "study_label": "Rikhye 2021",
+                "model_type": "rate_model_invivo",
+                "interneuron_classes": "PV+SST",
+                "VIP_role_in_model": "(VIP_excluded)_cooperative_SOM_PV",
+                "study_system": "in vivo two-photon V1 recording + recurrent network model",
+                "year": "2021",
+                "vip_inclusion": "VIP_excluded"
+              }
+            ],
+            "restructure_notes": "Restructured cluster_11_computational_models__0. The original 40-row table was dominated by 'unknown' values (21/40 model_type='unknown' and 21/40 interneuron_classes='unknown'). We re-parsed the per-row study_system free-text to classify each model into VIP_included vs VIP_excluded. After parsing, 21 models are confidently VIP-included (study_system or interneuron_classes mentions VIP), 4 are confidently VIP-excluded (PV/SOM-only models or VIP_role explicitly 'VIP_excluded'), and 15 remain unclassifiable from the available text and are dropped from this inventory (not invented). The figure should be rendered as a stratified categorical inventory (VIP-included vs VIP-excluded) rather than as an aggregate count panel; aggregate counts in the original __1 row inherited the 'unknown' bias and are removed in our restructure of __1. Population mismatch (VIP-excluded models being shown alongside VIP-focused work) is now made explicit by the stratification rather than buried.",
+            "homogeneity_check": "Stratified inventory; VIP_inclusion is a per-row label, not a comparison axis. Within each stratum, model_type and interneuron_classes remain heterogeneous \u2014 flagged in restructure_notes. No quantitative aggregation is performed."
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__1",
+          "original_comparison_id": "cluster_11_computational_models__1",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "iter3_patch",
+          "required_caveat_text": "Aggregate-count panel is supposed to report stratified counts (claimed 21 VIP-included vs 4 VIP-excluded, per restructure_notes), but the two entries have value='VIP_included' and value='VIP_excluded' \u2014 these are bucket labels, not counts. There is no numeric count field anywhere in the entries, so the panel as encoded cannot be rendered as a count. cite_key, doi, study_label are all None (acceptable for an aggregate row), but without the actual count values this is a structural defect: the data does not contain the metric the metric_label describes. The restructure also removes the model_type aggregate but the replacement count panel is not actually populated. Needs the entries to carry numeric counts (e.g., value=21 / value=4) plus a derivation note pointing to the __0 inventory.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__1",
+            "original_comparison_id": "cluster_11_computational_models__1",
+            "cluster_id": "cluster_11_computational_models",
+            "metric_label": "Stratified count of cortical microcircuit models by VIP-inclusion status (VIP_included vs VIP_excluded), filtered to entries with classifiable inclusion",
+            "scope_summary": {
+              "region": "cortical microcircuit",
+              "population": "modeled E + IN classes",
+              "species": "model"
+            },
+            "entries": [
+              {
+                "category": "VIP_inclusion",
+                "value": 21,
+                "count": 21,
+                "denominator": "25 classifiable models",
+                "scope": {
+                  "region": "cortical microcircuit models",
+                  "population": "modeled IN classes",
+                  "species": "model"
+                },
+                "bucket_label": "VIP_included",
+                "value_units": "count",
+                "derivation_note": "Counts derived from per-row VIP_inclusion classification in cluster_11_computational_models__0 (the inventory split). Numerator = papers with classifiable VIP_inclusion status; denominator = 25 classifiable models (15 unclassifiable rows excluded)."
+              },
+              {
+                "category": "VIP_inclusion",
+                "value": 4,
+                "count": 4,
+                "denominator": "25 classifiable models",
+                "scope": {
+                  "region": "cortical microcircuit models",
+                  "population": "modeled IN classes",
+                  "species": "model"
+                },
+                "bucket_label": "VIP_excluded",
+                "value_units": "count",
+                "derivation_note": "Counts derived from per-row VIP_inclusion classification in cluster_11_computational_models__0 (the inventory split). Numerator = papers with classifiable VIP_inclusion status; denominator = 25 classifiable models (15 unclassifiable rows excluded)."
+              }
+            ],
+            "restructure_notes": "Restructured cluster_11_computational_models__1. The original aggregate count table was dominated by an 'unknown' bucket (21/40 entries). We re-parsed per-row study_system to recover VIP-inclusion status and now report counts only for the 25 classifiable rows; the 15 unclassifiable rows are dropped (not assigned to a bucket) so that the count distribution reflects a substantive categorical signal rather than missingness. The 'model_type' aggregate has been removed entirely because the model_type taxonomy was free-text and inconsistent across papers (spiking_network vs spiking_E-I vs balanced_recurrent vs SSN_inverse, etc.) \u2014 a legitimate aggregate would require a small fixed taxonomy that the source data did not provide. [iter3 fix] Promoted integer count to the entries' value field (was a string bucket label). Each entry now carries value=<count integer>, value_units=\"count\", bucket_label=<original VIP_included/VIP_excluded label>, and a derivation_note pointing at the __0 inventory split. The aggregate count panel is now numerically renderable.",
+            "homogeneity_check": "Single category (VIP_inclusion) with a binary value; counts denominated against the same classifiable subset. No mixed-denominator confusion."
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__2",
+          "original_comparison_id": "cluster_11_computational_models__2",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Taxonomy spans heterogeneous brain regions (neocortex V1/PFC/A1/parietal/L1, hippocampus CA1/CA3, BLA, olfactory cortex); category counts are not region-controlled. | model_type categories are non-orthogonal (biophysical = implementation level; rate/spiking/neural_mass = formalism; predictive_coding = paradigm); papers may legitimately fit more than one bucket. | VIP_role labels mix mechanism (disinhibition_gating) with function (prediction_error, gain_modulation); no source sentence is shown to verify each assignment. | Per-paper model scale varies from single-cell biophysical models to multi-million-neuron mesocircuits; each contributes equal weight. | interneuron_classes column shows 8 distinct compositions; counts do not separate 2-class from 4-class models. | 3 of 40 DOIs lack proper author-year citation keys (Unmapped_* placeholders): 10.1073/pnas.2408966122 and 10.7554/elife.100268.3.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__2",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_3_round2_taxonomy",
+              "columns": [
+                "doi",
+                "model_type",
+                "interneuron_classes",
+                "VIP_role",
+                "study_system",
+                "year"
+              ]
+            },
+            "entries": [
+              {
+                "doi": "10.1016/j.neuron.2023.11.006",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "attention/top-down",
+                "study_system": "rate model + V1 in vivo (mouse)",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1101/2025.05.13.653877",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "prediction_error",
+                "study_system": "spiking microcircuit model of cortex",
+                "year": "2025"
+              },
+              {
+                "doi": "10.3389/fpsyg.2016.01792",
+                "model_type": "predictive_coding",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "theoretical / predictive coding circuit model",
+                "year": "2016"
+              },
+              {
+                "doi": "10.1101/2024.09.30.615819",
+                "model_type": "predictive_coding",
+                "interneuron_classes": "VIP",
+                "VIP_role": "prediction_error",
+                "study_system": "hierarchical predictive coding circuit model",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1016/j.neuron.2018.03.037",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "rate model + 2-photon imaging V1 (mouse)",
+                "year": "2018"
+              },
+              {
+                "doi": "10.1162/netn_a_00427",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical CA1 model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1523/eneuro.0235-21.2021",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical compartmental pyramidal neuron model",
+                "year": "2021"
+              },
+              {
+                "doi": "10.1016/j.neuron.2023.01.017",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical/conductance-based single-cell model + slice",
+                "year": "2023"
+              },
+              {
+                "doi": "10.1371/journal.pone.0209429",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+IS3",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical CA1 IS3 single-cell model",
+                "year": "2019"
+              },
+              {
+                "doi": "10.1523/jneurosci.2174-19.2020",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking network model of CA3",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1073/pnas.2408966122",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+NDNF/LAMP5",
+                "VIP_role": "prediction_error",
+                "study_system": "rate microcircuit model of L1-L5 cortex",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1038/ncomms12815",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "two-compartment rate circuit model",
+                "year": "2016"
+              },
+              {
+                "doi": "10.1523/eneuro.0131-17.2017",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+IS3",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical CA1 stratum oriens microcircuit",
+                "year": "2017"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1013363",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking E/I network with multiple interneurons",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1101/2020.02.11.944751",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking PFC working memory model",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1101/2022.02.03.479036",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "multiscale spiking thalamocortical model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1101/2022.06.01.494440",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV+IS3",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical CA1 microcircuit model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1523/eneuro.0388-18.2018",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "biophysical BLA model",
+                "year": "2019"
+              },
+              {
+                "doi": "10.1063/5.0111131",
+                "model_type": "reservoir_computing",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "reservoir computing model with multiple neuron types",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1012693",
+                "model_type": "neural_mass",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "neural mass model + EEG simulation",
+                "year": "2024"
+              },
+              {
+                "doi": "10.3389/fnsys.2025.1525717",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "spiking cortical network model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1009891",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "rate/spiking hippocampal model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.7554/elife.59715",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking E/I assembly learning model",
+                "year": "2021"
+              },
+              {
+                "doi": "10.7554/elife.100268.3",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical SST/Martinotti dendritic model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.7554/elife.18383",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "linear rate model with multiple interneurons",
+                "year": "2016"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1009478",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking network with PV, SST, (VIP gate)",
+                "year": "2021"
+              },
+              {
+                "doi": "10.1101/2023.12.13.571410",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "prediction_error",
+                "study_system": "predictive coding rate circuit",
+                "year": "2023"
+              },
+              {
+                "doi": "10.1101/2021.08.24.457531",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "spiking 4-population microcircuit + plasticity",
+                "year": "2021"
+              },
+              {
+                "doi": "10.1016/j.celrep.2022.111476",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "gain_modulation",
+                "study_system": "connectome-constrained spiking L4 model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1101/2025.09.11.673960",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "prediction_error",
+                "study_system": "rate model of parietal-visual circuit",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1038/s42003-024-05907-1",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical multi-cell human cortex model",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1016/j.celrep.2022.111232",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical CA1 place-cell + microcircuit model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1101/2023.09.15.557865",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spatial spiking network model",
+                "year": "2023"
+              },
+              {
+                "doi": "10.7554/elife.09868",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "rate model + V1 mouse experiments",
+                "year": "2015"
+              },
+              {
+                "doi": "10.1038/s41467-019-11537-7",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical PV basket cell model",
+                "year": "2019"
+              },
+              {
+                "doi": "10.7554/elife.91153",
+                "model_type": "other",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "cortical circuit model + slice ephys",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1101/2025.09.10.675107",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+NDNF/LAMP5",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical NDNF interneuron model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1006999",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "gain_modulation",
+                "study_system": "analytical three-interneuron rate model",
+                "year": "2019"
+              },
+              {
+                "doi": "10.1016/j.crneur.2021.100018",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "spiking PFC microcircuit model",
+                "year": "2021"
+              },
+              {
+                "doi": "10.1523/jneurosci.1876-22.2023",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+NDNF/LAMP5",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical L1 interneuron subtype models",
+                "year": "2023"
+              }
+            ],
+            "n_entries": 40,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__3",
+          "original_comparison_id": "cluster_11_computational_models__3",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Counts derive from the round-2 taxonomy (comparison __2) and inherit its non-orthogonal categories. | model_type buckets mix formalism (rate/spiking/neural_mass), implementation (biophysical), and paradigm (predictive_coding); a single paper can legitimately fit several buckets. | VIP_role labels mix mechanism and function; the 60% 'disinhibition_gating' fraction is partly a labeling-level artifact. | Distribution does not control for brain region, model scale, or interneuron-class composition; counts are unweighted. | n=40 papers across all three category axes.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__3",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_4_round2_distribution",
+              "columns": [
+                "category",
+                "value",
+                "count"
+              ]
+            },
+            "entries": [
+              {
+                "category": "model_type",
+                "value": "spiking_network",
+                "count": 14
+              },
+              {
+                "category": "model_type",
+                "value": "biophysical",
+                "count": 12
+              },
+              {
+                "category": "model_type",
+                "value": "rate_model",
+                "count": 9
+              },
+              {
+                "category": "model_type",
+                "value": "predictive_coding",
+                "count": 2
+              },
+              {
+                "category": "model_type",
+                "value": "reservoir_computing",
+                "count": 1
+              },
+              {
+                "category": "model_type",
+                "value": "neural_mass",
+                "count": 1
+              },
+              {
+                "category": "model_type",
+                "value": "other",
+                "count": 1
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+PV",
+                "count": 17
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST",
+                "count": 10
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+PV",
+                "count": 5
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP",
+                "count": 2
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+IS3",
+                "count": 2
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+NDNF/LAMP5",
+                "count": 2
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+PV+IS3",
+                "count": 1
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+NDNF/LAMP5",
+                "count": 1
+              },
+              {
+                "category": "VIP_role",
+                "value": "disinhibition_gating",
+                "count": 24
+              },
+              {
+                "category": "VIP_role",
+                "value": "prediction_error",
+                "count": 10
+              },
+              {
+                "category": "VIP_role",
+                "value": "other",
+                "count": 3
+              },
+              {
+                "category": "VIP_role",
+                "value": "gain_modulation",
+                "count": 2
+              },
+              {
+                "category": "VIP_role",
+                "value": "attention/top-down",
+                "count": 1
+              }
+            ],
+            "n_entries": 20,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__4",
+          "original_comparison_id": "cluster_11_computational_models__4",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Sample of 40 modeling papers spans heterogeneous brain regions and model scales (single-cell to whole-brain). | model_type schema differs from round-2 (adds mean_field, anatomical_basis; drops reservoir_computing, neural_mass) \u2014 distributions are not directly comparable to round-2. | VIP_role schema adds 4 new categories vs round-2; categories overlap semantically (attention/top-down \u2248 context_modulation \u2248 gain_modulation in some entries). | interneuron_classes vary from VIP-only (5 papers) to 4-class compositions; counts do not separate by composition. | Citation 10.48550/arxiv.1801.00062 is an Unmapped_* placeholder and lacks a proper author-year cite_key.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__4",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_5_round3_taxonomy",
+              "columns": [
+                "doi",
+                "model_type",
+                "interneuron_classes",
+                "VIP_role",
+                "study_system",
+                "year"
+              ]
+            },
+            "entries": [
+              {
+                "doi": "10.7554/elife.55130",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "gain_modulation",
+                "study_system": "rate model + V1 in vivo (mouse)",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1523/jneurosci.2255-12.2013",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "anatomical foundation for computational models",
+                "year": "2013"
+              },
+              {
+                "doi": "10.1523/jneurosci.1369-21.2021",
+                "model_type": "other",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "learning_plasticity",
+                "study_system": "olfactory cortex slice + circuit model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1038/s41598-017-01830-0",
+                "model_type": "other",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "rate column model + V1 mouse",
+                "year": "2017"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1013306",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "attention/top-down",
+                "study_system": "spiking E-I network + multiple interneurons",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1016/j.neuron.2021.11.016",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "rate microcircuit model + V1 imaging (mouse)",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1073/pnas.2315160121",
+                "model_type": "mean_field",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "mean-field whole-cortex model + EEG",
+                "year": "2024"
+              },
+              {
+                "doi": "10.7554/elife.29742",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "3IN rate model with bifurcation analysis",
+                "year": "2017"
+              },
+              {
+                "doi": "10.1038/s41467-023-39732-7",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "learning_plasticity",
+                "study_system": "spiking microcircuit with developmental plasticity",
+                "year": "2023"
+              },
+              {
+                "doi": "10.1038/s42003-023-05231-0",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV+NDNF/LAMP5",
+                "VIP_role": "gain_modulation",
+                "study_system": "spiking 4-population microcircuit model",
+                "year": "2023"
+              },
+              {
+                "doi": "10.1016/j.celrep.2017.10.012",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "gain_modulation",
+                "study_system": "rate model + auditory cortex (mouse)",
+                "year": "2017"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1008016",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP",
+                "VIP_role": "context_modulation",
+                "study_system": "spiking model of auditory cortex",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1101/2020.11.11.378729",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "context_modulation",
+                "study_system": "rate model + behavior + optogenetics",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1093/schbul/sbaa184",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "oscillations",
+                "study_system": "spiking cortical model with SST perturbation",
+                "year": "2021"
+              },
+              {
+                "doi": "10.3389/fncir.2022.799581",
+                "model_type": "predictive_coding",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "attention/top-down",
+                "study_system": "predictive coding microcircuit model",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1038/s41467-019-12972-2",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "spiking microcircuit + plasticity",
+                "year": "2019"
+              },
+              {
+                "doi": "10.1101/2025.05.12.653626",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "spiking predictive-coding microcircuit",
+                "year": "2025"
+              },
+              {
+                "doi": "10.7554/elife.82426",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "context_modulation",
+                "study_system": "spiking attractor decision-making model",
+                "year": "2023"
+              },
+              {
+                "doi": "10.7554/elife.99693",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "biophysical detailed mesocircuit model",
+                "year": "2026"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1010682",
+                "model_type": "mean_field",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "learning_plasticity",
+                "study_system": "mean-field plasticity model with multiple interneurons",
+                "year": "2022"
+              },
+              {
+                "doi": "10.48550/arxiv.1801.00062",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "learning_plasticity",
+                "study_system": "deep cortical hierarchical biophysical model",
+                "year": "2017"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1007955",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "prediction_error",
+                "study_system": "spiking microcircuit + plasticity",
+                "year": "2020"
+              },
+              {
+                "doi": "10.7554/elife.65309",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP",
+                "VIP_role": "context_modulation",
+                "study_system": "spiking V1 microcircuit + plasticity",
+                "year": "2021"
+              },
+              {
+                "doi": "10.1073/pnas.2312898121",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP",
+                "VIP_role": "working_memory_decision",
+                "study_system": "spiking decision-circuit model",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1073/pnas.0305337101",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "gain_modulation",
+                "study_system": "compartmental pyramidal model",
+                "year": "2004"
+              },
+              {
+                "doi": "10.3389/fncir.2015.00060",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "context_modulation",
+                "study_system": "rate model + V1 (Martinotti)",
+                "year": "2015"
+              },
+              {
+                "doi": "10.1073/pnas.2419733122",
+                "model_type": "mean_field",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "whole-brain mean-field model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1371/journal.pbio.3002837",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV+IS3",
+                "VIP_role": "oscillations",
+                "study_system": "spiking CA1 network model",
+                "year": "2024"
+              },
+              {
+                "doi": "10.3389/fncir.2020.00015",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking PFC working-memory model",
+                "year": "2020"
+              },
+              {
+                "doi": "10.1371/journal.pcbi.1002550",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "compartmental pyramidal model",
+                "year": "2012"
+              },
+              {
+                "doi": "10.3389/fncir.2025.1644572",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "learning_plasticity",
+                "study_system": "synaptome + compartmental modeling",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1007/s00429-024-02886-1",
+                "model_type": "anatomical_basis",
+                "interneuron_classes": "VIP",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "amygdala+basal forebrain circuit model",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1093/cercor/bhx352",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "attention/top-down",
+                "study_system": "biophysical L1 interneuron models",
+                "year": "2018"
+              },
+              {
+                "doi": "10.1523/eneuro.0389-21.2022",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "compartmental microcircuit model with ACh",
+                "year": "2022"
+              },
+              {
+                "doi": "10.1371/journal.pbio.3002660",
+                "model_type": "spiking_network",
+                "interneuron_classes": "VIP+PV",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "spiking olfactory cortex model",
+                "year": "2024"
+              },
+              {
+                "doi": "10.1093/cercor/bht263",
+                "model_type": "biophysical",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "biophysical L4 barrel column model",
+                "year": "2015"
+              },
+              {
+                "doi": "10.1002/dneu.20853",
+                "model_type": "anatomical_basis",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "other",
+                "study_system": "anatomical classification basis for 3IN models",
+                "year": "2011"
+              },
+              {
+                "doi": "10.1101/2025.02.26.640383",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP",
+                "VIP_role": "disinhibition_gating",
+                "study_system": "linearized rate model with multiple regimes",
+                "year": "2025"
+              },
+              {
+                "doi": "10.1523/jneurosci.0686-20.2020",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST+PV",
+                "VIP_role": "learning_plasticity",
+                "study_system": "rate microcircuit + slice ephys",
+                "year": "2020"
+              },
+              {
+                "doi": "10.7554/elife.78815",
+                "model_type": "rate_model",
+                "interneuron_classes": "VIP+SST",
+                "VIP_role": "learning_plasticity",
+                "study_system": "rate microcircuit + cortex-wide imaging",
+                "year": "2022"
+              }
+            ],
+            "n_entries": 40,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__5",
+          "original_comparison_id": "cluster_11_computational_models__5",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Counts derive from the round-3 taxonomy (comparison __4) and inherit its non-orthogonal categories. | Round-3 schema is NOT identical to round-2 schema: VIP_role has 9 categories (vs 5), model_type adds mean_field and anatomical_basis. Round-2 vs round-3 distributions cannot be directly compared. | Round-2 and round-3 paper samples are disjoint (n=40 each, 0 overlap). | Counts are unweighted across model scale (single-cell to whole-brain) and brain region. | interneuron_classes counts do not separate by class breadth (VIP-only vs 4-class compositions).",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__5",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_6_round3_distribution",
+              "columns": [
+                "category",
+                "value",
+                "count"
+              ]
+            },
+            "entries": [
+              {
+                "category": "model_type",
+                "value": "spiking_network",
+                "count": 15
+              },
+              {
+                "category": "model_type",
+                "value": "rate_model",
+                "count": 9
+              },
+              {
+                "category": "model_type",
+                "value": "biophysical",
+                "count": 8
+              },
+              {
+                "category": "model_type",
+                "value": "mean_field",
+                "count": 3
+              },
+              {
+                "category": "model_type",
+                "value": "other",
+                "count": 2
+              },
+              {
+                "category": "model_type",
+                "value": "anatomical_basis",
+                "count": 2
+              },
+              {
+                "category": "model_type",
+                "value": "predictive_coding",
+                "count": 1
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+PV",
+                "count": 24
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST",
+                "count": 7
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP",
+                "count": 5
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+PV",
+                "count": 2
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+PV+NDNF/LAMP5",
+                "count": 1
+              },
+              {
+                "category": "interneuron_classes",
+                "value": "VIP+SST+PV+IS3",
+                "count": 1
+              },
+              {
+                "category": "VIP_role",
+                "value": "attention/top-down",
+                "count": 8
+              },
+              {
+                "category": "VIP_role",
+                "value": "disinhibition_gating",
+                "count": 8
+              },
+              {
+                "category": "VIP_role",
+                "value": "learning_plasticity",
+                "count": 7
+              },
+              {
+                "category": "VIP_role",
+                "value": "context_modulation",
+                "count": 5
+              },
+              {
+                "category": "VIP_role",
+                "value": "gain_modulation",
+                "count": 4
+              },
+              {
+                "category": "VIP_role",
+                "value": "other",
+                "count": 3
+              },
+              {
+                "category": "VIP_role",
+                "value": "prediction_error",
+                "count": 2
+              },
+              {
+                "category": "VIP_role",
+                "value": "oscillations",
+                "count": 2
+              },
+              {
+                "category": "VIP_role",
+                "value": "working_memory_decision",
+                "count": 1
+              }
+            ],
+            "n_entries": 22,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__6",
+          "original_comparison_id": "cluster_11_computational_models__6",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Table is a taxonomic survey of computational/modeling studies, not a comparison of measured values; rows differ in brain region, species (incl. songbird), modeling formalism, and cell-type composition. | model_type and vip_role labels are non-orthogonal categories assigned by the curators; some entries lack VIP cells but still receive a vip_role tag. | Entry cluster_11_finding_123 cites DOI 10.64898/2025.12.21.695847, which is unmapped in the citation_key_map (cite_key=Unmapped_3be007); abstract resolves to Yao et al. 2025.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__6",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_7_round4_architectural_taxonomy",
+              "columns": [
+                "finding_id",
+                "doi",
+                "model_type",
+                "interneurons",
+                "study_system",
+                "vip_role"
+              ]
+            },
+            "entries": [
+              {
+                "finding_id": "cluster_11_finding_121",
+                "doi": "10.1101/2025.11.01.686040",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "spiking model of V1 L2/3 with compartmentalized pyramidal neurons and three IN classes",
+                "vip_role": "prediction_error"
+              },
+              {
+                "finding_id": "cluster_11_finding_122",
+                "doi": "10.1101/2025.07.21.665987",
+                "model_type": "spiking",
+                "interneurons": "SST,VIP",
+                "study_system": "spiking network model of mPFC microcircuit driven by hippocampal CA1 inputs",
+                "vip_role": "context_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_123",
+                "doi": "10.64898/2025.12.21.695847",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "biophysical L2/3 V1 microcircuit model with experience-dependent plasticity",
+                "vip_role": "learning_plasticity"
+              },
+              {
+                "finding_id": "cluster_11_finding_124",
+                "doi": "10.1101/2020.09.21.306472",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "IS3,OLM",
+                "study_system": "compartmental model of hippocampal IS3 interneuron",
+                "vip_role": "disinhibition_gating"
+              },
+              {
+                "finding_id": "cluster_11_finding_125",
+                "doi": "10.1101/2025.04.20.649735",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "spiking auditory-cortex model with PV/SST/VIP interneurons",
+                "vip_role": "prediction_error"
+              },
+              {
+                "finding_id": "cluster_11_finding_126",
+                "doi": "10.1101/2023.04.27.538511",
+                "model_type": "spiking",
+                "interneurons": "SST,OLM",
+                "study_system": "hippocampal CA1 spiking model with diverse SST interneuron subtypes",
+                "vip_role": "disinhibition_gating"
+              },
+              {
+                "finding_id": "cluster_11_finding_127",
+                "doi": "10.1101/2025.10.03.680414",
+                "model_type": "rate",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "rate-network model of cortical oscillations with two inhibitory classes",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_128",
+                "doi": "10.1101/2023.04.27.538595",
+                "model_type": "computational_model",
+                "interneurons": "CCK",
+                "study_system": "computational model of ventral hippocampus CCK interneuron circuit",
+                "vip_role": "reward_novelty"
+              },
+              {
+                "finding_id": "cluster_11_finding_129",
+                "doi": "10.1016/j.celrep.2024.114212",
+                "model_type": "other",
+                "interneurons": "VIP,NDNF",
+                "study_system": "mouse cortex with computational analysis of NDNF L1 interneuron function",
+                "vip_role": "context_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_130",
+                "doi": "10.1101/2024.10.15.618337",
+                "model_type": "rl_or_learning",
+                "interneurons": "SST,VIP",
+                "study_system": "cortical microcircuit reinforcement-learning model",
+                "vip_role": "learning_plasticity"
+              },
+              {
+                "finding_id": "cluster_11_finding_131",
+                "doi": "10.1063/1.5134765",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "spiking model of cortical activity propagation with three interneuron subtypes",
+                "vip_role": "gain_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_132",
+                "doi": "10.1162/neco_a_01369",
+                "model_type": "rate",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "rate-network model of adult mouse V1 oscillations",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_133",
+                "doi": "10.48550/arxiv.2405.17745",
+                "model_type": "rate",
+                "interneurons": "SST,VIP",
+                "study_system": "recurrent rate model with multiple interneuron classes",
+                "vip_role": "gain_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_134",
+                "doi": "10.1101/2023.09.15.557147",
+                "model_type": "other",
+                "interneurons": "SST,VIP",
+                "study_system": "cerebellar disinhibitory circuit model",
+                "vip_role": "learning_plasticity"
+              },
+              {
+                "finding_id": "cluster_11_finding_135",
+                "doi": "10.1101/2020.07.30.229435",
+                "model_type": "rate",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "rate model of V1 microcircuit with three interneuron subtypes",
+                "vip_role": "gain_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_136",
+                "doi": "10.1101/2023.09.26.559559",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "anatomical-quantitative basis for hippocampal 3IN biophysical models",
+                "vip_role": "anatomical_basis"
+              },
+              {
+                "finding_id": "cluster_11_finding_137",
+                "doi": "10.1101/2023.03.13.532296",
+                "model_type": "other",
+                "interneurons": "PV,SST,VIP,CCK",
+                "study_system": "hippocampal recurrent circuit model with multiple interneuron subtypes",
+                "vip_role": "learning_plasticity"
+              },
+              {
+                "finding_id": "cluster_11_finding_138",
+                "doi": "10.1073/pnas.2116895119",
+                "model_type": "rate",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "rate model of cortical microcircuit with three interneuron subtypes",
+                "vip_role": "gain_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_139",
+                "doi": "10.1101/2024.01.04.574141",
+                "model_type": "large_scale",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "large-scale neocortical computational model",
+                "vip_role": "attention_topdown"
+              },
+              {
+                "finding_id": "cluster_11_finding_140",
+                "doi": "10.1093/cercor/bhaa343",
+                "model_type": "spiking",
+                "interneurons": "",
+                "study_system": "spiking entorhinal-hippocampal memory circuit model",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_141",
+                "doi": "10.1101/2021.12.02.470902",
+                "model_type": "other",
+                "interneurons": "NDNF",
+                "study_system": "cortical model of L1 NDNF+ interneuron control of sensory processing",
+                "vip_role": "context_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_142",
+                "doi": "10.3389/fncom.2024.1417558",
+                "model_type": "spiking",
+                "interneurons": "",
+                "study_system": "spiking model of zebra finch HVC song motor circuit",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_143",
+                "doi": "10.1101/2023.11.08.566107",
+                "model_type": "other",
+                "interneurons": "SST,VIP",
+                "study_system": "entorhinal-hippocampal circuit model",
+                "vip_role": "context_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_144",
+                "doi": "10.1101/2025.05.14.654005",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "spiking memory model with cell-type-specific synaptic scaling",
+                "vip_role": "learning_plasticity"
+              },
+              {
+                "finding_id": "cluster_11_finding_145",
+                "doi": "10.1101/2024.03.05.583493",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,CCK",
+                "study_system": "spiking model of hippocampal CA1 theta-gamma coupling",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_146",
+                "doi": "10.1038/s41467-025-58011-1",
+                "model_type": "other",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "thalamo-cortical model of PFC interneuron-mediated cognitive flexibility",
+                "vip_role": "attention_topdown"
+              },
+              {
+                "finding_id": "cluster_11_finding_147",
+                "doi": "10.1101/2022.12.11.519975",
+                "model_type": "rate",
+                "interneurons": "",
+                "study_system": "thalamo-prefrontal rate model of flexible decision-making",
+                "vip_role": "attention_topdown"
+              },
+              {
+                "finding_id": "cluster_11_finding_148",
+                "doi": "10.3389/fncel.2020.00118",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "",
+                "study_system": "biophysical model of rat L1 cortical interneurons",
+                "vip_role": "anatomical_basis"
+              },
+              {
+                "finding_id": "cluster_11_finding_149",
+                "doi": "10.48550/arxiv.1608.04433",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "",
+                "study_system": "data-assimilation biophysical model of HVC interneurons",
+                "vip_role": "anatomical_basis"
+              },
+              {
+                "finding_id": "cluster_11_finding_150",
+                "doi": "10.1016/j.crneur.2023.100121",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV",
+                "study_system": "biophysical model of PV+ GABAergic interneurons in cortex",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_151",
+                "doi": "10.3389/fncel.2024.1513602",
+                "model_type": "other",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "spatial model of cortical synaptic microarchitecture",
+                "vip_role": "anatomical_basis"
+              },
+              {
+                "finding_id": "cluster_11_finding_152",
+                "doi": "10.1016/j.neuroscience.2024.09.032",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "VIP",
+                "study_system": "compartmental model of presubicular VIP interneurons",
+                "vip_role": "anatomical_basis"
+              },
+              {
+                "finding_id": "cluster_11_finding_153",
+                "doi": "10.7554/elife.49872",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "biophysical PV interneuron model with dendritic NMDA receptors",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_154",
+                "doi": "10.1101/2024.09.11.612262",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV",
+                "study_system": "compartmental model of PV+ basket cell dendrites in hippocampus",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_155",
+                "doi": "10.1126/sciadv.adj7427",
+                "model_type": "other",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "cortical model of PV-mediated gamma oscillation plasticity",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_156",
+                "doi": "10.1101/2025.01.24.634658",
+                "model_type": "other",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "model of theta-gamma cross-frequency coupling with feedforward/feedback inhibition",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_157",
+                "doi": "10.1038/s41467-022-34520-1",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,VIP",
+                "study_system": "compartmental hippocampal model of SWR-induced PV dendritic spikes",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_158",
+                "doi": "10.1126/science.adv5638",
+                "model_type": "spiking",
+                "interneurons": "PV,SST,VIP,CCK",
+                "study_system": "spiking hippocampal model of cooperative interneuron families",
+                "vip_role": "context_modulation"
+              },
+              {
+                "finding_id": "cluster_11_finding_159",
+                "doi": "10.1016/j.celrep.2022.110948",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,SST,VIP",
+                "study_system": "compartmental model of PV interneuron dendrites in gamma oscillations",
+                "vip_role": "oscillations"
+              },
+              {
+                "finding_id": "cluster_11_finding_160",
+                "doi": "10.1101/2024.07.09.602783",
+                "model_type": "biophysical_compartmental",
+                "interneurons": "PV,SST,VIP,NDNF",
+                "study_system": "compartmental model of dendritic temporal inhibition in cortical pyramidal cells",
+                "vip_role": "context_modulation"
+              }
+            ],
+            "n_entries": 40,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__7",
+          "original_comparison_id": "cluster_11_computational_models__7",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "direct",
+          "required_caveat_text": "Counts are over the same 40 round-4 architectural-taxonomy entries; categories are not mutually exclusive and were assigned by the curators. | vip_role counts include studies that do not include VIP interneurons in the modeled population.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__7",
+            "cluster_id": "cluster_11_computational_models",
+            "comparison_meta": {
+              "id": "fd_8_round4_distribution",
+              "columns": [
+                "category",
+                "value",
+                "count"
+              ]
+            },
+            "entries": [
+              {
+                "category": "model_type",
+                "value": "biophysical_compartmental",
+                "count": 12
+              },
+              {
+                "category": "model_type",
+                "value": "spiking",
+                "count": 10
+              },
+              {
+                "category": "model_type",
+                "value": "other",
+                "count": 9
+              },
+              {
+                "category": "model_type",
+                "value": "rate",
+                "count": 6
+              },
+              {
+                "category": "model_type",
+                "value": "computational_model",
+                "count": 1
+              },
+              {
+                "category": "model_type",
+                "value": "rl_or_learning",
+                "count": 1
+              },
+              {
+                "category": "model_type",
+                "value": "large_scale",
+                "count": 1
+              },
+              {
+                "category": "vip_role",
+                "value": "oscillations",
+                "count": 12
+              },
+              {
+                "category": "vip_role",
+                "value": "context_modulation",
+                "count": 6
+              },
+              {
+                "category": "vip_role",
+                "value": "learning_plasticity",
+                "count": 5
+              },
+              {
+                "category": "vip_role",
+                "value": "anatomical_basis",
+                "count": 5
+              },
+              {
+                "category": "vip_role",
+                "value": "gain_modulation",
+                "count": 4
+              },
+              {
+                "category": "vip_role",
+                "value": "attention_topdown",
+                "count": 3
+              },
+              {
+                "category": "vip_role",
+                "value": "prediction_error",
+                "count": 2
+              },
+              {
+                "category": "vip_role",
+                "value": "disinhibition_gating",
+                "count": 2
+              },
+              {
+                "category": "vip_role",
+                "value": "reward_novelty",
+                "count": 1
+              }
+            ],
+            "n_entries": 16,
+            "homogeneity_check": null
+          }
+        },
+        {
+          "comparison_id": "cluster_11_computational_models__8",
+          "original_comparison_id": "cluster_11_computational_models__8",
+          "cluster_id": "cluster_11_computational_models",
+          "status": "CAVEAT",
+          "remediation_path": "iter1.5_restructure",
+          "required_caveat_text": "Restructure correctly isolates vip_role rows (single category, single n=160 denominator, count>=3 cutoff applied), dropping model_type and the anatomical_basis tag \u2014 internal homogeneity on metric_definition is satisfied. | However, role labels are free-text modeler-assigned tags drawn from a cumulative pool of n=160 papers across four rounds, and the restructure_notes acknowledges 'some papers contribute to multiple categories' \u2014 bars are not mutually exclusive and cannot be interpreted as a proportion partition. | This is a literature-orientation count, not an audit-extracted primary measurement (homogeneity_check explicitly flags this); the figure should ship with the caveat already specified in restructure_notes. | Conservative CAVEAT: structurally clean, but inherent free-text/non-exclusive caveats must accompany the panel.",
+          "figure_data": {
+            "comparison_id": "cluster_11_computational_models__8",
+            "original_comparison_id": "cluster_11_computational_models__8",
+            "cluster_id": "cluster_11_computational_models",
+            "metric_label": "VIP role categories among cortical microcircuit models (from cumulative round-1\u20134 evidence), filtered to coherent biological-function categories",
+            "scope_summary": {
+              "region": "cortical microcircuit models",
+              "population": "modeled VIP-IN role",
+              "species": "model"
+            },
+            "entries": [
+              {
+                "category": "vip_role",
+                "value": "oscillations",
+                "count": 12,
+                "scope": {
+                  "region": "cortical microcircuit",
+                  "population": "VIP-IN role assignment",
+                  "species": "model"
+                }
+              },
+              {
+                "category": "vip_role",
+                "value": "context_modulation",
+                "count": 6,
+                "scope": {
+                  "region": "cortical microcircuit",
+                  "population": "VIP-IN role assignment",
+                  "species": "model"
+                }
+              },
+              {
+                "category": "vip_role",
+                "value": "learning_plasticity",
+                "count": 5,
+                "scope": {
+                  "region": "cortical microcircuit",
+                  "population": "VIP-IN role assignment",
+                  "species": "model"
+                }
+              },
+              {
+                "category": "vip_role",
+                "value": "gain_modulation",
+                "count": 4,
+                "scope": {
+                  "region": "cortical microcircuit",
+                  "population": "VIP-IN role assignment",
+                  "species": "model"
+                }
+              },
+              {
+                "category": "vip_role",
+                "value": "attention_topdown",
+                "count": 3,
+                "scope": {
+                  "region": "cortical microcircuit",
+                  "population": "VIP-IN role assignment",
+                  "species": "model"
+                }
+              }
+            ],
+            "restructure_notes": "Restructured cluster_11_computational_models__8. The original 'cumulative distribution across all four rounds (n=160)' pooled four searches into a single distribution and mixed model_type and vip_role into one panel. We split out only the vip_role rows (the original panel's substantive signal) and dropped: (a) the model_type rows, which inherit the inconsistent free-text taxonomy issue described in __1; (b) the 'anatomical_basis' role (n=5) because it is not a computational role but an anatomical evidence tag \u2014 different category type; (c) all role rows with count < 3 to avoid spurious rare-role bars in a cumulative-pool figure. The retained rows describe vip_role categorization within the same evidence base; the count denominator (n=160) is the cumulative paper count across rounds 1\u20134. This panel should be rendered as a categorical bar with the explicit caveat that 'role' is the modeler's own free-text label and that some papers contribute to multiple categories.",
+            "homogeneity_check": "Single category (vip_role) with five discrete values; counts share the n=160 denominator. Caveat: role assignment is from the modeler's text \u2014 not an audit-extracted metric \u2014 and should be treated as a literature-orientation summary rather than a primary measurement."
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "fig-vip-model-empirical-mapping",
+      "figure_title": "fig-vip-model-empirical-mapping",
+      "n_panels": 0,
+      "audited_panels": []
+    }
+  ],
+  "unassigned_section_panels": [
+    {
+      "comparison_id": "cluster_06_disinhibition_circuit__0_split_pcon_pfeffer",
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "status": "PASS",
+      "required_caveat_text": null,
+      "figure_data": {
+        "comparison_id": "cluster_06_disinhibition_circuit__0_split_pcon_pfeffer",
+        "original_comparison_id": "cluster_06_disinhibition_circuit__0",
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "metric_label": "VIP\u2192SST paired-recording connection probability (Pcon, %)",
+        "scope_summary": {
+          "region": "mouse V1 L2/3",
+          "population": "VIP-Cre and SST-Cre interneurons",
+          "species": "mouse"
+        },
+        "entries": [
+          {
+            "cite_key": "Pfeffer2013",
+            "doi": "10.1038/nn.3446",
+            "study_label": "Pfeffer 2013",
+            "metric_label": "VIP\u2192SST connection probability (paired patch + ChR2)",
+            "value": 62.5,
+            "n": 16,
+            "n_definition": "VIP\u2192SST cell pairs tested",
+            "value_source_sentence": "Finally, VIP cells inhibited Sst cells (uIPSQ=0.69\u00b10.33pC; n=10; P con =62.5%; n=16) and the INC VIP\u2192Sst (0.43pC) was again not significantly different than that estimated with photostimulation (0.42pC; p=0.46).",
+            "scope": {
+              "region": "mouse V1 L2/3",
+              "population": "VIP-Cre\u2192SST-Cre pairs",
+              "species": "mouse",
+              "preparation": "acute slice paired patch + ChR2"
+            }
+          }
+        ],
+        "restructure_notes": "Split from cluster_06_disinhibition_circuit__0. Isolates Pcon (connection probability) on its own axis. Pi 2013 (IPSC decay \u03c4 in ms) and Lee 2013 (IPSC amplitude in pA) are non-commensurable metrics and have been split into separate sub-comparisons. Single-entry sub-figure \u2014 homogeneity_check trivially uniform.",
+        "homogeneity_check": "Single-entry; metric (Pcon %) uniform; region/population/species uniform."
+      },
+      "note": "Audited panel from a section_cluster not bound to any figure spec; writer may incorporate as inline panel or context, or skip."
+    },
+    {
+      "comparison_id": "cluster_06_disinhibition_circuit__0_split_ipsc_decay_pi",
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "status": "CAVEAT",
+      "required_caveat_text": "Within-study split is methodologically clean and uniform on metric and axis. Two flags warrant CAVEAT (not PASS): (1) n not reported, (2) error_type asserted as SEM but the cited source sentence does not explicitly distinguish SEM from SD \u2014 claim should be downgraded to 'unspecified \u00b1' or verified against Pi 2013 figure legend / methods. || Either downgrade error_type to 'unspecified (\u00b1 as printed)' or supply a full-text quotation from Pi 2013's figure legend / methods explicitly designating the error metric. Flag missing n in figure caption.",
+      "figure_data": {
+        "comparison_id": "cluster_06_disinhibition_circuit__0_split_ipsc_decay_pi",
+        "original_comparison_id": "cluster_06_disinhibition_circuit__0",
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "metric_label": "VIP-evoked IPSC decay time constant (ms) in SST vs PV postsynaptic interneurons (within-study)",
+        "scope_summary": {
+          "region": "mouse ACx + mPFC",
+          "population": "VIP\u2192Som and VIP\u2192Pv synapses",
+          "species": "mouse"
+        },
+        "entries": [
+          {
+            "cite_key": "Pi2013",
+            "doi": "10.1038/nature12676",
+            "study_label": "Pi 2013 (VIP\u2192Som)",
+            "metric_label": "VIP-evoked IPSC decay \u03c4 in Som postsynaptic cell (ms)",
+            "value": 18,
+            "error_sd_or_sem": 2,
+            "error_type": "unspecified (\u00b1 as printed)",
+            "n": null,
+            "n_definition": "VIP\u2192Som IPSCs (n not reported in cited row)",
+            "value_source_sentence": "Inhibitory currents (IPSCs) recorded in Pv neurons decayed faster than those recorded from Som neurons (decay time constant; Som: 18\u00b12ms, Pv: 6\u00b11ms), and also displayed stronger short-term synaptic depression (Fig.",
+            "scope": {
+              "region": "mouse ACx + mPFC",
+              "population": "VIP\u2192Som synapses",
+              "species": "mouse",
+              "preparation": "acute slice, ChR2 photostim of VIP, voltage clamp of Som"
+            }
+          },
+          {
+            "cite_key": "Pi2013",
+            "doi": "10.1038/nature12676",
+            "study_label": "Pi 2013 (VIP\u2192Pv)",
+            "metric_label": "VIP-evoked IPSC decay \u03c4 in PV postsynaptic cell (ms)",
+            "value": 6,
+            "error_sd_or_sem": 1,
+            "error_type": "unspecified (\u00b1 as printed)",
+            "n": null,
+            "n_definition": "VIP\u2192Pv IPSCs (n not reported in cited row)",
+            "value_source_sentence": "Inhibitory currents (IPSCs) recorded in Pv neurons decayed faster than those recorded from Som neurons (decay time constant; Som: 18\u00b12ms, Pv: 6\u00b11ms), and also displayed stronger short-term synaptic depression (Fig.",
+            "scope": {
+              "region": "mouse ACx + mPFC",
+              "population": "VIP\u2192Pv synapses",
+              "species": "mouse",
+              "preparation": "acute slice, ChR2 photostim of VIP, voltage clamp of Pv"
+            }
+          }
+        ],
+        "restructure_notes": "Split from cluster_06_disinhibition_circuit__0. Isolates IPSC decay \u03c4 (ms) \u2014 kinetic, not strength. Within-study Pi 2013 comparison: VIP\u2192Som vs VIP\u2192Pv. n not reported in the original row; should be flagged in figure caption. [iter3 fix] Downgraded error_type from \"SEM (per text)\" to \"unspecified (\u00b1 as printed)\": the value_source_sentence (\"Som: 18\u00b12ms, Pv: 6\u00b11ms\") shows \u00b1 notation but does not explicitly designate SEM vs SD; full-text figure-legend confirmation not retrieved.",
+        "homogeneity_check": "Single-paper internal comparison; metric (decay \u03c4 in ms via single-exponential fit) uniform; postsynaptic population differs (Som vs Pv) \u2014 that IS the comparison axis."
+      },
+      "note": "Audited panel from a section_cluster not bound to any figure spec; writer may incorporate as inline panel or context, or skip."
+    },
+    {
+      "comparison_id": "cluster_06_disinhibition_circuit__0_split_ipsc_amplitude_lee",
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "status": "CAVEAT",
+      "required_caveat_text": "Clean within-study split of the original heterogeneous comparison; metric, scope, axis units, and source sentence all align. Only residual issue is missing sample size n, which is openly flagged in restructure_notes. Conservative CAVEAT (rather than PASS) because n absence prevents downstream statistical re-use; the entry would benefit from full-text re-extraction of n. || Acceptable for use as a methodologically clean within-study split. Annotate the figure caption with 'n not reported in cited table; see Lee 2013 Fig.' and pursue full-text n re-extraction in a follow-up pass.",
+      "figure_data": {
+        "comparison_id": "cluster_06_disinhibition_circuit__0_split_ipsc_amplitude_lee",
+        "original_comparison_id": "cluster_06_disinhibition_circuit__0",
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "metric_label": "VIP-evoked IPSC amplitude (pA) in SST vs pyramidal postsynaptic cells (within-study)",
+        "scope_summary": {
+          "region": "mouse S1 barrel L2/3",
+          "population": "VIP\u2192SST and VIP\u2192Pyr synapses",
+          "species": "mouse"
+        },
+        "entries": [
+          {
+            "cite_key": "Lee2013",
+            "doi": "10.1038/nn.3544",
+            "study_label": "Lee 2013 (VIP\u2192SST)",
+            "metric_label": "VIP-evoked IPSC amplitude in SST postsynaptic cell (pA)",
+            "value": 440.81,
+            "error_sem": 6.96,
+            "n": null,
+            "n_definition": "simultaneously recorded SST/pyramidal pairs",
+            "value_source_sentence": "In contrast with fast-spiking interneurons, photo-stimulation of VIP interneurons generated IPSCs more than fourfold larger in a SST interneuron than in the simultaneously recorded pyramidal neuron (pyramidal, 111.40 \u00b1 6.11 pA; SST, 440.81 \u00b1 6.96 pA; P < 0.001, Mann-Whitney U test; Fig.",
+            "scope": {
+              "region": "mouse S1 barrel L2/3",
+              "population": "VIP\u2192SST synapses",
+              "species": "mouse",
+              "preparation": "acute slice, ChR2 photostim of VIP, paired patch SST + Pyr"
+            }
+          },
+          {
+            "cite_key": "Lee2013",
+            "doi": "10.1038/nn.3544",
+            "study_label": "Lee 2013 (VIP\u2192Pyr)",
+            "metric_label": "VIP-evoked IPSC amplitude in pyramidal postsynaptic cell (pA)",
+            "value": 111.4,
+            "error_sem": 6.11,
+            "n": null,
+            "n_definition": "simultaneously recorded SST/pyramidal pairs",
+            "value_source_sentence": "In contrast with fast-spiking interneurons, photo-stimulation of VIP interneurons generated IPSCs more than fourfold larger in a SST interneuron than in the simultaneously recorded pyramidal neuron (pyramidal, 111.40 \u00b1 6.11 pA; SST, 440.81 \u00b1 6.96 pA; P < 0.001, Mann-Whitney U test; Fig.",
+            "scope": {
+              "region": "mouse S1 barrel L2/3",
+              "population": "VIP\u2192Pyr synapses",
+              "species": "mouse",
+              "preparation": "acute slice, ChR2 photostim of VIP, paired patch SST + Pyr"
+            }
+          }
+        ],
+        "restructure_notes": "Split from cluster_06_disinhibition_circuit__0. Isolates IPSC amplitude (pA) \u2014 strength metric. Within-study Lee 2013 comparison: VIP\u2192SST vs VIP\u2192Pyr. Pcon (Pfeffer) and decay \u03c4 (Pi) are split off into their own sub-comparisons. n not reported in the original row; should be flagged.",
+        "homogeneity_check": "Single-paper internal comparison; metric (IPSC amplitude in pA via voltage-clamp + ChR2 photostim) uniform; postsynaptic population (SST vs Pyr) is the comparison axis."
+      },
+      "note": "Audited panel from a section_cluster not bound to any figure spec; writer may incorporate as inline panel or context, or skip."
+    },
+    {
+      "comparison_id": "cluster_06_disinhibition_circuit__1_split_vip_dff_running_onset",
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "status": "CAVEAT",
+      "required_caveat_text": "Restructure correctly isolated a single well-sourced metric and dropped non-comparable entries (Pakan2016 qualitative only; Dipoppa2018 SST-not-VIP). Verbatim value match. Conservative CAVEAT applied because n is unreported and the panel is single-entry; restructure_notes already flag this and recommend explicit n caveat in rendering. || n is null (n_definition states 'VIP cells imaged with GCaMP6s' but no numeric n in cited row). | Single-entry comparison after split; not a true cross-paper comparison.",
+      "figure_data": {
+        "comparison_id": "cluster_06_disinhibition_circuit__1_split_vip_dff_running_onset",
+        "original_comparison_id": "cluster_06_disinhibition_circuit__1",
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "metric_label": "VIP-cell \u0394F/F change at running onset (% baseline) in mouse V1",
+        "scope_summary": {
+          "region": "mouse V1 L2/3",
+          "population": "VIP-Cre cells imaged with GCaMP",
+          "species": "mouse"
+        },
+        "entries": [
+          {
+            "cite_key": "Fu2014",
+            "doi": "10.1016/j.cell.2014.01.050",
+            "study_label": "Fu 2014",
+            "metric_label": "VIP \u0394F/F at running onset (% baseline)",
+            "value": 155.0,
+            "error_sem": 34.8,
+            "n": null,
+            "n_definition": "VIP cells imaged with GCaMP6s",
+            "value_source_sentence": "By aligning calcium responses to the start of running events, the GCaMP6 signal of VIP neurons on average increased 155.0% \u00b1 34.8%, and the distribution of cross-correlations of the extracted events and calcium signal had a single peak at 0.7 (Figure 3 E).",
+            "scope": {
+              "region": "mouse V1 L2/3",
+              "population": "VIP-Cre cells",
+              "species": "mouse",
+              "preparation": "awake head-fixed running on ball, GCaMP6s, 2P imaging"
+            }
+          }
+        ],
+        "restructure_notes": "Split from cluster_06_disinhibition_circuit__1. Isolates a single coherent metric (VIP \u0394F/F at running onset, % baseline) reported by Fu 2014. Dropped Pakan 2016 (10.7554/elife.14985): only a qualitative direction, no numeric value. Dropped Dipoppa 2018 (10.1016/j.neuron.2018.03.037): the entry value (Pearson \u03c1 = 0.18 \u00b1 0.02) is for SST cells, NOT VIP cells, so it is a population mismatch with the comparison's stated population (VIP). Single-entry sub-figure \u2014 should be rendered with explicit n caveat (n_definition = VIP cells imaged with GCaMP6s; n value not reported in the cited row).",
+        "homogeneity_check": "Single-entry; metric (VIP \u0394F/F % baseline at running onset) uniform; population (VIP-Cre+) uniform; region (mouse V1 L2/3) uniform."
+      },
+      "note": "Audited panel from a section_cluster not bound to any figure spec; writer may incorporate as inline panel or context, or skip."
+    },
+    {
+      "comparison_id": "cluster_06_disinhibition_circuit__2_split_vip_v1",
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "status": "PASS",
+      "required_caveat_text": null,
+      "figure_data": {
+        "comparison_id": "cluster_06_disinhibition_circuit__2_split_vip_v1",
+        "original_comparison_id": "cluster_06_disinhibition_circuit__2",
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "metric_label": "Direction of VIP-cell calcium activity modulation by locomotion in mouse V1 (qualitative)",
+        "scope_summary": {
+          "region": "mouse V1 L2/3 (and L4 where reported)",
+          "population": "VIP-Cre cells imaged with GCaMP",
+          "species": "mouse"
+        },
+        "entries": [
+          {
+            "cite_key": "Fu2014",
+            "doi": "10.1016/j.cell.2014.01.050",
+            "study_label": "Fu 2014",
+            "metric_label": "Direction of VIP modulation by locomotion (V1)",
+            "value_text": "increased (+155% \u0394F/F at running onset; quantitative entry in __1 split)",
+            "scope": {
+              "region": "mouse V1 L2/3",
+              "population": "VIP-Cre+",
+              "species": "mouse",
+              "preparation": "awake 2P GCaMP6s"
+            }
+          },
+          {
+            "cite_key": "Pakan2016",
+            "doi": "10.7554/elife.14985",
+            "study_label": "Pakan 2016",
+            "metric_label": "Direction of VIP modulation by locomotion (V1)",
+            "value_text": "increased (during visual stimulation in light)",
+            "scope": {
+              "region": "mouse V1 L2/3+L4",
+              "population": "VIP-Cre+",
+              "species": "mouse",
+              "preparation": "awake 2P calcium imaging"
+            }
+          },
+          {
+            "cite_key": "Dipoppa2018",
+            "doi": "10.1016/j.neuron.2018.03.037",
+            "study_label": "Dipoppa 2018",
+            "metric_label": "Direction of VIP modulation by locomotion (V1)",
+            "value_text": "increased (gray-screen baseline)",
+            "scope": {
+              "region": "mouse V1 L2/3+L4+L5",
+              "population": "VIP-Cre+",
+              "species": "mouse",
+              "preparation": "awake 2P GCaMP6"
+            }
+          }
+        ],
+        "restructure_notes": "Restructured cluster_06_disinhibition_circuit__2 into a single-cell-type, single-region qualitative panel. Restricted to: cell type = VIP only (dropped SST and PV rows \u2014 non-comparable populations); area = V1 only (dropped non-V1 source DOIs flagged by audit: 10.1016/j.celrep.2017.10.012 = Natan 2017 ACx; 10.1523/eneuro.0164-19.2019 = Bigelow 2019 ACx; 10.1016/j.celrep.2021.108774 = different system). Kept the three V1 VIP studies (Fu 2014, Pakan 2016, Dipoppa 2018) where the abstract or full-text text supports 'increased' for VIP under locomotion. Dropped 'Millman 2020' and 'Yu 2019' rows that lacked a verifiable DOI in source_dois (study_label fabrication risk per audit policy). Quantitative entries are deferred to cluster_06_disinhibition_circuit__1_split_vip_dff_running_onset; this panel is qualitative-direction only.",
+        "homogeneity_check": "Population uniform (VIP-Cre+ cells), region uniform (mouse V1), metric uniform (qualitative direction = increased). Quantitative axis omitted because metrics across the three studies are heterogeneous; this is a 'consistency' panel rather than a magnitude comparison."
+      },
+      "note": "Audited panel from a section_cluster not bound to any figure spec; writer may incorporate as inline panel or context, or skip."
+    }
+  ]
+}

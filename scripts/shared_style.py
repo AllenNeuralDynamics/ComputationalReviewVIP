@@ -50,6 +50,15 @@ COLORS = {
     'dataml':      '#2563EB',  # blue
     'barrier':     '#DC2626',  # red
     'gate':        '#D97706',  # amber
+    
+    # Cell-type colors (used by VIP-related figure notebooks)
+    'VIP':         '#7C3AED',  # purple
+    'SST':         '#D97706',  # amber
+    'PV':          '#059669',  # green
+    'Pyr':         '#2563EB',  # blue
+    'NDNF':        '#0891B2',  # teal
+    'CCK':         '#DB2777',  # pink
+    'CR':          '#7C3AED',  # purple (alias)
 }
 
 # Ordered palettes for categorical data
