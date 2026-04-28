@@ -85,6 +85,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 apply_style()
 
+# --- next cell ---
+
 # Cross-study entries (from cluster_04_intrinsic_electrophysiology figure_data)
 rin_entries = [
     {'cite': 'Michaud 2024',  'label': 'Michaud 2024\n(CA1, VIP/CR+ I-S3, n=7)',   'value': 517,   'sem': 37,    'color': COLORS['blue']},
@@ -97,6 +99,8 @@ is_entries = [
     {'label': 'Anastasiades 2021\n(mouse mPFC L1b, VIP-Cre)','pct_is': 29.4, 'denom': '5/17'},
 ]
 tau_entry = {'label': 'Michaud 2024\n(CA1 strat. radiatum,\nVIP/CR+ I-S3, n=7)', 'value': 36.5, 'sem': 3.2, 'color': COLORS['blue']}
+
+# --- next cell ---
 
 def gen_AP(t, spike_times):
     v = -65 * np.ones_like(t)
@@ -137,6 +141,8 @@ axA.text(0.83, -125, '50 mV', ha='right', fontsize=8, rotation=90, va='center')
 axA.set_xlim(0, 1.20); axA.set_ylim(-220, 200); axA.axis('off')
 axA.set_title('A  Exemplar firing patterns (cortical VIP)', loc='left', fontsize=12, fontweight='bold')
 
+# --- next cell ---
+
 # Panels B, C, D — see main workspace builder for full code; this notebook reproduces
 # the same figure using the same shared_style helpers.
 axB = fig.add_subplot(gs[0, 1])
@@ -151,6 +157,8 @@ axB.set_xlabel('Input resistance R$_{in}$ (MΩ)')
 axB.set_xlim(150, 700); axB.set_ylim(-0.6, 1.6); axB.grid(axis='x', alpha=0.3)
 axB.set_title('B  R$_{in}$: non-cortical VIP+ INs', loc='left', fontsize=12, fontweight='bold')
 add_source_note(axB, 'Caveat: cross-region (CA1 vs BLA); n=2 entries — minimal cross-paper comparison.', y=-0.30)
+
+# --- next cell ---
 
 axC = fig.add_subplot(gs[1, 0])
 ypos = np.arange(len(is_entries))[::-1]
@@ -207,6 +215,8 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Circle
 import numpy as np
 apply_style()
 
+# --- next cell ---
+
 fig = plt.figure(figsize=(14, 10))
 gs = fig.add_gridspec(2, 2, height_ratios=[1, 1.05], hspace=0.45, wspace=0.30)
 
@@ -231,6 +241,8 @@ for name, (x, y), c, note in channels:
     axA.text(x, y-0.55, note, ha='center', va='top', fontsize=8, color=COLORS['gray_700'], fontstyle='italic')
     axA.plot([x, 5+(x-5)*0.45], [y, 5+(y-5)*0.45], color=c, lw=1.4, alpha=0.6)
 axA.set_title('A  Channel inventory of VIP interneurons', loc='left', fontsize=12, fontweight='bold')
+
+# --- next cell ---
 
 # Panel B: two competing IS mechanisms with predicted current-clamp signatures
 axB = fig.add_subplot(gs[0, 1])
@@ -260,6 +272,8 @@ axB.text(5.0, 2.8, '• Kv1: more salient in superficial barrel/visual VIP cells
                     '• Both can coexist; pharmacology rarely tested side-by-side',
     ha='center', va='top', fontsize=8.5, color=COLORS['gray_700'])
 axB.set_title('B  Two competing IS mechanisms', loc='left', fontsize=12, fontweight='bold')
+
+# --- next cell ---
 
 # Panel C: decision-flow mapping intrinsic clusters onto MET-types / t-types
 axC = fig.add_subplot(gs[1, :])

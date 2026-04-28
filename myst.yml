@@ -1,6 +1,4 @@
 version: 1
-extends:
-- content/authors.yml
 project:
   title: 'VIP Cortical Interneurons: A Critical Reassessment of the Disinhibition Framework'
   description: A computational review of vasoactive intestinal peptide (VIP)-expressing cortical interneurons across molecular
@@ -8,7 +6,6 @@ project:
   license:
     content: CC-BY-4.0
     code: MIT
-  doi: 10.0000/placeholder
   keywords:
   - VIP interneurons
   - cortical inhibition

@@ -157,21 +157,50 @@ const evidenceTransform = {
             
             const ev = JSON.parse(raw);
 
-            // Extract findings
+            // Extract findings — handle two schemas:
+            //  (a) inline objects in supporting_findings/counter_findings (rare)
+            //  (b) integer indices referring to top-level ev.findings array (current pipeline)
+            // When both top-level findings exist AND argument_groups uses integer indices,
+            // we use the top-level findings array as canonical and ignore re-collection
+            // through argument_groups (since dereferencing produces duplicates).
             let findings = [];
+            const topFindings = Array.isArray(ev.findings) ? ev.findings : [];
             const ag = ev.argument_groups;
+            let collectedFromGroups = [];
             if (ag && typeof ag === 'object') {
-              for (const [topicKey, topicVal] of Object.entries(ag)) {
+              const groups = Array.isArray(ag) ? ag : Object.values(ag);
+              for (const topicVal of groups) {
                 if (topicVal && typeof topicVal === 'object') {
                   const supporting = topicVal.supporting_findings || topicVal.supporting_evidence || [];
                   const counter = topicVal.counter_findings || topicVal.counter_evidence || [];
-                  if (Array.isArray(supporting)) findings.push(...supporting);
-                  if (Array.isArray(counter)) findings.push(...counter);
+                  for (const x of (Array.isArray(supporting) ? supporting : [])) {
+                    if (typeof x === 'number' && Number.isInteger(x)) {
+                      if (topFindings[x]) collectedFromGroups.push(topFindings[x]);
+                    } else if (x && typeof x === 'object') {
+                      collectedFromGroups.push(x);
+                    }
+                  }
+                  for (const x of (Array.isArray(counter) ? counter : [])) {
+                    if (typeof x === 'number' && Number.isInteger(x)) {
+                      if (topFindings[x]) collectedFromGroups.push(topFindings[x]);
+                    } else if (x && typeof x === 'object') {
+                      collectedFromGroups.push(x);
+                    }
+                  }
                 }
               }
             }
-            if (Array.isArray(ev.unmatched_findings)) findings.push(...ev.unmatched_findings);
-            if (findings.length === 0 && Array.isArray(ev.findings)) findings = ev.findings;
+            // Prefer top-level findings array if present (most complete + no dupes from cross-group references)
+            if (topFindings.length > 0) {
+              findings = topFindings.filter(x => x && typeof x === 'object');
+            } else {
+              findings = collectedFromGroups;
+            }
+            if (Array.isArray(ev.unmatched_findings)) {
+              for (const x of ev.unmatched_findings) {
+                if (x && typeof x === 'object') findings.push(x);
+              }
+            }
 
             // Normalize conflicts using the universal normalizer
             const conflicts = (ev.conflicts || []).map(c => normalizeConflict(c, sec));

@@ -67,6 +67,8 @@ data = json.load(open(_p))
 ap = data['figures'][0]['audited_panels']
 print('panels:', len(ap))
 
+# --- next cell ---
+
 def cnt(entries, field):
     return Counter(e[field] for e in entries if e.get(field))
 def filter_cat(entries, cat):
@@ -78,6 +80,8 @@ p3_vr = filter_cat(ap[3]['figure_data']['entries'], 'VIP_role')
 p5_vr = filter_cat(ap[5]['figure_data']['entries'], 'VIP_role')
 p7_vr = filter_cat(ap[7]['figure_data']['entries'], 'vip_role')
 p8_vr = [(e['value'], e['count']) for e in ap[8]['figure_data']['entries']]
+
+# --- next cell ---
 
 def hbar(ax, items, title, color):
     items = sorted(items, key=lambda x: x[1])
@@ -126,6 +130,8 @@ fig2, axes = plt.subplots(1, 3, figsize=(15.5, 5.4))
 # (Panels A/B/C as in the analysis cell — see published .py source for full code.)
 # This cell is a stub; see the rendering cell below for the full figure code.
 
+# --- next cell ---
+
 # --- Panel A: phase diagram ---
 ax = axes[0]
 ax.set_xlim(-1, 1); ax.set_ylim(-1, 1)
@@ -143,6 +149,8 @@ for (x, y), w, h, c, lab in regions:
     ax.add_patch(Rectangle((x, y), w, h, facecolor=c, alpha=0.18, edgecolor=c))
     ax.text(x + w/2, y + h/2, lab, ha='center', va='center', fontsize=8)
 
+# --- next cell ---
+
 # --- Panel B: decision tree (nodes + arrows) ---
 ax = axes[1]
 ax.set_xlim(0, 10); ax.set_ylim(0, 10); ax.axis('off')
@@ -157,6 +165,8 @@ node(5, 9.3, 'Include VIP cells\nexplicitly?', '#FFE6A8')
 node(2.0, 7.4, 'VIP->SST sign', '#CFE2F3')
 node(8.0, 7.4, 'Implicit (lumped IN)\n-> no VIP role testable', '#F4CCCC', w=3.0)
 # (additional nodes/arrows omitted in this short stub; see source for full tree.)
+
+# --- next cell ---
 
 # --- Panel C: identifiability cartoon ---
 ax = axes[2]

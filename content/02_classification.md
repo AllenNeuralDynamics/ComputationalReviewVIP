@@ -62,6 +62,8 @@ COL = {
 fig = plt.figure(figsize=(13, 11))
 gs = fig.add_gridspec(2, 2, hspace=0.85, wspace=0.45)
 
+# --- next cell ---
+
 # Panel A — dendrogram of cortical GABAergic taxonomy
 axA = fig.add_subplot(gs[0, 0])
 axA.set_title('A  Cortical GABAergic taxonomy (Tasic 2018 schema)', loc='left', fontweight='bold')
@@ -95,6 +97,8 @@ axA.set_xlim(-0.6, 3.3); axA.set_ylim(-2.4, 2.7); axA.axis('off')
 axA.text(-0.5, -2.30, 'Branch widths schematic; tick counts = Tasic 2018 GABAergic types per subclass.',
          fontsize=7.5, color='gray', style='italic')
 
+# --- next cell ---
+
 # Panel B — cross-study VIP type counts (NOT on a common denominator)
 axB = fig.add_subplot(gs[0, 1])
 axB.set_title('B  Reported cortical $\\it{Vip}$ types across atlases', loc='left', fontweight='bold')
@@ -116,6 +120,8 @@ for x, h, t in zip(xs, heights, tier):
 axB.set_xticks(xs); axB.set_xticklabels(labels, fontsize=7.3, rotation=30, ha='right')
 axB.set_ylabel('Reported count'); axB.set_ylim(0, 60)
 
+# --- next cell ---
+
 # Panel C — marker-defined VIP subset frequencies (cross-study ranges)
 axC = fig.add_subplot(gs[1, 0])
 axC.set_title('C  Marker-defined VIP subset frequencies', loc='left', fontweight='bold')
@@ -134,6 +140,8 @@ axC.text(0.0, -0.30,
          'Ranges aggregate immunolabel and transcriptomic estimates from\n'
          'Tremblay 2016, Granger 2020, Tasic 2016/2018; tick = midpoint.',
          transform=axC.transAxes, fontsize=7.0, color='gray', style='italic')
+
+# --- next cell ---
 
 # Panel D — schematic of three principal VIP molecular subdivisions
 axD = fig.add_subplot(gs[1, 1])
@@ -162,6 +170,8 @@ box(axD, 6.9, 1.7, 3.0, 6.2, COL['CCK'], 'VIP / CCK',
 for cx, color in zip([1.6, 5.0, 8.4], [COL['ChAT'], COL['CR'], COL['CCK']]):
     axD.annotate('', xy=(cx, 7.95), xytext=(5.0, 8.05),
                  arrowprops=dict(arrowstyle='->', color=color, lw=1.4))
+
+# --- next cell ---
 
 fig.suptitle('Figure 2.1  VIP within the cortical GABAergic transcriptomic taxonomy',
              fontsize=13, fontweight='bold', y=0.995, x=0.04, ha='left')
@@ -228,6 +238,8 @@ COL = {
 fig = plt.figure(figsize=(15.5, 8.5))
 gs = fig.add_gridspec(1, 3, width_ratios=[1.15, 0.95, 1.25], wspace=0.35)
 
+# --- next cell ---
+
 # Panel A — decision tree
 axA = fig.add_subplot(gs[0, 0])
 axA.set_title('A  From "GABAergic neuron" to a marker-defined VIP subset',
@@ -285,6 +297,8 @@ axA.text(0.2, 1.5,
          'Branch order is illustrative, not phylogenetic.',
          fontsize=7.5, color='gray', style='italic')
 
+# --- next cell ---
+
 # Panel B — Venn schematic: VIP-Cre vs VIP-IRES-Cre vs anti-VIP IHC
 axB = fig.add_subplot(gs[0, 1])
 axB.set_title('B  Reagents capture overlapping but non-identical populations',
@@ -311,6 +325,8 @@ axB.text(0.2, 0.6,
          'Driver lines and IHC differ in capture efficiency, leakiness,\n'
          'and developmental window; agreement is partial across regions.',
          fontsize=7.5, color='gray', style='italic')
+
+# --- next cell ---
 
 # Panel C — many-to-many marker-subdivision <-> t-type schematic
 axC = fig.add_subplot(gs[0, 2])
@@ -369,6 +385,8 @@ axC.text(4.2, 0.4, 'partial / secondary', va='center', fontsize=7.5)
 axC.text(0.2, -0.25,
          't-type names from Tasic 2018; selection is illustrative.',
          fontsize=7.0, color='gray', style='italic', transform=axC.transData)
+
+# --- next cell ---
 
 fig.suptitle('Figure 2.2  Marker-based vs. transcriptomic VIP definitions',
              fontsize=13, fontweight='bold', y=1.00, x=0.04, ha='left')
