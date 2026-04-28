@@ -2,7 +2,7 @@
 
 # Pipeline Provenance
 
-This review was produced by the Operon orchestration pipeline (v27 protocol,
+This review was produced by an LLM-based orchestration pipeline (v27 protocol,
 Phases 1–20) under blinded actor–critic separation. All inputs, transformations,
 gate decisions, and outputs are recorded in the {ref}`Methods <sec-methods>` ledger
 and in `provenance/` JSON files (see the GitHub repository).

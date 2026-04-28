@@ -12,6 +12,11 @@ project:
       city: Seattle
       state: Washington
       country: United States
+    - id: aind
+      name: Allen Institute for Neural Dynamics
+      city: Seattle
+      state: Washington
+      country: United States
 
   contributors:
     - id: ai-pipeline
@@ -26,13 +31,13 @@ project:
       affiliations:
         - anthropic
       first_name: Claude
-      last_name: Opus 4.6
+      last_name: Opus 4.7
       career_stage: AI Research Tool
       is_ai_tool: true
       credit_levels:
         - role: Investigation
           level: lead
-          description: "Ran 20-phase Operon pipeline: literature scoping, parallel evidence extraction, citation triple verification, blinded actor–critic separation, and end-to-end manuscript assembly"
+          description: "Ran 20-phase pipeline: literature scoping, parallel evidence extraction, citation triple verification, blinded actor–critic separation, and end-to-end manuscript assembly"
         - role: Data Curation
           level: lead
           description: "Built closed-allowlist references.bib (1,038 verified DOIs), 13 per-section evidence JSONs (3,816 audited citation triples), and 22 figure provenance packages"
@@ -50,14 +55,14 @@ project:
           description: Drafted all sections from evidence packages under blinded-critic orchestrator constraints
           effort: lead
 
-    - id: human-supervisor
-      name: Human Supervisor
+    - id: jerome-lecoq
+      name: Jerome Lecoq
       corresponding: true
-      email: contact@allenneuralsciences.org
+      email: jerome.lecoq@alleninstitute.org
       affiliations:
-        - aibs
-      first_name: Human
-      last_name: Supervisor
+        - aind
+      first_name: Jerome
+      last_name: Lecoq
       career_stage: Principal Investigator
       is_ai_tool: false
       credit_levels:

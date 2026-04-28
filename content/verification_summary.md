@@ -134,7 +134,7 @@ Phase 19 ran a 16/16-check structural QA on the v6 manuscript (post Phase-18 rem
 | 04_citation_keys_resolve     | PASS | 391 unique keys, 3,403 occurrences, 0 missing-in-bib (bib has 1,038 entries) |
 | 05_cross_references          | PASS | 27 unique targets, 54 defined labels, 0 broken |
 | 06_yaml_metadata             | PASS | All required myst.yml keys present, 14 TOC entries |
-| 07_forbidden_strict          | PASS | 0 hits on `orchestrator`/`verdict`/`operon`    |
+| 07_forbidden_strict          | PASS | 0 hits on `orchestrator`/`verdict`    |
 | 08_forbidden_domain_count    | PASS | 47 `canonical` + 2 `scaffold` (allowed; tracked) |
 | 09_word_count                | PASS | Total 59,226 words across 14 files            |
 | 10-16 (additional QA)        | PASS | (see `gates/gate_phase19_qa.json`)            |
@@ -147,7 +147,7 @@ Acceptance for the manuscript bundle is the conjunction of:
 - **Phase 15V**: 9/9 triple-extraction structural checks PASS.
 - **Phase 16V**: 9/9 verification sanity checks PASS; calibration audit produces an actionable recommendation that Phase 17B implements.
 - **Phase 17B-V**: 12/12 verification-aggregate checks PASS.
-- **Phase 17V**: at minimum 5/6 structural checks PASS; FORBIDDEN_LEXICON 17V conditional pass requires every residual hit be a legitimate scientific usage and a 0-count on process-language tokens (`orchestrator`, `verdict`, `operon`). Both conditions hold (35 lexicon hits all legitimate; 0 process-language hits).
+- **Phase 17V**: at minimum 5/6 structural checks PASS; FORBIDDEN_LEXICON 17V conditional pass requires every residual hit be a legitimate scientific usage and a 0-count on process-language tokens (`orchestrator`, `verdict`). Both conditions hold (35 lexicon hits all legitimate; 0 process-language hits).
 - **Phase 18 + 18-rem**: 1 MUST_FIX + 5 SHOULD_FIX from the consistency critic resolved; constraints satisfied (zero new cite-keys, +/-5% word-count drift, no new forbidden lexicon, Phase-17A actions preserved).
 - **Phase 19**: 16/16 final QA checks PASS.
 - **Phase 20** (this phase): Methods ledger refreshed; verification summary published; manuscript pushed to GitHub; final delivery tarball assembled.

@@ -46,8 +46,7 @@ GABAergic; CGE; somatostatin; locomotion; arousal; computational neuroscience.
 
 :::{warning}
 **This review was generated with substantial AI assistance.** The text, figures,
-and evidence synthesis were produced by an AI pipeline (Operon, powered by Claude
-Opus 4.6) operating under human direction and supervision.
+and evidence synthesis were produced by Claude Opus 4.7 operating under human direction and supervision.
 :::
 
 **What the AI did.** Executed a 20-phase reproducible pipeline that scoped the

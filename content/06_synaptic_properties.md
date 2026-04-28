@@ -8,9 +8,6 @@ The preceding sections traced VIP interneurons from their lineage and molecular 
 
 A note on scope. This section concentrates on cortical (V1, A1, S1, mPFC, motor cortex) and hippocampal VIP populations, where the modulator-targeted disinhibitory architecture has been most thoroughly dissected. Subcortical and amygdalar VIP-cell populations are referenced where they bear directly on the cortical disinhibitory motif (in particular for amygdalar fear-conditioning circuits) but are not surveyed exhaustively here; the developmental, comparative and disease-relevant aspects of those populations are returned to in Section 8. Throughout, "canonical motif" refers to the VIP→SST→Pyr disinhibition described by {cite:t}`Pfeffer2013` and {cite:t}`Pi2013`, and "non-canonical exceptions" refers to the layer-, area- and source-specific deviations from that motif documented in subsequent paired-recording, in-vivo optogenetic and rabies-tracing studies {cite:p}`Yu2019, Zhou2017, Anastasiades2021a, Walker2016, Wall2016, Karnani2016a`.
 
-```{contents}
-:depth: 2
-```
 
 ## Local cortical excitation and inhibition onto VIP cells
 
