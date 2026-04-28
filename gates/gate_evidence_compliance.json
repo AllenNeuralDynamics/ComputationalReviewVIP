@@ -1,0 +1,772 @@
+{
+  "iteration": 6,
+  "phase": 2,
+  "validator": "comprev-evidence-validator (DATAML)",
+  "timestamp_utc": "2026-04-26T22:52:06.763101+00:00",
+  "gate": "fail",
+  "total_findings": 1779,
+  "total_unique_dois": 1037,
+  "total_failures": 5,
+  "compliance_rate": 0.9994,
+  "fulltext_rate_overall": 0.5183,
+  "checks": {
+    "DOI_RESOLVES": {
+      "pass": 1037,
+      "fail": 0,
+      "failures": []
+    },
+    "SOURCE_NOT_TITLE": {
+      "pass": 1779,
+      "fail": 0,
+      "failures": []
+    },
+    "SOURCE_LENGTH": {
+      "pass": 1779,
+      "fail": 0,
+      "failures": []
+    },
+    "CLAIM_DIFFERS_FROM_SOURCE": {
+      "pass": 1779,
+      "fail": 0,
+      "failures": []
+    },
+    "HAS_CITE_KEY": {
+      "pass": 1779,
+      "fail": 0,
+      "failures": [],
+      "note": "cite_key not required at finding level; treated as informational"
+    },
+    "SOURCE_PROVENANCE": {
+      "pass": 198,
+      "fail": 2,
+      "failures": [
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "doi": "10.1152/jn.00463.2023",
+          "detail": "fulltext sentence still in abstract"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "doi": "10.1016/j.isci.2024.111728",
+          "detail": "fulltext sentence still in abstract"
+        }
+      ],
+      "sampled": 200,
+      "method": "Re-evaluated iter5 sample (200 fulltext findings); 25 prior failures re-checked. Relabeled\u2192abstract_only treated as resolved per coordinator.",
+      "still_failing": 2,
+      "re_evaluated_iter5_failures": 25
+    },
+    "FULLTEXT_HONEST": {
+      "pass": 57,
+      "fail": 3,
+      "failures": [
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "doi": "10.1016/j.cell.2020.09.057",
+          "detail": "http_404"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "doi": "10.1038/nm.4274",
+          "detail": "http_404"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "doi": "10.1016/j.cell.2021.04.021",
+          "detail": "http_404"
+        }
+      ],
+      "sampled": 60,
+      "method": "Re-evaluated iter5 sample (60 fulltext findings); 16 prior 404 failures re-checked. Relabeled\u2192abstract_only treated as resolved.",
+      "still_failing": 3,
+      "re_evaluated_iter5_failures": 16
+    },
+    "FULLTEXT_HONEST_v2": {
+      "pass": 57,
+      "fail": 3,
+      "failures": [
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "doi": "10.1016/j.cell.2020.09.057",
+          "detail": "http_404"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "doi": "10.1038/nm.4274",
+          "detail": "http_404"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "doi": "10.1016/j.cell.2021.04.021",
+          "detail": "http_404"
+        }
+      ],
+      "sampled": 60,
+      "method": "Re-evaluated iter5 sample (60 fulltext findings); 16 prior 404 failures re-checked. Relabeled\u2192abstract_only treated as resolved.",
+      "still_failing": 3,
+      "re_evaluated_iter5_failures": 16
+    }
+  },
+  "schema_compliance": {
+    "REQUIRED_FINDING_FIELDS": "pass",
+    "REQUIRED_CLUSTER_FIELDS": "pass"
+  },
+  "schema_failures_sample": [],
+  "compliance": {
+    "CONFLICTS_NONEMPTY": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "WEAKEST_EVIDENCE_SUBSTANTIVE": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "FIGURE_DATA_PRESENT": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "PAPER_COUNT_FLOOR": {
+      "verdict": "pass",
+      "failing_clusters": [],
+      "note": "min_papers_per_cluster is null in gate_scope"
+    },
+    "FULLTEXT_RATE_PER_CLUSTER": {
+      "verdict": "pass",
+      "failing_clusters": [],
+      "threshold": 0.25
+    },
+    "FULLTEXT_RATE_OVERALL": {
+      "verdict": "pass",
+      "rate": 0.5183,
+      "threshold": 0.4
+    },
+    "EFFECT_SIZE_RATE": {
+      "verdict": "pass",
+      "failing_clusters": [],
+      "threshold": 0.3,
+      "per_cluster": {
+        "cluster_01_molecular_taxonomy": {
+          "n": 218,
+          "effect_count": 125,
+          "rate": 0.5734
+        },
+        "cluster_02_development_lineage": {
+          "n": 160,
+          "effect_count": 89,
+          "rate": 0.5563
+        },
+        "cluster_03_morphology": {
+          "n": 58,
+          "effect_count": 51,
+          "rate": 0.8793
+        },
+        "cluster_04_intrinsic_electrophysiology": {
+          "n": 93,
+          "effect_count": 93,
+          "rate": 1.0
+        },
+        "cluster_05_synaptic_properties_connectivity": {
+          "n": 335,
+          "effect_count": 251,
+          "rate": 0.7493
+        },
+        "cluster_06_disinhibition_circuit": {
+          "n": 91,
+          "effect_count": 53,
+          "rate": 0.5824
+        },
+        "cluster_07_in_vivo_function": {
+          "n": 130,
+          "effect_count": 72,
+          "rate": 0.5538
+        },
+        "cluster_08_brain_regions": {
+          "n": 153,
+          "effect_count": 87,
+          "rate": 0.5686
+        },
+        "cluster_09_oscillations": {
+          "n": 80,
+          "effect_count": 40,
+          "rate": 0.5
+        },
+        "cluster_10_species_disease": {
+          "n": 100,
+          "effect_count": 48,
+          "rate": 0.48
+        },
+        "cluster_11_computational_models": {
+          "n": 154,
+          "effect_count": 79,
+          "rate": 0.513
+        },
+        "cluster_12_sst_pv_context": {
+          "n": 44,
+          "effect_count": 14,
+          "rate": 0.3182
+        },
+        "cluster_13_neuromodulation": {
+          "n": 91,
+          "effect_count": 91,
+          "rate": 1.0
+        },
+        "cluster_13_cge_lineage_context": {
+          "n": 72,
+          "effect_count": 36,
+          "rate": 0.5
+        }
+      }
+    },
+    "SAMPLE_SIZE_RATE": {
+      "verdict": "pass",
+      "failing_clusters": [],
+      "threshold": 0.2,
+      "per_cluster": {
+        "cluster_01_molecular_taxonomy": {
+          "n": 218,
+          "sample_size_count": 121,
+          "rate": 0.555
+        },
+        "cluster_02_development_lineage": {
+          "n": 160,
+          "sample_size_count": 42,
+          "rate": 0.2625
+        },
+        "cluster_03_morphology": {
+          "n": 58,
+          "sample_size_count": 21,
+          "rate": 0.3621
+        },
+        "cluster_04_intrinsic_electrophysiology": {
+          "n": 93,
+          "sample_size_count": 26,
+          "rate": 0.2796
+        },
+        "cluster_05_synaptic_properties_connectivity": {
+          "n": 335,
+          "sample_size_count": 125,
+          "rate": 0.3731
+        },
+        "cluster_06_disinhibition_circuit": {
+          "n": 91,
+          "sample_size_count": 65,
+          "rate": 0.7143
+        },
+        "cluster_07_in_vivo_function": {
+          "n": 130,
+          "sample_size_count": 60,
+          "rate": 0.4615
+        },
+        "cluster_08_brain_regions": {
+          "n": 153,
+          "sample_size_count": 72,
+          "rate": 0.4706
+        },
+        "cluster_09_oscillations": {
+          "n": 80,
+          "sample_size_count": 17,
+          "rate": 0.2125
+        },
+        "cluster_10_species_disease": {
+          "n": 100,
+          "sample_size_count": 53,
+          "rate": 0.53
+        },
+        "cluster_11_computational_models": {
+          "n": 154,
+          "sample_size_count": 65,
+          "rate": 0.4221
+        },
+        "cluster_12_sst_pv_context": {
+          "n": 44,
+          "sample_size_count": 13,
+          "rate": 0.2955
+        },
+        "cluster_13_neuromodulation": {
+          "n": 91,
+          "sample_size_count": 21,
+          "rate": 0.2308
+        },
+        "cluster_13_cge_lineage_context": {
+          "n": 72,
+          "sample_size_count": 28,
+          "rate": 0.3889
+        }
+      }
+    },
+    "REPLICATION_UNKNOWN_CEILING": {
+      "verdict": "pass",
+      "failing_clusters": [],
+      "threshold": 0.5,
+      "per_cluster": {
+        "cluster_01_molecular_taxonomy": {
+          "n": 218,
+          "unknown": 39,
+          "rate": 0.1789
+        },
+        "cluster_02_development_lineage": {
+          "n": 160,
+          "unknown": 37,
+          "rate": 0.2313
+        },
+        "cluster_03_morphology": {
+          "n": 58,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_04_intrinsic_electrophysiology": {
+          "n": 93,
+          "unknown": 20,
+          "rate": 0.2151
+        },
+        "cluster_05_synaptic_properties_connectivity": {
+          "n": 335,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_06_disinhibition_circuit": {
+          "n": 91,
+          "unknown": 2,
+          "rate": 0.022
+        },
+        "cluster_07_in_vivo_function": {
+          "n": 130,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_08_brain_regions": {
+          "n": 153,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_09_oscillations": {
+          "n": 80,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_10_species_disease": {
+          "n": 100,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_11_computational_models": {
+          "n": 154,
+          "unknown": 17,
+          "rate": 0.1104
+        },
+        "cluster_12_sst_pv_context": {
+          "n": 44,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_13_neuromodulation": {
+          "n": 91,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "cluster_13_cge_lineage_context": {
+          "n": 72,
+          "unknown": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "EVERY_PAPER_HAS_DOI": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "SEARCH_FAILURES_PRESENT": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "CONTRADICTION_QUERIES_EXECUTED": {
+      "verdict": "pass",
+      "failing_clusters": []
+    },
+    "FALSE_CONSENSUS_RISKS_IDENTIFIED": {
+      "verdict": "pass",
+      "failing_clusters": []
+    }
+  },
+  "anti_fabrication": {
+    "SHAPE_NOT_UNIFORM": {
+      "verdict": "pass",
+      "spread": 291,
+      "min": 44,
+      "max": 335
+    },
+    "SATURATION_LOGGED": {
+      "verdict": "pass",
+      "clusters_failing": [],
+      "required_consecutive": 2
+    },
+    "DOI_TITLE_CROSSCHECK": {
+      "verdict": "pass",
+      "sampled": 142,
+      "pass": 142,
+      "fail": 0,
+      "failures": []
+    }
+  },
+  "aggregates": {
+    "PAPER_COUNT": {
+      "verdict": "fail",
+      "total": 1037,
+      "target": 2000
+    },
+    "CROSS_CLUSTER_UNIQUE_DOIS": {
+      "verdict": "fail",
+      "total": 1037,
+      "target": 1600
+    },
+    "CONFLICT_COUNT": {
+      "verdict": "pass",
+      "total": 84
+    },
+    "FIGURE_DATA": {
+      "verdict": "pass",
+      "min": 2
+    },
+    "COMPLIANCE_RATE": {
+      "verdict": "pass",
+      "rate": 0.9994,
+      "threshold": 0.95
+    }
+  },
+  "per_cluster_gate": {
+    "cluster_01_molecular_taxonomy": "pass",
+    "cluster_02_development_lineage": "pass",
+    "cluster_03_morphology": "pass",
+    "cluster_04_intrinsic_electrophysiology": "pass",
+    "cluster_05_synaptic_properties_connectivity": "pass",
+    "cluster_06_disinhibition_circuit": "pass",
+    "cluster_07_in_vivo_function": "pass",
+    "cluster_08_brain_regions": "pass",
+    "cluster_09_oscillations": "pass",
+    "cluster_10_species_disease": "pass",
+    "cluster_11_computational_models": "pass",
+    "cluster_12_sst_pv_context": "pass",
+    "cluster_13_neuromodulation": "pass",
+    "cluster_13_cge_lineage_context": "pass"
+  },
+  "per_cluster_metrics": {
+    "cluster_01_molecular_taxonomy": {
+      "findings": 218,
+      "papers": 208,
+      "fails": []
+    },
+    "cluster_02_development_lineage": {
+      "findings": 160,
+      "papers": 128,
+      "fails": []
+    },
+    "cluster_03_morphology": {
+      "findings": 58,
+      "papers": 33,
+      "fails": []
+    },
+    "cluster_04_intrinsic_electrophysiology": {
+      "findings": 93,
+      "papers": 51,
+      "fails": []
+    },
+    "cluster_05_synaptic_properties_connectivity": {
+      "findings": 335,
+      "papers": 335,
+      "fails": []
+    },
+    "cluster_06_disinhibition_circuit": {
+      "findings": 91,
+      "papers": 91,
+      "fails": []
+    },
+    "cluster_07_in_vivo_function": {
+      "findings": 130,
+      "papers": 130,
+      "fails": []
+    },
+    "cluster_08_brain_regions": {
+      "findings": 153,
+      "papers": 123,
+      "fails": []
+    },
+    "cluster_09_oscillations": {
+      "findings": 80,
+      "papers": 80,
+      "fails": []
+    },
+    "cluster_10_species_disease": {
+      "findings": 100,
+      "papers": 100,
+      "fails": []
+    },
+    "cluster_11_computational_models": {
+      "findings": 154,
+      "papers": 154,
+      "fails": []
+    },
+    "cluster_12_sst_pv_context": {
+      "findings": 44,
+      "papers": 44,
+      "fails": []
+    },
+    "cluster_13_neuromodulation": {
+      "findings": 91,
+      "papers": 91,
+      "fails": []
+    },
+    "cluster_13_cge_lineage_context": {
+      "findings": 72,
+      "papers": 72,
+      "fails": []
+    }
+  },
+  "per_cluster_floor_detail": {},
+  "failures": [
+    {
+      "cluster_id": "cluster_05_synaptic_properties_connectivity",
+      "doi": "10.1152/jn.00463.2023",
+      "check": "SOURCE_PROVENANCE",
+      "detail": "fulltext sentence still in abstract"
+    },
+    {
+      "cluster_id": "cluster_07_in_vivo_function",
+      "doi": "10.1016/j.isci.2024.111728",
+      "check": "SOURCE_PROVENANCE",
+      "detail": "fulltext sentence still in abstract"
+    },
+    {
+      "cluster_id": "cluster_01_molecular_taxonomy",
+      "doi": "10.1016/j.cell.2020.09.057",
+      "check": "FULLTEXT_HONEST",
+      "detail": "http_404"
+    },
+    {
+      "cluster_id": "cluster_06_disinhibition_circuit",
+      "doi": "10.1038/nm.4274",
+      "check": "FULLTEXT_HONEST",
+      "detail": "http_404"
+    },
+    {
+      "cluster_id": "cluster_01_molecular_taxonomy",
+      "doi": "10.1016/j.cell.2021.04.021",
+      "check": "FULLTEXT_HONEST",
+      "detail": "http_404"
+    }
+  ],
+  "remaining_failure_categories": [
+    {
+      "check": "SOURCE_PROVENANCE",
+      "count": 2,
+      "clusters": [
+        "cluster_05_synaptic_properties_connectivity",
+        "cluster_07_in_vivo_function"
+      ]
+    },
+    {
+      "check": "FULLTEXT_HONEST",
+      "count": 3,
+      "clusters": [
+        "cluster_01_molecular_taxonomy",
+        "cluster_06_disinhibition_circuit"
+      ]
+    },
+    {
+      "check": "FULLTEXT_HONEST_v2",
+      "count": 3,
+      "clusters": []
+    },
+    {
+      "check": "PAPER_COUNT",
+      "count": 1,
+      "clusters": []
+    },
+    {
+      "check": "CROSS_CLUSTER_UNIQUE_DOIS",
+      "count": 1,
+      "clusters": []
+    }
+  ],
+  "change_from_iter5": {
+    "key_focus": [
+      "SOURCE_PROVENANCE",
+      "FULLTEXT_HONEST",
+      "FALSE_CONSENSUS_RISKS_IDENTIFIED"
+    ],
+    "compliance_delta": {
+      "CONFLICTS_NONEMPTY": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "WEAKEST_EVIDENCE_SUBSTANTIVE": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "FIGURE_DATA_PRESENT": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "PAPER_COUNT_FLOOR": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "FULLTEXT_RATE_PER_CLUSTER": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "FULLTEXT_RATE_OVERALL": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "EFFECT_SIZE_RATE": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "SAMPLE_SIZE_RATE": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "REPLICATION_UNKNOWN_CEILING": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "EVERY_PAPER_HAS_DOI": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "SEARCH_FAILURES_PRESENT": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "CONTRADICTION_QUERIES_EXECUTED": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "FALSE_CONSENSUS_RISKS_IDENTIFIED": {
+        "iter5": "fail",
+        "iter6": "pass"
+      }
+    },
+    "anti_fabrication_delta": {
+      "SHAPE_NOT_UNIFORM": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "SATURATION_LOGGED": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "DOI_TITLE_CROSSCHECK": {
+        "iter5": "pass",
+        "iter6": "pass"
+      }
+    },
+    "aggregates_delta": {
+      "PAPER_COUNT": {
+        "iter5": "fail",
+        "iter6": "fail"
+      },
+      "CROSS_CLUSTER_UNIQUE_DOIS": {
+        "iter5": null,
+        "iter6": "fail"
+      },
+      "CONFLICT_COUNT": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "FIGURE_DATA": {
+        "iter5": "pass",
+        "iter6": "pass"
+      },
+      "COMPLIANCE_RATE": {
+        "iter5": "pass",
+        "iter6": "pass"
+      }
+    },
+    "per_finding_delta": {
+      "DOI_RESOLVES": {
+        "iter5_pass": 1779,
+        "iter5_fail": 0,
+        "iter6_pass": 1037,
+        "iter6_fail": 0
+      },
+      "SOURCE_NOT_TITLE": {
+        "iter5_pass": 1779,
+        "iter5_fail": 0,
+        "iter6_pass": 1779,
+        "iter6_fail": 0
+      },
+      "SOURCE_LENGTH": {
+        "iter5_pass": 1779,
+        "iter5_fail": 0,
+        "iter6_pass": 1779,
+        "iter6_fail": 0
+      },
+      "CLAIM_DIFFERS_FROM_SOURCE": {
+        "iter5_pass": 1779,
+        "iter5_fail": 0,
+        "iter6_pass": 1779,
+        "iter6_fail": 0
+      },
+      "HAS_CITE_KEY": {
+        "iter5_pass": 1779,
+        "iter5_fail": 0,
+        "iter6_pass": 1779,
+        "iter6_fail": 0
+      },
+      "SOURCE_PROVENANCE": {
+        "iter5_pass": 175,
+        "iter5_fail": 25,
+        "iter6_pass": 198,
+        "iter6_fail": 2
+      },
+      "FULLTEXT_HONEST": {
+        "iter5_pass": 44,
+        "iter5_fail": 16,
+        "iter6_pass": 57,
+        "iter6_fail": 3
+      },
+      "FULLTEXT_HONEST_v2": {
+        "iter5_pass": 44,
+        "iter5_fail": 16,
+        "iter6_pass": 57,
+        "iter6_fail": 3
+      }
+    },
+    "highlights": {
+      "SOURCE_PROVENANCE": {
+        "iter5_fail": 25,
+        "iter6_fail": 2,
+        "fix_applied": "23 of 25 iter5 failures had text_access relabeled to abstract/abstract_only or similar; 2 still labeled fulltext with sentence in abstract."
+      },
+      "FULLTEXT_HONEST": {
+        "iter5_fail": 16,
+        "iter6_fail": 3,
+        "fix_applied": "13 of 16 iter5 failures (EPMC fullTextXML 404) re-flagged to abstract_only; 3 still labeled fulltext."
+      },
+      "FALSE_CONSENSUS_RISKS_IDENTIFIED": {
+        "iter5_failing_clusters": [
+          "cluster_10_species_disease"
+        ],
+        "iter6_failing_clusters": [],
+        "fix_applied": "c10 evidence_gaps now contain entries with `false_consensus_risk` field; validator accepts type/gap_type/false_consensus_risk-as-key/text-match."
+      }
+    }
+  },
+  "validator_notes": [
+    "Iter6 strict verdict (no scope adjustment): FAIL \u2014 5 remaining categories.",
+    "Coordinator-targeted iter5 cleanup objectives all measurably improved: SOURCE_PROVENANCE 25\u21922 fails, FULLTEXT_HONEST 16\u21923 fails, FALSE_CONSENSUS_RISKS_IDENTIFIED c10 fail\u2192pass (now all 14 clusters pass).",
+    "Per-cluster gate: 14/14 clusters PASS (all PCG checks clean).",
+    "All targeted Wave 3 quality fixes (CLAIM, n/n_subjects, EFFECT_SIZE, SATURATION) remain at 0 fails.",
+    "Remaining blockers \u2014 strict per-validator-thresholds:",
+    "  \u2022 PAPER_COUNT: 1037 < 2000 target \u2014 bibliography target shortfall (requires adding ~960 new papers; out of scope for cleanup iteration).",
+    "  \u2022 CROSS_CLUSTER_UNIQUE_DOIS: 1037 < 1600 target \u2014 same bibliography deficit.",
+    "  \u2022 SOURCE_PROVENANCE: 2 sample fails \u2014 DOIs 10.1152/jn.00463.2023 (c05) and 10.1016/j.isci.2024.111728 (c07) still labeled fulltext with claim_source_sentence in abstract.",
+    "  \u2022 FULLTEXT_HONEST / FULLTEXT_HONEST_v2: 3 sample fails \u2014 DOIs 10.1016/j.cell.2020.09.057 (c01), 10.1038/nm.4274 (c06), 10.1016/j.cell.2021.04.021 (c01) still labeled fulltext but EPMC fullTextXML returns 404 (non-PMC OA).",
+    "Per coordinator: SOURCE_PROVENANCE and FULLTEXT_HONEST sample re-evaluated against iter5 failure list (200 / 60 sample respectively); relabeled\u2192abstract_only entries treated as resolved.",
+    "Per coordinator: SAMPLE_SIZE_RATE accepts n OR n_subjects; CLAIM accepts claim OR claim_text; SATURATION accepts 'saturated' string OR n_unique_dois_added \u2264 4; FALSE_CONSENSUS accepts type/gap_type/false_consensus_risk-key/text-match.",
+    "DOI_RESOLVES: 1037/1037 unique DOIs cached & resolved (same corpus as iter4/5 \u2014 no new papers).",
+    "DOI_TITLE_CROSSCHECK: 142/142 PASS using cached CrossRef titles.",
+    "Compliance rate (per-finding excluding HAS_CITE_KEY): 0.9994 \u2265 0.95 \u2192 PASS aggregate."
+  ]
+}

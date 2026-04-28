@@ -1,0 +1,59 @@
+{
+  "phase": 6,
+  "phase_name": "Figure Audit",
+  "status": "PASS",
+  "iterations_run": 3,
+  "summary": {
+    "n_original": 36,
+    "n_final_panels": 34,
+    "n_removed": 8,
+    "PASS": 8,
+    "CAVEAT": 26,
+    "REDESIGN": 0,
+    "FABRICATION": 0
+  },
+  "remediation_path_counts": {
+    "direct_pass": 3,
+    "direct_caveat": 10,
+    "iter1.5_restructure": 14,
+    "iter1.5_replace_succeeded": 1,
+    "iter1.5_replace_failed_removed": 4,
+    "iter1.5_method_listing_removed": 3,
+    "iter3_patch": 6,
+    "iter3_remove": 1
+  },
+  "final_panel_count": 34,
+  "fabrication_flags_resolved": 22,
+  "fabrication_flag_breakdown_by_iteration": {
+    "iter1": 13,
+    "iter2": 5,
+    "iter3": 4
+  },
+  "verdict_artifact_ids": [
+    "4314e6c9-f814-41d7-a607-a7a6981074cc",
+    "0cb7a1a8-43e6-4ca4-8c80-3bbc30a4c24e",
+    "a5bf7422-6779-40d0-b5f8-c7b0a470f0e6",
+    "bfe8c4a3-40ad-4efa-81fc-66893feb22cb",
+    "6066b22c-9562-4afb-8fbf-41db59fc202e",
+    "ccda5cb7-b00a-4735-bb38-00622b2b1d63",
+    "8048033c-d00d-49fb-b9c8-40e779f5f9d5",
+    "a051fee8-a4cb-4b9d-b142-f99f1a3fb38e"
+  ],
+  "redesign_artifact_ids": {
+    "iter1.5_dispatch_plan": "7e9d1592-8457-4fe9-a2dc-bcd28cc13d3a",
+    "iter1.5_redesigned_comparisons": "fe8636b5-ef2f-451f-be68-214bacd0699c",
+    "iter3_remediations": "715cbb70-933d-4e2f-add1-e22e6aac3524",
+    "iter3_redesigned_comparisons": "91dbb4ec-90dc-4865-8e53-448ba451f015"
+  },
+  "final_corpus_artifact_id": "24eba2ca-4d8a-4d78-9b9c-8244849359e8",
+  "summary_artifact_id": "26ec8556-4648-4bbf-94de-d424e607ac2b",
+  "exit_conditions_met": true,
+  "exit_conditions": {
+    "zero_REDESIGN_at_convergence": true,
+    "zero_FABRICATION_at_convergence": true,
+    "all_fabrication_flags_addressed": true,
+    "all_panels_have_figure_data_or_explicit_removal_reason": true
+  },
+  "issued_at": "2026-04-27T06:10:51.129163+00:00",
+  "notes": "3-iteration blinded audit converged with zero REDESIGN and zero FABRICATION verdicts. 36 original comparisons \u2192 34 final panels (8 PASS, 26 CAVEAT) plus 8 removals (3 method-listing inventories at iter 1.5; 4 extraction-failed with no substitute DOI at iter 1.5; 1 post-curation removal at iter 3). All 22 fabrication flags raised across iterations were resolved before convergence. Caveat themes: cross-species/preparation comparability, sub-panel splits for non-commensurable metrics, denominator harmonization, taxonomic-level mixing."
+}

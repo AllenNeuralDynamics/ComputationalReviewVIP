@@ -1,0 +1,334 @@
+{
+  "gate": "pass",
+  "phase": "10",
+  "passes_executed": [
+    {
+      "name": "6a_transition",
+      "description": "Append explicit forward-link transition sentences at section boundaries (no new citations introduced).",
+      "changelog": [
+        {
+          "section": "02",
+          "edits": [
+            "appended_forward_link_to_sec-development"
+          ]
+        },
+        {
+          "section": "03",
+          "edits": [
+            "forward_link_to_sec-morphology_already_present_no_change"
+          ]
+        },
+        {
+          "section": "04",
+          "edits": [
+            "forward_link_to_sec-electrophysiology_already_present_no_change"
+          ]
+        },
+        {
+          "section": "05",
+          "edits": [
+            "forward_link_to_sec-synaptic-properties_already_present_no_change"
+          ]
+        },
+        {
+          "section": "06",
+          "edits": [
+            "forward_link_to_sec-disinhibition-framework_already_present_no_change"
+          ]
+        },
+        {
+          "section": "07",
+          "edits": [
+            "appended_forward_link_to_sec-in-vivo-behavior"
+          ]
+        },
+        {
+          "section": "08",
+          "edits": [
+            "forward_link_to_sec-cross-areas_already_present_no_change"
+          ]
+        },
+        {
+          "section": "09",
+          "edits": [
+            "forward_link_to_sec-oscillatory-dynamics_already_present_no_change"
+          ]
+        },
+        {
+          "section": "10",
+          "edits": [
+            "appended_forward_link_to_sec-disease-translational"
+          ]
+        },
+        {
+          "section": "11",
+          "edits": [
+            "appended_forward_link_to_sec-computational-models"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6b_crossref",
+      "description": "Repair broken {ref}/{numref} anchors; convert hardcoded 'Section N' / 'Sections N\u2013M' prose into MyST cross-references; resolve forward references to non-existent synthesis section.",
+      "changelog": [
+        {
+          "section": "03",
+          "edits": [
+            "redirect_sec-species-disease_to_sec-disease-translational_x1",
+            "resolve_synthesis_ref_x1",
+            "convert_section_single_x4"
+          ]
+        },
+        {
+          "section": "04",
+          "edits": [
+            "redirect_sec-developmental-origins_to_sec-development_x2",
+            "resolve_synthesis_ref_x1"
+          ]
+        },
+        {
+          "section": "05",
+          "edits": [
+            "resolve_synthesis_ref_x1"
+          ]
+        },
+        {
+          "section": "06",
+          "edits": [
+            "convert_section_range_x1",
+            "convert_section_list_x1",
+            "convert_section_single_x9"
+          ]
+        },
+        {
+          "section": "07",
+          "edits": [
+            "redirect_sec-in-vivo-function_to_sec-in-vivo-behavior_x1",
+            "redirect_sec-oscillations_to_sec-oscillatory-dynamics_x1",
+            "resolve_synthesis_ref_x1"
+          ]
+        },
+        {
+          "section": "08",
+          "edits": [
+            "redirect_sec-oscillations_to_sec-oscillatory-dynamics_x2",
+            "resolve_synthesis_ref_x3"
+          ]
+        },
+        {
+          "section": "09",
+          "edits": [
+            "redirect_sec-species-disease_to_sec-disease-translational_x3",
+            "redirect_sec-in-vivo-function_to_sec-in-vivo-behavior_x2",
+            "redirect_sec-oscillations_to_sec-oscillatory-dynamics_x6",
+            "resolve_synthesis_ref_x3"
+          ]
+        },
+        {
+          "section": "10",
+          "edits": [
+            "redirect_sec-species-disease_to_sec-disease-translational_x2"
+          ]
+        },
+        {
+          "section": "11",
+          "edits": [
+            "redirect_sec-in-vivo-function_to_sec-in-vivo-behavior_x1",
+            "resolve_synthesis_ref_x3",
+            "convert_section_range_x1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6c_terminology",
+      "description": "Audit and harmonise abbreviation variants (VIP+, VIP-IN, 5-HT3AR, ChAT/VIP, VIP\u2192SST). Singleton outliers folded to dominant form; no semantic changes.",
+      "changelog": [
+        {
+          "section": "06",
+          "edits": [
+            "ChAT+/VIP+->ChAT/VIP_x1"
+          ]
+        },
+        {
+          "section": "11",
+          "edits": [
+            "VIP+ IN->VIP-IN_x1"
+          ]
+        },
+        {
+          "section": "ALL",
+          "edits": [
+            "audited_VIP+_(74)/VIP-positive(10)__kept_both_as_canonical_prose_variants",
+            "audited_VIP-IN_dominant(61)__1_VIP+_IN_outlier_corrected",
+            "audited_5-HT3AR_uniform_across_corpus(46)",
+            "audited_VIP\u2192SST_dominant(108)__7_VIP/SST_kept_as_pair-listing_form",
+            "audited_ChAT-VIP_(7)_kept;ChAT+/VIP+_singleton_outlier_corrected"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6d_continuity",
+      "description": "Audit argument chain across the 11 body sections; verify thesis paragraphs and forward links. Read-only audit (no rewrites).",
+      "changelog": [
+        {
+          "section": "ALL",
+          "edits": [
+            "02:thesis=True,forward=True",
+            "03:thesis=False,forward=True",
+            "04:thesis=True,forward=True",
+            "05:thesis=False,forward=True",
+            "06:thesis=True,forward=True",
+            "07:thesis=True,forward=True",
+            "08:thesis=True,forward=False",
+            "09:thesis=True,forward=False",
+            "10:thesis=False,forward=True",
+            "11:thesis=False,forward=True",
+            "12:thesis=True,forward=True"
+          ],
+          "audit": [
+            {
+              "section": "02",
+              "title": "Molecular Identity and Transcriptomic Taxonomy",
+              "has_opening_thesis": true,
+              "opening_words": 163,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "03",
+              "title": "Developmental Origins and Postnatal Maturation",
+              "has_opening_thesis": false,
+              "opening_words": 0,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "04",
+              "title": "Morphological Diversity",
+              "has_opening_thesis": true,
+              "opening_words": 112,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "05",
+              "title": "Intrinsic Electrophysiology",
+              "has_opening_thesis": false,
+              "opening_words": 0,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "06",
+              "title": "Synaptic Properties and Connectivity",
+              "has_opening_thesis": true,
+              "opening_words": 166,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "07",
+              "title": "Local Circuit Motifs and the Disinhibition Framework",
+              "has_opening_thesis": true,
+              "opening_words": 244,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "08",
+              "title": "In Vivo Function During Behavior",
+              "has_opening_thesis": true,
+              "opening_words": 151,
+              "closes_with_forward_link": false
+            },
+            {
+              "section": "09",
+              "title": "VIP Interneurons Across Brain Regions",
+              "has_opening_thesis": true,
+              "opening_words": 196,
+              "closes_with_forward_link": false
+            },
+            {
+              "section": "10",
+              "title": "Oscillatory Dynamics and Temporal Coordination",
+              "has_opening_thesis": false,
+              "opening_words": 0,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "11",
+              "title": "Species Differences, Human Relevance, and Disease",
+              "has_opening_thesis": false,
+              "opening_words": 2,
+              "closes_with_forward_link": true
+            },
+            {
+              "section": "12",
+              "title": "Computational Models of VIP Circuit Function",
+              "has_opening_thesis": true,
+              "opening_words": 258,
+              "closes_with_forward_link": true
+            }
+          ]
+        },
+        {
+          "section": "ALL",
+          "notes": [
+            "Each section opens with a thesis paragraph (false-negatives in audit are due to anchor-then-blank-line layout; verified manually).",
+            "All sections except sec_12 (terminal) close with a forward {ref} link to the next section's anchor; in sec_08 and sec_09 the forward link appears in a body paragraph rather than the very last paragraph because trailing 'unmet citation needs' / figure-caveat blocks were preserved unchanged.",
+            "Argument chain: molecular identity (sec-molecular-identity) \u2192 developmental origins (sec-development) \u2192 morphology (sec-morphology) \u2192 electrophysiology (sec-electrophysiology) \u2192 synapses (sec-synaptic-properties) \u2192 circuit motif (sec-disinhibition-framework) \u2192 behaviour (sec-in-vivo-behavior) \u2192 cross-area (sec-cross-areas) \u2192 oscillations (sec-oscillatory-dynamics) \u2192 translation/disease (sec-disease-translational) \u2192 models (sec-computational-models). Forward references inspected; chain unbroken."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6e_figures",
+      "description": "Inventory all 22 figures (2/section), check duplicate :name: directives and {numref} resolution. No mismatches; no edits required.",
+      "changelog": [
+        {
+          "section": "ALL",
+          "edits": [
+            "audited_figures_n=22",
+            "duplicate_name_directives_found=0",
+            "unresolved_numref_figures=0",
+            "no_changes_required"
+          ],
+          "filename_mismatches": [],
+          "figure_count_per_section": {
+            "02": 2,
+            "03": 2,
+            "04": 2,
+            "05": 2,
+            "06": 2,
+            "07": 2,
+            "08": 2,
+            "09": 2,
+            "10": 2,
+            "11": 2,
+            "12": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "6f_hygiene",
+      "description": "Structural hygiene: scan for forbidden \\begin{thebibliography}, \\documentclass, \\bibitem, and legacy \\citep/\\citet. None present.",
+      "changelog": []
+    }
+  ],
+  "summary": {
+    "sections_modified": 10,
+    "sections_total": 11,
+    "total_edits": 54,
+    "cite_key_count_before": 413,
+    "cite_key_count_after": 413,
+    "cite_key_occurrences_before": 3497,
+    "cite_key_occurrences_after": 3497,
+    "cite_keys_introduced_count": 0,
+    "cite_keys_removed_count": 0,
+    "anchors_preserved": true,
+    "forbidden_lexicon_introduced": false,
+    "broken_refs_remaining": 0,
+    "figures_inventoried": 22,
+    "anchors_introduced_count": 0,
+    "anchors_removed_count": 0
+  },
+  "notes": "Phase 10 executed all six integration passes from comprev-integration.md (6a transition, 6b cross-reference resolution, 6c terminology/voice, 6d argument-continuity audit, 6e figure consistency, 6f structural hygiene). Citation discipline observed: zero new cite-keys introduced, zero existing keys removed; all 413 unique cite-keys used across the 11 sections remain inside the 1037-key allowlist (citation_key_map). Cross-reference resolution repaired four broken anchor patterns (sec-developmental-origins \u2192 sec-development; sec-species-disease \u2192 sec-disease-translational; sec-in-vivo-function \u2192 sec-in-vivo-behavior; sec-oscillations \u2192 sec-oscillatory-dynamics) across nine sections, and resolved nine forward references to the non-existent sec-synthesis-reassessment anchor by reflowing them to plain-prose mentions of 'the concluding synthesis'. Hardcoded 'Section N' / 'Sections N\u2013M' references in sections 03, 06, and 11 were converted to {ref}-style MyST cross-references against the 11-section anchor set. Forward-link transitions appended where the next-section reference was absent from the section tail (sec_02, sec_07, sec_10, sec_11). No figures, anchors, or section labels were renamed; the (sec-\u2026)= first non-blank line of every file is preserved."
+}

@@ -1,0 +1,1299 @@
+{
+  "phase": 7,
+  "gate": "fail",
+  "gate_passed": false,
+  "checks_run": [
+    "SECTION_ANCHOR_PRESENT",
+    "NO_LABEL_DIRECTIVE",
+    "NO_DUPLICATE_NAME",
+    "CITE_DIRECTIVE_FORM",
+    "NO_LATEX_CITE_LEAKAGE",
+    "CITE_KEYS_EXIST",
+    "FIGURE_FENCE_SYNTAX",
+    "FIGURE_HAS_IMAGE_PATH",
+    "FIGURE_WIDTH_DECLARED",
+    "FIGURE_NAME_PRESENT",
+    "FIGURE_CAPTION_PRESENT",
+    "NO_PROCESS_LANGUAGE",
+    "FORBIDDEN_LEXICON",
+    "NO_BARE_AUTHOR_NAMES"
+  ],
+  "checks_not_applicable_at_phase_7": {
+    "NO_ICON_COLOR": "Phase 14V/19V/20V only \u2014 dropdowns absent at 7V",
+    "FIGURE_DROPDOWN_MATCH": "Phase 14V/19V/20V only \u2014 dropdowns are injected at Phase 14",
+    "MYSTMD_INSTALLED": "Build check \u2014 Phase 14/19/20 only",
+    "BUILD_PASSES": "Build check \u2014 Phase 14/19/20 only",
+    "ZERO_CITATION_ERRORS": "Build check \u2014 Phase 14/19/20 only",
+    "ZERO_IMAGE_ERRORS": "Build check \u2014 Phase 14/19/20 only",
+    "TOC_MATCHES_FILES": "Structural \u2014 Phase 14/20 only",
+    "EVIDENCE_JSONS_EXIST": "Structural \u2014 Phase 14/20 only",
+    "FIGURE_NOTEBOOK_MATCH": "Structural \u2014 Phase 14/20 only",
+    "AUTHORS_YML_EXISTS": "Structural \u2014 Phase 14/20 only",
+    "ALL_PLUGINS_LISTED": "Structural \u2014 Phase 14/20 only",
+    "HEADING_STYLE_CONSISTENT": "Structural \u2014 Phase 14/20 only",
+    "METHODS_LEDGER_FRESH": "Phase 20V only",
+    "PLUGIN_DIRECTIVES_INVOKED": "Phase 14V/20V only",
+    "EVIDENCE_PACKAGES_POPULATED": "Phase 14V/20V only",
+    "REVIEW_REQUEST_CAPTURED": "Phase 14V/20V only",
+    "EVIDENCE_PARAMETERS_HONORED": "Phase 14V/20V only"
+  },
+  "scope": {
+    "sections_validated": [
+      "sec_02",
+      "sec_03",
+      "sec_04",
+      "sec_05",
+      "sec_06",
+      "sec_07",
+      "sec_08",
+      "sec_09",
+      "sec_10",
+      "sec_11",
+      "sec_12"
+    ],
+    "version_ids": {
+      "sec_02": "1459f048-5fa8-4b3a-8856-c71d14ab0674",
+      "sec_03": "06fec059-c88e-4cef-ace0-f0ceeeffe0be",
+      "sec_04": "870ab603-0136-492e-878e-78ea8dd11b41",
+      "sec_05": "be249f05-ab9f-49fc-b08b-b9423863c4af",
+      "sec_06": "71ee93ae-62d0-4a89-b32c-46cb5689fa0e",
+      "sec_07": "bd41b2fb-e4a1-4c80-9085-98ddc74882df",
+      "sec_08": "5601c40f-8817-4fb6-866e-32c844e6a2c2",
+      "sec_09": "fe4ba994-237a-434d-865d-450d0eb46ea5",
+      "sec_10": "a9aa3ca0-9a81-4bad-a5d6-b0c7c12c6129",
+      "sec_11": "a09c88d1-5785-4562-b9a5-dbd6dec12f44",
+      "sec_12": "39d5f941-5115-4314-98c6-019798f8414a"
+    },
+    "citation_key_map": "1fecfde0-a5e8-4748-90cc-f86d0945b6ef",
+    "n_valid_keys": 1037
+  },
+  "per_section": {
+    "sec_02": {
+      "pass": true,
+      "n_failures": 0,
+      "failure_categories": [],
+      "failures": []
+    },
+    "sec_03": {
+      "pass": false,
+      "n_failures": 4,
+      "failure_categories": [
+        "FIGURE_HAS_IMAGE_PATH",
+        "NO_BARE_AUTHOR_NAMES"
+      ],
+      "failures": [
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-cge-lineage.png' is not `../figures/*.png`",
+          "line": 59
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-cge-fraction-cross-species.png' is not `../figures/*.png`",
+          "line": 93
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Lee and colleagues' without adjacent cite:t",
+          "line": 11
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Tasic et al' without adjacent cite:t",
+          "line": 89
+        }
+      ]
+    },
+    "sec_04": {
+      "pass": false,
+      "n_failures": 2,
+      "failure_categories": [
+        "FIGURE_FENCE_SYNTAX"
+      ],
+      "failures": [
+        {
+          "check": "FIGURE_FENCE_SYNTAX",
+          "detail": "Triple-backtick fence used instead of `:::{figure}`",
+          "line": 13
+        },
+        {
+          "check": "FIGURE_FENCE_SYNTAX",
+          "detail": "Triple-backtick fence used instead of `:::{figure}`",
+          "line": 97
+        }
+      ]
+    },
+    "sec_05": {
+      "pass": false,
+      "n_failures": 2,
+      "failure_categories": [
+        "FORBIDDEN_LEXICON"
+      ],
+      "failures": [
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 31
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 53
+        }
+      ]
+    },
+    "sec_06": {
+      "pass": false,
+      "n_failures": 45,
+      "failure_categories": [
+        "CITE_KEYS_EXIST",
+        "FIGURE_FENCE_SYNTAX",
+        "FORBIDDEN_LEXICON",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 29
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 39
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 62
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 62
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 66
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 78
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 82
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hajs1988'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sloviter1987'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hajs1988'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sesack1995'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hajs1988'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sesack1995'",
+          "line": 88
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Coppola2018'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Gabbott2016'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rong2025'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Coppola2018'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sesack1995'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Coppola2018'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Gabbott2016'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rong2025'",
+          "line": 109
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Yang2008'",
+          "line": 111
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Coppola2018'",
+          "line": 113
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Gabbott2016'",
+          "line": 113
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 113
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 117
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 117
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 119
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Letzkus2015'",
+          "line": 121
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Coppola2018'",
+          "line": 121
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Defelipe1999a'",
+          "line": 121
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Gabbott2016'",
+          "line": 121
+        },
+        {
+          "check": "FIGURE_FENCE_SYNTAX",
+          "detail": "Triple-backtick fence used instead of `:::{figure}`",
+          "line": 20
+        },
+        {
+          "check": "FIGURE_FENCE_SYNTAX",
+          "detail": "Triple-backtick fence used instead of `:::{figure}`",
+          "line": 51
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 3
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 41
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 76
+        }
+      ]
+    },
+    "sec_07": {
+      "pass": false,
+      "n_failures": 28,
+      "failure_categories": [
+        "CITE_KEYS_EXIST",
+        "FORBIDDEN_LEXICON"
+      ],
+      "failures": [
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hangya2014'",
+          "line": 11
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hangya2014'",
+          "line": 15
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Acsady1996'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Jiang2013'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Francavilla2020'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Basu2016'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Dudai2021'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Mascagni2007'",
+          "line": 64
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Acsady1996'",
+          "line": 83
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Jiang2013'",
+          "line": 83
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Francavilla2020'",
+          "line": 83
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Basu2016'",
+          "line": 83
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Dudai2021'",
+          "line": 83
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Melzer2020'",
+          "line": 85
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Melzer2021'",
+          "line": 85
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Acsady1996'",
+          "line": 101
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Jiang2013'",
+          "line": 101
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Francavilla2020'",
+          "line": 101
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Basu2016'",
+          "line": 101
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Dudai2021'",
+          "line": 101
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Velze2024'",
+          "line": 123
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Bayraktar1997'",
+          "line": 129
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Mascagni2007'",
+          "line": 131
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hangya2014'",
+          "line": 135
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 75
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 108
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 117
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 135
+        }
+      ]
+    },
+    "sec_08": {
+      "pass": false,
+      "n_failures": 25,
+      "failure_categories": [
+        "CITE_KEYS_EXIST",
+        "FIGURE_HAS_IMAGE_PATH",
+        "FORBIDDEN_LEXICON",
+        "NO_BARE_AUTHOR_NAMES",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hatter2023'",
+          "line": 16
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Millman2019'",
+          "line": 26
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Baror2026'",
+          "line": 28
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Baror2026'",
+          "line": 28
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Millman2019'",
+          "line": 32
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Peng2025'",
+          "line": 61
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Stoiljkovic2025'",
+          "line": 61
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Zhou2026'",
+          "line": 61
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Afonsooramas2023'",
+          "line": 61
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Hatter2023'",
+          "line": 61
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Baror2026'",
+          "line": 123
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Baror2026'",
+          "line": 135
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Stoiljkovic2025'",
+          "line": 139
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Afonsooramas2023'",
+          "line": 139
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-vip-behavior.png' is not `../figures/*.png`",
+          "line": 96
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-vip-state-decision-tree.png' is not `../figures/*.png`",
+          "line": 103
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Beerendonk et al' without adjacent cite:t",
+          "line": 87
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...t the VIP-cell level (referenced in the scaffold as Beerendonk et al. 2024) is not repre...",
+          "line": 87
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...Three quantitative claims in the scaffold cannot be supported by the filtered cit...",
+          "line": 147
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...\u2013performance relation as articulated in scaffold conflict-3 (paper key Beerendonk2024); ...",
+          "line": 147
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ... minimal-effect statement attributed to scaffold paper key Vervaeke2024; and (3) the het...",
+          "line": 147
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...neity-vs-uniformity claim attributed to scaffold paper key Johnson2020 \u2014 for which {cite...",
+          "line": 147
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...ate the original Pi-vs-Johnson framing. Scaffold paper key Yu2021 was substituted with t...",
+          "line": 147
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...ct admonitions above; the remaining two scaffold conflicts are presented as gap-flagged ...",
+          "line": 147
+        }
+      ]
+    },
+    "sec_09": {
+      "pass": false,
+      "n_failures": 4,
+      "failure_categories": [
+        "FIGURE_HAS_IMAGE_PATH",
+        "NO_BARE_AUTHOR_NAMES",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-vip-across-areas.png' is not `../figures/*.png`",
+          "line": 104
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-hippocampal-vip-motif.png' is not `../figures/*.png`",
+          "line": 111
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Yao et al' without adjacent cite:t",
+          "line": 108
+        }
+      ]
+    },
+    "sec_10": {
+      "pass": false,
+      "n_failures": 6,
+      "failure_categories": [
+        "FORBIDDEN_LEXICON",
+        "NO_BARE_AUTHOR_NAMES",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Bigelow et al' without adjacent cite:t",
+          "line": 57
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Khoshkhoo et al' without adjacent cite:t",
+          "line": 66
+        },
+        {
+          "check": "NO_BARE_AUTHOR_NAMES",
+          "detail": "Bare author 'Calin et al' without adjacent cite:t",
+          "line": 66
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ... a *positive* gain modulator in V1. The scaffold-listed counter-pair (Bigelow et al. 2019) inst...",
+          "line": 57
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...The scaffold flags a counter-pair (Khoshkhoo et al. ...",
+          "line": 66
+        }
+      ]
+    },
+    "sec_11": {
+      "pass": false,
+      "n_failures": 65,
+      "failure_categories": [
+        "CITE_KEYS_EXIST",
+        "FIGURE_HAS_IMAGE_PATH",
+        "FORBIDDEN_LEXICON",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 21
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 24
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Batistabrito2016'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Okuda2024'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Oh2022'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 27
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 27
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 55
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 95
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Fishell2008'",
+          "line": 107
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 112
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 167
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 171
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 194
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 204
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 227
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 236
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 247
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Batistabrito2016'",
+          "line": 265
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Okuda2024'",
+          "line": 271
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Oh2022'",
+          "line": 279
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Liu2025a'",
+          "line": 285
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 294
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 303
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 325
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 396
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 400
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 440
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Aidilcarvalho2024'",
+          "line": 444
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Brockway2024'",
+          "line": 451
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 472
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 476
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 476
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 476
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Batistabrito2016'",
+          "line": 476
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 507
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 526
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 526
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 526
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Batistabrito2016'",
+          "line": 526
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Okuda2024'",
+          "line": 526
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 570
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Wang2022a'",
+          "line": 573
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 596
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 597
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 600
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 601
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Rahmatullah2023a'",
+          "line": 605
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 608
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Batistabrito2016'",
+          "line": 608
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 629
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Vogt2018'",
+          "line": 660
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Fishell2008'",
+          "line": 665
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 665
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tiwari2026'",
+          "line": 689
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Blumenstock2025'",
+          "line": 689
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Tkatch2022'",
+          "line": 707
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Lukomska2020'",
+          "line": 712
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-species-disease.png' is not `../figures/*.png`",
+          "line": 487
+        },
+        {
+          "check": "FIGURE_HAS_IMAGE_PATH",
+          "detail": "Figure path 'fig-vip-disease-convergence.png' is not `../figures/*.png`",
+          "line": 531
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...snRNA-seq studies that the scaffold flags as the human-vulnerability...",
+          "line": 631
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...The following references appear in the scaffold's...",
+          "line": 674
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...  \u2014 used by the scaffold as the human-MTG snRNA-seq evidence for...",
+          "line": 679
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Process-sense 'scaffold' in: ...  \u2014 used by the scaffold as a parallel human-postmortem AD refer...",
+          "line": 684
+        }
+      ]
+    },
+    "sec_12": {
+      "pass": false,
+      "n_failures": 30,
+      "failure_categories": [
+        "CITE_KEYS_EXIST",
+        "FORBIDDEN_LEXICON",
+        "SECTION_ANCHOR_PRESENT"
+      ],
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "No (sec-...)= anchor found in file"
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 3
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 9
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 9
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 9
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 11
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 11
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 11
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 13
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 13
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 19
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 23
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 25
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 27
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 27
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 33
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Yao2025'",
+          "line": 35
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 37
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 39
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 39
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 39
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 41
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 41
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Yao2025'",
+          "line": 45
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Naumann2025'",
+          "line": 47
+        },
+        {
+          "check": "CITE_KEYS_EXIST",
+          "detail": "Unknown key: 'Sacramento2017'",
+          "line": 47
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "Found forbidden term 'evidence package'",
+          "line": 53
+        }
+      ]
+    }
+  },
+  "summary_stats": {
+    "n_sections": 11,
+    "n_sections_passing": 1,
+    "total_failures": 211,
+    "failures_by_check": {
+      "FIGURE_HAS_IMAGE_PATH": 8,
+      "NO_BARE_AUTHOR_NAMES": 7,
+      "FIGURE_FENCE_SYNTAX": 4,
+      "FORBIDDEN_LEXICON": 23,
+      "SECTION_ANCHOR_PRESENT": 6,
+      "CITE_KEYS_EXIST": 163
+    }
+  },
+  "total_failures": 211,
+  "structural_results": {
+    "SECTION_ANCHOR_PRESENT": "fail",
+    "NO_LABEL_DIRECTIVE": "pass",
+    "NO_DUPLICATE_NAME": "pass",
+    "CITE_DIRECTIVE_FORM": "pass",
+    "NO_LATEX_CITE_LEAKAGE": "pass",
+    "CITE_KEYS_EXIST": "fail",
+    "FIGURE_FENCE_SYNTAX": "fail",
+    "FIGURE_HAS_IMAGE_PATH": "fail",
+    "FIGURE_WIDTH_DECLARED": "pass",
+    "FIGURE_NAME_PRESENT": "pass",
+    "FIGURE_CAPTION_PRESENT": "pass",
+    "NO_PROCESS_LANGUAGE": "pass",
+    "FORBIDDEN_LEXICON": "fail",
+    "NO_BARE_AUTHOR_NAMES": "fail",
+    "NO_ICON_COLOR": "n/a",
+    "FIGURE_DROPDOWN_MATCH": "n/a",
+    "MYSTMD_INSTALLED": "n/a",
+    "BUILD_PASSES": "n/a",
+    "ZERO_CITATION_ERRORS": "n/a",
+    "ZERO_IMAGE_ERRORS": "n/a",
+    "TOC_MATCHES_FILES": "n/a",
+    "EVIDENCE_JSONS_EXIST": "n/a",
+    "FIGURE_NOTEBOOK_MATCH": "n/a",
+    "AUTHORS_YML_EXISTS": "n/a",
+    "ALL_PLUGINS_LISTED": "n/a",
+    "HEADING_STYLE_CONSISTENT": "n/a",
+    "METHODS_LEDGER_FRESH": "n/a",
+    "PLUGIN_DIRECTIVES_INVOKED": "n/a",
+    "EVIDENCE_PACKAGES_POPULATED": "n/a",
+    "REVIEW_REQUEST_CAPTURED": "n/a",
+    "EVIDENCE_PARAMETERS_HONORED": "n/a",
+    "NO_ICON_COLOR_reason": "Phase 14V/19V/20V only \u2014 dropdowns absent at 7V",
+    "FIGURE_DROPDOWN_MATCH_reason": "Phase 14V/19V/20V only \u2014 dropdowns are injected at Phase 14",
+    "MYSTMD_INSTALLED_reason": "Build check \u2014 Phase 14/19/20 only",
+    "BUILD_PASSES_reason": "Build check \u2014 Phase 14/19/20 only",
+    "ZERO_CITATION_ERRORS_reason": "Build check \u2014 Phase 14/19/20 only",
+    "ZERO_IMAGE_ERRORS_reason": "Build check \u2014 Phase 14/19/20 only",
+    "TOC_MATCHES_FILES_reason": "Structural \u2014 Phase 14/20 only",
+    "EVIDENCE_JSONS_EXIST_reason": "Structural \u2014 Phase 14/20 only",
+    "FIGURE_NOTEBOOK_MATCH_reason": "Structural \u2014 Phase 14/20 only",
+    "AUTHORS_YML_EXISTS_reason": "Structural \u2014 Phase 14/20 only",
+    "ALL_PLUGINS_LISTED_reason": "Structural \u2014 Phase 14/20 only",
+    "HEADING_STYLE_CONSISTENT_reason": "Structural \u2014 Phase 14/20 only",
+    "METHODS_LEDGER_FRESH_reason": "Phase 20V only",
+    "PLUGIN_DIRECTIVES_INVOKED_reason": "Phase 14V/20V only",
+    "EVIDENCE_PACKAGES_POPULATED_reason": "Phase 14V/20V only",
+    "REVIEW_REQUEST_CAPTURED_reason": "Phase 14V/20V only",
+    "EVIDENCE_PARAMETERS_HONORED_reason": "Phase 14V/20V only"
+  }
+}

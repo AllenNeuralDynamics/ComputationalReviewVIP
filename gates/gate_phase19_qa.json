@@ -1,0 +1,210 @@
+{
+  "gate": "phase19_qa",
+  "phase": 19,
+  "timestamp_utc": "2026-04-28T06:33:05.147779Z",
+  "manuscript_version": "v6",
+  "input_baseline": "manuscript_repo v5",
+  "patch_applied": "Phase 18 remediation",
+  "qa_checks": {
+    "01_render_pages": {
+      "passed": true,
+      "expected": 14,
+      "actual": 14,
+      "detail": "MyST static HTML build produced 14 pages (13 sections + Methods)"
+    },
+    "02_build_warnings": {
+      "passed": true,
+      "count": 0,
+      "samples": []
+    },
+    "03_build_errors": {
+      "passed": true,
+      "count": 0,
+      "samples": []
+    },
+    "04_citation_keys_resolve": {
+      "passed": true,
+      "unique_keys": 391,
+      "total_occurrences": 3403,
+      "missing_in_bib": [],
+      "bib_entries": 1038
+    },
+    "05_cross_references": {
+      "passed": true,
+      "unique_targets": 27,
+      "defined_labels": 54,
+      "broken": []
+    },
+    "06_yaml_metadata": {
+      "passed": true,
+      "myst_yml_keys": [
+        "version",
+        "project",
+        "site"
+      ],
+      "project_keys": [
+        "title",
+        "description",
+        "license",
+        "doi",
+        "keywords",
+        "authors",
+        "github",
+        "bibliography",
+        "toc",
+        "plugins"
+      ],
+      "missing_required": [],
+      "toc_entries": 14,
+      "authors_count": 1
+    },
+    "07_forbidden_strict": {
+      "passed": true,
+      "hits": {
+        "orchestrator": 0,
+        "verdict": 0,
+        "operon": 0
+      },
+      "per_file": {
+        "orchestrator": {},
+        "verdict": {},
+        "operon": {}
+      }
+    },
+    "08_forbidden_domain_count": {
+      "passed": true,
+      "hits": {
+        "scaffold": 2,
+        "canonical": 47
+      },
+      "note": "domain terms allowed; tracked for trend analysis"
+    },
+    "09_word_count": {
+      "passed": true,
+      "total_words": 59226,
+      "per_section": {
+        "01_introduction.md": 984,
+        "02_classification.md": 5647,
+        "03_development.md": 4725,
+        "04_morphology.md": 3823,
+        "05_electrophysiology.md": 3632,
+        "06_synaptic_properties.md": 5201,
+        "07_disinhibition_framework.md": 5976,
+        "08_in_vivo_behavior.md": 5935,
+        "09_cross_areas.md": 4572,
+        "10_oscillatory_dynamics.md": 4506,
+        "11_disease_translational.md": 5602,
+        "12_computational_models.md": 4484,
+        "13_conclusion.md": 1057,
+        "Methods.md": 3082
+      }
+    },
+    "10_citation_density": {
+      "passed": true,
+      "keys_per_1k_words": 6.6,
+      "occurrences_per_1k_words": 57.46
+    },
+    "11_figure_resolution": {
+      "passed": true,
+      "referenced": 22,
+      "missing": [],
+      "files_on_disk": 22
+    },
+    "12_patch_application": {
+      "passed": true,
+      "checks": {
+        "Teymornejad2024a in \u00a711": true,
+        "no 'citation key map' in patched \u00a703": true,
+        "no 'citation key map' in \u00a707": true,
+        "no 'citation key map' in \u00a708": true
+      }
+    },
+    "13_v5_unchanged_sections": {
+      "passed": true,
+      "expected_unchanged": [
+        "01_introduction.md",
+        "02_classification.md",
+        "09_cross_areas.md",
+        "12_computational_models.md",
+        "13_conclusion.md",
+        "Methods.md"
+      ],
+      "actual_status": {
+        "02_classification.md": "same",
+        "01_introduction.md": "same",
+        "Methods.md": "same",
+        "12_computational_models.md": "same",
+        "09_cross_areas.md": "same",
+        "13_conclusion.md": "same"
+      }
+    },
+    "14_v5_patched_sections": {
+      "passed": true,
+      "expected_differ": [
+        "03_development.md",
+        "04_morphology.md",
+        "05_electrophysiology.md",
+        "06_synaptic_properties.md",
+        "07_disinhibition_framework.md",
+        "08_in_vivo_behavior.md",
+        "10_oscillatory_dynamics.md",
+        "11_disease_translational.md"
+      ],
+      "actual_status": {
+        "06_synaptic_properties.md": "differ",
+        "03_development.md": "differ",
+        "11_disease_translational.md": "differ",
+        "05_electrophysiology.md": "differ",
+        "04_morphology.md": "differ",
+        "08_in_vivo_behavior.md": "differ",
+        "07_disinhibition_framework.md": "differ",
+        "10_oscillatory_dynamics.md": "differ"
+      }
+    },
+    "15_section_h1_present": {
+      "passed": true,
+      "note": "Multiple H1s allowed per MyST style; all 14 sections have \u22651 H1",
+      "h1_counts_per_section": {
+        "01_introduction.md": 1,
+        "02_classification.md": 5,
+        "03_development.md": 5,
+        "04_morphology.md": 5,
+        "05_electrophysiology.md": 8,
+        "06_synaptic_properties.md": 5,
+        "07_disinhibition_framework.md": 5,
+        "08_in_vivo_behavior.md": 5,
+        "09_cross_areas.md": 5,
+        "10_oscillatory_dynamics.md": 5,
+        "11_disease_translational.md": 5,
+        "12_computational_models.md": 5,
+        "13_conclusion.md": 1,
+        "Methods.md": 1
+      }
+    },
+    "16_ascii_compliance": {
+      "passed": true,
+      "non_ascii_headings_count": 1,
+      "samples": [
+        {
+          "file": "07_disinhibition_framework.md",
+          "heading": "Connectivity asymmetry: how reproducible is VIP\u2192SST > VIP\u2192PV/Pyr?"
+        }
+      ],
+      "note": "Unicode arrows (\u2192) permitted in scientific headings"
+    }
+  },
+  "summary": {
+    "total_checks": 16,
+    "passed": 16,
+    "failed": 0,
+    "total_words": 59226,
+    "unique_cite_keys": 391,
+    "total_cite_occurrences": 3403,
+    "myst_build_errors": 0,
+    "myst_build_warnings": 0,
+    "broken_refs": 0,
+    "forbidden_strict_hits": 0,
+    "forbidden_domain_hits": 49,
+    "html_pages": 14
+  }
+}

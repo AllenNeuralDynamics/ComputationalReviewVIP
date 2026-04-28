@@ -1,0 +1,407 @@
+{
+  "phase": 3,
+  "validator_complete": true,
+  "gate": "fail",
+  "total_entries": 1037,
+  "per_entry_pass_rate": 0.930569,
+  "checks": {
+    "crossref_resolves": {
+      "pass": 1037,
+      "fail": 0,
+      "fail_dois": []
+    },
+    "key_format": {
+      "pass": 1036,
+      "fail": 1,
+      "fail_keys": [
+        "R2024"
+      ]
+    },
+    "key_unique": {
+      "pass": 1037,
+      "fail": 0,
+      "collisions": []
+    },
+    "author_match": {
+      "pass": 966,
+      "fail": 71,
+      "mismatches": [
+        {
+          "doi": "10.3389/fncir.2020.00032",
+          "cite_key": "Guetmccreight2020b",
+          "crossref_family": "Guet-McCreight"
+        },
+        {
+          "doi": "10.1073/pnas.2120079119",
+          "cite_key": "Vilchezacosta2022",
+          "crossref_family": "V\u00edlchez-Acosta"
+        },
+        {
+          "doi": "10.1073/pnas.2108760119",
+          "cite_key": "Sufeher2022",
+          "crossref_family": "Su-Feher"
+        },
+        {
+          "doi": "10.1093/cercor/bhaa056",
+          "cite_key": "Torresgomez2020",
+          "crossref_family": "Torres-Gomez"
+        },
+        {
+          "doi": "10.1523/jneurosci.1369-21.2021",
+          "cite_key": "Cantobustos2022",
+          "crossref_family": "Canto-Bustos"
+        },
+        {
+          "doi": "10.1101/2025.06.30.662293",
+          "cite_key": "Vanvoorst2025",
+          "crossref_family": "van Voorst"
+        },
+        {
+          "doi": "10.7554/elife.29742",
+          "cite_key": "Garciadelmolino2017",
+          "crossref_family": "Garcia del Molino"
+        },
+        {
+          "doi": "10.1038/s41586-024-07780-8",
+          "cite_key": "Schneidermizell2025",
+          "crossref_family": "Schneider-Mizell"
+        },
+        {
+          "doi": "10.1101/2022.11.28.518253",
+          "cite_key": "Myersjoseph2022",
+          "crossref_family": "Myers-Joseph"
+        },
+        {
+          "doi": "10.1101/2024.01.04.574141",
+          "cite_key": "Alharrach2024",
+          "crossref_family": "Al Harrach"
+        },
+        {
+          "doi": "10.1093/cercor/bhh072",
+          "cite_key": "Lopezbendito2004",
+          "crossref_family": "Lopez-Bendito"
+        },
+        {
+          "doi": "10.1016/j.neuron.2009.08.005",
+          "cite_key": "Batistabrito2009",
+          "crossref_family": "Batista-Brito"
+        },
+        {
+          "doi": "10.1101/cshperspect.a041513",
+          "cite_key": "Demarcogarcia2025",
+          "crossref_family": "De Marco Garc\u00eda"
+        },
+        {
+          "doi": "10.1042/an20090053",
+          "cite_key": "Hernandezmiranda2010",
+          "crossref_family": "Hern\u00e1ndez-Miranda"
+        },
+        {
+          "doi": "10.1007/s00422-021-00894-6",
+          "cite_key": "Terwal2021",
+          "crossref_family": "ter Wal"
+        },
+        {
+          "doi": "10.3389/fncel.2020.00153",
+          "cite_key": "Cunhareis2020",
+          "crossref_family": "Cunha-Reis"
+        },
+        {
+          "doi": "10.1016/j.neuron.2025.10.037",
+          "cite_key": "Ahrlundrichter2026",
+          "crossref_family": "\u00c4hrlund-Richter"
+        },
+        {
+          "doi": "10.1101/2024.01.10.574973",
+          "cite_key": "Vanvelze2024",
+          "crossref_family": "Van Velze"
+        },
+        {
+          "doi": "10.1038/s41586-021-03970-w",
+          "cite_key": "Munozcastaneda2021",
+          "crossref_family": "Mu\u00f1oz-Casta\u00f1eda"
+        },
+        {
+          "doi": "10.1523/jneurosci.3270-17.2018",
+          "cite_key": "Grangerayvilmint2018",
+          "crossref_family": "Grangeray-Vilmint"
+        },
+        {
+          "doi": "10.1093/cercor/bhx185",
+          "cite_key": "Alzubi2017b",
+          "crossref_family": "Alzu'bi"
+        },
+        {
+          "doi": "10.1038/nn.4483",
+          "cite_key": "Garciajuncoclemente2017",
+          "crossref_family": "Garcia-Junco-Clemente"
+        },
+        {
+          "doi": "10.1152/jn.00272.2012",
+          "cite_key": "Demay2013b",
+          "crossref_family": "De-May"
+        },
+        {
+          "doi": "10.3389/fnins.2017.00692",
+          "cite_key": "Ruizreig2017",
+          "crossref_family": "Ruiz-Reig"
+        },
+        {
+          "doi": "10.1038/s41586-021-03670-5",
+          "cite_key": "Dibella2021",
+          "crossref_family": "Di Bella"
+        },
+        {
+          "doi": "10.1101/2021.05.29.446289",
+          "cite_key": "Shapsoncoe2021",
+          "crossref_family": "Shapson-Coe"
+        },
+        {
+          "doi": "10.1126/sciadv.ady9758",
+          "cite_key": "Cardosodelgado2025",
+          "crossref_family": "Cardoso Delgado"
+        },
+        {
+          "doi": "10.1101/2020.09.21.306472",
+          "cite_key": "Guetmccreight2020a",
+          "crossref_family": "Guet-McCreight"
+        },
+        {
+          "doi": "10.1016/j.phrs.2020.105356",
+          "cite_key": "Cunhareis2021",
+          "crossref_family": "Cunha-Reis"
+        },
+        {
+          "doi": "10.1371/journal.pone.0209429",
+          "cite_key": "Guetmccreight2019",
+          "crossref_family": "Guet-McCreight"
+        },
+        {
+          "doi": "10.1016/j.neuron.2023.11.006",
+          "cite_key": "Myersjoseph2024",
+          "crossref_family": "Myers-Joseph"
+        },
+        {
+          "doi": "10.1152/jn.00732.2015",
+          "cite_key": "Litwinkumar2016",
+          "crossref_family": "Litwin-Kumar"
+        },
+        {
+          "doi": "10.1038/s41593-020-0692-9",
+          "cite_key": "Vormsteinschneider2020",
+          "crossref_family": "Vormstein-Schneider"
+        },
+        {
+          "doi": "10.1038/nrn3969",
+          "cite_key": "Overstreetwadiche2015",
+          "crossref_family": "Overstreet-Wadiche"
+        },
+        {
+          "doi": "10.1016/j.ynstr.2025.100749",
+          "cite_key": "Shoshanihaye2025",
+          "crossref_family": "Shoshani-Haye"
+        },
+        {
+          "doi": "10.3389/fncir.2016.00048",
+          "cite_key": "Liguzlecznar2016",
+          "crossref_family": "Liguz-Lecznar"
+        },
+        {
+          "doi": "10.1038/nrn2402",
+          "cite_key": "Thepetillainterneuronnomenclaturegroupping2008",
+          "crossref_family": ""
+        },
+        {
+          "doi": "10.1038/s41386-022-01371-9",
+          "cite_key": "Armentaresendiz2022",
+          "crossref_family": "Armenta-Resendiz"
+        },
+        {
+          "doi": "10.1038/s41586-021-03950-0",
+          "cite_key": "Braininitiativecellcensusnetworkbiccn2021",
+          "crossref_family": ""
+        },
+        {
+          "doi": "10.1523/jneurosci.4647-06.2007",
+          "cite_key": "Vonengelhardt2007",
+          "crossref_family": "von Engelhardt"
+        },
+        {
+          "doi": "10.3389/fnsyn.2013.00002",
+          "cite_key": "Telesgriloruivo2013",
+          "crossref_family": "Teles-Grilo Ruivo"
+        },
+        {
+          "doi": "10.1523/jneurosci.0956-15.2015",
+          "cite_key": "Leduigou2015",
+          "crossref_family": "Le Duigou"
+        },
+        {
+          "doi": "10.1038/nrn.2016.53",
+          "cite_key": "Urbanciecko2016",
+          "crossref_family": "Urban-Ciecko"
+        },
+        {
+          "doi": "10.1101/2022.12.21.521348",
+          "cite_key": "Aidilcarvalho2022",
+          "crossref_family": "Aidil-Carvalho"
+        },
+        {
+          "doi": "10.1093/cercor/bhm258",
+          "cite_key": "Batistabrito2008",
+          "crossref_family": "Batista-Brito"
+        },
+        {
+          "doi": "10.3390/biom15091242",
+          "cite_key": "Gomezoliver2025",
+          "crossref_family": "G\u00f3mez-Oliver"
+        },
+        {
+          "doi": "10.3389/fncel.2020.00118",
+          "cite_key": "Bordabossana2020",
+          "crossref_family": "Borda Bossana"
+        },
+        {
+          "doi": "10.7554/elife.46816",
+          "cite_key": "Christensonwick2019",
+          "crossref_family": "Christenson Wick"
+        },
+        {
+          "doi": "10.3390/biology11050627",
+          "cite_key": "Caulinorocha2022",
+          "crossref_family": "Caulino-Rocha"
+        },
+        {
+          "doi": "10.1038/nature09865",
+          "cite_key": "Demarcogarcia2011",
+          "crossref_family": "De Marco Garc\u00eda"
+        },
+        {
+          "doi": "10.1038/s42003-024-05907-1",
+          "cite_key": "Guetmccreight2024a",
+          "crossref_family": "Guet-McCreight"
+        },
+        {
+          "doi": "10.1523/jneurosci.2830-20.2021",
+          "cite_key": "Romerososa2021",
+          "crossref_family": "Romero-Sosa"
+        },
+        {
+          "doi": "10.1369/0022155413509381",
+          "cite_key": "Martinezgalan2014",
+          "crossref_family": "Martinez-Galan"
+        },
+        {
+          "doi": "10.3390/cimb48030334",
+          "cite_key": "Ramirezexposito2026",
+          "crossref_family": "Ram\u00edrez-Exp\u00f3sito"
+        },
+        {
+          "doi": "10.1371/journal.pcbi.1012943",
+          "cite_key": "Josephtomy2025",
+          "crossref_family": "Joseph Tomy"
+        },
+        {
+          "doi": "10.1016/j.neuron.2021.08.024",
+          "cite_key": "Froudistwalsh2021",
+          "crossref_family": "Froudist-Walsh"
+        },
+        {
+          "doi": "10.7554/elife.73783",
+          "cite_key": "Schneidermizell2021",
+          "crossref_family": "Schneider-Mizell"
+        },
+        {
+          "doi": "10.3389/fendo.2026.1781214",
+          "cite_key": "Alcaidemartin2026",
+          "crossref_family": "Alcaide-Martin"
+        },
+        {
+          "doi": "10.1016/j.celrep.2022.110893",
+          "cite_key": "Ramosprats2022",
+          "crossref_family": "Ramos-Prats"
+        },
+        {
+          "doi": "10.1101/2022.02.03.479036",
+          "cite_key": "Durabernal2022",
+          "crossref_family": "Dura-Bernal"
+        },
+        {
+          "doi": "10.1016/j.neuroscience.2012.10.012",
+          "cite_key": "Demay2013a",
+          "crossref_family": "De-May"
+        },
+        {
+          "doi": "10.1016/j.celrep.2018.07.053",
+          "cite_key": "Munozmanchado2018",
+          "crossref_family": "Mu\u00f1oz-Manchado"
+        },
+        {
+          "doi": "10.1038/s41586-025-09296-1",
+          "cite_key": "Vanvelthoven2025",
+          "crossref_family": "van Velthoven"
+        },
+        {
+          "doi": "10.1371/journal.pcbi.1012693",
+          "cite_key": "Guetmccreight2024b",
+          "crossref_family": "Guet-McCreight"
+        },
+        {
+          "doi": "10.3390/biomedicines14010072",
+          "cite_key": "Cuetourena2025",
+          "crossref_family": "Cueto-Ure\u00f1a"
+        },
+        {
+          "doi": "10.1016/j.celrep.2025.116746",
+          "cite_key": "Nietoestevez2026",
+          "crossref_family": "Nieto-Estevez"
+        },
+        {
+          "doi": "10.1016/j.cub.2015.01.035",
+          "cite_key": "Urbanciecko2015",
+          "crossref_family": "Urban-Ciecko"
+        },
+        {
+          "doi": "10.1093/schbul/sbaa184",
+          "cite_key": "Vanderveer2021",
+          "crossref_family": "Van Derveer"
+        },
+        {
+          "doi": "10.1038/s41593-019-0550-9",
+          "cite_key": "Devries2020",
+          "crossref_family": "de Vries"
+        },
+        {
+          "doi": "10.3389/fnana.2018.00015",
+          "cite_key": "Martinezgalan2018",
+          "crossref_family": "Martinez-Galan"
+        },
+        {
+          "doi": "10.1016/j.neuron.2017.07.034",
+          "cite_key": "Batistabrito2017",
+          "crossref_family": "Batista-Brito"
+        }
+      ]
+    },
+    "year_match": {
+      "pass": 1037,
+      "fail": 0,
+      "mismatches": []
+    }
+  },
+  "cross_checks": {
+    "cardinality_match": true,
+    "scaffold_size_ok": true,
+    "scaffold_keys_ok": true,
+    "scaffold_cluster_count": 14
+  },
+  "aggregates": {
+    "per_entry_pass_rate_ge_95": false,
+    "zero_collisions": true,
+    "zero_unresolved_prefixes": true
+  },
+  "blocking_failures": [
+    "per_entry_pass_rate=0.9306 below 0.95 threshold",
+    "key_format failures: ['R2024']"
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "title": "VIP Interneurons in Cortical Computation: From Molecular Identity to Circuit Function",
+  "thesis_question": "How do VIP-expressing GABAergic interneurons — defined by CGE lineage and a distinctive transcriptomic, morphological, and physiological profile — implement disinhibitory and gain-modulatory operations that shape cortical computation, and to what extent does the canonical 'VIP disinhibitor' framing survive scrutiny under contemporary multi-modal evidence?",
+  "audience": "Systems and circuits neuroscientists, computational neuroscientists, and graduate-level researchers working on cortical interneurons, inhibitory microcircuits, and behaviorally relevant cortical dynamics; assumes familiarity with cortical anatomy, basic electrophysiology, and standard mouse-genetics tools.",
+  "length_target": {
+    "sections": 13,
+    "pages_estimate": "60-90"
+  },
+  "evidence_parameters": {
+    "min_papers_per_cluster": null,
+    "saturation_criterion": "<2% new unique in last 100 records, confirmed across two consecutive database passes",
+    "saturation_consecutive_passes": 2,
+    "snowball_rounds": 2,
+    "total_bibliography_target": 2000
+  },
+  "sections": [
+    {
+      "id": "section_01",
+      "title": "Introduction",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_01_molecular_taxonomy",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 2500,
+      "scope_notes": "Frames the problem: why VIP interneurons matter for cortical computation; historical arc from Bayraktar/Rudy era markers to contemporary transcriptomic and disinhibition frameworks; introduces the canonical disinhibitor model and signposts the reassessment in Section 13.",
+      "key_topics": [
+        "history of VIP marker",
+        "Rudy/Tremblay tripartite framework",
+        "disinhibition motif overview",
+        "scope and roadmap"
+      ]
+    },
+    {
+      "id": "section_02",
+      "title": "Molecular Identity and Transcriptomic Taxonomy",
+      "cluster_ids": [
+        "cluster_01_molecular_taxonomy",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Defines VIP interneurons at the molecular level: VIP/ChAT/CR/CCK co-expression, Tasic/Allen and BICCN taxonomies, Patch-seq integration, comparison with SST and PV reference taxonomies, cross-species conservation of VIP transcriptomic types.",
+      "key_topics": [
+        "VIP/CR/ChAT/CCK markers",
+        "Tasic 2016/2018 taxonomy",
+        "BICCN cortical census",
+        "Patch-seq bridging",
+        "VIP subtypes (bipolar vs multipolar transcriptomic correlates)",
+        "cross-species conservation"
+      ]
+    },
+    {
+      "id": "section_03",
+      "title": "Developmental Origins and Postnatal Maturation",
+      "cluster_ids": [
+        "cluster_02_development_lineage"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "Caudal ganglionic eminence specification, key transcription factors (Prox1, COUP-TFII, Sp8, Nr2f2), migratory routes, postnatal integration, activity-dependent maturation, critical periods.",
+      "key_topics": [
+        "CGE vs MGE lineage",
+        "Prox1/COUP-TFII/Sp8 TF cascade",
+        "tangential migration",
+        "postnatal integration",
+        "activity-dependent refinement",
+        "critical period roles"
+      ]
+    },
+    {
+      "id": "section_04",
+      "title": "Morphological Diversity",
+      "cluster_ids": [
+        "cluster_03_morphology"
+      ],
+      "length_target_words": 4000,
+      "scope_notes": "Bipolar, bitufted, multipolar, small basket, and arcade morphologies; layer-specific dendritic/axonal targeting; reconstructions from MICrONS, Allen, and EM connectomes; morphology-electrophysiology-transcriptome (MET) correspondence.",
+      "key_topics": [
+        "bipolar vs multipolar VIP",
+        "layer 1-6 distribution",
+        "axonal targeting onto SST",
+        "MICrONS/EM reconstructions",
+        "MET-type framework"
+      ]
+    },
+    {
+      "id": "section_05",
+      "title": "Intrinsic Electrophysiology",
+      "cluster_ids": [
+        "cluster_04_intrinsic_electrophysiology"
+      ],
+      "length_target_words": 4000,
+      "scope_notes": "Resting properties, AP waveform, firing patterns (irregular spiking, continuous adapting, bursting), sag/Ih, K+ channel repertoire, intrinsic excitability differences across VIP subtypes; comparison to PV fast-spiking and SST low-threshold spiking baselines.",
+      "key_topics": [
+        "irregular spiking phenotype",
+        "Ih/HCN",
+        "Kv channels",
+        "subtype heterogeneity",
+        "comparison with PV/SST intrinsic profiles"
+      ]
+    },
+    {
+      "id": "section_06",
+      "title": "Synaptic Properties and Connectivity",
+      "cluster_ids": [
+        "cluster_05_synaptic_connectivity",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Inputs to VIP cells (long-range cortico-cortical, thalamic, neuromodulatory), outputs (preferential SST targeting, weaker PV/Pyr targets), short-term plasticity, GABA receptor composition, paired-recording datasets, EM connectomic counts.",
+      "key_topics": [
+        "long-range inputs",
+        "thalamic inputs",
+        "VIP→SST synapses",
+        "VIP→PV/Pyr connectivity",
+        "STP/facilitation",
+        "GABA-A subunit composition",
+        "MICrONS connectivity"
+      ]
+    },
+    {
+      "id": "section_07",
+      "title": "Local Circuit Motifs and the Disinhibition Framework",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 6000,
+      "scope_notes": "Canonical VIP→SST→Pyr disinhibitory motif; alternative motifs (VIP→PV, VIP→Pyr direct); inter-areal disinhibition; quantitative motif weights from connectivity datasets; how 'disinhibition' is operationalized across studies.",
+      "key_topics": [
+        "VIP→SST→Pyr motif",
+        "competing motifs",
+        "quantitative motif counts",
+        "long-range cortico-cortical disinhibition",
+        "definitional variance of disinhibition"
+      ]
+    },
+    {
+      "id": "section_08",
+      "title": "In Vivo Function During Behavior",
+      "cluster_ids": [
+        "cluster_07_in_vivo_function",
+        "cluster_13_neuromodulation"
+      ],
+      "length_target_words": 6500,
+      "scope_notes": "Calcium imaging and electrophysiology of VIP cells during locomotion, attention, reinforcement, reward, learning, and prediction error; optogenetic/chemogenetic perturbation outcomes; cell-type-specific contribution to cortical state changes.",
+      "key_topics": [
+        "locomotion-driven activation (Fu/Stryker)",
+        "attention/cue (Letzkus, Pi)",
+        "reward/punishment",
+        "learning and prediction error",
+        "optogenetic VIP perturbation",
+        "state-dependent gain"
+      ]
+    },
+    {
+      "id": "section_09",
+      "title": "VIP Interneurons Across Brain Regions",
+      "cluster_ids": [
+        "cluster_08_brain_regions"
+      ],
+      "length_target_words": 5000,
+      "scope_notes": "Region-specific VIP biology: V1, S1, A1, mPFC, retrosplenial, entorhinal, hippocampus (CA1/CA3 VIP types), striatum and amygdala VIP populations; conserved vs region-specific motifs and functions.",
+      "key_topics": [
+        "V1/S1/A1 VIP",
+        "mPFC and decision circuits",
+        "hippocampal VIP (Bezaire/Klausberger)",
+        "amygdala disinhibition",
+        "subcortical VIP populations"
+      ]
+    },
+    {
+      "id": "section_10",
+      "title": "Oscillatory Dynamics and Temporal Coordination",
+      "cluster_ids": [
+        "cluster_09_oscillations",
+        "cluster_13_neuromodulation"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "VIP contribution to gamma, theta, beta, and cross-frequency coupling; phase-locking of VIP firing; modeling of VIP-driven rhythm gating; comparison with PV's canonical gamma role.",
+      "key_topics": [
+        "VIP and gamma",
+        "theta-locked VIP firing",
+        "cross-frequency coupling",
+        "PV-vs-VIP rhythm contributions",
+        "modeling rhythms with VIP cells"
+      ]
+    },
+    {
+      "id": "section_11",
+      "title": "Species Differences, Human Relevance, and Disease",
+      "cluster_ids": [
+        "cluster_10_species_disease",
+        "cluster_01_molecular_taxonomy"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Mouse-human VIP comparisons (Hodge BICCN, Krienen primate); human-specific transcriptomic types; disease relevance: Rett (Mecp2), autism (Cntnap2, Shank3), schizophrenia, epilepsy, Alzheimer's, depression; therapeutic implications.",
+      "key_topics": [
+        "mouse vs human VIP types",
+        "Krienen primate",
+        "Rett/autism models",
+        "schizophrenia/psychosis",
+        "epilepsy",
+        "AD VIP loss",
+        "VIPR1/2 pharmacology"
+      ]
+    },
+    {
+      "id": "section_12",
+      "title": "Computational Models of VIP Circuit Function",
+      "cluster_ids": [
+        "cluster_11_computational_models",
+        "cluster_06_disinhibition_circuit"
+      ],
+      "length_target_words": 5000,
+      "scope_notes": "Mean-field and spiking models of VIP-SST-PV-Pyr microcircuits; gain modulation; predictive coding implementations; reinforcement-learning roles; circuit-level model fitting to imaging data.",
+      "key_topics": [
+        "Litwin-Kumar/Doiron mean-field models",
+        "stabilized supralinear network with VIP",
+        "predictive coding circuits",
+        "RL-circuit mappings",
+        "model fitting to data"
+      ]
+    },
+    {
+      "id": "section_13",
+      "title": "Synthesis and Conclusion: Reassessing the Canonical VIP Disinhibitor",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_07_in_vivo_function",
+        "cluster_11_computational_models"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "Synthesizes evidence across all sections to evaluate whether the canonical 'VIP = disinhibitor' framing is empirically warranted, what alternative framings (gain controller, context gate, neuromodulator relay) better fit the data, and what experiments would adjudicate; outlines open questions and a forward agenda.",
+      "key_topics": [
+        "canonical framing audit",
+        "alternatives: gain control / context gate / NM relay",
+        "evidence weighing",
+        "open questions",
+        "forward agenda"
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster_01_molecular_taxonomy",
+      "name": "Molecular Identity and Transcriptomic Taxonomy",
+      "topics": [
+        "VIP marker biology",
+        "CR/ChAT/CCK co-expression",
+        "Tasic/Allen scRNA-seq taxonomy",
+        "BICCN cortical census",
+        "Patch-seq integration",
+        "VIP transcriptomic subtypes",
+        "MET-types"
+      ],
+      "search_anchors": [
+        "VIP interneuron transcriptomic",
+        "VIP scRNA-seq cortex",
+        "Patch-seq VIP",
+        "BICCN interneuron taxonomy",
+        "calretinin VIP cortex"
+      ],
+      "section_targets": [
+        "section_02",
+        "section_11",
+        "section_01"
+      ],
+      "expected_envelope": "300-450 papers"
+    },
+    {
+      "id": "cluster_02_development_lineage",
+      "name": "Developmental Origins and Postnatal Maturation (CGE lineage)",
+      "topics": [
+        "caudal ganglionic eminence",
+        "Prox1",
+        "COUP-TFII / Nr2f2",
+        "Sp8",
+        "tangential migration",
+        "postnatal integration",
+        "activity-dependent maturation",
+        "critical period"
+      ],
+      "search_anchors": [
+        "caudal ganglionic eminence interneuron",
+        "Prox1 cortical interneuron",
+        "CGE-derived VIP",
+        "Nr2f2 interneuron specification",
+        "VIP cortical interneuron development"
+      ],
+      "section_targets": [
+        "section_03"
+      ],
+      "expected_envelope": "200-300 papers"
+    },
+    {
+      "id": "cluster_03_morphology",
+      "name": "Morphological Diversity of VIP Cells",
+      "topics": [
+        "bipolar VIP",
+        "multipolar VIP",
+        "small basket",
+        "arcade cells",
+        "axonal targeting",
+        "dendritic arborization",
+        "EM connectomics",
+        "MICrONS"
+      ],
+      "search_anchors": [
+        "VIP bipolar cell cortex",
+        "VIP interneuron morphology",
+        "MICrONS interneuron",
+        "cortical interneuron reconstruction VIP"
+      ],
+      "section_targets": [
+        "section_04"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_04_intrinsic_electrophysiology",
+      "name": "Intrinsic Electrophysiology of VIP Cells",
+      "topics": [
+        "irregular spiking",
+        "continuous adapting",
+        "Ih/HCN",
+        "Kv channels",
+        "intrinsic excitability",
+        "AP waveform",
+        "VIP firing patterns"
+      ],
+      "search_anchors": [
+        "VIP interneuron firing pattern",
+        "irregular spiking interneuron",
+        "VIP intrinsic properties",
+        "VIP electrophysiology cortex"
+      ],
+      "section_targets": [
+        "section_05"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_05_synaptic_connectivity",
+      "name": "Synaptic Properties and Connectivity",
+      "topics": [
+        "VIP synaptic inputs",
+        "long-range inputs to VIP",
+        "thalamic input to VIP",
+        "VIP→SST synapses",
+        "VIP→PV synapses",
+        "VIP→Pyr direct",
+        "short-term plasticity",
+        "GABA receptor composition",
+        "paired recording"
+      ],
+      "search_anchors": [
+        "VIP SST connectivity",
+        "VIP cell paired recording",
+        "VIP interneuron synaptic",
+        "long-range input interneuron",
+        "VIP postsynaptic targets"
+      ],
+      "section_targets": [
+        "section_06",
+        "section_07"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_06_disinhibition_circuit",
+      "name": "Disinhibition Motif and Local Circuit Architecture",
+      "topics": [
+        "VIP→SST→Pyr motif",
+        "cortical disinhibition",
+        "Letzkus Pi Lee paradigm papers",
+        "alternative motifs",
+        "long-range cortico-cortical disinhibition",
+        "definitional variance of disinhibition"
+      ],
+      "search_anchors": [
+        "VIP disinhibition cortex",
+        "VIP SST motif",
+        "cortical disinhibition microcircuit",
+        "Pi 2013 VIP",
+        "Letzkus VIP"
+      ],
+      "section_targets": [
+        "section_07",
+        "section_01",
+        "section_13",
+        "section_12"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_07_in_vivo_function",
+      "name": "In Vivo VIP Activity and Behavioral Function",
+      "topics": [
+        "VIP imaging during locomotion",
+        "VIP attention/cue",
+        "VIP reward/reinforcement",
+        "VIP learning",
+        "prediction error",
+        "optogenetic VIP perturbation",
+        "state-dependent gain",
+        "Fu/Stryker locomotion"
+      ],
+      "search_anchors": [
+        "VIP interneuron in vivo imaging",
+        "VIP locomotion cortex",
+        "VIP attention",
+        "VIP optogenetic behavior",
+        "VIP reward signal"
+      ],
+      "section_targets": [
+        "section_08",
+        "section_13"
+      ],
+      "expected_envelope": "350-480 papers"
+    },
+    {
+      "id": "cluster_08_brain_regions",
+      "name": "VIP Across Brain Regions (Cortical Areas, Hippocampus, Subcortical)",
+      "topics": [
+        "V1/S1/A1 VIP",
+        "mPFC VIP",
+        "retrosplenial/entorhinal",
+        "hippocampal VIP types",
+        "amygdala VIP",
+        "striatum/BNST VIP",
+        "regional functional differences"
+      ],
+      "search_anchors": [
+        "VIP interneuron prefrontal cortex",
+        "hippocampal VIP",
+        "amygdala VIP disinhibition",
+        "VIP retrosplenial",
+        "VIP V1 S1 A1"
+      ],
+      "section_targets": [
+        "section_09"
+      ],
+      "expected_envelope": "250-350 papers"
+    },
+    {
+      "id": "cluster_09_oscillations",
+      "name": "Oscillatory Dynamics and Temporal Coordination",
+      "topics": [
+        "VIP and gamma",
+        "theta-locked VIP",
+        "cross-frequency coupling",
+        "rhythm gating",
+        "VIP phase-locking",
+        "PV vs VIP rhythm contributions"
+      ],
+      "search_anchors": [
+        "VIP gamma oscillation",
+        "VIP theta cortex",
+        "interneuron cross-frequency coupling",
+        "VIP rhythm phase-locking"
+      ],
+      "section_targets": [
+        "section_10"
+      ],
+      "expected_envelope": "120-200 papers"
+    },
+    {
+      "id": "cluster_10_species_disease",
+      "name": "Species Differences, Human Relevance, and Disease",
+      "topics": [
+        "human VIP cells",
+        "Hodge BICCN human",
+        "Krienen primate",
+        "Rett (Mecp2)",
+        "autism (Cntnap2, Shank3)",
+        "schizophrenia",
+        "epilepsy",
+        "Alzheimer's VIP loss",
+        "VIPR1/2 pharmacology"
+      ],
+      "search_anchors": [
+        "human VIP interneuron",
+        "VIP Mecp2 Rett",
+        "VIP autism",
+        "VIP schizophrenia interneuron",
+        "VIP Alzheimer",
+        "primate VIP cortex"
+      ],
+      "section_targets": [
+        "section_11"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_11_computational_models",
+      "name": "Computational Models of VIP Circuit Function",
+      "topics": [
+        "mean-field VIP-SST-PV-Pyr models",
+        "stabilized supralinear network",
+        "predictive coding circuits",
+        "reinforcement-learning circuit mappings",
+        "spiking models with VIP",
+        "data-fit circuit models"
+      ],
+      "search_anchors": [
+        "VIP SST PV computational model",
+        "stabilized supralinear network interneuron",
+        "predictive coding cortical interneuron",
+        "circuit model disinhibition VIP"
+      ],
+      "section_targets": [
+        "section_12",
+        "section_13"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_12_sst_pv_context",
+      "name": "SST/PV Context for VIP (Adjacent Interneuron Literature)",
+      "topics": [
+        "SST Martinotti",
+        "SST non-Martinotti",
+        "PV fast-spiking basket",
+        "PV chandelier",
+        "SST-PV interactions",
+        "tripartite framework",
+        "GABAergic taxonomy reference"
+      ],
+      "search_anchors": [
+        "somatostatin Martinotti cortex",
+        "parvalbumin basket cell cortex",
+        "SST PV interneuron interaction",
+        "Tremblay Rudy interneuron review"
+      ],
+      "section_targets": [
+        "section_02",
+        "section_06",
+        "section_07",
+        "section_01"
+      ],
+      "expected_envelope": "250-350 papers (filtered to entries co-cited with VIP context)"
+    },
+    {
+      "id": "cluster_13_neuromodulation",
+      "name": "Neuromodulation of VIP Cells (ACh, 5-HT, NA)",
+      "topics": [
+        "cholinergic modulation of VIP",
+        "serotonergic modulation",
+        "noradrenergic modulation",
+        "nAChR/mAChR on VIP",
+        "neuromodulator-driven disinhibition"
+      ],
+      "search_anchors": [
+        "acetylcholine VIP interneuron",
+        "VIP cholinergic disinhibition",
+        "serotonin 5HT3a interneuron",
+        "noradrenaline VIP",
+        "neuromodulation cortical interneuron"
+      ],
+      "section_targets": [
+        "section_08",
+        "section_10"
+      ],
+      "expected_envelope": "120-200 papers"
+    }
+  ],
+  "review_request_path": "provenance/review_request.md"
+}

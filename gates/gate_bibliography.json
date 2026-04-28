@@ -1,0 +1,74 @@
+{
+  "gate": "pass",
+  "phase": "9V",
+  "iter": 1,
+  "total_entries": 1037,
+  "checks_run": [
+    "bib_syntax_balanced_braces",
+    "bib_entries_required_fields",
+    "cite_keys_unique",
+    "cite_keys_match_keymap_exactly",
+    "doi_unescaped_match_keymap",
+    "crossref_resolves_200_per_doi",
+    "author_crossref_match_first_surname",
+    "title_jaccard_gt_085",
+    "year_crossref_match_within_1",
+    "ascii_clean_author_title_journal",
+    "used_keys_present_in_bib_for_all_11_sections",
+    "no_placeholder_or_template_contamination"
+  ],
+  "failures": [
+    {
+      "check": "AUTHOR_CROSSREF_MATCH",
+      "key": "Argunsah2024",
+      "expected": "Argunşah",
+      "observed": "Argun?ah",
+      "severity": "minor",
+      "note": "character-substitution encoding loss in surname; DOI/year/title still match CrossRef"
+    },
+    {
+      "check": "AUTHOR_CROSSREF_MATCH",
+      "key": "Calin2023",
+      "expected": "Călin",
+      "observed": "C?lin",
+      "severity": "minor",
+      "note": "character-substitution encoding loss in surname; DOI/year/title still match CrossRef"
+    }
+  ],
+  "summary": {
+    "duplicates_count": 0,
+    "syntax_errors_count": 0,
+    "keymap_mismatch_count": 0,
+    "doi_mismatch_count": 0,
+    "used_but_missing_count": 0,
+    "contamination_count": 0,
+    "author_crossref_failures": 2,
+    "title_jaccard_failures": 0,
+    "year_crossref_failures": 0
+  },
+  "crossref_stats": {
+    "total_calls": 1037,
+    "http_200": 1037,
+    "http_404": 0,
+    "errors": 0,
+    "rate_limited": 0,
+    "observed_throughput_req_per_s": 6.7,
+    "concurrency": 3,
+    "rate_limit_headers": {
+      "x-rate-limit-limit": "10",
+      "x-rate-limit-interval": "1s",
+      "x-concurrency-limit": "3"
+    }
+  },
+  "cross_checks": {
+    "sections_scanned": 11,
+    "unique_used_keys": 413,
+    "used_in_bib_count": 413,
+    "used_missing_count": 0,
+    "orphan_keymap_keys": 0,
+    "spurious_bib_keys": 0,
+    "unused_bib_entries_count": 624
+  },
+  "notes": "All 1037 entries parsed with balanced braces; 0 duplicate cite-keys; cite-keys form an exact set bijection with the master keymap. All 1037 DOIs resolved 200 OK on CrossRef live (polite pool, mailto in UA). Per-entry first-author normalized comparison passed for 1035/1037; 2 minor failures (Argunsah2024, Calin2023) where the bib has literal \"?\" character-substitutions for the diacritic letters ş and ă in the first-author surname. These are cosmetic encoding defects — DOI/year/title metadata still match CrossRef and citation resolution is unaffected. All 413 cite-keys invoked across the 11 final section .md files (sec_02..sec_12) resolve to entries in references.bib. Build-report side-car claim \"ascii_clean=True / 0 duplicates / 0 missing DOI / 413 used keys covered\" verified. No placeholder/template/lorem text or fabricated metadata detected.",
+  "generated_at": "2026-04-28T01:58:55.329858+00:00"
+}

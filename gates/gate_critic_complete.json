@@ -1,0 +1,220 @@
+{
+  "phase": "8",
+  "gate_name": "critic_complete",
+  "result": "PASS",
+  "iterations": 2,
+  "max_iterations": 3,
+  "completed_at": "2026-04-27T17:56:54.072745Z",
+  "section_count": 11,
+  "summary": {
+    "total_must_fix": 0,
+    "total_should_caveat": 49,
+    "total_nit": 0,
+    "sections_pass": 11,
+    "sections_fail": 0
+  },
+  "iter1": {
+    "results": {
+      "09": {
+        "mf": 0,
+        "sc": 2,
+        "rec": "pass"
+      },
+      "02": {
+        "mf": 1,
+        "sc": 5,
+        "rec": "fail"
+      },
+      "05": {
+        "mf": 4,
+        "sc": 3,
+        "rec": "fail"
+      },
+      "03": {
+        "mf": 1,
+        "sc": 4,
+        "rec": "pass"
+      },
+      "04": {
+        "mf": 0,
+        "sc": 2,
+        "rec": "pass"
+      },
+      "12": {
+        "mf": 1,
+        "sc": 5,
+        "rec": "fail"
+      },
+      "10": {
+        "mf": 0,
+        "sc": 3,
+        "rec": "pass"
+      },
+      "06": {
+        "mf": 3,
+        "sc": 7,
+        "rec": "fail"
+      },
+      "08": {
+        "mf": 2,
+        "sc": 7,
+        "rec": "fail"
+      },
+      "11": {
+        "mf": 8,
+        "sc": 7,
+        "rec": "fail"
+      },
+      "07": {
+        "mf": 2,
+        "sc": 5,
+        "rec": "fail"
+      }
+    },
+    "fail_sections": [
+      "02",
+      "03",
+      "05",
+      "06",
+      "07",
+      "08",
+      "11",
+      "12"
+    ],
+    "pass_sections": [
+      "04",
+      "09",
+      "10"
+    ]
+  },
+  "iter2": {
+    "results": {
+      "03": {
+        "mf": 0,
+        "sc": 4,
+        "rec": "pass",
+        "critic_report_version_id": "e92acdd5-45c1-4e1e-860b-421acc605272"
+      },
+      "02": {
+        "mf": 0,
+        "sc": 7,
+        "rec": "pass",
+        "critic_report_version_id": "f415cbee-0040-4f3b-973f-b1bbf83eda6f"
+      },
+      "05": {
+        "mf": 0,
+        "sc": 3,
+        "rec": "pass",
+        "critic_report_version_id": "311a4e76-14fd-458d-9391-c7407ad3ac0e"
+      },
+      "08": {
+        "mf": 0,
+        "sc": 7,
+        "rec": "pass",
+        "critic_report_version_id": "aa7ce4d5-a3e4-4746-a775-efbd4b178d96"
+      },
+      "12": {
+        "mf": 0,
+        "sc": 5,
+        "rec": "pass",
+        "critic_report_version_id": "6ed9a5c7-bb9e-4da0-b156-a09ec8e53a63"
+      },
+      "07": {
+        "mf": 0,
+        "sc": 4,
+        "rec": "pass",
+        "critic_report_version_id": "adf9b9ef-f51d-4c33-b8b2-d1d854babe55"
+      },
+      "11": {
+        "mf": 0,
+        "sc": 6,
+        "rec": "pass",
+        "critic_report_version_id": "1b2f540e-7dea-44d4-9a31-3ae8d86929ae"
+      },
+      "06": {
+        "mf": 0,
+        "sc": 6,
+        "rec": "pass",
+        "critic_report_version_id": "dc4fe2a6-a9f7-4c4d-a904-d6b15128f260"
+      },
+      "04": {
+        "mf": 0,
+        "sc": 2,
+        "rec": "pass",
+        "critic_report_version_id": "ddc54507-8e18-4666-ba30-6d167dee2fae"
+      },
+      "09": {
+        "mf": 0,
+        "sc": 2,
+        "rec": "pass",
+        "critic_report_version_id": "d0005e40-6b6c-432d-a8d0-32ddc95980fb"
+      },
+      "10": {
+        "mf": 0,
+        "sc": 3,
+        "rec": "pass",
+        "critic_report_version_id": "ad100a61-bee4-4301-8b2b-6106cbb42246"
+      }
+    },
+    "fail_sections": [],
+    "pass_sections": [
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  "final_section_md_versions": {
+    "02": "ff4a82bc-e0b0-47f9-9ef9-0a25dfe4ecc7",
+    "03": "826da13e-327f-4758-bf76-af3a976589ed",
+    "04": "80614db7-4aad-495e-ab87-8e8ab8aa0791",
+    "05": "f4be8d08-b970-4991-aa56-90990fb413f4",
+    "06": "3ea73522-9241-4db2-8093-9d16163bc5e8",
+    "07": "c147538d-8d2f-4fa8-8eaf-e137b6709001",
+    "08": "e70ea35a-d9f6-4f27-a3cd-e86cb5ca9d6c",
+    "09": "44e803ad-d5c8-4467-abbc-1f8ad9d66cf4",
+    "10": "e18c4fb6-2a05-4165-82dd-f6511c7fe1aa",
+    "11": "b5456a7b-8a70-4d65-b42a-eb3da660d2cd",
+    "12": "db34c27f-a56c-444f-b43e-a95dd20e6426"
+  },
+  "writer_frames": {
+    "02": "346bcabe-b253-478b-804e-12a823afdfdd",
+    "03": "f0521b32-4c0e-43a5-9c89-b98e15dd8a69",
+    "04": "610f31c6-91ab-473e-8a7e-b1176c310f59",
+    "05": "78d3306d-2b8c-49e3-8fa7-f5d946ce5dcd",
+    "06": "d8f1b2af-104d-4142-afc3-6516d36970a3",
+    "07": "ac9ee67e-da3b-47c1-aee3-0c722a174c16",
+    "08": "cfdc31d2-4ecc-4954-b651-fd3391cc95f4",
+    "09": "b0414915-cfc4-455a-9f12-d804cc7c54fa",
+    "10": "efa71939-1684-4520-97eb-83f9b7f75923",
+    "11": "c7601b17-be1b-40c3-af88-b891d9c8711f",
+    "12": "53afb96c-14b7-40ce-a36c-7df2ade11d3e"
+  },
+  "critic_frames": {
+    "02": "8b754e15-c7c3-4ab6-84df-e4ea4149fa61",
+    "03": "a4781387-6302-4bd7-a2a3-57672cc37580",
+    "04": "66aa4956-c459-4a6f-88d6-e10eaf1030fa",
+    "05": "f50c569c-7c42-49a9-8786-70f7b7a9acf2",
+    "06": "c580da8b-d5fe-4691-b84d-84d2f245ffa8",
+    "07": "56e72858-2aa6-4821-955d-e085967fe671",
+    "08": "89e35bc0-36e4-472f-954d-21dd1845dadd",
+    "09": "8bda4ec8-6a84-49d8-bea4-180bb8ea544b",
+    "10": "7e6bb910-aa01-46fa-bc4a-f35b48bd7687",
+    "11": "40f05033-1655-4be8-ad00-da28f9646e8f",
+    "12": "8d45b463-51ee-47e5-a802-d326c5edfbea"
+  },
+  "remediation_protocol": {
+    "trigger": "MUST_FIX > 0 in any section",
+    "send_back_target": "original writer (NOT critic)",
+    "writer_constraint": "fix MUST_FIX only; preserve anchor; map-valid cite-keys only",
+    "critic_re_audit": "same critic frame re-runs against new section .md"
+  },
+  "notes": "Phase 8 send-back protocol executed per orchestrator v27. Iter1 surfaced 22 MUST_FIX across 8 sections. Iter2 cleared all MUST_FIX. 49 SHOULD_CAVEAT items carried forward as non-blocking polish notes. 3 sections passed at iter1 (sec_04, 09, 10) \u2014 carryover. sec_08 'PRESENT-AS-GAP' rule applied for 4 corpus-missing scaffold cite-keys (Johnson2020, Ramamurthy2021, Vervaeke2024, Beerendonk2024)."
+}

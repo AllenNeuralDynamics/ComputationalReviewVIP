@@ -1,0 +1,103 @@
+{
+  "phase": 7,
+  "iteration": 2,
+  "gate": "fail",
+  "total_failures": 4,
+  "per_section": {
+    "sec_02": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_03": {
+      "status": "fail",
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "first non-blank line is not a (sec-...)= anchor: '# Developmental Origins and Postnatal Maturation'"
+        }
+      ],
+      "failure_count": 1
+    },
+    "sec_04": {
+      "status": "fail",
+      "failures": [
+        {
+          "check": "SECTION_ANCHOR_PRESENT",
+          "detail": "first non-blank line is not a (sec-...)= anchor: '# Morphological Diversity'"
+        }
+      ],
+      "failure_count": 1
+    },
+    "sec_05": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_06": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_07": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_08": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_09": {
+      "status": "fail",
+      "failures": [
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "scaffold-flagged (process-sense scaffold): ...flict in V1** \u2014 the scaffold-flagged conflict between Xu 2026 and Lenkey 202..."
+        },
+        {
+          "check": "FORBIDDEN_LEXICON",
+          "detail": "scaffold-flagged (process-sense scaffold): ...m-LTD reset** \u2014 the scaffold-flagged conflict between Neubrandt 2025 and Jab..."
+        }
+      ],
+      "failure_count": 2
+    },
+    "sec_10": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_11": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    },
+    "sec_12": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0
+    }
+  },
+  "summary_by_check": {
+    "SECTION_ANCHOR_PRESENT": 2,
+    "FORBIDDEN_LEXICON": 2
+  },
+  "checks_run": [
+    "SECTION_ANCHOR_PRESENT",
+    "CITE_KEYS_EXIST",
+    "FIGURE_FENCE_SYNTAX",
+    "FIGURE_HAS_IMAGE_PATH",
+    "NO_BARE_AUTHOR_NAMES",
+    "FORBIDDEN_LEXICON",
+    "NO_LABEL_DIRECTIVE",
+    "NO_DUPLICATE_NAME"
+  ],
+  "valid_cite_keys_loaded": 1037,
+  "remediation_progress": {
+    "iteration_1_failures": 211,
+    "iteration_2_failures": 4,
+    "delta": 207
+  },
+  "gate_passed": false
+}

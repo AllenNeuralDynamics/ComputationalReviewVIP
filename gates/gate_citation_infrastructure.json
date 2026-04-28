@@ -1,0 +1,15 @@
+{
+  "phase": 3,
+  "actor_complete": true,
+  "citation_key_map_vid": "1fecfde0-a5e8-4748-90cc-f86d0945b6ef",
+  "author_name_table_vid": "cdd3608c-e6f5-46cb-8587-3fdde35db973",
+  "phase4_scaffold_vid": "b56e85e3-6ff0-4ee6-a673-93263c674bb9",
+  "total_dois_input": 1037,
+  "total_dois_mapped": 1037,
+  "crossref_resolutions": 1037,
+  "europepmc_fallbacks": 0,
+  "crossref_failures": 0,
+  "crossref_failure_dois": [],
+  "ascii_failures": 51,
+  "collision_disambiguations": 106
+}

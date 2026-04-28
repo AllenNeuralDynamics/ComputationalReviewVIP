@@ -1,0 +1,27 @@
+{
+  "phase": 4,
+  "gate": "pass",
+  "approved_by": "coordinator",
+  "scaffold_vid": "01bea2ad-6fba-4121-ad06-f4c1b0e88425",
+  "scaffold_summary_vid": "b3df0ff8-90ac-4a03-bc5e-bf2630ea5238",
+  "actor_manifest_vid": "5a46ed47-80e5-429d-b119-e7a0c91eb954",
+  "checks": {
+    "n_sections": 13,
+    "n_figures": 26,
+    "figs_per_section_min": 2,
+    "every_section_has_connection_prev": true,
+    "every_section_has_connection_next": true,
+    "every_section_has_cross_ref_label": true,
+    "every_section_has_thesis": true,
+    "cross_ref_labels_unique": true,
+    "all_cross_references_valid": true,
+    "n_recurring_themes": 6,
+    "n_conflicts_mapped_in_roadmap": 10,
+    "figure_roadmap_entries": 26,
+    "total_word_target": 63000,
+    "n_sections_with_conflicts_to_present": 13
+  },
+  "blocking_failures": [],
+  "transition": "phase_4_to_phase_5_authorized",
+  "notes": "Coordinator-side mechanical check. Scaffold v2 (post figure-expansion send_message) meets all orchestrator-v27 transition criteria: connections present in every section, cross-ref slugs unique and self-consistent, conflicts surfaced (10 in roadmap + 60 conflicts_to_present entries summed across sections), figure roadmap has \u22652 figures per section. Phase 5 (Evidence Curation, DATAML actor) authorized."
+}

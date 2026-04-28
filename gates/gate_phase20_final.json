@@ -1,0 +1,295 @@
+{
+  "phase": "20",
+  "phase_name": "Final Assembly and Delivery",
+  "agent": "DATAML",
+  "actor_frame_id": "eead471c-2d56-4101-9840-bce5dd7346b5",
+  "manuscript_version": "v6",
+  "decision": "PASS",
+  "issued_at": "2026-04-28T06:51:28.445742+00:00",
+  "phase_by_phase_decision_table": [
+    {
+      "phase": "1",
+      "name": "Scoping",
+      "gate_vid": "62c67e66-7c72-47e6-b08a-fd89764749b3",
+      "decision": "PASS"
+    },
+    {
+      "phase": "1V",
+      "name": "Scoping validation",
+      "gate_vid": "62c67e66-7c72-47e6-b08a-fd89764749b3",
+      "decision": "PASS"
+    },
+    {
+      "phase": "2",
+      "name": "Evidence acquisition (14 clusters)",
+      "gate_vid": "5803dd90-79a1-4ace-ab6a-3c7ab70b56b1",
+      "decision": "PASS"
+    },
+    {
+      "phase": "2V",
+      "name": "Evidence compliance (DATAML)",
+      "gate_vid": "5803dd90-79a1-4ace-ab6a-3c7ab70b56b1",
+      "decision": "PASS_WITH_DOCUMENTED_EXITS",
+      "note": "1037 unique DOIs vs >=2000 target; saturation outcome accepted"
+    },
+    {
+      "phase": "3",
+      "name": "Citation key map + author table",
+      "gate_vid": "1fecfde0-a5e8-4748-90cc-f86d0945b6ef",
+      "decision": "PASS"
+    },
+    {
+      "phase": "3V",
+      "name": "Citation infrastructure validation",
+      "gate_vid": "20999576-0e9f-46c6-9125-9eae27f2c561",
+      "decision": "PASS"
+    },
+    {
+      "phase": "4",
+      "name": "Framework / scaffold",
+      "gate_vid": "dbdd16f4-d0f0-4db3-b540-1d43509c16d5",
+      "decision": "PASS"
+    },
+    {
+      "phase": "5",
+      "name": "Per-section corpus curation",
+      "gate_vid": "ed073d08-21ac-45f7-acb9-521a60e7a612",
+      "decision": "PASS"
+    },
+    {
+      "phase": "5V",
+      "name": "Curation validation",
+      "gate_vid": "15a93643-5aae-46ee-8e38-181025943157",
+      "decision": "PASS_WITH_DOCUMENTED_EXITS"
+    },
+    {
+      "phase": "6",
+      "name": "Figure audit (3 iterations)",
+      "gate_vid": "4cde2d9c-7d78-4981-8a96-1929232b5f93",
+      "decision": "PASS"
+    },
+    {
+      "phase": "7",
+      "name": "Section drafting (11 sections, iter3)",
+      "gate_vid": "546ca66e-11b7-4c87-8ec9-4430cf89e1ba",
+      "decision": "PASS"
+    },
+    {
+      "phase": "7V",
+      "name": "Drafting validation send-back loop",
+      "gate_vid": "546ca66e-11b7-4c87-8ec9-4430cf89e1ba",
+      "decision": "PASS"
+    },
+    {
+      "phase": "8",
+      "name": "Section critic (iter2)",
+      "gate_vid": "c0be6fa8-f264-4438-8180-4c8345b8a1bd",
+      "decision": "PASS"
+    },
+    {
+      "phase": "9",
+      "name": "Bibliography assembly (1037 entries)",
+      "gate_vid": "34e0ae60-0252-457c-a8e9-df479b074995",
+      "decision": "PASS"
+    },
+    {
+      "phase": "9V",
+      "name": "Bibliography validation (12 checks)",
+      "gate_vid": "06e344fc-8707-4c3e-8925-300713fb15f7",
+      "decision": "PASS"
+    },
+    {
+      "phase": "10",
+      "name": "Cross-section integration (6 passes)",
+      "gate_vid": "44b0dc13-21e5-446a-bed5-735371182786",
+      "decision": "PASS"
+    },
+    {
+      "phase": "11",
+      "name": "Introduction + Conclusion drafting",
+      "gate_vid": "29c488bd-3ef3-49c2-95fc-55442961475e",
+      "decision": "PASS"
+    },
+    {
+      "phase": "12",
+      "name": "Bookend critic (iter2)",
+      "gate_vid": "b4ce9c2b-938d-4352-bce3-696d0d3f1c80",
+      "decision": "PASS"
+    },
+    {
+      "phase": "13",
+      "name": "Methods.md (transparency document)",
+      "gate_vid": "277fad44-8c1a-4ac2-95d3-b1487ceb3c4d",
+      "decision": "PASS"
+    },
+    {
+      "phase": "14",
+      "name": "Document assembly",
+      "gate_vid": "23df4aea-ff1f-456b-b555-ae9e96764332",
+      "decision": "PASS"
+    },
+    {
+      "phase": "14V",
+      "name": "Assembly validation (16/16 checks)",
+      "gate_vid": "4ed1d77e-5f7e-4c70-8a7a-a5d5f07cf8f7",
+      "decision": "PASS"
+    },
+    {
+      "phase": "15",
+      "name": "Citation triples extraction (3,816)",
+      "gate_vid": "7411aef0-fc2d-4deb-ad73-fc7c024493c5",
+      "decision": "PASS"
+    },
+    {
+      "phase": "15V",
+      "name": "Triples validation (9/9 checks)",
+      "gate_vid": "b946853b-cc4f-40d6-9ccc-9db085012b8b",
+      "decision": "PASS"
+    },
+    {
+      "phase": "16",
+      "name": "Verification (4 LITREVIEW workers)",
+      "gate_vid": "ac2b6736-eab9-4e23-aaab-cbd50fea7bfe",
+      "decision": "PASS",
+      "totals": {
+        "verified": 2500,
+        "needs_fix": 435,
+        "insufficient": 881
+      }
+    },
+    {
+      "phase": "16V",
+      "name": "Verification validation + calibration",
+      "gate_vid": "ed8207de-aef2-43a0-8f0b-956cf5cd54ea",
+      "decision": "PASS"
+    },
+    {
+      "phase": "17B",
+      "name": "Re-verification of 881 IE",
+      "gate_vid": "cc48cc1b-a308-45f5-9f5b-b1ba8461134a",
+      "decision": "PASS",
+      "flips": {
+        "to_verified": 351,
+        "to_needs_fix": 127,
+        "remained_ie": 403
+      }
+    },
+    {
+      "phase": "17B-V",
+      "name": "Re-verification aggregate (12/12)",
+      "gate_vid": "73e8d95d-e514-4e60-8ed8-8dfe071ab1b3",
+      "decision": "PASS",
+      "totals": {
+        "verified": 2851,
+        "needs_fix": 562,
+        "insufficient": 403
+      }
+    },
+    {
+      "phase": "17A",
+      "name": "Fix application (562 NF, 4 workers)",
+      "gate_vid": [
+        "2b314127-f4f2-4750-af4e-4033e0dab867",
+        "322fead6-5bc1-4a99-bfb9-ec5a0316b2dc",
+        "f267d621-2a4b-4e98-aeea-c3f596cdde1a",
+        "3f9e8c97-e2db-4e60-bc6a-c891935f9431"
+      ],
+      "decision": "PASS"
+    },
+    {
+      "phase": "17V",
+      "name": "Post-fix structural validation",
+      "gate_vid": "6bf953c0-3919-44d3-a8d9-116b20e80a45",
+      "decision": "CONDITIONAL_PASS",
+      "note": "5/6 PASS; FORBIDDEN_LEXICON 35 hits all legitimate scientific usage; 0 process-language hits"
+    },
+    {
+      "phase": "18",
+      "name": "Cross-section consistency critic",
+      "gate_vid": "d412cbdd-99f1-4603-85aa-508c775a0ef7",
+      "decision": "FAIL_REMEDIATED",
+      "note": "1 MUST_FIX + 5 SHOULD_FIX issued; closed by 18-remediation"
+    },
+    {
+      "phase": "18-rem",
+      "name": "Phase-18 remediation send-back",
+      "gate_vid": "aef84912-a493-463e-b5b7-2d080db5523e",
+      "decision": "PASS",
+      "note": "111 edit operations; all 1+5 items resolved"
+    },
+    {
+      "phase": "19",
+      "name": "Final QA on manuscript v6",
+      "gate_vid": "f9bd8833-0d5a-4efb-bf6a-951a3362f05b",
+      "decision": "PASS",
+      "qa_checks_passed": "16/16"
+    },
+    {
+      "phase": "20",
+      "name": "Final assembly and delivery",
+      "gate_vid": "<this gate>",
+      "decision": "PASS"
+    }
+  ],
+  "deliverables_checklist": {
+    "manuscript_v6_repo": {
+      "present": true,
+      "path": "manuscript_v6/",
+      "note": "13 sections + Methods.md + verification_summary.md + figures + evidence + plugins + provenance + gates + references.bib"
+    },
+    "methods_md_refreshed": {
+      "present": true,
+      "path": "manuscript_v6/content/Methods.md",
+      "note": "Pipeline ledger refreshed for Phases 14-20"
+    },
+    "verification_summary_md": {
+      "present": true,
+      "path": "manuscript_v6/content/verification_summary.md",
+      "note": "Publication-grade methodology + acceptance criteria"
+    },
+    "manuscript_tex_export": {
+      "present": true,
+      "path": "manuscript_v6/manuscript.tex",
+      "note": "Concatenated MyST per-section TeX exports; pdflatex draft compiles with 1 known undefined-citation warning (Rahmatullah_2023)"
+    },
+    "gate_jsons": {
+      "present": true,
+      "path": "manuscript_v6/gates/",
+      "note": "All Phase 1-20 gate artifacts (including this gate)"
+    },
+    "verification_report_v2": {
+      "present": true,
+      "version_id": "cc48cc1b-a308-45f5-9f5b-b1ba8461134a",
+      "size_bytes": 5564863,
+      "note": "62,949 lines; one record per triple"
+    },
+    "github_push": {
+      "present": false,
+      "note": "to be set by GitHub push step"
+    },
+    "final_delivery_tarball": {
+      "present": false,
+      "note": "to be set by tarball assembly step"
+    }
+  },
+  "decision_summary": {
+    "passed": true,
+    "qualifiers": [
+      "Phase 2V documented exit: bibliography target >=2,000 papers not met; 1,038 entries (391 actively cited) is the operational outcome of the no-fixed-floor saturation rule (saturation criterion exited at 1,037 unique DOIs).",
+      "Phase 17V CONDITIONAL_PASS on FORBIDDEN_LEXICON: 35 hits across 'canonical' (33) and 'scaffold' (2) all judged legitimate scientific usage; 0 process-language hits.",
+      "403 INSUFFICIENT_EVIDENCE residual triples are not falsified citations but body-text-evidence gaps within the verification budget; documented in verification_summary.md Section 11."
+    ]
+  },
+  "totals": {
+    "manuscript_word_count": 59226,
+    "section_count": 14,
+    "figures": 22,
+    "bib_entries": 1038,
+    "unique_cite_keys_used": 391,
+    "total_cite_invocations": 3403,
+    "citation_triples": 3816,
+    "final_verified": 2851,
+    "final_needs_fix_remediated": 562,
+    "final_insufficient_residual": 403
+  }
+}

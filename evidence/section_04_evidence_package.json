@@ -1,0 +1,1292 @@
+{
+  "section_id": "section_04",
+  "section_title": "Morphological Diversity",
+  "cluster_ids": [
+    "cluster_03_morphology"
+  ],
+  "tier": "supporting",
+  "paper_count_unique": 33,
+  "finding_count": 57,
+  "findings": [
+    {
+      "doi": "10.3389/fnana.2014.00052",
+      "title": null,
+      "claim": "Cortical calretinin-expressing interneurons (a major component of the VIP/CGE class) display somatodendritic morphologies that range continuously from bipolar to multipolar.",
+      "claim_source_sentence": "They display different somatodendritic morphologies ranging from bipolar to multipolar (Jacobowitz and Winsky, 1991 ; Kubota et al., 1994 ; Gonchar and Burkhalter, 1997 ; Gonchar et al., 2008 ; Caputi et al., 2009 ).",
+      "text_access": "fulltext",
+      "effect_size": "bipolar–multipolar morphological continuum",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Synthesis review citing five independent immunohistochemistry/morphology studies in rodent cortex.",
+      "effect_size_source_sentence": null,
+      "study_system": "rodent neocortex; review of cortical CR/VIP interneurons",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-08-02701.1996",
+        "10.1093/cercor/bhx220",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Cauli2014",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 0
+    },
+    {
+      "doi": "10.1523/jneurosci.16-08-02701.1996",
+      "title": null,
+      "claim": "VIP-containing rat frontal cortex cells comprise four distinct morphological forms: bipolar cells with predominantly descending axonal collaterals, double bouquet cells, small basket cells with short descending axons forming pericellular boutons, and arcade cells with short ascending axons.",
+      "claim_source_sentence": "VIP cells included neurons the main descending axons of which had more descending than ascending collaterals (bipolar cells and double bouquet cells). Two other morphological forms of the VIP cells were those with short descending axons with collaterals bearing multiple boutons on other cell bodies (small basket cells) or with short ascending main axons with collaterals forming arcades (arcade cells).",
+      "text_access": "abstract_only",
+      "effect_size": "four canonical morphological VIP subtypes",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Whole-cell recording with biocytin filling and immunohistochemistry for VIP in rat frontal cortex slices; electron-microscopic confirmation of GABAergic symmetric synapses.",
+      "effect_size_source_sentence": null,
+      "study_system": "rat frontal cortex (juvenile), in vitro slice + biocytin",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.17-10-03894.1997",
+        "10.3389/fnana.2014.00052",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Kawaguchi1996",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 1
+    },
+    {
+      "doi": "10.1523/jneurosci.16-08-02701.1996",
+      "title": null,
+      "claim": "VIP-immunoreactive cortical interneurons have vertically biased axonal arbors that terminate in GABA-immunoreactive symmetrical (inhibitory) synapses.",
+      "claim_source_sentence": "Morphologically, both somatostatin- and VIP-containing cells had vertical axonal arbors terminating in symmetrical synapses that were immunoreactive for GABA in electron micrographs.",
+      "text_access": "abstract_only",
+      "effect_size": "vertical (radially oriented) axonal arborization",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Combined whole-cell recording, biocytin reconstruction and post-embedding GABA immuno-EM.",
+      "effect_size_source_sentence": null,
+      "study_system": "rat frontal cortex slice",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhx220",
+        "10.1093/cercor/bhv202"
+      ],
+      "cite_key": "Kawaguchi1996",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 2
+    },
+    {
+      "doi": "10.1523/jneurosci.16-10-03397.1996",
+      "title": null,
+      "claim": "Calretinin-immunoreactive interneurons (homologous to cortical CR/VIP interneuron-selective cells) preferentially target other GABAergic interneurons including VIP-containing basket cells, while sparing parvalbumin-positive basket and axo-axonic cells.",
+      "claim_source_sentence": "Using double immunocytochemistry, CR-IR cells were shown to heavily innervate calbindin D 28k-containing interneurons and VIP-containing basket cells but avoided the parvalbumin-containing basket and axo-axonic cells.",
+      "text_access": "abstract_only",
+      "effect_size": "selective interneuron-targeting connectivity",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Postembedding GABA immunogold EM combined with double immunocytochemistry on biocytin-filled or immunoreactive interneurons in rat hippocampus.",
+      "effect_size_source_sentence": null,
+      "study_system": "rat hippocampus, EM/immuno",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhp310",
+        "10.1002/dneu.20853"
+      ],
+      "cite_key": "Gulyas1996",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 3
+    },
+    {
+      "doi": "10.1523/jneurosci.17-10-03894.1997",
+      "title": null,
+      "claim": "A subpopulation of vertically oriented bipolar cortical interneurons co-express calretinin and VIP and exhibit irregular-spiking firing, defining a discrete CR+/VIP+ bipolar morphological subtype.",
+      "claim_source_sentence": "Finally, a small population of vertically oriented bipolar cells, termed irregular spiking cells (n = 15), fired bursts of action potentials at an irregular frequency. They consistently co-expressed calretinin and vasoactive intestinal polypeptide.",
+      "text_access": "abstract_only",
+      "effect_size": "n=15 bipolar irregular-spiking cells / 97 sampled",
+      "n": 97,
+      "replication_status": "replicated",
+      "evidence": "Whole-cell recording with single-cell RT-PCR for 3 CaBPs + 4 neuropeptides in 97 nonpyramidal cells of rat sensory-motor cortex.",
+      "effect_size_source_sentence": "Finally, a small population of vertically oriented bipolar cells, termed irregular spiking cells (n = 15), fired bursts of action potentials at an irregular frequency.",
+      "study_system": "rat sensorimotor cortex slice; whole-cell + scRT-PCR",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-08-02701.1996",
+        "10.1093/cercor/bhp310"
+      ],
+      "cite_key": "Cauli1997",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 4
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "title": null,
+      "claim": "In the Allen Institute Patch-seq atlas (mouse VISp), the Vip transcriptomic subclass divides morphologically into bipolar, bitufted, and multipolar cells, with layer-specific axon innervation defining the principal axis of MET-type identity.",
+      "claim_source_sentence": "For example, the Pvalb subclass can be split into basket (and related) cells and chandelier cells; the Sst subclass into Martinotti cells and non-Martinotti cells; the Vip subclass into bipolar, bitufted and multipolar cells; and the Htr3a+/Vip- subclass into neurogliaform cells and single bouquet cells.",
+      "text_access": "fulltext",
+      "effect_size": "3 morphological VIP subclasses (bipolar, bitufted, multipolar)",
+      "n": 517,
+      "replication_status": "replicated",
+      "evidence": "Patch-seq with full local biocytin morphology reconstruction in 517 mouse VISp interneurons; integration of t/e/m modalities into 28 met-types.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse primary visual cortex (VISp) Patch-seq",
+      "replication_evidence_dois": [
+        "10.1101/2020.02.03.932244",
+        "10.1126/science.adf6484"
+      ],
+      "cite_key": "Gouwens2020a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 5
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "title": null,
+      "claim": "Layer-specific axon innervation pattern is the defining morphological feature that distinguishes Patch-seq MET-types of cortical GABAergic interneurons (including VIP MET-types).",
+      "claim_source_sentence": "We identify layer-specific axon innervation pattern as a defining feature distinguishing different met-types.",
+      "text_access": "fulltext",
+      "effect_size": "laminar axon distribution as primary discriminator",
+      "n": 517,
+      "replication_status": "replicated",
+      "evidence": "Quantification of laminar axon and dendrite distributions across 4,200 t-typed and 517 morphologically reconstructed neurons.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse VISp Patch-seq, full local morphology reconstructions",
+      "replication_evidence_dois": [
+        "10.1101/2020.02.03.932244",
+        "10.1093/cercor/bhx220"
+      ],
+      "cite_key": "Gouwens2020a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 6
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "title": null,
+      "claim": "The mouse VISp Vip subclass partitions into five distinct morphoelectric/transcriptomic met-types (Vip-MET-1 to Vip-MET-5), all resembling bipolar or bitufted cells but differing in laminar axon innervation pattern.",
+      "claim_source_sentence": "We identified five Vip met-types ( Figure 7I – L ), all resembling bipolar or bitufted cells ( Peters and Kara, 1985 ; Prönneke et al., 2015 ).",
+      "text_access": "fulltext",
+      "effect_size": "5 Vip MET-types",
+      "n": 517,
+      "replication_status": "needs_replication",
+      "evidence": "Patch-seq + biocytin morphology + integrated t/e/m clustering of mouse VISp Vip neurons.",
+      "effect_size_source_sentence": "We identified five Vip met-types ( Figure 7I – L ), all resembling bipolar or bitufted cells ( Peters and Kara, 1985 ; Prönneke et al., 2015 ).",
+      "study_system": "mouse VISp Patch-seq",
+      "replication_evidence_dois": [
+        "10.1126/science.adf6484"
+      ],
+      "cite_key": "Gouwens2020a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 7
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "title": null,
+      "claim": "Vip-MET-5 (containing Vip Crispld2 t-types) is the principal L1-projecting VIP met-type — innervating all cortical layers including L1 — and has elevated hyperpolarization-evoked sag compared with the L2/3-targeting Vip met-types.",
+      "claim_source_sentence": "The final Vip met-type, Vip-MET-5 (containing cells from the t-types Vip Crispld2 Htr2c and Vip Crispld2 Kcne4) innervated all layers, including L1 ( Figure 7I ) and had more hyperpolarization-induced sag, similar to Vip-MET-4 ( Figure 7L ).",
+      "text_access": "fulltext",
+      "effect_size": "L1+all-layer axonal innervation in Vip-MET-5",
+      "n": 517,
+      "replication_status": "needs_replication",
+      "evidence": "Quantitative laminar axon-distribution profiling of biocytin-reconstructed Patch-seq Vip cells.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse VISp Patch-seq",
+      "replication_evidence_dois": [
+        "10.1126/science.adf6484"
+      ],
+      "cite_key": "Gouwens2020a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 8
+    },
+    {
+      "doi": "10.1016/j.cell.2020.09.057",
+      "title": null,
+      "claim": "Vip-MET-1 occupies L2/3–L4, has bitufted dendrites extending into L1 and a concentrated axon plexus in lower L2/3, while Vip-MET-2 shares laminar position but exhibits a deep-biased and broader axon distribution spanning L2/3 to L6 but avoiding L4.",
+      "claim_source_sentence": "Vip-MET-1 had cells primarily in L2/3 and L4, with bitufted dendrites extending into L1, and a fairly concentrated axon innervation of lower L2/3.",
+      "text_access": "fulltext",
+      "effect_size": "laminar bias differences (L2/3 vs L2/3–L6 ex-L4)",
+      "n": 517,
+      "replication_status": "unreplicated",
+      "evidence": "Per-met-type laminar axon-density profiles from biocytin reconstructions.",
+      "effect_size_source_sentence": "Vip-MET-2 also exhibited more distributed axon innervation, spanning L2/3 to L6, but mostly avoiding L4.",
+      "study_system": "mouse VISp Patch-seq",
+      "replication_evidence_dois": [],
+      "cite_key": "Gouwens2020a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 9
+    },
+    {
+      "doi": "10.1038/nn.3544",
+      "title": null,
+      "claim": "VIP interneurons in mouse S1 cortex preferentially inhibit somatostatin (SST)-expressing interneurons, generating dendrite-targeted disinhibition during whisking — consistent with a disinhibition role implied by VIP morphology being concentrated near interneuron somata in L2/3.",
+      "claim_source_sentence": "These VIP interneurons preferentially inhibited somatostatin-expressing interneurons, neurons that target the distal dendrites of pyramidal cells.",
+      "text_access": "fulltext",
+      "effect_size": "VIP→SST disinhibitory pathway",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Channelrhodopsin-assisted circuit mapping (CRACM) of vM1→S1 axons targeting different S1 interneuron classes; in vivo imaging.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse barrel cortex; CRACM + 2P imaging",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhx220",
+        "10.1093/cercor/bhv202"
+      ],
+      "cite_key": "Lee2013",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 10
+    },
+    {
+      "doi": "10.1093/cercor/bhv202",
+      "title": null,
+      "claim": "VIP interneurons in mouse barrel cortex display a substantially broader morphological repertoire than the classical bipolar form, including bipolar/bitufted, tufted, and multipolar somatodendritic configurations, with a distinct deep-layer (L4–6) population separable from the canonical L2/3 bipolar cells.",
+      "claim_source_sentence": "VIP neurons from the barrel cortex of mice show a much greater variability in morphological properties than the classical bipolar neuron described in the early literature ( Morrison et al. 1984 ).",
+      "text_access": "fulltext",
+      "effect_size": "multimodal morphology distribution; distinct L2/3 vs L4–6 populations",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Whole-cell recording with biocytin filling and reconstruction in VIPcre/tdTomato barrel cortex slices, sampled across all cortical layers.",
+      "effect_size_source_sentence": "Our main findings include the fact that besides layer II/III-located bipolar/bitufted cells, there is a significantly different population of VIP neurons in layers IV–VI.",
+      "study_system": "mouse barrel cortex; VIPcre/tdTomato + biocytin",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057",
+        "10.3389/fnana.2014.00052"
+      ],
+      "cite_key": "Pronneke2015",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 11
+    },
+    {
+      "doi": "10.1093/cercor/bhv202",
+      "title": null,
+      "claim": "In VIPcre/tdTomato barrel cortex, the majority of VIP neurons emit their main axon not from the soma but from a dendrite directed toward the white matter — a distinctive morphological feature shared across VIP morphological subtypes.",
+      "claim_source_sentence": "Interestingly, the majority of axons of VIP neurons emanated not directly from the cell body, but from a dendrite extending toward the white matter.",
+      "text_access": "fulltext",
+      "effect_size": "dendrite-emerging axon majority across VIP cells",
+      "n": 0,
+      "replication_status": "needs_replication",
+      "evidence": "Single-cell biocytin fills and 3D reconstruction of VIPcre/tdTomato neurons.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse barrel cortex; VIPcre slice + biocytin",
+      "replication_evidence_dois": [],
+      "cite_key": "Pronneke2015",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 12
+    },
+    {
+      "doi": "10.1093/cercor/bhp310",
+      "title": null,
+      "claim": "Cortical 5-HT3aR-expressing interneurons (which encompass the entire VIP class) split into two morphological populations: a VIP+ subset with characteristic bipolar/bitufted dendritic and axonal morphology, and a VIP–/NPY+ subset with more complex dendritic arborization.",
+      "claim_source_sentence": "The first population was characterized by the frequent expression of the vasoactive intestinal peptide and a typical bipolar/bitufted morphology, whereas the second population expressed predominantly the neuropeptide Y and exhibited more complex dendritic arborizations.",
+      "text_access": "fulltext",
+      "effect_size": "bipolar/bitufted as defining VIP morphology",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "In situ hybridization, immunohistochemistry, fate mapping in 5HT3aR-BAC transgenic mice; biocytin fills.",
+      "effect_size_source_sentence": "VIP-positive cells are characterized by their bipolar, vertically oriented main dendrites and axon ( B 3).",
+      "study_system": "mouse neocortex; 5-HT3aR-BAC transgenic + ISH",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-08-02701.1996",
+        "10.1093/cercor/bhv202"
+      ],
+      "cite_key": "Vucurovic2010",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 13
+    },
+    {
+      "doi": "10.1523/jneurosci.1021-21.2021",
+      "title": null,
+      "claim": "Cortical VIP interneurons split into two molecularly and morphologically distinct subtypes during development: a calretinin-expressing (CR+) bipolar subtype and a cholecystokinin-expressing (CCK+) multipolar subtype, regulated by partially separable genetic programs.",
+      "claim_source_sentence": "Prox1 removal during embryonic development impairs VIP cell migration, cell survival, as well as dendritic development and afferent connectivity of the calretinin-expressing (CR+) VIP bipolar subtype (Miyoshi et al., 2015).",
+      "text_access": "fulltext",
+      "effect_size": "CR+ bipolar vs CCK+ multipolar molecular dichotomy",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "VIPCre conditional Prox1 deletion during early postnatal life; immunolabel + morphology + slice electrophysiology in mouse cortex.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse cortex; VIPCre conditional KO + biocytin",
+      "replication_evidence_dois": [
+        "10.1038/s41586-020-2907-3",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Stachniak2021",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 14
+    },
+    {
+      "doi": "10.1002/dneu.20853",
+      "title": null,
+      "claim": "The VIP class is morphologically heterogeneous, comprising bipolar, bitufted, and multipolar interneurons with distinct molecular markers and electrophysiological properties.",
+      "claim_source_sentence": "There seem to be several types of VIP interneurons, including neurons with bipolar, bitufted, and multipolar morphologies expressing different markers and exhibiting different intrinsic electrophysiological properties.",
+      "text_access": "fulltext",
+      "effect_size": "multiple morphological subtypes within VIP class",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Synthesis review of cortical 5HT3aR/VIP interneurons across mouse studies.",
+      "effect_size_source_sentence": null,
+      "study_system": "rodent neocortex; review",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057",
+        "10.1093/cercor/bhv202"
+      ],
+      "cite_key": "Rudy2011",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 15
+    },
+    {
+      "doi": "10.1002/dneu.20853",
+      "title": null,
+      "claim": "VIP-positive cortical basket cells, with axonal terminals surrounding pyramidal somata, have been described but represent a minority of the VIP morphological repertoire.",
+      "claim_source_sentence": "VIP-expressing basket cells with putative synaptic terminals surrounding the somata of other cells have been described but seem not to be abundant.",
+      "text_access": "fulltext",
+      "effect_size": "VIP basket cells = small fraction of VIP class",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Synthesis citing Kawaguchi & Kubota 1996 et al.",
+      "effect_size_source_sentence": null,
+      "study_system": "rodent neocortex; review",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-08-02701.1996"
+      ],
+      "cite_key": "Rudy2011",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 16
+    },
+    {
+      "doi": "10.1002/dneu.20853",
+      "title": null,
+      "claim": "Approximately 40% of cortical VIP interneurons co-express calretinin, defining the canonical CR+/VIP+ interneuron-selective (IS) cell subset.",
+      "claim_source_sentence": "A significant fraction of VIP neurons (40%) express CR, which, as described earlier, is also expressed in a fraction of SST neurons, as well as in interneurons that do not express VIP or SST ( Cauli et al., 2000 ; Caputi et al., 2008 ; Lee et al., 2010 ; Miyoshi et al., 2010 ).",
+      "text_access": "fulltext",
+      "effect_size": "40%",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Triple/quadruple immunostaining studies (Cauli, Caputi, Lee, Miyoshi).",
+      "effect_size_source_sentence": "A significant fraction of VIP neurons (40%) express CR, which, as described earlier, is also expressed in a fraction of SST neurons, as well as in interneurons that do not express VIP or SST ( Cauli et al., 2000 ; Caputi et al., 2008 ; Lee et al., 2010 ; Miyoshi et al., 2010 ).",
+      "study_system": "mouse neocortex; review of immunostaining studies",
+      "replication_evidence_dois": [
+        "10.3389/neuro.05.003.2007",
+        "10.1002/cne.22229"
+      ],
+      "cite_key": "Rudy2011",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 17
+    },
+    {
+      "doi": "10.1093/cercor/bhx220",
+      "title": null,
+      "claim": "VIP interneurons in mouse barrel cortex innervate primarily dendritic structures (80% of boutons), with somata (13%) and spines (7%) much less targeted, demonstrating a dendrite-biased postsynaptic target distribution.",
+      "claim_source_sentence": "Systematically sampling VIP boutons across all layers, we found a substantial proportion of the innervated subcellular structures were dendrites (80%), with somata (13%), and spines (7%) being much less targeted.",
+      "text_access": "fulltext",
+      "effect_size": "80% dendrites / 13% somata / 7% spines",
+      "n": 0,
+      "replication_status": "needs_replication",
+      "evidence": "Pre- and postembedding immuno-electron microscopy of VIP boutons across barrel-cortex layers in VIP-Cre mice.",
+      "effect_size_source_sentence": "Systematically sampling VIP boutons across all layers, we found a substantial proportion of the innervated subcellular structures were dendrites (80%), with somata (13%), and spines (7%) being much less targeted.",
+      "study_system": "mouse barrel cortex; immuno-EM",
+      "replication_evidence_dois": [
+        "10.1523/jneurosci.16-10-03397.1996"
+      ],
+      "cite_key": "Zhou2017",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 18
+    },
+    {
+      "doi": "10.1093/cercor/bhx220",
+      "title": null,
+      "claim": "L2/3 VIP cells send axon collaterals to deep cortical layers in addition to local arborization, whereas L4–L6 VIP cells largely restrict their axons to deep layers — establishing a laminar-position-dependent axonal bias for VIP cells.",
+      "claim_source_sentence": "VIP cells in layer II/III send axon collaterals to deep layers besides the local innervation of their home layer whereas those in layers IV–VI largely restrict their axons to these deeper layers ( Prönneke et al. 2015 ).",
+      "text_access": "fulltext",
+      "effect_size": "layer-specific axonal target distribution",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Synthesis citing biocytin reconstruction in VIPcre/tdTomato mice.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse barrel cortex; review/biocytin",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Zhou2017",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 19
+    },
+    {
+      "doi": "10.1093/cercor/bhx220",
+      "title": null,
+      "claim": "In layer VI of mouse barrel cortex, ~40% of VIP boutons synapse onto somata — sharply contrasting with L2/3 (8%) and L5 (8%), and indicating a layer-specific shift toward perisomatic (basket-like) targeting in deep cortex.",
+      "claim_source_sentence": "Unlike the other layers, in layer VI, nearly 40% (12/31) of the VIP synapses were on somata, which was much higher than in all the other layers.",
+      "text_access": "fulltext",
+      "effect_size": "L6: ~40% perisomatic vs L2/3 and L5: 8%",
+      "n": 31,
+      "replication_status": "unreplicated",
+      "evidence": "Layer-by-layer EM quantification of VIP bouton targets.",
+      "effect_size_source_sentence": "Unlike the other layers, in layer VI, nearly 40% (12/31) of the VIP synapses were on somata, which was much higher than in all the other layers.",
+      "study_system": "mouse barrel cortex; immuno-EM",
+      "replication_evidence_dois": [],
+      "cite_key": "Zhou2017",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 20
+    },
+    {
+      "doi": "10.1101/2020.02.03.932244",
+      "title": null,
+      "claim": "Patch-seq morphology data from >3,700 mouse VISp GABAergic interneurons (350 reconstructed) support a discrete set of ~20 interneuron met-types but reveal substantial continuous morpho-electric variation between t-types, complicating sharp boundaries among VIP morphological subtypes.",
+      "claim_source_sentence": "We observed that these properties could vary continuously between t-types, which limited the ability to predict specific t-types from other data modalities.",
+      "text_access": "abstract_only",
+      "effect_size": "20 met-types; continuous variability",
+      "n": 350,
+      "replication_status": "replicated",
+      "evidence": "Patch-seq + biocytin local morphology reconstruction.",
+      "effect_size_source_sentence": "Despite that, the data support the presence of at least 20 interneuron met-types that have congruent morphological, electrophysiological, and transcriptomic properties.",
+      "study_system": "mouse VISp; Patch-seq preprint",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Gouwens2020b",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 21
+    },
+    {
+      "doi": "10.1038/s41593-018-0205-2",
+      "title": null,
+      "claim": "Human cortical layer 1 contains a novel rosehip interneuron with compact, bushy axonal arborizations and unusually large axonal boutons whose laminar arborization is largely confined to layer 1 — providing a contrast for evaluating the laminar specificity of mouse L1-projecting VIP cells.",
+      "claim_source_sentence": "The axon of RCs usually emerged from the basal part of the soma and gave rise to very compact, dense axonal trees predominantly arborizing in layer 1 with tortuous collaterals having spindle-shaped boutons with diameters not seen in other types of human layer 1 interneurons in our sample.",
+      "text_access": "fulltext",
+      "effect_size": "rosehip = 13% (n=10/76) of L1 interneurons sampled",
+      "n": 76,
+      "replication_status": "replicated",
+      "evidence": "Single-nucleus RNA-seq + biocytin reconstructions of layer-1 interneurons from human neurosurgical tissue.",
+      "effect_size_source_sentence": "Light microscopic examination of these cells identified neurons with previously described morphological features, e.g. neurogliaform cells (NGFCs, n=16, 21%; Fig.2C,D ) 1 , 21 , 24 as well as a novel group of interneurons having large, rosehip-shaped axonal boutons forming very compact, bushy arborizations (rosehip cells, RCs, n=10, 13%; Fig.2A,D ).",
+      "study_system": "human neocortex layer 1; Patch-seq + snRNA-seq",
+      "replication_evidence_dois": [
+        "10.1126/science.adf0805"
+      ],
+      "cite_key": "Boldog2018",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 22
+    },
+    {
+      "doi": "10.1126/science.adf0805",
+      "title": null,
+      "claim": "Layer-1 VIP interneurons in both human and mouse exhibit characteristic descending axon collaterals, but mouse L1-VIP cells show greater morphological variability than the more uniform human L1-VIP TSPAN12 type.",
+      "claim_source_sentence": "Mouse VIP cells had descending axon branches as in human VIP cells, but with greater variability of structure.",
+      "text_access": "fulltext",
+      "effect_size": "cross-species morphological convergence with quantitative divergence",
+      "n": 0,
+      "replication_status": "needs_replication",
+      "evidence": "Cross-species Patch-seq + biocytin reconstruction of L1 interneurons from human neurosurgical tissue and mouse VISp.",
+      "effect_size_source_sentence": null,
+      "study_system": "human neurosurgical tissue + mouse VISp; Patch-seq",
+      "replication_evidence_dois": [
+        "10.1126/science.adf6484"
+      ],
+      "cite_key": "Chartrand2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 23
+    },
+    {
+      "doi": "10.1126/science.adf0805",
+      "title": null,
+      "claim": "Human L1 VIP interneurons (TSPAN12 t-type) have stellate-like dendrites combined with descending axon collaterals and high voltage sag — a morphoelectric profile distinct from mouse L1 VIP cells.",
+      "claim_source_sentence": "L1 VIP (TSPAN12 t-type) cells had descending axon collaterals ( 13 ) with a consistent stellate-like dendrite morphology and high sag.",
+      "text_access": "fulltext",
+      "effect_size": "stellate dendrite + descending axon morphology",
+      "n": 0,
+      "replication_status": "unreplicated",
+      "evidence": "Patch-seq with biocytin reconstruction of human L1 interneurons.",
+      "effect_size_source_sentence": null,
+      "study_system": "human neocortex L1; Patch-seq",
+      "replication_evidence_dois": [],
+      "cite_key": "Chartrand2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 24
+    },
+    {
+      "doi": "10.1126/science.adf6484",
+      "title": null,
+      "claim": "Human cortical VIP-subclass neurons (dominated by L2 and L3) display diverse bipolar-dendrite/descending-axon morphologies with either wide or narrow profiles, indicating substantial morphological heterogeneity within the human VIP class even within superficial layers.",
+      "claim_source_sentence": "The morphological dataset for the VIP subclass, also dominated by neurons in L2 and L3, displayed more diverse morphologies, many with bipolar dendrites and descending axon, with either a wide or narrow profile.",
+      "text_access": "fulltext",
+      "effect_size": "multimodal axon-width distribution within VIP morphology",
+      "n": 0,
+      "replication_status": "needs_replication",
+      "evidence": "Patch-seq + biocytin morphology reconstructions from human neurosurgical cortex slices.",
+      "effect_size_source_sentence": null,
+      "study_system": "human cortex; Patch-seq",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Lee2023a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 25
+    },
+    {
+      "doi": "10.3389/fncir.2021.653116",
+      "title": null,
+      "claim": "Most VIP cells in the medial entorhinal cortex show a bitufted or multipolar morphology, paralleling the bipolar/bitufted–multipolar dichotomy observed in neocortex.",
+      "claim_source_sentence": "We found that most VIP cells presented with a bitufted [Figures Figures 5A(i and ii) and Figure 5C] or a multipolar morphology [Figure Figure 5A(iii)].",
+      "text_access": "fulltext",
+      "effect_size": "60 VIP cells recorded; 17 reconstructed (11 superficial, 6 deep)",
+      "n": 17,
+      "replication_status": "replicated",
+      "evidence": "In vitro whole-cell patch-clamp + biocytin reconstruction with Neurolucida quantification in VIPcre/tdTom mice.",
+      "effect_size_source_sentence": "A total of 60 VIP cells were patched and recorded. To assess the morphological properties of the recorded cells, the reconstruction of 17 (LI-III = 11 cells; LIV-VI = 6 cells) neurons were quantified with Neurolucida 11 software (MBF Bioscience, USA).",
+      "study_system": "mouse medial entorhinal cortex",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Badrinarayanan2021",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 26
+    },
+    {
+      "doi": "10.3389/fncir.2021.653116",
+      "title": null,
+      "claim": "Layer-specific axonal asymmetry is preserved in entorhinal VIP cells: superficial-layer (LI–III) VIP cells extend axons into deep layers, whereas deep-layer (LIV–VI) VIP cells make almost no contact with superficial layers — mirroring the laminar bias seen in barrel cortex VIP cells.",
+      "claim_source_sentence": "Cells in the superficial layers extended their axons well into the deep layers, however, deep VIP cells made almost no contact with the superficial layers [Figure Figure 5E(i)].",
+      "text_access": "fulltext",
+      "effect_size": "laminar asymmetry of axonal projections",
+      "n": 17,
+      "replication_status": "replicated",
+      "evidence": "Neurolucida reconstructions in VIPcre/tdTom mouse MEC.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse medial entorhinal cortex",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1093/cercor/bhx220"
+      ],
+      "cite_key": "Badrinarayanan2021",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 27
+    },
+    {
+      "doi": "10.1186/s40659-026-00673-2",
+      "title": null,
+      "claim": "VIP interneurons in mPFC layer 1 and the L1–L2 border display two principal morphologies: a bipolar form with vertically oriented dendrites extending through L1 and L2, and a multipolar form with horizontally ramified dendrites — but in mPFC L1b they are predominantly bipolar.",
+      "claim_source_sentence": "VIP interneurons in L1 and at the L1-L2 border display two principal morphologies: a bipolar form with vertically oriented dendrites extending through Layers 1 and 2, and a multipolar form with horizontally ramified dendrites.",
+      "text_access": "fulltext",
+      "effect_size": "L1b VIP cells predominantly bipolar; no L1a somata",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Whole-cell patch recordings + immunofluorescence in VIP^Cre;Ai9 mouse mPFC slices.",
+      "effect_size_source_sentence": "Most labeled VIP somata were located in the lower subdivision of L1 (L1b), and no labeled somata were detected in the upper region (L1a) (Fig. 1Ai). Morphologically, VIP cells were predominantly bipolar, with vertically oriented processes extending across L1 and L2, and in several cases projecting into the upper L1 compartment (Fig. 1Aii).",
+      "study_system": "mouse mPFC layer 1; VIPCre;Ai9 patch + IF",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Moreno2026",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 28
+    },
+    {
+      "doi": "10.3389/neuro.05.003.2007",
+      "title": null,
+      "claim": "In mouse V1, VIP-expressing GABAergic neurons account for ~11% of cortical interneurons and are concentrated in the supragranular layers, with the majority of CR, VIP, ChAT and CCK neurons in layer 2/3 — establishing the laminar bias context for VIP morphological subtypes.",
+      "claim_source_sentence": "The next smaller groups expressed VIP (11%), NPY (8%) and CCK (5%), whereas ChAT and NOS accounted for only about 1% of GABAergic neurons (Table 2).",
+      "text_access": "fulltext",
+      "effect_size": "VIP = 11% of GABAergic neurons; CR/VIP/ChAT enriched in superficial layers",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Triple immunostaining for PV/CR/SOM/VIP/NPY/CCK/ChAT/NOS in adult mouse V1.",
+      "effect_size_source_sentence": "Figure 2 shows that the majority of CR, VIP, ChAT and CCK neurons were located in layer 2/3 and that these cells were significantly (p < 0.01 for comparisons of markers in layer 2/3 with markers in layers 5 and 6) less abundant in middle and deep layers.",
+      "study_system": "adult mouse V1",
+      "replication_evidence_dois": [
+        "10.1002/cne.22229",
+        "10.1002/dneu.20853"
+      ],
+      "cite_key": "Gonchar2008",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 29
+    },
+    {
+      "doi": "10.1002/cne.22229",
+      "title": null,
+      "claim": "VIP+ cells in mouse cortex are biased toward supragranular layers across multiple cortical regions: in frontal cortex, layer 2/3 contains ~62 VIP+/mm² versus ~22–30/mm² in other layers, with 32.6% of VIP+ cells in L2/3 versus 14–24% per layer in L1, L4–L6.",
+      "claim_source_sentence": "For example, in FC, the density of VIP+ cells in layer 2/3 was 62.1 ± 11.2/mm 2 , while the densities of layers 1, 4, 5 and 6 were 22.4 ± 6.9/mm 2 , 25.5 ± 20.7/mm 2 , 23.4 ± 3.7/mm 2 , and 29.8 ± 8.6/mm 2 , respectively.",
+      "text_access": "fulltext",
+      "effect_size": "L2/3 VIP density 2–3× deeper layer densities",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Quantitative immunostaining across FC, S1, V1 in mouse.",
+      "effect_size_source_sentence": "The percentages of VIP+ cells for layers 1, 2/3 through 6 in FC were 16.4%, 32.6%, 24.1%, 12.5% and 14.3%, respectively.",
+      "study_system": "mouse FC, S1, V1; immunohistochemistry",
+      "replication_evidence_dois": [
+        "10.3389/neuro.05.003.2007",
+        "10.1002/dneu.20853"
+      ],
+      "cite_key": "Xu2010a",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 30
+    },
+    {
+      "doi": "10.1038/nature09865",
+      "title": null,
+      "claim": "VIP+ multipolar interneurons show distinct activity-dependence relative to CR+ and Reelin+ CGE-derived subtypes: while CR+ multipolar and bipolar interneurons show reduced axonal arbor length under activity blockade, multipolar VIP+ interneuron axons are unaltered, indicating cell-type-specific developmental morphogenesis programs.",
+      "claim_source_sentence": "Our experiments revealed that the total length of axonal arbors was significantly reduced in multipolar and bipolar Cr + interneurons, as well as neurogliaform and dense plexus Re + subtypes, while those of multipolar VIP + interneurons remained unaltered ( Fig. 1 and Supplementary Fig. 4a-b ).",
+      "text_access": "fulltext",
+      "effect_size": "VIP multipolar axon length unaltered; CR/Re axon length reduced",
+      "n": 0,
+      "replication_status": "unreplicated",
+      "evidence": "In utero electroporation of Dlx5/6-Kir2.1 to silence interneurons + neurolucida reconstruction.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse cortex; in utero electroporation",
+      "replication_evidence_dois": [],
+      "cite_key": "Demarcogarcia2011",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 31
+    },
+    {
+      "doi": "10.1038/nature09865",
+      "title": null,
+      "claim": "Distinct VIP+ morphological subclasses include multipolar VIP+ interneurons, distinguishing them from co-electroporated bipolar/multipolar CR+ subclasses — and indicating heterogeneity of VIP morphology that emerges by P8.",
+      "claim_source_sentence": "Representative examples of P8 VIP + , Cr + and Re + interneurons in Dlx5/6-eGFP electroporated mice at e15.5 injected with PBS (control) or kynurenic acid (Kyn) at P3 and corresponding neurolucida reconstructions depicting axons (red), dendrites (blue) and somata (black).",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Neurolucida reconstructions at P8 in Dlx5/6-eGFP electroporated mouse cortex.",
+      "effect_size_source_sentence": null,
+      "study_system": "mouse cortex P8",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1002/dneu.20853"
+      ],
+      "cite_key": "Demarcogarcia2011",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 32
+    },
+    {
+      "doi": "10.1016/j.celrep.2022.111037",
+      "title": null,
+      "claim": "Among CGE-derived Htr3a+ interneurons, VIP is expressed in two morphologically distinct subtypes: most CR+ bipolar cells and roughly half of the CR-/Reln- basket cells, providing the molecular link from VIP morphological diversity to a Prox1+/CR+/Reln− Venn-diagram classification.",
+      "claim_source_sentence": "VIP is expressed by most CR+ bipolar cells and many CGE-derived basket cells ( Prönneke et al., 2015 ), so, in principle, it is conceivable that these two subtypes of VIP+ interneurons may follow different developmental programs.",
+      "text_access": "fulltext",
+      "effect_size": "≈half CGE-derived basket cells express VIP",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Triple IHC for Prox1, CR, Reln in mouse cortex.",
+      "effect_size_source_sentence": "Approximately half of all CGE basket cells express VIP, but none of them expresses Reln or CR.",
+      "study_system": "mouse cortex; immunohistochemistry",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhv202",
+        "10.1002/dneu.20853"
+      ],
+      "cite_key": "Wong2022",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 33
+    },
+    {
+      "doi": "10.1038/s41593-019-0417-0",
+      "title": null,
+      "claim": "Allen Institute Patch-clamp/biocytin morphology pipeline of adult mouse visual cortex established a taxonomy of 17 e-types, 38 m-types, and 46 me-types, with good correspondence to transcriptomic subclasses (Lamp5, Sncg, Vip, Sst, Pvalb).",
+      "claim_source_sentence": "We established a taxonomy of morphologically- and electrophysiologically-defined cell types for this region of cortex with 17 e-types, 38 m-types, and 46 me-types and found good correspondence with previously-defined transcriptomic cell types and subclasses using the same transgenic mouse lines.",
+      "text_access": "fulltext",
+      "effect_size": "1,938 neurons electrophysiology; 461 reconstructed; 452 with both",
+      "n": 1938,
+      "replication_status": "replicated",
+      "evidence": "Standardised whole-cell patch clamp + biocytin reconstructions in adult mouse visual cortex; unsupervised clustering of morphological and electrophysiological features; cross-validation with transgenic mouse line identity matched to transcriptomic subclasses.",
+      "effect_size_source_sentence": "Intrinsic physiological properties were measured from 1,938 neurons from the adult laboratory mouse visual cortex, morphological properties were measured from 461 reconstructed neurons, and 452 neurons had both measurements available.",
+      "study_system": "Adult mouse primary visual cortex; ex vivo slice patch clamp + biocytin; multiple Cre/Flp transgenic lines",
+      "replication_evidence_dois": [
+        "10.1038/s41593-020-0685-8",
+        "10.1038/s41586-020-2907-3",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Gouwens2019",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 34
+    },
+    {
+      "doi": "10.1038/s41593-019-0417-0",
+      "title": null,
+      "claim": "Inhibitory interneuron m-types in mouse visual cortex span all cortical layers (L1–L6b), with most m-types appearing in multiple layers; the axon (rather than the dendrite) is the dominant feature distinguishing inhibitory m-types.",
+      "claim_source_sentence": "The 19 m-types for inhibitory interneurons were distributed across all cortical layers (L1-L6b), with most m-types found in multiple layers with the exception of several L2/3-specific m-types ( Fig.",
+      "text_access": "fulltext",
+      "effect_size": "207 inhibitory reconstructions; 19 inhibitory m-types",
+      "n": 207,
+      "replication_status": "replicated",
+      "evidence": "Reconstruction-based clustering of 207 aspiny/sparsely-spiny inhibitory neurons; spatial distribution and Cre-line annotation cross-referenced with transcriptomic subclasses.",
+      "effect_size_source_sentence": "We reconstructed the morphologies (Methods) of 461 cells (254 spiny and 207 aspiny/sparsely spiny).",
+      "study_system": "Adult mouse primary visual cortex; biocytin reconstructions of aspiny GABAergic interneurons",
+      "replication_evidence_dois": [
+        "10.1038/s41593-020-0685-8",
+        "10.1016/j.cell.2020.09.057"
+      ],
+      "cite_key": "Gouwens2019",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 35
+    },
+    {
+      "doi": "10.1038/s41593-019-0417-0",
+      "title": null,
+      "claim": "L2/3 Chat-Cre labeled neurons (a known subset of Vip cells) map predominantly to a small number of related me-types associated with the Vip-Ptprt-Pkp2 transcriptomic type, whereas the broader Vip class spans multiple me-types adjacent to Sst territory in the morpho-electric space.",
+      "claim_source_sentence": "The L2/3 Chat -labeled neurons, mostly associated with the Vip-Ptprt-Pkp2 t-type, were in a few similar me-types ( Fig.",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Cre-line-by-me-type mapping with transcriptomic-line consistency scores in the Allen Patch-seq/me-type pipeline.",
+      "effect_size_source_sentence": null,
+      "study_system": "Adult mouse VISp; Chat-IRES-Cre × reporter labeling; me-type clustering",
+      "replication_evidence_dois": [
+        "10.15252/embj.2021110565",
+        "10.1038/s41593-020-0685-8"
+      ],
+      "cite_key": "Gouwens2019",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 36
+    },
+    {
+      "doi": "10.1038/s41586-019-1506-7",
+      "title": null,
+      "claim": "In human middle temporal gyrus, the VIP subclass is the most diverse among inhibitory subclasses, partitioning into 21 transcriptomic types — most of which are enriched in upper cortical layers.",
+      "claim_source_sentence": "VIP was the most diverse subclass (21 types), with many types enriched in upper layers ( Fig.",
+      "text_access": "fulltext",
+      "effect_size": "21 VIP types; upper-layer enrichment",
+      "n": 21,
+      "replication_status": "replicated",
+      "evidence": "Single-nucleus RNA-sequencing of ~16,000 nuclei from human middle temporal gyrus (MTG); iterative clustering and laminar mapping by ISH.",
+      "effect_size_source_sentence": "VIP was the most diverse subclass (21 types), with many types enriched in upper layers ( Fig.",
+      "study_system": "Adult human middle temporal gyrus, postmortem; snRNA-seq",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03465-8",
+        "10.1126/science.adf6812"
+      ],
+      "cite_key": "Hodge2019",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 37
+    },
+    {
+      "doi": "10.1038/s41586-019-1506-7",
+      "title": null,
+      "claim": "Several human VIP transcriptomic types are closely related to LAMP5/PAX6 types and localize to layers 1–2, indicating overlap between superficial-layer disinhibitory and L1-targeting cell families that is not always cleanly separated by cardinal markers.",
+      "claim_source_sentence": "Several VIP types were closely related to the LAMP5/PAX6 type L1 LAMP5 NMBR and localized to L1-L2.",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Hierarchical clustering of human MTG snRNA-seq combined with multiplex FISH for laminar localization.",
+      "effect_size_source_sentence": null,
+      "study_system": "Adult human MTG snRNA-seq + ISH",
+      "replication_evidence_dois": [
+        "10.1038/s41586-021-03465-8",
+        "10.1038/s41586-019-0654-5"
+      ],
+      "cite_key": "Hodge2019",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 38
+    },
+    {
+      "doi": "10.3389/fncel.2022.811484",
+      "title": null,
+      "claim": "In rodent supragranular cortex, VIP-expressing interneurons predominantly share a bipolar dendritic morphology confined to layers 1–2/3, whereas in deeper layers (L4–L6) VIP cells diversify into multipolar single-tufted, bi-tufted, and horizontally bipolar dendritic forms with dendrites spanning all cortical layers.",
+      "claim_source_sentence": "On the other side, its organization becomes\nmore heterogeneous in the deeper layers (4, 5, and 6) of the\ncortex, where additional studies revealed diﬀerent dendritic\nmorphology such as (1) multipolar single tufted, (2) bi-tufted,\nand (3) horizontally bipolar with dendrites that span all cortical\nlayers (Vucurovic et al., 2010; Pronneke et al., 2015, 2020; Sohn\net al., 2016; Emmenegger et al., 2018).",
+      "text_access": "fulltext",
+      "effect_size": "≥3 deep-layer VIP morphological subtypes",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Synthesis review citing five primary studies of VIP interneuron morphology across layers in rodent neocortex.",
+      "effect_size_source_sentence": "On the other side, its organization becomes\nmore heterogeneous in the deeper layers (4, 5, and 6) of the\ncortex, where additional studies revealed diﬀerent dendritic\nmorphology such as (1) multipolar single tufted, (2) bi-tufted,\nand (3) horizontally bipolar with dendrites that span all cortical\nlayers (Vucurovic et al., 2010; Pronneke et al., 2015, 2020; Sohn\net al., 2016; Emmenegger et al., 2018).",
+      "study_system": "Review of rodent neocortex VIP interneuron morphology across layers",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhx220",
+        "10.1093/cercor/bhx352",
+        "10.15252/embj.2021110565"
+      ],
+      "cite_key": "Apicella2022",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 39
+    },
+    {
+      "doi": "10.3389/fncel.2022.811484",
+      "title": null,
+      "claim": "VIP interneuron axons commonly emerge from a basal dendrite oriented toward the white matter rather than from the soma, a feature that distinguishes them from many other cortical neuron classes.",
+      "claim_source_sentence": "Another interesting aspect of the morphological properties\nof the VIP-expressing neurons is that the axon often starts\nat dendrites oriented toward the white matter rather than the\nsoma (Pronneke et al., 2015), giving a characteristic feature to\nthis class of neurons and possibly an enhanced chance to elicit\naction potentials at lower activation threshold (Thome et al.,\n2014).",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Review synthesis citing multiple primary morphological studies in rodent cortex.",
+      "effect_size_source_sentence": null,
+      "study_system": "Review of VIP interneuron morphology in rodent cortex",
+      "replication_evidence_dois": [
+        "10.7554/elife.76101",
+        "10.1093/cercor/bhx220"
+      ],
+      "cite_key": "Apicella2022",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 40
+    },
+    {
+      "doi": "10.15252/embj.2021110565",
+      "title": null,
+      "claim": "Cortical cholinergic VIP interneurons (VChIs) in mouse barrel cortex partition into two morphologically and transcriptomically distinct types — bipolar (biVChI) and multipolar (mVChI) — that differ in cortical depth distribution and gene expression even when defined by a shared VIP/ChAT identity.",
+      "claim_source_sentence": "We identified two fundamentally distinct morphological types of VChIs, bipolar and multipolar that differ in their cortical distribution and general morphological features.",
+      "text_access": "fulltext",
+      "effect_size": "Two clusters: bipolar with 2 stem dendrites; multipolar with ≥3 stem dendrites",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "PopRec automated reconstruction pipeline applied to thousands of VChIs from cleared whole barrel cortices of multiple mice; NuNeX nuclei isolation + snRNA-seq linking morphology to transcriptome.",
+      "effect_size_source_sentence": "We defined SD as the full dendritic trees that reside from the soma: a bipolar neuron would have two SD and multipolar more than two.",
+      "study_system": "Mouse barrel cortex; VIP-Cre/ChAT-Cre intersection; cleared whole-brain imaging + automated morphology reconstruction",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhx220",
+        "10.1038/s42003-022-03278-z"
+      ],
+      "cite_key": "Yayon2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 41
+    },
+    {
+      "doi": "10.15252/embj.2021110565",
+      "title": null,
+      "claim": "Mild unilateral whisker deprivation during the second postnatal week alters dendritic arborization and cortical-depth distribution of barrel-cortex VChIs ipsilaterally and contralaterally three weeks later, identifying Elmo1 as a key transcriptomic regulator of VChI morphology after deprivation.",
+      "claim_source_sentence": "Following mild unilateral whisker deprivation on postnatal day seven, we found after three weeks both ipsi‐ and contralateral dendritic arborization differences and modified cortical depth and distribution patterns in the barrel fields alone.",
+      "text_access": "fulltext",
+      "effect_size": "Bilateral arborization changes after P7 deprivation",
+      "n": 0,
+      "replication_status": "single-study",
+      "evidence": "Sensory-deprivation experiment paired with PopRec morphometry and NuNeX-isolated nuclear transcriptomics in barrel cortex VChIs.",
+      "effect_size_source_sentence": "Following mild unilateral whisker deprivation on postnatal day seven, we found after three weeks both ipsi‐ and contralateral dendritic arborization differences and modified cortical depth and distribution patterns in the barrel fields alone.",
+      "study_system": "Mouse barrel cortex; whisker plucking at P7; whole-cleared-brain VChI reconstruction at P28",
+      "replication_evidence_dois": [],
+      "cite_key": "Yayon2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 42
+    },
+    {
+      "doi": "10.1038/s41586-024-07780-8",
+      "title": null,
+      "claim": "Connectomic reconstruction of a cubic millimetre of mouse visual cortex (MICrONS) identifies a class of inhibition-targeting cells (InhTCs) that align with the disinhibitory VIP-expressing specialist subclass and have bipolar or multipolar dendrites concentrated in layers 2–4.",
+      "claim_source_sentence": "InhTCs align well with disinhibitory specialist VIP neurons.",
+      "text_access": "fulltext",
+      "effect_size": "InhTCs ≈ VIP cardinal class; InhTCs concentrated in L2–4",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Dense electron-microscopy reconstruction of a cortical column from mouse VISp; semi-automated segmentation, proofreading and synaptic-output classification of >1,200 inhibitory neurons; analysis of post-synaptic target distributions to define connectomically-derived cell types.",
+      "effect_size_source_sentence": "Although InhTC Dist had bipolar or multipolar dendrites and were concentrated in layers 2–4 (Extended Data Fig.",
+      "study_system": "Mouse VISp; saturated EM volume (~1 mm^3); MICrONS dataset",
+      "replication_evidence_dois": [
+        "10.1038/s41586-025-08805-6",
+        "10.1038/s41586-024-07765-7"
+      ],
+      "cite_key": "Schneidermizell2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 43
+    },
+    {
+      "doi": "10.1038/s41586-024-07780-8",
+      "title": null,
+      "claim": "InhTCs split into two connectomic subtypes — InhTC_dist (targeting distal-dendrite Sst-like cells) and InhTC_peri (targeting perisomatic Pvalb-like basket cells) — refining the long-standing view that VIP cells preferentially inhibit Sst by showing target-specific subclasses within the disinhibitory population.",
+      "claim_source_sentence": "InhTCs are clustered into two subtypes: one targeting DistTCs (InhTC dist ) and another targeting PeriTCs (InhTC peri ).",
+      "text_access": "fulltext",
+      "effect_size": "Two InhTC subtypes (dist vs peri targeting)",
+      "n": 0,
+      "replication_status": "single-study",
+      "evidence": "Synaptic-output classification of EM-reconstructed VIP/InhTC cells in MICrONS column; clustering on synaptic target subclass identity.",
+      "effect_size_source_sentence": "InhTCs are clustered into two subtypes: one targeting DistTCs (InhTC dist ) and another targeting PeriTCs (InhTC peri ).",
+      "study_system": "Mouse VISp; MICrONS connectome volume",
+      "replication_evidence_dois": [
+        "10.1038/s41586-024-07765-7"
+      ],
+      "cite_key": "Schneidermizell2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 44
+    },
+    {
+      "doi": "10.1038/s41586-024-07765-7",
+      "title": null,
+      "claim": "Perisomatic ultrastructural features alone (extracted from soma + proximal dendrite) are sufficient to classify mouse cortex inhibitory neurons into bipolar (VIP-overlapping), basket, Martinotti and neurogliaform categories, reproducing transcriptomic-subclass identity from EM features that do not require full neuronal reconstruction.",
+      "claim_source_sentence": "For example, bipolar cells (which largely overlap with a VIP subclass) \nhave been described as the only disinhibitory specialist interneuron \nclass, and are described as making synapses primarily onto SST (soma-\ntostatin) cells (which are thought to overlap with the Martinotti cell \ndefinition used here)30–33 .",
+      "text_access": "fulltext",
+      "effect_size": "Perisomatic features classify bipolar/basket/Martinotti/NGC subclasses",
+      "n": 143,
+      "replication_status": "replicated",
+      "evidence": "Quantitative perisomatic feature extraction (nucleus, soma, proximal-dendrite synapses, infoldings) from MICrONS EM column; PointNet/auto-encoder unsupervised clustering vs k-means; cross-validation against 143 expertly labelled inhibitory cells.",
+      "effect_size_source_sentence": "For example, a Martinotti cell had a greater \ndensity of synapses onto small protrusions on its proximal dendrites \nthan the basket or bipolar cell, but similar numbers to the neuroglia-\nform cell.",
+      "study_system": "Mouse VISp; MICrONS column EM data; expert-labelled subset of 1,619 cells",
+      "replication_evidence_dois": [
+        "10.1038/s41586-024-07780-8",
+        "10.1038/s41586-025-08805-6"
+      ],
+      "cite_key": "Elabbady2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 45,
+      "_collapsed_provenance": [
+        {
+          "source_cluster": "cluster_03_morphology",
+          "source_cluster_index": 56,
+          "doi": "10.1038/s41586-024-07765-7",
+          "claim": "MICrONS confirms with EM-level synaptic precision that bipolar (VIP-class) cells are the only disinhibitory specialist class in mouse VISp and that they synapse primarily onto Martinotti (SST) cells — but reveals heterogeneity within bipolar cells, with a subset preferentially targeting basket cells rather than Martinotti cells."
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41586-025-08805-6",
+      "title": null,
+      "claim": "Patch-seq Vip neurons exhibit a stereotyped morphology: bipolar primary dendrites with an axon arbor of narrow horizontal and long vertical extent — a signature that allows ≈91% of EM-reconstructed Vip cells to be correctly identified as inhibitory-cell-targeting types in the MICrONS column.",
+      "claim_source_sentence": "Vip subclass: Patch-seq Vip neurons frequently have bipolar primary dendrites and axon with a narrow horizontal and long vertical extent.",
+      "text_access": "fulltext",
+      "effect_size": "20/22 EM Vip cells are inhibitory-cell-targeting; 91% Vip → inhibitory-targeting",
+      "n": 22,
+      "replication_status": "replicated",
+      "evidence": "Patch-seq morphological/transcriptomic dataset (Gouwens 2020) used to train a morphology-based subclass classifier applied to MICrONS EM-reconstructed cells; cross-checked against direct synaptic targeting analysis.",
+      "effect_size_source_sentence": "Most predicted Sst cells (64%) are distal dendrite targeting cells, most predicted Pvalb cells (78%) are perisomatic targeting cells, and Vip cells (91%) are inhibitory targeting cells.",
+      "study_system": "Mouse VISp; Patch-seq morphology training set + MICrONS EM column",
+      "replication_evidence_dois": [
+        "10.1038/s41593-020-0685-8",
+        "10.1038/s41586-024-07780-8"
+      ],
+      "cite_key": "Gamlin2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 46
+    },
+    {
+      "doi": "10.1093/cercor/bhx352",
+      "title": null,
+      "claim": "Whole-cell patch-clamp + biocytin reconstruction in rat L4 barrel cortex defines five non-fast-spiking GABAergic interneuron types, one of which (intra-columnar projecting VIP-like) shows bipolar dendritic morphology and sparse axonal projections confined to the home column, recapitulating the classical L2/3 VIP morphological signature in L4.",
+      "claim_source_sentence": "Cluster 4 (MC4) showed a bipolar dendritic domain and sparse axonal projections to the supra- and infra-granular layers, which were almost exclusively confined to the home column; these features were similar to those of VIP+ interneurons ( Porter et al.",
+      "text_access": "fulltext",
+      "effect_size": "5 L4 nFS types; ~15% Prox1+ (NGFC + VIP-like)",
+      "n": 73,
+      "replication_status": "replicated",
+      "evidence": "Whole-cell patch clamp + biocytin reconstruction of 73 L4 nFS interneurons in rat barrel cortex; unsupervised clustering of morphological + electrophysiological parameters; immunohistochemistry for VIP/SOM/Prox1.",
+      "effect_size_source_sentence": "The molecular identification of L4 nFS interneurons revealed that 70% are SOM-positive and 15% are Prox1-positive comprising neurogliaform cell (NGFC)-like and VIP-like interneurons.",
+      "study_system": "Rat barrel cortex L4; in vitro patch clamp + biocytin reconstruction",
+      "replication_evidence_dois": [
+        "10.1093/cercor/bhx220",
+        "10.3389/fncel.2022.811484"
+      ],
+      "cite_key": "Emmenegger2018",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 47
+    },
+    {
+      "doi": "10.1038/s42003-022-03278-z",
+      "title": null,
+      "claim": "A subpopulation of superficial mouse cortical multipolar VIP-expressing interneurons exhibits high dendritic spine densities on L1-located dendrites, with bursting electrophysiology and spine lifetimes considerably shorter than spines on pyramidal neurons — establishing structural plasticity as a feature of VIP cells.",
+      "claim_source_sentence": "Here, we describe a sub-\npopulation of super ﬁcial cortical multipolar interneurons expressing vasoactive intestinal\npeptide (VIP) with high spine densities on their dendrites located in layer (L) 1, and with the\nelectrophysiological characteristics of bursting cells.",
+      "text_access": "fulltext",
+      "effect_size": "VIP-spine lifetime « pyramidal-spine lifetime",
+      "n": 0,
+      "replication_status": "single-study",
+      "evidence": "In vivo two-photon longitudinal imaging of GFP-labelled VIP-Cre dendritic spines in mouse cortex; correlative light–electron microscopy to confirm excitatory synaptic identity of VIP spines.",
+      "effect_size_source_sentence": "Using longitudinal imaging in vivo, we\nfound that the majority of the spines are highly dynamic, displaying lifetimes considerably\nshorter than that of spines on pyramidal neurons.",
+      "study_system": "Mouse somatosensory cortex; VIP-Cre × Ai9/GFP; in vivo 2P + CLEM",
+      "replication_evidence_dois": [],
+      "cite_key": "Georgiou2022",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 48
+    },
+    {
+      "doi": "10.1002/cne.25514",
+      "title": null,
+      "claim": "Calretinin-expressing (CR+) interneurons — the rodent VIP-class analogue in primates — are significantly denser and more abundant in rhesus monkey V1 and frontal cortex than in mouse, but their layer 2/3 somato-dendritic morphology is conserved across species and is more strongly determined by calcium-binding-protein expression than by species or cortical area.",
+      "claim_source_sentence": "The main species difference was the significantly greater density and proportion of CR+ interneurons and lower extent of CaBP co-expression in monkey compared to mouse cortices.",
+      "text_access": "fulltext",
+      "effect_size": "Greater CR+ density and proportion in monkey vs mouse; CR+ morphology unchanged across species",
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Multi-label immunofluorescence + stereological counting + 3D Neurolucida reconstruction of L2/3 inhibitory interneurons in mouse and rhesus monkey V1 and dlPFC; cluster analysis on somato-dendritic morphometric features.",
+      "effect_size_source_sentence": "Only modest effects of species were observed for CB+ and PV+ interneuron morphologies, while CR+ neurons showed no difference.",
+      "study_system": "Adult mouse vs adult rhesus monkey V1 and frontal cortex; immunolabeling for CR/CB/PV; 3D reconstruction",
+      "replication_evidence_dois": [
+        "10.1093/cercor/9.7.683",
+        "10.1038/s41586-019-1506-7"
+      ],
+      "cite_key": "Medalla2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 49
+    },
+    {
+      "doi": "10.1002/cne.25514",
+      "title": null,
+      "claim": "In primates, calretinin-positive cortical interneurons consist of Cajal–Retzius cells, small double-bouquet cells, and most commonly bipolar cells that synapse onto dendritic shafts and spines of pyramidal cells, providing a primate VIP-equivalent disinhibitory population for which the bipolar morphology is the dominant subtype.",
+      "claim_source_sentence": "In both rodents and primates, CR+ neurons are Cajal-Retzius cells (located in layer 1 during development), small double bouquet cells or, most commonly, bipolar cells which target the dendritic shafts and spines of pyramidal cells ( Dzaja et al., 2014 ).",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Review-of-the-literature framing combined with this paper's quantitative immunolabeling/morphology measurements in monkey cortex.",
+      "effect_size_source_sentence": null,
+      "study_system": "Adult rhesus monkey V1/PFC; immunolabeling and 3D reconstruction",
+      "replication_evidence_dois": [
+        "10.1093/cercor/9.7.683",
+        "10.1038/s41586-019-1506-7"
+      ],
+      "cite_key": "Medalla2023",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 50
+    },
+    {
+      "doi": "10.1146/annurev-neuro-070918-050421",
+      "title": null,
+      "claim": "VIP-expressing cortical interneurons are one of four cardinal cardinal-class non-overlapping inhibitory groups (PV, SST, VIP, Reelin/Lamp5) defined by mutually-exclusive marker expression — a developmentally-grounded nomenclature that frames morphological diversity within a small set of phylogenetically conserved attractor identities.",
+      "claim_source_sentence": "An attractive feature of this nomenclature is that four major cardinal classes represent complementary, nonoverlapping groups that can be identified by their expression of specific neuromarkers: PV, SST, VIP, and Reelin (Rln) (reviewed in Miyoshi 2018 ).",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Annual Review synthesis integrating developmental fate-mapping, transcriptomics and morphology across rodent and non-mammalian cortices.",
+      "effect_size_source_sentence": null,
+      "study_system": "Synthesis review; mouse + comparative vertebrates",
+      "replication_evidence_dois": [
+        "10.1146/annurev-neuro-070918-050421",
+        "10.1038/s41586-021-03465-8"
+      ],
+      "cite_key": "Fishell2020",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 51
+    },
+    {
+      "doi": "10.1146/annurev-neuro-070918-050421",
+      "title": null,
+      "claim": "Embryonic loss of the Prox1 transcription factor severely impacts the bipolar VIP population, abolishing calretinin expression and truncating dendrites — establishing Prox1 as a critical developmental determinant of bipolar VIP morphology.",
+      "claim_source_sentence": "Similarly, while the embryonic loss of Prox1 severely impacts the bipolar VIP population through the loss of calretinin expression and dendritic truncation, postnatal removal has similar but much less severe consequences ( Miyoshi et al.",
+      "text_access": "fulltext",
+      "effect_size": null,
+      "n": 0,
+      "replication_status": "replicated",
+      "evidence": "Review summary citing Miyoshi et al. and related conditional Prox1 knockout studies.",
+      "effect_size_source_sentence": null,
+      "study_system": "Mouse cortex; conditional and constitutive Prox1 knockouts",
+      "replication_evidence_dois": [
+        "10.1016/j.cell.2014.03.058",
+        "10.1016/j.celrep.2022.111037"
+      ],
+      "cite_key": "Fishell2020",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 52
+    },
+    {
+      "doi": "10.1038/s41467-024-50728-9",
+      "title": null,
+      "claim": "Automated reconstruction of 813 mouse cortex Patch-seq inhibitory neurons enables training of machine-learning classifiers from arbor-density representations alone, achieving subclass-level (Sst/Pvalb/Vip/Sncg/Lamp5) classification accuracy not statistically inferior to traditional handcrafted morphometric features.",
+      "claim_source_sentence": "Here, we report large-scale\nautomation of neuronal morphology reconstruction and analysis on a dataset\nof 813 inhibitory neurons characterized using the Patch-seq method, which\nenables measurement of multiple properties from individual neurons,\nincluding local morphology and transcriptional signature.",
+      "text_access": "fulltext",
+      "effect_size": "813 reconstructed Patch-seq inhibitory cells (50% increase from prior 543)",
+      "n": 813,
+      "replication_status": "replicated",
+      "evidence": "High-throughput automated tracing pipeline applied to all available Patch-seq inhibitory cells from Allen Institute datasets; arbor-density vs morphometric-feature classifier benchmarking with cross-validation.",
+      "effect_size_source_sentence": "(The\nincrease over the whole dataset is 50%, from 543 to 813 cells.)",
+      "study_system": "Mouse cortex; Patch-seq inhibitory neurons; pooled Allen and partner datasets",
+      "replication_evidence_dois": [
+        "10.1038/s41593-019-0417-0",
+        "10.1038/s41593-020-0685-8"
+      ],
+      "cite_key": "Gliko2024",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 53
+    },
+    {
+      "doi": "10.1038/s41586-024-07765-7",
+      "title": null,
+      "claim": "MICrONS mouse VISp cubic-mm volume contains 6,805 expert-classified inhibitory cells split among basket cells (3,239), bipolar cells (997), Martinotti/non-Martinotti cells (1,992) and neurogliaform cells (571), establishing that bipolar (VIP-class) interneurons make up roughly 15% of the EM-reconstructed inhibitory population.",
+      "claim_source_sentence": "These neurons were then passed \nthrough the excitatory neuron classifier and labelled as excitatory \nfor all subsequent analyses with a final set of 6,805 inhibitory cells \nwith the following subclass counts: basket cells (3,239), bipolar cells \n(997), Martinotti/non-Martinotti cells (1,992) and neurogliaform  \ncells (571).",
+      "text_access": "fulltext",
+      "effect_size": "997 bipolar cells / 6,805 inhibitory cells (~14.6%)",
+      "n": 6805,
+      "replication_status": "single-study",
+      "evidence": "Whole-volume nanometer-resolution serial-section EM reconstruction with manual proofreading and machine-learning subclass classification.",
+      "effect_size_source_sentence": "These neurons were then passed \nthrough the excitatory neuron classifier and labelled as excitatory \nfor all subsequent analyses with a final set of 6,805 inhibitory cells \nwith the following subclass counts: basket cells (3,239), bipolar cells \n(997), Martinotti/non-Martinotti cells (1,992) and neurogliaform  \ncells (571).",
+      "study_system": "Mouse VISp 1mm³ EM volume; MICrONS",
+      "replication_evidence_dois": [
+        "10.1038/s41593-019-0417-0",
+        "10.1038/s41593-018-0205-2"
+      ],
+      "cite_key": "Elabbady2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 54
+    },
+    {
+      "doi": "10.1038/s41586-024-07765-7",
+      "title": null,
+      "claim": "In the MICrONS EM volume bipolar cells were operationally defined by having only 2 or 3 primary dendrites and by making synapses primarily onto other inhibitory neurons — providing an EM-grounded, axon-target-aware redefinition of the canonical VIP bipolar morphological signature.",
+      "claim_source_sentence": "Bipolar cells were labelled by having only 2 or  \n3 primary dendrites, and primarily making synapses with other inhibi-\ntory neurons.",
+      "text_access": "fulltext",
+      "effect_size": "2–3 primary dendrites; majority of synapses onto inhibitory targets",
+      "n": 997,
+      "replication_status": "replicated",
+      "evidence": "EM reconstruction with synaptic-target identification across all 6,805 inhibitory cells.",
+      "effect_size_source_sentence": "Bipolar cells were labelled by having only 2 or  \n3 primary dendrites, and primarily making synapses with other inhibi-\ntory neurons.",
+      "study_system": "Mouse VISp EM; MICrONS",
+      "replication_evidence_dois": [
+        "10.1038/nature08002",
+        "10.1038/s41586-024-07780-8"
+      ],
+      "cite_key": "Elabbady2025",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 55
+    },
+    {
+      "doi": "10.1038/s42003-022-03278-z",
+      "title": null,
+      "claim": "Correlative light/electron microscopy on cortical VIP interneurons confirms that the L1-ramifying dendritic protrusions are bona fide excitatory synaptic spines that are morphologically distinct from neighboring spines on other L1 cells, providing ultrastructural validation of the VIP-multipolar spinous phenotype.",
+      "claim_source_sentence": "Using correlative light and electron\nmicroscopy, we con ﬁrmed that these VIP spines are sites of excitatory synaptic contacts, and\nare morphologically distinct from other spines in L1.",
+      "text_access": "fulltext",
+      "effect_size": "VIP spines morphologically distinct from L1-neighbor spines",
+      "n": 0,
+      "replication_status": "single-study",
+      "evidence": "Correlative 2-photon in vivo + serial-section EM reconstruction of identified VIP-Cre dendrites; quantitative spine-shape comparison with neighboring L1 dendrites.",
+      "effect_size_source_sentence": null,
+      "study_system": "Adult mouse somatosensory cortex; VIP-Cre AAV-GFP labeling; in vivo 2PLSM + EM",
+      "replication_evidence_dois": [
+        "10.1126/science.adf6484",
+        "10.1093/cercor/bhx352"
+      ],
+      "cite_key": "Georgiou2022",
+      "_source_cluster": "cluster_03_morphology",
+      "_source_cluster_index": 57
+    }
+  ],
+  "argument_groups": [
+    {
+      "argument": "Morphological Diversity of VIP Cells",
+      "argument_scope": {
+        "expected_envelope": "150-220 papers",
+        "expected_envelope_lo": 150,
+        "expected_envelope_hi": 220
+      },
+      "source_cluster": "cluster_03_morphology",
+      "supporting_findings": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "counter_findings": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        23,
+        24,
+        26,
+        27,
+        30
+      ],
+      "treatment_tier_suggestion": "landmark"
+    }
+  ],
+  "conflicts": [
+    {
+      "paper_a_doi": "10.1002/dneu.20853",
+      "paper_b_doi": "10.1002/cne.22229",
+      "paper_a_claim": "Approximately 40% of VIP+ interneurons co-express CR (Rudy 2011 review).",
+      "paper_b_claim": "In V1 layers 4 and 5, VIP/CR overlap is ~52%, well above 40% (Xu/Callaway 2010).",
+      "nature_of_conflict": "quantitative_disagreement",
+      "resolution_status": "Coexpression depends on cortical region, layer, and developmental stage; both reports valid for their contexts."
+    },
+    {
+      "paper_a_doi": "10.1016/j.cell.2020.09.057",
+      "paper_b_doi": "10.1101/2020.02.03.932244",
+      "paper_a_claim": "5 Vip-MET-types defined in mouse VISp Patch-seq (Gouwens 2020 Cell).",
+      "paper_b_claim": "Continuous variability of morphological/electrophysiological features within VIP types complicates discrete subtype boundaries (Gouwens preprint 2020).",
+      "nature_of_conflict": "discrete_vs_continuum",
+      "resolution_status": "Both views compatible: discrete MET centroids exist but with substantial continuous variation between/within."
+    },
+    {
+      "paper_a_doi": "10.1093/cercor/bhv202",
+      "paper_b_doi": "10.3389/fncir.2021.653116",
+      "paper_a_claim": "Majority of VIP axons emerge from a dendrite directed toward white matter (Prönneke 2015 cortex).",
+      "paper_b_claim": "In MEC, VIP cells have variable axon emergence with no specific report of dendrite-originating axon dominance (Apicella 2021).",
+      "nature_of_conflict": "regional_difference_unconfirmed",
+      "resolution_status": "Needs explicit MEC vs neocortex comparison; could reflect cortex-specific axon initial segment biology."
+    },
+    {
+      "paper_a_doi": "10.1126/science.adf0805",
+      "paper_b_doi": "10.1126/science.adf0805",
+      "paper_a_claim": "Human L1-VIP TSPAN12 cells have stellate-like dendrite + descending axon with high voltage sag (Chartrand/Lee 2023).",
+      "paper_b_claim": "Mouse L1 VIP cells have descending axons but with greater variability of structure and lower sag (Chartrand 2023).",
+      "nature_of_conflict": "cross_species_morphological_divergence",
+      "resolution_status": "Cross-species morphological divergence; same paper, complementary observations."
+    }
+  ],
+  "_conflict_provenance": [
+    {
+      "source_cluster": "cluster_03_morphology",
+      "source_cluster_conflict_index": 0,
+      "paper_a_doi": "10.1002/dneu.20853",
+      "paper_b_doi": "10.1002/cne.22229"
+    },
+    {
+      "source_cluster": "cluster_03_morphology",
+      "source_cluster_conflict_index": 1,
+      "paper_a_doi": "10.1016/j.cell.2020.09.057",
+      "paper_b_doi": "10.1101/2020.02.03.932244"
+    },
+    {
+      "source_cluster": "cluster_03_morphology",
+      "source_cluster_conflict_index": 2,
+      "paper_a_doi": "10.1093/cercor/bhv202",
+      "paper_b_doi": "10.3389/fncir.2021.653116"
+    },
+    {
+      "source_cluster": "cluster_03_morphology",
+      "source_cluster_conflict_index": 3,
+      "paper_a_doi": "10.1126/science.adf0805",
+      "paper_b_doi": "10.1126/science.adf0805"
+    }
+  ],
+  "_metadata": {
+    "phase": "5_evidence_curation",
+    "iter": "iter6_normalized",
+    "schema_version": "1.0",
+    "produced_by": "dataml-actor",
+    "intra_section_collapse_count": 1,
+    "dedup_key": "claim_source_sentence",
+    "patch_A_cite_keys_resolved": 0
+  }
+}

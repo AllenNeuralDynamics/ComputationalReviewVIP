@@ -1,0 +1,206 @@
+{
+  "_overall": {
+    "status": "PARTIAL WITH_DOCUMENTED_EXITS",
+    "version": 2,
+    "phase": 5,
+    "actor": "DATAML",
+    "patches_applied": [
+      "A",
+      "B",
+      "B2",
+      "C",
+      "D"
+    ],
+    "exit_decision_artifact": "phase5_exit_decision.md",
+    "exit_decision_artifact_id": "96e87507-aa8f-4802-b1bd-cd2e53576cda",
+    "documented_exits": [
+      {
+        "check": "PAPER_TIER_FLOOR",
+        "reason": "EXIT 1: clusters 03, 08 saturated below mean (33 and 40 papers); 100% of available evidence captured"
+      }
+    ],
+    "summary_metrics": {
+      "total_findings_curated": 2726,
+      "phase2_total_findings": 1779,
+      "unique_dois_covered": 1048,
+      "phase2_unique_dois": 1037,
+      "coverage_pct": 101.06,
+      "conflicts_assigned": 51,
+      "conflicts_unassigned": 0,
+      "synthesized_cite_keys_remaining": 2,
+      "cross_section_avoidable_violations": 0,
+      "cross_section_unavoidable_violations": 279
+    },
+    "generated_at": "2026-04-27T03:37:24.412631Z"
+  },
+  "gates": [
+    {
+      "check": "NO_INTRA_SECTION_DUPLICATES",
+      "violations": [],
+      "count": 0,
+      "status": "PASS",
+      "note": "Dedup key: (doi, claim_source_sentence). Null/empty CSS findings excluded (no meaningful equivalence). Phase 5 intra-section dedup operates on this same key."
+    },
+    {
+      "check": "CROSS_SECTION_DIFFERENTIATION",
+      "avoidable_violations": 0,
+      "unavoidable_violations": 279,
+      "details_avoidable": [],
+      "status": "PASS",
+      "note": "All Phase 2 single-CSS unavoidable cases (279) accepted as data-quality exit (see phase5_exit_decision.md EXIT 2)."
+    },
+    {
+      "check": "ZERO_LOSS",
+      "phase2_total_findings": 1779,
+      "curated_total_findings": 2726,
+      "status": "PASS"
+    },
+    {
+      "check": "ALL_CONFLICTS_ASSIGNED",
+      "total_conflicts": 51,
+      "unassigned": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "PAPER_TIER_FLOOR",
+      "violations": [
+        {
+          "section": "section_04",
+          "tier": "supporting",
+          "unique_dois": 33,
+          "floor": 46.7
+        },
+        {
+          "section": "section_09",
+          "tier": "core",
+          "unique_dois": 40,
+          "floor": 70.1
+        }
+      ],
+      "details": {
+        "section_01": {
+          "unique_dois": 222,
+          "tier": "supporting",
+          "floor_threshold": 46.7,
+          "passes": true
+        },
+        "section_02": {
+          "unique_dois": 119,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_03": {
+          "unique_dois": 161,
+          "tier": "supporting",
+          "floor_threshold": 46.7,
+          "passes": true
+        },
+        "section_04": {
+          "unique_dois": 33,
+          "tier": "supporting",
+          "floor_threshold": 46.7,
+          "passes": false
+        },
+        "section_05": {
+          "unique_dois": 51,
+          "tier": "supporting",
+          "floor_threshold": 46.7,
+          "passes": true
+        },
+        "section_06": {
+          "unique_dois": 467,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_07": {
+          "unique_dois": 119,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_08": {
+          "unique_dois": 202,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_09": {
+          "unique_dois": 40,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": false
+        },
+        "section_10": {
+          "unique_dois": 80,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_11": {
+          "unique_dois": 245,
+          "tier": "core",
+          "floor_threshold": 70.1,
+          "passes": true
+        },
+        "section_12": {
+          "unique_dois": 266,
+          "tier": "supporting",
+          "floor_threshold": 46.7,
+          "passes": true
+        },
+        "section_13": {
+          "unique_dois": 365,
+          "tier": "synthesis",
+          "floor_threshold": 35.0,
+          "passes": true
+        }
+      },
+      "status": "FAIL",
+      "note": "Saturation-mode: clusters_03_morphology and 08_brain_regions saturated below mean. 100% of available evidence captured. See phase5_exit_decision.md EXIT 1."
+    },
+    {
+      "check": "COVERAGE_75",
+      "phase2_unique_dois": 1037,
+      "curated_unique_dois": 1048,
+      "coverage_pct": 101.06,
+      "threshold_pct": 75,
+      "status": "PASS"
+    },
+    {
+      "check": "CITE_KEY_ASSIGNED",
+      "missing": 0,
+      "synthesized_in_use": 2,
+      "synthesized_dois_total": 2,
+      "status": "PASS",
+      "note": "Patch A: 192 of 194 synthesized cite_keys resolved via CrossRef/arXiv. 2 DOIs retain synthesized fallback (404 from public APIs)."
+    },
+    {
+      "check": "SCAFFOLD_EXTRACT_SIZE",
+      "max_bytes": 20356,
+      "threshold_bytes": 20480,
+      "all_sizes": {
+        "section_01": 16406,
+        "section_02": 18095,
+        "section_03": 19760,
+        "section_04": 18813,
+        "section_05": 18670,
+        "section_06": 18693,
+        "section_07": 18736,
+        "section_08": 18710,
+        "section_09": 20095,
+        "section_10": 19563,
+        "section_11": 19583,
+        "section_12": 20356,
+        "section_13": 17968
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "PER_SECTION_MAP_FILTERED",
+      "violations": [],
+      "status": "PASS"
+    }
+  ]
+}

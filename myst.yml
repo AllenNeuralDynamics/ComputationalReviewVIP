@@ -1,52 +1,68 @@
 version: 1
-extends:
-  - content/authors.yml
 project:
-  title: "REVIEW TITLE — Update in myst.yml"
-  subtitle: A Reproducible Computational Review
-  description: >
-    Update this description for your review topic.
+  title: 'VIP Cortical Interneurons: A Critical Reassessment of the Disinhibition
+    Framework'
+  description: A computational review of vasoactive intestinal peptide (VIP)-expressing
+    cortical interneurons across molecular identity, development, morphology, electrophysiology,
+    connectivity, in-vivo function, and disease translation.
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  doi: 10.0000/placeholder
   keywords:
-    - neuroscience
-    - critical review
-    - reproducible research
-  license: MIT
-  open_access: true
-  numbering:
-    figure:
-      continue: true
-    table:
-      continue: true
-    equation:
-      continue: true
-    code:
-      continue: true
-  plugins:
-    - plugins/authorship-plugin.mjs
-    - plugins/evidence-explorer-plugin.mjs
-    - plugins/figure-lightbox-plugin.mjs
-  github: https://github.com/AllenNeuralDynamics/ComputationalReviewTemplate
+  - VIP interneurons
+  - cortical inhibition
+  - disinhibition
+  - circuit motifs
+  - GABAergic
+  authors:
+  - name: ComputationalReview Pipeline
+    affiliations:
+    - Computational Review Pipeline
+    corresponding: true
+    email: anonymous@allenneuralsciences.org
+  github: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP
   bibliography:
-    - content/references.bib
+  - references.bib
   toc:
-    - file: content/00_frontmatter.md
-    - file: content/01_introduction.md
-    - file: content/Methods.md
-      title: Methods
-    - file: content/evidence_database.md
-      title: Evidence Database
-    - file: content/provenance.md
-      title: Pipeline Provenance
-  exports:
-    - format: tex
-      output: review_manuscript.tex
-      template: ./latex/template
-    - format: pdf
-      output: review_manuscript.pdf
-      template: ./latex/template
+  - file: content/01_introduction.md
+    title: Introduction
+  - file: content/02_classification.md
+    title: Molecular Identity and Transcriptomic Taxonomy
+  - file: content/03_development.md
+    title: Development and Lineage
+  - file: content/04_morphology.md
+    title: Morphological Diversity
+  - file: content/05_electrophysiology.md
+    title: Intrinsic Electrophysiology
+  - file: content/06_synaptic_properties.md
+    title: Synaptic Properties and Connectivity
+  - file: content/07_disinhibition_framework.md
+    title: Local Circuit Motifs and the Disinhibition Framework
+  - file: content/08_in_vivo_behavior.md
+    title: In Vivo Function During Behavior
+  - file: content/09_cross_areas.md
+    title: VIP Interneurons Across Brain Regions
+  - file: content/10_oscillatory_dynamics.md
+    title: Oscillatory Dynamics and Temporal Coordination
+  - file: content/11_disease_translational.md
+    title: Species Differences, Human Relevance, and Disease
+  - file: content/12_computational_models.md
+    title: Computational Models of VIP Circuit Function
+  - file: content/13_conclusion.md
+    title: Conclusion
+  - file: content/Methods.md
+    title: Methods
+  plugins:
+  - plugins/authorship.mjs
+  - plugins/evidence-explorer.mjs
+  - plugins/figure-lightbox.mjs
 site:
   template: book-theme
-  title: "Computational Review"
-  nav:
-    - title: GitHub
-      url: https://github.com/AllenNeuralDynamics/ComputationalReviewTemplate
+  options:
+    favicon: ''
+    logo: ''
+  nav: []
+  actions:
+  - title: Bibliography
+    url: /references.bib

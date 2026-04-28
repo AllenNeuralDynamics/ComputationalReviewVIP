@@ -1,0 +1,88 @@
+{
+  "phase": 3,
+  "validator_complete": true,
+  "gate": "pass",
+  "total_entries": 1037,
+  "per_entry_pass_rate": 0.998071,
+  "checks": {
+    "crossref_resolves": {
+      "pass": 1037,
+      "fail": 0,
+      "fail_dois": []
+    },
+    "key_format": {
+      "pass": 1037,
+      "fail": 0,
+      "fail_keys": []
+    },
+    "key_unique": {
+      "pass": 1037,
+      "fail": 0,
+      "collisions": []
+    },
+    "author_match": {
+      "pass": 1035,
+      "fail": 2,
+      "mismatches": [
+        {
+          "doi": "10.1038/nrn2402",
+          "cite_key": "Thepetillainterneuronnomenclaturegroupping2008",
+          "crossref_family": "",
+          "crossref_name": "The Petilla Interneuron Nomenclature Group (PING)",
+          "resolved_by_name_match": true
+        },
+        {
+          "doi": "10.1038/s41586-021-03950-0",
+          "cite_key": "Braininitiativecellcensusnetworkbiccn2021",
+          "crossref_family": "",
+          "crossref_name": "BRAIN Initiative Cell Census Network (BICCN)",
+          "resolved_by_name_match": true
+        }
+      ]
+    },
+    "year_match": {
+      "pass": 1037,
+      "fail": 0,
+      "mismatches": []
+    }
+  },
+  "cross_checks": {
+    "cardinality_match": true,
+    "scaffold_size_ok": true,
+    "scaffold_keys_ok": true,
+    "scaffold_cluster_count": 14
+  },
+  "aggregates": {
+    "per_entry_pass_rate_ge_95": true,
+    "zero_collisions": true,
+    "zero_unresolved_prefixes": true
+  },
+  "blocking_failures": [],
+  "revised_rules": {
+    "AUTHOR_MATCH": "alpha_only(cite_key_surname).lower() == alpha_only(ascii_fold(crossref_family)).lower(); alpha_only = re.sub(r'[^A-Za-z]','',s); ascii_fold = NFKD-strip-non-ASCII",
+    "KEY_FORMAT": "^[A-Z][a-z]*\\d{4}[a-z]?$ (allows zero-or-more lowercase letters in surname; admits single-letter surnames like 'R2024')"
+  },
+  "residual_notes": [
+    {
+      "category": "consortium_author_no_family_field",
+      "count": 2,
+      "explanation": "CrossRef returned only an author 'name' field (corporate/consortium author) with no 'family'. The cite_key surname matches the alpha_only-normalized consortium name exactly under the v2 rule applied to author[0].name. Not a data-quality defect; the actor synthesized the cite_key from the consortium name. Optional v3 rule would fall back to author[0].name when family is missing.",
+      "entries": [
+        {
+          "doi": "10.1038/nrn2402",
+          "cite_key": "Thepetillainterneuronnomenclaturegroupping2008",
+          "crossref_family": "",
+          "crossref_name": "The Petilla Interneuron Nomenclature Group (PING)",
+          "resolved_by_name_match": true
+        },
+        {
+          "doi": "10.1038/s41586-021-03950-0",
+          "cite_key": "Braininitiativecellcensusnetworkbiccn2021",
+          "crossref_family": "",
+          "crossref_name": "BRAIN Initiative Cell Census Network (BICCN)",
+          "resolved_by_name_match": true
+        }
+      ]
+    }
+  ]
+}

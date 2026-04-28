@@ -1,0 +1,83 @@
+{
+  "phase": "5V",
+  "validator_frame_id": "eead471c-2d56-4101-9840-bce5dd7346b5",
+  "checks": {
+    "NO_INTRA_SECTION_DUPLICATES": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "Under (DOI, CSS) dedup key (documented in gate manifest note): 0 violations. Under strict CSS-only interpretation: 1 case in section_13 \u2014 DOI 10.1101/2023.03.07.531614 (preprint, cite_key=Thompson2023) and DOI 10.1016/j.neuropharm.2023.109638 (published, cite_key=Thompson2023a) share identical CSS. These are distinct DOIs; the actor's documented (DOI,CSS) policy treats them as non-duplicates. Acceptable."
+    },
+    "CROSS_SECTION_DIFFERENTIATION": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "Avoidable violations: 0 (every DOI used with the same single CSS across multiple sections has only 1 CSS variant in Phase 2). Unavoidable: 272 (validator independent count) vs 279 reported by gate \u2014 small numeric discrepancy attributable to differing P2-finding-counting conventions, but key avoidable=0 confirmed. Documented as EXIT 2 in phase5_exit_decision.md."
+    },
+    "ZERO_LOSS": {
+      "status": "PASS",
+      "metric": 2726,
+      "details": "Sum of len(findings) across 13 sections = 2726. Phase 2 actual = 1756; reported target = 1779. 2726 \u2265 both. Note: 2 Phase-2 (DOI,CSS) findings absent from curation surface (DOIs 10.1101/2020.09.24.312686, 10.1371/journal.pbio.3003706); both in covered clusters but not present in any section package. Count threshold passes; data-quality note for actor follow-up."
+    },
+    "ALL_CONFLICTS_ASSIGNED": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "All 51 conflicts in conflict_normalisation_map.json have non-empty assigned_sections AND every assignment was independently verified to appear in the corresponding section package's conflicts list (0 missing)."
+    },
+    "PAPER_TIER_FLOOR": {
+      "status": "FAIL",
+      "metric": 2,
+      "details": "section_04 (33 unique papers, supporting tier floor 46.7) and section_09 (40 unique papers, core tier floor 70.1) below tier-derived floor. Both backed by saturation-limited Phase 2 clusters (cluster_03_morphology=33 papers, cluster_08_brain_regions=40 papers), with 100% of available evidence captured. Documented as EXIT 1 in phase5_exit_decision.md (artifact 96e87507-aa8f-4802-b1bd-cd2e53576cda)."
+    },
+    "COVERAGE_75": {
+      "status": "PASS",
+      "metric": 99.81,
+      "details": "Curated unique DOIs = 1048; Phase 2 unique DOIs (validator independent count from cluster findings) = 1050. Coverage = 99.8%, \u226575% threshold."
+    },
+    "CITE_KEY_ASSIGNED": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "All 2726 findings have populated cite_key. 2 findings retain synthesized fallback (Unmapped_xxxxxx) for DOIs unresolved by CrossRef/arXiv (10.22099/mbrc.2020.38601.1557, 10.3969/j.issn.1673-5374.2012.13.009) \u2014 matches gate manifest. NOTE: 304 DOIs in citation_key_map_extended.json still show 'Unmapped_xxx' values while corresponding section findings have proper resolved keys (per-section maps are correctly synced). Suggests the extended map is pre-Patch-A; downstream consumers should source per-section maps, not the full extended map."
+    },
+    "SCAFFOLD_EXTRACT_SIZE": {
+      "status": "PASS",
+      "metric": 20356,
+      "details": "All 13 scaffold extracts < 20480 bytes. Max = 20356 (section_12); section_09 = 20095; all others < 20000."
+    },
+    "PER_SECTION_MAP_FILTERED": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "All 13 per-section citation_key_maps contain exactly the DOIs in their section findings (no extras, no missing). All 13 per-section author_name_tables contain exactly the cite_keys in their section findings."
+    },
+    "CITE_KEY_FORMAT": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "0 format violations. 2 cite_keys use synthesized fallback pattern (Unmapped_<6hex>). All other 2724 cite_keys match the canonical regex ^[A-Z][a-z]*[A-Z]?[a-z]*[a-z]?\\d{4}[a-z]?$, including edge case 'R2024' (single-letter surname from CrossRef metadata)."
+    },
+    "CONFLICT_SCHEMA": {
+      "status": "PASS",
+      "metric": 0,
+      "details": "All 51 conflicts have all 6 canonical fields present (paper_a_doi, paper_b_doi, paper_a_claim, paper_b_claim, nature_of_conflict, resolution_status). Note: 3 conflicts (indices 21, 22, 23 from cluster_05_synaptic_connectivity) have null paper_a_claim and paper_b_claim values inherited verbatim from Phase 2 source \u2014 fields are present (passes schema), but values are null (upstream data-quality note)."
+    },
+    "EXIT_DOC_LINKED": {
+      "status": "PASS",
+      "metric": 1,
+      "details": "Gate manifest _overall.exit_decision_artifact_id = '96e87507-aa8f-4802-b1bd-cd2e53576cda' matches phase5_exit_decision.md artifact. PAPER_TIER_FLOOR FAIL gate explicitly references phase5_exit_decision.md EXIT 1 in its note. CROSS_SECTION_DIFFERENTIATION (PASS but with documented unavoidable cases) references EXIT 2 in its note."
+    }
+  },
+  "_overall": {
+    "status": "PASS",
+    "documented_exits_accepted": [
+      "EXIT_1_PAPER_TIER_FLOOR",
+      "EXIT_2_CROSS_SECTION_DIFF_UNAVOIDABLE"
+    ],
+    "blocking_failures": [],
+    "exit_decision_artifact_id": "96e87507-aa8f-4802-b1bd-cd2e53576cda",
+    "validator_notes": [
+      "All 9 gate checks + 3 integrity checks PASS or are exclusively documented exits.",
+      "PAPER_TIER_FLOOR FAIL is the EXIT 1 case (sections 04, 09) \u2014 saturation-limited Phase 2 clusters, 100% available evidence captured.",
+      "CROSS_SECTION_DIFFERENTIATION has 0 avoidable violations; ~272 unavoidable cases are EXIT 2.",
+      "Soft notes (non-blocking): (a) 2 Phase 2 (DOI,CSS) findings missing from curation surface (count check still passes); (b) citation_key_map_extended.json appears not fully synced with Patch A \u2014 per-section maps are correctly synced.",
+      "Data quality note: 3 conflicts inherit null paper_a_claim/paper_b_claim from Phase 2 cluster_05 (schema fields present, values null)."
+    ],
+    "validated_at": "2026-04-27T03:58:21.838180Z"
+  }
+}

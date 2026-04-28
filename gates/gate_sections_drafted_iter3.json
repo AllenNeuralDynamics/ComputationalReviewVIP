@@ -1,0 +1,214 @@
+{
+  "phase": 7,
+  "iteration": 3,
+  "gate": "pass",
+  "total_failures": 0,
+  "per_section": {
+    "sec_02": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_03": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_04": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_05": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_06": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_07": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_08": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_09": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_10": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_11": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    },
+    "sec_12": {
+      "status": "pass",
+      "failures": [],
+      "failure_count": 0,
+      "checks": {
+        "SECTION_ANCHOR_PRESENT": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FIGURE_FENCE_SYNTAX": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass"
+      }
+    }
+  },
+  "summary_by_check": {
+    "SECTION_ANCHOR_PRESENT": 0,
+    "CITE_KEYS_EXIST": 0,
+    "FIGURE_FENCE_SYNTAX": 0,
+    "FIGURE_HAS_IMAGE_PATH": 0,
+    "NO_BARE_AUTHOR_NAMES": 0,
+    "FORBIDDEN_LEXICON": 0,
+    "NO_LABEL_DIRECTIVE": 0,
+    "NO_DUPLICATE_NAME": 0
+  },
+  "checks_run": [
+    "SECTION_ANCHOR_PRESENT",
+    "CITE_KEYS_EXIST",
+    "FIGURE_FENCE_SYNTAX",
+    "FIGURE_HAS_IMAGE_PATH",
+    "NO_BARE_AUTHOR_NAMES",
+    "FORBIDDEN_LEXICON",
+    "NO_LABEL_DIRECTIVE",
+    "NO_DUPLICATE_NAME"
+  ],
+  "valid_cite_keys_loaded": 1037,
+  "input_artifacts": {
+    "sec_02": "1459f048-5fa8-4b3a-8856-c71d14ab0674",
+    "sec_03": "ba103f40-332f-4ca7-82ab-e0ed8a37f619",
+    "sec_04": "80614db7-4aad-495e-ab87-8e8ab8aa0791",
+    "sec_05": "823b5c87-6435-44d4-a436-90d3a8bd6179",
+    "sec_06": "02ef6dcd-6e67-454b-9c0a-6bbf838adbf7",
+    "sec_07": "43f5bb72-ad2e-4cfc-9b58-a868155272ae",
+    "sec_08": "2d64f689-3a3d-4254-9cac-06c8850c0836",
+    "sec_09": "44e803ad-d5c8-4467-abbc-1f8ad9d66cf4",
+    "sec_10": "e18c4fb6-2a05-4165-82dd-f6511c7fe1aa",
+    "sec_11": "29b52a68-5c43-4350-81c2-360ca56f5035",
+    "sec_12": "05ca129e-ab5f-4026-8c7c-00dffde38818",
+    "citation_key_map": "1fecfde0-a5e8-4748-90cc-f86d0945b6ef"
+  },
+  "remediation_progress": {
+    "iter1": 211,
+    "iter2": 4,
+    "iter3": 0
+  },
+  "gate_passed": true
+}

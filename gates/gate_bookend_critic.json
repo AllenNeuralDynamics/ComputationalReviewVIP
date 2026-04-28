@@ -1,0 +1,230 @@
+{
+  "gate": "pass",
+  "phase": "12",
+  "iteration": 2,
+  "intro_md_version_id": "8c2df2b9-9b64-489d-a96e-a893b705f673",
+  "conclusion_md_version_id": "d2ae9ef1-9e4e-472d-b33b-b624971eb2f9",
+  "intro": {
+    "must_fix": [],
+    "should_caveat": [
+      {
+        "issue_id": "INTRO-CAVEAT-001",
+        "severity": "should_caveat",
+        "location": "Paragraph 2, thesis sentence ('reliably state-modulated and reliably disinhibitory at the subclass average across cortex').",
+        "description": "The qualifier 'reliably disinhibitory at the subclass average' is stronger than the body-section consensus (sec_07, sec_08), which documents area- and preparation-dependent failures even at population level. Carried forward from iter1; non-blocking."
+      },
+      {
+        "issue_id": "INTRO-CAVEAT-002",
+        "severity": "should_caveat",
+        "location": "Paragraph 1 ('under one in ten cortical interneurons across most rodent areas').",
+        "description": "sec_02 uses the Rudy2011/Tremblay2016 figure of ~10\u201315%; 'under one in ten' is slightly tighter. Non-blocking; alignable for internal consistency."
+      }
+    ],
+    "cite_keys_used": {
+      "count": 76,
+      "new_vs_body_delta": [],
+      "all_in_body": true,
+      "all_in_master_allowlist": true,
+      "all_in_bib": true,
+      "diff_vs_iter1_intro": []
+    },
+    "forbidden_lexicon_hits": [],
+    "anchor_check": {
+      "pass": true,
+      "first_nonblank_line": "(sec-introduction)="
+    },
+    "crossref_resolution_check": {
+      "pass": true,
+      "broken_refs": [],
+      "numref_targets": [
+        "sec-computational-models",
+        "sec-cross-areas",
+        "sec-development",
+        "sec-disease-translational",
+        "sec-disinhibition-framework",
+        "sec-electrophysiology",
+        "sec-in-vivo-behavior",
+        "sec-molecular-identity",
+        "sec-morphology",
+        "sec-oscillatory-dynamics",
+        "sec-synaptic-properties"
+      ],
+      "ref_targets": [
+        "sec-conclusion"
+      ]
+    },
+    "citation_density_check": {
+      "per_paragraph": [
+        {
+          "para_idx": 2,
+          "n_sentences": 4,
+          "n_unique_keys": 16,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 3,
+          "n_sentences": 4,
+          "n_unique_keys": 9,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 4,
+          "n_sentences": 5,
+          "n_unique_keys": 21,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 5,
+          "n_sentences": 4,
+          "n_unique_keys": 26,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 6,
+          "n_sentences": 3,
+          "n_unique_keys": 30,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 7,
+          "n_sentences": 6,
+          "n_unique_keys": 25,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 8,
+          "n_sentences": 3,
+          "n_unique_keys": 11,
+          "meets_min_4": true
+        }
+      ],
+      "all_meet_min_4": true,
+      "min_keys_per_paragraph": 9,
+      "median_keys_per_paragraph": 21
+    },
+    "internal_consistency_check": {
+      "pass": true,
+      "notes": "Intro previews all 11 body sections; the five cross-cutting tensions match sec_07/08/09/11/12 framing and are correctly previewed for the conclusion's partial-resolution synthesis."
+    },
+    "remediation_verification": {
+      "iter1_must_fix_resolved": [
+        "INTRO-FORBIDDEN-LEXICON-001"
+      ],
+      "diff_from_iter1": "Single replacement: 'the canonical mechanism fails or runs in reverse' \u2192 'the disinhibitory mechanism fails or runs in reverse' (sec-in-vivo-behavior preview sentence). No other text changes; cite-key set, anchor, and cross-refs unchanged. New length 10081 chars vs iter1 10077 (+4 chars consistent with 'canonical' \u2192 'disinhibitory').",
+      "no_new_issues_introduced": true,
+      "regression_scan": "Re-ran full forbidden-lexicon scan (seminal/landmark/important/novel/fundamental/essential/crucial/canonical/established/ground-breaking/groundbreaking/paradigm-shifting/paradigm shifting): zero hits. Re-confirmed cite-key allowlist, anchor presence, and {numref}/{ref} resolution; all unchanged and passing."
+    }
+  },
+  "conclusion": {
+    "must_fix": [],
+    "should_caveat": [
+      {
+        "issue_id": "CONCL-CAVEAT-001",
+        "severity": "should_caveat",
+        "location": "Paragraph 4 (hippocampal IS-3 wiring).",
+        "description": "Carried from iter1; conclusion text unchanged. Non-blocking."
+      },
+      {
+        "issue_id": "CONCL-CAVEAT-002",
+        "severity": "should_caveat",
+        "location": "Paragraph 5 (predictive coding / credit assignment negative claim).",
+        "description": "Carried from iter1; conclusion text unchanged. Non-blocking."
+      },
+      {
+        "issue_id": "CONCL-CAVEAT-003",
+        "severity": "should_caveat",
+        "location": "Paragraph 3 (twenty-one t-types figure).",
+        "description": "Carried from iter1; conclusion text unchanged. Non-blocking."
+      }
+    ],
+    "cite_keys_used": {
+      "count": 71,
+      "new_vs_body_delta": [],
+      "all_in_body": true,
+      "all_in_master_allowlist": true,
+      "all_in_bib": true
+    },
+    "forbidden_lexicon_hits": [],
+    "anchor_check": {
+      "pass": true,
+      "first_nonblank_line": "(sec-conclusion)="
+    },
+    "crossref_resolution_check": {
+      "pass": true,
+      "broken_refs": [],
+      "numref_targets": [
+        "sec-computational-models",
+        "sec-cross-areas",
+        "sec-disease-translational",
+        "sec-electrophysiology",
+        "sec-in-vivo-behavior",
+        "sec-morphology",
+        "sec-oscillatory-dynamics"
+      ],
+      "ref_targets": [
+        "sec-introduction"
+      ]
+    },
+    "citation_density_check": {
+      "per_paragraph": [
+        {
+          "para_idx": 2,
+          "n_sentences": 4,
+          "n_unique_keys": 28,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 3,
+          "n_sentences": 4,
+          "n_unique_keys": 16,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 4,
+          "n_sentences": 4,
+          "n_unique_keys": 15,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 5,
+          "n_sentences": 4,
+          "n_unique_keys": 35,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 6,
+          "n_sentences": 5,
+          "n_unique_keys": 25,
+          "meets_min_4": true
+        },
+        {
+          "para_idx": 7,
+          "n_sentences": 6,
+          "n_unique_keys": 20,
+          "meets_min_4": true
+        }
+      ],
+      "all_meet_min_4": true,
+      "min_keys_per_paragraph": 15,
+      "median_keys_per_paragraph": 25
+    },
+    "internal_consistency_check": {
+      "pass": true,
+      "notes": "Unchanged from iter1; passes."
+    },
+    "note": "Conclusion artifact unchanged from iter1; re-running the global pass logic for completeness \u2014 all checks pass."
+  },
+  "summary": {
+    "total_must_fix": 0,
+    "total_should_caveat": 5,
+    "intro_must_fix_count": 0,
+    "conclusion_must_fix_count": 0,
+    "body_cite_set_size": 413,
+    "intro_cite_keys_count": 76,
+    "conclusion_cite_keys_count": 71,
+    "intro_new_keys": [],
+    "conclusion_new_keys": [],
+    "master_allowlist_size": 1037
+  },
+  "summary_notes": "Iter2 re-audit of the remediated introduction (v2, 1018 words, 76 unique cite-keys) confirms the single iter1 MUST_FIX is fully resolved: the only textual change is 'the canonical mechanism' \u2192 'the disinhibitory mechanism' in the sec-in-vivo-behavior preview sentence; no other content was modified. Full regression scan passes \u2014 zero forbidden-lexicon hits across the strict Phase-12 list (seminal/landmark/important/novel/fundamental/essential/crucial/canonical/established/ground-breaking/paradigm-shifting/etc.); cite-key set is identical to iter1 (76 keys, all in the 413-key body cite-set, the 1037-key master allowlist, and references.bib); (sec-introduction)= is the first non-blank line; all 21 {numref} and 1 {ref} targets resolve to existing body anchors; all 7 substantive paragraphs meet the \u22654 cite-key density floor (min 9, max 30). Conclusion is unchanged and continues to pass. Five non-blocking should_caveat items are carried forward from iter1 for editorial consideration. Gate=pass; intro_must_fix_count=0; conclusion_must_fix_count=0."
+}

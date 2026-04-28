@@ -1,0 +1,49 @@
+{
+  "phase": "5",
+  "phase_name": "evidence_curation",
+  "status": "PASS_WITH_DOCUMENTED_EXITS",
+  "actor_frame_id": "2a4ebc68-542e-4226-aff7-a69affbb0130",
+  "validator_frame_id": "a28eb84d-d833-47d6-b8f0-76da5f27aad9",
+  "actor_gate_vid": "ed073d08-21ac-45f7-acb9-521a60e7a612",
+  "validator_gate_vid": "34bed402-7983-41be-a30d-bd760b539e89",
+  "exit_decision_vid": "96e87507-aa8f-4802-b1bd-cd2e53576cda",
+  "checks": {
+    "NO_INTRA_SECTION_DUPLICATES": "PASS",
+    "CROSS_SECTION_DIFFERENTIATION": "PASS (0 avoidable; 272 unavoidable accepted as EXIT 2)",
+    "ZERO_LOSS": "PASS (2726 >= 1779)",
+    "ALL_CONFLICTS_ASSIGNED": "PASS (51/51)",
+    "PAPER_TIER_FLOOR": "DOCUMENTED_EXIT (EXIT 1: sections 04, 09 below floor due to Phase 2 saturation)",
+    "COVERAGE_75": "PASS (99.8% of Phase 2 unique DOIs)",
+    "CITE_KEY_ASSIGNED": "PASS (0 missing; 192/194 synthesized resolved via CrossRef+arXiv; 2 fallback retained)",
+    "SCAFFOLD_EXTRACT_SIZE": "PASS (max 20356 < 20480 B)",
+    "PER_SECTION_MAP_FILTERED": "PASS",
+    "CITE_KEY_FORMAT": "PASS",
+    "CONFLICT_SCHEMA": "PASS",
+    "EXIT_DOC_LINKED": "PASS"
+  },
+  "deliverables": {
+    "evidence_packages_count": 13,
+    "scaffold_extracts_count": 13,
+    "section_citation_maps_count": 13,
+    "section_author_tables_count": 13,
+    "conflict_normalisation_map_vid": "80797a0c-d59a-401f-bed4-f7c812dc8482",
+    "unassigned_findings_vid": "24955abf-e909-497b-8621-ad85f273acd0",
+    "total_unique_dois": 1048,
+    "coverage_pct_phase2": 99.8,
+    "total_findings_curated": 2726,
+    "conflicts_normalized": 51
+  },
+  "documented_exits": [
+    {
+      "id": "EXIT_1",
+      "name": "PAPER_TIER_FLOOR",
+      "rationale": "Sections 04 (Morphology, 33 papers vs 47 floor) and 09 (Brain Regions, 40 papers vs 70 floor) below tier floor. Cause: clusters 03 and 08 reached saturation in Phase 2V at lower paper counts than cross-cluster mean (116.8). 100% of available evidence is captured. Accepted as saturation outcome documented in phase5_exit_decision.md."
+    },
+    {
+      "id": "EXIT_2",
+      "name": "CROSS_SECTION_DIFFERENTIATION_UNAVOIDABLE",
+      "rationale": "272 unavoidable cases where Phase 2 source data has only one claim_source_sentence per DOI. Avoidable cases = 0 post-patch. Re-extracting alternative CSS would require fulltext fetch + reparse for ~272 papers; deferred to future review pipeline improvements (extract >=2 CSS per multi-cluster paper at Phase 2)."
+    }
+  ],
+  "advance_decision": "Approved to proceed to Phase 6 (Figure Audit)."
+}
