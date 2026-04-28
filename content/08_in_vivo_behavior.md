@@ -104,12 +104,17 @@ Qualitative summary of in-vivo VIP recruitment across behavioural conditions, re
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-behavior.ipynb for the complete generation
-# code and provenance.
+# Schematic figure — qualitative only.
+# The committed figures/fig-vip-behavior.png was assembled from claim-level evidence
+# in the curated literature corpus. The cluster covered by this figure
+# (cluster_07_in_vivo_function for vip-behavior, cluster_05 for state-tree)
+# had NO audited Phase-6 quantitative panels, so no reproducible plotting code
+# is shipped. See content/08_in_vivo_behavior.md (or 05_electrophysiology.md)
+# for the full caption and caveat documentation, and the per-section
+# evidence package under evidence/ for the claim-level provenance.
+print('Schematic figure — see committed PNG in figures/')
 ```
-
 :::
 :::{figure} ../figures/fig-vip-state-decision-tree.png
 :name: fig-vip-state-decision-tree
@@ -121,12 +126,17 @@ Decision schematic for predicting in-vivo VIP polarity from cortical area, behav
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-state-decision-tree.ipynb for the complete generation
-# code and provenance.
+# Schematic figure — qualitative only.
+# The committed figures/fig-vip-state-decision-tree.png was assembled from claim-level evidence
+# in the curated literature corpus. The cluster covered by this figure
+# (cluster_07_in_vivo_function for vip-behavior, cluster_05 for state-tree)
+# had NO audited Phase-6 quantitative panels, so no reproducible plotting code
+# is shipped. See content/08_in_vivo_behavior.md (or 05_electrophysiology.md)
+# for the full caption and caveat documentation, and the per-section
+# evidence package under evidence/ for the claim-level provenance.
+print('Schematic figure — see committed PNG in figures/')
 ```
-
 :::
 ## Top-down inputs and novelty/expectation signals
 

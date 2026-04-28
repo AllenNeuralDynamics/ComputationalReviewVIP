@@ -1,10 +1,10 @@
 version: 1
+extends:
+- content/authors.yml
 project:
-  title: 'VIP Cortical Interneurons: A Critical Reassessment of the Disinhibition
-    Framework'
-  description: A computational review of vasoactive intestinal peptide (VIP)-expressing
-    cortical interneurons across molecular identity, development, morphology, electrophysiology,
-    connectivity, in-vivo function, and disease translation.
+  title: 'VIP Cortical Interneurons: A Critical Reassessment of the Disinhibition Framework'
+  description: A computational review of vasoactive intestinal peptide (VIP)-expressing cortical interneurons across molecular
+    identity, development, morphology, electrophysiology, connectivity, in-vivo function, and disease translation.
   license:
     content: CC-BY-4.0
     code: MIT
@@ -15,16 +15,11 @@ project:
   - disinhibition
   - circuit motifs
   - GABAergic
-  authors:
-  - name: ComputationalReview Pipeline
-    affiliations:
-    - Computational Review Pipeline
-    corresponding: true
-    email: anonymous@allenneuralsciences.org
   github: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP
   bibliography:
-  - references.bib
+  - content/references.bib
   toc:
+  - file: content/00_frontmatter.md
   - file: content/01_introduction.md
     title: Introduction
   - file: content/02_classification.md
@@ -53,10 +48,25 @@ project:
     title: Conclusion
   - file: content/Methods.md
     title: Methods
+  - file: content/evidence_database.md
+    title: Evidence Database
+  - file: content/provenance.md
+    title: Pipeline Provenance
+  - file: content/verification_summary.md
+    title: Citation Verification Summary
   plugins:
-  - plugins/authorship.mjs
-  - plugins/evidence-explorer.mjs
-  - plugins/figure-lightbox.mjs
+  - plugins/authorship-plugin.mjs
+  - plugins/evidence-explorer-plugin.mjs
+  - plugins/figure-lightbox-plugin.mjs
+  numbering:
+    figure:
+      continue: true
+    table:
+      continue: true
+    equation:
+      continue: true
+    code:
+      continue: true
 site:
   template: book-theme
   options:
@@ -65,4 +75,4 @@ site:
   nav: []
   actions:
   - title: Bibliography
-    url: /references.bib
+    url: /content/references.bib

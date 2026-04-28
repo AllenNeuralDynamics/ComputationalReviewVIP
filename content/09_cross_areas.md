@@ -112,12 +112,131 @@ VIP interneurons across brain regions. **Panel A**: Brain-area schematic summari
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-across-areas.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
 
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+# === Panel A: brain-area schematic ===
+axA = axes[0,0]
+axA.set_title('A. Dominant VIP recruiting variable by region', fontsize=11, loc='left')
+regions = ['V1', 'A1', 'S1', 'M1', 'mPFC/ACC', 'CA1', 'BLA', 'Striatum', 'SCN']
+drivers = ['locomotion +\narousal',
+           'reinforcement\n+ learning',
+           'motor copy\n(whisking)',
+           'preparatory\nmotor',
+           'WM /\ntop-down',
+           'theta /\nIS-3 motif',
+           'fear / threat',
+           'CGE-derived,\nfunction unmapped',
+           'photic input\n(peptidergic)']
+motifs = ['VIP\u2192SST gain (V1)',
+          'VIP\u2192SST gain (A1)',
+          'VIP\u2192SST gain (S1)',
+          'VIP prep\n(M1)',
+          'VIP\u2192SST + ChAT-VIP\n+ long-range',
+          'IS-3 \u2192 OLM',
+          'VIP\u2192SST/PV (BLA)',
+          'VIP/Calb2 type',
+          'VIP/VPAC2\nsynchroniser']
+colors = ['#1f77b4','#ff7f0e','#2ca02c','#9467bd','#d62728',
+          '#8c564b','#e377c2','#7f7f7f','#17becf']
+for i,(r,d,m,c) in enumerate(zip(regions, drivers, motifs, colors)):
+    x = (i%5)*0.20 + 0.02
+    y = 0.55 - (i//5)*0.45
+    rect = mpatches.FancyBboxPatch((x, y), 0.18, 0.36,
+                                    boxstyle='round,pad=0.01', linewidth=1.2,
+                                    edgecolor=c, facecolor=c, alpha=0.18)
+    axA.add_patch(rect)
+    axA.text(x+0.09, y+0.30, r, ha='center', va='center', fontsize=11, fontweight='bold')
+    axA.text(x+0.09, y+0.20, d, ha='center', va='center', fontsize=8)
+    axA.text(x+0.09, y+0.06, m, ha='center', va='center', fontsize=7, style='italic')
+axA.set_xlim(0,1); axA.set_ylim(0,1.05); axA.axis('off')
+
+# === Panel B: textual summary table of approx VIP+ proportion ===
+axB = axes[0,1]
+axB.set_title('B. Approximate VIP+ proportion across mouse neocortex (literature ranges)',
+              fontsize=10, loc='left')
+axB.axis('off')
+rows = [
+    ['Region','Approx % of GABAergic INs','Primary subtype(s)','Reference'],
+    ['V1',   '~10\u201315%', 'bipolar / multipolar; VIP+/CR+, VIP+/ChAT+', 'Xu 2010; Vucurovic 2010'],
+    ['S1 barrel','~10\u201312%', 'bipolar; VIP+/CR+',                       'Lee 2013; Sermet 2019'],
+    ['A1',   '~10%',        'bipolar; L1 NDNF subset',                    'Pi 2013; Takesian 2018; Krabbe 2019'],
+    ['mPFC/PL/CG','~15\u201318%', 'bipolar; ChAT-VIP; rare long-range',    'Pi 2013; Lee 2014; Granger 2020'],
+    ['M1/M2','~12\u201315%', 'BICCN VIP-Mybpc1, VIP-Lect1, others',        'BICCN 2021 (aggregated)']
+]
+tbl = axB.table(cellText=rows, loc='center', cellLoc='left',
+                colWidths=[0.13,0.22,0.32,0.33])
+tbl.auto_set_font_size(False); tbl.set_fontsize(8)
+tbl.scale(1, 1.5)
+for j in range(4):
+    tbl[(0,j)].set_facecolor('#dddddd')
+    tbl[(0,j)].set_text_props(weight='bold')
+axB.text(0.0, -0.05, 'Caveat: expert-summarized literature ranges; no per-row value_source_sentence.',
+         transform=axB.transAxes, fontsize=7, style='italic', color='#aa0000')
+
+# === Panel C: hippocampal VIP/IS-3 motif schematic ===
+axC = axes[1,0]
+axC.set_title('C. Hippocampal CA1 VIP/IS-3 motif', fontsize=11, loc='left')
+axC.set_xlim(0,1); axC.set_ylim(0,1); axC.axis('off')
+# Layers
+layers = [('s.l-m', 0.85), ('s.radiatum', 0.62), ('s.pyramidale', 0.42), ('s.oriens', 0.20)]
+for name, y in layers:
+    axC.axhline(y, color='#cccccc', lw=0.5, ls='--')
+    axC.text(0.01, y+0.01, name, fontsize=7, color='#888')
+# Pyramidal cell
+axC.add_patch(mpatches.FancyBboxPatch((0.45,0.38),0.10,0.08, boxstyle='round,pad=0.01',
+                                       facecolor='#5599cc', edgecolor='k'))
+axC.text(0.50, 0.42, 'CA1 Pyr', ha='center', va='center', fontsize=8, color='white')
+axC.plot([0.50,0.50],[0.46,0.92], color='k', lw=1.2)  # apical dendrite
+# OLM
+axC.add_patch(mpatches.Circle((0.30,0.20), 0.04, facecolor='#cc7755', edgecolor='k'))
+axC.text(0.30, 0.13, 'OLM', ha='center', fontsize=8)
+# IS-3
+axC.add_patch(mpatches.Circle((0.70,0.32), 0.045, facecolor='#bb44aa', edgecolor='k'))
+axC.text(0.70, 0.24, 'IS-3 (VIP/CR/CCK)', ha='center', fontsize=8)
+# Bistratified
+axC.add_patch(mpatches.Circle((0.20,0.55), 0.035, facecolor='#88aa44', edgecolor='k'))
+axC.text(0.20, 0.48, 'Bistrat.', ha='center', fontsize=8)
+# Arrows: IS-3 -> OLM (inhibit), IS-3 -> Bistrat (inhibit). OLM -> distal apical (inhibit)
+axC.annotate('', xy=(0.34,0.20), xytext=(0.66,0.30),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.4))
+axC.annotate('', xy=(0.24,0.55), xytext=(0.66,0.34),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.4))
+axC.annotate('', xy=(0.49,0.85), xytext=(0.34,0.22),
+             arrowprops=dict(arrowstyle='-|>', color='#cc7755', lw=1.2))
+axC.text(0.55, 0.15, 'IS-3 disinhibits OLM/Bistrat. \u2192 distal-dendritic\nrelief on CA1 Pyr', fontsize=7, style='italic')
+
+# === Panel D: cross-area driver/motif conflict table ===
+axD = axes[1,1]
+axD.set_title('D. Recruiting drivers vs local motif (cross-area)', fontsize=11, loc='left')
+axD.axis('off')
+rows_d = [
+    ['Region','Top-down','Neuromod.','Sensory/state','Local motif'],
+    ['V1','ACC \u2192 VIP','ACh / 5-HT','locomotion+stim','VIP\u2192SST (low-contrast gain)'],
+    ['A1','frontal','NB-cholinergic','reinforcement','VIP\u2192SST + L1-VIP\u2192PV'],
+    ['S1','M1 motor copy','ACh','active touch','VIP\u2192SST'],
+    ['mPFC','MD/VM thalamus','ChAT-VIP intrinsic','WM delay','VIP\u2192SST + long-range'],
+    ['CA1','EC, septum','ACh / 5-HT','theta/ripple','IS-3 \u2192 OLM (interneuron-selective)'],
+    ['BLA','aud. cortex','\u2014','CS+ tone','VIP\u2192SST/PV'],
+    ['SCN','\u2014','intrinsic light','photic','VIP/VPAC2 paracrine']
+]
+tbl2 = axD.table(cellText=rows_d, loc='center', cellLoc='left',
+                 colWidths=[0.13,0.16,0.17,0.18,0.36])
+tbl2.auto_set_font_size(False); tbl2.set_fontsize(7.5)
+tbl2.scale(1, 1.45)
+for j in range(5):
+    tbl2[(0,j)].set_facecolor('#dddddd')
+    tbl2[(0,j)].set_text_props(weight='bold')
+
+fig.suptitle('VIP interneurons across brain regions', fontsize=13, fontweight='bold', y=0.995)
+fig.tight_layout(rect=[0,0,1,0.97])
+fig.savefig('../fig-vip-across-areas.png', dpi=200, bbox_inches='tight')
+fig.savefig('../fig-vip-across-areas.pdf', bbox_inches='tight')
+print('Saved fig-vip-across-areas.png/.pdf')
+```
 :::
 :::{figure} ../figures/fig-hippocampal-vip-motif.png
 :name: fig-hippocampal-vip-motif
@@ -128,12 +247,125 @@ Hippocampal VIP/IS-3 motif distinct from neocortex (schematic). **Panel A**: CA1
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-hippocampal-vip-motif.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 
+fig, axes = plt.subplots(1, 3, figsize=(14, 5.5))
+
+# Panel A: CA1 lamellar cartoon
+axA = axes[0]
+axA.set_title('A. CA1 lamellar VIP/IS-3 motif', fontsize=11, loc='left')
+axA.set_xlim(0,1); axA.set_ylim(0,1); axA.axis('off')
+layers = [('s.lacunosum-mol.', 0.85, '#f3e8ff'),
+          ('s.radiatum',     0.62, '#ffeaea'),
+          ('s.pyramidale',   0.42, '#fff4d6'),
+          ('s.oriens',       0.18, '#e6f3ff')]
+for name, y, c in layers:
+    axA.add_patch(mpatches.Rectangle((0.0, y-0.10), 1.0, 0.20, facecolor=c, alpha=0.6, edgecolor='none'))
+    axA.text(0.99, y, name, fontsize=7, ha='right', va='center', color='#444')
+# Pyr soma
+axA.add_patch(mpatches.FancyBboxPatch((0.42, 0.36), 0.16, 0.10, boxstyle='round,pad=0.01', facecolor='#5599cc', edgecolor='k'))
+axA.text(0.50, 0.41, 'CA1 Pyr', ha='center', va='center', fontsize=9, color='white', fontweight='bold')
+# Apical dendrite
+axA.plot([0.50, 0.50], [0.46, 0.94], color='k', lw=1.4)
+# Basal
+axA.plot([0.50, 0.50], [0.36, 0.18], color='k', lw=1.0)
+# IS-3 (oriens/pyramidale border)
+axA.add_patch(mpatches.Circle((0.78, 0.30), 0.045, facecolor='#bb44aa', edgecolor='k'))
+axA.text(0.78, 0.21, 'IS-3\n(VIP/CR/CCK)', ha='center', va='top', fontsize=8)
+# OLM
+axA.add_patch(mpatches.Circle((0.22, 0.18), 0.045, facecolor='#cc7755', edgecolor='k'))
+axA.text(0.22, 0.09, 'OLM', ha='center', va='top', fontsize=8)
+# Bistratified
+axA.add_patch(mpatches.Circle((0.18, 0.54), 0.04, facecolor='#88aa44', edgecolor='k'))
+axA.text(0.18, 0.46, 'Bistrat.', ha='center', va='top', fontsize=8)
+# IS-3 -> OLM
+axA.annotate('', xy=(0.27, 0.20), xytext=(0.74, 0.28),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.6))
+# IS-3 -> Bistrat
+axA.annotate('', xy=(0.22, 0.55), xytext=(0.74, 0.32),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.6))
+# OLM -> distal apical (inhibits SLM)
+axA.annotate('', xy=(0.49, 0.86), xytext=(0.25, 0.20),
+             arrowprops=dict(arrowstyle='-|>', color='#cc7755', lw=1.2, alpha=0.8))
+# Bistrat -> mid apical/basal
+axA.annotate('', xy=(0.49, 0.62), xytext=(0.22, 0.54),
+             arrowprops=dict(arrowstyle='-|>', color='#88aa44', lw=1.0, alpha=0.8))
+axA.text(0.02, 0.02, 'IS-3 selectively targets other interneurons \u2192\ndisinhibits OLM/Bistrat. \u2192 distal-dendritic\nrelief on CA1 Pyr',
+         fontsize=7.5, style='italic', color='#333')
+
+# Panel B: cortex vs hippocampus comparison
+axB = axes[1]
+axB.set_title('B. Cortex vs hippocampus VIP motif', fontsize=11, loc='left')
+axB.set_xlim(0,1); axB.set_ylim(0,1); axB.axis('off')
+# left half: cortex
+axB.text(0.18, 0.95, 'Neocortex (V1, A1, S1, mPFC)', fontsize=9, ha='center', fontweight='bold', color='#1f77b4')
+axB.add_patch(mpatches.Circle((0.18, 0.78), 0.045, facecolor='#bb44aa', edgecolor='k'))
+axB.text(0.18, 0.70, 'VIP\n(L2/3 bipolar)', ha='center', va='top', fontsize=7.5)
+axB.add_patch(mpatches.Circle((0.18, 0.45), 0.045, facecolor='#cc7755', edgecolor='k'))
+axB.text(0.18, 0.37, 'SST\n(L5 Martinotti)', ha='center', va='top', fontsize=7.5)
+axB.add_patch(mpatches.FancyBboxPatch((0.10, 0.10), 0.16, 0.10, boxstyle='round,pad=0.01',
+                                       facecolor='#5599cc', edgecolor='k'))
+axB.text(0.18, 0.15, 'L5 Pyr', ha='center', va='center', fontsize=8, color='white')
+axB.annotate('', xy=(0.18, 0.50), xytext=(0.18, 0.74),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.4))
+axB.annotate('', xy=(0.18, 0.21), xytext=(0.18, 0.41),
+             arrowprops=dict(arrowstyle='-[', color='#cc7755', lw=1.2))
+axB.text(0.04, 0.55, 'VIP\u2192SST\n(disinhibition)', fontsize=7, color='#bb44aa')
+# divider
+axB.plot([0.5,0.5],[0.05,0.95], color='#bbbbbb', lw=0.8, ls='--')
+# right half: hippocampus
+axB.text(0.78, 0.95, 'Hippocampus (CA1)', fontsize=9, ha='center', fontweight='bold', color='#bb44aa')
+axB.add_patch(mpatches.Circle((0.78, 0.78), 0.045, facecolor='#bb44aa', edgecolor='k'))
+axB.text(0.78, 0.70, 'IS-3\n(VIP/CR/CCK)', ha='center', va='top', fontsize=7.5)
+axB.add_patch(mpatches.Circle((0.65, 0.45), 0.04, facecolor='#cc7755', edgecolor='k'))
+axB.text(0.65, 0.37, 'OLM', ha='center', va='top', fontsize=7.5)
+axB.add_patch(mpatches.Circle((0.91, 0.45), 0.04, facecolor='#88aa44', edgecolor='k'))
+axB.text(0.91, 0.37, 'Bistrat.', ha='center', va='top', fontsize=7.5)
+axB.add_patch(mpatches.FancyBboxPatch((0.70, 0.10), 0.16, 0.10, boxstyle='round,pad=0.01',
+                                       facecolor='#5599cc', edgecolor='k'))
+axB.text(0.78, 0.15, 'CA1 Pyr', ha='center', va='center', fontsize=8, color='white')
+axB.annotate('', xy=(0.66, 0.49), xytext=(0.75, 0.75),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.4))
+axB.annotate('', xy=(0.90, 0.49), xytext=(0.81, 0.75),
+             arrowprops=dict(arrowstyle='-|>', color='#bb44aa', lw=1.4))
+axB.annotate('', xy=(0.74, 0.21), xytext=(0.66, 0.41),
+             arrowprops=dict(arrowstyle='-[', color='#cc7755', lw=1.0))
+axB.annotate('', xy=(0.82, 0.21), xytext=(0.90, 0.41),
+             arrowprops=dict(arrowstyle='-[', color='#88aa44', lw=1.0))
+axB.text(0.55, 0.55, 'IS-3 \u2192 OLM/Bistrat\n(interneuron-selective)', fontsize=7, color='#bb44aa')
+
+# Panel C: subcortical VIP populations
+axC = axes[2]
+axC.set_title('C. Subcortical VIP populations', fontsize=11, loc='left')
+axC.set_xlim(0,1); axC.set_ylim(0,1); axC.axis('off')
+items = [
+    ('BLA',     'cortex-like\nVIP\u2192SST/PV',          'fear / threat',                    '#e377c2', 0.78),
+    ('Striatum','VIP/Calb2 type\nCGE-derived',           'function unmapped',                '#7f7f7f', 0.50),
+    ('SCN',     'VIP/VPAC2\npeptidergic projection',     'circadian / photic resetting',     '#17becf', 0.22),
+]
+for label, motif, role, color, y in items:
+    axC.add_patch(mpatches.FancyBboxPatch((0.05, y-0.08), 0.25, 0.16,
+                                           boxstyle='round,pad=0.01',
+                                           facecolor=color, edgecolor='k', alpha=0.25))
+    axC.text(0.175, y+0.03, label, ha='center', va='center', fontsize=11, fontweight='bold')
+    axC.text(0.175, y-0.04, motif, ha='center', va='center', fontsize=7.5, style='italic')
+    axC.add_patch(mpatches.FancyBboxPatch((0.40, y-0.08), 0.55, 0.16,
+                                           boxstyle='round,pad=0.01',
+                                           facecolor='white', edgecolor=color, lw=1.5))
+    axC.text(0.675, y, role, ha='center', va='center', fontsize=8.5)
+    axC.annotate('', xy=(0.40, y), xytext=(0.30, y),
+                 arrowprops=dict(arrowstyle='-|>', color=color, lw=1.4))
+axC.text(0.5, 0.02, 'Aggregating SCN with neocortical VIP cells\nconflates peptidergic projection with disinhibition',
+         ha='center', fontsize=7, style='italic', color='#aa0000')
+
+fig.suptitle('Hippocampal VIP/IS-3 motif distinct from neocortex (schematic)', fontsize=12, fontweight='bold', y=1.0)
+fig.tight_layout(rect=[0,0,1,0.95])
+fig.savefig('../fig-hippocampal-vip-motif.png', dpi=200, bbox_inches='tight')
+fig.savefig('../fig-hippocampal-vip-motif.pdf', bbox_inches='tight')
+print('Saved fig-hippocampal-vip-motif.png/.pdf')
+```
 :::
 ## Closing synthesis: what cross-area variation constrains
 

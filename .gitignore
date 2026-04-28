@@ -1,6 +1,12 @@
 _build/
-*.pyc
-__pycache__/
-.DS_Store
 node_modules/
-exports/
+package-lock.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Notebook side-effect outputs (figures saved into figures/notebooks/ are duplicates;
+# canonical PNGs live in figures/ at top level)
+figures/notebooks/*.png
+figures/notebooks/*.pdf
+figures/*.pdf

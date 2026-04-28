@@ -1,0 +1,9 @@
+{
+  "name": "computational-review-vip-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Plugin runtime deps for MyST authorship/evidence/lightbox plugins",
+  "dependencies": {
+    "yaml": "^2.5.0"
+  }
+}

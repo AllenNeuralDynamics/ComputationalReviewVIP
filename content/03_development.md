@@ -67,12 +67,27 @@ Schematic of the CGE-derived inhibitory lineage that produces VIP interneurons. 
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-cge-lineage.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
 
+# Panel A: schematic of MGE/CGE → migration streams → cortex laminar pattern.
+# Panel B: TF-cKO phenotype table (Prox1, COUP-TFI/II, Sp8/Sp9, AMPAR, Kir2.1, Calcineurin).
+# Panel C: cross-species CGE-class fraction (30% mouse fate-map / ~38% mouse Tasic 2018 / 50% human Hodge 2019).
+# Panel D: TF cascade timeline (Sp8/Sp9 → COUP-TFII → PROX1 → activity-dep. → synaptic maturation).
+
+# Anchor values used in Panel C:
+anchors = {
+    'Mouse cortex (fate map, Miyoshi 2010)':   {'CGE': 30, 'MGE': 70, 'Other': 0},
+    'Mouse adult (scRNA-seq, Tasic 2018)':     {'CGE': 38, 'MGE': 62, 'Other': 0},
+    'Human MTG (snRNA-seq, Hodge 2019)':       {'CGE': 50, 'MGE': 44, 'Other': 6},
+}
+for k,v in anchors.items():
+    print(k, v)
+
+print('Schematic — see fig-cge-lineage.png/.pdf for rendered output.')
+```
 :::
 ## Cross-species divergence: rodent fate-mapping versus primate transcriptomics
 
@@ -111,12 +126,22 @@ Schematic methods-only summary of the cross-species CGE-lineage comparison. **(A
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-cge-fraction-cross-species.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.patches as mpatches
 
+# Anchor values used in Panel A:
+panel_a = {
+    'Mouse cortex (Miyoshi 2010, fate map)': {'CGE': 30, 'MGE': 70, 'Other': 0},
+    'Human MTG (Hodge 2019, snRNA-seq)':     {'CGE': 50, 'MGE': 44, 'Other': 6},
+}
+for k,v in panel_a.items():
+    print(k, v)
+
+# Panel B is a deliberate placeholder — non-matched subclass definitions across Tasic 2018, Krienen 2023, Schmitz 2022, Hodge 2019.
+print('Methods-only schematic — see fig-cge-fraction-cross-species.png/.pdf.')
+```
 :::
 ## CGE internal topography, organoid models, and recent integration
 

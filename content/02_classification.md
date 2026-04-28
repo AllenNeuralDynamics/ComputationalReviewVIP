@@ -43,12 +43,131 @@ VIP within the cortical GABAergic transcriptomic taxonomy. **(A)** Hierarchical 
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig_sec2_vip_taxonomy.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
 
+plt.rcParams.update({
+    'font.family': 'sans-serif', 'font.sans-serif': ['DejaVu Sans','Arial','Helvetica'],
+    'axes.spines.top': False, 'axes.spines.right': False, 'figure.dpi': 150,
+})
+
+COL = {
+    'Vip': '#E63946', 'Sst': '#2A9D8F', 'Pvalb': '#1D3557',
+    'Lamp5': '#F4A261', 'Sncg': '#C77DFF', 'Serpinf1': '#8DAA9D',
+    'ChAT': '#7B2CBF', 'CR': '#4895EF', 'CCK': '#FB8500', 'subclass': '#264653',
+}
+
+fig = plt.figure(figsize=(13, 11))
+gs = fig.add_gridspec(2, 2, hspace=0.85, wspace=0.45)
+
+# Panel A — dendrogram of cortical GABAergic taxonomy
+axA = fig.add_subplot(gs[0, 0])
+axA.set_title('A  Cortical GABAergic taxonomy (Tasic 2018 schema)', loc='left', fontweight='bold')
+
+LEAVES = [
+    ('Lamp5',   2.0, 4,  COL['Lamp5'], 'CGE'),
+    ('Vip',     1.4, 14, COL['Vip'],   'CGE'),
+    ('Sncg',    0.8, 2,  COL['Sncg'],  'CGE'),
+    ('Serpinf1',0.2, 1,  COL['Serpinf1'], 'CGE'),
+    ('Sst',    -0.8, 14, COL['Sst'],   'MGE'),
+    ('Pvalb',  -1.6, 7,  COL['Pvalb'], 'MGE'),
+]
+CGE_y = [l[1] for l in LEAVES if l[4]=='CGE']
+MGE_y = [l[1] for l in LEAVES if l[4]=='MGE']
+cge_mid = (max(CGE_y) + min(CGE_y))/2
+mge_mid = (max(MGE_y) + min(MGE_y))/2
+axA.plot([0.0, 0.0], [mge_mid, cge_mid], color=COL['subclass'], lw=2)
+axA.plot([0.0, 0.6], [cge_mid, cge_mid], color=COL['subclass'], lw=2)
+axA.plot([0.6, 0.6], [min(CGE_y), max(CGE_y)], color=COL['subclass'], lw=1.4)
+axA.plot([0.0, 0.6], [mge_mid, mge_mid], color=COL['subclass'], lw=2)
+axA.plot([0.6, 0.6], [min(MGE_y), max(MGE_y)], color=COL['subclass'], lw=1.4)
+for name, y, n, color, branch in LEAVES:
+    axA.plot([0.6, 1.4], [y, y], color=color, lw=2.2)
+    for i in range(n):
+        axA.plot([1.4 + i*0.06, 1.4 + i*0.06], [y - 0.07, y + 0.07], color=color, lw=0.9, alpha=0.8)
+    axA.text(1.4 + n*0.06 + 0.08, y, f'$\\it{{{name}}}$  ({n})', va='center', fontsize=9, color=color)
+axA.text(0.05, max(CGE_y)+0.4, 'CGE', fontsize=11, fontweight='bold', color=COL['subclass'])
+axA.text(0.05, min(MGE_y)-0.5, 'MGE', fontsize=11, fontweight='bold', color=COL['subclass'])
+axA.text(-0.18, mge_mid + (cge_mid - mge_mid)/2, 'GABAergic\nroot', fontsize=8, ha='right', va='center', color=COL['subclass'])
+axA.set_xlim(-0.6, 3.3); axA.set_ylim(-2.4, 2.7); axA.axis('off')
+axA.text(-0.5, -2.30, 'Branch widths schematic; tick counts = Tasic 2018 GABAergic types per subclass.',
+         fontsize=7.5, color='gray', style='italic')
+
+# Panel B — cross-study VIP type counts (NOT on a common denominator)
+axB = fig.add_subplot(gs[0, 1])
+axB.set_title('B  Reported cortical $\\it{Vip}$ types across atlases', loc='left', fontweight='bold')
+
+studies = [
+    ('Tasic 2016\n(mouse V1)',                5,  't-types',    '#E63946'),
+    ('Tasic 2018\n(mouse VISp+ALM)',          14, 't-types',    '#E63946'),
+    ('Yao 2021\n(mouse cortex+HPF)',          6,  'supertypes', '#F4A261'),
+    ('Hodge 2019\n(human MTG)',               21, 'VIP t-types','#4895EF'),
+    ('Lee 2023\n(human cortex Patch-seq)',    45, 'GABA t-types\n(4 subclasses)', '#7B2CBF'),
+]
+xs = np.arange(len(studies))
+heights = [s[1] for s in studies]; colors = [s[3] for s in studies]
+labels  = [s[0] for s in studies]; tier   = [s[2] for s in studies]
+axB.bar(xs, heights, color=colors, edgecolor='black', linewidth=0.6, width=0.65)
+for x, h, t in zip(xs, heights, tier):
+    axB.text(x, h + 0.8, f'{h}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+    axB.text(x, h + 4.5, t, ha='center', va='bottom', fontsize=6.8, style='italic', color='dimgray')
+axB.set_xticks(xs); axB.set_xticklabels(labels, fontsize=7.3, rotation=30, ha='right')
+axB.set_ylabel('Reported count'); axB.set_ylim(0, 60)
+
+# Panel C — marker-defined VIP subset frequencies (cross-study ranges)
+axC = fig.add_subplot(gs[1, 0])
+axC.set_title('C  Marker-defined VIP subset frequencies', loc='left', fontweight='bold')
+markers_ = ['VIP/ChAT', 'VIP/CR', 'VIP/CCK']
+lo = [3, 25, 25]; hi = [10, 50, 45]; mid = [(l+h)/2 for l,h in zip(lo,hi)]
+colors_c = [COL['ChAT'], COL['CR'], COL['CCK']]
+y = np.arange(len(markers_))
+for i, (l, h, m, c) in enumerate(zip(lo, hi, mid, colors_c)):
+    axC.plot([l, h], [i, i], color=c, lw=10, solid_capstyle='round', alpha=0.85)
+    axC.plot([m], [i], marker='|', color='black', markersize=14, mew=2)
+    axC.text(h + 1.5, i, f'~{l}-{h}%', va='center', fontsize=9.5, color=c, fontweight='bold')
+axC.set_yticks(y); axC.set_yticklabels(markers_, fontsize=10)
+axC.set_xlabel('% of cortical VIP cells (cross-study range)')
+axC.set_xlim(0, 65); axC.set_ylim(-0.7, 2.7); axC.invert_yaxis()
+axC.text(0.0, -0.30,
+         'Ranges aggregate immunolabel and transcriptomic estimates from\n'
+         'Tremblay 2016, Granger 2020, Tasic 2016/2018; tick = midpoint.',
+         transform=axC.transAxes, fontsize=7.0, color='gray', style='italic')
+
+# Panel D — schematic of three principal VIP molecular subdivisions
+axD = fig.add_subplot(gs[1, 1])
+axD.set_title('D  VIP molecular subdivisions and key markers', loc='left', fontweight='bold')
+axD.axis('off'); axD.set_xlim(0, 10); axD.set_ylim(0, 10)
+axD.add_patch(mpatches.FancyBboxPatch((3.3, 8.1), 3.4, 1.2, boxstyle='round,pad=0.08',
+                                       facecolor=COL['Vip'], edgecolor='black', linewidth=0.8, alpha=0.30))
+axD.text(5.0, 9.0, 'VIP subclass', fontsize=11, fontweight='bold', ha='center', color=COL['Vip'])
+axD.text(5.0, 8.45, '$\\it{Vip}$+ / 5-HT3AR+ / CGE-derived', fontsize=8.5, ha='center')
+
+def box(ax, x, y, w, h, color, title, markers, morph, project):
+    ax.add_patch(mpatches.FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.08',
+                                          facecolor=color, edgecolor='black', linewidth=1.0, alpha=0.18))
+    ax.text(x + w/2, y + h - 0.35, title, fontsize=10.5, fontweight='bold', ha='center', va='top', color=color)
+    ax.text(x + 0.18, y + h - 1.10, 'Markers:', fontsize=8, ha='left', va='top', fontweight='bold')
+    ax.text(x + 0.18, y + h - 1.55, markers, fontsize=7.4, ha='left', va='top', style='italic')
+    ax.text(x + 0.18, y + h - 3.20, 'Morph: ' + morph, fontsize=7.3, ha='left', va='top')
+    ax.text(x + 0.18, y + h - 4.20, 'Targets: ' + project, fontsize=7.3, ha='left', va='top')
+
+box(axD, 0.1, 1.7, 3.0, 6.2, COL['ChAT'], 'VIP / ChAT',
+    'Vip, Chat,\nSlc18a3,\nCalb2 (subset)', 'bipolar,\nL2/3-biased', 'L1 INs (ACh)\n+ INs (GABA)')
+box(axD, 3.5, 1.7, 3.0, 6.2, COL['CR'], 'VIP / CR',
+    'Vip, Calb2 (CR),\nMybpc1,\nCrispld2', 'irregular-spiking\nbipolar', 'SST/CR INs\n(IS-II disinh.)')
+box(axD, 6.9, 1.7, 3.0, 6.2, COL['CCK'], 'VIP / CCK',
+    'Vip, Cck,\nCnr1, Necab1/2', 'multipolar\nbasket', 'perisomatic\non PCs')
+for cx, color in zip([1.6, 5.0, 8.4], [COL['ChAT'], COL['CR'], COL['CCK']]):
+    axD.annotate('', xy=(cx, 7.95), xytext=(5.0, 8.05),
+                 arrowprops=dict(arrowstyle='->', color=color, lw=1.4))
+
+fig.suptitle('Figure 2.1  VIP within the cortical GABAergic transcriptomic taxonomy',
+             fontsize=13, fontweight='bold', y=0.995, x=0.04, ha='left')
+fig.savefig('fig_sec2_vip_taxonomy.png', dpi=300, bbox_inches='tight', facecolor='white')
+fig.savefig('fig_sec2_vip_taxonomy.pdf', bbox_inches='tight', facecolor='white')
+```
 :::
 ## Discrete clusters or continuous gradients within VIP
 
@@ -87,12 +206,175 @@ Marker-protein decision tree linking immunolabel-, Cre-driver-, and scRNA-seq-ba
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig_sec2_marker_tree.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Ellipse
+import numpy as np
 
+plt.rcParams.update({
+    'font.family': 'sans-serif', 'font.sans-serif': ['DejaVu Sans','Arial','Helvetica'],
+    'axes.spines.top': False, 'axes.spines.right': False, 'figure.dpi': 150,
+})
+
+COL = {
+    'Vip':'#E63946','Sst':'#2A9D8F','Pvalb':'#1D3557',
+    'Lamp5':'#F4A261','Sncg':'#C77DFF',
+    'ChAT':'#7B2CBF','CR':'#4895EF','CCK':'#FB8500',
+    'Cre':'#264653','IRES':'#0096C7','IHC':'#9D0208',
+    'gray':'#6c757d',
+}
+
+fig = plt.figure(figsize=(15.5, 8.5))
+gs = fig.add_gridspec(1, 3, width_ratios=[1.15, 0.95, 1.25], wspace=0.35)
+
+# Panel A — decision tree
+axA = fig.add_subplot(gs[0, 0])
+axA.set_title('A  From "GABAergic neuron" to a marker-defined VIP subset',
+              loc='left', fontweight='bold')
+axA.axis('off'); axA.set_xlim(0, 10); axA.set_ylim(0, 10)
+
+def node(x, y, w, h, label, color='black', face='white'):
+    axA.add_patch(FancyBboxPatch((x-w/2, y-h/2), w, h, boxstyle='round,pad=0.08',
+                                  facecolor=face, edgecolor=color, linewidth=1.4))
+    axA.text(x, y, label, ha='center', va='center', fontsize=9, color=color,
+             fontweight='bold')
+
+def edge(x1, y1, x2, y2, label='', color='black'):
+    axA.annotate('', xy=(x2, y2), xytext=(x1, y1),
+                 arrowprops=dict(arrowstyle='->', color=color, lw=1.2))
+    if label:
+        axA.text((x1+x2)/2 + 0.15, (y1+y2)/2, label, fontsize=7.5,
+                 color=color, style='italic')
+
+node(5.0, 9.3, 4.4, 0.8, 'GAD1/GAD2 + GABAergic', color='#264653', face='#f1faee')
+node(2.5, 7.9, 3.4, 0.7, 'CGE-derived (Prox1+/5-HT3AR+)', color=COL['Vip'])
+node(7.5, 7.9, 3.4, 0.7, 'MGE-derived (Lhx6+)', color=COL['Sst'])
+edge(4.0, 9.0, 2.7, 8.25, color=COL['Vip'])
+edge(6.0, 9.0, 7.3, 8.25, color=COL['Sst'])
+
+node(2.5, 6.5, 3.0, 0.7, 'VIP subclass (Vip+)', color=COL['Vip'])
+node(7.5, 6.5, 1.6, 0.7, 'Sst', color=COL['Sst'])
+node(9.1, 6.5, 1.5, 0.7, 'Pvalb', color=COL['Pvalb'])
+node(0.9, 7.0, 1.4, 0.55, 'Lamp5', color=COL['Lamp5'])
+node(0.9, 6.2, 1.4, 0.55, 'Sncg', color=COL['Sncg'])
+edge(2.5, 7.55, 2.5, 6.85, color=COL['Vip'])
+edge(7.5, 7.55, 7.5, 6.85, color=COL['Sst'])
+edge(7.5, 7.55, 9.1, 6.85, color=COL['Pvalb'])
+
+# Within VIP — three marker subdivisions
+node(1.2, 4.6, 1.9, 0.65, 'VIP / ChAT', color=COL['ChAT'])
+node(3.6, 4.6, 1.9, 0.65, 'VIP / CR',   color=COL['CR'])
+node(6.0, 4.6, 1.9, 0.65, 'VIP / CCK',  color=COL['CCK'])
+edge(2.2, 6.15, 1.4, 4.95, color=COL['ChAT'])
+edge(2.5, 6.15, 3.6, 4.95, color=COL['CR'])
+edge(2.8, 6.15, 6.0, 4.95, color=COL['CCK'])
+
+# Marker-gene tags below
+def mtag(x, y, txt, color):
+    axA.text(x, y, txt, ha='center', va='top', fontsize=7.5, style='italic',
+             color=color)
+mtag(1.2, 4.15, 'Chat / Slc18a3\n+ Calb2 (subset)', COL['ChAT'])
+mtag(3.6, 4.15, 'Calb2 / Mybpc1 /\nCrispld2', COL['CR'])
+mtag(6.0, 4.15, 'Cck / Cnr1 /\nNecab1/2', COL['CCK'])
+
+# Footer caveat
+axA.text(0.2, 1.5,
+         'Decision-tree structure is hierarchical at the SUBCLASS level\n'
+         '(Tasic 2018; Yao 2023) but many-to-many at the marker / t-type tier.\n'
+         'Branch order is illustrative, not phylogenetic.',
+         fontsize=7.5, color='gray', style='italic')
+
+# Panel B — Venn schematic: VIP-Cre vs VIP-IRES-Cre vs anti-VIP IHC
+axB = fig.add_subplot(gs[0, 1])
+axB.set_title('B  Reagents capture overlapping but non-identical populations',
+              loc='left', fontweight='bold')
+axB.axis('off'); axB.set_xlim(0, 10); axB.set_ylim(0, 10)
+
+# Three overlapping ellipses
+e1 = Ellipse((4.2, 5.6), 4.4, 3.0, angle=20,  facecolor=COL['Cre'],  alpha=0.30, edgecolor=COL['Cre'],  linewidth=1.4)
+e2 = Ellipse((6.0, 5.6), 4.4, 3.0, angle=-20, facecolor=COL['IRES'], alpha=0.30, edgecolor=COL['IRES'], linewidth=1.4)
+e3 = Ellipse((5.1, 4.0), 4.0, 2.6, angle=0,   facecolor=COL['IHC'],  alpha=0.30, edgecolor=COL['IHC'],  linewidth=1.4)
+for e in (e1, e2, e3): axB.add_patch(e)
+
+axB.text(2.8, 7.3, 'VIP-Cre',         fontsize=10, fontweight='bold', color=COL['Cre'])
+axB.text(7.4, 7.3, 'VIP-IRES-Cre',    fontsize=10, fontweight='bold', color=COL['IRES'])
+axB.text(5.1, 1.9, 'anti-VIP IHC',    fontsize=10, fontweight='bold', color=COL['IHC'], ha='center')
+
+# Region annotations
+axB.text(5.1, 5.4, 'core\nVIP+',  fontsize=9, ha='center', va='center', fontweight='bold')
+axB.text(2.6, 5.6, 'driver-\nspecific',  fontsize=7.5, ha='center', color=COL['Cre'], style='italic')
+axB.text(7.6, 5.6, 'driver-\nspecific',  fontsize=7.5, ha='center', color=COL['IRES'], style='italic')
+axB.text(5.1, 2.9, 'protein-\ndetected',  fontsize=7.5, ha='center', color=COL['IHC'], style='italic')
+
+axB.text(0.2, 0.6,
+         'Driver lines and IHC differ in capture efficiency, leakiness,\n'
+         'and developmental window; agreement is partial across regions.',
+         fontsize=7.5, color='gray', style='italic')
+
+# Panel C — many-to-many marker-subdivision <-> t-type schematic
+axC = fig.add_subplot(gs[0, 2])
+axC.set_title('C  Marker subdivisions map many-to-many onto t-types',
+              loc='left', fontweight='bold')
+axC.axis('off'); axC.set_xlim(0, 10); axC.set_ylim(0, 10)
+
+# Left column: marker subdivisions (3)
+markers = [('VIP/ChAT', COL['ChAT'], 7.6),
+           ('VIP/CR',   COL['CR'],   5.0),
+           ('VIP/CCK',  COL['CCK'],  2.4)]
+for name, color, y in markers:
+    axC.add_patch(FancyBboxPatch((0.4, y-0.4), 2.2, 0.8, boxstyle='round,pad=0.08',
+                                  facecolor=color, edgecolor='black', linewidth=0.9, alpha=0.25))
+    axC.text(1.5, y, name, ha='center', va='center', fontsize=10, fontweight='bold', color=color)
+
+# Right column: representative t-type leaves (10) — schematic IDs from Tasic 2018
+ttypes = [
+    ('Vip Arhgap36 Hmcn1', 9.1),
+    ('Vip Lmo1 Fam159b',   8.2),
+    ('Vip Crispld2 Htr2c', 7.3),
+    ('Vip Crispld2 Kcne4', 6.4),
+    ('Vip Lmo1 Myl1',      5.5),
+    ('Vip Pygm C1ql1',     4.6),
+    ('Vip Igfbp4 Mab21l1', 3.7),
+    ('Vip Igfbp6 Pltp',    2.8),
+    ('Vip Chat Htr1f',     1.9),
+    ('Vip Gpc3 Slc18a3',   1.0),
+]
+for name, y in ttypes:
+    axC.add_patch(FancyBboxPatch((6.7, y-0.32), 3.0, 0.64, boxstyle='round,pad=0.05',
+                                  facecolor='white', edgecolor=COL['gray'], linewidth=0.7))
+    axC.text(8.2, y, '$\\it{' + name.replace(' ','\\ ') + '}$',
+             ha='center', va='center', fontsize=7.6, color='#333333')
+
+# Many-to-many connections (color = source marker; dashed = secondary/partial)
+links = [
+    ('ChAT', 1.9, 'solid'),  ('ChAT', 1.0, 'solid'),
+    ('CR',   8.2, 'solid'),  ('CR',   7.3, 'solid'),  ('CR',   6.4, 'solid'),
+    ('CR',   5.5, 'dashed'), ('CR',   2.8, 'dashed'),
+    ('CCK',  4.6, 'solid'),  ('CCK',  3.7, 'solid'),  ('CCK',  9.1, 'dashed'),
+]
+marker_y = {'ChAT':7.6,'CR':5.0,'CCK':2.4}
+marker_c = {'ChAT':COL['ChAT'],'CR':COL['CR'],'CCK':COL['CCK']}
+for m, ty, style in links:
+    ls = '-' if style=='solid' else (0,(3,2))
+    alpha = 0.8 if style=='solid' else 0.5
+    axC.plot([2.6, 6.7], [marker_y[m], ty], ls=ls, color=marker_c[m], lw=1.2, alpha=alpha)
+
+# Legend
+axC.plot([0.4, 1.0], [0.4, 0.4], color='black', lw=1.2)
+axC.text(1.1, 0.4, 'primary mapping', va='center', fontsize=7.5)
+axC.plot([3.5, 4.1], [0.4, 0.4], color='black', lw=1.2, ls=(0,(3,2)))
+axC.text(4.2, 0.4, 'partial / secondary', va='center', fontsize=7.5)
+
+axC.text(0.2, -0.25,
+         't-type names from Tasic 2018; selection is illustrative.',
+         fontsize=7.0, color='gray', style='italic', transform=axC.transData)
+
+fig.suptitle('Figure 2.2  Marker-based vs. transcriptomic VIP definitions',
+             fontsize=13, fontweight='bold', y=1.00, x=0.04, ha='left')
+fig.savefig('fig_sec2_marker_tree.png', dpi=300, bbox_inches='tight', facecolor='white')
+fig.savefig('fig_sec2_marker_tree.pdf', bbox_inches='tight', facecolor='white')
+```
 :::
 ## VIP/ChAT: a discrete subtype that resists cluster-level capture
 

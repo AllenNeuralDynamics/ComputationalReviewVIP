@@ -27,12 +27,99 @@ Local inhibition onto VIP cells is, conversely, dominated by SST input. Paired r
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig_sec6_connectome.ipynb for the complete generation
-# code and provenance.
-```
+# fig-vip-connectome — VIP synaptic connectivity at a glance
+# Self-contained reproducibility notebook.
+# Panel C uses ONLY the audited Pfeffer 2013 dataset (n=11).
 
+import sys, os
+HERE = os.path.dirname(os.path.abspath("__file__"))
+sys.path.insert(0, os.path.normpath(os.path.join(HERE, "..", "..", "scripts")))
+from shared_style import COLORS, apply_style, save_figure
+
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, Ellipse
+import matplotlib.patches as mpatches
+
+apply_style()
+
+# ---------- DATA ----------
+# Qualitative consensus categories (0=absent, 1=weak, 2=moderate, 3=strong)
+inputs  = ["Local Pyr","Long-range\ncortical","Thalamic\n(POm/MD/AT)",
+           "Basal-forebrain\nACh","Raphe\n5-HT","LC\nNA"]
+targets = ["VIP","SST","PV"]
+mat = np.array([[2,2,2],[3,1,1],[3,1,2],[3,0,0],[3,0,0],[2,0,0]])
+
+outputs  = ["SST","PV","Pyr (sup.)","Pyr (deep)","NDNF / L1","OLM (CA1)","CCK BC (CA1)"]
+contexts = ["Cortex L2/3","Cortex L5/6","Hippocampus CA1"]
+out_mat = np.array([
+    [3,2,1,np.nan,1,np.nan,np.nan],
+    [2,2,1,2,1,np.nan,np.nan],
+    [np.nan]*5 + [3,2],
+])
+
+# Pfeffer 2013 — audited Phase-6 dataset
+ipsq_means = [4.6, 0.6]; ipsq_err = [1.5, 0.2]   # pC
+inc_means  = [0.42, 0.06]; inc_err  = [0.14, 0.02]   # pC
+
+# ---------- FIGURE ----------
+fig = plt.figure(figsize=(13.5, 10))
+gs = fig.add_gridspec(2, 2, hspace=0.45, wspace=0.32)
+
+axA = fig.add_subplot(gs[0,0])
+axA.imshow(mat, cmap=plt.cm.Purples, aspect="auto", vmin=0, vmax=3)
+axA.set_xticks(range(len(targets)), targets)
+axA.set_yticks(range(len(inputs)), inputs)
+labels = {0:"–",1:"weak",2:"mod.",3:"strong"}
+for i in range(mat.shape[0]):
+    for j in range(mat.shape[1]):
+        v = mat[i,j]; c = "white" if v>=2 else "black"
+        axA.text(j,i,labels[v],ha="center",va="center",color=c)
+axA.set_title("A  Afferent drive", loc="left", fontweight="bold")
+
+axB = fig.add_subplot(gs[0,1])
+m = np.ma.masked_invalid(out_mat)
+axB.imshow(m, cmap=plt.cm.Purples, aspect="auto", vmin=0, vmax=3)
+axB.set_xticks(range(len(outputs)), outputs, rotation=35, ha="right")
+axB.set_yticks(range(len(contexts)), contexts)
+for i in range(out_mat.shape[0]):
+    for j in range(out_mat.shape[1]):
+        v = out_mat[i,j]
+        if np.isnan(v):
+            axB.text(j,i,"n.t.",ha="center",va="center",color="#888")
+        else:
+            c = "white" if v>=2 else "black"
+            axB.text(j,i,labels[int(v)],ha="center",va="center",color=c)
+axB.set_title("B  VIP outputs", loc="left", fontweight="bold")
+
+axC = fig.add_subplot(gs[1,0])
+x = np.arange(2); w = 0.35
+axC.bar(x-w/2, ipsq_means, w, yerr=ipsq_err, capsize=4,
+        color=[COLORS["SST"], COLORS["Pyr"]], edgecolor="black", label="IPSQ (pC)")
+axC.bar(x+w/2, [v*10 for v in inc_means], w, yerr=[e*10 for e in inc_err],
+        capsize=4, color=[COLORS["SST"], COLORS["Pyr"]],
+        edgecolor="black", hatch="//", label="INC × 10 (pC)")
+axC.set_xticks(x, ["VIP→SST","VIP→Pyr"])
+axC.set_ylabel("IPSC charge (pC)")
+axC.set_title("C  Pfeffer 2013 (audited)", loc="left", fontweight="bold")
+axC.legend(frameon=False)
+
+axD = fig.add_subplot(gs[1,1])
+axD.set_xlim(0,10); axD.set_ylim(0,10); axD.axis("off")
+axD.set_title("D  Cholinergic recruitment (schematic)", loc="left", fontweight="bold")
+axD.add_patch(FancyBboxPatch((0.4,7.5),2.4,1.6, boxstyle="round,pad=0.1",
+                              fc="#e8e8f4", ec="#444"))
+axD.text(1.6,8.3,"Basal forebrain ACh", ha="center", va="center")
+axD.add_patch(Ellipse((5,5),2.4,1.6, fc=COLORS["VIP"], ec="black", alpha=0.85))
+axD.text(5,5,"VIP / 5-HT3AR", ha="center", va="center", color="white")
+
+fig.suptitle("Fig. 1 (Section 6) — VIP connectivity at a glance",
+             y=1.005, fontweight="bold")
+
+save_figure(fig, "../fig_sec6_connectome.png")
+plt.show()
+```
 :::
 ## Long-range cortico-cortical and thalamic afferents
 
@@ -67,12 +154,100 @@ A further refinement is provided by single-cell connectivity dissection. Two-pho
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig_sec6_neuromodulator_pharmacology.ipynb for the complete generation
-# code and provenance.
-```
+# fig-vip-neuromodulator-pharmacology — REDESIGNED qualitative figure
+# Cluster_13 (neuromodulation) was NOT audited in Phase 6.
+# This figure intentionally encodes only DIRECTION OF EFFECT, not magnitudes.
 
+import sys, os
+HERE = os.path.dirname(os.path.abspath("__file__"))
+sys.path.insert(0, os.path.normpath(os.path.join(HERE, "..", "..", "scripts")))
+from shared_style import COLORS, apply_style, save_figure
+
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, Ellipse
+from matplotlib.lines import Line2D
+
+apply_style()
+
+# ---------- DATA ----------
+papers = ["Porter\n1999","Kawaguchi\n1997b","Vonengelhardt\n2007","Arroyo\n2012",
+          "Fu\n2014","Obermayer\n2019","Granger\n2020","Dudai\n2020"]
+nicotinic = [+1]*8                 # all reports excite via nAChR
+muscarinic = [0,-1,0,0,0,+1,+1,0]  # +1 mixed/co-released, -1 inhibit, 0 not assayed
+
+table = [
+    ("Fu et al., 2014",            "V1 in vivo + slice", "nAChR (basal forebrain)",  "↑ VIP"),
+    ("Pakan et al., 2016",         "V1 in vivo 2P",      "state (mixed)",            "↑ VIP"),
+    ("Dipoppa et al., 2018",       "V1 in vivo 2P",      "state × visual context",   "↑ VIP"),
+    ("Sabri & Batista-Brito 2024", "V1 chemogenetics",   "state",                    "↑ VIP"),
+    ("Letzkus et al., 2011",       "A1 fear conditioning","BF cholinergic",          "↑ L1/VIP"),
+    ("Letzkus et al., 2015",       "A1 review",          "BF / NA mixed",            "↑ VIP/5-HT3AR"),
+    ("Krabbe et al., 2019",        "BLA learning",       "BF / aversive",            "↑ VIP"),
+    ("Szadai et al., 2022",        "Cortex-wide 2P",     "reinforcer (BF/NA)",       "↑ VIP"),
+    ("Tamboli et al., 2024",       "CA1 in vivo",        "novelty/arousal",          "↑ VIP"),
+]
+
+# ---------- FIGURE ----------
+fig = plt.figure(figsize=(13.5, 9.5))
+gs = fig.add_gridspec(2, 2, hspace=0.5, wspace=0.32, height_ratios=[1.05, 1])
+
+# Panel A — schematic
+axA = fig.add_subplot(gs[0,:])
+axA.set_xlim(0,14); axA.set_ylim(0,6.5); axA.axis("off")
+axA.set_title("A  Three neuromodulator afferents converge on VIP / 5-HT3AR (schematic)",
+              loc="left", fontweight="bold")
+for x,y,c,lbl in [(1.5,5.0,"#1F78B4","Basal forebrain ACh"),
+                  (1.5,3.2,"#33A02C","Raphe 5-HT"),
+                  (1.5,1.4,"#FB9A99","Locus coeruleus NA")]:
+    axA.add_patch(FancyBboxPatch((x-0.9,y-0.55),1.8,1.1, boxstyle="round,pad=0.05",
+                                  fc=c, ec="black", alpha=0.85))
+    axA.text(x,y,lbl,ha="center",va="center",color="white",fontweight="bold")
+axA.add_patch(Ellipse((6.5,3.2),3.6,1.8, fc="#984EA3", ec="black", alpha=0.85))
+axA.text(6.5,3.2,"VIP / 5-HT3AR cells", ha="center", va="center", color="white",
+         fontweight="bold")
+
+# Panel B — direction-of-effect dotplot
+axB = fig.add_subplot(gs[1,0])
+y = np.arange(len(papers))
+for i,(n,m) in enumerate(zip(nicotinic, muscarinic)):
+    if n==+1: axB.scatter(0.7,i,s=260,marker="^",color="#2ca02c",edgecolor="black")
+    if m==+1: axB.scatter(1.7,i,s=260,marker="^",color="#FFB347",edgecolor="black")
+    elif m==-1: axB.scatter(1.7,i,s=260,marker="v",color="#d62728",edgecolor="black")
+    else: axB.scatter(1.7,i,s=110,marker="x",color="#bbb")
+axB.set_yticks(y, papers); axB.set_xticks([0.7,1.7], ["Nicotinic","Muscarinic"])
+axB.set_xlim(0.1,2.3); axB.set_ylim(-0.6,len(papers)-0.4); axB.invert_yaxis()
+axB.set_title("B  Cholinergic effect direction (qualitative)",
+              loc="left", fontweight="bold")
+axB.legend(handles=[
+    Line2D([0],[0],marker="^",linestyle="None",color="#2ca02c",markersize=10,markeredgecolor="black",label="excite"),
+    Line2D([0],[0],marker="v",linestyle="None",color="#d62728",markersize=10,markeredgecolor="black",label="inhibit"),
+    Line2D([0],[0],marker="^",linestyle="None",color="#FFB347",markersize=10,markeredgecolor="black",label="mixed/co-released"),
+    Line2D([0],[0],marker="x",linestyle="None",color="#bbb",markersize=8,label="not assayed"),
+], loc="lower right", frameon=False, fontsize=8)
+
+# Panel C — methods inventory table
+axC = fig.add_subplot(gs[1,1])
+axC.axis("off")
+axC.set_title("C  Locomotion/arousal recruits VIP — inferred routes (methods inventory)",
+              loc="left", fontweight="bold")
+tbl = axC.table(cellText=[list(r) for r in table],
+                colLabels=["Study","Preparation","Inferred modulator","Direction"],
+                colWidths=[0.30,0.28,0.27,0.15], cellLoc="left", loc="center")
+tbl.auto_set_font_size(False); tbl.set_fontsize(7.6); tbl.scale(1,1.35)
+
+fig.suptitle("Fig. 2 (Section 6) — Neuromodulator pharmacology onto VIP cells (qualitative redesign)",
+             y=1.01, fontweight="bold")
+fig.text(0.5, -0.02,
+         "GAP CAVEAT: cluster-13 panels were not Phase-6 audited. No magnitudes plotted.",
+         ha="center", fontsize=8.5, color="#333", style="italic",
+         bbox=dict(facecolor="#fff5d6", edgecolor="#caa635",
+                   boxstyle="round,pad=0.4"))
+
+save_figure(fig, "../fig_sec6_neuromodulator_pharmacology.png")
+plt.show()
+```
 :::
 ## Neuromodulatory drive: cholinergic, serotonergic and noradrenergic recruitment
 

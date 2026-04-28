@@ -1,16 +1,76 @@
-# Authors metadata for the VIP Cortical Interneurons computational review.
-authors:
-  - id: anon
-    name: ComputationalReview Pipeline
-    email: anonymous@allenneuralsciences.org
-    affiliations:
-      - id: allenneural
-        institution: Computational Review Pipeline
-    corresponding: true
-    roles:
-      - Conceptualization
-      - Methodology
-      - Software
-      - Formal analysis
-      - Writing - original draft
-      - Writing - review and editing
+version: 1
+
+project:
+  affiliations:
+    - id: anthropic
+      name: Anthropic
+      city: San Francisco
+      state: California
+      country: United States
+    - id: aibs
+      name: Allen Institute for Brain Science
+      city: Seattle
+      state: Washington
+      country: United States
+
+  contributors:
+    - id: ai-pipeline
+      name: Claude
+      corresponding: false
+      roles:
+        - Investigation
+        - Data Curation
+        - Writing – original draft
+        - Visualization
+        - Formal Analysis
+      affiliations:
+        - anthropic
+      first_name: Claude
+      last_name: Opus 4.6
+      career_stage: AI Research Tool
+      is_ai_tool: true
+      credit_levels:
+        - role: Investigation
+          level: lead
+          description: "Ran 20-phase Operon pipeline: literature scoping, parallel evidence extraction, citation triple verification, blinded actor–critic separation, and end-to-end manuscript assembly"
+        - role: Data Curation
+          level: lead
+          description: "Built closed-allowlist references.bib (1,038 verified DOIs), 13 per-section evidence JSONs (3,816 audited citation triples), and 22 figure provenance packages"
+        - role: "Writing – Original Draft"
+          level: lead
+          description: "Drafted all 13 content sections + Methods following blinded-critic gates, 391 actively cited references, 59,226 words"
+        - role: Visualization
+          level: equal
+          description: "Generated 22 reproducible figure notebooks with PNG/PDF outputs and audited panel provenance"
+        - role: Formal Analysis
+          level: lead
+          description: "Verified 3,816 citation triples (2,851 verified / 562 remediated / 403 documented as evidence gaps) under uniform abstract+body rubric"
+      section_contributions:
+        - section: all-sections
+          description: Drafted all sections from evidence packages under blinded-critic orchestrator constraints
+          effort: lead
+
+    - id: human-supervisor
+      name: Human Supervisor
+      corresponding: true
+      email: contact@allenneuralsciences.org
+      affiliations:
+        - aibs
+      first_name: Human
+      last_name: Supervisor
+      career_stage: Principal Investigator
+      is_ai_tool: false
+      credit_levels:
+        - role: Conceptualization
+          level: lead
+          description: "Defined review scope (VIP cortical interneurons, disinhibition framework reassessment), framing, and tier-classification policy"
+        - role: Supervision
+          level: lead
+          description: "Approved phase gates, adjudicated lexicon-exception decisions, and validated final manuscript before release"
+        - role: "Writing – Review & Editing"
+          level: equal
+          description: "Reviewed pipeline output at every gate transition; directed remediation when blinded critics flagged failures"
+      section_contributions:
+        - section: all-sections
+          description: Scoped, supervised, and approved all phase outputs
+          effort: lead

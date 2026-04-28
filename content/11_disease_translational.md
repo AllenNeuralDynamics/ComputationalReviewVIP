@@ -533,12 +533,78 @@ The matrix is qualitative; cells indicate direction of reported change
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-species-disease.ipynb for the complete generation
-# code and provenance.
-```
+# Reproduce figures/fig-species-disease.png
+import matplotlib.pyplot as plt
+import numpy as np
 
+plt.rcParams.update({"font.size": 9, "font.family": "DejaVu Sans"})
+fig, axes = plt.subplots(1, 3, figsize=(15, 5.2),
+                         gridspec_kw={"width_ratios":[1.2,1.2,1.6]})
+
+# --- Panel A: VIP density (different denominators) ---
+axA = axes[0]
+bars = [
+    ("Rat A1, P9\n(% of GABA+)", 8.0, "#3b82f6"),     # Ouellet 2014
+    ("Human M1\nA4a", 4.5, "#a855f7"),                # Teymornejad 2024
+    ("Human M1\nA4b", 5.2, "#a855f7"),
+    ("Human M1\nA4c", 6.6, "#a855f7"),
+]
+xs = np.arange(len(bars)); vals = [b[1] for b in bars]; cols = [b[2] for b in bars]
+axA.bar(xs, vals, color=cols, edgecolor="black", width=0.7)
+axA.set_xticks(xs); axA.set_xticklabels([b[0] for b in bars], fontsize=8)
+axA.set_ylabel("VIP+ density (%)"); axA.set_ylim(0,11)
+axA.set_title("A — VIP+ density anchors\n(mismatched denominators)", fontweight="bold")
+for x, v in zip(xs, vals):
+    axA.text(x, v+0.2, f"{v}%", ha="center", fontsize=8.5)
+
+# --- Panel B: forest plot of cross-model direction-of-change ---
+axB = axes[1]
+entries = [
+    ("Goff 2023\nScn1a+/− cortex (ex vivo)\nbaseline firing", 34.0, 42.0, "Hz"),
+    ("Rahmatullah 2023\nFmr1−/− V1 (in vivo)\n% cells visually modulated", 57.3, 73.2, "%"),
+]
+ypos = np.arange(len(entries))[::-1].astype(float)
+for y, (lbl, ko, wt, unit) in zip(ypos, entries):
+    axB.plot([wt, ko], [y, y], "k-", lw=1)
+    axB.scatter([wt], [y], s=90, color="#10b981", zorder=3, edgecolor="black",
+                label="WT" if y == ypos[0] else None)
+    axB.scatter([ko], [y], s=90, color="#ef4444", zorder=3, edgecolor="black",
+                label="Mutant" if y == ypos[0] else None)
+axB.set_yticks(ypos)
+axB.set_yticklabels([e[0] for e in entries], fontsize=8)
+axB.set_xlabel("Reported value (different units across rows)")
+axB.set_xlim(0, 100); axB.set_ylim(-0.6, len(entries)-0.4)
+axB.legend(loc="upper right", fontsize=8)
+axB.set_title("B — Cross-model, cross-region, cross-axis\ndirection-of-change (qualitative only)",
+              fontweight="bold")
+
+# --- Panel C: qualitative disease × phenotype matrix ---
+axC = axes[2]
+diseases = ["AD", "ASD/ID", "Schizophrenia", "Dravet\n(Scn1a)", "Huntington's"]
+phenotypes = ["Cell loss", "Activity", "Connectivity\n/ E-I", "Morphology\n/ density"]
+M = np.array([[0,1,2,0,0], [1,1,2,1,1], [2,2,2,2,2], [0,1,0,0,0]])
+cmap = {0:"#f3f4f6", 1:"#fca5a5", 2:"#fde68a", -1:"#a7f3d0"}
+labels = {0:"nd", 1:"↓", 2:"altered", -1:"↑"}
+for i in range(M.shape[0]):
+    for j in range(M.shape[1]):
+        v = int(M[i,j])
+        axC.add_patch(plt.Rectangle((j, M.shape[0]-1-i), 1, 1,
+            facecolor=cmap[v], edgecolor="white", linewidth=2))
+        axC.text(j+0.5, M.shape[0]-1-i+0.5, labels[v],
+                 ha="center", va="center", fontsize=10, fontweight="bold")
+axC.set_xlim(0, M.shape[1]); axC.set_ylim(0, M.shape[0])
+axC.set_xticks(np.arange(M.shape[1])+0.5); axC.set_xticklabels(diseases, fontsize=8)
+axC.set_yticks(np.arange(M.shape[0])+0.5); axC.set_yticklabels(phenotypes[::-1], fontsize=8)
+axC.tick_params(length=0)
+for s in axC.spines.values(): s.set_visible(False)
+axC.set_title("C — Disease × VIP-IN phenotype matrix\n(qualitative; not commensurable across rows)",
+              fontweight="bold")
+
+plt.tight_layout(rect=[0, 0.08, 1, 1])
+fig.savefig("fig-species-disease.png", dpi=180, bbox_inches="tight")
+fig.savefig("fig-species-disease.pdf", bbox_inches="tight")
+```
 :::
 :::{figure}../figures/fig-vip-disease-convergence.png
 :name: fig-vip-disease-convergence
@@ -561,12 +627,101 @@ summarises piecewise.
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-disease-convergence.ipynb for the complete generation
-# code and provenance.
-```
+# Reproduce figures/fig-vip-disease-convergence.png
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
 
+plt.rcParams.update({"font.size": 9, "font.family": "DejaVu Sans"})
+fig, (axL, axR) = plt.subplots(1, 2, figsize=(15, 6.2),
+                               gridspec_kw={"width_ratios":[2.2, 1]})
+
+# Left panel: 3-tier funnel (upstream genes → mid-level VIP-IN → circuit phenotype)
+axL.set_xlim(0, 12); axL.set_ylim(0, 10); axL.axis("off")
+axL.set_title("A — Convergence diagram: upstream insult → VIP-IN mechanism → circuit phenotype",
+              fontweight="bold", loc="left", fontsize=11)
+
+upstream = [("MECP2\n(Rett)", "#fde68a"), ("TCF4\n(Pitt-Hopkins)", "#fde68a"),
+            ("FMR1\n(Fragile-X)", "#fde68a"), ("SCN1A\n(Dravet/ASD)", "#fde68a"),
+            ("CNTNAP2\n(ASD/CDFE)", "#fde68a"), ("APP/PSEN\n(AD model)", "#fcd5b5"),
+            ("HTT\n(HD)", "#fcd5b5"), ("VIPR2 CNV\nDISC1 (SCZ)", "#bfdbfe")]
+mid = [("Intrinsic\nexcitability\n(firing rate)", "#a7f3d0"),
+       ("Synaptic\ninput\n(sEPSC, mEPSC)", "#a7f3d0"),
+       ("Cell number\n(IHC count,\nselective loss)", "#a7f3d0"),
+       ("Sensory /\ncontext\nmodulation", "#a7f3d0"),
+       ("Peptide / GABA\nco-release", "#a7f3d0")]
+down = [("E/I imbalance", "#fecaca"),
+        ("Gain / disinhibition\nfailure", "#fecaca"),
+        ("Oscillatory disruption\n(γ, theta)", "#fecaca"),
+        ("Behavioural / cognitive\ndeficits", "#fecaca")]
+
+n, m, nd = len(upstream), len(mid), len(down)
+mid_y, down_y = 5.0, 1.5
+
+for i, (lbl, c) in enumerate(upstream):
+    x = (i+0.5) * (12.0/n)
+    axL.add_patch(mpatches.FancyBboxPatch((x-0.55, 8.4), 1.1, 1.0,
+        boxstyle="round,pad=0.04", facecolor=c, edgecolor="black", linewidth=0.8))
+    axL.text(x, 8.9, lbl, ha="center", va="center", fontsize=7)
+for i, (lbl, c) in enumerate(mid):
+    x = (i+0.5) * (12.0/m)
+    axL.add_patch(mpatches.FancyBboxPatch((x-1.0, mid_y-0.55), 2.0, 1.4,
+        boxstyle="round,pad=0.04", facecolor=c, edgecolor="black", linewidth=0.8))
+    axL.text(x, mid_y+0.15, lbl, ha="center", va="center", fontsize=7.5)
+for i, (lbl, c) in enumerate(down):
+    x = (i+0.5) * (12.0/nd)
+    axL.add_patch(mpatches.FancyBboxPatch((x-1.15, down_y-0.55), 2.3, 1.3,
+        boxstyle="round,pad=0.04", facecolor=c, edgecolor="black", linewidth=0.8))
+    axL.text(x, down_y+0.1, lbl, ha="center", va="center", fontsize=8)
+
+# many-to-many funnel arrows (light)
+for i in range(n):
+    sx = (i+0.5) * (12.0/n)
+    for j in range(m):
+        tx = (j+0.5) * (12.0/m)
+        axL.annotate("", xy=(tx, mid_y+0.85), xytext=(sx, 8.4),
+                     arrowprops=dict(arrowstyle="-", color="#cbd5e1", lw=0.4, alpha=0.6))
+for i in range(m):
+    sx = (i+0.5) * (12.0/m)
+    for j in range(nd):
+        tx = (j+0.5) * (12.0/nd)
+        axL.annotate("", xy=(tx, down_y+0.7), xytext=(sx, mid_y-0.55),
+                     arrowprops=dict(arrowstyle="->", color="#94a3b8", lw=0.6, alpha=0.7))
+
+# Right panel: subclass conserved / t-types diverge cartoon, mouse vs human
+axR.set_xlim(0, 10); axR.set_ylim(0, 10); axR.axis("off")
+axR.set_title("B — Subclass conserved,\nt-types diverge", fontweight="bold", loc="left", fontsize=11)
+
+axR.add_patch(mpatches.FancyBboxPatch((0.4, 5.5), 4.0, 3.6, boxstyle="round,pad=0.05",
+    facecolor="#dbeafe", edgecolor="#1e40af", linewidth=1.2))
+axR.text(2.4, 8.8, "Mouse cortex", ha="center", fontsize=9.5, fontweight="bold", color="#1e3a8a")
+axR.text(2.4, 7.5, "VIP subclass\n→ ~16 t-types", ha="center", fontsize=8.5)
+
+axR.add_patch(mpatches.FancyBboxPatch((5.3, 5.5), 4.3, 3.6, boxstyle="round,pad=0.05",
+    facecolor="#fce7f3", edgecolor="#9d174d", linewidth=1.2))
+axR.text(7.45, 8.8, "Human cortex", ha="center", fontsize=9.5, fontweight="bold", color="#9d174d")
+axR.text(7.45, 7.5, "VIP subclass\n→ 21 t-types", ha="center", fontsize=8.5)
+
+# subclass equivalence bridge
+axR.annotate("", xy=(5.3, 7.3), xytext=(4.4, 7.3),
+             arrowprops=dict(arrowstyle="<->", color="#16a34a", lw=2))
+axR.text(4.85, 7.6, "subclass\n=", ha="center", fontsize=8, color="#16a34a", fontweight="bold")
+
+# bottom: VIP t-type count bar (Mouse / Marmoset / Human)
+species, counts = ["Mouse","Marmoset","Human"], [16, 19, 21]
+xc = np.linspace(1.5, 8.5, 3); ws = 0.7
+for x, lbl, c in zip(xc, species, counts):
+    h = c*0.13
+    axR.add_patch(plt.Rectangle((x-ws/2, 1.0), ws, h, facecolor="#a78bfa",
+                                edgecolor="black", linewidth=0.8))
+    axR.text(x, 1.0+h+0.18, f"{c}", ha="center", fontsize=9, fontweight="bold")
+    axR.text(x, 0.7, lbl, ha="center", fontsize=8)
+
+plt.tight_layout()
+fig.savefig("fig-vip-disease-convergence.png", dpi=180, bbox_inches="tight")
+fig.savefig("fig-vip-disease-convergence.pdf", bbox_inches="tight")
+```
 :::
 ## Methodological caveats specific to this section
 

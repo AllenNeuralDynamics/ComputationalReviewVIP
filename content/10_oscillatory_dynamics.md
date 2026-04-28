@@ -80,12 +80,120 @@ Across 80 evidence findings the cortical and hippocampal oscillatory roles of VI
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-oscillations.ipynb for the complete generation
-# code and provenance.
-```
+# Reproduces fig-vip-oscillations.png/pdf
+# REDESIGNED schematic — Phase-6 audit found 0 quantitative panels in cluster_09_oscillations.
+# Values are categorical/qualitative summaries from primary text (Veit2023, Wagatsuma2023, Hahn2022,
+# Sarkar2025, Knoblich2019, Bohannon2018, Bastos2023a, Lee2019, Sabri2024, Yin2025, Murdock2024,
+# Rademacher2025, Hall2015, Goff2019, Kranz2025, Goel2025, Koukouli2017, Tahvildari2012, Brecier2022,
+# Rolle2025, Szadai2022, Luo2020, Francavilla2018a, Reimer2014). NOT a pooled forest plot.
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, axes = plt.subplots(2, 2, figsize=(12.5, 9))
+fig.suptitle("VIP-cell perturbation effects on cortical/hippocampal rhythms — qualitative cross-study schematic\n"
+             "(Phase-6 audit: no quantitative panels available — qualitative summary only)",
+             fontsize=11, y=0.995)
+
+# Panel A — schematic LFP spectrogram during VIP optogenetic activation vs silencing
+axA = axes[0, 0]
+t = np.linspace(0, 4, 500); freq_axis = np.linspace(1, 100, 100); np.random.seed(0)
+def spec(power_at_t, scale=1.0):
+    Z = np.zeros((100, 500))
+    for i, ff in enumerate(freq_axis):
+        bg = 1/ff * (1 + 0.2*np.random.randn(500))
+        bump = 0.6*np.exp(-((ff-45)/12)**2) * power_at_t * scale if 25 < ff < 75 else 0
+        theta_b = 0.5*np.exp(-((ff-7)/3)**2) * (0.8+0.3*np.sin(2*np.pi*0.5*t)) if 3 < ff < 12 else 0
+        Z[i] = bg + bump + theta_b
+    return Z
+combined = np.hstack([spec(1.0+0.6*(t>1.5)*(t<3.5), 1.4),
+                       spec(1.0-0.4*(t>1.5)*(t<3.5), 0.6)])
+axA.imshow(combined, origin='lower', aspect='auto', extent=[0,8,1,100], cmap='magma', vmin=0, vmax=1.5)
+axA.axvline(4, color='white', linestyle='--', lw=1.5)
+axA.text(2, 92, "VIP activation", color='white', ha='center', fontsize=10, fontweight='bold')
+axA.text(6, 92, "VIP silencing", color='white', ha='center', fontsize=10, fontweight='bold')
+axA.axvspan(1.5, 3.5, ymin=0, ymax=0.02, color='lime', alpha=0.6)
+axA.axvspan(5.5, 7.5, ymin=0, ymax=0.02, color='red', alpha=0.6)
+axA.set_xlabel("time (a.u.)"); axA.set_ylabel("frequency (Hz)")
+axA.set_title("A. Schematic LFP spectrogram\nVIP optogenetic activation vs silencing", fontsize=10)
+axA.set_yscale('log'); axA.set_yticks([2,8,30,80]); axA.set_yticklabels(['2','8','30','80'])
+
+# Panel B — direction of effect across studies
+axB = axes[0, 1]
+studies = [
+    ("Veit2023 (V1, gamma local)", +1, "↑"),
+    ("Veit2023 (V1, gamma coherence)", -1, "↓"),
+    ("Wagatsuma2023 (model, low-gamma)", +1, "↑"),
+    ("Hahn2022 (model, freq)", +1, "↑"),
+    ("Sarkar2025 (model, switch)", 0, "switch"),
+    ("Knoblich2019 (V1 coupling)", +1, "↑"),
+    ("Bohannon2018 (4-AP, LLD)", 0, "−"),
+    ("Bastos2023a (ACa-V1, silenc.)", -1, "↓"),
+    ("Lee2019 (HPC-PFC, silenc.)", -1, "↓"),
+    ("Sabri2024 (delta, silenc.)", +1, "↑"),
+    ("Yin2025 (burst-suppr.)", 0, "no eff."),
+    ("Murdock2024 (40-Hz Aβ, silenc.)", -1, "↓"),
+    ("Rademacher2025 (PV-mediated)", 0, "n/a"),
+]
+ypos = np.arange(len(studies))[::-1]
+colors = {-1:"#d62728", 0:"#7f7f7f", 1:"#2ca02c"}
+for i, (lbl, eff, sym) in enumerate(studies):
+    y = ypos[i]
+    axB.barh(y, eff, color=colors[eff], height=0.6, edgecolor='black', lw=0.4)
+    axB.text(eff*1.05 + (0.05 if eff>=0 else -0.05), y, sym, va='center', fontsize=8.5,
+             ha='left' if eff>=0 else 'right')
+axB.set_yticks(ypos); axB.set_yticklabels([s[0] for s in studies], fontsize=7.8)
+axB.axvline(0, color='black', lw=0.6); axB.set_xlim(-1.4, 1.4)
+axB.set_xticks([-1, 0, 1]); axB.set_xticklabels(['↓ decrease', 'none', '↑ increase'])
+axB.set_xlabel("Direction of effect on rhythm power / coherence")
+axB.set_title("B. Direction of effect across studies\n(qualitative; effect sizes NOT pooled)", fontsize=10)
+
+# Panel C — seizure cross-study summary table
+axC = axes[1, 0]; axC.axis('off')
+table_data = [
+    ["Study", "Manipulation", "Effect on epileptiform/synchrony"],
+    ["Hall 2015 (rat slice)", "VIP-R blockade", "abolishes spike-and-wave"],
+    ["Goff 2019 (Dravet model)", "VIP-IS rescued by Hm1a", "rescues IS firing pattern"],
+    ["Kranz 2025 (Rett, model)", "↓ VIP activity", "increases θ–γ, α–γ PAC"],
+    ["Goel 2025 (Fragile X)", "VIP dysfn (model)", "elevated broadband gamma"],
+    ["Koukouli 2017 (α5 SNP)", "↓ VIP", "hypofrontality"],
+    ["Murdock 2024 (5XFAD)", "VIP silencing", "abolishes 40-Hz Aβ clearance"],
+    ["Khoshkhoo 2017 (UNMET)", "VIP silencing", "(scaffold: suppresses seizures)"],
+    ["Calin 2018 (UNMET)", "VIP activation", "(scaffold: no Δ discharge dur.)"],
+]
+T = axC.table(cellText=table_data[1:], colLabels=table_data[0], loc='center', cellLoc='left',
+              colColours=['#cccccc']*3, colWidths=[0.32, 0.28, 0.40])
+T.auto_set_font_size(False); T.set_fontsize(7.6); T.scale(1, 1.3)
+for r in [7, 8]:
+    for c in range(3):
+        T[(r, c)].set_facecolor('#fde6e6')
+axC.set_title("C. Seizure / pathological-synchrony cross-study summary\n"
+              "(UNMET rows: scaffold counter-pair absent from filtered cite map)", fontsize=10)
+
+# Panel D — state-dependent VIP recruitment
+axD = axes[1, 1]
+states = ["Slice\nUp-state\n(Tahvildari)", "Burst\nsuppr.\n(Yin)",
+          "Quiet\nwake\n(Sabri,\nReimer)", "REM\n(Brecier)",
+          "Spindle/\nSO\n(Rolle)", "Reward/\nPunish.\n(Szadai)",
+          "Theta-run\nVIP-IS\n(Luo)", "Theta-run\nVIP-LRP\n(Francavilla)"]
+recruit = [-1.5, -1.2, -0.5, +1.5, +1.0, +1.8, +1.4, -1.0]
+xpos = np.arange(len(states)); cs = ['#d62728' if r<0 else '#2ca02c' for r in recruit]
+axD.bar(xpos, recruit, color=cs, edgecolor='black', lw=0.6, width=0.7)
+axD.set_xticks(xpos); axD.set_xticklabels(states, rotation=0, fontsize=7)
+axD.axhline(0, color='black', lw=0.7); axD.set_ylim(-2, 2.2)
+axD.set_yticks([-1.5, 0, 1.5]); axD.set_yticklabels(['silent /\ndecrease', 'baseline', 'high /\nincrease'])
+axD.set_ylabel("Qualitative VIP recruitment")
+axD.set_title("D. State-dependent VIP recruitment (qualitative)", fontsize=10)
+
+plt.tight_layout(rect=[0, 0.025, 1, 0.96])
+fig.text(0.5, 0.005, "CAVEAT: Phase-6 audit found 0 quantitative panels in cluster_09_oscillations. "
+         "All values above are categorical/qualitative summaries from primary text — NOT pooled effect sizes.",
+         ha='center', fontsize=8.2, style='italic', color='#444444')
+fig.savefig("fig-vip-oscillations.png", dpi=180, bbox_inches='tight')
+fig.savefig("fig-vip-oscillations.pdf", bbox_inches='tight')
+plt.show()
+```
 :::
 :::{figure} ../figures/fig-vip-oscillation-mechanism.png
 :name: fig-vip-oscillation-mechanism
@@ -96,11 +204,116 @@ Across 80 evidence findings the cortical and hippocampal oscillatory roles of VI
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-oscillation-mechanism.ipynb for the complete generation
-# code and provenance.
-```
+# Reproduces fig-vip-oscillation-mechanism.png/pdf
+# SCHEMATIC ONLY — no quantitative data substrate. Cells/connectivity drawn from the section text:
+# Veit2023, Wagatsuma2023 (gamma); Tyan2014, Luo2020, Chamberland2010 (IS3→OLM); Tahvildari2012,
+# Szadai2022 (Up-state permissive vs causal contrast). Pi 2013 vs Neske 2016 conflict flagged.
 
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, Circle, FancyBboxPatch
+import numpy as np
+
+fig, axes = plt.subplots(1, 3, figsize=(15, 5.6))
+fig.suptitle("Mechanistic schematic — VIP→SST and VIP→PV motifs differentially shape gamma vs theta rhythms\n"
+             "(Schematic only — no quantitative data substrate)",
+             fontsize=11, y=1.00)
+
+def draw_cell(ax, xy, label, color, r=0.10, fontsize=10, edgecolor='black'):
+    c = Circle(xy, r, color=color, ec=edgecolor, lw=1.4, zorder=3); ax.add_patch(c)
+    ax.text(xy[0], xy[1], label, ha='center', va='center', fontsize=fontsize, fontweight='bold', zorder=4)
+
+def arrow(ax, src, dst, color='black', mut='||', shrink_a=15, shrink_b=15, lw=1.6):
+    a = FancyArrowPatch(src, dst, color=color, lw=lw, arrowstyle='-|>',
+                        mutation_scale=14 if mut!='||' else 10, shrinkA=shrink_a, shrinkB=shrink_b)
+    ax.add_patch(a)
+    if mut == '||':
+        dx, dy = dst[0]-src[0], dst[1]-src[1]; L = np.hypot(dx,dy); ux, uy = dx/L, dy/L
+        bx = dst[0] - ux*shrink_b/100*1.4; by = dst[1] - uy*shrink_b/100*1.4
+        px, py = -uy*0.04, ux*0.04
+        ax.plot([bx-px, bx+px], [by-py, by+py], color=color, lw=2.2, solid_capstyle='round', zorder=5)
+
+# Panel A — cortical gamma motif
+axA = axes[0]; axA.set_xlim(0,1); axA.set_ylim(0,1); axA.axis('off')
+axA.set_title("A. Cortical gamma (30–80 Hz)\nVIP→SST gating of PV–Pyr engine", fontsize=10)
+draw_cell(axA, (0.20, 0.78), "VIP", "#fdae61"); draw_cell(axA, (0.55, 0.78), "SST", "#abd9e9")
+draw_cell(axA, (0.80, 0.55), "PV", "#74add1"); draw_cell(axA, (0.55, 0.30), "Pyr", "#7cb38a")
+arrow(axA, (0.20,0.78), (0.55,0.78), color='#d62728')
+arrow(axA, (0.55,0.78), (0.55,0.30), color='#d62728')
+arrow(axA, (0.80,0.55), (0.55,0.30), color='#d62728')
+arrow(axA, (0.55,0.30), (0.80,0.55), color='#1a1a1a', mut='->')
+axA.annotate("ACh / 5-HT /\nNA / top-down", xy=(0.20,0.78), xytext=(0.05,0.95),
+             fontsize=8, ha='center', arrowprops=dict(arrowstyle='->', color='gray', lw=1))
+axA.add_patch(FancyBboxPatch((0.04, 0.05), 0.92, 0.13, boxstyle="round,pad=0.01",
+                              fc='#fff3d6', ec='black', lw=0.8))
+xx = np.linspace(0.06, 0.96, 200); yy = 0.115 + 0.03*np.sin(2*np.pi*8*xx)
+axA.plot(xx, yy, color='#444', lw=1.3)
+axA.text(0.50, 0.025, "Local γ power scales with VIP drive (Veit 2023, Wagatsuma 2023)",
+         ha='center', fontsize=7.8, style='italic')
+axA.text(0.02, 0.43, "—|  inhibitory\n→  excitatory", fontsize=7, va='top')
+
+# Panel B — hippocampal theta motif
+axB = axes[1]; axB.set_xlim(0,1); axB.set_ylim(0,1); axB.axis('off')
+axB.set_title("B. Hippocampal theta (4–10 Hz)\nVIP/IS3 cell phase-coupled to OLM disinhibition", fontsize=10)
+axB.add_patch(FancyBboxPatch((0.02, 0.78), 0.30, 0.18, boxstyle="round,pad=0.02",
+                              fc='#e6e6fa', ec='black'))
+axB.text(0.17, 0.87, "Medial septum\n(theta pacemaker)", ha='center', fontsize=8.3)
+draw_cell(axB, (0.55, 0.85), "IS3\nVIP/CR", "#fdae61", r=0.10, fontsize=7)
+draw_cell(axB, (0.80, 0.55), "OLM", "#abd9e9")
+draw_cell(axB, (0.50, 0.25), "CA1\nPyr", "#7cb38a", fontsize=7)
+arrow(axB, (0.32,0.85), (0.55,0.85), color='#1a1a1a', mut='->')
+arrow(axB, (0.55,0.85), (0.80,0.55), color='#d62728')
+arrow(axB, (0.80,0.55), (0.50,0.25), color='#d62728')
+arrow(axB, (0.32,0.78), (0.80,0.55), color='#1a1a1a', mut='->')
+axB.add_patch(FancyBboxPatch((0.04, 0.03), 0.92, 0.12, boxstyle="round,pad=0.01",
+                              fc='#e0f2e0', ec='black', lw=0.8))
+xx = np.linspace(0.06, 0.96, 300); yy = 0.09 + 0.03*np.sin(2*np.pi*5*xx)
+axB.plot(xx, yy, color='#1a5e1a', lw=1.3)
+for ph in [0.06+i/5 for i in range(5)]:
+    if 0.07 < ph < 0.95:
+        axB.axvline(ph+0.05, ymin=0.03, ymax=0.10, color='#fdae61', lw=2)
+axB.text(0.50, 0.16, "IS3 spikes at theta rising / peak (Luo 2020); silent during ripples",
+         ha='center', fontsize=7.8, style='italic')
+
+# Panel C — Up-state permissive vs causal
+axC = axes[2]; axC.set_xlim(0,1); axC.set_ylim(0,1); axC.axis('off')
+axC.set_title("C. Cortical Up-state\nPermissive (slice) vs causal (awake) VIP gating", fontsize=10)
+axC.add_patch(FancyBboxPatch((0.02, 0.40), 0.45, 0.55, boxstyle="round,pad=0.02",
+                              fc='#fde6e6', ec='black'))
+axC.text(0.245, 0.91, "Slice / spontaneous", ha='center', fontsize=9, fontweight='bold')
+draw_cell(axC, (0.12, 0.70), "VIP", "#fdae61", r=0.06, fontsize=7)
+axC.text(0.12, 0.58, "silent", ha='center', fontsize=7, style='italic', color='#a00')
+draw_cell(axC, (0.30, 0.70), "PV/Pyr", "#74add1", r=0.07, fontsize=6)
+axC.text(0.30, 0.58, "Up-state\nactive", ha='center', fontsize=7, color='#0a0')
+axC.text(0.245, 0.46, "Tahvildari 2012:\nVIP, NPY, 5HT3a silent", ha='center', fontsize=7.3, style='italic')
+axC.add_patch(FancyBboxPatch((0.53, 0.40), 0.45, 0.55, boxstyle="round,pad=0.02",
+                              fc='#e0f2e0', ec='black'))
+axC.text(0.755, 0.91, "Awake reinforcement", ha='center', fontsize=9, fontweight='bold')
+draw_cell(axC, (0.63, 0.70), "VIP", "#fdae61", r=0.06, fontsize=7)
+axC.text(0.63, 0.58, "active\ncortex-wide", ha='center', fontsize=7, color='#0a0')
+draw_cell(axC, (0.85, 0.70), "Pyr", "#7cb38a", r=0.06, fontsize=7)
+arrow(axC, (0.69,0.70), (0.85,0.70), color='#fdae61', mut='->', lw=1.4)
+axC.text(0.755, 0.46, "Szadai 2022:\ncortex-wide VIP recruitment\nby reward / punishment",
+         ha='center', fontsize=7.3, style='italic')
+axC.add_patch(FancyBboxPatch((0.02, 0.04), 0.96, 0.30, boxstyle="round,pad=0.01",
+                              fc='#fff3d6', ec='black'))
+axC.text(0.50, 0.28, "Open conflict — Pi 2013 (awake-cortex) vs Neske 2016 (slice-Up-state):",
+         ha='center', fontsize=7.6, fontweight='bold')
+axC.text(0.50, 0.22, "scaffold-listed counter-pair flagged in unmet citation list;",
+         ha='center', fontsize=7.4, style='italic', color='#700')
+axC.text(0.50, 0.16, "available evidence (Tahvildari 2012, Szadai 2022) used as proxies.",
+         ha='center', fontsize=7.4, style='italic', color='#700')
+axC.text(0.50, 0.08, "Not formally incompatible: VIP may be silent in spontaneous slice rhythms",
+         ha='center', fontsize=7.3)
+axC.text(0.50, 0.035, "but recruited by neuromodulator-coupled awake inputs.", ha='center', fontsize=7.3)
+
+plt.tight_layout(rect=[0, 0.025, 1, 0.94])
+fig.text(0.5, 0.005,
+         "CAVEAT: Schematic — no quantitative substrate. Cells/connectivity drawn from primary literature cited in section text.",
+         ha='center', fontsize=8.2, style='italic', color='#444444')
+fig.savefig("fig-vip-oscillation-mechanism.png", dpi=180, bbox_inches='tight')
+fig.savefig("fig-vip-oscillation-mechanism.pdf", bbox_inches='tight')
+plt.show()
+```
 :::
 Whether the rodent oscillatory and circuit-level findings reviewed here translate to primate cortex, and how VIP-IN dysfunction maps onto neurodevelopmental and psychiatric disease, is the focus of {ref}`sec-disease-translational`.

@@ -1,9 +1,9 @@
 (sec-methods)=
 # Methods
 
-```{evidence} methods-overview
-Curated literature corpus for the computational review pipeline.
-```
+:::{note}
+This Methods section is the transparency record for the comprehensive computational review of VIP cortical interneurons. The full claim-level evidence corpus is browsable on the [Evidence Database](evidence_database.md) page.
+:::
 
 
 This Methods section documents how the comprehensive critical review of vasoactive-intestinal-peptide-expressing (VIP) cortical interneurons was produced. It is a transparency artifact, written from pipeline metadata and gate artifacts only; no post-hoc characterizations have been added. Eight subsections cover the original review request (M.1), the scope and table of contents derived from it (M.2), the evidence corpus and curation (M.3), the citation infrastructure (M.4), the drafting and critic protocol (M.5), a phase-by-phase pipeline ledger (M.6), the bibliography and integration record (M.7), and finally limitations, reproducibility, and data availability (M.8). The pipeline executed under coordinator skill `comprev-coordinator-v27.md` with two delegated agent roles: LITREVIEW (scientific judgment) and DATAML (mechanical work).

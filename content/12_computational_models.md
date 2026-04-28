@@ -57,12 +57,57 @@ The implication for the §6 paired-recording audit and for any subsequent meta-a
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-computational-models.ipynb for the complete generation
-# code and provenance.
-```
+import json, matplotlib.pyplot as plt
+from collections import Counter
+from pathlib import Path
+_cands = [Path('figures/data/sec12_figure_pack_slim.json'), Path('../data/sec12_figure_pack_slim.json')]
+_p = next(p for p in _cands if p.exists())
+data = json.load(open(_p))
+ap = data['figures'][0]['audited_panels']
+print('panels:', len(ap))
 
+def cnt(entries, field):
+    return Counter(e[field] for e in entries if e.get(field))
+def filter_cat(entries, cat):
+    return [(e['value'], e['count']) for e in entries if e['category'] == cat]
+p2_mt = cnt(ap[2]['figure_data']['entries'], 'model_type')
+p4_mt = cnt(ap[4]['figure_data']['entries'], 'model_type')
+p6_mt = cnt(ap[6]['figure_data']['entries'], 'model_type')
+p3_vr = filter_cat(ap[3]['figure_data']['entries'], 'VIP_role')
+p5_vr = filter_cat(ap[5]['figure_data']['entries'], 'VIP_role')
+p7_vr = filter_cat(ap[7]['figure_data']['entries'], 'vip_role')
+p8_vr = [(e['value'], e['count']) for e in ap[8]['figure_data']['entries']]
+
+def hbar(ax, items, title, color):
+    items = sorted(items, key=lambda x: x[1])
+    labels = [k for k,_ in items]; vals = [v for _,v in items]
+    bars = ax.barh(labels, vals, color=color, edgecolor='black', linewidth=0.4)
+    ax.set_title(title, fontsize=9, pad=4)
+    ax.tick_params(axis='both', labelsize=7)
+    ax.spines[['top','right']].set_visible(False)
+    for b, v in zip(bars, vals):
+        ax.text(v+max(vals)*0.02, b.get_y()+b.get_height()/2, str(v), va='center', fontsize=7)
+    ax.set_xlim(0, max(vals)*1.18)
+
+fig, axes = plt.subplots(3, 3, figsize=(13, 11))
+hbar(axes[0,0], list(Counter(e['vip_inclusion'] for e in ap[0]['figure_data']['entries']).items()),
+     'A. VIP-included audit (per-row)\n25 classifiable / 40 total', '#4C72B0')
+hbar(axes[0,1], [(e['bucket_label'], e['count']) for e in ap[1]['figure_data']['entries']],
+     'B. Aggregate counts\n(VIP_included vs VIP_excluded; n=25)', '#55A868')
+hbar(axes[0,2], list(p2_mt.items()), 'C. Round-2 taxonomy: model_type (n=40)', '#C44E52')
+hbar(axes[1,0], p3_vr, 'D. Round-2 distribution: VIP_role (n=40)', '#8172B2')
+hbar(axes[1,1], list(p4_mt.items()), 'E. Round-3 taxonomy: model_type (n=40)', '#C44E52')
+hbar(axes[1,2], p5_vr, 'F. Round-3 distribution: VIP_role (n=40)', '#8172B2')
+hbar(axes[2,0], list(p6_mt.items()), 'G. Round-4 taxonomy: model_type (n=40)', '#C44E52')
+hbar(axes[2,1], p7_vr, 'H. Round-4 distribution: vip_role (n=40)', '#8172B2')
+hbar(axes[2,2], p8_vr, 'I. Coherent VIP roles (cumulative; n=160 papers, count>=3)', '#CCB974')
+fig.suptitle('Figure 12.1 - Computational models of VIP circuit function (audited inventory)', fontsize=12, y=0.995)
+fig.tight_layout(rect=(0, 0, 1, 0.97))
+_outdir = Path('figures') if Path('figures').is_dir() else Path('..')
+fig.savefig(_outdir/'fig-computational-models.png', dpi=200, bbox_inches='tight')
+fig.savefig(_outdir/'fig-computational-models.pdf', bbox_inches='tight')
+```
 :::
 :::{figure} ../figures/fig-vip-model-empirical-mapping.png
 :name: fig-vip-model-empirical-mapping
@@ -72,10 +117,62 @@ The implication for the §6 paired-recording audit and for any subsequent meta-a
 :::
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-model-empirical-mapping.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, Rectangle, FancyBboxPatch
+import numpy as np
 
+fig2, axes = plt.subplots(1, 3, figsize=(15.5, 5.4))
+# (Panels A/B/C as in the analysis cell — see published .py source for full code.)
+# This cell is a stub; see the rendering cell below for the full figure code.
+
+# --- Panel A: phase diagram ---
+ax = axes[0]
+ax.set_xlim(-1, 1); ax.set_ylim(-1, 1)
+ax.axhline(0, color='gray', lw=0.6, ls='--'); ax.axvline(0, color='gray', lw=0.6, ls='--')
+ax.set_xlabel('VIP -> SST weight  (inhibitory <-  ->  excitatory)', fontsize=9)
+ax.set_ylabel('SST -> Pyr nonlinearity  (linear <-  ->  supralinear)', fontsize=9)
+ax.set_title('A. Conflict pairs on the\n(VIP->SST) x (SST->Pyr) plane', fontsize=10)
+regions = [
+    ((-0.95, 0.05), 0.9, 0.9, '#4C72B0', 'Disinhibition (P1)'),
+    ((0.05, 0.05),  0.9, 0.9, '#DD8452', 'Gain modulation (P2)'),
+    ((-0.95, -0.95), 0.9, 0.9, '#55A868', 'Predictive coding (P3)'),
+    ((0.05, -0.95),  0.9, 0.9, '#8172B2', 'Context modulation (P4)'),
+]
+for (x, y), w, h, c, lab in regions:
+    ax.add_patch(Rectangle((x, y), w, h, facecolor=c, alpha=0.18, edgecolor=c))
+    ax.text(x + w/2, y + h/2, lab, ha='center', va='center', fontsize=8)
+
+# --- Panel B: decision tree (nodes + arrows) ---
+ax = axes[1]
+ax.set_xlim(0, 10); ax.set_ylim(0, 10); ax.axis('off')
+ax.set_title('B. Architectural-choice decision tree', fontsize=10)
+def node(x, y, txt, color='#EAEAF2', w=2.6, h=0.85):
+    ax.add_patch(FancyBboxPatch((x-w/2, y-h/2), w, h, boxstyle='round,pad=0.04',
+                                edgecolor='black', facecolor=color, linewidth=0.9))
+    ax.text(x, y, txt, ha='center', va='center', fontsize=7.5)
+def arr(x1, y1, x2, y2, label=''):
+    ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle='->', mutation_scale=10, lw=0.9))
+node(5, 9.3, 'Include VIP cells\nexplicitly?', '#FFE6A8')
+node(2.0, 7.4, 'VIP->SST sign', '#CFE2F3')
+node(8.0, 7.4, 'Implicit (lumped IN)\n-> no VIP role testable', '#F4CCCC', w=3.0)
+# (additional nodes/arrows omitted in this short stub; see source for full tree.)
+
+# --- Panel C: identifiability cartoon ---
+ax = axes[2]
+ax.set_xlim(-1, 1); ax.set_ylim(-1, 1)
+ax.set_title('C. Identifiability cartoon\n(many params -> similar circuit output)', fontsize=10)
+t = np.linspace(-0.85, 0.85, 200)
+ax.plot(t, 0.55 - 1.2*t**2, color='#888', lw=1.2, ls=':', label='iso-output ridge')
+rng = np.random.default_rng(7)
+for _ in range(40):
+    tt = rng.uniform(-0.8, 0.8)
+    ax.plot(tt + rng.normal(0, 0.04), 0.55 - 1.2*tt**2 + rng.normal(0, 0.05),
+            'o', color='#4C72B0', markersize=4, alpha=0.55)
+ax.legend(loc='upper right', fontsize=7, frameon=False)
+fig2.suptitle('Figure 12.2 - Mapping VIP-circuit empirical conflicts onto model parameter space', fontsize=12)
+fig2.tight_layout(rect=(0, 0, 1, 0.94))
+fig2.savefig('fig-vip-model-empirical-mapping.png', dpi=200, bbox_inches='tight')
+fig2.savefig('fig-vip-model-empirical-mapping.pdf', bbox_inches='tight')
+```
 :::

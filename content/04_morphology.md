@@ -20,12 +20,93 @@ The bipolar/bitufted morphotype dominates in numerical surveys but does not exha
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-morphologies.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Rectangle, Circle
 
+fig = plt.figure(figsize=(13, 14))
+gs = fig.add_gridspec(3, 2, hspace=0.55, wspace=0.30, height_ratios=[1.1, 1.0, 1.0])
+
+# Panel A — exemplar morphologies (drawn schematic)
+axA = fig.add_subplot(gs[0, :])
+axA.set_xlim(0,4); axA.set_ylim(0,1); axA.axis("off")
+axA.set_title("A  Canonical VIP morphological exemplars (schematic)", loc="left", fontsize=11, fontweight="bold")
+
+def draw_bipolar(ax, cx, cy, color="#1f77b4"):
+    ax.plot([cx, cx], [cy+0.29, cy+0.64], color=color, lw=1.6)
+    ax.plot([cx, cx], [cy-0.29, cy-0.64], color=color, lw=1.6)
+    ax.plot([cx-0.02, cx-0.02], [cy-0.29, cy-1.0], color=color, lw=0.9)
+    ax.add_patch(Circle((cx, cy), 0.04, color=color))
+
+def draw_bitufted(ax, cx, cy, color="#2ca02c"):
+    for sign in (1, -1):
+        for dx in [-0.06, -0.02, 0.02, 0.06]:
+            ax.plot([cx, cx+dx], [cy+sign*0.29, cy+sign*0.64], color=color, lw=1.0)
+    ax.plot([cx+0.01, cx+0.01], [cy-0.29, cy-0.96], color=color, lw=0.9)
+    ax.add_patch(Circle((cx, cy), 0.04, color=color))
+
+def draw_smallbasket(ax, cx, cy, color="#d62728"):
+    for ang in np.linspace(0, 2*np.pi, 7)[:-1]:
+        ax.plot([cx, cx+0.10*np.cos(ang)], [cy, cy+0.20*np.sin(ang)], color=color, lw=1.0)
+    ax.add_patch(Circle((cx, cy), 0.045, color=color))
+
+def draw_arcade(ax, cx, cy, color="#9467bd"):
+    for sign in (1, -1):
+        for dx in [-0.04, 0.04]:
+            ax.plot([cx, cx+dx], [cy+sign*0.29, cy+sign*0.58], color=color, lw=1.0)
+    th = np.linspace(np.pi, 2*np.pi, 60)
+    ax.plot(cx + 0.18*np.cos(th), cy - 0.10 + 0.30*np.sin(th)*0.8, color=color, lw=0.9)
+    ax.add_patch(Circle((cx, cy), 0.04, color=color))
+
+xs = [0.5, 1.5, 2.5, 3.5]
+for x, lab, dfn in zip(xs, ["Bipolar","Bitufted","Small basket","Arcade"],
+                       [draw_bipolar, draw_bitufted, draw_smallbasket, draw_arcade]):
+    dfn(axA, x, 0.5)
+    axA.text(x, 0.02, lab, ha="center", fontsize=10)
+
+# Panel B — Pronneke vs Gouwens textual side-by-side
+axB = fig.add_subplot(gs[1, 0]); axB.axis("off")
+axB.set_title("B  Predominant VIP morphology — textual side-by-side", loc="left", fontsize=10.5, fontweight="bold")
+axB.text(0.02, 0.92, "Pronneke 2015 (S1 barrel)\nVIP-Cre fixed slice\nL2/3: bipolar/bitufted dominate\nL4-L6: multipolar concentrated", fontsize=9, va="top")
+axB.text(0.55, 0.92, "Gouwens 2020 (VISp)\nPatch-seq, n=517\n5 Vip-MET-types resolved\nby laminar axon innervation", fontsize=9, va="top")
+
+# Panel C — Zhou 2017 L2/3 subcellular targets (n=31)
+axC = fig.add_subplot(gs[1, 1])
+axC.bar(["Dendrite","Soma","Spine"], [80, 13, 7],
+        color=["#4c78a8","#f58518","#54a24b"], edgecolor="black", lw=0.5)
+for i, v in enumerate([80,13,7]):
+    axC.text(i, v+1.5, f"{v}%", ha="center", fontsize=9)
+axC.set_ylabel("% of VIP+ axon boutons"); axC.set_ylim(0, 100)
+axC.set_title("C  Subcellular targets — Zhou 2017 (n=31, L2/3, immuno-EM)", loc="left", fontsize=10.5, fontweight="bold")
+
+# Panel D — Zhou perisomatic-by-layer
+axD = fig.add_subplot(gs[2, 0])
+axD.bar(["L6", "L2/3+L5"], [40, 8], color=["#bcbd22","#17becf"], edgecolor="black", lw=0.5)
+for i, v in enumerate([40, 8]):
+    axD.text(i, v+1, f"{v}%", ha="center", fontsize=9)
+axD.set_ylabel("% perisomatic VIP boutons"); axD.set_ylim(0, 60)
+axD.set_title("D  Perisomatic-target % across layers — Zhou 2017", loc="left", fontsize=10.5, fontweight="bold")
+
+# Panel E/F — Xu 2010 frontal cortex laminar profile
+axE = fig.add_subplot(gs[2, 1])
+layers = ["L1","L2/3","L4","L5","L6"]
+pcts = [16.4, 32.6, 24.1, 12.5, 14.3]
+dens = [22.4, 62.1, 25.5, 23.4, 29.8]
+x = np.arange(len(layers)); w = 0.4
+axE.bar(x-w/2, pcts, w, color="#4c78a8")
+axE2 = axE.twinx()
+axE2.bar(x+w/2, dens, w, color="#e45756")
+axE.set_xticks(x); axE.set_xticklabels(layers)
+axE.set_ylabel("% of VIP+ in FC", color="#4c78a8")
+axE2.set_ylabel("VIP+ cells / mm^2 (FC)", color="#e45756")
+axE.set_title("E/F  Laminar profile — Xu 2010 (point estimates only)", loc="left", fontsize=10.5, fontweight="bold")
+
+fig.suptitle("Figure 7  Morphological diversity of cortical VIP interneurons", fontsize=12.5, y=0.995, fontweight="bold")
+fig.savefig("fig-vip-morphologies.png", dpi=200, bbox_inches="tight")
+fig.savefig("fig-vip-morphologies.pdf", bbox_inches="tight")
+plt.close(fig)
+```
 :::
 ## Subtype proportions and laminar distribution
 
@@ -114,12 +195,57 @@ The morphological features summarised above provide a structural rationale for t
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-axonal-targeting-schematic.ipynb for the complete generation
-# code and provenance.
-```
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle, Circle, Polygon
+import numpy as np
 
+fig = plt.figure(figsize=(13.5, 11))
+gs = fig.add_gridspec(2, 2, hspace=0.32, wspace=0.28, height_ratios=[1.2, 1.0])
+
+# Panel A: column with VIP cell + targets
+axA = fig.add_subplot(gs[0, 0]); axA.set_xlim(0,1); axA.set_ylim(0,1); axA.axis("off")
+axA.set_title("A  Translaminar VIP morphology and target compartments",
+              loc="left", fontsize=11, fontweight="bold")
+for (lo,hi,name), c in zip(
+        [(0.92,1.00,"L1"),(0.72,0.92,"L2/3"),(0.58,0.72,"L4"),(0.36,0.58,"L5"),(0.10,0.36,"L6"),(0.00,0.10,"WM")],
+        ["#f7f7f7","#efefef","#e7e7e7","#dfdfdf","#d7d7d7","#cccccc"]):
+    axA.add_patch(Rectangle((0.08,lo), 0.85, hi-lo, color=c, lw=0))
+    axA.text(0.04, (lo+hi)/2, name, ha="right", va="center", fontsize=9)
+axA.add_patch(Circle((0.30, 0.83), 0.018, color="#1f77b4"))
+axA.plot([0.30, 0.30], [0.85, 0.99], color="#1f77b4", lw=1.4)
+axA.plot([0.30, 0.30], [0.81, 0.74], color="#1f77b4", lw=1.4)
+axA.plot([0.305, 0.305], [0.74, 0.12], color="#1f77b4", lw=1.0)
+axA.add_patch(Circle((0.55, 0.45), 0.022, color="#e45756")); axA.text(0.59, 0.45, "SST", color="#e45756", fontweight="bold")
+axA.add_patch(Circle((0.70, 0.82), 0.020, color="#54a24b")); axA.text(0.74, 0.82, "PV", color="#54a24b", fontweight="bold")
+axA.add_patch(Polygon([(0.83, 0.78), (0.81, 0.74), (0.85, 0.74)], color="#bcbd22"))
+
+# Panel B: variants
+axB = fig.add_subplot(gs[0, 1]); axB.set_xlim(0,1); axB.set_ylim(0,1); axB.axis("off")
+axB.set_title("B  VIP morphological variants and preferred targets",
+              loc="left", fontsize=11, fontweight="bold")
+axB.text(0.18, 0.5, "Bipolar/bitufted\n-> SST distal", ha="center", fontsize=10, color="#1f77b4")
+axB.text(0.50, 0.5, "Small-basket\n-> PV/Pyr soma", ha="center", fontsize=10, color="#d62728")
+axB.text(0.82, 0.5, "Arcade\n-> mixed", ha="center", fontsize=10, color="#9467bd")
+
+# Panel C: hippocampal IS3 -> OLM
+axC = fig.add_subplot(gs[1, :]); axC.set_xlim(0,1); axC.set_ylim(0,1); axC.axis("off")
+axC.set_title("C  Cross-region: hippocampal CA1 IS3 -> OLM (interneuron-selective)",
+              loc="left", fontsize=11, fontweight="bold")
+for (lo,hi,name), c in zip(
+        [(0.0,0.10,"alveus"),(0.10,0.32,"oriens"),(0.32,0.40,"pyramidale"),(0.40,0.62,"radiatum"),(0.62,0.80,"lac.-mol.")],
+        ["#e6e6e6","#f1f1f1","#dcdcdc","#f1f1f1","#e6e6e6"]):
+    axC.add_patch(Rectangle((0.06,lo), 0.88, hi-lo, color=c, lw=0))
+    axC.text(0.04, (lo+hi)/2, name, ha="right", va="center", fontsize=9)
+axC.add_patch(Circle((0.30, 0.20), 0.018, color="#1f77b4"))
+axC.add_patch(Circle((0.65, 0.20), 0.020, color="#e45756"))
+
+fig.suptitle("Figure 8  Structural rationale for translaminar disinhibition (schematic)",
+             fontsize=12.5, y=0.995, fontweight="bold")
+fig.savefig("fig-vip-axonal-targeting-schematic.png", dpi=200, bbox_inches="tight")
+fig.savefig("fig-vip-axonal-targeting-schematic.pdf", bbox_inches="tight")
+plt.close(fig)
+```
 :::
 Several methodological caveats apply to within-VIP morphological partitions. First, all of the major rodent reconstructed datasets — a foundational study, {cite:t}`Gouwens2019`, {cite:t}`Gouwens2020a`, an earlier report, and a preceding study — rely on VIP-Cre genetic labelling, which captures the *Vip*-expressing transcriptomic subclass but does not perfectly resolve VIP-peptide expression on a cell-by-cell basis; the difference matters most for rodent-to-primate translation, where the calretinin-positive analogue is the operational handle {cite:p}`Medalla2023, Hodge2019, Fishell2020`. Second, axonal completeness varies substantially across the field: in vitro slice biocytin reconstructions truncate distal axon collaterals, while EM reconstructions are constrained by the volume — together producing artefactual differences in laminar axon distributions that confound met-type definition {cite:p}`Gouwens2020a,Schneidermizell2025,Elabbady2025,Gliko2024`. Third, the dendrite-emerging-axon feature reported by an initial investigation is sensitive to the resolution of the axon initial segment in the imaging modality, which differs across the studies that have searched for it {cite:p}`Badrinarayanan2021`. These are not arguments against the convergent picture; they are constraints on how strongly the discrete-versus-continuum and cross-area conflicts above can be adjudicated from current data.
 

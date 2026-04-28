@@ -78,14 +78,117 @@ A separate axis emerges from oscillatory dynamics. Foundational studies reported
 :::
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-ephys.ipynb for the complete generation
-# code. The figure is built from cluster_04_intrinsic_electrophysiology
-# Phase-6-audited panels (entries hand-coded from the figure_assignments
-# JSON; see notebook for provenance and source sentences).
-```
+import sys; sys.path.insert(0, '../../scripts')
+from shared_style import COLORS, apply_style, save_figure, add_source_note
+import matplotlib.pyplot as plt
+import numpy as np
+apply_style()
 
+# Cross-study entries (from cluster_04_intrinsic_electrophysiology figure_data)
+rin_entries = [
+    {'cite': 'Michaud 2024',  'label': 'Michaud 2024\n(CA1, VIP/CR+ I-S3, n=7)',   'value': 517,   'sem': 37,    'color': COLORS['blue']},
+    {'cite': 'Rhomberg 2018', 'label': 'Rhomberg 2018\n(BLA, VIP+ IS-INs, n=30)',  'value': 350.3, 'sem': 28.26, 'color': COLORS['amber']},
+]
+is_entries = [
+    {'label': 'Cauli 1997\n(rat S1, bipolar/CR+)',           'pct_is': 15.5, 'denom': '15/97'},
+    {'label': 'Cauli 2000\n(rat frontal, fusiform clust.)',  'pct_is': 26.7, 'denom': '16/60'},
+    {'label': 'Pronneke 2015\n(mouse barrel, VIP-Cre)',      'pct_is': 14.5, 'denom': '~14.5%'},
+    {'label': 'Anastasiades 2021\n(mouse mPFC L1b, VIP-Cre)','pct_is': 29.4, 'denom': '5/17'},
+]
+tau_entry = {'label': 'Michaud 2024\n(CA1 strat. radiatum,\nVIP/CR+ I-S3, n=7)', 'value': 36.5, 'sem': 3.2, 'color': COLORS['blue']}
+
+def gen_AP(t, spike_times):
+    v = -65 * np.ones_like(t)
+    for st in spike_times:
+        idx = (t > st-0.002) & (t < st+0.005)
+        local = t[idx] - st
+        v[idx] = np.maximum(v[idx], -65 + 105*np.exp(-((local)/0.0008)**2))
+    return v
+
+fig = plt.figure(figsize=(13, 11))
+gs = fig.add_gridspec(2, 2, hspace=0.55, wspace=0.32)
+
+# Panel A — exemplar firing traces
+axA = fig.add_subplot(gs[0, 0])
+t = np.linspace(0, 1.0, 2000)
+is_spikes = sorted([0.10, 0.12, 0.13, 0.30, 0.31, 0.55, 0.56, 0.58, 0.83, 0.85])
+v_is = gen_AP(t, is_spikes)
+ca_isi = np.array([0.07, 0.085, 0.105, 0.13, 0.16, 0.20, 0.25, 0.31, 0.37])
+ca_spikes = np.cumsum(ca_isi) + 0.10; ca_spikes = ca_spikes[ca_spikes < 0.95]
+v_ca = gen_AP(t, list(ca_spikes))
+acc_isi = np.array([0.06, 0.075, 0.10, 0.15, 0.22, 0.32])
+acc_spikes = np.cumsum(acc_isi) + 0.10; acc_spikes = acc_spikes[acc_spikes < 0.95]
+v_acc = gen_AP(t, list(acc_spikes))
+off=90
+axA.plot(t, v_is + 2*off, color=COLORS['red'], linewidth=1.2)
+axA.plot(t, v_ca + off,   color=COLORS['blue'], linewidth=1.2)
+axA.plot(t, v_acc,        color=COLORS['green'], linewidth=1.2)
+for txt, y0, c in [('Irregular-spiking', 2*off, COLORS['red']),
+                   ('Continuous-adapting', off, COLORS['blue']),
+                   ('Accommodating', 0, COLORS['green'])]:
+    axA.text(1.02, -65 + y0, txt, color=c, fontsize=10, va='center')
+axA.plot([0.05, 0.95], [-180, -180], color=COLORS['gray_700'], lw=2)
+axA.text(0.5, -195, 'matched supra-threshold step', ha='center', fontsize=9, color=COLORS['gray_500'])
+axA.plot([0.85, 0.95], [-150, -150], color='black', lw=1.5)
+axA.plot([0.85, 0.85], [-150, -100], color='black', lw=1.5)
+axA.text(0.90, -158, '100 ms', ha='center', fontsize=8)
+axA.text(0.83, -125, '50 mV', ha='right', fontsize=8, rotation=90, va='center')
+axA.set_xlim(0, 1.20); axA.set_ylim(-220, 200); axA.axis('off')
+axA.set_title('A  Exemplar firing patterns (cortical VIP)', loc='left', fontsize=12, fontweight='bold')
+
+# Panels B, C, D — see main workspace builder for full code; this notebook reproduces
+# the same figure using the same shared_style helpers.
+axB = fig.add_subplot(gs[0, 1])
+ypos = np.arange(len(rin_entries))[::-1]
+for i, e in enumerate(rin_entries):
+    axB.errorbar(e['value'], ypos[i], xerr=e['sem'], fmt='o', color=e['color'],
+                 ecolor=e['color'], capsize=4, markersize=10, lw=2)
+    axB.text(e['value']+e['sem']+12, ypos[i], f"{e['value']} ± {e['sem']}",
+             va='center', fontsize=9, color=COLORS['gray_900'])
+axB.set_yticks(ypos); axB.set_yticklabels([e['label'] for e in rin_entries], fontsize=9)
+axB.set_xlabel('Input resistance R$_{in}$ (MΩ)')
+axB.set_xlim(150, 700); axB.set_ylim(-0.6, 1.6); axB.grid(axis='x', alpha=0.3)
+axB.set_title('B  R$_{in}$: non-cortical VIP+ INs', loc='left', fontsize=12, fontweight='bold')
+add_source_note(axB, 'Caveat: cross-region (CA1 vs BLA); n=2 entries — minimal cross-paper comparison.', y=-0.30)
+
+axC = fig.add_subplot(gs[1, 0])
+ypos = np.arange(len(is_entries))[::-1]
+for i, e in enumerate(is_entries):
+    y = ypos[i]
+    axC.barh(y, e['pct_is'], color=COLORS['red'], alpha=0.85,
+             label='IS' if i==0 else None, edgecolor='white')
+    axC.barh(y, 100 - e['pct_is'], left=e['pct_is'], color=COLORS['gray_300'],
+             label='non-IS' if i==0 else None, edgecolor='white')
+    axC.text(e['pct_is']/2, y, f"{e['pct_is']:.1f}%", ha='center', va='center', fontsize=9, color='white', fontweight='bold')
+    axC.text(101, y, f"denom: {e['denom']}", va='center', fontsize=8, color=COLORS['gray_700'])
+axC.set_yticks(ypos); axC.set_yticklabels([e['label'] for e in is_entries], fontsize=9)
+axC.set_xlabel('% of VIP+ cells with IS firing')
+axC.set_xlim(0, 130); axC.set_ylim(-0.6, len(is_entries)-0.4)
+axC.legend(loc='upper right', fontsize=8, frameon=False, bbox_to_anchor=(1.0, -0.06), ncol=2)
+axC.set_title('C  IS-firing fraction across VIP studies', loc='left', fontsize=12, fontweight='bold')
+add_source_note(axC, 'Caveat: per-entry denominators differ; species (rat/mouse) and area mismatch.', y=-0.38)
+
+# Panel D — single retained entry
+axD = fig.add_subplot(gs[1, 1])
+e = tau_entry
+axD.errorbar(e['value'], 0.5, xerr=e['sem'], fmt='o', color=e['color'],
+             ecolor=e['color'], capsize=4, markersize=12, lw=2)
+axD.text(e['value']+e['sem']+1.5, 0.5, f"{e['value']} ± {e['sem']} ms",
+         va='center', fontsize=10, color=COLORS['gray_900'])
+axD.text(0.5, 0.92, 'Single-entry comparison\n(Rhomberg 2018 removed at iter3 audit)',
+         transform=axD.transAxes, ha='center', va='top', fontsize=9, fontstyle='italic',
+         color=COLORS['gray_700'],
+         bbox=dict(boxstyle='round,pad=0.4', fc=COLORS['gray_100'], ec=COLORS['gray_300']))
+axD.set_yticks([0.5]); axD.set_yticklabels([e['label']], fontsize=9)
+axD.set_xlabel('Membrane time constant τ$_m$ (ms)')
+axD.set_xlim(20, 55); axD.set_ylim(0, 1.1); axD.grid(axis='x', alpha=0.3)
+axD.set_title('D  τ$_m$: single retained entry', loc='left', fontsize=12, fontweight='bold')
+add_source_note(axD, 'Reduced to single-row entry after iter3 audit (Rhomberg 2018 removed; τ$_m$ not verifiable).', y=-0.30)
+
+fig.suptitle('VIP intrinsic electrophysiology — cross-study landscape', fontsize=14, fontweight='bold', y=1.00)
+save_figure(fig, '../fig-vip-ephys.png')
+```
 :::
 
 :::{figure} ../figures/fig-vip-firing-mechanism.png
@@ -96,13 +199,104 @@ A separate axis emerges from oscillatory dynamics. Foundational studies reported
 :::
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-firing-mechanism.ipynb for the complete
-# schematic generation code. Schematic only -- no quantitative data
-# substrate.
-```
+import sys; sys.path.insert(0, '../../scripts')
+from shared_style import COLORS, apply_style, save_figure
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Circle
+import numpy as np
+apply_style()
 
+fig = plt.figure(figsize=(14, 10))
+gs = fig.add_gridspec(2, 2, height_ratios=[1, 1.05], hspace=0.45, wspace=0.30)
+
+# Panel A: channel inventory on a stylised soma
+axA = fig.add_subplot(gs[0, 0])
+axA.set_xlim(0, 10); axA.set_ylim(0, 10); axA.axis('off')
+soma = Circle((5, 5), 2.2, facecolor=COLORS['gray_100'], edgecolor=COLORS['gray_700'], lw=2)
+axA.add_patch(soma)
+axA.text(5, 5, 'VIP\nsoma', ha='center', va='center', fontsize=11, fontweight='bold')
+channels = [
+    ('Na$_V$',     (5.0, 8.5), COLORS['red'],    'fast spike'),
+    ('Kv1 (I$_D$)',(8.0, 7.5), COLORS['amber'],  '4-AP / DTx'),
+    ('Kv4',        (8.5, 4.5), COLORS['amber'],  'A-current'),
+    ('KCNQ (M)',   (7.5, 2.0), COLORS['purple'], 'linopirdine / XE-991'),
+    ('HCN (I$_h$)',(2.5, 2.0), COLORS['teal'],   'sag, modest'),
+    ('SK',         (2.0, 7.5), COLORS['green'],  'AHP'),
+]
+for name, (x, y), c, note in channels:
+    axA.add_patch(FancyBboxPatch((x-0.7, y-0.30), 1.4, 0.6,
+        boxstyle='round,pad=0.05', facecolor=c, alpha=0.85, edgecolor='white'))
+    axA.text(x, y, name, ha='center', va='center', fontsize=9, color='white', fontweight='bold')
+    axA.text(x, y-0.55, note, ha='center', va='top', fontsize=8, color=COLORS['gray_700'], fontstyle='italic')
+    axA.plot([x, 5+(x-5)*0.45], [y, 5+(y-5)*0.45], color=c, lw=1.4, alpha=0.6)
+axA.set_title('A  Channel inventory of VIP interneurons', loc='left', fontsize=12, fontweight='bold')
+
+# Panel B: two competing IS mechanisms with predicted current-clamp signatures
+axB = fig.add_subplot(gs[0, 1])
+axB.set_xlim(0, 10); axB.set_ylim(0, 10); axB.axis('off')
+axB.add_patch(FancyBboxPatch((0.2, 5.4), 4.4, 4.2, boxstyle='round,pad=0.1',
+    facecolor=COLORS['amber'], alpha=0.18, edgecolor=COLORS['amber']))
+axB.text(2.4, 9.2, 'Mechanism (i): Kv1 / I$_D$', ha='center', fontsize=10, fontweight='bold', color=COLORS['amber'])
+axB.text(2.4, 8.6, 'Porter 1998', ha='center', fontsize=8, color=COLORS['gray_700'])
+t = np.linspace(0, 1, 200); v_pre = -50 + 30*np.sin(2*np.pi*t*3 + np.random.uniform(0, 1, 200))*np.random.binomial(1, 0.45, 200)
+axB.plot(0.6 + t*1.7, 7.4 + 0.06*v_pre, color=COLORS['red'], lw=1.0); axB.text(0.5, 7.0, 'pre-4-AP: IS', fontsize=8)
+v_post = -50 + 25*np.sin(2*np.pi*t*8); axB.plot(2.6 + t*1.7, 7.4 + 0.04*v_post, color=COLORS['gray_700'], lw=1.0)
+axB.text(2.6, 7.0, 'post-4-AP: tonic', fontsize=8)
+axB.text(2.4, 6.2, '4-AP / dendrotoxin\n→ converts IS → sustained', ha='center', fontsize=8.5, color=COLORS['amber'], fontstyle='italic')
+axB.add_patch(FancyBboxPatch((5.4, 5.4), 4.4, 4.2, boxstyle='round,pad=0.1',
+    facecolor=COLORS['purple'], alpha=0.18, edgecolor=COLORS['purple']))
+axB.text(7.6, 9.2, 'Mechanism (ii): KCNQ / I$_M$', ha='center', fontsize=10, fontweight='bold', color=COLORS['purple'])
+axB.text(7.6, 8.6, 'Goff 2019; GuetMcCreight 2020b', ha='center', fontsize=8, color=COLORS['gray_700'])
+axB.plot(5.8 + t*1.7, 7.4 + 0.06*v_pre, color=COLORS['red'], lw=1.0); axB.text(5.7, 7.0, 'pre-lino: IS', fontsize=8)
+axB.plot(7.8 + t*1.7, 7.4 + 0.04*v_post, color=COLORS['gray_700'], lw=1.0); axB.text(7.8, 7.0, 'post-lino: tonic', fontsize=8)
+axB.text(7.6, 6.2, 'linopirdine / XE-991\n→ converts IS → tonic', ha='center', fontsize=8.5, color=COLORS['purple'], fontstyle='italic')
+axB.add_patch(FancyBboxPatch((1.5, 0.5), 7.0, 4.4, boxstyle='round,pad=0.1',
+    facecolor=COLORS['gray_100'], edgecolor=COLORS['gray_500']))
+axB.text(5.0, 4.3, 'Resolution: both currents likely contribute,\nin layer-, age-, and subtype-specific proportions',
+    ha='center', va='top', fontsize=10, fontweight='bold', color=COLORS['gray_900'])
+axB.text(5.0, 2.8, '• Kv1: more salient in superficial barrel/visual VIP cells (rat, juvenile)\n'
+                    '• KCNQ: dominates in adult mouse mPFC/L2/3 IS-VIP and CA1 I-S3\n'
+                    '• Both can coexist; pharmacology rarely tested side-by-side',
+    ha='center', va='top', fontsize=8.5, color=COLORS['gray_700'])
+axB.set_title('B  Two competing IS mechanisms', loc='left', fontsize=12, fontweight='bold')
+
+# Panel C: decision-flow mapping intrinsic clusters onto MET-types / t-types
+axC = fig.add_subplot(gs[1, :])
+axC.set_xlim(0, 14); axC.set_ylim(0, 6.5); axC.axis('off')
+axC.add_patch(FancyBboxPatch((0.2, 2.4), 2.4, 1.8, boxstyle='round,pad=0.1',
+    facecolor=COLORS['blue'], alpha=0.85, edgecolor='white'))
+axC.text(1.4, 3.3, 'Patch-seq cell\n(VIP+, Sncg+ adj.)', ha='center', va='center',
+         color='white', fontsize=10, fontweight='bold')
+criteria = [
+    ('High R$_{in}$ +\nIS firing +\nlow sag', (5.0, 5.2), COLORS['red']),
+    ('High R$_{in}$ +\nregular sustained', (5.0, 3.3), COLORS['blue']),
+    ('Mod R$_{in}$ +\naccommodating +\nelevated sag', (5.0, 1.4), COLORS['amber']),
+]
+outputs = [
+    ('Vip-MET-2\n(Htr1f / Chat)\nIS-canonical',         (10.5, 5.2), COLORS['red']),
+    ('Vip-MET-1\n(Sncg-adj.)\nregular sustained',         (10.5, 3.3), COLORS['blue']),
+    ('Vip-MET-4/5\n(Gpc3 / Col15a1)\naccommodating + I$_h$', (10.5, 1.4), COLORS['amber']),
+]
+for (txt, (x, y), c), (otxt, (ox, oy), oc) in zip(criteria, outputs):
+    axC.add_patch(FancyBboxPatch((x-1.5, y-0.8), 3.0, 1.6, boxstyle='round,pad=0.05',
+                                 facecolor=c, alpha=0.20, edgecolor=c, lw=1.5))
+    axC.text(x, y, txt, ha='center', va='center', fontsize=9, color=COLORS['gray_900'])
+    arrow = FancyArrowPatch((2.6, 3.3), (x-1.5, y), connectionstyle='arc3,rad=0.0',
+                            arrowstyle='->', color=COLORS['gray_500'], lw=1.5, mutation_scale=15)
+    axC.add_patch(arrow)
+    axC.add_patch(FancyBboxPatch((ox-1.7, oy-0.8), 3.4, 1.6, boxstyle='round,pad=0.05',
+                                 facecolor=oc, alpha=0.85, edgecolor='white'))
+    axC.text(ox, oy, otxt, ha='center', va='center', fontsize=9, color='white', fontweight='bold')
+    arrow2 = FancyArrowPatch((x+1.5, y), (ox-1.7, oy), arrowstyle='->',
+                             color=COLORS['gray_700'], lw=1.8, mutation_scale=15)
+    axC.add_patch(arrow2)
+axC.text(7.0, 0.2, 'Subclass-level prediction accuracy from biophys+morph: ~78% (Gouwens 2020a; Scala 2021; Lee 2023a; Kim 2023)',
+         ha='center', fontsize=9, color=COLORS['gray_700'], fontstyle='italic')
+axC.set_title('C  Decision-flow: intrinsic features → Patch-seq MET-type / *Vip* t-type', loc='left', fontsize=12, fontweight='bold')
+fig.suptitle('Mechanisms and taxonomy of VIP intrinsic firing', fontsize=14, fontweight='bold', y=1.00)
+save_figure(fig, '../fig-vip-firing-mechanism.png')
+```
 :::
 
 (sec-05-state-modulation)=

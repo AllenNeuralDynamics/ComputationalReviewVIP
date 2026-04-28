@@ -103,12 +103,16 @@ The composition fact that constrains all of these comparisons is that VIP cells 
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-disinhibition-motifs.ipynb for the complete generation
-# code and provenance.
+# Schematic / cross-study compilation figure.
+# The committed figures/fig-disinhibition-motifs.png was assembled from
+# claim-level evidence in the curated literature corpus rather than from a
+# single quantitative dataset. The full provenance — source DOIs, claim text,
+# and audit verdicts — is recorded in the per-section evidence package
+# (evidence/section_07_evidence_package.json) and in the Methods ledger.
+# No reproducible matplotlib code is shipped because no single audited dataset
+# underlies the figure; consult evidence/ for the source-sentence provenance.
 ```
-
 :::
 :::{figure}../figures/fig-vip-effect-size-comparison.png
 :name: fig-vip-effect-size-comparison
@@ -119,12 +123,16 @@ The composition fact that constrains all of these comparisons is that VIP cells 
 
 
 :::{dropdown} 📓 Figure code
-
 ```python
-# See figures/notebooks/fig-vip-effect-size-comparison.ipynb for the complete generation
-# code and provenance.
+# Schematic / cross-study compilation figure.
+# The committed figures/fig-vip-effect-size-comparison.png was assembled from
+# claim-level evidence in the curated literature corpus rather than from a
+# single quantitative dataset. The full provenance — source DOIs, claim text,
+# and audit verdicts — is recorded in the per-section evidence package
+# (evidence/section_07_evidence_package.json) and in the Methods ledger.
+# No reproducible matplotlib code is shipped because no single audited dataset
+# underlies the figure; consult evidence/ for the source-sentence provenance.
 ```
-
 :::
 ## The disinhibition framework reassessed
 
