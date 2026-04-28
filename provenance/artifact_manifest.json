@@ -1,0 +1,278 @@
+{
+  "description": "Map from in-session Operon artifact version_ids (cited in Methods.md, verification_summary.md, manuscript.tex) to their stable repository paths and SHA-256 digests. Generated as part of the post-build transparency pass.",
+  "project_id": "proj_51704bdb3ee3",
+  "generated_at": "2026-04-28",
+  "total_entries": 45,
+  "entries": [
+    {
+      "version_id": "01bea2ad-6fba-4121-ad06-f4c1b0e88425",
+      "path": "provenance/scaffold.json",
+      "sha256": "c283d2b0261f4ba77eccf7f226bb4c5ec4d67460e9c1f6fd84d2f139754bf0d3",
+      "size_bytes": 139230
+    },
+    {
+      "version_id": "06e344fc-8707-4c3e-8925-300713fb15f7",
+      "path": "gates/gate_bibliography.json",
+      "sha256": "6730f4d42ba12e5538720af935007b8d7a4f1b3bd3e37c513074f3d93a210b33",
+      "size_bytes": 2900
+    },
+    {
+      "version_id": "15a93643-5aae-46ee-8e38-181025943157",
+      "path": "gates/gate_evidence_curated_approved.json",
+      "sha256": "ae179a3eaf85c6dfc8be297c2ee4e4d4d44923431a93c1f0f77198a2abffc5cc",
+      "size_bytes": 2526
+    },
+    {
+      "version_id": "16e5706a-d0f5-4636-bb6f-ee7ee638c182",
+      "path": "content/05_electrophysiology.md",
+      "sha256": "d73427b0a009fe83b4061f22b718e1feca5bb9e4b0f7a37e068228ae870b0f00",
+      "size_bytes": 45668
+    },
+    {
+      "version_id": "1fecfde0-a5e8-4748-90cc-f86d0945b6ef",
+      "path": "provenance/citation_key_map.json",
+      "sha256": "03285bf55068ad4dfd2c117c88c690086c95900ce7db34471abfad174b34c2f2",
+      "size_bytes": 155718
+    },
+    {
+      "version_id": "20999576-0e9f-46c6-9125-9eae27f2c561",
+      "path": "gates/gate_citation_infrastructure_validation_v2.json",
+      "sha256": "7994259f3280aba99b85767afe94cbbeb5cc36904fce9505b2e18c63600e324f",
+      "size_bytes": 2924
+    },
+    {
+      "version_id": "23df4aea-ff1f-456b-b555-ae9e96764332",
+      "path": "gates/gate_assembly_actor.json",
+      "sha256": "408481303b5081092e3e84ff8d45271a53212ea7dc1666fe99d8a2874e72715b",
+      "size_bytes": 1313
+    },
+    {
+      "version_id": "26cbae49-97b3-4b31-b31a-b89d85d25837",
+      "path": "content/06_synaptic_properties.md",
+      "sha256": "0b5d1dbd139fb54af131149514e5f02432d1c88d0a98702a6772de187ff1de5c",
+      "size_bytes": 55133
+    },
+    {
+      "version_id": "2841dfeb-4224-4cce-9ade-f2f74d1a4cda",
+      "path": "content/04_morphology.md",
+      "sha256": "db384c7ddc1b886e13fccc34e222ac5619a90c0b54f2aa9061cea52d94c77d6e",
+      "size_bytes": 42787
+    },
+    {
+      "version_id": "29c488bd-3ef3-49c2-95fc-55442961475e",
+      "path": "gates/gate_intro_conclusion.json",
+      "sha256": "8f703df47a672890d27e202217b9389b583b97c9a7f5141758625e76c118c70c",
+      "size_bytes": 4295
+    },
+    {
+      "version_id": "34e0ae60-0252-457c-a8e9-df479b074995",
+      "path": "content/references.bib",
+      "sha256": "40c90fcc241bd839e90b6445edf53937b21a2d69e717bb21c2df9cab0e6a61a5",
+      "size_bytes": 588768
+    },
+    {
+      "version_id": "44b0dc13-21e5-446a-bed5-735371182786",
+      "path": "gates/gate_integration.json",
+      "sha256": "1e4b145c5504e67385b483079c8915dc96b28804108a23085ecc6e37e5322bba",
+      "size_bytes": 12468
+    },
+    {
+      "version_id": "4cde2d9c-7d78-4981-8a96-1929232b5f93",
+      "path": "gates/gate_figure_audit.json",
+      "sha256": "91cb7686c97a8d7430ad562d383742468b5e291635dde687f0c3ec6c4f4976c3",
+      "size_bytes": 2398
+    },
+    {
+      "version_id": "4ed1d77e-5f7e-4c70-8a7a-a5d5f07cf8f7",
+      "path": "gates/gate_assembly.json",
+      "sha256": "f9d5921ad0db21b34e410312f0a935ecdf62fd0f396e186da1031df26f4047d1",
+      "size_bytes": 4356
+    },
+    {
+      "version_id": "546ca66e-11b7-4c87-8ec9-4430cf89e1ba",
+      "path": "gates/gate_sections_drafted_iter3.json",
+      "sha256": "b4df4599e27e4485ee04cd20eee53b19b9e4392ed5d413823d8a7e62a1ac65c1",
+      "size_bytes": 6141
+    },
+    {
+      "version_id": "5803dd90-79a1-4ace-ab6a-3c7ab70b56b1",
+      "path": "gates/gate_evidence_compliance.json",
+      "sha256": "d31666968b449a1cfaf0dc0bc5a46083d20a0ca88439bb6c988d0837908243f0",
+      "size_bytes": 20988
+    },
+    {
+      "version_id": "62c67e66-7c72-47e6-b08a-fd89764749b3",
+      "path": "gates/gate_scope.json",
+      "sha256": "5051c7e38ecc075494f6ec84bfea6c22bba8812da6f47e806ee12645861522f4",
+      "size_bytes": 19819
+    },
+    {
+      "version_id": "6bf953c0-3919-44d3-a8d9-116b20e80a45",
+      "path": "gates/gate_phase17v.json",
+      "sha256": "22b42708e2102f18b40a4168b048ca961741c9406e658a953cd07a34b784500b",
+      "size_bytes": 29525
+    },
+    {
+      "version_id": "6d670eda-c36e-472a-a49d-c4a9b038b8dd",
+      "path": "content/11_disease_translational.md",
+      "sha256": "dea3625d9cf1e864e501cf0629390480b556f500c688afc906d3b0b6c4fd5e19",
+      "size_bytes": 56434
+    },
+    {
+      "version_id": "73e8d95d-e514-4e60-8ed8-8dfe071ab1b3",
+      "path": "gates/gate_verification_v2.json",
+      "sha256": "09f5626fc7cc80468a20d02b75d69f91b02274d2b39412b81975511adc9af876",
+      "size_bytes": 2091
+    },
+    {
+      "version_id": "7411aef0-fc2d-4deb-ad73-fc7c024493c5",
+      "path": "gates/gate_triples_extraction.json",
+      "sha256": "7c750973819531c7ed4e9d2734f12bcb488221d6c2ac308cee8b383cedf66464",
+      "size_bytes": 4089
+    },
+    {
+      "version_id": "77b58c28-2767-4383-a046-578dc3651e2e",
+      "path": "provenance/review_request.md",
+      "sha256": "b3a0653306142599bc1f58d8742924460a1700ba5954631687445be4efb876aa",
+      "size_bytes": 3833
+    },
+    {
+      "version_id": "792e88ec-8b92-467e-ba9c-ee39ebadf0e9",
+      "path": "content/03_development.md",
+      "sha256": "8f098bd212a0c1a38f4e04b0dba6c214889a6a4d403708c620b4e58823dddf9b",
+      "size_bytes": 41315
+    },
+    {
+      "version_id": "7cb9d569-67c3-42fe-be46-a2e18c009b47",
+      "path": "content/07_disinhibition_framework.md",
+      "sha256": "16d22288a943506639b8b597030e05c84dde356b0455ea8ab1e2d397399892bc",
+      "size_bytes": 49806
+    },
+    {
+      "version_id": "8c2df2b9-9b64-489d-a96e-a893b705f673",
+      "path": "content/01_introduction.md",
+      "sha256": "6c5c23c5e47f1a285b3194cba8c3f72b57da2a43e7c32d578c32352e635a651d",
+      "size_bytes": 9913
+    },
+    {
+      "version_id": "ac2b6736-eab9-4e23-aaab-cbd50fea7bfe",
+      "path": "provenance/verification_report.json",
+      "sha256": "f78681e302104592830a795c80a6a0575fb379b80a0fdcf2946254e419307052",
+      "size_bytes": 1369346
+    },
+    {
+      "version_id": "aef84912-a493-463e-b5b7-2d080db5523e",
+      "path": "provenance/phase18_remediation_log.json",
+      "sha256": "7d2872172ba2196fae2dd8dba661049375160aa15e7f9b1d3e0e46b1180bffd8",
+      "size_bytes": 31978
+    },
+    {
+      "version_id": "b4ce9c2b-938d-4352-bce3-696d0d3f1c80",
+      "path": "gates/gate_bookend_critic.json",
+      "sha256": "de083a5821551132a381b00f239304664c455ef5096cf46fc32487c8ecbfcac2",
+      "size_bytes": 8472
+    },
+    {
+      "version_id": "b649c3b8-0807-4923-a6f2-07d187578a56",
+      "path": "content/10_oscillatory_dynamics.md",
+      "sha256": "ddb282ba02d4f970b4be5bac82d15a0f05100b0902c0a87f50e84f9bb12630fd",
+      "size_bytes": 51844
+    },
+    {
+      "version_id": "b946853b-cc4f-40d6-9ccc-9db085012b8b",
+      "path": "gates/gate_triples_validation.json",
+      "sha256": "3b088bd2c905c32590d78dde734cbbb96fbe92745cb0f9911403ee1af2225761",
+      "size_bytes": 4410
+    },
+    {
+      "version_id": "c0be6fa8-f264-4438-8180-4c8345b8a1bd",
+      "path": "gates/gate_critic_complete.json",
+      "sha256": "2aa66a3829b1dffee93b6273024f4e86955f8a93338526f970b3404eaef48371",
+      "size_bytes": 5811
+    },
+    {
+      "version_id": "c98dccd8-1a53-4f6c-87bf-a2985a54b6c6",
+      "path": "provenance/scope.json",
+      "sha256": "da66b196e1e8afd0549b054dc6a3bb57cfa63266efd478ecf6f1636cf0f0b7ee",
+      "size_bytes": 37385
+    },
+    {
+      "version_id": "cc48cc1b-a308-45f5-9f5b-b1ba8461134a",
+      "path": "provenance/verification_report_v2.json",
+      "sha256": "367603c313c4ff8b512753a2627a3f0a83c62eb58af4ab222a05538b9953b130",
+      "size_bytes": 5564863
+    },
+    {
+      "version_id": "cd0140fc-71f7-494b-a955-cf8ffd290c6d",
+      "path": "content/09_cross_areas.md",
+      "sha256": "d8e64d8839e88c23f0fd70a76884f77f8e88d5ddb9488b33b572638398307f09",
+      "size_bytes": 52697
+    },
+    {
+      "version_id": "cdd3608c-e6f5-46cb-8587-3fdde35db973",
+      "path": "provenance/author_name_table.json",
+      "sha256": "765056b09c6a675f958ddcca59db2adc1a13c5d1d226ca1e505de9c53b4af8a8",
+      "size_bytes": 345996
+    },
+    {
+      "version_id": "d2ae9ef1-9e4e-472d-b33b-b624971eb2f9",
+      "path": "content/13_conclusion.md",
+      "sha256": "7fb9d9a8fb8617aee67dba0ba58c051818aabae1573816110d427af865862092",
+      "size_bytes": 10053
+    },
+    {
+      "version_id": "d412cbdd-99f1-4603-85aa-508c775a0ef7",
+      "path": "gates/gate_phase18.json",
+      "sha256": "091b76c6adca0c840470553e29bf402234a14b6054316ce49ff6016498ca966b",
+      "size_bytes": 2205
+    },
+    {
+      "version_id": "db34c27f-a56c-444f-b43e-a95dd20e6426",
+      "path": "content/12_computational_models.md",
+      "sha256": "fd4db28af3275890a73319439779d082680ccdbd807e20e07fb04f4b989bb37b",
+      "size_bytes": 45472
+    },
+    {
+      "version_id": "dbdd16f4-d0f0-4db3-b540-1d43509c16d5",
+      "path": "gates/gate_scaffold_approved.json",
+      "sha256": "32d7e0e07b66cb390dfd41e8a14a585d4c2bdf58d61202d5b994032a5e6d6750",
+      "size_bytes": 1285
+    },
+    {
+      "version_id": "e189b6e5-aae3-481d-82e5-8870a24f7220",
+      "path": "content/02_classification.md",
+      "sha256": "6c24fa0d37e4eb1072e1ac3a004af91d710ffd3cfa437caa41f4834f2283a3b8",
+      "size_bytes": 62334
+    },
+    {
+      "version_id": "e65c66be-b0a2-4485-af96-d4194546cbcc",
+      "path": "content/08_in_vivo_behavior.md",
+      "sha256": "5173af43f4b6a6c0af48033983dadaa389e121d6de8584f622dcbf6c6eef2084",
+      "size_bytes": 52173
+    },
+    {
+      "version_id": "ed073d08-21ac-45f7-acb9-521a60e7a612",
+      "path": "gates/gate_evidence_curated.json",
+      "sha256": "880ef125b62dcaf2b3f8bcbf6eaf0e809685312338fe6a0144800e952b6772e6",
+      "size_bytes": 5627
+    },
+    {
+      "version_id": "ed8207de-aef2-43a0-8f0b-956cf5cd54ea",
+      "path": "gates/gate_verification.json",
+      "sha256": "2601401c7889e7059317d775cd12c13c85ffd11295486307c7c737b0056911e8",
+      "size_bytes": 1489
+    },
+    {
+      "version_id": "f9bd8833-0d5a-4efb-bf6a-951a3362f05b",
+      "path": "gates/gate_phase19_qa.json",
+      "sha256": "cb95c9538e004826feb9ed39a3534543b6c464aa8afdc8c76e0727dac7c774f8",
+      "size_bytes": 5700
+    },
+    {
+      "version_id": "fee28415-68ee-4b35-b78f-2e7e1b7ad3fc",
+      "path": "provenance/review_request.txt",
+      "sha256": "562fffe813cb4729346c2adb38f43986d4b9d3df1140a58621fa99594b77a428",
+      "size_bytes": 2669
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "gate": "pass",
+  "phase": "15V",
+  "schema_version": "1.0",
+  "validator": "DATAML",
+  "skill": "comprev-triples-validator",
+  "inputs": {
+    "citation_triples_artifact": "76b0e2ad-c44b-4b85-81a0-c6ae217f91ec",
+    "gate_triples_extraction_artifact": "7411aef0-fc2d-4deb-ad73-fc7c024493c5",
+    "manuscript_repo_artifact": "e0c68ac2-673e-4cc0-a53e-0c9edf54c01f",
+    "references_bib_artifact": "7ca13337-b2c0-4866-aa09-651693ab3d25"
+  },
+  "totals": {
+    "total_triples_reported": 3816,
+    "total_triples_reextracted": 3816,
+    "unique_cite_keys": 414,
+    "unique_paper_dois": 414,
+    "n_batches": 212,
+    "max_batch_size": 18
+  },
+  "structural_results": {
+    "EXHAUSTIVE_COUNT": {
+      "status": "pass",
+      "reported_total": 3816,
+      "reextracted_total": 3816,
+      "per_section_match": true,
+      "diagnostic": "total_triples (3816) equals re-extracted (claim \u00d7 cite-key) pair count from content/*.md across all 14 section files."
+    },
+    "CLAIM_SENTENCES_IN_FILES": {
+      "status": "pass",
+      "n_failures": 0,
+      "diagnostic": "All 3816 claim_text values are substrings of their cited section_filename after whitespace normalization."
+    },
+    "CITE_KEYS_IN_BIB": {
+      "status": "pass",
+      "missing_keys": 0,
+      "empty_dois": 0,
+      "diagnostic": "All 414 unique cite_keys resolve to references.bib entries; all have non-empty DOI."
+    },
+    "DOI_CONSISTENCY": {
+      "status": "pass",
+      "n_mismatches": 0,
+      "diagnostic": "All triples' bib_doi values match the DOI in references.bib for the corresponding cite_key (case-insensitive)."
+    },
+    "SECTION_FILE_RESOLVES": {
+      "status": "pass",
+      "n_missing": 0,
+      "diagnostic": "All section_filename values resolve to files in manuscript/content/."
+    },
+    "NO_DUPLICATE_TRIPLES": {
+      "status": "pass",
+      "duplicate_triple_ids": 0,
+      "duplicate_tuples_count": 246,
+      "diagnostic": "triple_id uniqueness: all 3816 triple_ids are unique. (filename, paragraph_idx, sentence_idx, cite_key) tuples have 246 multi-occurrence entries; all of these correspond verbatim to sentences where the same cite_key appears multiple times in the source markdown (verified by re.findall on each claim_text). They are required by EXHAUSTIVE_COUNT, which mandates one triple per cite-key occurrence; deduplicating would violate EXHAUSTIVE_COUNT (3816 \u2192 3570). Treated as legitimate same-sentence cite repeats."
+    },
+    "BATCH_INTEGRITY": {
+      "status": "pass",
+      "n_batches": 212,
+      "min_batch_size": 18,
+      "max_batch_size": 18,
+      "spec_max": 25,
+      "skill_max": 18,
+      "no_batch_count": 0,
+      "diagnostic": "All 3816 triples assigned to exactly one of 212 batches; every batch contains 18 triples (\u226418 skill limit, \u226425 orchestrator spec)."
+    },
+    "NON_EMPTY_SENTENCES": {
+      "status": "pass",
+      "empty_count": 0,
+      "diagnostic": "All 3816 claim_text values are non-empty after stripping."
+    },
+    "SCHEMA_COMPLETENESS": {
+      "status": "pass",
+      "missing_field_rows": 0,
+      "diagnostic": "All triples carry the full required schema (triple_id, section_filename, paragraph_idx, sentence_idx, claim_text, cite_key, expected_support_role, bib_doi, bib_title, bib_authors, bib_year, bib_venue, batch_id)."
+    },
+    "UNIQUE_KEY_COUNTS": {
+      "status": "pass",
+      "reported_unique_cite_keys": 414,
+      "observed_unique_cite_keys": 414,
+      "reported_unique_paper_dois": 414,
+      "observed_unique_paper_dois": 414,
+      "diagnostic": "Reported unique_cite_keys (414) and unique_paper_dois (414) match observed."
+    }
+  },
+  "mismatched_count": 0,
+  "failed_checks": [],
+  "summary_notes": "Phase 15 citation-triple extraction PASSES all structural validation checks. EXHAUSTIVE_COUNT confirms total_triples=3816 equals the cite-occurrence count re-extracted from content/*.md, with per-section counts matching exactly. All 3816 claim_text strings appear verbatim in their cited section file (whitespace-normalized), all 414 unique cite_keys resolve to references.bib entries with non-empty DOIs that match the triples' bib_doi field, and all 212 batches are exactly 18 triples (\u226425 spec limit). triple_id uniqueness holds; the 246 (file, para, sent, cite_key) tuple repeats are bona-fide same-sentence cite re-occurrences in the source manuscript and are required by the EXHAUSTIVE_COUNT rule."
+}

@@ -1,0 +1,915 @@
+{
+  "title": "VIP Interneurons in Cortical Computation: From Molecular Identity to Circuit Function",
+  "thesis_question": "How do VIP-expressing GABAergic interneurons \u2014 defined by CGE lineage and a distinctive transcriptomic, morphological, and physiological profile \u2014 implement disinhibitory and gain-modulatory operations that shape cortical computation, and to what extent does the canonical 'VIP disinhibitor' framing survive scrutiny under contemporary multi-modal evidence?",
+  "audience": "Systems and circuits neuroscientists, computational neuroscientists, and graduate-level researchers working on cortical interneurons, inhibitory microcircuits, and behaviorally relevant cortical dynamics; assumes familiarity with cortical anatomy, basic electrophysiology, and standard mouse-genetics tools.",
+  "length_target": {
+    "sections": 13,
+    "pages_estimate": "60-90"
+  },
+  "evidence_parameters": {
+    "min_papers_per_cluster": null,
+    "saturation_criterion": "<2% new unique in last 100 records, confirmed across two consecutive database passes",
+    "saturation_consecutive_passes": 2,
+    "snowball_rounds": 2,
+    "total_bibliography_target": 2000
+  },
+  "sections": [
+    {
+      "id": "section_01",
+      "title": "Introduction",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_01_molecular_taxonomy",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 2500,
+      "scope_notes": "Frames the problem: why VIP interneurons matter for cortical computation; historical arc from Bayraktar/Rudy era markers to contemporary transcriptomic and disinhibition frameworks; introduces the canonical disinhibitor model and signposts the reassessment in Section 13.",
+      "key_topics": [
+        "history of VIP marker",
+        "Rudy/Tremblay tripartite framework",
+        "disinhibition motif overview",
+        "scope and roadmap"
+      ]
+    },
+    {
+      "id": "section_02",
+      "title": "Molecular Identity and Transcriptomic Taxonomy",
+      "cluster_ids": [
+        "cluster_01_molecular_taxonomy",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Defines VIP interneurons at the molecular level: VIP/ChAT/CR/CCK co-expression, Tasic/Allen and BICCN taxonomies, Patch-seq integration, comparison with SST and PV reference taxonomies, cross-species conservation of VIP transcriptomic types.",
+      "key_topics": [
+        "VIP/CR/ChAT/CCK markers",
+        "Tasic 2016/2018 taxonomy",
+        "BICCN cortical census",
+        "Patch-seq bridging",
+        "VIP subtypes (bipolar vs multipolar transcriptomic correlates)",
+        "cross-species conservation"
+      ]
+    },
+    {
+      "id": "section_03",
+      "title": "Developmental Origins and Postnatal Maturation",
+      "cluster_ids": [
+        "cluster_02_development_lineage"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "Caudal ganglionic eminence specification, key transcription factors (Prox1, COUP-TFII, Sp8, Nr2f2), migratory routes, postnatal integration, activity-dependent maturation, critical periods.",
+      "key_topics": [
+        "CGE vs MGE lineage",
+        "Prox1/COUP-TFII/Sp8 TF cascade",
+        "tangential migration",
+        "postnatal integration",
+        "activity-dependent refinement",
+        "critical period roles"
+      ]
+    },
+    {
+      "id": "section_04",
+      "title": "Morphological Diversity",
+      "cluster_ids": [
+        "cluster_03_morphology"
+      ],
+      "length_target_words": 4000,
+      "scope_notes": "Bipolar, bitufted, multipolar, small basket, and arcade morphologies; layer-specific dendritic/axonal targeting; reconstructions from MICrONS, Allen, and EM connectomes; morphology-electrophysiology-transcriptome (MET) correspondence.",
+      "key_topics": [
+        "bipolar vs multipolar VIP",
+        "layer 1-6 distribution",
+        "axonal targeting onto SST",
+        "MICrONS/EM reconstructions",
+        "MET-type framework"
+      ]
+    },
+    {
+      "id": "section_05",
+      "title": "Intrinsic Electrophysiology",
+      "cluster_ids": [
+        "cluster_04_intrinsic_electrophysiology"
+      ],
+      "length_target_words": 4000,
+      "scope_notes": "Resting properties, AP waveform, firing patterns (irregular spiking, continuous adapting, bursting), sag/Ih, K+ channel repertoire, intrinsic excitability differences across VIP subtypes; comparison to PV fast-spiking and SST low-threshold spiking baselines.",
+      "key_topics": [
+        "irregular spiking phenotype",
+        "Ih/HCN",
+        "Kv channels",
+        "subtype heterogeneity",
+        "comparison with PV/SST intrinsic profiles"
+      ]
+    },
+    {
+      "id": "section_06",
+      "title": "Synaptic Properties and Connectivity",
+      "cluster_ids": [
+        "cluster_05_synaptic_connectivity",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Inputs to VIP cells (long-range cortico-cortical, thalamic, neuromodulatory), outputs (preferential SST targeting, weaker PV/Pyr targets), short-term plasticity, GABA receptor composition, paired-recording datasets, EM connectomic counts.",
+      "key_topics": [
+        "long-range inputs",
+        "thalamic inputs",
+        "VIP\u2192SST synapses",
+        "VIP\u2192PV/Pyr connectivity",
+        "STP/facilitation",
+        "GABA-A subunit composition",
+        "MICrONS connectivity"
+      ]
+    },
+    {
+      "id": "section_07",
+      "title": "Local Circuit Motifs and the Disinhibition Framework",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_12_sst_pv_context"
+      ],
+      "length_target_words": 6000,
+      "scope_notes": "Canonical VIP\u2192SST\u2192Pyr disinhibitory motif; alternative motifs (VIP\u2192PV, VIP\u2192Pyr direct); inter-areal disinhibition; quantitative motif weights from connectivity datasets; how 'disinhibition' is operationalized across studies.",
+      "key_topics": [
+        "VIP\u2192SST\u2192Pyr motif",
+        "competing motifs",
+        "quantitative motif counts",
+        "long-range cortico-cortical disinhibition",
+        "definitional variance of disinhibition"
+      ]
+    },
+    {
+      "id": "section_08",
+      "title": "In Vivo Function During Behavior",
+      "cluster_ids": [
+        "cluster_07_in_vivo_function",
+        "cluster_13_neuromodulation"
+      ],
+      "length_target_words": 6500,
+      "scope_notes": "Calcium imaging and electrophysiology of VIP cells during locomotion, attention, reinforcement, reward, learning, and prediction error; optogenetic/chemogenetic perturbation outcomes; cell-type-specific contribution to cortical state changes.",
+      "key_topics": [
+        "locomotion-driven activation (Fu/Stryker)",
+        "attention/cue (Letzkus, Pi)",
+        "reward/punishment",
+        "learning and prediction error",
+        "optogenetic VIP perturbation",
+        "state-dependent gain"
+      ]
+    },
+    {
+      "id": "section_09",
+      "title": "VIP Interneurons Across Brain Regions",
+      "cluster_ids": [
+        "cluster_08_brain_regions"
+      ],
+      "length_target_words": 5000,
+      "scope_notes": "Region-specific VIP biology: V1, S1, A1, mPFC, retrosplenial, entorhinal, hippocampus (CA1/CA3 VIP types), striatum and amygdala VIP populations; conserved vs region-specific motifs and functions.",
+      "key_topics": [
+        "V1/S1/A1 VIP",
+        "mPFC and decision circuits",
+        "hippocampal VIP (Bezaire/Klausberger)",
+        "amygdala disinhibition",
+        "subcortical VIP populations"
+      ]
+    },
+    {
+      "id": "section_10",
+      "title": "Oscillatory Dynamics and Temporal Coordination",
+      "cluster_ids": [
+        "cluster_09_oscillations",
+        "cluster_13_neuromodulation"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "VIP contribution to gamma, theta, beta, and cross-frequency coupling; phase-locking of VIP firing; modeling of VIP-driven rhythm gating; comparison with PV's canonical gamma role.",
+      "key_topics": [
+        "VIP and gamma",
+        "theta-locked VIP firing",
+        "cross-frequency coupling",
+        "PV-vs-VIP rhythm contributions",
+        "modeling rhythms with VIP cells"
+      ]
+    },
+    {
+      "id": "section_11",
+      "title": "Species Differences, Human Relevance, and Disease",
+      "cluster_ids": [
+        "cluster_10_species_disease",
+        "cluster_01_molecular_taxonomy"
+      ],
+      "length_target_words": 5500,
+      "scope_notes": "Mouse-human VIP comparisons (Hodge BICCN, Krienen primate); human-specific transcriptomic types; disease relevance: Rett (Mecp2), autism (Cntnap2, Shank3), schizophrenia, epilepsy, Alzheimer's, depression; therapeutic implications.",
+      "key_topics": [
+        "mouse vs human VIP types",
+        "Krienen primate",
+        "Rett/autism models",
+        "schizophrenia/psychosis",
+        "epilepsy",
+        "AD VIP loss",
+        "VIPR1/2 pharmacology"
+      ]
+    },
+    {
+      "id": "section_12",
+      "title": "Computational Models of VIP Circuit Function",
+      "cluster_ids": [
+        "cluster_11_computational_models",
+        "cluster_06_disinhibition_circuit"
+      ],
+      "length_target_words": 5000,
+      "scope_notes": "Mean-field and spiking models of VIP-SST-PV-Pyr microcircuits; gain modulation; predictive coding implementations; reinforcement-learning roles; circuit-level model fitting to imaging data.",
+      "key_topics": [
+        "Litwin-Kumar/Doiron mean-field models",
+        "stabilized supralinear network with VIP",
+        "predictive coding circuits",
+        "RL-circuit mappings",
+        "model fitting to data"
+      ]
+    },
+    {
+      "id": "section_13",
+      "title": "Synthesis and Conclusion: Reassessing the Canonical VIP Disinhibitor",
+      "cluster_ids": [
+        "cluster_06_disinhibition_circuit",
+        "cluster_07_in_vivo_function",
+        "cluster_11_computational_models"
+      ],
+      "length_target_words": 4500,
+      "scope_notes": "Synthesizes evidence across all sections to evaluate whether the canonical 'VIP = disinhibitor' framing is empirically warranted, what alternative framings (gain controller, context gate, neuromodulator relay) better fit the data, and what experiments would adjudicate; outlines open questions and a forward agenda.",
+      "key_topics": [
+        "canonical framing audit",
+        "alternatives: gain control / context gate / NM relay",
+        "evidence weighing",
+        "open questions",
+        "forward agenda"
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster_01_molecular_taxonomy",
+      "name": "Molecular Identity and Transcriptomic Taxonomy",
+      "topics": [
+        "VIP marker biology",
+        "CR/ChAT/CCK co-expression",
+        "Tasic/Allen scRNA-seq taxonomy",
+        "BICCN cortical census",
+        "Patch-seq integration",
+        "VIP transcriptomic subtypes",
+        "MET-types"
+      ],
+      "search_anchors": [
+        "VIP interneuron transcriptomic",
+        "VIP scRNA-seq cortex",
+        "Patch-seq VIP",
+        "BICCN interneuron taxonomy",
+        "calretinin VIP cortex"
+      ],
+      "section_targets": [
+        "section_02",
+        "section_11",
+        "section_01"
+      ],
+      "expected_envelope": "300-450 papers"
+    },
+    {
+      "id": "cluster_02_development_lineage",
+      "name": "Developmental Origins and Postnatal Maturation (CGE lineage)",
+      "topics": [
+        "caudal ganglionic eminence",
+        "Prox1",
+        "COUP-TFII / Nr2f2",
+        "Sp8",
+        "tangential migration",
+        "postnatal integration",
+        "activity-dependent maturation",
+        "critical period"
+      ],
+      "search_anchors": [
+        "caudal ganglionic eminence interneuron",
+        "Prox1 cortical interneuron",
+        "CGE-derived VIP",
+        "Nr2f2 interneuron specification",
+        "VIP cortical interneuron development"
+      ],
+      "section_targets": [
+        "section_03"
+      ],
+      "expected_envelope": "200-300 papers"
+    },
+    {
+      "id": "cluster_03_morphology",
+      "name": "Morphological Diversity of VIP Cells",
+      "topics": [
+        "bipolar VIP",
+        "multipolar VIP",
+        "small basket",
+        "arcade cells",
+        "axonal targeting",
+        "dendritic arborization",
+        "EM connectomics",
+        "MICrONS"
+      ],
+      "search_anchors": [
+        "VIP bipolar cell cortex",
+        "VIP interneuron morphology",
+        "MICrONS interneuron",
+        "cortical interneuron reconstruction VIP"
+      ],
+      "section_targets": [
+        "section_04"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_04_intrinsic_electrophysiology",
+      "name": "Intrinsic Electrophysiology of VIP Cells",
+      "topics": [
+        "irregular spiking",
+        "continuous adapting",
+        "Ih/HCN",
+        "Kv channels",
+        "intrinsic excitability",
+        "AP waveform",
+        "VIP firing patterns"
+      ],
+      "search_anchors": [
+        "VIP interneuron firing pattern",
+        "irregular spiking interneuron",
+        "VIP intrinsic properties",
+        "VIP electrophysiology cortex"
+      ],
+      "section_targets": [
+        "section_05"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_05_synaptic_connectivity",
+      "name": "Synaptic Properties and Connectivity",
+      "topics": [
+        "VIP synaptic inputs",
+        "long-range inputs to VIP",
+        "thalamic input to VIP",
+        "VIP\u2192SST synapses",
+        "VIP\u2192PV synapses",
+        "VIP\u2192Pyr direct",
+        "short-term plasticity",
+        "GABA receptor composition",
+        "paired recording"
+      ],
+      "search_anchors": [
+        "VIP SST connectivity",
+        "VIP cell paired recording",
+        "VIP interneuron synaptic",
+        "long-range input interneuron",
+        "VIP postsynaptic targets"
+      ],
+      "section_targets": [
+        "section_06",
+        "section_07"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_06_disinhibition_circuit",
+      "name": "Disinhibition Motif and Local Circuit Architecture",
+      "topics": [
+        "VIP\u2192SST\u2192Pyr motif",
+        "cortical disinhibition",
+        "Letzkus Pi Lee paradigm papers",
+        "alternative motifs",
+        "long-range cortico-cortical disinhibition",
+        "definitional variance of disinhibition"
+      ],
+      "search_anchors": [
+        "VIP disinhibition cortex",
+        "VIP SST motif",
+        "cortical disinhibition microcircuit",
+        "Pi 2013 VIP",
+        "Letzkus VIP"
+      ],
+      "section_targets": [
+        "section_07",
+        "section_01",
+        "section_13",
+        "section_12"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_07_in_vivo_function",
+      "name": "In Vivo VIP Activity and Behavioral Function",
+      "topics": [
+        "VIP imaging during locomotion",
+        "VIP attention/cue",
+        "VIP reward/reinforcement",
+        "VIP learning",
+        "prediction error",
+        "optogenetic VIP perturbation",
+        "state-dependent gain",
+        "Fu/Stryker locomotion"
+      ],
+      "search_anchors": [
+        "VIP interneuron in vivo imaging",
+        "VIP locomotion cortex",
+        "VIP attention",
+        "VIP optogenetic behavior",
+        "VIP reward signal"
+      ],
+      "section_targets": [
+        "section_08",
+        "section_13"
+      ],
+      "expected_envelope": "350-480 papers"
+    },
+    {
+      "id": "cluster_08_brain_regions",
+      "name": "VIP Across Brain Regions (Cortical Areas, Hippocampus, Subcortical)",
+      "topics": [
+        "V1/S1/A1 VIP",
+        "mPFC VIP",
+        "retrosplenial/entorhinal",
+        "hippocampal VIP types",
+        "amygdala VIP",
+        "striatum/BNST VIP",
+        "regional functional differences"
+      ],
+      "search_anchors": [
+        "VIP interneuron prefrontal cortex",
+        "hippocampal VIP",
+        "amygdala VIP disinhibition",
+        "VIP retrosplenial",
+        "VIP V1 S1 A1"
+      ],
+      "section_targets": [
+        "section_09"
+      ],
+      "expected_envelope": "250-350 papers"
+    },
+    {
+      "id": "cluster_09_oscillations",
+      "name": "Oscillatory Dynamics and Temporal Coordination",
+      "topics": [
+        "VIP and gamma",
+        "theta-locked VIP",
+        "cross-frequency coupling",
+        "rhythm gating",
+        "VIP phase-locking",
+        "PV vs VIP rhythm contributions"
+      ],
+      "search_anchors": [
+        "VIP gamma oscillation",
+        "VIP theta cortex",
+        "interneuron cross-frequency coupling",
+        "VIP rhythm phase-locking"
+      ],
+      "section_targets": [
+        "section_10"
+      ],
+      "expected_envelope": "120-200 papers"
+    },
+    {
+      "id": "cluster_10_species_disease",
+      "name": "Species Differences, Human Relevance, and Disease",
+      "topics": [
+        "human VIP cells",
+        "Hodge BICCN human",
+        "Krienen primate",
+        "Rett (Mecp2)",
+        "autism (Cntnap2, Shank3)",
+        "schizophrenia",
+        "epilepsy",
+        "Alzheimer's VIP loss",
+        "VIPR1/2 pharmacology"
+      ],
+      "search_anchors": [
+        "human VIP interneuron",
+        "VIP Mecp2 Rett",
+        "VIP autism",
+        "VIP schizophrenia interneuron",
+        "VIP Alzheimer",
+        "primate VIP cortex"
+      ],
+      "section_targets": [
+        "section_11"
+      ],
+      "expected_envelope": "300-420 papers"
+    },
+    {
+      "id": "cluster_11_computational_models",
+      "name": "Computational Models of VIP Circuit Function",
+      "topics": [
+        "mean-field VIP-SST-PV-Pyr models",
+        "stabilized supralinear network",
+        "predictive coding circuits",
+        "reinforcement-learning circuit mappings",
+        "spiking models with VIP",
+        "data-fit circuit models"
+      ],
+      "search_anchors": [
+        "VIP SST PV computational model",
+        "stabilized supralinear network interneuron",
+        "predictive coding cortical interneuron",
+        "circuit model disinhibition VIP"
+      ],
+      "section_targets": [
+        "section_12",
+        "section_13"
+      ],
+      "expected_envelope": "150-220 papers"
+    },
+    {
+      "id": "cluster_12_sst_pv_context",
+      "name": "SST/PV Context for VIP (Adjacent Interneuron Literature)",
+      "topics": [
+        "SST Martinotti",
+        "SST non-Martinotti",
+        "PV fast-spiking basket",
+        "PV chandelier",
+        "SST-PV interactions",
+        "tripartite framework",
+        "GABAergic taxonomy reference"
+      ],
+      "search_anchors": [
+        "somatostatin Martinotti cortex",
+        "parvalbumin basket cell cortex",
+        "SST PV interneuron interaction",
+        "Tremblay Rudy interneuron review"
+      ],
+      "section_targets": [
+        "section_02",
+        "section_06",
+        "section_07",
+        "section_01"
+      ],
+      "expected_envelope": "250-350 papers (filtered to entries co-cited with VIP context)"
+    },
+    {
+      "id": "cluster_13_neuromodulation",
+      "name": "Neuromodulation of VIP Cells (ACh, 5-HT, NA)",
+      "topics": [
+        "cholinergic modulation of VIP",
+        "serotonergic modulation",
+        "noradrenergic modulation",
+        "nAChR/mAChR on VIP",
+        "neuromodulator-driven disinhibition"
+      ],
+      "search_anchors": [
+        "acetylcholine VIP interneuron",
+        "VIP cholinergic disinhibition",
+        "serotonin 5HT3a interneuron",
+        "noradrenaline VIP",
+        "neuromodulation cortical interneuron"
+      ],
+      "section_targets": [
+        "section_08",
+        "section_10"
+      ],
+      "expected_envelope": "120-200 papers"
+    }
+  ],
+  "plan_content": [
+    {
+      "name": "Phase 1: Scope and Thesis",
+      "depends_on": [],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Confirm scope, thesis, and cluster design from user prompt and TOC",
+              "description": "Read provenance/review_request.md verbatim. Define 13 sections (1:1 with user TOC) and 13 clusters covering molecular taxonomy, CGE development, morphology, intrinsic ephys, synaptic connectivity, disinhibition motif, in vivo function, brain regions, oscillations, species/disease, computational models, SST/PV context, and neuromodulation. Embed evidence_parameters (saturation <2% over 100 records confirmed across 2 consecutive passes; snowball=2 rounds; min_papers_per_cluster=null; bibliography target \u22652,000). Coordinator verifies: scope.json schema valid, sections=13, clusters=13, evidence_parameters present and parsed, review_request.md+.txt captured byte-identically."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 2: Evidence Gathering",
+      "depends_on": [
+        "Phase 1: Scope and Thesis"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Run cluster-by-cluster saturation search (PubMed + bioRxiv + Semantic Scholar + OpenAlex)",
+              "description": "For each of the 13 clusters, search across PubMed, bioRxiv/medRxiv, Semantic Scholar, and OpenAlex using the cluster's search_anchors. Continue until <2% new unique papers in last 100 records, confirmed across two consecutive database passes. Then perform 2 snowball rounds (forward + backward citation chasing) on top-50 most-cited per cluster. Extract findings, methods, sample sizes, key claims; require \u226550% with full-text retrieved (fetch_article_fulltext)."
+            },
+            {
+              "title": "Aggregate, dedupe, and emit per-cluster evidence packages",
+              "description": "Dedupe by DOI/title across clusters; emit per-cluster JSON with paper metadata, extracted findings, snowball provenance, and saturation curves. Coordinator verifies: total unique bibliography \u22652,000; saturation criterion met (confirmed-across-2-passes evidence in saturation logs); snowball_rounds=2 logged per cluster; \u226550% full-text rate per cluster; no cluster blocked by zero results."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 3: Citation Infrastructure",
+      "depends_on": [
+        "Phase 2: Evidence Gathering"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Build citation_key_map and author_name_table via CrossRef",
+              "description": "Resolve each unique DOI from Phase 2 against CrossRef; build citation_key_map (canonical author-year-keyword keys, ASCII-only) and author_name_table (canonical name spellings, ORCID where available, disambiguation flags). Coordinator verifies: 100% of Phase 2 DOIs resolved or flagged; zero key collisions; ASCII-only keys; author table covers all first/last authors."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 4: Scaffold Construction",
+      "depends_on": [
+        "Phase 3: Citation Infrastructure"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Draft argument arc, per-section plans, figure specs, and style guide",
+              "description": "Produce a top-level argument arc that culminates in the Section 13 reassessment of the canonical disinhibitor framing. For each of the 13 sections, draft a section plan (2-4 subsections, claim outline, target citations, planned figures/notebooks) and a figure spec sheet. Emit style_guide.md (terminology, abbreviations, units, MyST conventions). Coordinator verifies: 13 section plans present; each plan names \u22651 figure or 'no figure' rationale; argument arc traces from Sec1 \u2192 Sec13."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 5: Evidence Curation",
+      "depends_on": [
+        "Phase 4: Scaffold Construction"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Assign clusters to sections and emit per-section evidence packages",
+              "description": "Map each cluster's papers onto target sections per scope.json; build per-section evidence packages containing the relevant subset, scaffold extracts (claim \u2192 candidate citations \u2192 quoted snippets), and figure_data candidates. Coordinator verifies: every section has \u22651 cluster assigned; orphan papers (no section) flagged; per-section package counts logged; figure_data candidates list \u22651 source per planned figure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 6: Figure Comparability Audit",
+      "depends_on": [
+        "Phase 5: Evidence Curation"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Blinded review of figure_data \u2014 verdicts PASS/CAVEAT/SPLIT/REDESIGN",
+              "description": "Parallel critics inspect each planned figure's underlying figure_data for unit consistency, species/age comparability, normalization compatibility, and statistical defensibility. Emit verdict per figure (PASS / CAVEAT / SPLIT-INTO-PANELS / REDESIGN) with rationale. Coordinator verifies: every Phase 4 figure has a verdict; REDESIGN verdicts trigger return to Phase 4 plan update before Phase 7 starts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 7: Section Drafting",
+      "depends_on": [
+        "Phase 6: Figure Comparability Audit"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Draft each body section (parallel writers, one per section) \u2014 MyST + LaTeX + figures + notebooks",
+              "description": "One LITREVIEW writer per body section (sections 2\u201312, plus Sec 13 synthesis). Each writer produces MyST source, LaTeX-compiled snippets, figures (using comprev-figure-construction skill), and supporting notebooks. Citation density \u22653.0 per paragraph; \u226535 citations per core body section; brace balance verified. Coordinator verifies: 12 body section drafts (sec 2-13) emitted; citations_per_paragraph \u22653.0 per section; \u226535 cites per core section; figure files exist and match Phase 6 verdicts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 8: Section Critics",
+      "depends_on": [
+        "Phase 7: Section Drafting"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Blinded critics review each section across 6 tracks",
+              "description": "Parallel blinded critics (one critic \u2260 writer per section) emit verdicts on 6 tracks: claim accuracy, citation support, figure-text alignment, scope creep, terminology consistency, novelty/balance. Each finding tagged MUST_FIX / SHOULD_CAVEAT / MINOR. Coordinator verifies: every section has a critic report; MUST_FIX items return to Phase 7 author for revision before Phase 9; revision loop bounded (max 2 rounds)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 9: Bibliography",
+      "depends_on": [
+        "Phase 8: Section Critics"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Build BibTeX from CrossRef metadata; ASCII-only; dedupe; contamination scan",
+              "description": "For every cite key actually used in section drafts, fetch CrossRef metadata, emit ASCII-only BibTeX entries, dedupe across keys (DOI primary), and run contamination scan (no orphan keys, no entries without a citation in text). Coordinator verifies: |BibTeX entries| == |unique cite keys in MyST|; zero unicode in .bib; zero orphan entries; zero unresolved keys."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 10: Integration",
+      "depends_on": [
+        "Phase 9: Bibliography"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "6-pass integration: transitions, cross-refs, terminology, continuity, figures, hygiene",
+              "description": "Pass 1 inter-section transitions; Pass 2 cross-references (sec/fig/eq); Pass 3 terminology unification per style_guide.md; Pass 4 narrative continuity (argument arc check); Pass 5 figure-text alignment; Pass 6 hygiene (whitespace, markdown lint, MyST roles). Coordinator verifies: each pass logs a diff summary; cross-ref resolver finds zero broken refs; terminology checker finds zero violations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 11: Introduction and Conclusion",
+      "depends_on": [
+        "Phase 10: Integration"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Draft Section 1 (Introduction) and Section 13 (Synthesis/Reassessment) \u2014 last, citing only existing bibliography",
+              "description": "Write the Introduction and the Synthesis/Reassessment of Canonical VIP Disinhibitor sections last so they are evidence-bound by the body. New citations are forbidden \u2014 every cite key must already exist in the Phase 9 bibliography. Section 13 explicitly weighs evidence for/against the canonical framing using results from Sections 2\u201312. Coordinator verifies: Section 1 and Section 13 drafted; zero novel citations (every cite key intersects Phase 9 bib); Section 13 explicitly addresses canonical-framing reassessment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 12: Bookend Critic",
+      "depends_on": [
+        "Phase 11: Introduction and Conclusion"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Blinded critic on Section 1 + Section 13 \u2014 claim/citation pair verification",
+              "description": "Blinded critic verifies that every novel claim in Sections 1 and 13 is supported by a citation already in Phase 9 bibliography, that the synthesis is internally consistent with body sections, and that the canonical-framing reassessment is fairly evidenced. Coordinator verifies: critic report present for both sections; MUST_FIX items return to Phase 11 author; zero novel-citation introductions in revisions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 13: Methods",
+      "depends_on": [
+        "Phase 12: Bookend Critic"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Render Methods.md and architecture figure from pipeline metadata",
+              "description": "Pull operon.frames + plan metadata + skill versions; render Methods.md (M.1 search strategy, M.2 evidence pipeline, M.3 critic protocol, M.4 figure construction, M.5 phase outcomes table, M.6 ledger snapshot) and an architecture figure showing the 20-phase pipeline. Coordinator verifies: Methods.md sections M.1\u2013M.6 present; architecture figure file exists; every cited tool/skill traceable to a frame ID."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 14: Document Assembly",
+      "depends_on": [
+        "Phase 13: Methods"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Collect files, build LaTeX preamble, run hard assertions",
+              "description": "Collect all section MyST/LaTeX, figures, notebooks, Methods.md, bibliography; build the master LaTeX preamble; run hard assertions (REVIEW_REQUEST_CAPTURED, EVIDENCE_PARAMS_PRESENT, BIBLIOGRAPHY_TARGET_MET \u22652000, CITATIONS_PER_PARAGRAPH per section, FIGURE_VERDICTS_PRESENT, NO_PLACEHOLDERS, ZERO_ORPHAN_KEYS, MyST builds clean). Coordinator verifies: every assertion passes; build log clean; no unfilled template tokens remain (NO_PLACEHOLDERS assertion)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 15: Citation Triples",
+      "depends_on": [
+        "Phase 14: Document Assembly"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Exhaustive citation-triple extraction (one triple per cite-key occurrence)",
+              "description": "For every cite-key occurrence in the assembled document, extract a triple (cite_key, \u00b110-line context window, claim_under_citation). NO sampling, NO tiering \u2014 exhaustive enumeration. Coordinator verifies: |triples| == |total cite-key occurrences in MyST|; every triple has non-empty claim text; cite_key references match Phase 9 bib."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 16: Citation Verification",
+      "depends_on": [
+        "Phase 15: Citation Triples"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "5-step deep verification on every triple (parallel)",
+              "description": "For each triple in parallel: (1) DOI resolves; (2) title matches CrossRef; (3) authors match; (4) year/journal/volume metadata match; (5) full-text claim verification \u2014 the cited paper actually supports the claim. Emit verdicts VERIFIED / METADATA_MISMATCH / CLAIM_UNSUPPORTED / FULLTEXT_UNAVAILABLE \u2014 no tiering of importance, every triple gets all 5 steps. Coordinator verifies: every triple has a 5-step verdict; non-VERIFIED triples enumerated for Phase 17."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 17: Fix Preparation",
+      "depends_on": [
+        "Phase 16: Citation Verification"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Build fix requests with \u00b110-line context for each non-VERIFIED triple",
+              "description": "For each non-VERIFIED triple from Phase 16, build a structured fix_request with the failing verdict, \u00b110 lines of source context, and a recommended fix class (REPLACE_CITE / DROP_CITE / EDIT_CLAIM / ADD_CAVEAT). Coordinator verifies: every non-VERIFIED triple has a fix_request; fix_request schema valid; recommended fix class present."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 18: Fix Execution",
+      "depends_on": [
+        "Phase 17: Fix Preparation"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "steps": [
+            {
+              "title": "Execute bib and text fixes per fix_request (parallel)",
+              "description": "For each fix_request, produce a concrete diff: BibTeX entry change (if any) and text diff (replace_cite/drop_cite/edit_claim/add_caveat). Diffs must be non-overlapping; if two requests target overlapping lines, merge before emitting. Coordinator verifies: every fix_request has a corresponding diff; diffs non-overlapping; each diff names the originating fix_request_id."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 19: Fix Application",
+      "depends_on": [
+        "Phase 18: Fix Execution"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Apply diffs in reverse line order; rebuild bibliography; verify zero orphans",
+              "description": "Apply Phase 18 diffs in reverse line-order (bottom-up) to preserve line numbers; rebuild .bib from updated cite-key set; rerun orphan scan and Phase 14 hard assertions. Coordinator verifies: zero orphan cite keys; bibliography target still \u22652,000; build log clean; no triples regressed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 20: Methods Ledger Refresh and Repository Push",
+      "depends_on": [
+        "Phase 19: Fix Application"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "steps": [
+            {
+              "title": "Re-render Methods M.5 + M.6 from final operon.frames ledger",
+              "description": "After all fixes are applied, re-render Methods.md sections M.5 (phase outcomes table) and M.6 (ledger snapshot) from the now-final operon.frames ledger so reproducibility metadata reflects the post-fix state. Coordinator verifies: M.5/M.6 timestamps post-Phase 19; phase outcome rows = 20; ledger snapshot frame count matches operon.frames query."
+            },
+            {
+              "title": "Push all outputs to AllenNeuralDynamics/ComputationalReviewVIP via Contents API",
+              "description": "Push final MyST sources, figures, notebooks, bibliography, Methods.md, scope.json, provenance/, and build artifacts to https://github.com/AllenNeuralDynamics/ComputationalReviewVIP via the GitHub Contents API. Coordinator verifies: every required file pushed (manifest cross-check); commit SHA logged; CI build (GitHub Actions) green or failure surfaced as blocker."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2041,7 +2041,7 @@ Table of Contents:
 
 \section{Scope and Table of Contents}\label{sec-methods-scope}
 
-Phase 1 produced the \texttt{gate\_scope.json} artifact (vid \texttt{62c67e66-7c72-47e6-b08a-fd89764749b3}), which froze the editorial scope before any literature work began. The thesis question asks how VIP-expressing GABAergic interneurons -- defined by caudal-ganglionic-eminence (CGE) lineage and a distinctive transcriptomic, morphological, and physiological profile -- implement disinhibitory and gain-modulatory operations that shape cortical computation, and to what extent the canonical ``VIP disinhibitor'' framing survives scrutiny under contemporary multi-modal evidence. The intended audience is systems and circuits neuroscientists, computational neuroscientists, and graduate-level researchers working on cortical interneurons.
+Phase 1 produced the \texttt{gate\_scope.json} artifact (vid \texttt{gates/gate_scope.json}), which froze the editorial scope before any literature work began. The thesis question asks how VIP-expressing GABAergic interneurons -- defined by caudal-ganglionic-eminence (CGE) lineage and a distinctive transcriptomic, morphological, and physiological profile -- implement disinhibitory and gain-modulatory operations that shape cortical computation, and to what extent the canonical ``VIP disinhibitor'' framing survives scrutiny under contemporary multi-modal evidence. The intended audience is systems and circuits neuroscientists, computational neuroscientists, and graduate-level researchers working on cortical interneurons.
 
 The review is organized into 13 sections (1 introduction + 11 body sections + 1 synthesis/conclusion) with a total target of approximately 63,000 words across all sections. Per-section targets and topic clusters are listed below.
 
@@ -2072,7 +2072,7 @@ Evidence parameters specified in the scope: search until \textless 2\% new uniqu
 
 \section{Evidence Corpus and Curation}\label{sec-methods-evidence}
 
-Phase 2 (LITREVIEW evidence-gathering) ran 14 parallel cluster delegations across the databases authorized in the scope (PubMed/NCBI E-utilities, Europe PMC, OpenAlex, bioRxiv) plus open-access full-text resolvers (Unpaywall, Semantic Scholar, PubMed Central) and the Elsevier and Springer Nature publisher APIs. Search queries, deduplication, and snowball passes are recorded per cluster inside the evidence JSONs referenced from \texttt{gate\_evidence\_compliance.json} (vid \texttt{5803dd90-79a1-4ace-ab6a-3c7ab70b56b1}). Aggregate Phase-2 outcome:
+Phase 2 (LITREVIEW evidence-gathering) ran 14 parallel cluster delegations across the databases authorized in the scope (PubMed/NCBI E-utilities, Europe PMC, OpenAlex, bioRxiv) plus open-access full-text resolvers (Unpaywall, Semantic Scholar, PubMed Central) and the Elsevier and Springer Nature publisher APIs. Search queries, deduplication, and snowball passes are recorded per cluster inside the evidence JSONs referenced from \texttt{gate\_evidence\_compliance.json} (vid \texttt{gates/gate_evidence_compliance.json}). Aggregate Phase-2 outcome:
 
 \bigskip\noindent
 \begin{tabular}{p{\dimexpr 0.500\linewidth-2\tabcolsep}p{\dimexpr 0.500\linewidth-2\tabcolsep}}
@@ -2092,7 +2092,7 @@ Per-cluster gates passing & 14 / 14 \\
 
 The Phase-2V validator (\texttt{comprev-evidence-validator}, DATAML) re-checked compliance over 6 iterations against ten mechanical schemas (DOI resolves, source not equal to title, source length, claim differs from source, has cite-key, source provenance, full-text honesty, no fabricated keys, deduplication, framework-extract size). The strict bibliography-target check (\textgreater =2,000 papers per scope) failed at iteration 6 with 1,037 unique DOIs returned, but the finding-level pipeline (1,779 findings; 0.9994 compliance) passed all integrity checks. The coordinator accepted this saturation outcome as the final corpus on the basis that the Phase-2 saturation criterion (\textless 2\% new unique in last 100 records, two consecutive passes) had triggered before the 2,000-paper target was reached -- i.e. the addressable VIP literature is empirically smaller than the database-sizing pre-estimate.
 
-Per-cluster curation totals (Phase 5 ``Evidence Curation'' actor; gate vid \texttt{ed073d08-21ac-45f7-acb9-521a60e7a612}; validator gate vid \texttt{15a93643-5aae-46ee-8e38-181025943157}):
+Per-cluster curation totals (Phase 5 ``Evidence Curation'' actor; gate vid \texttt{gates/gate_evidence_curated.json}; validator gate vid \texttt{gates/gate_evidence_curated_approved.json}):
 
 \bigskip\noindent
 \begin{tabular}{p{\dimexpr 0.333\linewidth-2\tabcolsep}p{\dimexpr 0.333\linewidth-2\tabcolsep}p{\dimexpr 0.333\linewidth-2\tabcolsep}}
@@ -2134,7 +2134,7 @@ Anti-compression metrics: per the Phase-5V audit, every section retains \textgre
 
 \section{Citation Infrastructure}\label{sec-methods-citation-infra}
 
-Phase 3 (DATAML actor) constructed the project-wide citation key map and author name table that all downstream phases consume as the single source of authorial truth. Inputs were the 1,037 unique DOIs surviving Phase 2; outputs were \texttt{citation\_key\_map.json} (vid \texttt{1fecfde0-a5e8-4748-90cc-f86d0945b6ef}) and \texttt{author\_name\_table.json} (vid \texttt{cdd3608c-e6f5-46cb-8587-3fdde35db973}).
+Phase 3 (DATAML actor) constructed the project-wide citation key map and author name table that all downstream phases consume as the single source of authorial truth. Inputs were the 1,037 unique DOIs surviving Phase 2; outputs were \texttt{citation\_key\_map.json} (vid \texttt{provenance/citation_key_map.json}) and \texttt{author\_name\_table.json} (vid \texttt{provenance/author_name_table.json}).
 
 \bigskip\noindent
 \begin{tabular}{p{\dimexpr 0.500\linewidth-2\tabcolsep}p{\dimexpr 0.500\linewidth-2\tabcolsep}}
@@ -2153,15 +2153,15 @@ ASCII-folding events on author surnames & 51 \\
 
 \bigskip
 
-Cite-key format is \texttt{\^[A-Z][A-Za-z]+{\textbackslash}d\{4\}[a-z]?\$} (first-author surname, ASCII-folded; four-digit year; optional disambiguator suffix). Phase 3V (DATAML validator) re-resolved every entry against CrossRef and ran five mechanical checks. The validation gate (vid \texttt{20999576-0e9f-46c6-9125-9eae27f2c561}) reports a per-entry pass rate of 99.81\% with the following breakdown: 1,037 / 1,037 CrossRef-resolves, 1,037 / 1,037 key-format pass, 1,037 / 1,037 key-uniqueness pass, 1,035 / 1,037 author-match pass (the two failures were both resolved-by-name-match consortium-author entries -- the Petilla Interneuron Nomenclature Group \texttt{Thepetillainterneuronnomenclaturegroupping2008} and the BRAIN Initiative Cell Census Network \texttt{Braininitiativecellcensusnetworkbiccn2021} -- which carry no CrossRef family field), and 1,037 / 1,037 year-match pass. Cardinality and framework-bidirectional checks passed; zero blocking failures.
+Cite-key format is \texttt{\^[A-Z][A-Za-z]+{\textbackslash}d\{4\}[a-z]?\$} (first-author surname, ASCII-folded; four-digit year; optional disambiguator suffix). Phase 3V (DATAML validator) re-resolved every entry against CrossRef and ran five mechanical checks. The validation gate (vid \texttt{gates/gate_citation_infrastructure_validation_v2.json}) reports a per-entry pass rate of 99.81\% with the following breakdown: 1,037 / 1,037 CrossRef-resolves, 1,037 / 1,037 key-format pass, 1,037 / 1,037 key-uniqueness pass, 1,035 / 1,037 author-match pass (the two failures were both resolved-by-name-match consortium-author entries -- the Petilla Interneuron Nomenclature Group \texttt{Thepetillainterneuronnomenclaturegroupping2008} and the BRAIN Initiative Cell Census Network \texttt{Braininitiativecellcensusnetworkbiccn2021} -- which carry no CrossRef family field), and 1,037 / 1,037 year-match pass. Cardinality and framework-bidirectional checks passed; zero blocking failures.
 
 The keymap is the contract that Phase 5 (evidence curation), Phase 7 (drafting), Phase 9 (bibliography), Phase 10 (integration), and Phase 11 (introduction/conclusion) all consume read-only. Section drafts are constrained by a per-section \texttt{cite\_keys\_allowlist} derived from this map.
 
 \section{Drafting and Critic Protocol}\label{sec-methods-drafting}
 
-Phase 4 (LITREVIEW) approved a 13-section framework (vid \texttt{01bea2ad-6fba-4121-ad06-f4c1b0e88425}; gate vid \texttt{dbdd16f4-d0f0-4db3-b540-1d43509c16d5}) covering 26 figure slots, 6 recurring themes, and 60 conflicts surfaced for explicit treatment. Every section carries a thesis sentence, a ``connection-prev'' / ``connection-next'' pair, and a unique cross-reference label.
+Phase 4 (LITREVIEW) approved a 13-section framework (vid \texttt{provenance/scaffold.json}; gate vid \texttt{gates/gate_scaffold_approved.json}) covering 26 figure slots, 6 recurring themes, and 60 conflicts surfaced for explicit treatment. Every section carries a thesis sentence, a ``connection-prev'' / ``connection-next'' pair, and a unique cross-reference label.
 
-Phase 6 (LITREVIEW critic, blinded ``Figure Audit'') converged in 3 iterations from 36 panels to 34 final panels (8 PASS, 26 CAVEAT, 0 REDESIGN, 0 FABRICATION). Twenty-two fabrication flags were raised across iterations 1-3 and all were resolved before convergence. Gate vid \texttt{4cde2d9c-7d78-4981-8a96-1929232b5f93}.
+Phase 6 (LITREVIEW critic, blinded ``Figure Audit'') converged in 3 iterations from 36 panels to 34 final panels (8 PASS, 26 CAVEAT, 0 REDESIGN, 0 FABRICATION). Twenty-two fabrication flags were raised across iterations 1-3 and all were resolved before convergence. Gate vid \texttt{gates/gate_figure_audit.json}.
 
 Phase 7 (LITREVIEW section-writing) ran 11 parallel section actors. The DATAML send-back validator enforced eight mechanical checks per section (anchor present, every cite-key in the project allowlist, figure-fence syntax, figure has image path, no bare author names in prose, no entries from the project forbidden-lexicon list, no \texttt{\{label\}} directive duplicating the heading anchor, no duplicate display name across sections). The send-back loop ran for 3 iterations:
 
@@ -2178,9 +2178,9 @@ Iteration & Total mechanical failures & Sections passing \\
 
 \bigskip
 
-Final Phase-7V gate vid: \texttt{546ca66e-11b7-4c87-8ec9-4430cf89e1ba}.
+Final Phase-7V gate vid: \texttt{gates/gate_sections_drafted_iter3.json}.
 
-Phase 8 (LITREVIEW critic, ``Section Critic'') ran a separate blinded critic pass against each Phase-7 section draft, raising MUST\_FIX, SHOULD\_CAVEAT, and NIT severities under an enforced rule: \textbf{MUST\_FIX must reach zero before the critic loop can close}. Iteration 1 produced 22 MUST\_FIX items distributed across 8 sections (sec\_02, sec\_03, sec\_05, sec\_06, sec\_07, sec\_08, sec\_11, sec\_12); iteration 2 returned 0 MUST\_FIX across all 11 sections, with 49 SHOULD\_CAVEAT items carried forward as non-blocking polish. Sec\_08 invoked the ``PRESENT-AS-GAP'' rule for 4 framework-required cite-keys whose papers turned out to lack VIP-specific findings in the Phase-2 corpus: rather than fabricate evidence, those claims were rewritten as explicit research gaps. Final Phase-8 gate vid: \texttt{c0be6fa8-f264-4438-8180-4c8345b8a1bd}.
+Phase 8 (LITREVIEW critic, ``Section Critic'') ran a separate blinded critic pass against each Phase-7 section draft, raising MUST\_FIX, SHOULD\_CAVEAT, and NIT severities under an enforced rule: \textbf{MUST\_FIX must reach zero before the critic loop can close}. Iteration 1 produced 22 MUST\_FIX items distributed across 8 sections (sec\_02, sec\_03, sec\_05, sec\_06, sec\_07, sec\_08, sec\_11, sec\_12); iteration 2 returned 0 MUST\_FIX across all 11 sections, with 49 SHOULD\_CAVEAT items carried forward as non-blocking polish. Sec\_08 invoked the ``PRESENT-AS-GAP'' rule for 4 framework-required cite-keys whose papers turned out to lack VIP-specific findings in the Phase-2 corpus: rather than fabricate evidence, those claims were rewritten as explicit research gaps. Final Phase-8 gate vid: \texttt{gates/gate_critic_complete.json}.
 
 The actor / critic separation enforced throughout Phases 6, 7, and 8 is an information-barrier protocol: critic frames are never given the actor's drafting context, and actors are never shown raw critic deliberations -- only structured MUST\_FIX / SHOULD\_CAVEAT items routed through the coordinator. This actor-critic separation is the principal mechanism by which the pipeline avoids the rubber-stamping failure mode of single-pass LLM drafting.
 
@@ -2193,24 +2193,24 @@ The table below records the actor / critic / validator role for each phase, the 
 \toprule
 Phase & Role / Agent & Gate VID & Status & Outcome notes \\
 \hline
-1 & actor (LITREVIEW + DATAML) & \texttt{62c67e66-7c72-47e6-b08a-fd89764749b3} & PASS & scope.json + provenance/review\_request.\{md,txt\}; 13 body sections, 14 evidence clusters, target \textgreater =2000 papers, frame 4ee0a0e5 (LITREVIEW scoping) -\textgreater  266fb089 (DATAML materialisation) \\
-1V & validator (DATAML) & \texttt{62c67e66-7c72-47e6-b08a-fd89764749b3} & PASS & Phase-1 validation rolled into gate\_scope.json; frame e79b4741 \\
-2 & actor (LITREVIEW x14) & \texttt{5803dd90-79a1-4ace-ab6a-3c7ab70b56b1} & PASS & Per-cluster evidence JSONs; 1037 unique DOIs, 1779 findings, 84 conflicts; saturation logged across 14 clusters; per-cluster gate 14/14 \\
-2V & validator (DATAML) & \texttt{5803dd90-79a1-4ace-ab6a-3c7ab70b56b1} & PASS & Iter6 strict-fail on bibliography target only (1037\textless 2000); coordinator accepted saturation outcome at 1037 unique DOIs; 14/14 per-cluster gates PASS, compliance 0.9994; frames 3a462e11, ba58bb1b \\
-3 & actor (DATAML) & \texttt{1fecfde0-a5e8-4748-90cc-f86d0945b6ef} & PASS & citation\_key\_map (1037 keys; 0 collisions; 106 disambiguations; 0 CrossRef failures) + author\_name\_table.json (cdd3608c) \\
-3V & validator (DATAML) & \texttt{20999576-0e9f-46c6-9125-9eae27f2c561} & PASS & Per-entry pass rate 0.998; 1037/1037 CrossRef-resolved; 0 collisions; 2 consortium-author no-family entries reconciled by name match \\
-4 & actor (LITREVIEW) & \texttt{dbdd16f4-d0f0-4db3-b540-1d43509c16d5} & PASS & Framework (vid 01bea2ad) approved: 13 sections, 26 figure slots, 60 conflicts\_to\_present, 6 recurring themes, total target 63000 words \\
-5 & actor (DATAML) & \texttt{ed073d08-21ac-45f7-acb9-521a60e7a612} & PASS & 13 curated literature corpora + framework extracts + section citation maps + section author tables; 2726 findings curated (zero loss vs 1779 input); 51 conflicts assigned \\
-5V & validator (DATAML) & \texttt{15a93643-5aae-46ee-8e38-181025943157} & PASS & PASS\_WITH\_DOCUMENTED\_EXITS: coverage 99.8\% of Phase-2 unique DOIs; 0 intra-section duplicates; cross-section differentiation 0 avoidable; 2 documented exits (sec\_04/sec\_09 below tier floor due to upstream saturation; 272 unavoidable single-CSS multi-cluster cases) \\
-6 & critic (LITREVIEW) & \texttt{4cde2d9c-7d78-4981-8a96-1929232b5f93} & PASS & Blinded figure audit, 3 iterations: 36 panels -\textgreater  34 final (8 PASS, 26 CAVEAT, 0 REDESIGN, 0 FABRICATION); 22 fabrication flags raised then resolved before convergence \\
-7 & actor (LITREVIEW x11) & \texttt{546ca66e-11b7-4c87-8ec9-4430cf89e1ba} & PASS & Iter3 of section drafting: 11/11 sections PASS across 8 mechanical checks (anchor, cite-key allowlist, figure fences, no bare authors, forbidden lexicon, label directive, duplicate name) \\
-7V & validator (DATAML) & \texttt{546ca66e-11b7-4c87-8ec9-4430cf89e1ba} & PASS & Send-back loop: iter1=211 failures -\textgreater  iter2=4 -\textgreater  iter3=0; 1037 valid cite-keys loaded for allowlist check \\
-8 & critic (LITREVIEW x11) & \texttt{c0be6fa8-f264-4438-8180-4c8345b8a1bd} & PASS & Iter1=22 MUST\_FIX across 8 sections; iter2=0 MUST\_FIX across all 11 sections; 49 SHOULD\_CAVEAT items carried forward as non-blocking polish; sec\_08 PRESENT-AS-GAP rule applied for 4 corpus-missing framework cite-keys \\
-9 & actor (DATAML) & \texttt{34e0ae60-0252-457c-a8e9-df479b074995} & PASS & references.bib: 1037 entries; 413 used keys; 0 syntax errors; 0 duplicate cite-keys; 2 cosmetic ASCII-fold encoding patches (Argunsah2024, Calin2023) \\
-9V & validator (DATAML) & \texttt{06e344fc-8707-4c3e-8925-300713fb15f7} & PASS & 12 checks: balanced braces, key uniqueness, key-keymap bijection, DOI-keymap match, 1037/1037 CrossRef HTTP-200, author/title/year cross-check, ASCII-clean, used-keys-in-bib for all 11 sections, no template contamination; 2 minor diacritic encoding notes (non-blocking) \\
-10 & actor (LITREVIEW) & \texttt{44b0dc13-21e5-446a-bed5-735371182786} & PASS & 6 cross-section integration passes (6a transitions, 6b crossref, 6c terminology, 6d continuity audit, 6e figure inventory, 6f hygiene); 10/11 sections modified, 54 edits; cite-key set (413 unique) preserved; 0 broken refs; 22 figures inventoried \\
-11 & actor (LITREVIEW) & \texttt{29c488bd-3ef3-49c2-95fc-55442961475e} & PASS & Introduction (1018 words, 76 cite-keys) + Conclusion (1079 words, 71 cite-keys); 0 new cite-keys (all keys drawn from 413-key body cite-set); all paragraphs \textgreater =4 cite-keys; 21 \{numref\}/\{ref\} cross-references resolved \\
-12 & critic (LITREVIEW) & \texttt{b4ce9c2b-938d-4352-bce3-696d0d3f1c80} & PASS & Bookend critic; iter1=1 MUST\_FIX (forbidden lexicon `canonical' in intro) + 5 SHOULD\_CAVEAT; iter2=0 MUST\_FIX after single-word patch; intro v2 vid 8c2df2b9; conclusion vid d2ae9ef1; 5 SHOULD\_CAVEAT carried forward \\
+1 & actor (LITREVIEW + DATAML) & \texttt{gates/gate_scope.json} & PASS & scope.json + provenance/review\_request.\{md,txt\}; 13 body sections, 14 evidence clusters, target \textgreater =2000 papers, frame 4ee0a0e5 (LITREVIEW scoping) -\textgreater  266fb089 (DATAML materialisation) \\
+1V & validator (DATAML) & \texttt{gates/gate_scope.json} & PASS & Phase-1 validation rolled into gate\_scope.json; frame e79b4741 \\
+2 & actor (LITREVIEW x14) & \texttt{gates/gate_evidence_compliance.json} & PASS & Per-cluster evidence JSONs; 1037 unique DOIs, 1779 findings, 84 conflicts; saturation logged across 14 clusters; per-cluster gate 14/14 \\
+2V & validator (DATAML) & \texttt{gates/gate_evidence_compliance.json} & PASS & Iter6 strict-fail on bibliography target only (1037\textless 2000); coordinator accepted saturation outcome at 1037 unique DOIs; 14/14 per-cluster gates PASS, compliance 0.9994; frames 3a462e11, ba58bb1b \\
+3 & actor (DATAML) & \texttt{provenance/citation_key_map.json} & PASS & citation\_key\_map (1037 keys; 0 collisions; 106 disambiguations; 0 CrossRef failures) + author\_name\_table.json (cdd3608c) \\
+3V & validator (DATAML) & \texttt{gates/gate_citation_infrastructure_validation_v2.json} & PASS & Per-entry pass rate 0.998; 1037/1037 CrossRef-resolved; 0 collisions; 2 consortium-author no-family entries reconciled by name match \\
+4 & actor (LITREVIEW) & \texttt{gates/gate_scaffold_approved.json} & PASS & Framework (vid 01bea2ad) approved: 13 sections, 26 figure slots, 60 conflicts\_to\_present, 6 recurring themes, total target 63000 words \\
+5 & actor (DATAML) & \texttt{gates/gate_evidence_curated.json} & PASS & 13 curated literature corpora + framework extracts + section citation maps + section author tables; 2726 findings curated (zero loss vs 1779 input); 51 conflicts assigned \\
+5V & validator (DATAML) & \texttt{gates/gate_evidence_curated_approved.json} & PASS & PASS\_WITH\_DOCUMENTED\_EXITS: coverage 99.8\% of Phase-2 unique DOIs; 0 intra-section duplicates; cross-section differentiation 0 avoidable; 2 documented exits (sec\_04/sec\_09 below tier floor due to upstream saturation; 272 unavoidable single-CSS multi-cluster cases) \\
+6 & critic (LITREVIEW) & \texttt{gates/gate_figure_audit.json} & PASS & Blinded figure audit, 3 iterations: 36 panels -\textgreater  34 final (8 PASS, 26 CAVEAT, 0 REDESIGN, 0 FABRICATION); 22 fabrication flags raised then resolved before convergence \\
+7 & actor (LITREVIEW x11) & \texttt{gates/gate_sections_drafted_iter3.json} & PASS & Iter3 of section drafting: 11/11 sections PASS across 8 mechanical checks (anchor, cite-key allowlist, figure fences, no bare authors, forbidden lexicon, label directive, duplicate name) \\
+7V & validator (DATAML) & \texttt{gates/gate_sections_drafted_iter3.json} & PASS & Send-back loop: iter1=211 failures -\textgreater  iter2=4 -\textgreater  iter3=0; 1037 valid cite-keys loaded for allowlist check \\
+8 & critic (LITREVIEW x11) & \texttt{gates/gate_critic_complete.json} & PASS & Iter1=22 MUST\_FIX across 8 sections; iter2=0 MUST\_FIX across all 11 sections; 49 SHOULD\_CAVEAT items carried forward as non-blocking polish; sec\_08 PRESENT-AS-GAP rule applied for 4 corpus-missing framework cite-keys \\
+9 & actor (DATAML) & \texttt{content/references.bib} & PASS & references.bib: 1037 entries; 413 used keys; 0 syntax errors; 0 duplicate cite-keys; 2 cosmetic ASCII-fold encoding patches (Argunsah2024, Calin2023) \\
+9V & validator (DATAML) & \texttt{gates/gate_bibliography.json} & PASS & 12 checks: balanced braces, key uniqueness, key-keymap bijection, DOI-keymap match, 1037/1037 CrossRef HTTP-200, author/title/year cross-check, ASCII-clean, used-keys-in-bib for all 11 sections, no template contamination; 2 minor diacritic encoding notes (non-blocking) \\
+10 & actor (LITREVIEW) & \texttt{gates/gate_integration.json} & PASS & 6 cross-section integration passes (6a transitions, 6b crossref, 6c terminology, 6d continuity audit, 6e figure inventory, 6f hygiene); 10/11 sections modified, 54 edits; cite-key set (413 unique) preserved; 0 broken refs; 22 figures inventoried \\
+11 & actor (LITREVIEW) & \texttt{gates/gate_intro_conclusion.json} & PASS & Introduction (1018 words, 76 cite-keys) + Conclusion (1079 words, 71 cite-keys); 0 new cite-keys (all keys drawn from 413-key body cite-set); all paragraphs \textgreater =4 cite-keys; 21 \{numref\}/\{ref\} cross-references resolved \\
+12 & critic (LITREVIEW) & \texttt{gates/gate_bookend_critic.json} & PASS & Bookend critic; iter1=1 MUST\_FIX (forbidden lexicon `canonical' in intro) + 5 SHOULD\_CAVEAT; iter2=0 MUST\_FIX after single-word patch; intro v2 vid 8c2df2b9; conclusion vid d2ae9ef1; 5 SHOULD\_CAVEAT carried forward \\
 13 & actor (DATAML) & \texttt{\textless this gate\textgreater } & PASS & Methods.md transparency document with M.1 Review Request, M.2 Scope and TOC, M.3 Evidence corpus and curation, M.4 Citation infrastructure, M.5 Drafting and critic protocol, M.6 Pipeline ledger, M.7 Bibliography and integration, M.8 Limitations, reproducibility and data availability \\
 14-20 & Pending - to be populated at Phase 20a & \texttt{-} & Pending & Phase 14 (document assembly), Phase 15 (citation triples), Phase 16 (verification), Phase 17 (fix preparation), Phase 18 (LITREVIEW fix application), Phase 19 (fix application + final myst build), Phase 20 (repository push). Phase 20a (Methods Ledger Refresh) replaces this row with executed-phase outcomes and refreshes the Phase-13 snapshot. \\
 \bottomrule
@@ -2222,11 +2222,11 @@ Phase & Role / Agent & Gate VID & Status & Outcome notes \\
 
 \section{Bibliography and Integration}\label{sec-methods-bibliography-integration}
 
-Phase 9 (DATAML actor) produced \texttt{references.bib} (vid \texttt{34e0ae60-0252-457c-a8e9-df479b074995}) by re-resolving all 1,037 cite-keys against CrossRef, then rendering BibTeX entries with ASCII-folded author and journal fields and the canonical project key set. The bibliography contains 1,037 entries (one per Phase-3 cite-key); 413 of those entries are actually used in the body text after Phase 7-10 drafting and integration, with the remaining 624 retained as the corpus-level references manifest so that Phase 18 / 19 fix passes can re-cite without re-resolving DOIs.
+Phase 9 (DATAML actor) produced \texttt{references.bib} (vid \texttt{content/references.bib}) by re-resolving all 1,037 cite-keys against CrossRef, then rendering BibTeX entries with ASCII-folded author and journal fields and the canonical project key set. The bibliography contains 1,037 entries (one per Phase-3 cite-key); 413 of those entries are actually used in the body text after Phase 7-10 drafting and integration, with the remaining 624 retained as the corpus-level references manifest so that Phase 18 / 19 fix passes can re-cite without re-resolving DOIs.
 
-Phase 9V (DATAML validator) ran twelve checks against \texttt{references.bib} and gate vid \texttt{06e344fc-8707-4c3e-8925-300713fb15f7} records the outcomes: balanced braces, required fields per entry type, cite-key uniqueness, exact match to the Phase-3 keymap, unescaped DOI match, 1,037 / 1,037 CrossRef HTTP-200 with concurrency 3 and observed throughput 6.7 req/s (no rate-limit hits), first-author surname match against CrossRef, title Jaccard \textgreater = 0.85 against CrossRef, year match within 1, ASCII-clean author/title/journal, used-keys-present-in-bib for all 11 body sections, and no placeholder / template contamination. Two minor character-substitution encoding losses were flagged and patched (Argunsah2024 expecting ``Argun(s with cedilla under)ah'', Calin2023 expecting ``C(a with breve)lin'') -- both are cosmetic (DOI / year / title still match CrossRef) and were applied as ASCII-fold patches before the gate closed.
+Phase 9V (DATAML validator) ran twelve checks against \texttt{references.bib} and gate vid \texttt{gates/gate_bibliography.json} records the outcomes: balanced braces, required fields per entry type, cite-key uniqueness, exact match to the Phase-3 keymap, unescaped DOI match, 1,037 / 1,037 CrossRef HTTP-200 with concurrency 3 and observed throughput 6.7 req/s (no rate-limit hits), first-author surname match against CrossRef, title Jaccard \textgreater = 0.85 against CrossRef, year match within 1, ASCII-clean author/title/journal, used-keys-present-in-bib for all 11 body sections, and no placeholder / template contamination. Two minor character-substitution encoding losses were flagged and patched (Argunsah2024 expecting ``Argun(s with cedilla under)ah'', Calin2023 expecting ``C(a with breve)lin'') -- both are cosmetic (DOI / year / title still match CrossRef) and were applied as ASCII-fold patches before the gate closed.
 
-Phase 10 (LITREVIEW integration) ran six cross-section integration passes over the 11 body sections (gate vid \texttt{44b0dc13-21e5-446a-bed5-735371182786}):
+Phase 10 (LITREVIEW integration) ran six cross-section integration passes over the 11 body sections (gate vid \texttt{gates/gate_integration.json}):
 
 \bigskip\noindent
 \begin{tabular}{p{\dimexpr 0.500\linewidth-2\tabcolsep}p{\dimexpr 0.500\linewidth-2\tabcolsep}}
@@ -2244,7 +2244,7 @@ Pass & Purpose \\
 
 \bigskip
 
-Outcomes: 10 of 11 sections were modified across the six passes, with 54 total integration edits; the cite-key set used in body text (413 unique keys) was preserved exactly through integration (no key added or removed); 0 broken cross-references after the 6b pass. Phase 11 (LITREVIEW bookend) then drafted the introduction (1,018 words, 76 cite-keys) and conclusion (1,079 words, 71 cite-keys), drawing strictly from the 413-key body cite-set with 0 new keys introduced; gate vid \texttt{29c488bd-3ef3-49c2-95fc-55442961475e}. Phase 12 (LITREVIEW bookend critic) closed in 2 iterations -- iter1 raised 1 MUST\_FIX (forbidden lexicon ``canonical'' appearing in the introduction thesis sentence) and 5 SHOULD\_CAVEAT items; iter2 returned 0 MUST\_FIX after a single-word patch produced introduction v2 (vid \texttt{8c2df2b9-9b64-489d-a96e-a893b705f673}). Gate vid: \texttt{b4ce9c2b-938d-4352-bce3-696d0d3f1c80}.
+Outcomes: 10 of 11 sections were modified across the six passes, with 54 total integration edits; the cite-key set used in body text (413 unique keys) was preserved exactly through integration (no key added or removed); 0 broken cross-references after the 6b pass. Phase 11 (LITREVIEW bookend) then drafted the introduction (1,018 words, 76 cite-keys) and conclusion (1,079 words, 71 cite-keys), drawing strictly from the 413-key body cite-set with 0 new keys introduced; gate vid \texttt{gates/gate_intro_conclusion.json}. Phase 12 (LITREVIEW bookend critic) closed in 2 iterations -- iter1 raised 1 MUST\_FIX (forbidden lexicon ``canonical'' appearing in the introduction thesis sentence) and 5 SHOULD\_CAVEAT items; iter2 returned 0 MUST\_FIX after a single-word patch produced introduction v2 (vid \texttt{content/01_introduction.md}). Gate vid: \texttt{gates/gate_bookend_critic.json}.
 
 Final post-Phase-10 section markdown version IDs (frozen for Phase 14 document assembly):
 
@@ -2253,19 +2253,19 @@ Final post-Phase-10 section markdown version IDs (frozen for Phase 14 document a
 \toprule
 Section & Title & Latest VID \\
 \hline
-02 & Molecular Identity and Transcriptomic Taxonomy & \texttt{e189b6e5-aae3-481d-82e5-8870a24f7220} \\
-03 & Developmental Origins and Postnatal Maturation & \texttt{792e88ec-8b92-467e-ba9c-ee39ebadf0e9} \\
-04 & Morphological Diversity & \texttt{2841dfeb-4224-4cce-9ade-f2f74d1a4cda} \\
-05 & Intrinsic Electrophysiology & \texttt{16e5706a-d0f5-4636-bb6f-ee7ee638c182} \\
-06 & Synaptic Properties and Connectivity & \texttt{26cbae49-97b3-4b31-b31a-b89d85d25837} \\
-07 & Local Circuit Motifs and the Disinhibition Framework & \texttt{7cb9d569-67c3-42fe-be46-a2e18c009b47} \\
-08 & In Vivo Function During Behavior & \texttt{e65c66be-b0a2-4485-af96-d4194546cbcc} \\
-09 & VIP Interneurons Across Brain Regions & \texttt{cd0140fc-71f7-494b-a955-cf8ffd290c6d} \\
-10 & Oscillatory Dynamics and Temporal Coordination & \texttt{b649c3b8-0807-4923-a6f2-07d187578a56} \\
-11 & Species Differences, Human Relevance, and Disease & \texttt{6d670eda-c36e-472a-a49d-c4a9b038b8dd} \\
-12 & Computational Models of VIP Circuit Function & \texttt{db34c27f-a56c-444f-b43e-a95dd20e6426} \\
-01 & Introduction (Phase 12 v2) & \texttt{8c2df2b9-9b64-489d-a96e-a893b705f673} \\
-13 & Synthesis and Conclusion & \texttt{d2ae9ef1-9e4e-472d-b33b-b624971eb2f9} \\
+02 & Molecular Identity and Transcriptomic Taxonomy & \texttt{content/02_classification.md} \\
+03 & Developmental Origins and Postnatal Maturation & \texttt{content/03_development.md} \\
+04 & Morphological Diversity & \texttt{content/04_morphology.md} \\
+05 & Intrinsic Electrophysiology & \texttt{content/05_electrophysiology.md} \\
+06 & Synaptic Properties and Connectivity & \texttt{content/06_synaptic_properties.md} \\
+07 & Local Circuit Motifs and the Disinhibition Framework & \texttt{content/07_disinhibition_framework.md} \\
+08 & In Vivo Function During Behavior & \texttt{content/08_in_vivo_behavior.md} \\
+09 & VIP Interneurons Across Brain Regions & \texttt{content/09_cross_areas.md} \\
+10 & Oscillatory Dynamics and Temporal Coordination & \texttt{content/10_oscillatory_dynamics.md} \\
+11 & Species Differences, Human Relevance, and Disease & \texttt{content/11_disease_translational.md} \\
+12 & Computational Models of VIP Circuit Function & \texttt{content/12_computational_models.md} \\
+01 & Introduction (Phase 12 v2) & \texttt{content/01_introduction.md} \\
+13 & Synthesis and Conclusion & \texttt{content/13_conclusion.md} \\
 \bottomrule
 \end{tabular}
 
@@ -2288,10 +2288,10 @@ Section & Title & Latest VID \\
 \textbf{Data availability.}
 
 \begin{itemize}
-\item Verbatim review request: \texttt{provenance/review\_request.md} (vid \texttt{77b58c28-2767-4383-a046-578dc3651e2e}) and \texttt{provenance/review\_request.txt} (vid \texttt{fee28415-68ee-4b35-b78f-2e7e1b7ad3fc}).
-\item Scope: \texttt{scope.json} vid \texttt{c98dccd8-1a53-4f6c-87bf-a2985a54b6c6}; \texttt{gate\_scope.json} vid \texttt{62c67e66-7c72-47e6-b08a-fd89764749b3}.
-\item Citation key map: vid \texttt{1fecfde0-a5e8-4748-90cc-f86d0945b6ef} (1,037 keys); author name table vid \texttt{cdd3608c-e6f5-46cb-8587-3fdde35db973}.
-\item Bibliography: \texttt{references.bib} vid \texttt{34e0ae60-0252-457c-a8e9-df479b074995} (1,037 entries; 413 used in body text).
+\item Verbatim review request: \texttt{provenance/review\_request.md} (vid \texttt{provenance/review_request.md}) and \texttt{provenance/review\_request.txt} (vid \texttt{provenance/review_request.txt}).
+\item Scope: \texttt{scope.json} vid \texttt{provenance/scope.json}; \texttt{gate\_scope.json} vid \texttt{gates/gate_scope.json}.
+\item Citation key map: vid \texttt{provenance/citation_key_map.json} (1,037 keys); author name table vid \texttt{provenance/author_name_table.json}.
+\item Bibliography: \texttt{references.bib} vid \texttt{content/references.bib} (1,037 entries; 413 used in body text).
 \item Gate JSONs for Phases 1-12 are listed in the Pipeline Ledger above.
 \item The 13 final body / bookend section markdown files are listed in M.7 with their version IDs.
 \item The final repository (post-Phase-20 push) will be \texttt{https://github.com/AllenNeuralDynamics/ComputationalReviewVIP}.

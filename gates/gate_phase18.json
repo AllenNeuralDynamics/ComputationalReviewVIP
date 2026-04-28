@@ -1,0 +1,58 @@
+{
+  "phase": 18,
+  "gate_name": "cross_section_integration_consistency",
+  "gate_decision": "FAIL",
+  "must_fix_count": 1,
+  "should_fix_count": 5,
+  "summary_metrics": {
+    "sections_read": 14,
+    "recurring_concepts_consistent": true,
+    "broken_forward_refs": 0,
+    "orphan_uncited_claims": 1,
+    "stylistic_repetition_hits": 11
+  },
+  "must_fix_list": [
+    {
+      "id": "MF-18.1",
+      "section": "11_disease_translational.md",
+      "category": "orphan_uncited_claim",
+      "one_line": "Quoted \"4.5, 5.2, 6.6%\" human-M1 VIP density statistic lacks inline citation; restore Teymornejad2024a."
+    }
+  ],
+  "should_fix_list": [
+    {
+      "id": "SF-18.1",
+      "category": "stylistic_repetition",
+      "one_line": "\"Prior reports\" used 61\u00d7 globally (18 in \u00a705, 23 in \u00a708, 15 in \u00a703) \u2014 diversify openers."
+    },
+    {
+      "id": "SF-18.2",
+      "category": "stylistic_repetition",
+      "one_line": "\"An earlier study\" used 35\u00d7 globally \u2014 replace with explicit author-year where source is named in same sentence."
+    },
+    {
+      "id": "SF-18.3",
+      "category": "stylistic_repetition",
+      "one_line": "\"In the cited\" used 7\u00d7 in \u00a707 \u2014 replace placeholder phrasing."
+    },
+    {
+      "id": "SF-18.4",
+      "category": "meta_phrasing",
+      "one_line": "\"citation key map\" jargon (6\u00d7 in \u00a711) leaks pipeline meta-language into body prose."
+    },
+    {
+      "id": "SF-18.5",
+      "category": "orphan_borderline",
+      "one_line": "\u00a705 laminar overlap quotes (71/94/43/29%) ride on antecedent Guetmccreight2020b \u2014 verify primary source."
+    }
+  ],
+  "remediation_handoff": "Phase 18-remediation send-back required. No remediation attempted in this delegation per task spec.",
+  "inputs_audited": {
+    "manuscript_repo_v5": "1b93d024-2c68-486f-8e89-53aed639ae63",
+    "needs_fix_master": "eb28f773-4483-4009-a410-e6928d7b5194",
+    "remediation_log_w0": "2b314127-f4f2-4750-af4e-4033e0dab867",
+    "remediation_log_w1": "322fead6-5bc1-4a99-bfb9-ec5a0316b2dc",
+    "remediation_log_w2": "f267d621-2a4b-4e98-aeea-c3f596cdde1a",
+    "remediation_log_w3": "3f9e8c97-e2db-4e60-bc6a-c891935f9431"
+  }
+}

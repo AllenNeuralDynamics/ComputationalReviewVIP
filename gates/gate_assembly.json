@@ -1,0 +1,120 @@
+{
+  "phase": "14V",
+  "iteration": 4,
+  "gate": "pass",
+  "gate_passed": true,
+  "structural_results": {
+    "MYST_BUILD_PASSES": {
+      "pass": true,
+      "errors": 0,
+      "warnings": 0,
+      "returncode": 0
+    },
+    "BUILD_PASSES": {
+      "pass": true,
+      "alias_of": "MYST_BUILD_PASSES"
+    },
+    "ZERO_CITATION_ERRORS": {
+      "pass": true,
+      "unique_keys": 414,
+      "invocations": 1817,
+      "orphans": 0,
+      "bib_entries": 1038
+    },
+    "FIGURE_DROPDOWN_MATCH": {
+      "pass": true,
+      "total_figs": 22,
+      "total_dropdowns": 22
+    },
+    "FIGURE_NOTEBOOK_MATCH": {
+      "pass": true,
+      "referenced_figs": 20,
+      "missing_imgs": 0,
+      "missing_nbs": 0,
+      "n_notebooks": 24
+    },
+    "FIGURE_WIDTHS_OK": {
+      "pass": true,
+      "figure_blocks": 22,
+      "with_width": 22
+    },
+    "AUTHORS_YML_EXISTS": {
+      "pass": true,
+      "n_authors": 1
+    },
+    "ALL_PLUGINS_LISTED": {
+      "pass": true,
+      "plugins": [
+        "plugins/authorship.mjs",
+        "plugins/evidence-explorer.mjs",
+        "plugins/figure-lightbox.mjs"
+      ],
+      "form": "bare-string"
+    },
+    "PLUGIN_DIRECTIVES_INVOKED": {
+      "pass": true,
+      "evidence_invocations": 1,
+      "plugins_loaded_at_build": 3,
+      "directives_registered": 1,
+      "transforms_registered": 1
+    },
+    "HEADING_STYLE_CONSISTENT": {
+      "pass": true,
+      "violations": 0,
+      "scanner": "code-fence-aware"
+    },
+    "ANCHORS_UNIQUE": {
+      "pass": true,
+      "total_anchors": 32,
+      "duplicates": 0
+    },
+    "NO_PROCESS_LANGUAGE": {
+      "pass": true,
+      "tokens_checked": [
+        "Operon",
+        "operon",
+        "verdict",
+        "Verdict",
+        "orchestrator",
+        "Orchestrator",
+        "evidence package",
+        "evidence packages"
+      ],
+      "hits": 0
+    },
+    "FORBIDDEN_LEXICON": {
+      "pass": true,
+      "hits": 0
+    },
+    "EVIDENCE_PACKAGES_OK": {
+      "pass": true,
+      "n_files": 13,
+      "sum_paper_count_unique": 2370
+    },
+    "TOC_FS_MATCH": {
+      "pass": true,
+      "toc_files": 14,
+      "fs_md_files": 14
+    },
+    "REVIEW_REQUEST_PROVENANCE": {
+      "pass": true,
+      "size_bytes": 3833
+    }
+  },
+  "remediation_status_v3_to_v4": {
+    "MYST_BUILD_PASSES": "FIXED \u2014 plugins/evidence-explorer.mjs run() now returns container[kind=evidence] with children=[code(json), caption(paragraph)]. The code(json) child satisfies myst's container-kind=evidence validator; the caption preserves the section-id label. myst build now exits 0 with empty stderr (was 1 \u26d4).",
+    "BUILD_PASSES": "see MYST_BUILD_PASSES"
+  },
+  "failed_checks": [],
+  "build_result": {
+    "returncode": 0,
+    "myst_errors": 0,
+    "myst_warnings": 0,
+    "plugins_loaded": 3,
+    "directives_registered": 1,
+    "transforms_registered": 1,
+    "pages_built": 14
+  },
+  "myst_build_log_excerpt": "\ud83d\udd0c authorship loaded: 0 directives, 0 roles, 0 transforms\n\ud83d\udd0c evidence-explorer loaded: 1 directive, 0 roles, 0 transforms\n\ud83d\udd0c figure-lightbox loaded: 0 directives, 0 roles, 1 transform\n\ud83d\udcda Built 14 pages for project in 7.71 s.\nstderr: <empty>",
+  "summary_notes": "Phase 14V iter4: ALL 16 structural checks PASS. myst build exits 0 with empty stderr \u2014 no \u26d4 errors, no \u26a0 warnings. The iter3 evidence-directive container-validation failure is FIXED: plugins/evidence-explorer.mjs v2 now emits container[kind=evidence] with [code(json), caption(paragraph)] children, satisfying myst's container validator. All 3 plugins load successfully (authorship 0 dirs, evidence-explorer 1 dir, figure-lightbox 1 transform); the {evidence} directive is invoked once (Methods.md:4) and resolves cleanly. All previously-passing checks remain green: 22/22 figure-dropdown pairs across 11 sections, 20/20 figure-notebook matches (24 .ipynb), 1038-entry references.bib with 0 orphan cite-keys (414 unique keys, 1817 invocations), authors.yml with corresponding email, anchors unique (32/32), figure :width: declared on all 22 figures, 0 forbidden-lexicon hits (Operon/operon/verdict/orchestrator), evidence packages populated (sum paper_count_unique=2370 \u2265 2000), TOC\u2194filesystem exact match (14/14), heading style consistent (0 violations under code-fence-aware scanner), review-request provenance preserved. Gate=PASS."
+}

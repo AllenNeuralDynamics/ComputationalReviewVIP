@@ -15,19 +15,19 @@ A claim sentence containing the multi-key form `` {cite:p}`A,B,C` `` is exploded
 
 ## 2. Pipeline (Phases 15-19)
 
-| Phase | Purpose | Gate artifact VID | Outcome |
+| Phase | Purpose | Gate / artifact path | Outcome |
 |---|---|---|---|
-| 15  | Citation-triple extraction (DATAML)                                | `7411aef0-fc2d-4deb-ad73-fc7c024493c5` | 3,816 triples; 414 unique cite-keys; 0 orphans; 212 batches of 18 |
-| 15V | Triple-extraction structural validation (DATAML)                   | `b946853b-cc4f-40d6-9ccc-9db085012b8b` | 9/9 checks PASS                                              |
-| 16  | Phase-16 verification, 4 LITREVIEW workers W0-W3                   | `ac2b6736-eab9-4e23-aaab-cbd50fea7bfe` | 2,500 V / 435 NF / 881 IE                                    |
-| 16V | Verification structural validation + calibration audit (DATAML)    | `ed8207de-aef2-43a0-8f0b-956cf5cd54ea` | 9/9 sanity checks PASS; calibration audit flags W1 drift     |
-| 17B | Re-verification of 881 IE triples under W0/W2/W3 calibration       | `cc48cc1b-a308-45f5-9f5b-b1ba8461134a` | 351 -> V; 127 -> NF; 403 remained IE                          |
-| 17B-V | Re-verification aggregate validation (DATAML)                    | `73e8d95d-e514-4e60-8ed8-8dfe071ab1b3` | 12/12 checks PASS                                            |
-| 17A | Fix application: 4 LITREVIEW workers remediate 562 NEEDS_FIX       | `2b314127, 322fead6, f267d621, 3f9e8c97` | All 562 NF triples addressed via REWRITE_CLAIM / REMOVE_CITE |
-| 17V | Post-fix structural validation (DATAML)                            | `6bf953c0-3919-44d3-a8d9-116b20e80a45` | 5/6 PASS; FORBIDDEN_LEXICON conditional pass; PROCEED         |
-| 18  | Cross-section consistency book-end critic (LITREVIEW)              | `d412cbdd-99f1-4603-85aa-508c775a0ef7` | FAIL -> remediation: 1 MUST_FIX + 5 SHOULD_FIX                |
-| 18-rem | Phase-18 remediation send-back (DATAML)                          | `aef84912-a493-463e-b5b7-2d080db5523e` | 111 edit operations; all 1+5 items resolved                  |
-| 19  | Final QA on manuscript v6 (DATAML)                                 | `f9bd8833-0d5a-4efb-bf6a-951a3362f05b` | 16/16 QA checks PASS                                         |
+| 15  | Citation-triple extraction (DATAML)                                | `gates/gate_triples_extraction.json` | 3,816 triples; 414 unique cite-keys; 0 orphans; 212 batches of 18 |
+| 15V | Triple-extraction structural validation (DATAML)                   | `gates/gate_triples_validation.json` | 9/9 checks PASS                                              |
+| 16  | Phase-16 verification, 4 LITREVIEW workers W0-W3                   | `provenance/verification_report.json` | 2,500 V / 435 NF / 881 IE                                    |
+| 16V | Verification structural validation + calibration audit (DATAML)    | `gates/gate_verification.json` | 9/9 sanity checks PASS; calibration audit flags W1 drift     |
+| 17B | Re-verification of 881 IE triples under W0/W2/W3 calibration       | `provenance/verification_report_v2.json` | 351 -> V; 127 -> NF; 403 remained IE                          |
+| 17B-V | Re-verification aggregate validation (DATAML)                    | `gates/gate_verification_v2.json` | 12/12 checks PASS                                            |
+| 17A | Fix application: 4 LITREVIEW workers remediate 562 NEEDS_FIX       | frames `2b314127`, `322fead6`, `f267d621`, `3f9e8c97` | All 562 NF triples addressed via REWRITE_CLAIM / REMOVE_CITE |
+| 17V | Post-fix structural validation (DATAML)                            | `gates/gate_phase17v.json` | 5/6 PASS; FORBIDDEN_LEXICON conditional pass; PROCEED         |
+| 18  | Cross-section consistency book-end critic (LITREVIEW)              | `gates/gate_phase18.json` | FAIL -> remediation: 1 MUST_FIX + 5 SHOULD_FIX                |
+| 18-rem | Phase-18 remediation send-back (DATAML)                          | `provenance/phase18_remediation_log.json` | 111 edit operations; all 1+5 items resolved                  |
+| 19  | Final QA on manuscript v6 (DATAML)                                 | `gates/gate_phase19_qa.json` | 16/16 QA checks PASS                                         |
 
 ## 3. Verdict Taxonomy
 

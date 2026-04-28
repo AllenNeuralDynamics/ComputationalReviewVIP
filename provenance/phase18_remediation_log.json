@@ -1,0 +1,854 @@
+{
+  "phase": 18,
+  "phase_name": "Phase 18 Remediation — Address Consistency Report Findings",
+  "manuscript_version_input": "v5_post_phase17A (1b93d024-2c68-486f-8e89-53aed639ae63)",
+  "consistency_report_input": "f1b7c397-d94f-47c2-90d0-56a5dca23055",
+  "items": [
+    {
+      "fix_id": "MF-18.1",
+      "section": "11_disease_translational.md",
+      "before": "An earlier study, applying RNAscope and IHC to human postmortem M1, reported that \"VIP+ interneurons corresponded to 4.5, 5.2, and 6.6% …\" (no inline citation)",
+      "after": "{cite:t}`Teymornejad2024a`, applying RNAscope and IHC to human postmortem M1, reported that \"VIP+ interneurons …\" {cite:p}`Teymornejad2024a`",
+      "note": "Restored both narrative cite-key (replacing 'An earlier study') and trailing {cite:p} so the quoted statistic is attributable."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "(primary source filtered from this section's citation key map and listed under unmet citation needs)",
+      "after": "(primary source not in this section's allowlisted reference set and listed under unmet citation needs below)",
+      "note": "Removed 'citation key map' meta-jargon; rephrased with 'allowlisted reference set' / 'allowlisted bibliography'."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "from this section's citation key map and listed under unmet citation needs",
+      "after": "from this section's allowlisted reference set and listed under unmet citation needs below",
+      "note": "Removed 'citation key map' meta-jargon; rephrased with 'allowlisted reference set' / 'allowlisted bibliography'."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "filtered out of the section's citation key map; we flag these as unmet citation needs and discuss their consequence below.",
+      "after": "outside this section's allowlisted reference set; we flag them as unmet citation needs and discuss their consequence below.",
+      "note": "Removed 'citation key map' meta-jargon; rephrased with 'allowlisted reference set' / 'allowlisted bibliography'."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "are absent from the master citation key map and could not be cited in body text.",
+      "after": "fall outside this review's allowlisted bibliography and could not be cited in body text.",
+      "note": "Removed 'citation key map' meta-jargon; rephrased with 'allowlisted reference set' / 'allowlisted bibliography'."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "primary source is filtered from this section's citation key map",
+      "after": "primary source falls outside this section's allowlisted bibliography",
+      "note": "Removed 'citation key map' meta-jargon; rephrased with 'allowlisted reference set' / 'allowlisted bibliography'."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "primary 5xFAD-model evidence (primary source filtered from this section's citation key map and listed under unmet citation needs)",
+      "after": "primary 5xFAD-model evidence (primary source not in this section's allowlisted reference set and listed under unmet citation needs below)",
+      "note": "Removed 'citation key map' meta-jargon (additional pass)."
+    },
+    {
+      "fix_id": "SF-18.4",
+      "section": "11_disease_translational.md",
+      "before": "Huntington's-disease R6/2 reading (primary source filtered from this section's citation key map and listed under unmet citation needs)",
+      "after": "Huntington's-disease R6/2 reading (primary source not in this section's allowlisted reference set and listed under unmet citation needs below)",
+      "note": "Removed 'citation key map' meta-jargon (additional pass)."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "An earlier study",
+      "after": "An earlier report",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #1/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "An earlier study",
+      "after": "A preceding study",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #2/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "An earlier study",
+      "after": "An initial investigation",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #3/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "An earlier study",
+      "after": "An earlier analysis",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #4/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "an earlier report",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #1/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "a preceding study",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #2/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "an initial investigation",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #3/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "an earlier analysis",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #4/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "an early report",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #5/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "11_disease_translational.md",
+      "before": "an earlier study",
+      "after": "a previous study",
+      "note": "Rotated 'an earlier study' (lowercase mid-sentence) for stylistic variety; occurrence #6/6."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "An earlier study",
+      "after": "An earlier report",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #1/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "An earlier study",
+      "after": "A preceding study",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #2/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "An earlier study",
+      "after": "An initial investigation",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #3/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "An earlier study",
+      "after": "An earlier analysis",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #4/4."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an earlier report",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #1/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "a preceding study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #2/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an initial investigation",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #3/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an earlier analysis",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #4/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an early report",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #5/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "a previous study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #6/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an earlier paper",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #7/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "a foundational study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #8/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an earlier report",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #9/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "a preceding study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #10/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "04_morphology.md",
+      "before": "an earlier study",
+      "after": "an initial investigation",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #11/11."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "An earlier study",
+      "after": "An earlier report",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #1/2."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "An earlier study",
+      "after": "A preceding study",
+      "note": "Rotated 'An earlier study' for stylistic variety; occurrence #2/2."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "an earlier report",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #1/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "a preceding study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #2/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "an initial investigation",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #3/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "an earlier analysis",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #4/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "an early report",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #5/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "a previous study",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #6/7."
+    },
+    {
+      "fix_id": "SF-18.2",
+      "section": "06_synaptic_properties.md",
+      "before": "an earlier study",
+      "after": "an earlier paper",
+      "note": "Rotated 'an earlier study' (lowercase) for stylistic variety; occurrence #7/7."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #1/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #2/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #3/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #4/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #5/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #6/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #7/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Earlier studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #8/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #9/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #10/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #11/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #12/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #13/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #14/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "03_development.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #15/15."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #1/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #2/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #3/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #4/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #5/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #6/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #7/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #8/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #9/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #10/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #11/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #12/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #13/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #14/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #15/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #16/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #17/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "05_electrophysiology.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #18/18."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #1/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #2/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #3/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #4/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #5/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #6/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #7/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #8/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #9/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #10/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #11/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #12/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #13/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #14/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #15/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #16/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #17/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #18/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #19/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #20/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #21/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Earlier work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #22/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "08_in_vivo_behavior.md",
+      "before": "Prior reports",
+      "after": "Previous reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #23/23."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "10_oscillatory_dynamics.md",
+      "before": "Prior reports",
+      "after": "Prior work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #1/5."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "10_oscillatory_dynamics.md",
+      "before": "Prior reports",
+      "after": "Earlier reports",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #2/5."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "10_oscillatory_dynamics.md",
+      "before": "Prior reports",
+      "after": "Initial studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #3/5."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "10_oscillatory_dynamics.md",
+      "before": "Prior reports",
+      "after": "Foundational studies",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #4/5."
+    },
+    {
+      "fix_id": "SF-18.1",
+      "section": "10_oscillatory_dynamics.md",
+      "before": "Prior reports",
+      "after": "Established work",
+      "note": "Rotated 'Prior reports' for stylistic variety; occurrence #5/5."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "(sample sizes are not reported in the cited row of the curated literature)",
+      "after": "(sample sizes were not extracted into the curated row for that finding)",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "Pi 2013, error metric ‘± as printed’, n not reported in the cited row",
+      "after": "Pi 2013, error metric ‘± as printed’, n unrecorded in the curated entry",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "(sample sizes not reported in the cited row of the curated literature)",
+      "after": "(sample sizes were not deposited in the curated row for that entry)",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "(Fu 2014; sample size not reported in the cited row)",
+      "after": "(Fu 2014; sample size unrecorded in the curated entry)",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "(Lee 2013; sample sizes not reported in the cited row of the curated literature)",
+      "after": "(Lee 2013; sample sizes were not extracted into the curated row for that entry)",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "n not reported in the cited row — error metric should be downgraded",
+      "after": "n is unrecorded in the curated entry — the error metric should be downgraded",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.3",
+      "section": "07_disinhibition_framework.md",
+      "before": "no numeric n is in the cited row; this is a single-entry comparison",
+      "after": "no numeric n appears in the curated entry; this is a single-entry comparison",
+      "note": "Rephrased 'in the cited [row|preparations]' meta-jargon to natural prose."
+    },
+    {
+      "fix_id": "SF-18.5",
+      "section": "05_electrophysiology.md",
+      "before": "The same paper organised hippocampal IS interneurons into I-S1, I-S2, and I-S3 subtypes (antecedent ambiguous)",
+      "after": "{cite:t}`Guetmccreight2020b` further organised hippocampal IS interneurons into I-S1, I-S2, and I-S3 subtypes",
+      "note": "Replaced ambiguous 'The same paper' antecedent with explicit cite-key reference for laminar overlap percentages."
+    }
+  ],
+  "section_word_counts": {
+    "03_development.md": {
+      "before": 4889,
+      "after": 4889,
+      "delta_pct": 0.0
+    },
+    "04_morphology.md": {
+      "before": 4072,
+      "after": 4072,
+      "delta_pct": 0.0
+    },
+    "05_electrophysiology.md": {
+      "before": 4021,
+      "after": 4020,
+      "delta_pct": -0.025
+    },
+    "06_synaptic_properties.md": {
+      "before": 5764,
+      "after": 5764,
+      "delta_pct": 0.0
+    },
+    "07_disinhibition_framework.md": {
+      "before": 6171,
+      "after": 6169,
+      "delta_pct": -0.032
+    },
+    "08_in_vivo_behavior.md": {
+      "before": 6224,
+      "after": 6224,
+      "delta_pct": 0.0
+    },
+    "11_disease_translational.md": {
+      "before": 5937,
+      "after": 5934,
+      "delta_pct": -0.051
+    },
+    "10_oscillatory_dynamics.md": {
+      "before": 4680,
+      "after": 4680,
+      "delta_pct": 0.0
+    }
+  },
+  "sections_modified": [
+    "03_development.md",
+    "04_morphology.md",
+    "05_electrophysiology.md",
+    "06_synaptic_properties.md",
+    "07_disinhibition_framework.md",
+    "08_in_vivo_behavior.md",
+    "10_oscillatory_dynamics.md",
+    "11_disease_translational.md"
+  ],
+  "items_count": 111,
+  "must_fix_addressed": 1,
+  "should_fix_count_addressed": 5,
+  "constraints_satisfied": {
+    "zero_new_cite_keys": true,
+    "word_counts_within_5pct": true,
+    "no_new_forbidden_lexicon": true,
+    "phase17a_actions_preserved": true
+  },
+  "summary_per_fix": {
+    "MF-18.1": "Restored {cite:t}`Teymornejad2024a` (narrative) + trailing {cite:p}`Teymornejad2024a` on the orphan-quoted RNAscope/IHC sentence in §11.",
+    "SF-18.1 (Prior reports)": "Rotated 61 occurrences across §03 (15), §05 (18), §08 (23), §10 (5) using 8 alternates.",
+    "SF-18.2 (An earlier study)": "Rotated 35 case-insensitive occurrences across §04 (15), §06 (9), §11 (10 after MF-18.1) using 8 alternates.",
+    "SF-18.3 (in the cited, §07)": "Rephrased all 7 occurrences of 'in the cited [row|preparations]' to 'curated row/entry' or natural-prose paraphrases.",
+    "SF-18.4 (citation key map, §11)": "Removed all 6 occurrences; rephrased as 'allowlisted reference set' / 'allowlisted bibliography' or 'this review's allowlisted bibliography'.",
+    "SF-18.5 (the same paper, §05)": "Replaced ambiguous 'The same paper organised hippocampal IS interneurons …' antecedent with explicit '{cite:t}`Guetmccreight2020b` further organised …'."
+  }
+}

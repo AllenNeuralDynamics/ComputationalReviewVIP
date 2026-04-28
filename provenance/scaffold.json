@@ -1,0 +1,2489 @@
+{
+  "meta": {
+    "phase": 4,
+    "title": "VIP Interneurons in Cortical Computation: From Molecular Identity to Circuit Function",
+    "audience_brief": "systems/circuits & computational neuroscientists; graduate level",
+    "length_target_words_total": 63000,
+    "length_target_pages": "60-90",
+    "n_sections": 13,
+    "scaffold_version": "1.1",
+    "n_figures": 26
+  },
+  "central_argument_arc": {
+    "thesis_question": "How do VIP-expressing GABAergic interneurons — defined by CGE lineage and a distinctive transcriptomic, morphological, and physiological profile — implement disinhibitory and gain-modulatory operations that shape cortical computation, and to what extent does the canonical 'VIP disinhibitor' framing survive scrutiny under contemporary multi-modal evidence?",
+    "thesis_statement": "VIP-expressing interneurons are a CGE-derived, transcriptomically heterogeneous GABAergic class whose canonical role as cortical 'disinhibitors' captures a real and reproducible motif but is, on contemporary multi-modal evidence, an incomplete description: VIP cells implement context-, area-, and state-dependent operations — including direct inhibition of pyramidal neurons, parallel control of multiple interneuron classes, and oscillatory and developmental scaffolding functions — that the simple VIP→SST→Pyr motif cannot fully explain.",
+    "narrative_spine": "The review is organised as a three-act argument. Act 1 establishes what a VIP interneuron *is* across molecular, developmental, morphological, and intrinsic axes; Act 2 lays out the empirical complications — synaptic targets that include PV and pyramidal cells, motif diversity, in-vivo response heterogeneity across areas/behaviors, oscillatory and species/disease evidence — that erode a strict disinhibitor reading; Act 3 uses computational models and cross-cluster synthesis to recast VIP cells as multifunctional state- and context-gated controllers and to inventory open questions.",
+    "acts": [
+      {
+        "act": 1,
+        "label": "Establishment: What is a VIP interneuron?",
+        "sections": [
+          "section_01",
+          "section_02",
+          "section_03",
+          "section_04",
+          "section_05"
+        ],
+        "purpose": "Define the class across molecular, developmental, morphological, and intrinsic-physiological axes; introduce the canonical disinhibitor framing that subsequent acts will test."
+      },
+      {
+        "act": 2,
+        "label": "Complications: Connectivity, function, and context",
+        "sections": [
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_09",
+          "section_10",
+          "section_11"
+        ],
+        "purpose": "Surface the body of evidence that VIP function is heterogeneous across cells, motifs, brain regions, behaviors, oscillatory regimes, species, and disease — i.e., the data that complicate a univocal 'disinhibitor' reading."
+      },
+      {
+        "act": 3,
+        "label": "Synthesis & open questions",
+        "sections": [
+          "section_12",
+          "section_13"
+        ],
+        "purpose": "Use computational/theoretical models to integrate the empirical strands, then critically reassess the canonical VIP-disinhibitor framing and articulate open questions."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "section_01",
+      "title": "Introduction",
+      "cross_ref_label": "sec-introduction",
+      "act": 1,
+      "thesis": "VIP-expressing interneurons occupy a distinctive niche in cortical microcircuitry: a numerically small, CGE-derived GABAergic population that has become the canonical example of cortical 'disinhibition' through a stereotyped VIP→SST→pyramidal motif. This review motivates a critical reassessment of that framing, arguing that contemporary multi-modal evidence — transcriptomic, connectomic, in-vivo, and computational — supports a richer view of VIP cells as multifunctional, state- and context-gated regulators of cortical gain.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "field": "strongest_evidence",
+          "note": "canonical VIP→SST→Pyr disinhibition motif (Pi/Lee/Fu/Zhang 2013–2014)"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "field": "strongest_evidence",
+          "note": "5-HT3AR/CGE lineage context for VIP cells"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "figure_data[0]",
+          "note": "Tasic 2018 hierarchical taxonomy showing VIP within CGE branch"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 6,
+          "paper_a_cite_key": "Lee2013",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1038/nn.3544",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Whether the canonical VIP→SST disinhibition motif generalizes across cortical areas and behavioral contexts.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "(Opening section — no prior content.)",
+      "connection_to_next": "The Introduction frames the canonical VIP-disinhibitor model and the questions this review will pressure-test; Section 2 begins the test by asking what a VIP cell is at the molecular and transcriptomic level.",
+      "cross_references": [
+        "sec-molecular-identity",
+        "sec-disinhibition-framework",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 2500,
+      "figures": [
+        {
+          "label": "fig-roadmap",
+          "type": "schematic",
+          "argument_supported": "Visual outline of the canonical VIP→SST→Pyr motif and the multi-modal axes (molecular, developmental, morphological, intrinsic, synaptic, in-vivo, oscillatory, cross-area, species/disease, computational) that the review uses to test it.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Three-cell schematic of the canonical disinhibition motif (VIP→SST→Pyr; VIP→PV minor) with arrow weights flagged 'TBD in §6/§7'.",
+            "Panel B: Roadmap diagram aligning the 13 sections to the three-act arc (Establishment → Complications → Synthesis)."
+          ]
+        },
+        {
+          "label": "fig-canonical-motif-snapshot",
+          "type": "data_panel",
+          "argument_supported": "Preview of the empirical landscape: optogenetic perturbation of cortical VIP cells produces qualitatively different effects on Pyr firing across cardinal studies — the headline observation that motivates the review's reassessment thesis.",
+          "data_source": "Synthesis of effect-direction reports from cluster_06_disinhibition_circuit (strongest_evidence + conflicts: Pi2013, Lee2013, Fu2014, Zhang2014, Pakan2016) and cluster_07_in_vivo_function.figure_data[0] (locomotion-driven VIP ΔF/F summary).",
+          "panels": [
+            "Panel A: Mini forest plot of VIP→Pyr-firing-rate effect direction (positive/null/negative) across the four cardinal disinhibition studies (Pi 2013, Lee 2013, Fu 2014, Zhang 2014).",
+            "Panel B: Bar comparison of locomotion-driven V1 VIP ΔF/F vs concurrent SST ΔF/F — Fu 2014 vs Pakan 2016 — flagged as the canonical-motif puzzle the review will revisit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_02",
+      "title": "Molecular Identity and Transcriptomic Taxonomy",
+      "cross_ref_label": "sec-molecular-identity",
+      "act": 1,
+      "thesis": "VIP interneurons are a transcriptomically defined GABAergic subclass within the CGE-derived 5-HT3AR lineage, robustly separable from MGE-derived SST and PV classes at the subclass level across modern scRNA-seq atlases, but exhibiting dataset- and species-dependent granularity at the t-type level. Within the VIP subclass, sub-populations including VIP/ChAT, VIP/CR, and VIP/CCK form biologically meaningful axes whose number and discreteness depend on resolution, atlas integration method, and species.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "strongest_evidence",
+          "note": "VIP/ChAT cells co-release GABA + ACh (Granger 2020)"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "figure_data[0]",
+          "note": "Tasic 2018 hierarchical dendrogram, 6 GABAergic subclasses, ~14 VIP t-types"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "replicated_claims[0]",
+          "note": "VIP/ChAT identity replicated"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "evidence_gaps[0]",
+          "note": "human VIP t-type validation sparse"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "evidence_gaps[1]",
+          "note": "5-fold variability in reported %ChAT+ VIP fraction"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "evidence_gaps[2]",
+          "note": "VIP-Cre vs VIP-IRES-Cre off-target labelling"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "field": "strongest_evidence",
+          "note": "5-HT3AR as CGE-class marker"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Tasic2016",
+          "paper_b_cite_key": "Tasic2018",
+          "paper_a_doi": "10.1038/nn.4216",
+          "paper_b_doi": "10.1038/s41586-018-0654-5",
+          "nature": "Number of cortical VIP transcriptomic types",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Gouwens2020a",
+          "paper_b_cite_key": "Scala2021",
+          "paper_a_doi": "10.1016/j.cell.2020.09.057",
+          "paper_b_doi": "10.1038/s41586-020-2907-3",
+          "nature": "Concordance between transcriptomic types and morpho-electric phenotypes within VIP subclass",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Hodge2019",
+          "paper_b_cite_key": "Mayer2018",
+          "paper_a_doi": "10.1038/s41586-019-1506-7",
+          "paper_b_doi": "10.1038/nature25999",
+          "nature": "Whether mouse VIP/CGE transcriptomic taxonomy is directly transferable to human cortex (homology) or whether human VIP populations require species-specific subtype definitions (divergence).",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 4,
+          "paper_a_cite_key": "Bugeon2022",
+          "paper_b_cite_key": "Yao2021a",
+          "paper_a_doi": "10.1038/s41586-022-04915-7",
+          "paper_b_doi": "10.1016/j.cell.2021.04.021",
+          "nature": "Discrete clusters versus continuous transcriptomic gradients within the cortical VIP/CGE compartment.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 5,
+          "paper_a_cite_key": "Tremblay2016",
+          "paper_b_cite_key": "Mayer2018",
+          "paper_a_doi": "10.1016/j.neuron.2016.06.033",
+          "paper_b_doi": "10.1038/nature25999",
+          "nature": "Granularity of the VIP taxonomy: ~3 marker-defined subdivisions vs. ~14 transcriptomic types in the same brain region.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "The Introduction posed the canonical disinhibitor framing; this section establishes the molecular ground truth — what cells we are referring to when we say 'VIP'.",
+      "connection_to_next": "Section 3 takes the transcriptomic categories defined here and asks how they arise during development from CGE precursors and how they mature postnatally.",
+      "cross_references": [
+        "sec-introduction",
+        "sec-development-lineage",
+        "sec-morphology",
+        "sec-electrophysiology",
+        "sec-species-disease",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 5500,
+      "figures": [
+        {
+          "label": "fig-vip-taxonomy",
+          "type": "data_panel",
+          "argument_supported": "Subclass-level VIP/Sst/Pvalb separation is robust; t-type-level discreteness within VIP varies by dataset.",
+          "data_source": "cluster_01_molecular_taxonomy.figure_data[0] (Tasic 2018 Fig 1; 23,822 cells; 6 GABAergic subclasses; ~14 VIP t-types)",
+          "panels": [
+            "Panel A: Hierarchical dendrogram of cortical GABAergic taxonomy (subclass→t-type), showing CGE branch (Lamp5/Vip/Sncg/Serpinf1) vs MGE branch (Sst/Pvalb).",
+            "Panel B: Cross-study comparison table of reported VIP t-type counts (Tasic 2016 ~5; Tasic 2018 ~14; Yao 2021 BICCN; Hodge 2019 human MTG).",
+            "Panel C: Bar chart of reported %ChAT+ VIP and %CR+ VIP across studies (axis: % of cortical VIP; ranges ~5–25%).",
+            "Panel D: Schematic of major VIP molecular subdivisions (VIP/ChAT, VIP/CR, VIP/CCK) with key marker genes annotated."
+          ]
+        },
+        {
+          "label": "fig-vip-marker-tree",
+          "type": "schematic",
+          "argument_supported": "Marker-protein decision tree showing how immunolabel-based and Cre-driver-based definitions of 'VIP' carve cell populations differently from scRNA-seq subclasses, explaining why fraction estimates and labelling specificity disagree across studies.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Decision tree from cortical GABA → CGE branch (5-HT3AR/Prox1/Sp8) → VIP subclass → marker-defined subdivisions (VIP/ChAT, VIP/CR, VIP/CCK, VIP/Calb2) with overlap regions explicitly drawn.",
+            "Panel B: Side-by-side Venn cartoon of VIP-Cre vs VIP-IRES-Cre vs anti-VIP immunolabel populations, flagging known off-target classes (Sncg, Lamp5).",
+            "Panel C: Schematic mapping immunolabel categories onto Tasic-2018 t-types — illustrating where one-to-one, one-to-many, and many-to-one relationships hold."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_03",
+      "title": "Developmental Origins and Postnatal Maturation",
+      "cross_ref_label": "sec-development-lineage",
+      "act": 1,
+      "thesis": "VIP interneurons originate from caudal ganglionic eminence (CGE) progenitors expressing transcription factors including Prox1, Sp8, and Nr2f2; they migrate tangentially into cortex postnatally and acquire mature electrophysiological and synaptic properties through activity-dependent and intrinsic genetic programs. CGE-lineage proportions and the gene-regulatory logic specifying VIP subclasses are quantitatively divergent between rodent and primate, complicating direct translation of mouse fate-mapping to human.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_02_development_lineage",
+          "field": "strongest_evidence",
+          "note": "cell-autonomous activity reduction in CGE INs (De Marco García et al.)"
+        },
+        {
+          "cluster_id": "cluster_02_development_lineage",
+          "field": "figure_data[0]",
+          "note": "cross-study table of conditional CGE-TF KO phenotypes"
+        },
+        {
+          "cluster_id": "cluster_02_development_lineage",
+          "field": "replicated_claims[0]",
+          "note": "CGE origin of VIP+ cortical INs"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "field": "figure_data[0]",
+          "note": "% of cortical GABA from CGE/CR+ lineage across species"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "field": "strongest_evidence",
+          "note": "5-HT3AR-defined third class (Lee/Rudy)"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_02_development_lineage",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Tasic2016",
+          "paper_b_cite_key": "Tasic2018",
+          "paper_a_doi": "10.1038/nn.4216",
+          "paper_b_doi": "10.1038/s41586-018-0654-5",
+          "nature": "Whether VIP+ cell proportion is ~9% or ~18% of cortical GABAergic neurons depends on whether Lamp5/Sncg are pooled with VIP; older estimates over- or under-count VIP depending on clustering resolution.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Niquille2018",
+          "paper_b_cite_key": "Miyoshi2010",
+          "paper_a_doi": "10.7554/elife.32017",
+          "paper_b_doi": "10.1523/jneurosci.4515-09.2010",
+          "nature": "Developmental origin of neurogliaform cells: preoptic area (POA, Niquille) vs caudal ganglionic eminence (Lee). Both populations share 5-HT3AR/PROX1/RELN markers, complicating CGE-only fate-map interpretation.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Du2025",
+          "paper_b_cite_key": "Miyoshi2010",
+          "paper_a_doi": "10.1186/s13287-025-04603-z",
+          "paper_b_doi": "10.1523/jneurosci.4515-09.2010",
+          "nature": "Quantitative discrepancy in fraction of cortical GABAergic neurons attributable to CGE/CR+ lineage between mouse (~30%) and human (~50%), with implications for whether the CGE lineage is expanded in primates.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Chung2025",
+          "paper_b_cite_key": "Marin2025",
+          "paper_a_doi": "10.1242/dev.204306",
+          "paper_b_doi": "10.1111/ejn.70136",
+          "nature": "Whether the primate cortex contains substantial cortically-generated or otherwise non-GE-derived inhibitory neuron lineages, or whether GE-origin is fully conserved with quantitative rather than categorical primate differences.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 2 catalogued mature VIP transcriptomic identities; this section asks where they come from — the developmental program that yields the molecular axes we just reviewed.",
+      "connection_to_next": "Mature VIP subtypes acquire characteristic axonal/dendritic morphologies that Section 4 surveys.",
+      "cross_references": [
+        "sec-molecular-identity",
+        "sec-morphology",
+        "sec-species-disease",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 4500,
+      "figures": [
+        {
+          "label": "fig-cge-lineage",
+          "type": "schematic",
+          "argument_supported": "CGE-derived migration and TF-cascade that specifies VIP/Lamp5/Sncg subclasses, with cross-species quantitative mismatch flagged.",
+          "data_source": "cluster_02_development_lineage.figure_data[0] (TF-KO phenotype table) + cluster_13_cge_lineage_context.figure_data[0] (% CGE across species)",
+          "panels": [
+            "Panel A: Schematic of embryonic CGE → tangential migration → cortical layer settling, with key TFs (Prox1, Sp8, Nr2f2, Lhx6 contrast).",
+            "Panel B: Table of TF conditional-KO phenotypes (subtype loss, migration defects, AMPAR/glutamatergic input changes).",
+            "Panel C: Bar chart of reported % of cortical GABAergic neurons attributable to CGE/5-HT3AR/CR lineage (mouse fate-mapping ~30% vs human snRNA-seq ~50%)."
+          ]
+        },
+        {
+          "label": "fig-cge-fraction-cross-species",
+          "type": "data_panel",
+          "argument_supported": "Quantitative species comparison of the CGE/5-HT3AR/CR-defined inhibitory class as a fraction of cortical GABAergic neurons — the lineage substrate from which mature VIP subclasses arise — showing real biological expansion in primate cortex.",
+          "data_source": "cluster_13_cge_lineage_context.figure_data[0] (cross-study/species CGE/5-HT3AR/CR fraction summary)",
+          "panels": [
+            "Panel A: Bar chart of % cortical GABAergic neurons attributed to CGE/5-HT3AR/CR lineage across mouse fate-mapping (~30%) vs human snRNA-seq (~50%) studies (axis: % GABAergic).",
+            "Panel B: Stacked bar showing how that fraction is partitioned among VIP / Lamp5 / Sncg / Serpinf1 subclasses across mouse, marmoset, macaque, human (axis: % of CGE-class).",
+            "Panel C: Side timeline of CGE-progenitor TF cascade with conditional-KO outcome annotations from cluster_02_development_lineage.figure_data[0] (TF-KO phenotype table)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_04",
+      "title": "Morphological Diversity",
+      "cross_ref_label": "sec-morphology",
+      "act": 1,
+      "thesis": "Cortical VIP cells span a recognisable but graded morphological space dominated by bipolar/bitufted descending-axon morphologies, with smaller proportions of small-basket and arcade-like variants. Patch-seq and large-volume EM reconstructions indicate that subclass-level (VIP vs Sst vs Pvalb) morphological separation is robust, while within-VIP morphological clustering forms a continuum rather than fully discrete classes, with proportions varying across cortical area, layer, and species.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_03_morphology",
+          "field": "strongest_evidence",
+          "note": "MICrONS cubic-mm EM connectomic reconstruction"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "field": "figure_data[0]",
+          "note": "stacked-bar of VIP morphological subtype proportions"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "field": "replicated_claims[0]",
+          "note": "bipolar/descending-axon as dominant cortical VIP morphology"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "field": "evidence_gaps[0]",
+          "note": "morphological gaps"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_03_morphology",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Rudy2011",
+          "paper_b_cite_key": "Xu2010a",
+          "paper_a_doi": "10.1002/dneu.20853",
+          "paper_b_doi": "10.1002/cne.22229",
+          "nature": "quantitative_disagreement",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Gouwens2020a",
+          "paper_b_cite_key": "Gouwens2020b",
+          "paper_a_doi": "10.1016/j.cell.2020.09.057",
+          "paper_b_doi": "10.1101/2020.02.03.932244",
+          "nature": "discrete_vs_continuum",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Pronneke2015",
+          "paper_b_cite_key": "Badrinarayanan2021",
+          "paper_a_doi": "10.1093/cercor/bhv202",
+          "paper_b_doi": "10.3389/fncir.2021.653116",
+          "nature": "regional_difference_unconfirmed",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_03_morphology",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Chartrand2023",
+          "paper_b_cite_key": "Chartrand2023",
+          "paper_a_doi": "10.1126/science.adf0805",
+          "paper_b_doi": "10.1126/science.adf0805",
+          "nature": "cross_species_morphological_divergence",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Sections 2–3 established the molecular and developmental scaffold; this section asks how those molecular categories project into morphological space.",
+      "connection_to_next": "Morphology constrains intrinsic biophysics; Section 5 examines the firing patterns and passive properties that emerge from these dendritic/axonal architectures.",
+      "cross_references": [
+        "sec-molecular-identity",
+        "sec-electrophysiology",
+        "sec-synaptic-properties",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 4000,
+      "figures": [
+        {
+          "label": "fig-vip-morphologies",
+          "type": "data_panel",
+          "argument_supported": "Bipolar/descending-axon dominates; morphological space within VIP is graded; cross-species and cross-area variation is real.",
+          "data_source": "cluster_03_morphology.figure_data[0] (cross-study stacked bar of VIP morphological subtype proportions); MICrONS exemplar reconstructions",
+          "panels": [
+            "Panel A: Reconstructed exemplar morphologies — bipolar, bitufted, small-basket, arcade — drawn to scale.",
+            "Panel B: Stacked bar of VIP morphological-type proportions reported across studies (axis: % of VIP).",
+            "Panel C: UMAP-style embedding of Patch-seq morphological features (Gouwens vs Scala) coloured by transcriptomic t-type — illustrating discrete-vs-continuum debate.",
+            "Panel D: Layer-resolved heat map of bipolar-vs-multipolar VIP frequency (V1 vs M1; mouse vs human)."
+          ]
+        },
+        {
+          "label": "fig-vip-axonal-targeting-schematic",
+          "type": "schematic",
+          "argument_supported": "Bipolar/descending-axon morphology positions VIP terminals to target SST somata in deep layers and PV somata in upper layers, providing a structural rationale for translaminar disinhibition and for the area-specific motif weighting reviewed in §6 and §7.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Idealised L2/3-soma + descending-axon VIP cell drawn over a 6-layer cortical column, with SST, PV, and Pyr postsynaptic compartments highlighted.",
+            "Panel B: Comparison cartoon of small-basket vs arcade vs bipolar VIP variants and the postsynaptic compartments each preferentially contacts.",
+            "Panel C: Hippocampal IS3 cell schematic (soma in stratum oriens; OLM-targeting axon) for cross-region contrast."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_05",
+      "title": "Intrinsic Electrophysiology",
+      "cross_ref_label": "sec-electrophysiology",
+      "act": 1,
+      "thesis": "VIP interneurons exhibit a characteristic but heterogeneous intrinsic-firing repertoire dominated by irregular-spiking (IS) and continuous-adapting types, with high input resistance, modest sag/Ih, and fast-rising APs. Patch-seq integration shows that intrinsic-firing categories map imperfectly onto transcriptomic t-types: subclass-level features are well-predicted, but within-VIP e-types overlap, and individual properties (resting Vm, IS fraction, mechanism of irregularity) vary across studies and recording conditions.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "field": "strongest_evidence",
+          "note": "Patch-seq enables joint e-/t-/m-type extraction"
+        },
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "field": "figure_data[0]",
+          "note": "intrinsic firing taxonomy"
+        },
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "field": "replicated_claims[0]",
+          "note": "high Rin, IS firing common"
+        },
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Bell2015",
+          "paper_b_cite_key": "Michaud2024",
+          "paper_a_doi": "10.3389/fncel.2015.00115",
+          "paper_b_doi": "10.7554/elife.95412",
+          "nature": "Resting membrane potential of VIP+ interneurons",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Cauli2000",
+          "paper_b_cite_key": "Anastasiades2021a",
+          "paper_a_doi": "10.1073/pnas.97.11.6144",
+          "paper_b_doi": "10.1016/j.neuron.2020.10.031",
+          "nature": "Fraction of VIP+ interneurons exhibiting IS firing pattern",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_04_intrinsic_electrophysiology",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Porter1998",
+          "paper_b_cite_key": "Goff2019",
+          "paper_a_doi": "10.1046/j.1460-9568.1998.00367.x",
+          "paper_b_doi": "10.7554/elife.46846",
+          "nature": "Molecular mechanism producing irregular-spiking pattern in VIP cells",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "The morphologies of Section 4 are realised electrically in characteristic intrinsic firing patterns surveyed here.",
+      "connection_to_next": "Intrinsic biophysics interacts with synaptic input to produce the connectivity patterns analysed in Section 6.",
+      "cross_references": [
+        "sec-molecular-identity",
+        "sec-morphology",
+        "sec-synaptic-properties",
+        "sec-disinhibition-framework",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 4000,
+      "figures": [
+        {
+          "label": "fig-vip-ephys",
+          "type": "data_panel",
+          "argument_supported": "Subclass-level e-type identity is predictable; within-VIP e-types form a continuum; cross-study variability in single properties is non-trivial.",
+          "data_source": "cluster_04_intrinsic_electrophysiology.figure_data[0] + Patch-seq atlas comparisons",
+          "panels": [
+            "Panel A: Exemplar firing traces (IS, continuous-adapting, accommodating) at matched current step.",
+            "Panel B: Cross-study table/forest plot of Vm, Rin, AP half-width, sag ratio across VIP studies (axis: parameter value, mean ± SD).",
+            "Panel C: Stacked bar of reported IS-firing fraction across studies (axis: % of VIP cells).",
+            "Panel D: t-type × e-type confusion matrix from Patch-seq (Gouwens 2020 / Scala 2021)."
+          ]
+        },
+        {
+          "label": "fig-vip-firing-mechanism",
+          "type": "schematic",
+          "argument_supported": "Schematic of candidate ion-channel substrates of irregular-spiking firing in VIP cells (Kv-mediated repolarisation kinetics vs HCN-mediated sag/Ih), highlighting the locus of the Porter1998-vs-Goff2019 mechanistic disagreement.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Cartoon VIP-cell membrane with annotated channel complement (Nav, Kv1, Kv4, HCN/Ih, SK) and qualitative voltage-clamp traces.",
+            "Panel B: Two competing mechanism schematics for irregular-spiking — (i) Kv1-dominant repolarisation kinetics; (ii) HCN/sag-dependent rebound — with predicted current-clamp signatures.",
+            "Panel C: Decision flow mapping intrinsic-feature combinations (high Rin + IS + low sag → cluster A; etc.) onto Patch-seq e-types from cluster_04.figure_data[0]."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_06",
+      "title": "Synaptic Properties and Connectivity",
+      "cross_ref_label": "sec-synaptic-properties",
+      "act": 2,
+      "thesis": "VIP interneurons receive strong long-range cortico-cortical and thalamic input, modest local excitatory input, and powerful neuromodulatory (cholinergic, serotonergic, noradrenergic) drive; they output preferentially onto SST cells but also non-trivially onto PV and, in some preparations, directly onto pyramidal neurons. The widespread textbook claim that 'VIP cells inhibit only other interneurons' is empirically conditional — quantitatively contested across anatomical and functional studies and across cortical areas — and represents the first major divergence between canonical schematic and contemporary data.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "field": "strongest_evidence",
+          "note": "locomotion-driven VIP via nicotinic basal-forebrain input (Fu 2014)"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "field": "replicated_claims[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "field": "evidence_gaps[1]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_13_neuromodulation",
+          "field": "strongest_evidence",
+          "note": "VIP cells driven by ACh via nicotinic receptors"
+        },
+        {
+          "cluster_id": "cluster_13_neuromodulation",
+          "field": "figure_data[0]",
+          "note": "5-HT3AR co-expression fraction across studies"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Pfeffer2013",
+          "paper_b_cite_key": "Yu2019",
+          "paper_a_doi": "10.1038/nn.3446",
+          "paper_b_doi": "10.1016/j.neuron.2019.07.027",
+          "nature": "VIP→PV connectivity strength",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "conflict_index": 5,
+          "paper_a_cite_key": "Pfeffer2013",
+          "paper_b_cite_key": "Zhou2017",
+          "paper_a_doi": "10.1038/nn.3446",
+          "paper_b_doi": "10.1093/cercor/bhx220",
+          "nature": "VIP boutons target only interneurons (canonical) vs target pyramidal cells",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "conflict_index": 8,
+          "paper_a_cite_key": "Pfeffer2013",
+          "paper_b_cite_key": "Pi2013",
+          "paper_a_doi": "10.1038/nn.3446",
+          "paper_b_doi": "10.1038/nature12676",
+          "nature": "Functional vs. anatomical evidence: anatomical synapses do not always predict strong functional inhibition.; confidence: moderate; additional_dois: ['10.1111/j.1460-9568.2007.05496.x']",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "conflict_index": 9,
+          "paper_a_cite_key": "Wall2016",
+          "paper_b_cite_key": "Lee2013",
+          "paper_a_doi": "10.1523/jneurosci.3967-15.2016",
+          "paper_b_doi": "10.1038/nn.3544",
+          "nature": "Anatomy aggregates all inputs; functional studies isolate single source areas. No real conflict at the data level.; confidence: high; additional_dois: ['10.1126/science.1254126', '10.1038/s41586-019-1716-z']",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_13_neuromodulation",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Poorthuis2018",
+          "paper_b_cite_key": "Arroyo2012",
+          "paper_a_doi": "10.1016/j.celrep.2018.03.111",
+          "paper_b_doi": "10.1523/jneurosci.0115-12.2012",
+          "nature": "Opposite-sign cholinergic effects on overlapping populations of 5-HT3AR/VIP cortical interneurons (nicotinic excitation vs. muscarinic inhibition), implying neuromodulator-context-dependent recruitment.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Sections 2–5 established VIP identity in isolation; this section embeds VIP cells in their afferent and efferent synaptic context — and surfaces the first major complication to the canonical disinhibitor framing.",
+      "connection_to_next": "Connectivity data feed directly into the circuit-level reading of Section 7, where the disinhibition motif and its alternatives are evaluated as canonical claims.",
+      "cross_references": [
+        "sec-electrophysiology",
+        "sec-disinhibition-framework",
+        "sec-in-vivo-function",
+        "sec-cross-areas",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 5500,
+      "figures": [
+        {
+          "label": "fig-vip-connectome",
+          "type": "network",
+          "argument_supported": "VIP outputs are not exclusively to SST cells; afferent drive is dominated by cholinergic/long-range inputs.",
+          "data_source": "cluster_05_synaptic_properties_connectivity.figure_data + cluster_13_neuromodulation.figure_data",
+          "panels": [
+            "Panel A: Connectivity matrix (rows: input source — local Pyr, long-range, ACh, 5-HT, NA; columns: VIP / SST / PV) with edge weights from paired-recording / optogenetic-CRACM studies.",
+            "Panel B: Output matrix VIP → {SST, PV, Pyr, NDNF, OLM} with connection probability and IPSC amplitude (means + ranges across studies).",
+            "Panel C: Forest plot of VIP→PV connectivity strength across studies (Pfeffer 2013, Yu 2019, Pi 2013, others).",
+            "Panel D: Schematic of cholinergic recruitment (nicotinic excitation vs muscarinic inhibition) of VIP/5-HT3AR cells."
+          ]
+        },
+        {
+          "label": "fig-vip-neuromodulator-pharmacology",
+          "type": "data_panel",
+          "argument_supported": "Cholinergic, serotonergic, and noradrenergic afferents are quantitatively dominant drivers of VIP recruitment, but nicotinic and muscarinic ACh produce opposite-sign effects on overlapping VIP populations — a pharmacological complication that the synaptic-connectivity diagram alone cannot capture.",
+          "data_source": "cluster_13_neuromodulation.figure_data[0] (fraction of cortical VIP co-expressing 5-HT3AR across studies) plus cluster_13_neuromodulation.conflicts (nicotinic vs muscarinic effect-direction).",
+          "panels": [
+            "Panel A: Bar chart of fraction of cortical VIP cells co-expressing 5-HT3AR across studies (axis: % of VIP, mean ± range).",
+            "Panel B: Forest plot of nicotinic vs muscarinic ACh effect on VIP firing rate (Poorthuis2018 vs Arroyo2012; axis: fold-change in firing).",
+            "Panel C: Cross-study compilation of reported effect of locomotion/arousal on VIP ΔF/F partitioned by inferred neuromodulator (ACh, NA, 5-HT)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_07",
+      "title": "Local Circuit Motifs and the Disinhibition Framework",
+      "cross_ref_label": "sec-disinhibition-framework",
+      "act": 2,
+      "thesis": "The VIP→SST→pyramidal disinhibition motif is reproducible and behaviourally engaged in multiple cortical preparations, but it is one of several VIP-mediated motifs — including direct VIP→PV, VIP→Pyr, and VIP→NDNF circuits — that operate in parallel and whose relative weights depend on cortical area, layer, and behavioural state. The canonical motif is best read as a privileged but non-exclusive channel for state-dependent gain, not a defining function of the class.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "field": "strongest_evidence",
+          "note": "Zhang 2014 — top-down recruitment of VIP→SST disinhibition"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "field": "replicated_claims[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_12_sst_pv_context",
+          "field": "strongest_evidence",
+          "note": "locomotion activates VIP via cholinergic input"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Pfeffer2013",
+          "paper_b_cite_key": "Pi2013",
+          "paper_a_doi": "10.1038/nn.3446",
+          "paper_b_doi": "10.1038/nature12676",
+          "nature": "Specificity of VIP→SST inhibition vs broader VIP→PV inhibition",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Lee2013",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.1038/nn.3544",
+          "nature": "Whether top-down vs neuromodulatory inputs are the primary driver of cortical VIP recruitment",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 6,
+          "paper_a_cite_key": "Lee2013",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1038/nn.3544",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Whether the canonical VIP→SST disinhibition motif generalizes across cortical areas and behavioral contexts.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 7,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Kuchibhotla2017",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.1038/nn.4436",
+          "nature": "Whether VIP disinhibition is the privileged channel for behavioral-state cortical gain or one of several parallel inhibitory streams.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 8,
+          "paper_a_cite_key": "Lee2013",
+          "paper_b_cite_key": "Pi2013",
+          "paper_a_doi": "10.1038/nn.3544",
+          "paper_b_doi": "10.1038/nature12676",
+          "nature": "Primary upstream driver of VIP recruitment: long-range cortical glutamatergic vs neuromodulatory cholinergic.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_12_sst_pv_context",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Pfeffer2013",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.1038/nn.3446",
+          "nature": "Disinhibition vs direct PV recruitment as the dominant mode of VIP→pyramidal control",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 6 inventoried VIP synaptic inputs and outputs; this section takes that wiring and asks what cortical circuit motifs it implements, with the canonical VIP→SST→Pyr motif as the focal hypothesis to be tested.",
+      "connection_to_next": "Section 8 evaluates these motifs in vivo, asking whether they predict observed VIP activity during behaviour — and where they fail to do so.",
+      "cross_references": [
+        "sec-synaptic-properties",
+        "sec-in-vivo-function",
+        "sec-cross-areas",
+        "sec-oscillations",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 6000,
+      "figures": [
+        {
+          "label": "fig-disinhibition-motifs",
+          "type": "schematic",
+          "argument_supported": "Multiple VIP-mediated motifs operate in parallel; canonical motif is one channel among several.",
+          "data_source": "cluster_06_disinhibition_circuit (motif sketches) + cluster_12_sst_pv_context (PV/SST context)",
+          "panels": [
+            "Panel A: Canonical motif schematic — VIP→SST→Pyr (with explicit minor VIP→PV and VIP→Pyr edges).",
+            "Panel B: Alternative motifs — VIP→PV, VIP→Pyr (direct), VIP→NDNF, VIP→OLM (hippocampus).",
+            "Panel C: Decision tree / matrix mapping behavioural context (locomotion, attention, reinforcement, top-down) to the dominant VIP motif and the supporting cite-keys.",
+            "Panel D: Forest plot of effect-size of VIP optogenetic activation on Pyr firing (subtractive vs divisive vs net-disinhibitory) across studies."
+          ]
+        },
+        {
+          "label": "fig-vip-effect-size-comparison",
+          "type": "data_panel",
+          "argument_supported": "Quantitative comparison across studies of the effect of VIP perturbation on SST and PV firing makes explicit the heterogeneity that a single 'canonical motif' diagram cannot show — supporting the section thesis that multiple motifs operate in parallel.",
+          "data_source": "Synthesis across cluster_05_synaptic_properties_connectivity.conflicts (Pfeffer2013, Pi2013, Yu2019, Zhou2017, Pakan2016) and cluster_06_disinhibition_circuit.conflicts (Lee2013, Fu2014, Pakan2016, Kuchibhotla2017).",
+          "panels": [
+            "Panel A: Forest plot of VIP→SST IPSC amplitude (paired-recording or optogenetic CRACM) across studies (axis: pA, mean ± SD).",
+            "Panel B: Forest plot of VIP→PV IPSC amplitude / connection probability across the same studies (axis: pA / connectivity %).",
+            "Panel C: Bar chart of VIP-activation-evoked Pyr firing-rate change (subtractive, divisive, net-disinhibitory) sorted by cortical area and behavioural state.",
+            "Panel D: Heat-map mapping conflict pairs (paper_a vs paper_b cite-keys) onto Δ effect direction, providing a 'conflict atlas' for §7 prose."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_08",
+      "title": "In Vivo Function During Behavior",
+      "cross_ref_label": "sec-in-vivo-function",
+      "act": 2,
+      "thesis": "In awake animals, VIP cells are reliably recruited by locomotion, arousal, and reinforcement signals, and their activation is causally linked to gain enhancement in V1 and to attentional and learning-related disinhibition in multiple cortices. However, in-vivo VIP activity is far from uniform: response polarity, sensory selectivity, and behavioural correlates differ across cortical area, task, and individual VIP subtype, and the inferred SST-suppression mechanism does not consistently obtain (e.g., concurrent SST activation during locomotion in some preparations).",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "field": "strongest_evidence",
+          "note": "Fu 2014 locomotion activates V1 VIP via nicotinic input"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "field": "figure_data[0]",
+          "note": "locomotion-driven VIP calcium signal across studies"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "field": "evidence_gaps[1]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_13_neuromodulation",
+          "field": "strongest_evidence",
+          "note": "locomotion drives VIP via nicotinic ACh"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Direct disagreement on circuit mechanism: Fu et al. argue VIP activation suppresses SST cells to mediate locomotion-driven gain (canonical disinhibition), whereas Pakan et al. find SST cells are also activated (not silenced) by locomotion i…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Johnson2020",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.1101/2020.12.22.424056",
+          "nature": "Disagreement on functional homogeneity: Pi et al. reported VIP cells respond uniformly to reinforcement (reward + punishment generated similar phasic activation across recorded neurons), implying a single 'gating' signal. Fan et al. report…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Ramamurthy2021",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.1101/2021.10.08.463283",
+          "nature": "Disagreement on the nature of cortical VIP activation: Fu et al. emphasize VIP as an arousal/state messenger that is locomotion-driven and largely independent of the sensory stimulus, whereas Yu et al. show VIP cells in awake S1 encode whis…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Vervaeke2024",
+          "paper_b_cite_key": "Fu2014",
+          "paper_a_doi": "10.21203/rs.3.rs-4320313/v1",
+          "paper_b_doi": "10.1016/j.cell.2014.01.050",
+          "nature": "Disagreement on universality of VIP gain modulation: Fu et al. proposed VIP→SST disinhibition as a generalizable cortical motif for state-dependent gain control, but Maurer et al. show that hippocampal place fields are minimally affected by…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Direction of SST neuron modulation by locomotion in V1",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_13_neuromodulation",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Beerendonk2024",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.1073/pnas.2312898121",
+          "nature": "Different functional shape of the arousal-VIP-performance relation: monotonic gain enhancement vs. inverted-U with performance decrement at high arousal.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 7 laid out the candidate circuit motifs; this section asks which of them are engaged in awake behaving animals and how cleanly the motifs predict observed responses.",
+      "connection_to_next": "Behavioural responses already display area-to-area heterogeneity; Section 9 systematically catalogues VIP function across cortical regions and beyond.",
+      "cross_references": [
+        "sec-disinhibition-framework",
+        "sec-cross-areas",
+        "sec-oscillations",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 6500,
+      "figures": [
+        {
+          "label": "fig-vip-behavior",
+          "type": "data_panel",
+          "argument_supported": "VIP recruitment is reliable for locomotion/arousal/reinforcement in V1, but heterogeneous across area and task; the SST-suppression mechanism does not always obtain.",
+          "data_source": "cluster_07_in_vivo_function.figure_data[0] (locomotion-driven ΔF/F across studies)",
+          "panels": [
+            "Panel A: Across-study compilation of locomotion-evoked ΔF/F in V1 VIP (axis: % change from baseline; mean ± SEM per study).",
+            "Panel B: Heat-map of VIP response polarity across cortices (V1, S1, A1, ACC, mPFC, M1) for locomotion, attention, reward, punishment.",
+            "Panel C: Concurrent VIP/SST imaging traces from contrasting studies (Fu 2014 vs Pakan 2016 vs Dipoppa 2018).",
+            "Panel D: Schematic decision diagram for resolving area×task×modulator → expected VIP polarity."
+          ]
+        },
+        {
+          "label": "fig-vip-state-decision-tree",
+          "type": "schematic",
+          "argument_supported": "Decision schematic for predicting in-vivo VIP polarity from cortical area, behavioural state, and dominant neuromodulator — operationalising the section's claim that area×state×modulator interactions resolve apparent disagreements.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Decision tree: cortical area (V1/A1/S1/PFC/hippocampus) → state (locomotion/quiescence/attention/reward) → dominant modulator (ACh/5-HT/NA) → predicted VIP response sign.",
+            "Panel B: Annotated overlay marking which leaves of the tree each cardinal study (Fu2014, Pakan2016, Pi2013, Lee2013, Dipoppa2018, Pakan2016, Vervaeke2024) populates.",
+            "Panel C: Cartoon of the mouse running on a wheel with V1/A1/S1 sketches showing concurrent expected VIP-vs-SST polarity per area (referencing §9 for follow-up)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_09",
+      "title": "VIP Interneurons Across Brain Regions",
+      "cross_ref_label": "sec-cross-areas",
+      "act": 2,
+      "thesis": "VIP function is area-specific: V1 emphasises locomotion-gated gain enhancement, auditory cortex shows the opposite locomotion polarity, mPFC/ACC implement top-down control of attention and salience, S1 supports whisker-context-dependent disinhibition, and hippocampal VIP/IS interneurons (CA1 IS3 cells, etc.) implement specialised motifs distinct from neocortex. These cross-area differences place strong constraints on any 'unitary' theory of VIP function.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "field": "strongest_evidence",
+          "note": "VIP activation in V1 enhances visual responses"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "field": "evidence_gaps[1]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "field": "replicated_claims",
+          "note": "region-specific motifs"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Karnani2016b",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.1523/jneurosci.3646-15.2016",
+          "nature": "Uniform vs localized VIP disinhibition",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Millman2020",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.7554/elife.55130",
+          "nature": "VIP gain modulation: uniform vs contrast-dependent",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Dipoppa2018",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1016/j.neuron.2018.03.037",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Locomotion-driven VIP activity in V1",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "conflict_index": 5,
+          "paper_a_cite_key": "Xu2026b",
+          "paper_b_cite_key": "Lenkey2025",
+          "paper_a_doi": "10.1016/j.celrep.2025.116805",
+          "paper_b_doi": "10.1038/s41467-025-60679-4",
+          "nature": "Direction of VIP influence on shared neural variability — gain control should add correlations in some accounts, but reduce them in V1 here.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "conflict_index": 7,
+          "paper_a_cite_key": "Neubrandt2025b",
+          "paper_b_cite_key": "Jabonska2026",
+          "paper_a_doi": "10.21203/rs.3.rs-5974632/v1",
+          "paper_b_doi": "10.1111/apha.70162",
+          "nature": "Whether VIP interneurons provide a deterministic gate on hippocampal remapping or whether their efferent inhibition is itself dynamically reset by upstream LTD.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Bigelow2019",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.1523/eneuro.0164-19.2019",
+          "nature": "Opposite direction of locomotion-induced VIP-driven gain modulation across sensory cortices: gain enhancement and improved coding in V1 versus reduced spiking and reduced encoding efficiency in A1.",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 8 highlighted area-to-area divergence in V1 vs A1 vs PFC behavioural responses; this section organises that divergence systematically across cortex and into hippocampus and subcortex.",
+      "connection_to_next": "Cross-area circuit specificity is reflected in temporal-coordination differences examined in Section 10 (oscillations).",
+      "cross_references": [
+        "sec-in-vivo-function",
+        "sec-oscillations",
+        "sec-species-disease",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 5000,
+      "figures": [
+        {
+          "label": "fig-vip-across-areas",
+          "type": "data_panel",
+          "argument_supported": "VIP recruits opposite-sign motifs in V1 vs A1 and instantiates distinct circuits in hippocampus.",
+          "data_source": "cluster_08_brain_regions evidence + cluster_09_oscillations.conflicts (V1 vs A1 polarity)",
+          "panels": [
+            "Panel A: Brain-area schematic with arrows summarising dominant VIP motif per area (V1, A1, S1, M1, ACC, mPFC, CA1, BLA).",
+            "Panel B: Bar chart of locomotion-evoked VIP response sign in V1 vs A1 (axis: ΔF/F).",
+            "Panel C: Hippocampal VIP/IS3 motif schematic (VIP/CR/CCK distinctions; OLM/CA1 PYR targeting).",
+            "Panel D: Cross-area conflict table (top-down vs neuromodulatory vs sensory drivers)."
+          ]
+        },
+        {
+          "label": "fig-hippocampal-vip-motif",
+          "type": "schematic",
+          "argument_supported": "Hippocampal CA1 VIP/CR/CCK 'IS3' cells implement a circuit motif distinct from neocortex (preferential targeting of OLM cells; reset of theta-coupled inhibition) that contradicts a uniform cross-area VIP function and motivates separate modelling.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: CA1 lamellar cartoon with VIP/IS3 cell soma in stratum oriens, axonal projections onto OLM and bistratified cells, and modulation of CA1 Pyr by disinhibition of distal-dendritic input.",
+            "Panel B: Comparison schematic of VIP cells in cortex (bipolar, descending; targets SST in L5) vs hippocampus (IS3; targets OLM in oriens).",
+            "Panel C: Subcortical VIP pathways (BLA, striatum, hypothalamus) summarised as a side panel for cross-region completeness."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_10",
+      "title": "Oscillatory Dynamics and Temporal Coordination",
+      "cross_ref_label": "sec-oscillations",
+      "act": 2,
+      "thesis": "VIP cells contribute to cortical and hippocampal rhythms primarily as state-gating modulators rather than as primary rhythm generators: they bias gamma and theta power through SST/PV control, are recruited differentially during Up-states, REM, and arousal, and are causally implicated in seizure susceptibility in some preparations. Causal attribution is contested: bidirectional perturbation studies disagree on whether VIP cells are necessary, sufficient, or merely permissive for oscillatory state changes.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "field": "strongest_evidence",
+          "note": "PV/SST preferentially recruited at gamma in V1 L2/3 model"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "field": "figure_data[0]",
+          "note": "VIP perturbation effects on seizure activity"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "field": "replicated_claims[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Bigelow2019",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.1523/eneuro.0164-19.2019",
+          "nature": "Opposite direction of locomotion-induced VIP-driven gain modulation across sensory cortices: gain enhancement and improved coding in V1 versus reduced spiking and reduced encoding efficiency in A1.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Khoshkhoo2017",
+          "paper_b_cite_key": "Calin2018",
+          "paper_a_doi": "10.1016/j.neuron.2016.11.043",
+          "paper_b_doi": "10.3389/fncel.2018.00293",
+          "nature": "Opposite effect of bidirectional VIP perturbation on seizure activity: silencing VIP suppresses seizures (Khoshkhoo 2017), but activating VIP also fails to alter discharge duration (Calin 2018), implying asymmetric or model-dependent contri…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "conflict_index": 2,
+          "paper_a_cite_key": "Neske2016",
+          "paper_b_cite_key": "Pi2013",
+          "paper_a_doi": "10.3389/fncir.2016.00052",
+          "paper_b_doi": "10.1038/nature12676",
+          "nature": "VIP cells are dispensable for cortical Up-state excitability in slices but actively shape gain and disinhibition in awake cortex — disagreement on the necessity/sufficiency of VIP cells for spontaneous oscillatory states.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Chen2015a",
+          "paper_b_cite_key": "Szadai2022",
+          "paper_a_doi": "10.1038/nn.4002",
+          "paper_b_doi": "10.7554/elife.78815",
+          "nature": "VIP cells are dispensable for cholinergic desynchronization (Chen 2015) yet are globally recruited by reinforcers via cholinergic-related signals (Szadai 2022), implying differential causal weight of VIP cells across global state-modulating…",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 9 noted that area-specific motifs emit different temporal signatures; this section treats those temporal signatures as objects of study in their own right.",
+      "connection_to_next": "Cross-area and oscillatory phenomena raise translational questions: do they obtain in human cortex and human disease? Section 11 takes this up.",
+      "cross_references": [
+        "sec-cross-areas",
+        "sec-disinhibition-framework",
+        "sec-species-disease",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 4500,
+      "figures": [
+        {
+          "label": "fig-vip-oscillations",
+          "type": "data_panel",
+          "argument_supported": "VIP shapes but does not generate cortical rhythms; perturbation effects are direction- and model-dependent.",
+          "data_source": "cluster_09_oscillations.figure_data[0] (VIP perturbation × seizure outcome table)",
+          "panels": [
+            "Panel A: Spectrogram exemplars of cortical LFP during VIP optogenetic activation vs silencing.",
+            "Panel B: Forest plot of VIP-perturbation effects on gamma/theta power across studies.",
+            "Panel C: Cross-study seizure-susceptibility table (silencing/activating VIP × outcome).",
+            "Panel D: VIP recruitment during Up-states and REM (in-vivo summary)."
+          ]
+        },
+        {
+          "label": "fig-vip-oscillation-mechanism",
+          "type": "schematic",
+          "argument_supported": "Mechanistic schematic of how VIP→SST and VIP→PV motifs differentially shape gamma vs theta rhythms, providing the conceptual bridge between the connectivity data of §6–§7 and the LFP/oscillatory observations summarised in this section's data panel.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Cartoon circuit diagram of PV-driven gamma rhythm with VIP-mediated SST suppression; predicted effect of VIP activation on gamma power and Pyr phase locking.",
+            "Panel B: Cartoon of theta-rhythm circuit (hippocampal/cortical) with VIP/IS3 cell phase-coupled to OLM disinhibition.",
+            "Panel C: Schematic of cortical Up-state with VIP as a permissive vs causal gate (referencing Neske2016 vs Pi2013 conflict)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_11",
+      "title": "Species Differences, Human Relevance, and Disease",
+      "cross_ref_label": "sec-species-disease",
+      "act": 2,
+      "thesis": "Subclass-level VIP identity is conserved between mouse and human cortex, but cell-type proportions, t-type granularity, and gene-expression profiles diverge non-trivially: human cortex shows expanded CGE-derived diversity and human-specific transcriptomic features. VIP-IN dysfunction is implicated across Alzheimer's disease, autism-spectrum and intellectual-disability syndromes (Mecp2/Tcf4/Fmr1/Cntnap2/Scn1a), schizophrenia, and Dravet syndrome, but mouse-model phenotypes are heterogeneous and translation to human pathology is non-trivial.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "field": "strongest_evidence",
+          "note": "CRH-BP colocalisation across IN markers"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "field": "evidence_gaps[1]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "strongest_evidence",
+          "note": "Granger 2020 — VIP/ChAT identity (target_section=section_11)"
+        },
+        {
+          "cluster_id": "cluster_13_cge_lineage_context",
+          "field": "figure_data[0]",
+          "note": "% CGE/CR+ across mouse vs human"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Michaud2024",
+          "paper_b_cite_key": "Gabitto2024",
+          "paper_a_doi": "10.7554/elife.95412",
+          "paper_b_doi": "10.1038/s41593-024-01774-5",
+          "nature": "VIP+ interneuron preservation in the 3xTg mouse model of AD (CA1 hippocampus, no significant change in cell counts) versus loss of Vip+ inhibitory subtypes in late-phase human AD middle temporal gyrus. The mouse model shows altered firing o…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 1,
+          "paper_a_cite_key": "Goff2023",
+          "paper_b_cite_key": null,
+          "paper_a_doi": "10.1016/j.celrep.2023.112628",
+          "paper_b_doi": "10.1101/2023.01.03.522654",
+          "nature": "Direction of VIP-IN activity change differs across autism-related models: Scn1a+/− Dravet/autism model shows reduced VIP-IN firing rate, whereas Fmr1−/− Fragile X model shows higher visually-evoked VIP activity (but with fewer VIP cells sti…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Yi2025a",
+          "paper_b_cite_key": "Gabitto2024",
+          "paper_a_doi": "10.1016/j.neulet.2025.138424",
+          "paper_b_doi": "10.1038/s41593-024-01774-5",
+          "nature": "Whether VIP-IN populations are vulnerable or resilient in Alzheimer's disease. Mouse-model evidence reports altered firing/connectivity without overt VIP cell loss, while late-stage human postmortem snRNA-seq describes a depletion of VIP su…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 4,
+          "paper_a_cite_key": "Goff2023",
+          "paper_b_cite_key": "Bhandari2024",
+          "paper_a_doi": "10.1016/j.celrep.2023.112628",
+          "paper_b_doi": "10.1016/j.celrep.2024.114124",
+          "nature": "Whether VIP-IN dysfunction in monogenic autism/ID models is a generalised phenotype or a model- and circuit-specific defect. Some Tcf4/Mecp2/Cntnap2 studies describe global VIP excitability changes; Fmr1 studies report layer-, age-, or regi…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 7,
+          "paper_a_cite_key": "Simacek2025b",
+          "paper_b_cite_key": "Goff2023",
+          "paper_a_doi": "10.1111/apha.14265",
+          "paper_b_doi": "10.1016/j.celrep.2023.112628",
+          "nature": "Translatability of mouse VIP-IN phenotypes to human iPSC-derived models: human iPSC studies frequently emphasise transcriptional/morphological phenotypes whereas mouse studies emphasise intrinsic excitability and synaptic transmission, with…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Hodge2019",
+          "paper_b_cite_key": "Mayer2018",
+          "paper_a_doi": "10.1038/s41586-019-1506-7",
+          "paper_b_doi": "10.1038/nature25999",
+          "nature": "Whether mouse VIP/CGE transcriptomic taxonomy is directly transferable to human cortex (homology) or whether human VIP populations require species-specific subtype definitions (divergence).",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Sections 8–10 documented VIP function in rodent cortex; this section asks how much of that body of evidence translates to human cortex and to disease.",
+      "connection_to_next": "The empirical heterogeneity assembled across §6–§11 motivates the formal/computational synthesis of Section 12, which asks what unifying functional principles, if any, the data support.",
+      "cross_references": [
+        "sec-molecular-identity",
+        "sec-development-lineage",
+        "sec-in-vivo-function",
+        "sec-cross-areas",
+        "sec-computational-models",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 5500,
+      "figures": [
+        {
+          "label": "fig-species-disease",
+          "type": "data_panel",
+          "argument_supported": "Subclass-level VIP conserved across mouse/human; t-type and disease-relevant phenotypes diverge; multiple disorders converge on VIP-IN dysfunction.",
+          "data_source": "cluster_10_species_disease + cluster_13_cge_lineage_context.figure_data[0]",
+          "panels": [
+            "Panel A: Mouse vs human VIP transcriptomic-class side-by-side dendrogram.",
+            "Panel B: Cross-disease phenotype matrix (AD, ASD/ID, schizophrenia, Dravet × cell-loss / activity / connectivity / morphology).",
+            "Panel C: Bar chart of CGE/CR+ fraction of cortical GABA across mouse, marmoset, macaque, human.",
+            "Panel D: Convergence diagram — upstream regulators (MeCP2, TCF4, FMR1, SCN1A, CNTNAP2) → VIP-IN phenotypes → circuit-level outcomes."
+          ]
+        },
+        {
+          "label": "fig-vip-disease-convergence",
+          "type": "schematic",
+          "argument_supported": "Convergence schematic for upstream genetic/cellular insults that funnel into shared VIP-IN dysfunction phenotypes across psychiatric, neurodevelopmental, and neurodegenerative disease models — making explicit the translational hypotheses that the species/disease data panel only summarises piecewise.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: Funnel diagram from upstream regulators (MeCP2, TCF4, FMR1, SCN1A, CNTNAP2, APP/PSEN, DISC1) → mid-level mechanisms (excitability, connectivity, density) → circuit phenotype (E/I imbalance, gain dysfunction).",
+            "Panel B: Cartoon comparison of mouse-model vs human-postmortem vs iPSC-derived readout for each disease (highlighting where translation succeeds vs fails).",
+            "Panel C: Mouse-vs-human VIP-IN cartoon (relative density, gene-expression overlap, primate-expanded subtypes) anchored to Hodge2019/Yao2023 atlases."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_12",
+      "title": "Computational Models of VIP Circuit Function",
+      "cross_ref_label": "sec-computational-models",
+      "act": 3,
+      "thesis": "Computational models of cortical microcircuits — biophysical, rate-based, and machine-learning-inspired — converge on VIP cells as a flexible gain-control and context-gating element rather than a unitary 'disinhibitor.' Three-interneuron (PV+SST+VIP) architectures support both subtractive and divisive gain regimes depending on connectivity weights, drive, and SST/PV nonlinearities; recent expansions add NDNF and Lamp5 cells and credit-assignment / predictive-coding interpretations. Models are constrained by, and expose, the empirical conflicts of §6–§9: which architectural primitive is necessary remains an open theoretical question.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "field": "strongest_evidence",
+          "note": "PV biophysical model with dendritic NMDA"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "field": "figure_data[0]",
+          "note": "cross-paper comparison of model architectures"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "field": "replicated_claims[0]",
+          "note": ""
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "field": "evidence_gaps[0]",
+          "note": ""
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "conflict_index": 1,
+          "paper_a_cite_key": null,
+          "paper_b_cite_key": "Wilson2012",
+          "paper_a_doi": "10.7554/elife.18375",
+          "paper_b_doi": "10.1038/nature11347",
+          "nature": "Whether SST-mediated inhibition produces subtractive vs divisive gain control",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Hertag2019",
+          "paper_b_cite_key": "Tahvili2025b",
+          "paper_a_doi": "10.1371/journal.pcbi.1006999",
+          "paper_b_doi": "10.1101/2025.10.23.684108",
+          "nature": "Whether three-interneuron (PV+SST+VIP) architecture is necessary for cortical gain modulation",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "conflict_index": 4,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Garciadelmolino2017",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.7554/elife.29742",
+          "nature": "Whether VIP recruitment produces net disinhibition or paradoxical inhibition of pyramidal cells",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "conflict_index": 5,
+          "paper_a_cite_key": "Hartung2024",
+          "paper_b_cite_key": "Iqbal2025",
+          "paper_a_doi": "10.1016/j.celrep.2024.114212",
+          "paper_b_doi": "10.1073/pnas.2504164122",
+          "nature": "NDNF (L1) interneurons as a parallel top-down regulator versus VIP-dependent disinhibition as the canonical top-down route",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_12_sst_pv_context",
+          "conflict_index": 0,
+          "paper_a_cite_key": null,
+          "paper_b_cite_key": "Wilson2012",
+          "paper_a_doi": "10.1016/j.neuron.2011.12.013",
+          "paper_b_doi": "10.1038/nature11347",
+          "nature": "PV gain modulation: division vs subtraction",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Sections 6–11 surfaced empirical heterogeneity; this section asks whether formal models can absorb that heterogeneity into a coherent computational role for VIP cells.",
+      "connection_to_next": "Section 13 closes the arc by integrating empirical and theoretical findings into a critical reassessment of the canonical VIP-disinhibitor framing.",
+      "cross_references": [
+        "sec-disinhibition-framework",
+        "sec-in-vivo-function",
+        "sec-cross-areas",
+        "sec-oscillations",
+        "sec-synthesis-reassessment"
+      ],
+      "word_count_target": 5000,
+      "figures": [
+        {
+          "label": "fig-computational-models",
+          "type": "data_panel",
+          "argument_supported": "Three-IN models and their extensions support multiple gain regimes; the necessity of any single architectural element is contested.",
+          "data_source": "cluster_11_computational_models.figure_data[0] (architecture-vs-function comparison)",
+          "panels": [
+            "Panel A: Side-by-side schematics of canonical 3-IN (Hertag/Cornford), 4-IN (NDNF), and predictive-coding/credit-assignment architectures.",
+            "Panel B: Phase-diagram of subtractive-vs-divisive gain regime as a function of VIP→SST and SST→Pyr weights.",
+            "Panel C: Comparison table — model × interneuron classes × VIP function (gain, attention, prediction error, learning gate).",
+            "Panel D: Mapping of empirical conflicts (§6–§9) onto model parameter regimes that resolve them."
+          ]
+        },
+        {
+          "label": "fig-vip-model-empirical-mapping",
+          "type": "schematic",
+          "argument_supported": "Mapping schematic linking specific empirical conflicts from §6–§9 to the model parameter regimes that resolve them — reframing controversies as parameter-region rather than categorical disputes, which is the section's synthetic claim.",
+          "data_source": "schematic — no data",
+          "panels": [
+            "Panel A: 2D phase diagram (axes: VIP→SST weight × SST→Pyr dendritic nonlinearity) with shaded regions corresponding to subtractive, divisive, and paradoxical-inhibition regimes; named studies plotted at their inferred location.",
+            "Panel B: Tree of model architectural choices (3-IN vs 4-IN with NDNF; rate vs spiking; predictive-coding embedding) annotated with which §6–§9 conflicts each architecture predicts vs cannot resolve.",
+            "Panel C: Schematic of identifiability problem — model parameter symmetries that prevent existing data from constraining VIP function uniquely (motivates the §13 open-question agenda)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_13",
+      "title": "Synthesis and Conclusion: Reassessing the Canonical VIP Disinhibitor",
+      "cross_ref_label": "sec-synthesis-reassessment",
+      "act": 3,
+      "thesis": "The canonical 'VIP disinhibitor' framing survives as a useful first-order approximation but should be replaced, in advanced treatments, by a multifunctional view: VIP cells implement context-, area-, layer-, and modulator-dependent gain, gating, and timing operations whose unifying property is the integration of long-range and neuromodulatory drive into local-circuit control. This section consolidates the evidence and inventories the highest-priority open questions — human-specific subtypes, t-type-resolved function, cross-area motif diversity, and disease-relevant translation — that the next decade of VIP research must address.",
+      "evidence_anchors": [
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "field": "contested_claims[0]",
+          "note": "discrete vs continuum t-types"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "field": "replicated_claims[0]",
+          "note": "core synaptic motif"
+        },
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "field": "replicated_claims[0]",
+          "note": "core disinhibition motif"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "field": "contested_claims[0]",
+          "note": "in-vivo polarity contested"
+        },
+        {
+          "cluster_id": "cluster_08_brain_regions",
+          "field": "contested_claims[0]",
+          "note": "area-generality contested"
+        },
+        {
+          "cluster_id": "cluster_09_oscillations",
+          "field": "replicated_claims[0]",
+          "note": "VIP modulates rhythms"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "field": "evidence_gaps",
+          "note": "high-priority disease/translational gaps"
+        },
+        {
+          "cluster_id": "cluster_11_computational_models",
+          "field": "replicated_claims[0]",
+          "note": "3-IN architecture supports multiple regimes"
+        }
+      ],
+      "conflicts_to_present": [
+        {
+          "cluster_id": "cluster_06_disinhibition_circuit",
+          "conflict_index": 7,
+          "paper_a_cite_key": "Pi2013",
+          "paper_b_cite_key": "Kuchibhotla2017",
+          "paper_a_doi": "10.1038/nature12676",
+          "paper_b_doi": "10.1038/nn.4436",
+          "nature": "Whether VIP disinhibition is the privileged channel for behavioral-state cortical gain or one of several parallel inhibitory streams.",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_05_synaptic_properties_connectivity",
+          "conflict_index": 5,
+          "paper_a_cite_key": "Pfeffer2013",
+          "paper_b_cite_key": "Zhou2017",
+          "paper_a_doi": "10.1038/nn.3446",
+          "paper_b_doi": "10.1093/cercor/bhx220",
+          "nature": "VIP boutons target only interneurons (canonical) vs target pyramidal cells",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_01_molecular_taxonomy",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Tasic2016",
+          "paper_b_cite_key": "Tasic2018",
+          "paper_a_doi": "10.1038/nn.4216",
+          "paper_b_doi": "10.1038/s41586-018-0654-5",
+          "nature": "Number of cortical VIP transcriptomic types",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_07_in_vivo_function",
+          "conflict_index": 0,
+          "paper_a_cite_key": "Fu2014",
+          "paper_b_cite_key": "Pakan2016",
+          "paper_a_doi": "10.1016/j.cell.2014.01.050",
+          "paper_b_doi": "10.7554/elife.14985",
+          "nature": "Direct disagreement on circuit mechanism: Fu et al. argue VIP activation suppresses SST cells to mediate locomotion-driven gain (canonical disinhibition), whereas Pakan et al. find SST cells are also activated (not silenced) by locomotion i…",
+          "treatment": "TBD"
+        },
+        {
+          "cluster_id": "cluster_10_species_disease",
+          "conflict_index": 3,
+          "paper_a_cite_key": "Yi2025a",
+          "paper_b_cite_key": "Gabitto2024",
+          "paper_a_doi": "10.1016/j.neulet.2025.138424",
+          "paper_b_doi": "10.1038/s41593-024-01774-5",
+          "nature": "Whether VIP-IN populations are vulnerable or resilient in Alzheimer's disease. Mouse-model evidence reports altered firing/connectivity without overt VIP cell loss, while late-stage human postmortem snRNA-seq describes a depletion of VIP su…",
+          "treatment": "TBD"
+        }
+      ],
+      "connection_to_previous": "Section 12 distilled the formal landscape; this section reassembles theory and empirics into a single critical reassessment and forward agenda.",
+      "connection_to_next": "(Closing section — leads to references and supplementary methods.)",
+      "cross_references": [
+        "sec-introduction",
+        "sec-molecular-identity",
+        "sec-development-lineage",
+        "sec-morphology",
+        "sec-electrophysiology",
+        "sec-synaptic-properties",
+        "sec-disinhibition-framework",
+        "sec-in-vivo-function",
+        "sec-cross-areas",
+        "sec-oscillations",
+        "sec-species-disease",
+        "sec-computational-models"
+      ],
+      "word_count_target": 4500,
+      "figures": [
+        {
+          "label": "fig-synthesis-grid",
+          "type": "schematic",
+          "argument_supported": "VIP function is multifunctional and context-dependent; the canonical motif is one (privileged) channel.",
+          "data_source": "schematic — synthesis grid integrating §6–§12",
+          "panels": [
+            "Panel A: 'Canonical-vs-revised' two-column figure: canonical VIP→SST→Pyr motif on the left; revised multifunctional view (parallel motifs, modulator-gated, area-specific) on the right.",
+            "Panel B: Open-question heat-map (rows: open question; columns: §2–§12 sections that bear on it) marking high-priority gaps.",
+            "Panel C: Translational outlook diagram (mouse-model → human cortex → disease) flagging where translation is supported vs unresolved."
+          ]
+        },
+        {
+          "label": "fig-vip-replication-strength-matrix",
+          "type": "data_panel",
+          "argument_supported": "Cross-cluster replication-strength matrix consolidating which canonical claims about VIP cells are robustly replicated, which are contested, and which remain unresolved — the empirical inventory that backs the section's reassessment of the canonical motif.",
+          "data_source": "Synthesis across replicated_claims and contested_claims fields of all 14 clusters in phase4_scaffold_input.json (cluster_01 through cluster_13_cge_lineage_context).",
+          "panels": [
+            "Panel A: Heat-map (rows: cardinal claims — 'CGE origin', 'VIP→SST functional', 'VIP→PV functional', 'VIP→Pyr direct', 'V1 locomotion gain', 'A1 locomotion suppression', 'cross-species subclass conservation', 'AD VIP loss', etc.; columns: clusters/sections; cells: green=replicated, amber=contested, grey=unresolved).",
+            "Panel B: Bar chart of #replicated vs #contested vs #unresolved claims per section, ordered by act.",
+            "Panel C: Open-question priority list — top 8 unresolved questions weighted by number of contributing clusters and translational impact."
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_cutting": {
+    "recurring_themes": [
+      {
+        "name": "Disinhibition motif: canonical vs revised",
+        "appears_in_sections": [
+          "section_01",
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_09",
+          "section_10",
+          "section_11",
+          "section_12",
+          "section_13"
+        ],
+        "description": "The thread that unifies the review: the textbook VIP→SST→pyramidal disinhibition motif is reproducible but not exhaustive of VIP function. Each section asks how its evidence supports, complicates, or extends the canonical reading."
+      },
+      {
+        "name": "CGE lineage and cell-type identity",
+        "appears_in_sections": [
+          "section_02",
+          "section_03",
+          "section_04",
+          "section_05",
+          "section_11",
+          "section_13"
+        ],
+        "description": "VIP cells are members of the CGE-derived 5-HT3AR+ lineage that also contains Lamp5 and Sncg subclasses; lineage logic recurs in molecular, developmental, morphological, and cross-species treatments."
+      },
+      {
+        "name": "Modulatory state and context dependence",
+        "appears_in_sections": [
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_09",
+          "section_10",
+          "section_12"
+        ],
+        "description": "Cholinergic, serotonergic, and noradrenergic drive — together with behavioural state (locomotion, arousal, attention) — gates VIP recruitment, and many empirical conflicts dissolve when modulator context is taken into account."
+      },
+      {
+        "name": "Discrete-vs-continuum cell-type structure",
+        "appears_in_sections": [
+          "section_02",
+          "section_04",
+          "section_05",
+          "section_11"
+        ],
+        "description": "Whether within-VIP variation is best modelled as discrete t-types/MET-types or as continuous gradients is a recurring methodological question that appears at every level (transcriptomic, morphological, electrophysiological, cross-species)."
+      },
+      {
+        "name": "Area- and species-specificity",
+        "appears_in_sections": [
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_09",
+          "section_10",
+          "section_11",
+          "section_13"
+        ],
+        "description": "VIP function is not uniform across cortical areas (V1 vs A1 vs PFC vs S1) or across species (mouse vs primate vs human), and these differences constrain any unitary theory."
+      },
+      {
+        "name": "Methodological caveats: VIP-Cre line, ChAT subset, modality choice",
+        "appears_in_sections": [
+          "section_02",
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_11"
+        ],
+        "description": "Many cross-study conflicts trace to driver-line off-targets, anatomical-vs-functional methodological mismatches, and species-specific marker reliability — flagged explicitly throughout."
+      }
+    ],
+    "terminology_conventions": {
+      "VIP+ vs VIP": "Use 'VIP+' when referring to cells immunopositive for VIP peptide / VIP-Cre-labelled; use 'VIP cells' or 'VIP interneurons' when referring to the transcriptomic subclass irrespective of expression. Avoid bare 'VIP' as a noun for the cells.",
+      "SST vs SOM": "Use 'SST' (somatostatin) for both peptide and cell-class throughout; reserve 'SOM' only when quoting a paper's nomenclature directly.",
+      "PV vs PV+": "'PV' for the subclass; 'PV+' when referring to immunolabelled cells specifically.",
+      "M cells / IS cells": "Use 'irregular-spiking (IS)' for the firing class. 'IS3 cells' is the established name for hippocampal CA1 VIP/CR/CCK cells described by Tyan/Topolnik.",
+      "gene symbols": "Italicise mouse gene symbols (e.g., *Vip*, *Chat*, *Sst*); proteins / peptides are non-italic and uppercase (VIP, ChAT, SST).",
+      "ATAC-seq vs Patch-seq": "Hyphenated, lowercase 'seq' (Patch-seq, ATAC-seq, scRNA-seq, snRNA-seq).",
+      "CGE vs MGE": "Always uppercase, never expanded after first use.",
+      "5-HT3AR": "Use '5-HT3AR' (not '5HT3aR' or '5HT-3A-R').",
+      "ChAT+ VIP": "Refer to 'VIP/ChAT' cells (slash) for the subclass; 'ChAT+ VIP' (plus) when describing the immunolabelled subset.",
+      "cite-keys": "All citations use authoryear cite-keys from citation_key_map.json (e.g., Tasic2018, Pi2013). Multi-author papers: first-author surname + year. Suffix letters (a/b/c) are reserved for first-author/year collisions and must match the map verbatim."
+    },
+    "abbreviation_glossary": {
+      "VIP": "vasoactive intestinal peptide / VIP-expressing cortical interneuron subclass",
+      "SST": "somatostatin / somatostatin-expressing cortical interneuron",
+      "PV": "parvalbumin / parvalbumin-expressing cortical interneuron",
+      "CGE": "caudal ganglionic eminence",
+      "MGE": "medial ganglionic eminence",
+      "POA": "preoptic area",
+      "5-HT3AR": "serotonin 5-HT3A receptor (CGE-class marker)",
+      "ChAT": "choline acetyltransferase",
+      "ACh": "acetylcholine",
+      "5-HT": "5-hydroxytryptamine (serotonin)",
+      "NA": "noradrenaline",
+      "GABA": "γ-aminobutyric acid",
+      "IPSC": "inhibitory postsynaptic current",
+      "EPSC": "excitatory postsynaptic current",
+      "L1–L6": "cortical layers 1 through 6",
+      "V1": "primary visual cortex",
+      "S1": "primary somatosensory cortex",
+      "A1": "primary auditory cortex",
+      "M1": "primary motor cortex",
+      "ALM": "anterolateral motor cortex (mouse)",
+      "ACC": "anterior cingulate cortex",
+      "mPFC": "medial prefrontal cortex",
+      "MTG": "middle temporal gyrus (human reference cortex)",
+      "BLA": "basolateral amygdala",
+      "CA1/CA3": "hippocampal cornu ammonis subfields",
+      "OLM": "oriens lacunosum-moleculare interneuron",
+      "IS": "irregular-spiking firing pattern",
+      "IS3": "irregular-spiking type 3 hippocampal interneuron (VIP/CR/CCK CA1)",
+      "MET-type": "morpho-electric-transcriptomic cell type",
+      "t-type": "transcriptomic cell type (single-cell-RNA-defined)",
+      "e-type": "electrophysiological cell type",
+      "m-type": "morphological cell type",
+      "scRNA-seq": "single-cell RNA sequencing",
+      "snRNA-seq": "single-nucleus RNA sequencing",
+      "Patch-seq": "combined patch-clamp + scRNA-seq + morphology",
+      "EM": "electron microscopy / connectomics",
+      "MICrONS": "Machine Intelligence from Cortical Networks (cubic-mm V1 EM dataset)",
+      "BICCN": "Brain Initiative Cell Census Network",
+      "NDNF": "neuron-derived neurotrophic factor (L1 IN class)",
+      "Lamp5": "Lamp5-expressing CGE-derived IN subclass",
+      "Sncg": "Sncg-expressing CGE-derived IN subclass",
+      "ChR2": "channelrhodopsin-2",
+      "Arch": "archaerhodopsin",
+      "GCaMP": "genetically-encoded calcium indicator",
+      "IH": "hyperpolarization-activated cation current (sag)",
+      "AP": "action potential",
+      "Vm": "membrane potential",
+      "Rin": "input resistance",
+      "AD": "Alzheimer's disease",
+      "ASD": "autism-spectrum disorder",
+      "ID": "intellectual disability",
+      "iPSC": "induced pluripotent stem cell",
+      "TF": "transcription factor",
+      "KO": "knockout",
+      "AAV": "adeno-associated virus",
+      "CRACM": "channelrhodopsin-assisted circuit mapping",
+      "TF-KO": "transcription-factor conditional knockout",
+      "REM": "rapid-eye-movement (sleep)",
+      "Up-state": "depolarised cortical Up-state (slow oscillation)"
+    },
+    "voice_and_tone": [
+      "Past tense for empirical findings (e.g., 'Pi et al. (2013) showed that VIP activation disinhibited Pyr neurons').",
+      "Present tense for theoretical claims and accepted background ('VIP cells are CGE-derived').",
+      "Hedge probabilistic conclusions ('the data are consistent with', 'most studies report', 'in the majority of preparations'); never overclaim from single studies.",
+      "When findings conflict, state both positions explicitly using the {admonition} Conflict block — do not paper over disagreement.",
+      "Adopt a critical-reassessment stance toward the canonical disinhibitor framing without polemic; describe canonical readings respectfully and locate their empirical limits.",
+      "Avoid evaluative adjectives ('elegant', 'beautiful', 'striking'); prefer quantitative or structural descriptors."
+    ]
+  },
+  "integration": {
+    "shared_evidence_map": [
+      {
+        "cluster_id": "cluster_01_molecular_taxonomy",
+        "tag": "Tasic 2018 hierarchical taxonomy",
+        "appears_in_sections": [
+          "section_02",
+          "section_03",
+          "section_11",
+          "section_13"
+        ]
+      },
+      {
+        "cluster_id": "cluster_01_molecular_taxonomy",
+        "tag": "Granger 2020 VIP/ChAT GABA+ACh co-release",
+        "appears_in_sections": [
+          "section_02",
+          "section_06",
+          "section_11"
+        ]
+      },
+      {
+        "cluster_id": "cluster_06_disinhibition_circuit",
+        "tag": "Pi 2013 / Lee 2013 / Fu 2014 / Zhang 2014 — canonical motif",
+        "appears_in_sections": [
+          "section_01",
+          "section_06",
+          "section_07",
+          "section_08",
+          "section_12",
+          "section_13"
+        ]
+      },
+      {
+        "cluster_id": "cluster_05_synaptic_properties_connectivity",
+        "tag": "Pfeffer 2013 paired-recording connectivity matrix",
+        "appears_in_sections": [
+          "section_06",
+          "section_07",
+          "section_12"
+        ]
+      },
+      {
+        "cluster_id": "cluster_07_in_vivo_function",
+        "tag": "Fu 2014 vs Pakan 2016 locomotion mechanism",
+        "appears_in_sections": [
+          "section_07",
+          "section_08",
+          "section_09",
+          "section_10"
+        ]
+      },
+      {
+        "cluster_id": "cluster_13_neuromodulation",
+        "tag": "Cholinergic recruitment of VIP (nicotinic vs muscarinic)",
+        "appears_in_sections": [
+          "section_03",
+          "section_06",
+          "section_07",
+          "section_08"
+        ]
+      },
+      {
+        "cluster_id": "cluster_13_cge_lineage_context",
+        "tag": "5-HT3AR / CGE third-class definition",
+        "appears_in_sections": [
+          "section_02",
+          "section_03",
+          "section_11"
+        ]
+      },
+      {
+        "cluster_id": "cluster_12_sst_pv_context",
+        "tag": "SST/PV context for VIP motifs",
+        "appears_in_sections": [
+          "section_06",
+          "section_07",
+          "section_12"
+        ]
+      },
+      {
+        "cluster_id": "cluster_11_computational_models",
+        "tag": "Hertag/Cornford 3-IN model",
+        "appears_in_sections": [
+          "section_07",
+          "section_12",
+          "section_13"
+        ]
+      },
+      {
+        "cluster_id": "cluster_03_morphology",
+        "tag": "MICrONS EM connectomic reconstruction",
+        "appears_in_sections": [
+          "section_04",
+          "section_06"
+        ]
+      },
+      {
+        "cluster_id": "cluster_04_intrinsic_electrophysiology",
+        "tag": "Patch-seq atlas (Gouwens/Scala)",
+        "appears_in_sections": [
+          "section_02",
+          "section_04",
+          "section_05"
+        ]
+      },
+      {
+        "cluster_id": "cluster_10_species_disease",
+        "tag": "Mouse-vs-human VIP phenotype divergence",
+        "appears_in_sections": [
+          "section_02",
+          "section_03",
+          "section_11",
+          "section_13"
+        ]
+      }
+    ],
+    "dependency_graph": [
+      {
+        "from": "section_01",
+        "to": "section_02",
+        "reason": "Introduction frames the canonical motif; molecular identity is the first established axis."
+      },
+      {
+        "from": "section_02",
+        "to": "section_03",
+        "reason": "Transcriptomic taxonomy is the substrate for developmental fate-mapping."
+      },
+      {
+        "from": "section_02",
+        "to": "section_04",
+        "reason": "Molecular t-types map onto morphological m-types via Patch-seq."
+      },
+      {
+        "from": "section_02",
+        "to": "section_05",
+        "reason": "Molecular t-types map onto e-types via Patch-seq."
+      },
+      {
+        "from": "section_02",
+        "to": "section_11",
+        "reason": "Cross-species transcriptomic conservation/divergence is interpreted in §11."
+      },
+      {
+        "from": "section_03",
+        "to": "section_04",
+        "reason": "Developmental fate determines mature morphology."
+      },
+      {
+        "from": "section_03",
+        "to": "section_11",
+        "reason": "CGE-lineage proportions diverge across species — bears on §11."
+      },
+      {
+        "from": "section_04",
+        "to": "section_05",
+        "reason": "Morphology constrains intrinsic biophysics."
+      },
+      {
+        "from": "section_04",
+        "to": "section_06",
+        "reason": "Axonal morphology determines synaptic targeting patterns."
+      },
+      {
+        "from": "section_05",
+        "to": "section_06",
+        "reason": "Intrinsic biophysics shapes synaptic integration."
+      },
+      {
+        "from": "section_06",
+        "to": "section_07",
+        "reason": "Connectivity is the substrate for circuit motifs."
+      },
+      {
+        "from": "section_07",
+        "to": "section_08",
+        "reason": "Motifs predict in-vivo response patterns; §8 tests them."
+      },
+      {
+        "from": "section_07",
+        "to": "section_12",
+        "reason": "Motifs are formalised in computational models."
+      },
+      {
+        "from": "section_08",
+        "to": "section_09",
+        "reason": "Behavioural responses generalise (or fail to generalise) across cortical areas."
+      },
+      {
+        "from": "section_08",
+        "to": "section_10",
+        "reason": "In-vivo state changes are reflected in oscillatory dynamics."
+      },
+      {
+        "from": "section_09",
+        "to": "section_10",
+        "reason": "Area-specific motifs emit area-specific oscillatory signatures."
+      },
+      {
+        "from": "section_09",
+        "to": "section_11",
+        "reason": "Cross-area heterogeneity is amplified by cross-species comparison."
+      },
+      {
+        "from": "section_10",
+        "to": "section_11",
+        "reason": "Disease-relevant oscillatory phenotypes (epilepsy, schizophrenia) draw on §10."
+      },
+      {
+        "from": "section_06",
+        "to": "section_12",
+        "reason": "Connectivity weights parameterise computational models."
+      },
+      {
+        "from": "section_11",
+        "to": "section_13",
+        "reason": "Translational gaps motivate the open-question agenda."
+      },
+      {
+        "from": "section_12",
+        "to": "section_13",
+        "reason": "Computational synthesis feeds final reassessment."
+      },
+      {
+        "from": "section_07",
+        "to": "section_13",
+        "reason": "Reassessment of the canonical motif is anchored on the §7 motif analysis."
+      },
+      {
+        "from": "section_08",
+        "to": "section_13",
+        "reason": "In-vivo heterogeneity is a primary driver of the reassessment."
+      }
+    ],
+    "conflict_resolution_roadmap": [
+      {
+        "rank": 1,
+        "conflict_id": "cluster_01:0",
+        "nature": "Number of cortical VIP transcriptomic types (Tasic2016 ~5 vs Tasic2018 ~14)",
+        "primary_section": "section_02",
+        "secondary_sections": [
+          "section_13"
+        ],
+        "treatment": "consensus",
+        "stance": "Resolution depends on clustering resolution and dataset; subclass-level robust, t-type-level dataset-dependent. State both numbers, present resolution explicitly."
+      },
+      {
+        "rank": 2,
+        "conflict_id": "cluster_05:5",
+        "nature": "Whether VIP boutons target only interneurons (Pfeffer2013) or also pyramidal cells (Zhou2017 et al.)",
+        "primary_section": "section_06",
+        "secondary_sections": [
+          "section_07",
+          "section_13"
+        ],
+        "treatment": "present-both",
+        "stance": "Direct VIP→Pyr connections exist but are minor/area-conditional; canonical 'IN-only' textbook claim is approximation. Spell out where each finding holds."
+      },
+      {
+        "rank": 3,
+        "conflict_id": "cluster_07:0",
+        "nature": "Locomotion mechanism — Fu2014 (VIP→SST disinhibition) vs Pakan2016 (concurrent SST activation)",
+        "primary_section": "section_07",
+        "secondary_sections": [
+          "section_08",
+          "section_09",
+          "section_10",
+          "section_13"
+        ],
+        "treatment": "present-both",
+        "stance": "Both findings reproduce in their respective preparations; resolution likely involves cell-type subset, layer, and behavioural-context differences. Flag as canonical motif's most-discussed empirical limit."
+      },
+      {
+        "rank": 4,
+        "conflict_id": "cluster_06:7",
+        "nature": "VIP disinhibition as privileged channel vs one of parallel inhibitory streams (Pi2013 vs Kuchibhotla2017)",
+        "primary_section": "section_07",
+        "secondary_sections": [
+          "section_12",
+          "section_13"
+        ],
+        "treatment": "present-both",
+        "stance": "Treat as the central conflict animating the review's reassessment thesis. Present both with explicit weighing."
+      },
+      {
+        "rank": 5,
+        "conflict_id": "cluster_06:6",
+        "nature": "Generalisation of VIP→SST motif across cortical areas (Lee2013 vs Pakan2016)",
+        "primary_section": "section_09",
+        "secondary_sections": [
+          "section_07",
+          "section_13"
+        ],
+        "treatment": "present-both",
+        "stance": "Motif obtains in V1/PFC under specific contexts; A1 and certain hippocampal preparations show different polarity. Map area × condition matrix in §9."
+      },
+      {
+        "rank": 6,
+        "conflict_id": "cluster_11:1",
+        "nature": "SST inhibition: subtractive vs divisive gain control (multiple models vs Wilson2012)",
+        "primary_section": "section_12",
+        "secondary_sections": [
+          "section_07"
+        ],
+        "treatment": "consensus",
+        "stance": "Both regimes are recoverable in 3-IN models depending on parameters and dendritic nonlinearities; present as parameter-dependent, not categorical."
+      },
+      {
+        "rank": 7,
+        "conflict_id": "cluster_10:3",
+        "nature": "VIP cell preservation vs loss in Alzheimer's disease (mouse models vs human postmortem; Yi2025a vs Gabitto2024)",
+        "primary_section": "section_11",
+        "secondary_sections": [
+          "section_13"
+        ],
+        "treatment": "unresolved",
+        "stance": "Mouse models report functional but not numerical loss; human snRNA-seq shows subtype depletion. Translation gap explicitly flagged as open question."
+      },
+      {
+        "rank": 8,
+        "conflict_id": "cluster_01:3",
+        "nature": "Mouse VIP/CGE taxonomy transferable to human cortex (Hodge2019) vs species-specific divergence (Mayer2018)",
+        "primary_section": "section_02",
+        "secondary_sections": [
+          "section_11",
+          "section_13"
+        ],
+        "treatment": "consensus",
+        "stance": "Subclass conserved, t-type partially divergent, integration-algorithm-dependent. State degree of conservation explicitly per modality."
+      },
+      {
+        "rank": 9,
+        "conflict_id": "cluster_09:1",
+        "nature": "Bidirectional VIP perturbation effects on seizure activity (Khoshkhoo2017 silencing vs Calin2018 activation)",
+        "primary_section": "section_10",
+        "secondary_sections": [
+          "section_11"
+        ],
+        "treatment": "unresolved",
+        "stance": "Asymmetric effects of activation vs silencing across models; flag as unresolved with proposed reconciliations."
+      },
+      {
+        "rank": 10,
+        "conflict_id": "cluster_13_cge_lineage_context:1",
+        "nature": "% of cortical GABAergic neurons attributable to CGE/CR+ lineage (mouse ~30% vs human ~50%)",
+        "primary_section": "section_03",
+        "secondary_sections": [
+          "section_11",
+          "section_13"
+        ],
+        "treatment": "present-both",
+        "stance": "Quantitative species difference; present as a real biological expansion of the CGE lineage in primates rather than methodological discrepancy."
+      }
+    ]
+  },
+  "figure_roadmap": [
+    {
+      "fig_number": 1,
+      "label": "fig-roadmap",
+      "section_id": "section_01",
+      "section_title": "Introduction",
+      "type": "schematic",
+      "argument_supported": "Visual outline of the canonical VIP→SST→Pyr motif and the multi-modal axes (molecular, developmental, morphological, intrinsic, synaptic, in-vivo, oscillatory, cross-area, species/disease, computational) that the review uses to test it.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Three-cell schematic of the canonical disinhibition motif (VIP→SST→Pyr; VIP→PV minor) with arrow weights flagged 'TBD in §6/§7'.",
+        "Panel B: Roadmap diagram aligning the 13 sections to the three-act arc (Establishment → Complications → Synthesis)."
+      ]
+    },
+    {
+      "fig_number": 2,
+      "label": "fig-canonical-motif-snapshot",
+      "section_id": "section_01",
+      "section_title": "Introduction",
+      "type": "data_panel",
+      "argument_supported": "Preview of the empirical landscape: optogenetic perturbation of cortical VIP cells produces qualitatively different effects on Pyr firing across cardinal studies — the headline observation that motivates the review's reassessment thesis.",
+      "data_source": "Synthesis of effect-direction reports from cluster_06_disinhibition_circuit (strongest_evidence + conflicts: Pi2013, Lee2013, Fu2014, Zhang2014, Pakan2016) and cluster_07_in_vivo_function.figure_data[0] (locomotion-driven VIP ΔF/F summary).",
+      "panels": [
+        "Panel A: Mini forest plot of VIP→Pyr-firing-rate effect direction (positive/null/negative) across the four cardinal disinhibition studies (Pi 2013, Lee 2013, Fu 2014, Zhang 2014).",
+        "Panel B: Bar comparison of locomotion-driven V1 VIP ΔF/F vs concurrent SST ΔF/F — Fu 2014 vs Pakan 2016 — flagged as the canonical-motif puzzle the review will revisit."
+      ]
+    },
+    {
+      "fig_number": 3,
+      "label": "fig-vip-taxonomy",
+      "section_id": "section_02",
+      "section_title": "Molecular Identity and Transcriptomic Taxonomy",
+      "type": "data_panel",
+      "argument_supported": "Subclass-level VIP/Sst/Pvalb separation is robust; t-type-level discreteness within VIP varies by dataset.",
+      "data_source": "cluster_01_molecular_taxonomy.figure_data[0] (Tasic 2018 Fig 1; 23,822 cells; 6 GABAergic subclasses; ~14 VIP t-types)",
+      "panels": [
+        "Panel A: Hierarchical dendrogram of cortical GABAergic taxonomy (subclass→t-type), showing CGE branch (Lamp5/Vip/Sncg/Serpinf1) vs MGE branch (Sst/Pvalb).",
+        "Panel B: Cross-study comparison table of reported VIP t-type counts (Tasic 2016 ~5; Tasic 2018 ~14; Yao 2021 BICCN; Hodge 2019 human MTG).",
+        "Panel C: Bar chart of reported %ChAT+ VIP and %CR+ VIP across studies (axis: % of cortical VIP; ranges ~5–25%).",
+        "Panel D: Schematic of major VIP molecular subdivisions (VIP/ChAT, VIP/CR, VIP/CCK) with key marker genes annotated."
+      ]
+    },
+    {
+      "fig_number": 4,
+      "label": "fig-vip-marker-tree",
+      "section_id": "section_02",
+      "section_title": "Molecular Identity and Transcriptomic Taxonomy",
+      "type": "schematic",
+      "argument_supported": "Marker-protein decision tree showing how immunolabel-based and Cre-driver-based definitions of 'VIP' carve cell populations differently from scRNA-seq subclasses, explaining why fraction estimates and labelling specificity disagree across studies.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Decision tree from cortical GABA → CGE branch (5-HT3AR/Prox1/Sp8) → VIP subclass → marker-defined subdivisions (VIP/ChAT, VIP/CR, VIP/CCK, VIP/Calb2) with overlap regions explicitly drawn.",
+        "Panel B: Side-by-side Venn cartoon of VIP-Cre vs VIP-IRES-Cre vs anti-VIP immunolabel populations, flagging known off-target classes (Sncg, Lamp5).",
+        "Panel C: Schematic mapping immunolabel categories onto Tasic-2018 t-types — illustrating where one-to-one, one-to-many, and many-to-one relationships hold."
+      ]
+    },
+    {
+      "fig_number": 5,
+      "label": "fig-cge-lineage",
+      "section_id": "section_03",
+      "section_title": "Developmental Origins and Postnatal Maturation",
+      "type": "schematic",
+      "argument_supported": "CGE-derived migration and TF-cascade that specifies VIP/Lamp5/Sncg subclasses, with cross-species quantitative mismatch flagged.",
+      "data_source": "cluster_02_development_lineage.figure_data[0] (TF-KO phenotype table) + cluster_13_cge_lineage_context.figure_data[0] (% CGE across species)",
+      "panels": [
+        "Panel A: Schematic of embryonic CGE → tangential migration → cortical layer settling, with key TFs (Prox1, Sp8, Nr2f2, Lhx6 contrast).",
+        "Panel B: Table of TF conditional-KO phenotypes (subtype loss, migration defects, AMPAR/glutamatergic input changes).",
+        "Panel C: Bar chart of reported % of cortical GABAergic neurons attributable to CGE/5-HT3AR/CR lineage (mouse fate-mapping ~30% vs human snRNA-seq ~50%)."
+      ]
+    },
+    {
+      "fig_number": 6,
+      "label": "fig-cge-fraction-cross-species",
+      "section_id": "section_03",
+      "section_title": "Developmental Origins and Postnatal Maturation",
+      "type": "data_panel",
+      "argument_supported": "Quantitative species comparison of the CGE/5-HT3AR/CR-defined inhibitory class as a fraction of cortical GABAergic neurons — the lineage substrate from which mature VIP subclasses arise — showing real biological expansion in primate cortex.",
+      "data_source": "cluster_13_cge_lineage_context.figure_data[0] (cross-study/species CGE/5-HT3AR/CR fraction summary)",
+      "panels": [
+        "Panel A: Bar chart of % cortical GABAergic neurons attributed to CGE/5-HT3AR/CR lineage across mouse fate-mapping (~30%) vs human snRNA-seq (~50%) studies (axis: % GABAergic).",
+        "Panel B: Stacked bar showing how that fraction is partitioned among VIP / Lamp5 / Sncg / Serpinf1 subclasses across mouse, marmoset, macaque, human (axis: % of CGE-class).",
+        "Panel C: Side timeline of CGE-progenitor TF cascade with conditional-KO outcome annotations from cluster_02_development_lineage.figure_data[0] (TF-KO phenotype table)."
+      ]
+    },
+    {
+      "fig_number": 7,
+      "label": "fig-vip-morphologies",
+      "section_id": "section_04",
+      "section_title": "Morphological Diversity",
+      "type": "data_panel",
+      "argument_supported": "Bipolar/descending-axon dominates; morphological space within VIP is graded; cross-species and cross-area variation is real.",
+      "data_source": "cluster_03_morphology.figure_data[0] (cross-study stacked bar of VIP morphological subtype proportions); MICrONS exemplar reconstructions",
+      "panels": [
+        "Panel A: Reconstructed exemplar morphologies — bipolar, bitufted, small-basket, arcade — drawn to scale.",
+        "Panel B: Stacked bar of VIP morphological-type proportions reported across studies (axis: % of VIP).",
+        "Panel C: UMAP-style embedding of Patch-seq morphological features (Gouwens vs Scala) coloured by transcriptomic t-type — illustrating discrete-vs-continuum debate.",
+        "Panel D: Layer-resolved heat map of bipolar-vs-multipolar VIP frequency (V1 vs M1; mouse vs human)."
+      ]
+    },
+    {
+      "fig_number": 8,
+      "label": "fig-vip-axonal-targeting-schematic",
+      "section_id": "section_04",
+      "section_title": "Morphological Diversity",
+      "type": "schematic",
+      "argument_supported": "Bipolar/descending-axon morphology positions VIP terminals to target SST somata in deep layers and PV somata in upper layers, providing a structural rationale for translaminar disinhibition and for the area-specific motif weighting reviewed in §6 and §7.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Idealised L2/3-soma + descending-axon VIP cell drawn over a 6-layer cortical column, with SST, PV, and Pyr postsynaptic compartments highlighted.",
+        "Panel B: Comparison cartoon of small-basket vs arcade vs bipolar VIP variants and the postsynaptic compartments each preferentially contacts.",
+        "Panel C: Hippocampal IS3 cell schematic (soma in stratum oriens; OLM-targeting axon) for cross-region contrast."
+      ]
+    },
+    {
+      "fig_number": 9,
+      "label": "fig-vip-ephys",
+      "section_id": "section_05",
+      "section_title": "Intrinsic Electrophysiology",
+      "type": "data_panel",
+      "argument_supported": "Subclass-level e-type identity is predictable; within-VIP e-types form a continuum; cross-study variability in single properties is non-trivial.",
+      "data_source": "cluster_04_intrinsic_electrophysiology.figure_data[0] + Patch-seq atlas comparisons",
+      "panels": [
+        "Panel A: Exemplar firing traces (IS, continuous-adapting, accommodating) at matched current step.",
+        "Panel B: Cross-study table/forest plot of Vm, Rin, AP half-width, sag ratio across VIP studies (axis: parameter value, mean ± SD).",
+        "Panel C: Stacked bar of reported IS-firing fraction across studies (axis: % of VIP cells).",
+        "Panel D: t-type × e-type confusion matrix from Patch-seq (Gouwens 2020 / Scala 2021)."
+      ]
+    },
+    {
+      "fig_number": 10,
+      "label": "fig-vip-firing-mechanism",
+      "section_id": "section_05",
+      "section_title": "Intrinsic Electrophysiology",
+      "type": "schematic",
+      "argument_supported": "Schematic of candidate ion-channel substrates of irregular-spiking firing in VIP cells (Kv-mediated repolarisation kinetics vs HCN-mediated sag/Ih), highlighting the locus of the Porter1998-vs-Goff2019 mechanistic disagreement.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Cartoon VIP-cell membrane with annotated channel complement (Nav, Kv1, Kv4, HCN/Ih, SK) and qualitative voltage-clamp traces.",
+        "Panel B: Two competing mechanism schematics for irregular-spiking — (i) Kv1-dominant repolarisation kinetics; (ii) HCN/sag-dependent rebound — with predicted current-clamp signatures.",
+        "Panel C: Decision flow mapping intrinsic-feature combinations (high Rin + IS + low sag → cluster A; etc.) onto Patch-seq e-types from cluster_04.figure_data[0]."
+      ]
+    },
+    {
+      "fig_number": 11,
+      "label": "fig-vip-connectome",
+      "section_id": "section_06",
+      "section_title": "Synaptic Properties and Connectivity",
+      "type": "network",
+      "argument_supported": "VIP outputs are not exclusively to SST cells; afferent drive is dominated by cholinergic/long-range inputs.",
+      "data_source": "cluster_05_synaptic_properties_connectivity.figure_data + cluster_13_neuromodulation.figure_data",
+      "panels": [
+        "Panel A: Connectivity matrix (rows: input source — local Pyr, long-range, ACh, 5-HT, NA; columns: VIP / SST / PV) with edge weights from paired-recording / optogenetic-CRACM studies.",
+        "Panel B: Output matrix VIP → {SST, PV, Pyr, NDNF, OLM} with connection probability and IPSC amplitude (means + ranges across studies).",
+        "Panel C: Forest plot of VIP→PV connectivity strength across studies (Pfeffer 2013, Yu 2019, Pi 2013, others).",
+        "Panel D: Schematic of cholinergic recruitment (nicotinic excitation vs muscarinic inhibition) of VIP/5-HT3AR cells."
+      ]
+    },
+    {
+      "fig_number": 12,
+      "label": "fig-vip-neuromodulator-pharmacology",
+      "section_id": "section_06",
+      "section_title": "Synaptic Properties and Connectivity",
+      "type": "data_panel",
+      "argument_supported": "Cholinergic, serotonergic, and noradrenergic afferents are quantitatively dominant drivers of VIP recruitment, but nicotinic and muscarinic ACh produce opposite-sign effects on overlapping VIP populations — a pharmacological complication that the synaptic-connectivity diagram alone cannot capture.",
+      "data_source": "cluster_13_neuromodulation.figure_data[0] (fraction of cortical VIP co-expressing 5-HT3AR across studies) plus cluster_13_neuromodulation.conflicts (nicotinic vs muscarinic effect-direction).",
+      "panels": [
+        "Panel A: Bar chart of fraction of cortical VIP cells co-expressing 5-HT3AR across studies (axis: % of VIP, mean ± range).",
+        "Panel B: Forest plot of nicotinic vs muscarinic ACh effect on VIP firing rate (Poorthuis2018 vs Arroyo2012; axis: fold-change in firing).",
+        "Panel C: Cross-study compilation of reported effect of locomotion/arousal on VIP ΔF/F partitioned by inferred neuromodulator (ACh, NA, 5-HT)."
+      ]
+    },
+    {
+      "fig_number": 13,
+      "label": "fig-disinhibition-motifs",
+      "section_id": "section_07",
+      "section_title": "Local Circuit Motifs and the Disinhibition Framework",
+      "type": "schematic",
+      "argument_supported": "Multiple VIP-mediated motifs operate in parallel; canonical motif is one channel among several.",
+      "data_source": "cluster_06_disinhibition_circuit (motif sketches) + cluster_12_sst_pv_context (PV/SST context)",
+      "panels": [
+        "Panel A: Canonical motif schematic — VIP→SST→Pyr (with explicit minor VIP→PV and VIP→Pyr edges).",
+        "Panel B: Alternative motifs — VIP→PV, VIP→Pyr (direct), VIP→NDNF, VIP→OLM (hippocampus).",
+        "Panel C: Decision tree / matrix mapping behavioural context (locomotion, attention, reinforcement, top-down) to the dominant VIP motif and the supporting cite-keys.",
+        "Panel D: Forest plot of effect-size of VIP optogenetic activation on Pyr firing (subtractive vs divisive vs net-disinhibitory) across studies."
+      ]
+    },
+    {
+      "fig_number": 14,
+      "label": "fig-vip-effect-size-comparison",
+      "section_id": "section_07",
+      "section_title": "Local Circuit Motifs and the Disinhibition Framework",
+      "type": "data_panel",
+      "argument_supported": "Quantitative comparison across studies of the effect of VIP perturbation on SST and PV firing makes explicit the heterogeneity that a single 'canonical motif' diagram cannot show — supporting the section thesis that multiple motifs operate in parallel.",
+      "data_source": "Synthesis across cluster_05_synaptic_properties_connectivity.conflicts (Pfeffer2013, Pi2013, Yu2019, Zhou2017, Pakan2016) and cluster_06_disinhibition_circuit.conflicts (Lee2013, Fu2014, Pakan2016, Kuchibhotla2017).",
+      "panels": [
+        "Panel A: Forest plot of VIP→SST IPSC amplitude (paired-recording or optogenetic CRACM) across studies (axis: pA, mean ± SD).",
+        "Panel B: Forest plot of VIP→PV IPSC amplitude / connection probability across the same studies (axis: pA / connectivity %).",
+        "Panel C: Bar chart of VIP-activation-evoked Pyr firing-rate change (subtractive, divisive, net-disinhibitory) sorted by cortical area and behavioural state.",
+        "Panel D: Heat-map mapping conflict pairs (paper_a vs paper_b cite-keys) onto Δ effect direction, providing a 'conflict atlas' for §7 prose."
+      ]
+    },
+    {
+      "fig_number": 15,
+      "label": "fig-vip-behavior",
+      "section_id": "section_08",
+      "section_title": "In Vivo Function During Behavior",
+      "type": "data_panel",
+      "argument_supported": "VIP recruitment is reliable for locomotion/arousal/reinforcement in V1, but heterogeneous across area and task; the SST-suppression mechanism does not always obtain.",
+      "data_source": "cluster_07_in_vivo_function.figure_data[0] (locomotion-driven ΔF/F across studies)",
+      "panels": [
+        "Panel A: Across-study compilation of locomotion-evoked ΔF/F in V1 VIP (axis: % change from baseline; mean ± SEM per study).",
+        "Panel B: Heat-map of VIP response polarity across cortices (V1, S1, A1, ACC, mPFC, M1) for locomotion, attention, reward, punishment.",
+        "Panel C: Concurrent VIP/SST imaging traces from contrasting studies (Fu 2014 vs Pakan 2016 vs Dipoppa 2018).",
+        "Panel D: Schematic decision diagram for resolving area×task×modulator → expected VIP polarity."
+      ]
+    },
+    {
+      "fig_number": 16,
+      "label": "fig-vip-state-decision-tree",
+      "section_id": "section_08",
+      "section_title": "In Vivo Function During Behavior",
+      "type": "schematic",
+      "argument_supported": "Decision schematic for predicting in-vivo VIP polarity from cortical area, behavioural state, and dominant neuromodulator — operationalising the section's claim that area×state×modulator interactions resolve apparent disagreements.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Decision tree: cortical area (V1/A1/S1/PFC/hippocampus) → state (locomotion/quiescence/attention/reward) → dominant modulator (ACh/5-HT/NA) → predicted VIP response sign.",
+        "Panel B: Annotated overlay marking which leaves of the tree each cardinal study (Fu2014, Pakan2016, Pi2013, Lee2013, Dipoppa2018, Pakan2016, Vervaeke2024) populates.",
+        "Panel C: Cartoon of the mouse running on a wheel with V1/A1/S1 sketches showing concurrent expected VIP-vs-SST polarity per area (referencing §9 for follow-up)."
+      ]
+    },
+    {
+      "fig_number": 17,
+      "label": "fig-vip-across-areas",
+      "section_id": "section_09",
+      "section_title": "VIP Interneurons Across Brain Regions",
+      "type": "data_panel",
+      "argument_supported": "VIP recruits opposite-sign motifs in V1 vs A1 and instantiates distinct circuits in hippocampus.",
+      "data_source": "cluster_08_brain_regions evidence + cluster_09_oscillations.conflicts (V1 vs A1 polarity)",
+      "panels": [
+        "Panel A: Brain-area schematic with arrows summarising dominant VIP motif per area (V1, A1, S1, M1, ACC, mPFC, CA1, BLA).",
+        "Panel B: Bar chart of locomotion-evoked VIP response sign in V1 vs A1 (axis: ΔF/F).",
+        "Panel C: Hippocampal VIP/IS3 motif schematic (VIP/CR/CCK distinctions; OLM/CA1 PYR targeting).",
+        "Panel D: Cross-area conflict table (top-down vs neuromodulatory vs sensory drivers)."
+      ]
+    },
+    {
+      "fig_number": 18,
+      "label": "fig-hippocampal-vip-motif",
+      "section_id": "section_09",
+      "section_title": "VIP Interneurons Across Brain Regions",
+      "type": "schematic",
+      "argument_supported": "Hippocampal CA1 VIP/CR/CCK 'IS3' cells implement a circuit motif distinct from neocortex (preferential targeting of OLM cells; reset of theta-coupled inhibition) that contradicts a uniform cross-area VIP function and motivates separate modelling.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: CA1 lamellar cartoon with VIP/IS3 cell soma in stratum oriens, axonal projections onto OLM and bistratified cells, and modulation of CA1 Pyr by disinhibition of distal-dendritic input.",
+        "Panel B: Comparison schematic of VIP cells in cortex (bipolar, descending; targets SST in L5) vs hippocampus (IS3; targets OLM in oriens).",
+        "Panel C: Subcortical VIP pathways (BLA, striatum, hypothalamus) summarised as a side panel for cross-region completeness."
+      ]
+    },
+    {
+      "fig_number": 19,
+      "label": "fig-vip-oscillations",
+      "section_id": "section_10",
+      "section_title": "Oscillatory Dynamics and Temporal Coordination",
+      "type": "data_panel",
+      "argument_supported": "VIP shapes but does not generate cortical rhythms; perturbation effects are direction- and model-dependent.",
+      "data_source": "cluster_09_oscillations.figure_data[0] (VIP perturbation × seizure outcome table)",
+      "panels": [
+        "Panel A: Spectrogram exemplars of cortical LFP during VIP optogenetic activation vs silencing.",
+        "Panel B: Forest plot of VIP-perturbation effects on gamma/theta power across studies.",
+        "Panel C: Cross-study seizure-susceptibility table (silencing/activating VIP × outcome).",
+        "Panel D: VIP recruitment during Up-states and REM (in-vivo summary)."
+      ]
+    },
+    {
+      "fig_number": 20,
+      "label": "fig-vip-oscillation-mechanism",
+      "section_id": "section_10",
+      "section_title": "Oscillatory Dynamics and Temporal Coordination",
+      "type": "schematic",
+      "argument_supported": "Mechanistic schematic of how VIP→SST and VIP→PV motifs differentially shape gamma vs theta rhythms, providing the conceptual bridge between the connectivity data of §6–§7 and the LFP/oscillatory observations summarised in this section's data panel.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Cartoon circuit diagram of PV-driven gamma rhythm with VIP-mediated SST suppression; predicted effect of VIP activation on gamma power and Pyr phase locking.",
+        "Panel B: Cartoon of theta-rhythm circuit (hippocampal/cortical) with VIP/IS3 cell phase-coupled to OLM disinhibition.",
+        "Panel C: Schematic of cortical Up-state with VIP as a permissive vs causal gate (referencing Neske2016 vs Pi2013 conflict)."
+      ]
+    },
+    {
+      "fig_number": 21,
+      "label": "fig-species-disease",
+      "section_id": "section_11",
+      "section_title": "Species Differences, Human Relevance, and Disease",
+      "type": "data_panel",
+      "argument_supported": "Subclass-level VIP conserved across mouse/human; t-type and disease-relevant phenotypes diverge; multiple disorders converge on VIP-IN dysfunction.",
+      "data_source": "cluster_10_species_disease + cluster_13_cge_lineage_context.figure_data[0]",
+      "panels": [
+        "Panel A: Mouse vs human VIP transcriptomic-class side-by-side dendrogram.",
+        "Panel B: Cross-disease phenotype matrix (AD, ASD/ID, schizophrenia, Dravet × cell-loss / activity / connectivity / morphology).",
+        "Panel C: Bar chart of CGE/CR+ fraction of cortical GABA across mouse, marmoset, macaque, human.",
+        "Panel D: Convergence diagram — upstream regulators (MeCP2, TCF4, FMR1, SCN1A, CNTNAP2) → VIP-IN phenotypes → circuit-level outcomes."
+      ]
+    },
+    {
+      "fig_number": 22,
+      "label": "fig-vip-disease-convergence",
+      "section_id": "section_11",
+      "section_title": "Species Differences, Human Relevance, and Disease",
+      "type": "schematic",
+      "argument_supported": "Convergence schematic for upstream genetic/cellular insults that funnel into shared VIP-IN dysfunction phenotypes across psychiatric, neurodevelopmental, and neurodegenerative disease models — making explicit the translational hypotheses that the species/disease data panel only summarises piecewise.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: Funnel diagram from upstream regulators (MeCP2, TCF4, FMR1, SCN1A, CNTNAP2, APP/PSEN, DISC1) → mid-level mechanisms (excitability, connectivity, density) → circuit phenotype (E/I imbalance, gain dysfunction).",
+        "Panel B: Cartoon comparison of mouse-model vs human-postmortem vs iPSC-derived readout for each disease (highlighting where translation succeeds vs fails).",
+        "Panel C: Mouse-vs-human VIP-IN cartoon (relative density, gene-expression overlap, primate-expanded subtypes) anchored to Hodge2019/Yao2023 atlases."
+      ]
+    },
+    {
+      "fig_number": 23,
+      "label": "fig-computational-models",
+      "section_id": "section_12",
+      "section_title": "Computational Models of VIP Circuit Function",
+      "type": "data_panel",
+      "argument_supported": "Three-IN models and their extensions support multiple gain regimes; the necessity of any single architectural element is contested.",
+      "data_source": "cluster_11_computational_models.figure_data[0] (architecture-vs-function comparison)",
+      "panels": [
+        "Panel A: Side-by-side schematics of canonical 3-IN (Hertag/Cornford), 4-IN (NDNF), and predictive-coding/credit-assignment architectures.",
+        "Panel B: Phase-diagram of subtractive-vs-divisive gain regime as a function of VIP→SST and SST→Pyr weights.",
+        "Panel C: Comparison table — model × interneuron classes × VIP function (gain, attention, prediction error, learning gate).",
+        "Panel D: Mapping of empirical conflicts (§6–§9) onto model parameter regimes that resolve them."
+      ]
+    },
+    {
+      "fig_number": 24,
+      "label": "fig-vip-model-empirical-mapping",
+      "section_id": "section_12",
+      "section_title": "Computational Models of VIP Circuit Function",
+      "type": "schematic",
+      "argument_supported": "Mapping schematic linking specific empirical conflicts from §6–§9 to the model parameter regimes that resolve them — reframing controversies as parameter-region rather than categorical disputes, which is the section's synthetic claim.",
+      "data_source": "schematic — no data",
+      "panels": [
+        "Panel A: 2D phase diagram (axes: VIP→SST weight × SST→Pyr dendritic nonlinearity) with shaded regions corresponding to subtractive, divisive, and paradoxical-inhibition regimes; named studies plotted at their inferred location.",
+        "Panel B: Tree of model architectural choices (3-IN vs 4-IN with NDNF; rate vs spiking; predictive-coding embedding) annotated with which §6–§9 conflicts each architecture predicts vs cannot resolve.",
+        "Panel C: Schematic of identifiability problem — model parameter symmetries that prevent existing data from constraining VIP function uniquely (motivates the §13 open-question agenda)."
+      ]
+    },
+    {
+      "fig_number": 25,
+      "label": "fig-synthesis-grid",
+      "section_id": "section_13",
+      "section_title": "Synthesis and Conclusion: Reassessing the Canonical VIP Disinhibitor",
+      "type": "schematic",
+      "argument_supported": "VIP function is multifunctional and context-dependent; the canonical motif is one (privileged) channel.",
+      "data_source": "schematic — synthesis grid integrating §6–§12",
+      "panels": [
+        "Panel A: 'Canonical-vs-revised' two-column figure: canonical VIP→SST→Pyr motif on the left; revised multifunctional view (parallel motifs, modulator-gated, area-specific) on the right.",
+        "Panel B: Open-question heat-map (rows: open question; columns: §2–§12 sections that bear on it) marking high-priority gaps.",
+        "Panel C: Translational outlook diagram (mouse-model → human cortex → disease) flagging where translation is supported vs unresolved."
+      ]
+    },
+    {
+      "fig_number": 26,
+      "label": "fig-vip-replication-strength-matrix",
+      "section_id": "section_13",
+      "section_title": "Synthesis and Conclusion: Reassessing the Canonical VIP Disinhibitor",
+      "type": "data_panel",
+      "argument_supported": "Cross-cluster replication-strength matrix consolidating which canonical claims about VIP cells are robustly replicated, which are contested, and which remain unresolved — the empirical inventory that backs the section's reassessment of the canonical motif.",
+      "data_source": "Synthesis across replicated_claims and contested_claims fields of all 14 clusters in phase4_scaffold_input.json (cluster_01 through cluster_13_cge_lineage_context).",
+      "panels": [
+        "Panel A: Heat-map (rows: cardinal claims — 'CGE origin', 'VIP→SST functional', 'VIP→PV functional', 'VIP→Pyr direct', 'V1 locomotion gain', 'A1 locomotion suppression', 'cross-species subclass conservation', 'AD VIP loss', etc.; columns: clusters/sections; cells: green=replicated, amber=contested, grey=unresolved).",
+        "Panel B: Bar chart of #replicated vs #contested vs #unresolved claims per section, ordered by act.",
+        "Panel C: Open-question priority list — top 8 unresolved questions weighted by number of contributing clusters and translational impact."
+      ]
+    }
+  ],
+  "style_guide": {
+    "heading_hierarchy": [
+      "# Section title (one per section, matches scope.sections[i].title)",
+      "## Major subsection",
+      "### Minor subsection",
+      "#### Use sparingly; prefer paragraph subheading via bold lead-in"
+    ],
+    "citation_style": "Use MyST cite-key references inline, e.g. {cite}`Tasic2018` or {cite}`Pi2013,Lee2013,Fu2014`. All cite-keys must come from citation_key_map.json verbatim. Do not write '(Tasic et al. 2018)' or '[1]' inline; the bibliography assembler does that.",
+    "figure_inclusion": "Use MyST colon-fence figure blocks ONLY (never reST or HTML):\n    :::{figure} fig-vip-taxonomy.svg\n    :name: fig-vip-taxonomy\n    :width: 80%\n    Caption text. {cite}`Tasic2018`\n    :::\nCross-reference figures via {numref}`fig-vip-taxonomy` or {ref}`fig-vip-taxonomy`.",
+    "cross_reference_format": "Use {ref}`sec-LABEL` for section cross-references (e.g. {ref}`sec-disinhibition-framework`). Slugs are listed in scaffold.sections[*].cross_ref_label and are AUTHORITATIVE — do not invent new ones.",
+    "conflict_admonition": "Whenever two studies disagree, surface the conflict in a colon-fence admonition:\n    :::{admonition} Conflict\n    :class: conflict\n    {cite}`Pfeffer2013` reported X, while {cite}`Zhou2017` reported Y. Resolution: ... (or 'unresolved').\n    :::\nDo not bury conflicts in body prose; use the admonition block for every entry in the section's conflicts_to_present list.",
+    "tense_conventions": [
+      "Past tense for empirical findings (e.g., 'Pi et al. activated VIP cells and observed...').",
+      "Present tense for accepted background and theoretical claims ('VIP cells *are* CGE-derived', 'the canonical motif *predicts* gain enhancement').",
+      "Hedged present for active controversies ('it remains unclear whether...', 'the data are consistent with...')."
+    ],
+    "numerical_style": [
+      "Effect sizes: report units and direction explicitly (e.g., 'increased ΔF/F by 30 ± 8%').",
+      "Sample sizes: state n per condition when interpreting an effect ('n = 12 cells / 4 mice').",
+      "Use SI prefixes; italicise scalar variables (n, *t*, *F*, *r*).",
+      "Confidence intervals or SEM/SD must be specified — never bare '±'."
+    ],
+    "writing_constraints": [
+      "Section thesis paragraphs lead each section; do not use abstracts.",
+      "Each subsection that surfaces a conflict must include the {admonition} Conflict block.",
+      "Cap paragraph length at ~200 words; break for readability.",
+      "Avoid speculative claims unless explicitly flagged 'we speculate' / 'remains an open question'.",
+      "Cross-reference forward and backward generously — readers should be able to enter at any section."
+    ]
+  }
+}

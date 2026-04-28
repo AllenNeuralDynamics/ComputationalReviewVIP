@@ -1,0 +1,93 @@
+{
+  "phase": "17B-aggregate",
+  "gate": "PASS",
+  "checks": {
+    "merged_total_3816": true,
+    "sum_equals_3816": true,
+    "reverdicted_881": true,
+    "needs_fix_master_count_matches": true,
+    "needs_fix_master_total_562": true,
+    "no_duplicate_nf_triple_ids": true,
+    "all_13_sections_present": true,
+    "all_have_verdict_final": true,
+    "merged_triple_ids_unique": true,
+    "verified_2851": true,
+    "needs_fix_562": true,
+    "insufficient_403": true
+  },
+  "totals": {
+    "verified": 2851,
+    "needs_fix": 562,
+    "insufficient": 403,
+    "total": 3816
+  },
+  "phase16_totals": {
+    "verified": 2500,
+    "needs_fix": 435,
+    "insufficient": 881,
+    "total": 3816
+  },
+  "phase17b_flips": {
+    "flipped_to_verified": 351,
+    "flipped_to_needs_fix": 127,
+    "remained_insufficient": 403,
+    "total_reverdicted": 881
+  },
+  "per_section_needs_fix_counts": {
+    "01_introduction.md": 19,
+    "02_classification.md": 33,
+    "03_development.md": 44,
+    "04_morphology.md": 47,
+    "05_electrophysiology.md": 40,
+    "06_synaptic_properties.md": 55,
+    "07_disinhibition_framework.md": 69,
+    "08_in_vivo_behavior.md": 33,
+    "09_cross_areas.md": 61,
+    "10_oscillatory_dynamics.md": 14,
+    "11_disease_translational.md": 51,
+    "12_computational_models.md": 90,
+    "13_conclusion.md": 6
+  },
+  "top_problem_cite_keys": [
+    {
+      "cite_key": "Pronneke2015",
+      "needs_fix_count": 22
+    },
+    {
+      "cite_key": "Krabbe2019",
+      "needs_fix_count": 14
+    },
+    {
+      "cite_key": "Wagatsuma2023",
+      "needs_fix_count": 14
+    },
+    {
+      "cite_key": "Walker2016",
+      "needs_fix_count": 10
+    },
+    {
+      "cite_key": "Pakan2016",
+      "needs_fix_count": 10
+    },
+    {
+      "cite_key": "Pi2013",
+      "needs_fix_count": 10
+    },
+    {
+      "cite_key": "Cauli2014",
+      "needs_fix_count": 9
+    },
+    {
+      "cite_key": "Bos2025",
+      "needs_fix_count": 9
+    },
+    {
+      "cite_key": "Stachniak2021",
+      "needs_fix_count": 8
+    },
+    {
+      "cite_key": "Anastasiades2021a",
+      "needs_fix_count": 8
+    }
+  ]
+}

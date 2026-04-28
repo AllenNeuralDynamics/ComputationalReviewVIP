@@ -1,0 +1,26 @@
+{
+  "phase": 16,
+  "checks_passed": [
+    "triples_total_eq_3816",
+    "verdict_sum_eq_3816",
+    "unique_triple_ids_eq_3816",
+    "all_414_cite_keys_present",
+    "all_13_sections_present",
+    "needs_fix_list_size_matches",
+    "insufficient_list_size_matches",
+    "no_cross_worker_duplicates",
+    "batch_coverage_B0000_B0211"
+  ],
+  "checks_failed": [],
+  "n_checks_passed": 9,
+  "n_checks_failed": 0,
+  "totals": {
+    "verified": 2500,
+    "needs_fix": 435,
+    "insufficient": 881,
+    "total": 3816
+  },
+  "decision": "PASS",
+  "calibration_summary": "Worker 1 INSUFFICIENT rate 54.6% vs others 9\u201318% \u2014 methodological stringency drift, not parser bug. All 9 sanity checks pass.",
+  "recommendation_for_phase_17": "(1) Prioritise NEEDS_FIX triples (n=435) for body-text re-verification and rewrite/recitation. (2) Re-verify W1's 521 INSUFFICIENT_EVIDENCE triples (B0053\u2013B0105) with a body-text fetch \u2014 many are likely true VERIFIED under W0/W2/W3 calibration; a smaller subset may upgrade to NEEDS_FIX (genuine misattributions hidden behind conservative verdicts). (3) Top problem cite_keys to inspect first: Pronneke2015 (19 NF / 18 INS), Anastasiades2021a (31 INS), Karnani2016a (31 INS), Pi2013 (27 INS), Wagatsuma2023 (14 NF), Krabbe2019 (13 NF). (4) Sections with worst INSUFFICIENT density \u2014 06_synaptic_properties (278), 07_disinhibition_framework (174), 05_electrophysiology (127) \u2014 are the ones whose bodies must be most carefully re-read."
+}
