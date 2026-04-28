@@ -205,7 +205,44 @@ const evidenceTransform = {
             // Normalize conflicts using the universal normalizer
             const conflicts = (ev.conflicts || []).map(c => normalizeConflict(c, sec));
 
-            const figData = ev.figure_data || [];
+            // Figure comparisons: read from figures/data/secNN_figure_pack_slim.json
+            // when present. Schema: { figures: [{audited_panels:[{...,figure_data:{...}}]}],
+            // unassigned_section_panels: [{...,figure_data:{...}}] }
+            // Each panel's figure_data dict is the cross-study comparison record.
+            let figData = [];
+            // 1. Inline ev.figure_data (legacy schema, currently empty in pipeline)
+            if (Array.isArray(ev.figure_data)) figData.push(...ev.figure_data);
+            // 2. External figure pack file
+            const figPackPath = resolve(docDir, '../figures/data/sec' + padded + '_figure_pack_slim.json');
+            try {
+              const packRaw = readFileSync(figPackPath, 'utf-8');
+              const pack = JSON.parse(packRaw);
+              if (Array.isArray(pack.figures)) {
+                for (const fig of pack.figures) {
+                  if (Array.isArray(fig.audited_panels)) {
+                    for (const panel of fig.audited_panels) {
+                      const fd = (panel && typeof panel.figure_data === 'object' && panel.figure_data) ? { ...panel.figure_data } : {};
+                      fd.figure_id = fig.figure_id || fd.figure_id;
+                      fd.figure_title = fig.figure_title || fd.figure_title;
+                      fd.status = panel.status || fd.status;
+                      fd.required_caveat_text = panel.required_caveat_text || fd.required_caveat_text;
+                      fd.remediation_path = panel.remediation_path || fd.remediation_path;
+                      figData.push(fd);
+                    }
+                  }
+                }
+              }
+              if (Array.isArray(pack.unassigned_section_panels)) {
+                for (const panel of pack.unassigned_section_panels) {
+                  const fd = (panel && typeof panel.figure_data === 'object' && panel.figure_data) ? { ...panel.figure_data } : {};
+                  fd.status = panel.status || fd.status;
+                  fd.required_caveat_text = panel.required_caveat_text || fd.required_caveat_text;
+                  fd.note = panel.note || fd.note;
+                  fd.unassigned = true;
+                  figData.push(fd);
+                }
+              }
+            } catch (e) { /* no figure pack for this section — ok */ }
 
             findings.forEach(f => {
               f.section = sec;
