@@ -15,6 +15,9 @@ project:
   github: https://github.com/AllenNeuralDynamics/ComputationalReviewVIP
   bibliography:
   - content/references.bib
+  downloads:
+  - file: ./exports/ComputationalReviewVIP.pdf
+    title: Full review (PDF)
   toc:
   - file: content/00_frontmatter.md
   - file: content/01_introduction.md
@@ -71,5 +74,8 @@ site:
     logo: ''
   nav: []
   actions:
+  - title: Download PDF
+    url: /exports/ComputationalReviewVIP.pdf
+    static: true
   - title: Bibliography
     url: /content/references.bib

@@ -46,6 +46,31 @@ jobs:
             echo "No figure notebooks found"
           fi
 
+      - name: Install LaTeX (for PDF rebuild)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -yqq --no-install-recommends texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra latexmk
+
+      - name: Rebuild PDF from manuscript.tex
+        # Rebuilds exports/ComputationalReviewVIP.pdf from the audited LaTeX source.
+        # The LaTeX file is the canonical typeset artifact (Phase 14 final assembly).
+        # MyST bundles ./exports/ComputationalReviewVIP.pdf as a download via the
+        # `downloads:` field in myst.yml — see https://mystmd.org/guide/website-downloads
+        run: |
+          mkdir -p _pdf_build
+          cp manuscript.tex _pdf_build/
+          cp content/references.bib _pdf_build/
+          cp -r figures _pdf_build/
+          cd _pdf_build
+          latexmk -pdf -interaction=nonstopmode -f -file-line-error manuscript.tex || true
+          if [ -f manuscript.pdf ]; then
+            mkdir -p ../exports
+            cp manuscript.pdf ../exports/ComputationalReviewVIP.pdf
+            echo "PDF rebuilt: $(stat -c%s ../exports/ComputationalReviewVIP.pdf) bytes"
+          else
+            echo "WARNING: PDF rebuild failed; keeping committed version"
+          fi
+
       - name: Build MyST site
         run: myst build --html
 

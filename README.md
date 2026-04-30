@@ -14,6 +14,8 @@ The canonical manuscript source is MyST Markdown in `content/`:
 
 A LaTeX export of the manuscript is in `manuscript.tex` (concatenated MyST per-section TeX exports).
 
+A pre-compiled PDF (200 pages, ~9 MB) is at [`exports/ComputationalReviewVIP.pdf`](exports/ComputationalReviewVIP.pdf). It is also surfaced as a project-wide download on the deployed site — book-theme renders a "Full review (PDF)" entry in every page's download dropdown (configured under `project.downloads` in `myst.yml`). The PDF is rebuilt automatically on every push to `main` by `.github/workflows/deploy.yml`.
+
 ## Build
 
 ```bash
