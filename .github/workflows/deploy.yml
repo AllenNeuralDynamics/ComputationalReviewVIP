@@ -72,6 +72,8 @@ jobs:
           fi
 
       - name: Build MyST site
+        env:
+          BASE_URL: /ComputationalReviewVIP
         run: myst build --html
 
       - name: Upload Pages artifact
