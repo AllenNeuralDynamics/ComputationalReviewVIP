@@ -68,6 +68,7 @@ project:
     code:
       continue: true
 site:
+  base_url: /ComputationalReviewVIP
   template: book-theme
   options:
     favicon: ''
